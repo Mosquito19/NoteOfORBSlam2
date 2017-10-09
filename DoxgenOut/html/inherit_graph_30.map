@@ -1,0 +1,5 @@
+<map id="类继承关系图" name="类继承关系图">
+<area shape="rect" id="node1" href="$classg2o_1_1HyperGraph.html" title="g2o::HyperGraph" alt="" coords="6,5,127,32"/>
+<area shape="rect" id="node2" href="$structg2o_1_1OptimizableGraph.html" title="g2o::OptimizableGraph" alt="" coords="176,5,331,32"/>
+<area shape="rect" id="node3" href="$classg2o_1_1SparseOptimizer.html" title="g2o::SparseOptimizer" alt="" coords="379,5,527,32"/>
+</map>

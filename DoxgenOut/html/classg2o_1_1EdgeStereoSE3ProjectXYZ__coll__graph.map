@@ -1,0 +1,8 @@
+<map id="g2o::EdgeStereoSE3ProjectXYZ" name="g2o::EdgeStereoSE3ProjectXYZ">
+<area shape="rect" id="node2" href="$classg2o_1_1BaseBinaryEdge.html" title="g2o::BaseBinaryEdge\l\&lt; 3, Vector3d, VertexSBAPoint\lXYZ, VertexSE3Expmap \&gt;" alt="" coords="129,360,332,416"/>
+<area shape="rect" id="node3" href="$classg2o_1_1BaseEdge.html" title="g2o::BaseEdge\&lt; D, Vector3d \&gt;" alt="" coords="128,283,333,309"/>
+<area shape="rect" id="node4" href="$classg2o_1_1OptimizableGraph_1_1Edge.html" title="g2o::OptimizableGraph\l::Edge" alt="" coords="153,190,307,231"/>
+<area shape="rect" id="node5" href="$classg2o_1_1HyperGraph_1_1Edge.html" title="g2o::HyperGraph::Edge" alt="" coords="25,99,183,125"/>
+<area shape="rect" id="node6" href="$structg2o_1_1HyperGraph_1_1HyperGraphElement.html" title="g2o::HyperGraph::HyperGraph\lElement" alt="" coords="5,6,203,47"/>
+<area shape="rect" id="node7" href="$classg2o_1_1RobustKernel.html" title="base for all robust cost functions " alt="" coords="208,99,337,125"/>
+</map>

@@ -1,0 +1,94 @@
+\hypertarget{structg2o_1_1HyperDijkstra}{\section{g2o\-:\-:Hyper\-Dijkstra结构体 参考}
+\label{structg2o_1_1HyperDijkstra}\index{g2o\-::\-Hyper\-Dijkstra@{g2o\-::\-Hyper\-Dijkstra}}
+}
+
+
+g2o\-:\-:Hyper\-Dijkstra 的协作图\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=176pt]{structg2o_1_1HyperDijkstra__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{类}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structg2o_1_1HyperDijkstra_1_1AdjacencyMapEntry}{Adjacency\-Map\-Entry}
+\item 
+struct \hyperlink{structg2o_1_1HyperDijkstra_1_1CostFunction}{Cost\-Function}
+\item 
+struct \hyperlink{structg2o_1_1HyperDijkstra_1_1TreeAction}{Tree\-Action}
+\end{DoxyCompactItemize}
+\subsection*{Public 类型}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{structg2o_1_1HyperDijkstra_af12ff8eef95094815a3fa1da0514bda2}{typedef std\-::map\\*
+$<$ \hyperlink{classg2o_1_1HyperGraph_1_1Vertex}{Hyper\-Graph\-::\-Vertex} \\*
+$\ast$, \hyperlink{structg2o_1_1HyperDijkstra_1_1AdjacencyMapEntry}{Adjacency\-Map\-Entry} $>$ {\bfseries Adjacency\-Map}}\label{structg2o_1_1HyperDijkstra_af12ff8eef95094815a3fa1da0514bda2}
+
+\end{DoxyCompactItemize}
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{structg2o_1_1HyperDijkstra_a55e844f4b596290cb36a0d9fe4140966}{{\bfseries Hyper\-Dijkstra} (\hyperlink{classg2o_1_1HyperGraph}{Hyper\-Graph} $\ast$g)}\label{structg2o_1_1HyperDijkstra_a55e844f4b596290cb36a0d9fe4140966}
+
+\item 
+\hypertarget{structg2o_1_1HyperDijkstra_a2cb453ed6f1bf6069186bd269a6464da}{Hyper\-Graph\-::\-Vertex\-Set \& {\bfseries visited} ()}\label{structg2o_1_1HyperDijkstra_a2cb453ed6f1bf6069186bd269a6464da}
+
+\item 
+\hypertarget{structg2o_1_1HyperDijkstra_ace002e09514a2eeb76a7b569f9e30f6c}{Adjacency\-Map \& {\bfseries adjacency\-Map} ()}\label{structg2o_1_1HyperDijkstra_ace002e09514a2eeb76a7b569f9e30f6c}
+
+\item 
+\hypertarget{structg2o_1_1HyperDijkstra_a578a9eb1874d9802dbd37a2f1681c196}{\hyperlink{classg2o_1_1HyperGraph}{Hyper\-Graph} $\ast$ {\bfseries graph} ()}\label{structg2o_1_1HyperDijkstra_a578a9eb1874d9802dbd37a2f1681c196}
+
+\item 
+\hypertarget{structg2o_1_1HyperDijkstra_ad88b79c73c8eaa5f1afbe27b778b542e}{void {\bfseries shortest\-Paths} (\hyperlink{classg2o_1_1HyperGraph_1_1Vertex}{Hyper\-Graph\-::\-Vertex} $\ast$v, \hyperlink{structg2o_1_1HyperDijkstra_1_1CostFunction}{Hyper\-Dijkstra\-::\-Cost\-Function} $\ast$cost, double max\-Distance=std\-::numeric\-\_\-limits$<$ double $>$\-::max(), double comparison\-Conditioner=1e-\/3, bool directed=false, double max\-Edge\-Cost=std\-::numeric\-\_\-limits$<$ double $>$\-::max())}\label{structg2o_1_1HyperDijkstra_ad88b79c73c8eaa5f1afbe27b778b542e}
+
+\item 
+\hypertarget{structg2o_1_1HyperDijkstra_a00d978615ff1bbb9917351e9cba0b4ba}{void {\bfseries shortest\-Paths} (Hyper\-Graph\-::\-Vertex\-Set \&vset, \hyperlink{structg2o_1_1HyperDijkstra_1_1CostFunction}{Hyper\-Dijkstra\-::\-Cost\-Function} $\ast$cost, double max\-Distance=std\-::numeric\-\_\-limits$<$ double $>$\-::max(), double comparison\-Conditioner=1e-\/3, bool directed=false, double max\-Edge\-Cost=std\-::numeric\-\_\-limits$<$ double $>$\-::max())}\label{structg2o_1_1HyperDijkstra_a00d978615ff1bbb9917351e9cba0b4ba}
+
+\end{DoxyCompactItemize}
+\subsection*{静态 Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{structg2o_1_1HyperDijkstra_a84a1d7288e1d76369442f89604c5d6de}{static void {\bfseries compute\-Tree} (Adjacency\-Map \&amap)}\label{structg2o_1_1HyperDijkstra_a84a1d7288e1d76369442f89604c5d6de}
+
+\item 
+\hypertarget{structg2o_1_1HyperDijkstra_aa73ae495f10f81823b16f26715f32c58}{static void {\bfseries visit\-Adjacency\-Map} (Adjacency\-Map \&amap, \hyperlink{structg2o_1_1HyperDijkstra_1_1TreeAction}{Tree\-Action} $\ast$action, bool use\-Distance=false)}\label{structg2o_1_1HyperDijkstra_aa73ae495f10f81823b16f26715f32c58}
+
+\item 
+\hypertarget{structg2o_1_1HyperDijkstra_a846232e98c8175ec2fff784fc3271ad7}{static void {\bfseries connected\-Subset} (Hyper\-Graph\-::\-Vertex\-Set \&connected, Hyper\-Graph\-::\-Vertex\-Set \&visited, Hyper\-Graph\-::\-Vertex\-Set \&starting\-Set, \hyperlink{classg2o_1_1HyperGraph}{Hyper\-Graph} $\ast$g, \hyperlink{classg2o_1_1HyperGraph_1_1Vertex}{Hyper\-Graph\-::\-Vertex} $\ast$v, \hyperlink{structg2o_1_1HyperDijkstra_1_1CostFunction}{Hyper\-Dijkstra\-::\-Cost\-Function} $\ast$cost, double distance, double comparison\-Conditioner, double max\-Edge\-Cost=std\-::numeric\-\_\-limits$<$ double $>$\-::max())}\label{structg2o_1_1HyperDijkstra_a846232e98c8175ec2fff784fc3271ad7}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{structg2o_1_1HyperDijkstra_ad9c39fd01a0740f2beff98c927aaebbd}{void {\bfseries reset} ()}\label{structg2o_1_1HyperDijkstra_ad9c39fd01a0740f2beff98c927aaebbd}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected 属性}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{structg2o_1_1HyperDijkstra_ae306dd26e901b88fe6c54f02a45c3e7f}{Adjacency\-Map {\bfseries \-\_\-adjacency\-Map}}\label{structg2o_1_1HyperDijkstra_ae306dd26e901b88fe6c54f02a45c3e7f}
+
+\item 
+\hypertarget{structg2o_1_1HyperDijkstra_ad43cae6d9e1df2cf7db839f504ba6cc5}{Hyper\-Graph\-::\-Vertex\-Set {\bfseries \-\_\-visited}}\label{structg2o_1_1HyperDijkstra_ad43cae6d9e1df2cf7db839f504ba6cc5}
+
+\item 
+\hypertarget{structg2o_1_1HyperDijkstra_a1bf21d65ddd6e0feeb6a76f58d7f2c6e}{\hyperlink{classg2o_1_1HyperGraph}{Hyper\-Graph} $\ast$ {\bfseries \-\_\-graph}}\label{structg2o_1_1HyperDijkstra_a1bf21d65ddd6e0feeb6a76f58d7f2c6e}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{详细描述}
+
+
+在文件 hyper\-\_\-dijkstra.\-h 第 39 行定义.
+
+
+
+该结构体的文档由以下文件生成\-:\begin{DoxyCompactItemize}
+\item 
+Thirdparty/g2o/g2o/core/hyper\-\_\-dijkstra.\-h\item 
+Thirdparty/g2o/g2o/core/hyper\-\_\-dijkstra.\-cpp\end{DoxyCompactItemize}

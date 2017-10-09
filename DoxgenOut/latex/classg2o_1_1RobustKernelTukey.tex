@@ -1,0 +1,79 @@
+\hypertarget{classg2o_1_1RobustKernelTukey}{\section{g2o\-:\-:Robust\-Kernel\-Tukey类 参考}
+\label{classg2o_1_1RobustKernelTukey}\index{g2o\-::\-Robust\-Kernel\-Tukey@{g2o\-::\-Robust\-Kernel\-Tukey}}
+}
+
+
+Tukey Cost Function.  
+
+
+
+
+{\ttfamily \#include $<$robust\-\_\-kernel\-\_\-impl.\-h$>$}
+
+
+
+类 g2o\-:\-:Robust\-Kernel\-Tukey 继承关系图\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=204pt]{classg2o_1_1RobustKernelTukey__inherit__graph}
+\end{center}
+\end{figure}
+
+
+g2o\-:\-:Robust\-Kernel\-Tukey 的协作图\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=204pt]{classg2o_1_1RobustKernelTukey__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classg2o_1_1RobustKernelTukey_a0602ba130364506d65fb86f3473209aa}{virtual void {\bfseries set\-Delta\-Sqr} (const double \&delta\-Sqr, const double \&inv)}\label{classg2o_1_1RobustKernelTukey_a0602ba130364506d65fb86f3473209aa}
+
+\item 
+virtual void \hyperlink{classg2o_1_1RobustKernelTukey_abcc5f9921110f775db6d652f8fcf4f42}{robustify} (double e2, Eigen\-::\-Vector3d \&rho) const 
+\end{DoxyCompactItemize}
+\subsection*{额外继承的成员函数}
+
+
+\subsection{详细描述}
+Tukey Cost Function. 
+
+If e$^\wedge$(1/2) $<$ d rho(e) = delta2(1-\/(1-\/e/delta2)$^\wedge$3)
+
+else
+
+rho(e) = delta2 
+
+在文件 robust\-\_\-kernel\-\_\-impl.\-h 第 99 行定义.
+
+
+
+\subsection{成员函数说明}
+\hypertarget{classg2o_1_1RobustKernelTukey_abcc5f9921110f775db6d652f8fcf4f42}{\index{g2o\-::\-Robust\-Kernel\-Tukey@{g2o\-::\-Robust\-Kernel\-Tukey}!robustify@{robustify}}
+\index{robustify@{robustify}!g2o::RobustKernelTukey@{g2o\-::\-Robust\-Kernel\-Tukey}}
+\subsubsection[{robustify}]{\setlength{\rightskip}{0pt plus 5cm}void g2o\-::\-Robust\-Kernel\-Tukey\-::robustify (
+\begin{DoxyParamCaption}
+\item[{double}]{squared\-Error, }
+\item[{Eigen\-::\-Vector3d \&}]{rho}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classg2o_1_1RobustKernelTukey_abcc5f9921110f775db6d652f8fcf4f42}
+compute the scaling factor for a error\-: The error is e$^\wedge$\-T Omega e The output rho is rho\mbox{[}0\mbox{]}\-: The actual scaled error value rho\mbox{[}1\mbox{]}\-: First derivative of the scaling function rho\mbox{[}2\mbox{]}\-: Second derivative of the scaling function 
+
+实现了 \hyperlink{classg2o_1_1RobustKernel_ab47b071a0cfe466be063f0104bc41d0f}{g2o\-::\-Robust\-Kernel}.
+
+
+
+在文件 robust\-\_\-kernel\-\_\-impl.\-cpp 第 100 行定义.
+
+
+
+该类的文档由以下文件生成\-:\begin{DoxyCompactItemize}
+\item 
+Thirdparty/g2o/g2o/core/robust\-\_\-kernel\-\_\-impl.\-h\item 
+Thirdparty/g2o/g2o/core/robust\-\_\-kernel\-\_\-impl.\-cpp\end{DoxyCompactItemize}

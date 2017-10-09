@@ -1,0 +1,4 @@
+<map id="ORB_SLAM2::KeyFrame::GetWeight" name="ORB_SLAM2::KeyFrame::GetWeight">
+<area shape="rect" id="node2" href="$classORB__SLAM2_1_1Optimizer.html#ad36bb1a7167c84f385c3f299bc96f20e" title="闭环检测后，EssentialGraph优化 " alt="" coords="224,5,395,46"/>
+<area shape="rect" id="node3" href="$classORB__SLAM2_1_1LoopClosing.html#aa007e0678582ec0de5d71280d23af540" title="闭环 " alt="" coords="443,5,624,46"/>
+</map>

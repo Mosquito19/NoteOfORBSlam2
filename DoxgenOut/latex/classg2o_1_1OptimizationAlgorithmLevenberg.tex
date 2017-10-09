@@ -1,0 +1,254 @@
+\hypertarget{classg2o_1_1OptimizationAlgorithmLevenberg}{\section{g2o\-:\-:Optimization\-Algorithm\-Levenberg类 参考}
+\label{classg2o_1_1OptimizationAlgorithmLevenberg}\index{g2o\-::\-Optimization\-Algorithm\-Levenberg@{g2o\-::\-Optimization\-Algorithm\-Levenberg}}
+}
+
+
+Implementation of the Levenberg Algorithm.  
+
+
+
+
+{\ttfamily \#include $<$optimization\-\_\-algorithm\-\_\-levenberg.\-h$>$}
+
+
+
+类 g2o\-:\-:Optimization\-Algorithm\-Levenberg 继承关系图\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=214pt]{classg2o_1_1OptimizationAlgorithmLevenberg__inherit__graph}
+\end{center}
+\end{figure}
+
+
+g2o\-:\-:Optimization\-Algorithm\-Levenberg 的协作图\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classg2o_1_1OptimizationAlgorithmLevenberg__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classg2o_1_1OptimizationAlgorithmLevenberg_aecdac695d6406eb2234bbd8a0c4d53a3}{Optimization\-Algorithm\-Levenberg} (\hyperlink{classg2o_1_1Solver}{Solver} $\ast$\hyperlink{classg2o_1_1OptimizationAlgorithmWithHessian_a85473a4073c76b1a52cf9cf175e31c45}{solver})
+\item 
+virtual Solver\-Result \hyperlink{classg2o_1_1OptimizationAlgorithmLevenberg_a7140fa989b54eac4e09ba17829dcada0}{solve} (int iteration, bool online=false)
+\item 
+virtual void \hyperlink{classg2o_1_1OptimizationAlgorithmLevenberg_aed32286a2e441240f34dd5d1dbcd6d56}{print\-Verbose} (std\-::ostream \&os) const 
+\item 
+\hypertarget{classg2o_1_1OptimizationAlgorithmLevenberg_aa1b7ffe63dbeae410128c5cc6c95a7ab}{double \hyperlink{classg2o_1_1OptimizationAlgorithmLevenberg_aa1b7ffe63dbeae410128c5cc6c95a7ab}{current\-Lambda} () const }\label{classg2o_1_1OptimizationAlgorithmLevenberg_aa1b7ffe63dbeae410128c5cc6c95a7ab}
+
+\begin{DoxyCompactList}\small\item\em return the currently used damping factor \end{DoxyCompactList}\item 
+\hypertarget{classg2o_1_1OptimizationAlgorithmLevenberg_a0fd2212e456428e44ddac693f6d27ac8}{void \hyperlink{classg2o_1_1OptimizationAlgorithmLevenberg_a0fd2212e456428e44ddac693f6d27ac8}{set\-Max\-Trials\-After\-Failure} (int max\-\_\-trials)}\label{classg2o_1_1OptimizationAlgorithmLevenberg_a0fd2212e456428e44ddac693f6d27ac8}
+
+\begin{DoxyCompactList}\small\item\em the number of internal iteration if an update step increases chi$^\wedge$2 within Levenberg-\/\-Marquardt \end{DoxyCompactList}\item 
+\hypertarget{classg2o_1_1OptimizationAlgorithmLevenberg_a76d1c53e6a7e9061c1a8f59f96726e82}{int \hyperlink{classg2o_1_1OptimizationAlgorithmLevenberg_a76d1c53e6a7e9061c1a8f59f96726e82}{max\-Trials\-After\-Failure} () const }\label{classg2o_1_1OptimizationAlgorithmLevenberg_a76d1c53e6a7e9061c1a8f59f96726e82}
+
+\begin{DoxyCompactList}\small\item\em get the number of inner iterations for Levenberg-\/\-Marquardt \end{DoxyCompactList}\item 
+\hypertarget{classg2o_1_1OptimizationAlgorithmLevenberg_a4a4d18c98361a1288db724136d353596}{double \hyperlink{classg2o_1_1OptimizationAlgorithmLevenberg_a4a4d18c98361a1288db724136d353596}{user\-Lambda\-Init} ()}\label{classg2o_1_1OptimizationAlgorithmLevenberg_a4a4d18c98361a1288db724136d353596}
+
+\begin{DoxyCompactList}\small\item\em return the lambda set by the user, if $<$ 0 the \hyperlink{classg2o_1_1SparseOptimizer}{Sparse\-Optimizer} will compute the initial lambda \end{DoxyCompactList}\item 
+\hypertarget{classg2o_1_1OptimizationAlgorithmLevenberg_a9388e5e7800b18acb0db0a9a7be031a6}{void \hyperlink{classg2o_1_1OptimizationAlgorithmLevenberg_a9388e5e7800b18acb0db0a9a7be031a6}{set\-User\-Lambda\-Init} (double lambda)}\label{classg2o_1_1OptimizationAlgorithmLevenberg_a9388e5e7800b18acb0db0a9a7be031a6}
+
+\begin{DoxyCompactList}\small\item\em specify the initial lambda used for the first iteraion, if not given the \hyperlink{classg2o_1_1SparseOptimizer}{Sparse\-Optimizer} tries to compute a suitable value \end{DoxyCompactList}\item 
+\hypertarget{classg2o_1_1OptimizationAlgorithmLevenberg_a6d458d8a89069fab92fab75c1255a523}{int \hyperlink{classg2o_1_1OptimizationAlgorithmLevenberg_a6d458d8a89069fab92fab75c1255a523}{levenberg\-Iteration} ()}\label{classg2o_1_1OptimizationAlgorithmLevenberg_a6d458d8a89069fab92fab75c1255a523}
+
+\begin{DoxyCompactList}\small\item\em return the number of levenberg iterations performed in the last round \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+double \hyperlink{classg2o_1_1OptimizationAlgorithmLevenberg_a84d860857af44977ab5358527475ce54}{compute\-Lambda\-Init} () const 
+\item 
+\hypertarget{classg2o_1_1OptimizationAlgorithmLevenberg_a3938bf95baa0088f9cd4b56a19540c90}{double {\bfseries compute\-Scale} () const }\label{classg2o_1_1OptimizationAlgorithmLevenberg_a3938bf95baa0088f9cd4b56a19540c90}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected 属性}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classg2o_1_1OptimizationAlgorithmLevenberg_a1f3b03bbcb2dbeed686069bed8783b80}{\hyperlink{classg2o_1_1Property}{Property}$<$ int $>$ $\ast$ {\bfseries \-\_\-max\-Trials\-After\-Failure}}\label{classg2o_1_1OptimizationAlgorithmLevenberg_a1f3b03bbcb2dbeed686069bed8783b80}
+
+\item 
+\hypertarget{classg2o_1_1OptimizationAlgorithmLevenberg_a021c97d3f8205ec2ae7fde147f98b452}{\hyperlink{classg2o_1_1Property}{Property}$<$ double $>$ $\ast$ {\bfseries \-\_\-user\-Lambda\-Init}}\label{classg2o_1_1OptimizationAlgorithmLevenberg_a021c97d3f8205ec2ae7fde147f98b452}
+
+\item 
+\hypertarget{classg2o_1_1OptimizationAlgorithmLevenberg_aec7bba815e20361aa7ccc4661f90a034}{double {\bfseries \-\_\-current\-Lambda}}\label{classg2o_1_1OptimizationAlgorithmLevenberg_aec7bba815e20361aa7ccc4661f90a034}
+
+\item 
+\hypertarget{classg2o_1_1OptimizationAlgorithmLevenberg_ac09602f23e52c5dbc6be1bf77e9f9d5f}{double {\bfseries \-\_\-tau}}\label{classg2o_1_1OptimizationAlgorithmLevenberg_ac09602f23e52c5dbc6be1bf77e9f9d5f}
+
+\item 
+\hypertarget{classg2o_1_1OptimizationAlgorithmLevenberg_a4951bc2e2fcca2c4eae4864690a4c087}{double \hyperlink{classg2o_1_1OptimizationAlgorithmLevenberg_a4951bc2e2fcca2c4eae4864690a4c087}{\-\_\-good\-Step\-Lower\-Scale}}\label{classg2o_1_1OptimizationAlgorithmLevenberg_a4951bc2e2fcca2c4eae4864690a4c087}
+
+\begin{DoxyCompactList}\small\item\em lower bound for lambda decrease if a good L\-M step \end{DoxyCompactList}\item 
+\hypertarget{classg2o_1_1OptimizationAlgorithmLevenberg_a16d8b5540cd7ae0c132a565e3f49c021}{double \hyperlink{classg2o_1_1OptimizationAlgorithmLevenberg_a16d8b5540cd7ae0c132a565e3f49c021}{\-\_\-good\-Step\-Upper\-Scale}}\label{classg2o_1_1OptimizationAlgorithmLevenberg_a16d8b5540cd7ae0c132a565e3f49c021}
+
+\begin{DoxyCompactList}\small\item\em upper bound for lambda decrease if a good L\-M step \end{DoxyCompactList}\item 
+\hypertarget{classg2o_1_1OptimizationAlgorithmLevenberg_a8bcb1a957056cba788072992c5a8a7a1}{double {\bfseries \-\_\-ni}}\label{classg2o_1_1OptimizationAlgorithmLevenberg_a8bcb1a957056cba788072992c5a8a7a1}
+
+\item 
+\hypertarget{classg2o_1_1OptimizationAlgorithmLevenberg_a2319771c8d3ee0f773bdb86d5416bab7}{int \hyperlink{classg2o_1_1OptimizationAlgorithmLevenberg_a2319771c8d3ee0f773bdb86d5416bab7}{\-\_\-levenberg\-Iterations}}\label{classg2o_1_1OptimizationAlgorithmLevenberg_a2319771c8d3ee0f773bdb86d5416bab7}
+
+\begin{DoxyCompactList}\small\item\em the numer of levenberg iterations performed to accept the last step \end{DoxyCompactList}\item 
+\hypertarget{classg2o_1_1OptimizationAlgorithmLevenberg_a7f0b375c45a9f91f2676548591273c8d}{int {\bfseries \-\_\-n\-Bad}}\label{classg2o_1_1OptimizationAlgorithmLevenberg_a7f0b375c45a9f91f2676548591273c8d}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{详细描述}
+Implementation of the Levenberg Algorithm. 
+
+在文件 optimization\-\_\-algorithm\-\_\-levenberg.\-h 第 38 行定义.
+
+
+
+\subsection{构造及析构函数说明}
+\hypertarget{classg2o_1_1OptimizationAlgorithmLevenberg_aecdac695d6406eb2234bbd8a0c4d53a3}{\index{g2o\-::\-Optimization\-Algorithm\-Levenberg@{g2o\-::\-Optimization\-Algorithm\-Levenberg}!Optimization\-Algorithm\-Levenberg@{Optimization\-Algorithm\-Levenberg}}
+\index{Optimization\-Algorithm\-Levenberg@{Optimization\-Algorithm\-Levenberg}!g2o::OptimizationAlgorithmLevenberg@{g2o\-::\-Optimization\-Algorithm\-Levenberg}}
+\subsubsection[{Optimization\-Algorithm\-Levenberg}]{\setlength{\rightskip}{0pt plus 5cm}g2o\-::\-Optimization\-Algorithm\-Levenberg\-::\-Optimization\-Algorithm\-Levenberg (
+\begin{DoxyParamCaption}
+\item[{{\bf Solver} $\ast$}]{solver}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [explicit]}}}\label{classg2o_1_1OptimizationAlgorithmLevenberg_aecdac695d6406eb2234bbd8a0c4d53a3}
+construct the Levenberg algorithm, which will use the given \hyperlink{classg2o_1_1Solver}{Solver} for solving the linearized system. 
+
+在文件 optimization\-\_\-algorithm\-\_\-levenberg.\-cpp 第 43 行定义.
+
+
+
+参考 \-\_\-good\-Step\-Lower\-Scale, \-\_\-good\-Step\-Upper\-Scale, \-\_\-levenberg\-Iterations, g2o\-::\-Optimization\-Algorithm\-::\-\_\-properties , 以及 g2o\-::\-Property\-Map\-::make\-Property().
+
+
+
+函数调用图\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classg2o_1_1OptimizationAlgorithmLevenberg_aecdac695d6406eb2234bbd8a0c4d53a3_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{成员函数说明}
+\hypertarget{classg2o_1_1OptimizationAlgorithmLevenberg_a84d860857af44977ab5358527475ce54}{\index{g2o\-::\-Optimization\-Algorithm\-Levenberg@{g2o\-::\-Optimization\-Algorithm\-Levenberg}!compute\-Lambda\-Init@{compute\-Lambda\-Init}}
+\index{compute\-Lambda\-Init@{compute\-Lambda\-Init}!g2o::OptimizationAlgorithmLevenberg@{g2o\-::\-Optimization\-Algorithm\-Levenberg}}
+\subsubsection[{compute\-Lambda\-Init}]{\setlength{\rightskip}{0pt plus 5cm}double g2o\-::\-Optimization\-Algorithm\-Levenberg\-::compute\-Lambda\-Init (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [protected]}}}\label{classg2o_1_1OptimizationAlgorithmLevenberg_a84d860857af44977ab5358527475ce54}
+helper for Levenberg, this function computes the initial damping factor, if the user did not specify an own value, see \hyperlink{classg2o_1_1OptimizationAlgorithmLevenberg_a9388e5e7800b18acb0db0a9a7be031a6}{set\-User\-Lambda\-Init()} 
+
+在文件 optimization\-\_\-algorithm\-\_\-levenberg.\-cpp 第 166 行定义.
+
+
+
+参考 g2o\-::\-Optimization\-Algorithm\-::\-\_\-optimizer, g2o\-::\-Optimizable\-Graph\-::\-Vertex\-::dimension(), g2o\-::\-Optimizable\-Graph\-::\-Vertex\-::hessian() , 以及 g2o\-::\-Sparse\-Optimizer\-::index\-Mapping().
+
+
+
+参考自 solve().
+
+
+
+函数调用图\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classg2o_1_1OptimizationAlgorithmLevenberg_a84d860857af44977ab5358527475ce54_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+这是这个函数的调用关系图\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classg2o_1_1OptimizationAlgorithmLevenberg_a84d860857af44977ab5358527475ce54_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classg2o_1_1OptimizationAlgorithmLevenberg_aed32286a2e441240f34dd5d1dbcd6d56}{\index{g2o\-::\-Optimization\-Algorithm\-Levenberg@{g2o\-::\-Optimization\-Algorithm\-Levenberg}!print\-Verbose@{print\-Verbose}}
+\index{print\-Verbose@{print\-Verbose}!g2o::OptimizationAlgorithmLevenberg@{g2o\-::\-Optimization\-Algorithm\-Levenberg}}
+\subsubsection[{print\-Verbose}]{\setlength{\rightskip}{0pt plus 5cm}void g2o\-::\-Optimization\-Algorithm\-Levenberg\-::print\-Verbose (
+\begin{DoxyParamCaption}
+\item[{std\-::ostream \&}]{os}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classg2o_1_1OptimizationAlgorithmLevenberg_aed32286a2e441240f34dd5d1dbcd6d56}
+called by the optimizer if verbose. re-\/implement, if you want to print something 
+
+重载 \hyperlink{classg2o_1_1OptimizationAlgorithm_a61fe205d498ed3b0ac1f812a78c4b0f0}{g2o\-::\-Optimization\-Algorithm} .
+
+
+
+在文件 optimization\-\_\-algorithm\-\_\-levenberg.\-cpp 第 201 行定义.
+
+
+
+参考 \-\_\-levenberg\-Iterations , 以及 g2o\-::\-Solver\-::schur().
+
+
+
+函数调用图\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=346pt]{classg2o_1_1OptimizationAlgorithmLevenberg_aed32286a2e441240f34dd5d1dbcd6d56_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classg2o_1_1OptimizationAlgorithmLevenberg_a7140fa989b54eac4e09ba17829dcada0}{\index{g2o\-::\-Optimization\-Algorithm\-Levenberg@{g2o\-::\-Optimization\-Algorithm\-Levenberg}!solve@{solve}}
+\index{solve@{solve}!g2o::OptimizationAlgorithmLevenberg@{g2o\-::\-Optimization\-Algorithm\-Levenberg}}
+\subsubsection[{solve}]{\setlength{\rightskip}{0pt plus 5cm}Optimization\-Algorithm\-::\-Solver\-Result g2o\-::\-Optimization\-Algorithm\-Levenberg\-::solve (
+\begin{DoxyParamCaption}
+\item[{int}]{iteration, }
+\item[{bool}]{online = {\ttfamily false}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classg2o_1_1OptimizationAlgorithmLevenberg_a7140fa989b54eac4e09ba17829dcada0}
+Solve one iteration. The \hyperlink{classg2o_1_1SparseOptimizer}{Sparse\-Optimizer} running on-\/top will call this for the given number of iterations. 
+\begin{DoxyParams}{参数}
+{\em iteration} & indicates the current iteration \\
+\hline
+\end{DoxyParams}
+
+
+实现了 \hyperlink{classg2o_1_1OptimizationAlgorithm_ab174deeeb2551ceaf715ea09f0f9c077}{g2o\-::\-Optimization\-Algorithm}.
+
+
+
+在文件 optimization\-\_\-algorithm\-\_\-levenberg.\-cpp 第 61 行定义.
+
+
+
+参考 \-\_\-good\-Step\-Lower\-Scale, \-\_\-good\-Step\-Upper\-Scale, \-\_\-levenberg\-Iterations, g2o\-::\-Optimization\-Algorithm\-::\-\_\-optimizer, g2o\-::\-Sparse\-Optimizer\-::active\-Robust\-Chi2(), g2o\-::\-Solver\-::build\-Structure(), g2o\-::\-Solver\-::build\-System(), g2o\-::\-Sparse\-Optimizer\-::compute\-Active\-Errors(), compute\-Lambda\-Init(), g2o\-::\-Sparse\-Optimizer\-::discard\-Top(), g2o\-::\-G2\-O\-Batch\-Statistics\-::levenberg\-Iterations, g2o\-::\-Solver\-::optimizer(), g2o\-::\-Sparse\-Optimizer\-::pop(), g2o\-::\-Sparse\-Optimizer\-::push(), g2o\-::\-Solver\-::restore\-Diagonal(), g2o\-::\-Solver\-::set\-Lambda(), g2o\-::\-Solver\-::solve(), g2o\-::\-Sparse\-Optimizer\-::terminate(), g2o\-::\-G2\-O\-Batch\-Statistics\-::time\-Linear\-Solution, g2o\-::\-G2\-O\-Batch\-Statistics\-::time\-Quadratic\-Form, g2o\-::\-G2\-O\-Batch\-Statistics\-::time\-Residuals, g2o\-::\-G2\-O\-Batch\-Statistics\-::time\-Update , 以及 g2o\-::\-Solver\-::x().
+
+
+
+函数调用图\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classg2o_1_1OptimizationAlgorithmLevenberg_a7140fa989b54eac4e09ba17829dcada0_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+该类的文档由以下文件生成\-:\begin{DoxyCompactItemize}
+\item 
+Thirdparty/g2o/g2o/core/optimization\-\_\-algorithm\-\_\-levenberg.\-h\item 
+Thirdparty/g2o/g2o/core/optimization\-\_\-algorithm\-\_\-levenberg.\-cpp\end{DoxyCompactItemize}

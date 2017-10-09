@@ -1,0 +1,6 @@
+<map id="类继承关系图" name="类继承关系图">
+<area shape="rect" id="node1" href="$classg2o_1_1HyperGraphElementAction.html" title="Abstract action that operates on a graph entity. " alt="" coords="6,64,213,91"/>
+<area shape="rect" id="node2" href="$classg2o_1_1DrawAction.html" title="draw actions " alt="" coords="306,5,425,32"/>
+<area shape="rect" id="node3" href="$classg2o_1_1HyperGraphElementActionCollection.html" title="collection of actions " alt="" coords="262,57,469,98"/>
+<area shape="rect" id="node4" href="$classg2o_1_1WriteGnuplotAction.html" title="g2o::WriteGnuplotAction" alt="" coords="283,123,447,149"/>
+</map>

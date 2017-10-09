@@ -1,0 +1,279 @@
+\hypertarget{classDUtils_1_1Random}{\section{D\-Utils\-:\-:Random类 参考}
+\label{classDUtils_1_1Random}\index{D\-Utils\-::\-Random@{D\-Utils\-::\-Random}}
+}
+
+
+Functions to generate pseudo-\/random numbers.  
+
+
+
+
+{\ttfamily \#include $<$Random.\-h$>$}
+
+\subsection*{类}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classDUtils_1_1Random_1_1UnrepeatedRandomizer}{Unrepeated\-Randomizer}
+\begin{DoxyCompactList}\small\item\em Provides pseudo-\/random numbers with no repetitions. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{静态 Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+static void \hyperlink{classDUtils_1_1Random_a719a6489316343a771e062f0be58050f}{Seed\-Rand} ()
+\item 
+static void \hyperlink{classDUtils_1_1Random_a168e77d82ce1e66c6759e97ef27adbbc}{Seed\-Rand\-Once} ()
+\item 
+static void \hyperlink{classDUtils_1_1Random_aec19d58856a0cf0b48d783119a497233}{Seed\-Rand} (int seed)
+\item 
+static void \hyperlink{classDUtils_1_1Random_ad3652f5d105ca4f6f22696b64f2a4a5d}{Seed\-Rand\-Once} (int seed)
+\item 
+{\footnotesize template$<$class T $>$ }\\static T \hyperlink{classDUtils_1_1Random_ac5d2e4d977afdec30071c531a7a96d88}{Random\-Value} ()
+\item 
+{\footnotesize template$<$class T $>$ }\\static T \hyperlink{classDUtils_1_1Random_a13760f5d6d4b866fbcc350dbb0d39d02}{Random\-Value} (T min, T max)
+\item 
+static int \hyperlink{classDUtils_1_1Random_aa25012101ecbca54025d5430bcf93d86}{Random\-Int} (int min, int max)
+\item 
+{\footnotesize template$<$class T $>$ }\\static T \hyperlink{classDUtils_1_1Random_a2c769bcd60a08fc3eba3ef4abf9761d5}{Random\-Gaussian\-Value} (T mean, T sigma)
+\end{DoxyCompactItemize}
+
+
+\subsection{详细描述}
+Functions to generate pseudo-\/random numbers. 
+
+在文件 Random.\-h 第 23 行定义.
+
+
+
+\subsection{成员函数说明}
+\hypertarget{classDUtils_1_1Random_a2c769bcd60a08fc3eba3ef4abf9761d5}{\index{D\-Utils\-::\-Random@{D\-Utils\-::\-Random}!Random\-Gaussian\-Value@{Random\-Gaussian\-Value}}
+\index{Random\-Gaussian\-Value@{Random\-Gaussian\-Value}!DUtils::Random@{D\-Utils\-::\-Random}}
+\subsubsection[{Random\-Gaussian\-Value}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ static T D\-Utils\-::\-Random\-::\-Random\-Gaussian\-Value (
+\begin{DoxyParamCaption}
+\item[{T}]{mean, }
+\item[{T}]{sigma}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}}\label{classDUtils_1_1Random_a2c769bcd60a08fc3eba3ef4abf9761d5}
+Returns a random number from a gaussian distribution 
+\begin{DoxyParams}{参数}
+{\em mean} & \\
+\hline
+{\em sigma} & standard deviation \\
+\hline
+\end{DoxyParams}
+
+
+在文件 Random.\-h 第 87 行定义.
+
+\hypertarget{classDUtils_1_1Random_aa25012101ecbca54025d5430bcf93d86}{\index{D\-Utils\-::\-Random@{D\-Utils\-::\-Random}!Random\-Int@{Random\-Int}}
+\index{Random\-Int@{Random\-Int}!DUtils::Random@{D\-Utils\-::\-Random}}
+\subsubsection[{Random\-Int}]{\setlength{\rightskip}{0pt plus 5cm}int D\-Utils\-::\-Random\-::\-Random\-Int (
+\begin{DoxyParamCaption}
+\item[{int}]{min, }
+\item[{int}]{max}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classDUtils_1_1Random_aa25012101ecbca54025d5430bcf93d86}
+Returns a random int in the range \mbox{[}min..max\mbox{]} 
+\begin{DoxyParams}{参数}
+{\em min} & \\
+\hline
+{\em max} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+random int in \mbox{[}min..max\mbox{]} 
+\end{DoxyReturn}
+
+
+在文件 Random.\-cpp 第 47 行定义.
+
+
+
+参考自 D\-Utils\-::\-Random\-::\-Unrepeated\-Randomizer\-::get(), O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Initializer\-::\-Initialize() , 以及 D\-Bo\-W2\-::\-Templated\-Vocabulary$<$ T\-Descriptor, F $>$\-::initiate\-Clusters\-K\-Mpp().
+
+
+
+这是这个函数的调用关系图\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classDUtils_1_1Random_aa25012101ecbca54025d5430bcf93d86_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classDUtils_1_1Random_ac5d2e4d977afdec30071c531a7a96d88}{\index{D\-Utils\-::\-Random@{D\-Utils\-::\-Random}!Random\-Value@{Random\-Value}}
+\index{Random\-Value@{Random\-Value}!DUtils::Random@{D\-Utils\-::\-Random}}
+\subsubsection[{Random\-Value}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ static T D\-Utils\-::\-Random\-::\-Random\-Value (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}}\label{classDUtils_1_1Random_ac5d2e4d977afdec30071c531a7a96d88}
+Returns a random number in the range \mbox{[}0..1\mbox{]} \begin{DoxyReturn}{返回}
+random T number in \mbox{[}0..1\mbox{]} 
+\end{DoxyReturn}
+
+
+在文件 Random.\-h 第 58 行定义.
+
+\hypertarget{classDUtils_1_1Random_a13760f5d6d4b866fbcc350dbb0d39d02}{\index{D\-Utils\-::\-Random@{D\-Utils\-::\-Random}!Random\-Value@{Random\-Value}}
+\index{Random\-Value@{Random\-Value}!DUtils::Random@{D\-Utils\-::\-Random}}
+\subsubsection[{Random\-Value}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ static T D\-Utils\-::\-Random\-::\-Random\-Value (
+\begin{DoxyParamCaption}
+\item[{T}]{min, }
+\item[{T}]{max}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}}\label{classDUtils_1_1Random_a13760f5d6d4b866fbcc350dbb0d39d02}
+Returns a random number in the range \mbox{[}min..max\mbox{]} 
+\begin{DoxyParams}{参数}
+{\em min} & \\
+\hline
+{\em max} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+random T number in \mbox{[}min..max\mbox{]} 
+\end{DoxyReturn}
+
+
+在文件 Random.\-h 第 69 行定义.
+
+\hypertarget{classDUtils_1_1Random_a719a6489316343a771e062f0be58050f}{\index{D\-Utils\-::\-Random@{D\-Utils\-::\-Random}!Seed\-Rand@{Seed\-Rand}}
+\index{Seed\-Rand@{Seed\-Rand}!DUtils::Random@{D\-Utils\-::\-Random}}
+\subsubsection[{Seed\-Rand}]{\setlength{\rightskip}{0pt plus 5cm}void D\-Utils\-::\-Random\-::\-Seed\-Rand (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classDUtils_1_1Random_a719a6489316343a771e062f0be58050f}
+Sets the random number seed to the current time 
+
+在文件 Random.\-cpp 第 18 行定义.
+
+
+
+参考 D\-Utils\-::\-Timestamp\-::get\-Float\-Time() , 以及 D\-Utils\-::\-Timestamp\-::set\-To\-Current\-Time().
+
+
+
+参考自 Seed\-Rand\-Once().
+
+
+
+函数调用图\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classDUtils_1_1Random_a719a6489316343a771e062f0be58050f_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+这是这个函数的调用关系图\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classDUtils_1_1Random_a719a6489316343a771e062f0be58050f_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classDUtils_1_1Random_aec19d58856a0cf0b48d783119a497233}{\index{D\-Utils\-::\-Random@{D\-Utils\-::\-Random}!Seed\-Rand@{Seed\-Rand}}
+\index{Seed\-Rand@{Seed\-Rand}!DUtils::Random@{D\-Utils\-::\-Random}}
+\subsubsection[{Seed\-Rand}]{\setlength{\rightskip}{0pt plus 5cm}void D\-Utils\-::\-Random\-::\-Seed\-Rand (
+\begin{DoxyParamCaption}
+\item[{int}]{seed}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classDUtils_1_1Random_aec19d58856a0cf0b48d783119a497233}
+Sets the given random number seed 
+\begin{DoxyParams}{参数}
+{\em seed} & \\
+\hline
+\end{DoxyParams}
+
+
+在文件 Random.\-cpp 第 33 行定义.
+
+\hypertarget{classDUtils_1_1Random_a168e77d82ce1e66c6759e97ef27adbbc}{\index{D\-Utils\-::\-Random@{D\-Utils\-::\-Random}!Seed\-Rand\-Once@{Seed\-Rand\-Once}}
+\index{Seed\-Rand\-Once@{Seed\-Rand\-Once}!DUtils::Random@{D\-Utils\-::\-Random}}
+\subsubsection[{Seed\-Rand\-Once}]{\setlength{\rightskip}{0pt plus 5cm}void D\-Utils\-::\-Random\-::\-Seed\-Rand\-Once (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classDUtils_1_1Random_a168e77d82ce1e66c6759e97ef27adbbc}
+Sets the random number seed to the current time only the first time this function is called 
+
+在文件 Random.\-cpp 第 24 行定义.
+
+
+
+参考 Seed\-Rand().
+
+
+
+参考自 D\-Utils\-::\-Random\-::\-Unrepeated\-Randomizer\-::get(), O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Initializer\-::\-Initialize() , 以及 D\-Bo\-W2\-::\-Templated\-Vocabulary$<$ T\-Descriptor, F $>$\-::initiate\-Clusters\-K\-Mpp().
+
+
+
+函数调用图\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classDUtils_1_1Random_a168e77d82ce1e66c6759e97ef27adbbc_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+这是这个函数的调用关系图\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classDUtils_1_1Random_a168e77d82ce1e66c6759e97ef27adbbc_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classDUtils_1_1Random_ad3652f5d105ca4f6f22696b64f2a4a5d}{\index{D\-Utils\-::\-Random@{D\-Utils\-::\-Random}!Seed\-Rand\-Once@{Seed\-Rand\-Once}}
+\index{Seed\-Rand\-Once@{Seed\-Rand\-Once}!DUtils::Random@{D\-Utils\-::\-Random}}
+\subsubsection[{Seed\-Rand\-Once}]{\setlength{\rightskip}{0pt plus 5cm}void D\-Utils\-::\-Random\-::\-Seed\-Rand\-Once (
+\begin{DoxyParamCaption}
+\item[{int}]{seed}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classDUtils_1_1Random_ad3652f5d105ca4f6f22696b64f2a4a5d}
+Sets the given random number seed only the first time this function is called 
+\begin{DoxyParams}{参数}
+{\em seed} & \\
+\hline
+\end{DoxyParams}
+
+
+在文件 Random.\-cpp 第 38 行定义.
+
+
+
+参考 Seed\-Rand().
+
+
+
+函数调用图\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classDUtils_1_1Random_ad3652f5d105ca4f6f22696b64f2a4a5d_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+该类的文档由以下文件生成\-:\begin{DoxyCompactItemize}
+\item 
+Thirdparty/\-D\-Bo\-W2/\-D\-Utils/Random.\-h\item 
+Thirdparty/\-D\-Bo\-W2/\-D\-Utils/Random.\-cpp\end{DoxyCompactItemize}

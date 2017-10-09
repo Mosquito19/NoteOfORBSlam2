@@ -1,0 +1,12 @@
+<map id="ORB_SLAM2::Frame::SetPose" name="ORB_SLAM2::Frame::SetPose">
+<area shape="rect" id="node2" href="$classORB__SLAM2_1_1Tracking.html#afeb077c81cd700d779348b80698086e8" title="CreateInitialMapMonocular. " alt="" coords="262,5,447,46"/>
+<area shape="rect" id="node3" href="$classORB__SLAM2_1_1Tracking.html#a7e81c68bb6ced27fcbfa2edec38ef6e0" title="单目的地图初始化 " alt="" coords="511,55,670,97"/>
+<area shape="rect" id="node4" href="$classORB__SLAM2_1_1Tracking.html#af1f2c9c533642d8c33854540e90d1918" title="Main tracking function. It is independent of the input sensor. " alt="" coords="731,242,890,283"/>
+<area shape="rect" id="node5" href="$classORB__SLAM2_1_1Frame.html#ac7e6ed9973b81ec85e91228e3d4ecf22" title="Copy constructor. " alt="" coords="259,172,450,199"/>
+<area shape="rect" id="node6" href="$classORB__SLAM2_1_1Optimizer.html#a7415d78b8a2323b88e108fa1ea3bf2d3" title="Pose Only Optimization. " alt="" coords="272,274,437,315"/>
+<area shape="rect" id="node7" href="$classORB__SLAM2_1_1Tracking.html#a737c5409c93844353561a0fe724ed1c2" title="对参考关键帧的MapPoints进行跟踪 " alt="" coords="499,209,682,250"/>
+<area shape="rect" id="node8" href="$classORB__SLAM2_1_1Tracking.html#aca19f1d69b30a6c6e49281d422ac8298" title="根据匀速度模型对上一帧的MapPoints进行跟踪 " alt="" coords="509,339,673,381"/>
+<area shape="rect" id="node10" href="$classORB__SLAM2_1_1Tracking.html#ad3da849e4204d766e5db4ac47b52132c" title="双目和rgbd的地图初始化 " alt="" coords="511,427,670,469"/>
+<area shape="rect" id="node11" href="$classORB__SLAM2_1_1Tracking.html#aa84a20277d5bd022b527d79a58830bc5" title="双目或rgbd摄像头根据深度值为上一帧产生新的MapPoints " alt="" coords="275,391,434,433"/>
+<area shape="rect" id="node9" href="$classORB__SLAM2_1_1Tracking.html#af670c614f4e10d58c9f7aad9865b5c08" title="对Local Map的MapPoints进行跟踪 " alt="" coords="511,274,670,315"/>
+</map>

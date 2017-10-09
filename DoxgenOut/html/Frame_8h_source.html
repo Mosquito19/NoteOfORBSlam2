@@ -1,0 +1,355 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.6"/>
+<title>My Project: include/Frame.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">My Project
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.6 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="pages.html"><span>相关页面</span></a></li>
+      <li><a href="modules.html"><span>模块</span></a></li>
+      <li><a href="namespaces.html"><span>命名空间</span></a></li>
+      <li><a href="annotated.html"><span>类</span></a></li>
+      <li class="current"><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>文件列表</span></a></li>
+      <li><a href="globals.html"><span>文件成员</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('Frame_8h_source.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>命名空间</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>友元</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>组</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>页</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">Frame.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#ifndef FRAME_H</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define FRAME_H</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#include&lt;vector&gt;</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#include &quot;MapPoint.h&quot;</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#include &quot;Thirdparty/DBoW2/DBoW2/BowVector.h&quot;</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#include &quot;Thirdparty/DBoW2/DBoW2/FeatureVector.h&quot;</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#include &quot;ORBVocabulary.h&quot;</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#include &quot;KeyFrame.h&quot;</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#include &quot;ORBextractor.h&quot;</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor">#include &lt;opencv2/opencv.hpp&gt;</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="keyword">namespace </span>ORB_SLAM2</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;{</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="preprocessor">#define FRAME_GRID_ROWS 48</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define FRAME_GRID_COLS 64</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="keyword">class </span>MapPoint;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="keyword">class </span>KeyFrame;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div>
+<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="classORB__SLAM2_1_1Frame.html">   43</a></span>&#160;<span class="keyword">class </span><a class="code" href="classORB__SLAM2_1_1Frame.html">Frame</a></div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;{</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <a class="code" href="classORB__SLAM2_1_1Frame.html">Frame</a>();</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="comment">// Copy constructor.</span></div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <a class="code" href="classORB__SLAM2_1_1Frame.html">Frame</a>(<span class="keyword">const</span> <a class="code" href="classORB__SLAM2_1_1Frame.html">Frame</a> &amp;frame);</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="comment">// Constructor for stereo cameras.</span></div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <a class="code" href="classORB__SLAM2_1_1Frame.html">Frame</a>(<span class="keyword">const</span> cv::Mat &amp;imLeft, <span class="keyword">const</span> cv::Mat &amp;imRight, <span class="keyword">const</span> <span class="keywordtype">double</span> &amp;timeStamp, <a class="code" href="classORB__SLAM2_1_1ORBextractor.html">ORBextractor</a>* extractorLeft, <a class="code" href="classORB__SLAM2_1_1ORBextractor.html">ORBextractor</a>* extractorRight, <a class="code" href="classDBoW2_1_1TemplatedVocabulary.html">ORBVocabulary</a>* voc, cv::Mat &amp;K, cv::Mat &amp;distCoef, <span class="keyword">const</span> <span class="keywordtype">float</span> &amp;bf, <span class="keyword">const</span> <span class="keywordtype">float</span> &amp;thDepth);</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="comment">// Constructor for RGB-D cameras.</span></div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <a class="code" href="classORB__SLAM2_1_1Frame.html">Frame</a>(<span class="keyword">const</span> cv::Mat &amp;imGray, <span class="keyword">const</span> cv::Mat &amp;imDepth, <span class="keyword">const</span> <span class="keywordtype">double</span> &amp;timeStamp, <a class="code" href="classORB__SLAM2_1_1ORBextractor.html">ORBextractor</a>* extractor,<a class="code" href="classDBoW2_1_1TemplatedVocabulary.html">ORBVocabulary</a>* voc, cv::Mat &amp;K, cv::Mat &amp;distCoef, <span class="keyword">const</span> <span class="keywordtype">float</span> &amp;bf, <span class="keyword">const</span> <span class="keywordtype">float</span> &amp;thDepth);</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="comment">// Constructor for Monocular cameras.</span></div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <a class="code" href="classORB__SLAM2_1_1Frame.html">Frame</a>(<span class="keyword">const</span> cv::Mat &amp;imGray, <span class="keyword">const</span> <span class="keywordtype">double</span> &amp;timeStamp, <a class="code" href="classORB__SLAM2_1_1ORBextractor.html">ORBextractor</a>* extractor,<a class="code" href="classDBoW2_1_1TemplatedVocabulary.html">ORBVocabulary</a>* voc, cv::Mat &amp;K, cv::Mat &amp;distCoef, <span class="keyword">const</span> <span class="keywordtype">float</span> &amp;bf, <span class="keyword">const</span> <span class="keywordtype">float</span> &amp;thDepth);</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="comment">// Extract ORB on the image. 0 for left image and 1 for right image.</span></div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="comment">// 提取的关键点存放在mvKeys和mDescriptors中</span></div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="comment">// ORB是直接调orbExtractor提取的</span></div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="keywordtype">void</span> ExtractORB(<span class="keywordtype">int</span> flag, <span class="keyword">const</span> cv::Mat &amp;im);</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="comment">// Compute Bag of Words representation.</span></div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="comment">// 存放在mBowVec中</span></div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classORB__SLAM2_1_1Frame.html#ac748d2318f9a409406dba4910ff5ef8e">ComputeBoW</a>();</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="comment">// Set the camera pose.</span></div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="comment">// 用Tcw更新mTcw</span></div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classORB__SLAM2_1_1Frame.html#a95cf2ea68735ef3e8c2d820eada11bf4">SetPose</a>(cv::Mat Tcw);</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <span class="comment">// Computes rotation, translation and camera center matrices from the camera pose.</span></div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classORB__SLAM2_1_1Frame.html#a0a18d3024a23f6fa2cab9c7d987598c2">UpdatePoseMatrices</a>();</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <span class="comment">// Returns the camera center.</span></div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <span class="keyword">inline</span> cv::Mat GetCameraCenter()</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    {</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;        <span class="keywordflow">return</span> mOw.clone();</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    }</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <span class="comment">// Returns inverse of rotation</span></div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <span class="keyword">inline</span> cv::Mat GetRotationInverse()</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    {</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;        <span class="keywordflow">return</span> mRwc.clone();</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    }</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    <span class="comment">// Check if a MapPoint is in the frustum of the camera</span></div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    <span class="comment">// and fill variables of the MapPoint to be used by the tracking</span></div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <span class="comment">// 判断路标点是否在视野中</span></div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classORB__SLAM2_1_1Frame.html#a0929e100e3380dba1baba12dfa8904c4">isInFrustum</a>(<a class="code" href="classORB__SLAM2_1_1MapPoint.html">MapPoint</a>* pMP, <span class="keywordtype">float</span> viewingCosLimit);</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    <span class="comment">// Compute the cell of a keypoint (return false if outside the grid)</span></div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    <span class="keywordtype">bool</span> PosInGrid(<span class="keyword">const</span> cv::KeyPoint &amp;kp, <span class="keywordtype">int</span> &amp;posX, <span class="keywordtype">int</span> &amp;posY);</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    vector&lt;size_t&gt; <a class="code" href="classORB__SLAM2_1_1Frame.html#ab92eb055abb54bf7f73db7612673dbca">GetFeaturesInArea</a>(<span class="keyword">const</span> <span class="keywordtype">float</span> &amp;x, <span class="keyword">const</span> <span class="keywordtype">float</span>  &amp;y, <span class="keyword">const</span> <span class="keywordtype">float</span>  &amp;r, <span class="keyword">const</span> <span class="keywordtype">int</span> minLevel=-1, <span class="keyword">const</span> <span class="keywordtype">int</span> maxLevel=-1) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    <span class="comment">// Search a match for each keypoint in the left image to a keypoint in the right image.</span></div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    <span class="comment">// If there is a match, depth is computed and the right coordinate associated to the left keypoint is stored.</span></div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classORB__SLAM2_1_1Frame.html#a77a570d7851bad90ca31c4d55a5105e7">ComputeStereoMatches</a>();</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    <span class="comment">// Associate a &quot;right&quot; coordinate to a keypoint if there is valid depth in the depthmap.</span></div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    <span class="keywordtype">void</span> ComputeStereoFromRGBD(<span class="keyword">const</span> cv::Mat &amp;imDepth);</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    <span class="comment">// Backprojects a keypoint (if stereo/depth info available) into 3D world coordinates.</span></div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    cv::Mat <a class="code" href="classORB__SLAM2_1_1Frame.html#a46084d187e1fc60181e1c72f77c733ca">UnprojectStereo</a>(<span class="keyword">const</span> <span class="keywordtype">int</span> &amp;i);</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    <span class="comment">// Vocabulary used for relocalization.</span></div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    <a class="code" href="classDBoW2_1_1TemplatedVocabulary.html">ORBVocabulary</a>* mpORBvocabulary;</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    <span class="comment">// Feature extractor. The right is used only in the stereo case.</span></div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    <a class="code" href="classORB__SLAM2_1_1ORBextractor.html">ORBextractor</a>* mpORBextractorLeft, *mpORBextractorRight;</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    <span class="comment">// Frame timestamp.</span></div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    <span class="keywordtype">double</span> mTimeStamp;</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    <span class="comment">// Calibration matrix and OpenCV distortion parameters.</span></div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    cv::Mat mK;</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">float</span> fx;</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">float</span> fy;</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">float</span> cx;</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">float</span> cy;</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">float</span> invfx;</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">float</span> invfy;</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;    cv::Mat mDistCoef;</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;    <span class="comment">// Stereo baseline multiplied by fx.</span></div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;    <span class="keywordtype">float</span> mbf;</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;    <span class="comment">// Stereo baseline in meters.</span></div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;    <span class="keywordtype">float</span> mb;</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;    <span class="comment">// Threshold close/far points. Close points are inserted from 1 view.</span></div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;    <span class="comment">// Far points are inserted as in the monocular case from 2 views.</span></div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;    <span class="keywordtype">float</span> mThDepth;</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;    <span class="comment">// Number of KeyPoints.</span></div>
+<div class="line"><a name="l00139"></a><span class="lineno"><a class="line" href="classORB__SLAM2_1_1Frame.html#a0035828f1744f1bdd4ae8681e7cbbd32">  139</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classORB__SLAM2_1_1Frame.html#a0035828f1744f1bdd4ae8681e7cbbd32">N</a>; </div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;</div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;    <span class="comment">// Vector of keypoints (original for visualization) and undistorted (actually used by the system).</span></div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;    <span class="comment">// In the stereo case, mvKeysUn is redundant as images must be rectified.</span></div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;    <span class="comment">// In the RGB-D case, RGB images can be distorted.</span></div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;    <span class="comment">// mvKeys:原始左图像提取出的特征点（未校正）</span></div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;    <span class="comment">// mvKeysRight:原始右图像提取出的特征点（未校正）</span></div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;    <span class="comment">// mvKeysUn:校正mvKeys后的特征点，对于双目摄像头，一般得到的图像都是校正好的，再校正一次有点多余</span></div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;    std::vector&lt;cv::KeyPoint&gt; mvKeys, mvKeysRight;</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;    std::vector&lt;cv::KeyPoint&gt; mvKeysUn;</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;    <span class="comment">// Corresponding stereo coordinate and depth for each keypoint.</span></div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;    <span class="comment">// &quot;Monocular&quot; keypoints have a negative value.</span></div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;    <span class="comment">// 对于双目，mvuRight存储了左目像素点在右目中的对应点的横坐标</span></div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;    <span class="comment">// mvDepth对应的深度</span></div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;    <span class="comment">// 单目摄像头，这两个容器中存的都是-1</span></div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;    std::vector&lt;float&gt; mvuRight;</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;    std::vector&lt;float&gt; mvDepth;</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;    <span class="comment">// Bag of Words Vector structures.</span></div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;    <a class="code" href="classDBoW2_1_1BowVector.html">DBoW2::BowVector</a> mBowVec;</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;    <a class="code" href="classDBoW2_1_1FeatureVector.html">DBoW2::FeatureVector</a> mFeatVec;</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;    <span class="comment">// ORB descriptor, each row associated to a keypoint.</span></div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;    <span class="comment">// 左目摄像头和右目摄像头特征点对应的描述子</span></div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;    cv::Mat mDescriptors, mDescriptorsRight;</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;    <span class="comment">// MapPoints associated to keypoints, NULL pointer if no association.</span></div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;    <span class="comment">// 每个特征点对应的MapPoint</span></div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;    std::vector&lt;MapPoint*&gt; mvpMapPoints;</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;    <span class="comment">// Flag to identify outlier associations.</span></div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;    <span class="comment">// 观测不到Map中的3D点</span></div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;    std::vector&lt;bool&gt; mvbOutlier;</div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;    <span class="comment">// Keypoints are assigned to cells in a grid to reduce matching complexity when projecting MapPoints.</span></div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;    <span class="comment">// 坐标乘以mfGridElementWidthInv和mfGridElementHeightInv就可以确定在哪个格子</span></div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">float</span> mfGridElementWidthInv;</div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">float</span> mfGridElementHeightInv;</div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;    <span class="comment">// 每个格子分配的特征点数，将图像分成格子，保证提取的特征点比较均匀</span></div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;    <span class="comment">// FRAME_GRID_ROWS 48</span></div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;    <span class="comment">// FRAME_GRID_COLS 64</span></div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;    std::vector&lt;std::size_t&gt; mGrid[FRAME_GRID_COLS][FRAME_GRID_ROWS];<span class="comment">//二维数组，每个元素里面放的是整型向量。</span></div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;</div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;    <span class="comment">// Camera pose.</span></div>
+<div class="line"><a name="l00184"></a><span class="lineno"><a class="line" href="classORB__SLAM2_1_1Frame.html#a3be6708cfd359fae30307f9408abd6f9">  184</a></span>&#160;    cv::Mat <a class="code" href="classORB__SLAM2_1_1Frame.html#a3be6708cfd359fae30307f9408abd6f9">mTcw</a>; </div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;</div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;    <span class="comment">// Current and Next Frame id.</span></div>
+<div class="line"><a name="l00187"></a><span class="lineno"><a class="line" href="classORB__SLAM2_1_1Frame.html#a1ea8a00151931d155747283850467733">  187</a></span>&#160;    <span class="keyword">static</span> <span class="keywordtype">long</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="classORB__SLAM2_1_1Frame.html#a1ea8a00151931d155747283850467733">nNextId</a>; </div>
+<div class="line"><a name="l00188"></a><span class="lineno"><a class="line" href="classORB__SLAM2_1_1Frame.html#acd59686475a89bfdfcae316dfa6b6069">  188</a></span>&#160;    <span class="keywordtype">long</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="classORB__SLAM2_1_1Frame.html#acd59686475a89bfdfcae316dfa6b6069">mnId</a>; </div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;</div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;    <span class="comment">// Reference Keyframe.</span></div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;    <a class="code" href="classORB__SLAM2_1_1KeyFrame.html">KeyFrame</a>* mpReferenceKF;<span class="comment">//指针，指向参考关键帧</span></div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;</div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;    <span class="comment">// Scale pyramid info.</span></div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;    <span class="keywordtype">int</span> mnScaleLevels;<span class="comment">//图像提金字塔的层数</span></div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;    <span class="keywordtype">float</span> mfScaleFactor;<span class="comment">//图像提金字塔的尺度因子</span></div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;    <span class="keywordtype">float</span> mfLogScaleFactor;<span class="comment">//</span></div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;    vector&lt;float&gt; mvScaleFactors;</div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;    vector&lt;float&gt; mvInvScaleFactors;</div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;    vector&lt;float&gt; mvLevelSigma2;</div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;    vector&lt;float&gt; mvInvLevelSigma2;</div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;</div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;    <span class="comment">// Undistorted Image Bounds (computed once).</span></div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;    <span class="comment">// 用于确定画格子时的边界</span></div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">float</span> mnMinX;</div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">float</span> mnMaxX;</div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">float</span> mnMinY;</div>
+<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">float</span> mnMaxY;</div>
+<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;</div>
+<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">bool</span> mbInitialComputations;</div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;</div>
+<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;</div>
+<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;</div>
+<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;    <span class="comment">// Undistort keypoints given OpenCV distortion parameters.</span></div>
+<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;    <span class="comment">// Only for the RGB-D case. Stereo must be already rectified!</span></div>
+<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;    <span class="comment">// (called in the constructor).</span></div>
+<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;    <span class="keywordtype">void</span> UndistortKeyPoints();</div>
+<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;</div>
+<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;    <span class="comment">// Computes image bounds for the undistorted image (called in the constructor).</span></div>
+<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;    <span class="keywordtype">void</span> ComputeImageBounds(<span class="keyword">const</span> cv::Mat &amp;imLeft);</div>
+<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;</div>
+<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;    <span class="comment">// Assign keypoints to the grid for speed up feature matching (called in the constructor).</span></div>
+<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;    <span class="keywordtype">void</span> AssignFeaturesToGrid();</div>
+<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;</div>
+<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;    <span class="comment">// Rotation, translation and camera center</span></div>
+<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;    cv::Mat mRcw; </div>
+<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;    cv::Mat mtcw; </div>
+<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;    cv::Mat mRwc; </div>
+<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;    cv::Mat mOw;  </div>
+<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;};</div>
+<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;</div>
+<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;}<span class="comment">// namespace ORB_SLAM</span></div>
+<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;</div>
+<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;<span class="preprocessor">#endif // FRAME_H</span></div>
+<div class="ttc" id="classORB__SLAM2_1_1ORBextractor_html"><div class="ttname"><a href="classORB__SLAM2_1_1ORBextractor.html">ORB_SLAM2::ORBextractor</a></div><div class="ttdef"><b>Definition:</b> <a href="ORBextractor_8h_source.html#l00045">ORBextractor.h:45</a></div></div>
+<div class="ttc" id="classORB__SLAM2_1_1Frame_html_ac748d2318f9a409406dba4910ff5ef8e"><div class="ttname"><a href="classORB__SLAM2_1_1Frame.html#ac748d2318f9a409406dba4910ff5ef8e">ORB_SLAM2::Frame::ComputeBoW</a></div><div class="ttdeci">void ComputeBoW()</div><div class="ttdoc">Bag of Words Representation. </div><div class="ttdef"><b>Definition:</b> <a href="Frame_8cpp_source.html#l00455">Frame.cpp:455</a></div></div>
+<div class="ttc" id="classORB__SLAM2_1_1KeyFrame_html"><div class="ttname"><a href="classORB__SLAM2_1_1KeyFrame.html">ORB_SLAM2::KeyFrame</a></div><div class="ttdef"><b>Definition:</b> <a href="KeyFrame_8h_source.html#l00047">KeyFrame.h:47</a></div></div>
+<div class="ttc" id="classORB__SLAM2_1_1Frame_html"><div class="ttname"><a href="classORB__SLAM2_1_1Frame.html">ORB_SLAM2::Frame</a></div><div class="ttdef"><b>Definition:</b> <a href="Frame_8h_source.html#l00043">Frame.h:43</a></div></div>
+<div class="ttc" id="classORB__SLAM2_1_1Frame_html_a46084d187e1fc60181e1c72f77c733ca"><div class="ttname"><a href="classORB__SLAM2_1_1Frame.html#a46084d187e1fc60181e1c72f77c733ca">ORB_SLAM2::Frame::UnprojectStereo</a></div><div class="ttdeci">cv::Mat UnprojectStereo(const int &amp;i)</div><div class="ttdoc">Backprojects a keypoint (if stereo/depth info available) into 3D world coordinates. </div><div class="ttdef"><b>Definition:</b> <a href="Frame_8cpp_source.html#l00783">Frame.cpp:783</a></div></div>
+<div class="ttc" id="classDBoW2_1_1TemplatedVocabulary_html"><div class="ttname"><a href="classDBoW2_1_1TemplatedVocabulary.html">DBoW2::TemplatedVocabulary</a></div><div class="ttdoc">Generic Vocabulary. </div><div class="ttdef"><b>Definition:</b> <a href="TemplatedVocabulary_8h_source.html#l00046">TemplatedVocabulary.h:46</a></div></div>
+<div class="ttc" id="classORB__SLAM2_1_1Frame_html_a0a18d3024a23f6fa2cab9c7d987598c2"><div class="ttname"><a href="classORB__SLAM2_1_1Frame.html#a0a18d3024a23f6fa2cab9c7d987598c2">ORB_SLAM2::Frame::UpdatePoseMatrices</a></div><div class="ttdeci">void UpdatePoseMatrices()</div><div class="ttdoc">Computes rotation, translation and camera center matrices from the camera pose. </div><div class="ttdef"><b>Definition:</b> <a href="Frame_8cpp_source.html#l00286">Frame.cpp:286</a></div></div>
+<div class="ttc" id="classORB__SLAM2_1_1Frame_html_a0929e100e3380dba1baba12dfa8904c4"><div class="ttname"><a href="classORB__SLAM2_1_1Frame.html#a0929e100e3380dba1baba12dfa8904c4">ORB_SLAM2::Frame::isInFrustum</a></div><div class="ttdeci">bool isInFrustum(MapPoint *pMP, float viewingCosLimit)</div><div class="ttdoc">判断一个点是否在视野内 </div><div class="ttdef"><b>Definition:</b> <a href="Frame_8cpp_source.html#l00307">Frame.cpp:307</a></div></div>
+<div class="ttc" id="classORB__SLAM2_1_1MapPoint_html"><div class="ttname"><a href="classORB__SLAM2_1_1MapPoint.html">ORB_SLAM2::MapPoint</a></div><div class="ttdoc">MapPoint是一个地图点 </div><div class="ttdef"><b>Definition:</b> <a href="MapPoint_8h_source.html#l00041">MapPoint.h:41</a></div></div>
+<div class="ttc" id="classORB__SLAM2_1_1Frame_html_a3be6708cfd359fae30307f9408abd6f9"><div class="ttname"><a href="classORB__SLAM2_1_1Frame.html#a3be6708cfd359fae30307f9408abd6f9">ORB_SLAM2::Frame::mTcw</a></div><div class="ttdeci">cv::Mat mTcw</div><div class="ttdoc">相机姿态 世界坐标系到相机坐标坐标系的变换矩阵 </div><div class="ttdef"><b>Definition:</b> <a href="Frame_8h_source.html#l00184">Frame.h:184</a></div></div>
+<div class="ttc" id="classORB__SLAM2_1_1Frame_html_a1ea8a00151931d155747283850467733"><div class="ttname"><a href="classORB__SLAM2_1_1Frame.html#a1ea8a00151931d155747283850467733">ORB_SLAM2::Frame::nNextId</a></div><div class="ttdeci">static long unsigned int nNextId</div><div class="ttdoc">Next Frame id. </div><div class="ttdef"><b>Definition:</b> <a href="Frame_8h_source.html#l00187">Frame.h:187</a></div></div>
+<div class="ttc" id="classDBoW2_1_1BowVector_html"><div class="ttname"><a href="classDBoW2_1_1BowVector.html">DBoW2::BowVector</a></div><div class="ttdef"><b>Definition:</b> <a href="BowVector_8h_source.html#l00059">BowVector.h:59</a></div></div>
+<div class="ttc" id="classDBoW2_1_1FeatureVector_html"><div class="ttname"><a href="classDBoW2_1_1FeatureVector.html">DBoW2::FeatureVector</a></div><div class="ttdoc">Vector of nodes with indexes of local features。正索引，node，对应的特征的标号 </div><div class="ttdef"><b>Definition:</b> <a href="FeatureVector_8h_source.html#l00023">FeatureVector.h:23</a></div></div>
+<div class="ttc" id="classORB__SLAM2_1_1Frame_html_a77a570d7851bad90ca31c4d55a5105e7"><div class="ttname"><a href="classORB__SLAM2_1_1Frame.html#a77a570d7851bad90ca31c4d55a5105e7">ORB_SLAM2::Frame::ComputeStereoMatches</a></div><div class="ttdeci">void ComputeStereoMatches()</div><div class="ttdoc">双目匹配 </div><div class="ttdef"><b>Definition:</b> <a href="Frame_8cpp_source.html#l00543">Frame.cpp:543</a></div></div>
+<div class="ttc" id="classORB__SLAM2_1_1Frame_html_a95cf2ea68735ef3e8c2d820eada11bf4"><div class="ttname"><a href="classORB__SLAM2_1_1Frame.html#a95cf2ea68735ef3e8c2d820eada11bf4">ORB_SLAM2::Frame::SetPose</a></div><div class="ttdeci">void SetPose(cv::Mat Tcw)</div><div class="ttdoc">Set the camera pose. </div><div class="ttdef"><b>Definition:</b> <a href="Frame_8cpp_source.html#l00275">Frame.cpp:275</a></div></div>
+<div class="ttc" id="classORB__SLAM2_1_1Frame_html_acd59686475a89bfdfcae316dfa6b6069"><div class="ttname"><a href="classORB__SLAM2_1_1Frame.html#acd59686475a89bfdfcae316dfa6b6069">ORB_SLAM2::Frame::mnId</a></div><div class="ttdeci">long unsigned int mnId</div><div class="ttdoc">Current Frame id. </div><div class="ttdef"><b>Definition:</b> <a href="Frame_8h_source.html#l00188">Frame.h:188</a></div></div>
+<div class="ttc" id="classORB__SLAM2_1_1Frame_html_a0035828f1744f1bdd4ae8681e7cbbd32"><div class="ttname"><a href="classORB__SLAM2_1_1Frame.html#a0035828f1744f1bdd4ae8681e7cbbd32">ORB_SLAM2::Frame::N</a></div><div class="ttdeci">int N</div><div class="ttdoc">KeyPoints数量 </div><div class="ttdef"><b>Definition:</b> <a href="Frame_8h_source.html#l00139">Frame.h:139</a></div></div>
+<div class="ttc" id="classORB__SLAM2_1_1Frame_html_ab92eb055abb54bf7f73db7612673dbca"><div class="ttname"><a href="classORB__SLAM2_1_1Frame.html#ab92eb055abb54bf7f73db7612673dbca">ORB_SLAM2::Frame::GetFeaturesInArea</a></div><div class="ttdeci">vector&lt; size_t &gt; GetFeaturesInArea(const float &amp;x, const float &amp;y, const float &amp;r, const int minLevel=-1, const int maxLevel=-1) const </div><div class="ttdoc">找到在 以x,y为中心,边长为2r的方形内且在[minLevel, maxLevel]的特征点—指定层了 </div><div class="ttdef"><b>Definition:</b> <a href="Frame_8cpp_source.html#l00382">Frame.cpp:382</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><b>Frame.h</b></li>
+    <li class="footer">生成于 2017年 七月 18日 星期二 17:13:36 , 为 My Project使用 
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
+  </ul>
+</div>
+</body>
+</html>

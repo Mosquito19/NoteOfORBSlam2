@@ -1,0 +1,113 @@
+\hypertarget{classg2o_1_1EdgeSim3}{\section{g2o\-:\-:Edge\-Sim3类 参考}
+\label{classg2o_1_1EdgeSim3}\index{g2o\-::\-Edge\-Sim3@{g2o\-::\-Edge\-Sim3}}
+}
+
+
+7\-D edge between two Vertex7  
+
+
+
+
+{\ttfamily \#include $<$types\-\_\-seven\-\_\-dof\-\_\-expmap.\-h$>$}
+
+
+
+类 g2o\-:\-:Edge\-Sim3 继承关系图\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=234pt]{classg2o_1_1EdgeSim3__inherit__graph}
+\end{center}
+\end{figure}
+
+
+g2o\-:\-:Edge\-Sim3 的协作图\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classg2o_1_1EdgeSim3__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classg2o_1_1EdgeSim3_a6c7ad669fa04265475cbfdba3452fcbd}{virtual bool \hyperlink{classg2o_1_1EdgeSim3_a6c7ad669fa04265475cbfdba3452fcbd}{read} (std\-::istream \&is)}\label{classg2o_1_1EdgeSim3_a6c7ad669fa04265475cbfdba3452fcbd}
+
+\begin{DoxyCompactList}\small\item\em read the vertex from a stream, i.\-e., the internal state of the vertex \end{DoxyCompactList}\item 
+\hypertarget{classg2o_1_1EdgeSim3_a50f9e0b48bd9143eb516be36e0c25340}{virtual bool \hyperlink{classg2o_1_1EdgeSim3_a50f9e0b48bd9143eb516be36e0c25340}{write} (std\-::ostream \&os) const }\label{classg2o_1_1EdgeSim3_a50f9e0b48bd9143eb516be36e0c25340}
+
+\begin{DoxyCompactList}\small\item\em write the vertex to a stream \end{DoxyCompactList}\item 
+\hypertarget{classg2o_1_1EdgeSim3_a68f55d11f6b8b210318f167d04722a8b}{void {\bfseries compute\-Error} ()}\label{classg2o_1_1EdgeSim3_a68f55d11f6b8b210318f167d04722a8b}
+
+\item 
+virtual double \hyperlink{classg2o_1_1EdgeSim3_a0fd73623327838b46abdf292582da6ae}{initial\-Estimate\-Possible} (const Optimizable\-Graph\-::\-Vertex\-Set \&, \hyperlink{classg2o_1_1OptimizableGraph_1_1Vertex}{Optimizable\-Graph\-::\-Vertex} $\ast$)
+\item 
+virtual void \hyperlink{classg2o_1_1EdgeSim3_afac4cc093af6f54adb278c142f33dcca}{initial\-Estimate} (const Optimizable\-Graph\-::\-Vertex\-Set \&from, \hyperlink{classg2o_1_1OptimizableGraph_1_1Vertex}{Optimizable\-Graph\-::\-Vertex} $\ast$)
+\end{DoxyCompactItemize}
+\subsection*{额外继承的成员函数}
+
+
+\subsection{详细描述}
+7\-D edge between two Vertex7 
+
+在文件 types\-\_\-seven\-\_\-dof\-\_\-expmap.\-h 第 100 行定义.
+
+
+
+\subsection{成员函数说明}
+\hypertarget{classg2o_1_1EdgeSim3_afac4cc093af6f54adb278c142f33dcca}{\index{g2o\-::\-Edge\-Sim3@{g2o\-::\-Edge\-Sim3}!initial\-Estimate@{initial\-Estimate}}
+\index{initial\-Estimate@{initial\-Estimate}!g2o::EdgeSim3@{g2o\-::\-Edge\-Sim3}}
+\subsubsection[{initial\-Estimate}]{\setlength{\rightskip}{0pt plus 5cm}virtual void g2o\-::\-Edge\-Sim3\-::initial\-Estimate (
+\begin{DoxyParamCaption}
+\item[{const Optimizable\-Graph\-::\-Vertex\-Set \&}]{, }
+\item[{{\bf Optimizable\-Graph\-::\-Vertex} $\ast$}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classg2o_1_1EdgeSim3_afac4cc093af6f54adb278c142f33dcca}
+set the estimate of the to vertex, based on the estimate of the from vertices in the edge. 
+
+重载 \hyperlink{classg2o_1_1BaseEdge_a0c3d9763f1dc504627df75e0f381ca70}{g2o\-::\-Base\-Edge$<$ D, Sim3 $>$} .
+
+
+
+在文件 types\-\_\-seven\-\_\-dof\-\_\-expmap.\-h 第 118 行定义.
+
+
+
+参考 g2o\-::\-Base\-Vertex$<$ D, T $>$\-::estimate() , 以及 g2o\-::\-Base\-Vertex$<$ D, T $>$\-::set\-Estimate().
+
+
+
+函数调用图\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classg2o_1_1EdgeSim3_afac4cc093af6f54adb278c142f33dcca_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classg2o_1_1EdgeSim3_a0fd73623327838b46abdf292582da6ae}{\index{g2o\-::\-Edge\-Sim3@{g2o\-::\-Edge\-Sim3}!initial\-Estimate\-Possible@{initial\-Estimate\-Possible}}
+\index{initial\-Estimate\-Possible@{initial\-Estimate\-Possible}!g2o::EdgeSim3@{g2o\-::\-Edge\-Sim3}}
+\subsubsection[{initial\-Estimate\-Possible}]{\setlength{\rightskip}{0pt plus 5cm}virtual double g2o\-::\-Edge\-Sim3\-::initial\-Estimate\-Possible (
+\begin{DoxyParamCaption}
+\item[{const Optimizable\-Graph\-::\-Vertex\-Set \&}]{from, }
+\item[{{\bf Optimizable\-Graph\-::\-Vertex} $\ast$}]{to}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classg2o_1_1EdgeSim3_a0fd73623327838b46abdf292582da6ae}
+override in your class if it's possible to initialize the vertices in certain combinations. The return value may correspond to the cost for initiliaizng the vertex but should be positive if the initialization is possible and negative if not possible. 
+
+重载 \hyperlink{classg2o_1_1OptimizableGraph_1_1Edge_a1cef6ffa0f82f1ad3dd3d7a9f04425ee}{g2o\-::\-Optimizable\-Graph\-::\-Edge} .
+
+
+
+在文件 types\-\_\-seven\-\_\-dof\-\_\-expmap.\-h 第 117 行定义.
+
+
+
+该类的文档由以下文件生成\-:\begin{DoxyCompactItemize}
+\item 
+Thirdparty/g2o/g2o/types/types\-\_\-seven\-\_\-dof\-\_\-expmap.\-h\item 
+Thirdparty/g2o/g2o/types/types\-\_\-seven\-\_\-dof\-\_\-expmap.\-cpp\end{DoxyCompactItemize}

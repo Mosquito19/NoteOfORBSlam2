@@ -1,0 +1,394 @@
+\hypertarget{group__utils}{\section{Utils}
+\label{group__utils}\index{Utils@{Utils}}
+}
+Utils 的协作图\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=214pt]{group__utils}
+\end{center}
+\end{figure}
+\subsection*{文件}
+\begin{DoxyCompactItemize}
+\item 
+文件 \hyperlink{misc_8h}{misc.\-h}
+\begin{DoxyCompactList}\small\item\em some general case utility functions \end{DoxyCompactList}\item 
+文件 \hyperlink{timeutil_8h}{timeutil.\-h}
+\begin{DoxyCompactList}\small\item\em utility functions for handling time related stuff \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{宏定义}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{group__utils_ga9b9f34c01b03b47644c2762bf256be32}{D\-O\-\_\-\-E\-V\-E\-R\-Y\-\_\-\-T\-S}(secs, current\-Time, code)
+\item 
+\hypertarget{group__utils_gabfe958da8833edbe74250507adc61635}{\#define \hyperlink{group__utils_gabfe958da8833edbe74250507adc61635}{D\-O\-\_\-\-E\-V\-E\-R\-Y}(secs, code)~\hyperlink{group__utils_ga9b9f34c01b03b47644c2762bf256be32}{D\-O\-\_\-\-E\-V\-E\-R\-Y\-\_\-\-T\-S}(secs, g2o\-::get\-\_\-time(), code)}\label{group__utils_gabfe958da8833edbe74250507adc61635}
+
+\begin{DoxyCompactList}\small\item\em Executes code, only if secs are gone since last exec. \end{DoxyCompactList}\item 
+\#define {\bfseries M\-E\-A\-S\-U\-R\-E\-\_\-\-T\-I\-M\-E}(text, code)
+\item 
+\hypertarget{group__utils_gae79acf8eb730f80c029d60e19332b4b9}{\#define {\bfseries M\-E\-A\-S\-U\-R\-E\-\_\-\-F\-U\-N\-C\-T\-I\-O\-N\-\_\-\-T\-I\-M\-E}~\hyperlink{classg2o_1_1ScopeTime}{g2o\-::\-Scope\-Time} scope\-Time(\-\_\-\-\_\-\-P\-R\-E\-T\-T\-Y\-\_\-\-F\-U\-N\-C\-T\-I\-O\-N\-\_\-\-\_\-)}\label{group__utils_gae79acf8eb730f80c029d60e19332b4b9}
+
+\end{DoxyCompactItemize}
+\subsection*{函数}
+\begin{DoxyCompactItemize}
+\item 
+std\-::string \hyperlink{group__utils_ga437d185a62afe16a99f27f3b12e108d7}{g2o\-::trim} (const std\-::string \&s)
+\item 
+std\-::string \hyperlink{group__utils_gad2277aa8d0784f7001f7f27396d59f98}{g2o\-::trim\-Left} (const std\-::string \&s)
+\item 
+std\-::string \hyperlink{group__utils_ga7305cbf5d345c0e352ac2baa93b7d30a}{g2o\-::trim\-Right} (const std\-::string \&s)
+\item 
+std\-::string \hyperlink{group__utils_ga18235ef006dc52e266590591f895157d}{g2o\-::str\-To\-Lower} (const std\-::string \&s)
+\item 
+std\-::string \hyperlink{group__utils_ga70dfb4dd2aeae37635cf2b5bef6321a9}{g2o\-::str\-To\-Upper} (const std\-::string \&s)
+\item 
+{\footnotesize template$<$typename Output\-Iterator $>$ }\\Output\-Iterator \hyperlink{group__utils_gae501003a8f6b60afb846857fdb82174d}{g2o\-::read\-Ints} (const char $\ast$str, Output\-Iterator out)
+\item 
+{\footnotesize template$<$typename Output\-Iterator $>$ }\\Output\-Iterator \hyperlink{group__utils_ga88353c6cfc2e519df07814ca577e71ec}{g2o\-::read\-Floats} (const char $\ast$str, Output\-Iterator out)
+\item 
+std\-::string \hyperlink{group__utils_gadc1d37473e0e8c6a73fb46b19239d2d1}{g2o\-::format\-String} (const char $\ast$fmt,...)
+\item 
+int \hyperlink{group__utils_gacce5cae59e8c97bf3f4ff581c6534d03}{g2o\-::str\-Printf} (std\-::string \&str, const char $\ast$fmt,...)
+\item 
+{\footnotesize template$<$typename T $>$ }\\bool \hyperlink{group__utils_ga599c46f6984e9a2147fac39324e9fadc}{g2o\-::convert\-String} (const std\-::string \&s, T \&x, bool fail\-If\-Leftover\-Chars=true)
+\item 
+{\footnotesize template$<$typename T $>$ }\\T \hyperlink{group__utils_ga9dac39a213d269b8d68fb698bf82873a}{g2o\-::string\-To\-Type} (const std\-::string \&s, bool fail\-If\-Leftover\-Chars=true)
+\item 
+bool \hyperlink{group__utils_ga98f10a2fabad17ef7ed1534b39eb2bc5}{g2o\-::str\-Starts\-With} (const std\-::string \&s, const std\-::string \&start)
+\item 
+bool \hyperlink{group__utils_ga7a0e6ad89c4c86b2b60ddf392a57c963}{g2o\-::str\-Ends\-With} (const std\-::string \&s, const std\-::string \&end)
+\item 
+std\-::string \hyperlink{group__utils_ga45c2648d8a8a5f5bed13741bc8a501d1}{g2o\-::str\-Expand\-Filename} (const std\-::string \&filename)
+\item 
+std\-::vector$<$ std\-::string $>$ \hyperlink{group__utils_ga0a56de67e98afa3f8307e7b4ddb4cc83}{g2o\-::str\-Split} (const std\-::string \&str, const std\-::string \&delimiters)
+\item 
+int \hyperlink{group__utils_ga570513203e2bbf23d692460c0aef07e8}{g2o\-::read\-Line} (std\-::istream \&is, std\-::stringstream \&current\-Line)
+\end{DoxyCompactItemize}
+
+
+\subsection{详细描述}
+
+
+\subsection{宏定义说明}
+\hypertarget{group__utils_ga9b9f34c01b03b47644c2762bf256be32}{\index{Utils@{Utils}!D\-O\-\_\-\-E\-V\-E\-R\-Y\-\_\-\-T\-S@{D\-O\-\_\-\-E\-V\-E\-R\-Y\-\_\-\-T\-S}}
+\index{D\-O\-\_\-\-E\-V\-E\-R\-Y\-\_\-\-T\-S@{D\-O\-\_\-\-E\-V\-E\-R\-Y\-\_\-\-T\-S}!Utils@{Utils}}
+\subsubsection[{D\-O\-\_\-\-E\-V\-E\-R\-Y\-\_\-\-T\-S}]{\setlength{\rightskip}{0pt plus 5cm}\#define D\-O\-\_\-\-E\-V\-E\-R\-Y\-\_\-\-T\-S(
+\begin{DoxyParamCaption}
+\item[{}]{secs, }
+\item[{}]{current\-Time, }
+\item[{}]{code}
+\end{DoxyParamCaption}
+)}}\label{group__utils_ga9b9f34c01b03b47644c2762bf256be32}
+{\bfseries 值\-:}
+\begin{DoxyCode}
+\textcolor{keywordflow}{if} (1) \{\(\backslash\)
+  static \textcolor{keywordtype}{double} s\_lastDone\_ = (currentTime); \(\backslash\)
+  double s\_now\_ = (currentTime); \(\backslash\)
+  if (s\_lastDone\_ > s\_now\_) \(\backslash\)
+    s\_lastDone\_ = s\_now\_; \(\backslash\)
+  if (s\_now\_ - s\_lastDone\_ > (secs)) \{ \(\backslash\)
+    code; \(\backslash\)
+    s\_lastDone\_ = s\_now\_; \(\backslash\)
+  \}\(\backslash\)
+\} \textcolor{keywordflow}{else} \(\backslash\)
+  (void)0
+\end{DoxyCode}
+Executes code, only if secs are gone since last exec. extended version, in which the current time is given, e.\-g., timestamp of I\-P\-C message 
+
+在文件 timeutil.\-h 第 49 行定义.
+
+\hypertarget{group__utils_gaafc27d8d00ac925dce6e52a013cc2b32}{\index{Utils@{Utils}!M\-E\-A\-S\-U\-R\-E\-\_\-\-T\-I\-M\-E@{M\-E\-A\-S\-U\-R\-E\-\_\-\-T\-I\-M\-E}}
+\index{M\-E\-A\-S\-U\-R\-E\-\_\-\-T\-I\-M\-E@{M\-E\-A\-S\-U\-R\-E\-\_\-\-T\-I\-M\-E}!Utils@{Utils}}
+\subsubsection[{M\-E\-A\-S\-U\-R\-E\-\_\-\-T\-I\-M\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define M\-E\-A\-S\-U\-R\-E\-\_\-\-T\-I\-M\-E(
+\begin{DoxyParamCaption}
+\item[{}]{text, }
+\item[{}]{code}
+\end{DoxyParamCaption}
+)}}\label{group__utils_gaafc27d8d00ac925dce6e52a013cc2b32}
+{\bfseries 值\-:}
+\begin{DoxyCode}
+\textcolor{keywordflow}{if}(1) \{ \(\backslash\)
+    double \_start\_time\_ = g2o::get\_time(); \(\backslash\)
+    code; \(\backslash\)
+    fprintf(stderr, \textcolor{stringliteral}{"%s took %f sec\(\backslash\)n"}, text, g2o::get\_time() - \_start\_time\_); \(\backslash\)
+  \} \textcolor{keywordflow}{else} \(\backslash\)
+    (void) 0
+\end{DoxyCode}
+
+
+在文件 timeutil.\-h 第 69 行定义.
+
+
+
+\subsection{函数说明}
+\hypertarget{group__utils_ga599c46f6984e9a2147fac39324e9fadc}{\index{Utils@{Utils}!convert\-String@{convert\-String}}
+\index{convert\-String@{convert\-String}!Utils@{Utils}}
+\subsubsection[{convert\-String}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ bool g2o\-::convert\-String (
+\begin{DoxyParamCaption}
+\item[{const std\-::string \&}]{s, }
+\item[{T \&}]{x, }
+\item[{bool}]{fail\-If\-Leftover\-Chars = {\ttfamily true}}
+\end{DoxyParamCaption}
+)}}\label{group__utils_ga599c46f6984e9a2147fac39324e9fadc}
+convert a string into an other type. 
+
+在文件 string\-\_\-tools.\-h 第 125 行定义.
+
+
+
+参考自 g2o\-::string\-To\-Type().
+
+
+
+这是这个函数的调用关系图\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=308pt]{group__utils_ga599c46f6984e9a2147fac39324e9fadc_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{group__utils_gadc1d37473e0e8c6a73fb46b19239d2d1}{\index{Utils@{Utils}!format\-String@{format\-String}}
+\index{format\-String@{format\-String}!Utils@{Utils}}
+\subsubsection[{format\-String}]{\setlength{\rightskip}{0pt plus 5cm}G2\-O\-\_\-\-C\-O\-R\-E\-\_\-\-A\-P\-I std\-::string g2o\-::format\-String (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{fmt, }
+\item[{}]{...}
+\end{DoxyParamCaption}
+)}}\label{group__utils_gadc1d37473e0e8c6a73fb46b19239d2d1}
+format a string and return a std\-::string. Format is just like printf, see man 3 printf 
+
+在文件 string\-\_\-tools.\-cpp 第 95 行定义.
+
+\hypertarget{group__utils_ga88353c6cfc2e519df07814ca577e71ec}{\index{Utils@{Utils}!read\-Floats@{read\-Floats}}
+\index{read\-Floats@{read\-Floats}!Utils@{Utils}}
+\subsubsection[{read\-Floats}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Output\-Iterator $>$ Output\-Iterator g2o\-::read\-Floats (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{str, }
+\item[{Output\-Iterator}]{out}
+\end{DoxyParamCaption}
+)}}\label{group__utils_ga88353c6cfc2e519df07814ca577e71ec}
+read float values (seperated by spaces) from a string and store them in the given Output\-Iterator. 
+
+在文件 string\-\_\-tools.\-h 第 96 行定义.
+
+\hypertarget{group__utils_gae501003a8f6b60afb846857fdb82174d}{\index{Utils@{Utils}!read\-Ints@{read\-Ints}}
+\index{read\-Ints@{read\-Ints}!Utils@{Utils}}
+\subsubsection[{read\-Ints}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Output\-Iterator $>$ Output\-Iterator g2o\-::read\-Ints (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{str, }
+\item[{Output\-Iterator}]{out}
+\end{DoxyParamCaption}
+)}}\label{group__utils_gae501003a8f6b60afb846857fdb82174d}
+read integer values (seperated by spaces) from a string and store them in the given Output\-Iterator. 
+
+在文件 string\-\_\-tools.\-h 第 77 行定义.
+
+\hypertarget{group__utils_ga570513203e2bbf23d692460c0aef07e8}{\index{Utils@{Utils}!read\-Line@{read\-Line}}
+\index{read\-Line@{read\-Line}!Utils@{Utils}}
+\subsubsection[{read\-Line}]{\setlength{\rightskip}{0pt plus 5cm}G2\-O\-\_\-\-C\-O\-R\-E\-\_\-\-A\-P\-I int g2o\-::read\-Line (
+\begin{DoxyParamCaption}
+\item[{std\-::istream \&}]{is, }
+\item[{std\-::stringstream \&}]{current\-Line}
+\end{DoxyParamCaption}
+)}}\label{group__utils_ga570513203e2bbf23d692460c0aef07e8}
+read a line from is into current\-Line. \begin{DoxyReturn}{返回}
+the number of characters read into current\-Line (excluding newline), -\/1 on eof() 
+\end{DoxyReturn}
+
+
+在文件 string\-\_\-tools.\-cpp 第 172 行定义.
+
+
+
+参考自 g2o\-::\-Parameter\-Container\-::read().
+
+
+
+这是这个函数的调用关系图\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=318pt]{group__utils_ga570513203e2bbf23d692460c0aef07e8_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{group__utils_ga7a0e6ad89c4c86b2b60ddf392a57c963}{\index{Utils@{Utils}!str\-Ends\-With@{str\-Ends\-With}}
+\index{str\-Ends\-With@{str\-Ends\-With}!Utils@{Utils}}
+\subsubsection[{str\-Ends\-With}]{\setlength{\rightskip}{0pt plus 5cm}G2\-O\-\_\-\-C\-O\-R\-E\-\_\-\-A\-P\-I bool g2o\-::str\-Ends\-With (
+\begin{DoxyParamCaption}
+\item[{const std\-::string \&}]{str, }
+\item[{const std\-::string \&}]{substr}
+\end{DoxyParamCaption}
+)}}\label{group__utils_ga7a0e6ad89c4c86b2b60ddf392a57c963}
+return true, if str ends with substr 
+
+在文件 string\-\_\-tools.\-cpp 第 165 行定义.
+
+\hypertarget{group__utils_ga45c2648d8a8a5f5bed13741bc8a501d1}{\index{Utils@{Utils}!str\-Expand\-Filename@{str\-Expand\-Filename}}
+\index{str\-Expand\-Filename@{str\-Expand\-Filename}!Utils@{Utils}}
+\subsubsection[{str\-Expand\-Filename}]{\setlength{\rightskip}{0pt plus 5cm}G2\-O\-\_\-\-C\-O\-R\-E\-\_\-\-A\-P\-I std\-::string g2o\-::str\-Expand\-Filename (
+\begin{DoxyParamCaption}
+\item[{const std\-::string \&}]{filename}
+\end{DoxyParamCaption}
+)}}\label{group__utils_ga45c2648d8a8a5f5bed13741bc8a501d1}
+expand the given filename like a posix shell, e.\-g., $\sim$ \$\-C\-A\-R\-M\-E\-N\-\_\-\-H\-O\-M\-E and other will get expanded. Also command substitution, e.\-g. {\ttfamily pwd} will give the current directory. 
+
+在文件 string\-\_\-tools.\-cpp 第 124 行定义.
+
+\hypertarget{group__utils_ga9dac39a213d269b8d68fb698bf82873a}{\index{Utils@{Utils}!string\-To\-Type@{string\-To\-Type}}
+\index{string\-To\-Type@{string\-To\-Type}!Utils@{Utils}}
+\subsubsection[{string\-To\-Type}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ T g2o\-::string\-To\-Type (
+\begin{DoxyParamCaption}
+\item[{const std\-::string \&}]{s, }
+\item[{bool}]{fail\-If\-Leftover\-Chars = {\ttfamily true}}
+\end{DoxyParamCaption}
+)}}\label{group__utils_ga9dac39a213d269b8d68fb698bf82873a}
+convert a string into an other type. Return the converted value. Throw error if parsing is wrong. 
+
+在文件 string\-\_\-tools.\-h 第 139 行定义.
+
+
+
+参考 g2o\-::convert\-String().
+
+
+
+函数调用图\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=308pt]{group__utils_ga9dac39a213d269b8d68fb698bf82873a_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{group__utils_gacce5cae59e8c97bf3f4ff581c6534d03}{\index{Utils@{Utils}!str\-Printf@{str\-Printf}}
+\index{str\-Printf@{str\-Printf}!Utils@{Utils}}
+\subsubsection[{str\-Printf}]{\setlength{\rightskip}{0pt plus 5cm}G2\-O\-\_\-\-C\-O\-R\-E\-\_\-\-A\-P\-I int g2o\-::str\-Printf (
+\begin{DoxyParamCaption}
+\item[{std\-::string \&}]{str, }
+\item[{const char $\ast$}]{fmt, }
+\item[{}]{...}
+\end{DoxyParamCaption}
+)}}\label{group__utils_gacce5cae59e8c97bf3f4ff581c6534d03}
+replacement function for sprintf which fills a std\-::string instead of a char$\ast$ 
+
+在文件 string\-\_\-tools.\-cpp 第 112 行定义.
+
+\hypertarget{group__utils_ga0a56de67e98afa3f8307e7b4ddb4cc83}{\index{Utils@{Utils}!str\-Split@{str\-Split}}
+\index{str\-Split@{str\-Split}!Utils@{Utils}}
+\subsubsection[{str\-Split}]{\setlength{\rightskip}{0pt plus 5cm}G2\-O\-\_\-\-C\-O\-R\-E\-\_\-\-A\-P\-I std\-::vector$<$ std\-::string $>$ g2o\-::str\-Split (
+\begin{DoxyParamCaption}
+\item[{const std\-::string \&}]{s, }
+\item[{const std\-::string \&}]{delim}
+\end{DoxyParamCaption}
+)}}\label{group__utils_ga0a56de67e98afa3f8307e7b4ddb4cc83}
+split a string into token based on the characters given in delim 
+
+在文件 string\-\_\-tools.\-cpp 第 143 行定义.
+
+
+
+参考自 g2o\-::\-Optimizable\-Graph\-::set\-Renamed\-Types\-From\-String() , 以及 g2o\-::\-Property\-Map\-::update\-Map\-From\-String().
+
+
+
+这是这个函数的调用关系图\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group__utils_ga0a56de67e98afa3f8307e7b4ddb4cc83_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{group__utils_ga98f10a2fabad17ef7ed1534b39eb2bc5}{\index{Utils@{Utils}!str\-Starts\-With@{str\-Starts\-With}}
+\index{str\-Starts\-With@{str\-Starts\-With}!Utils@{Utils}}
+\subsubsection[{str\-Starts\-With}]{\setlength{\rightskip}{0pt plus 5cm}G2\-O\-\_\-\-C\-O\-R\-E\-\_\-\-A\-P\-I bool g2o\-::str\-Starts\-With (
+\begin{DoxyParamCaption}
+\item[{const std\-::string \&}]{str, }
+\item[{const std\-::string \&}]{substr}
+\end{DoxyParamCaption}
+)}}\label{group__utils_ga98f10a2fabad17ef7ed1534b39eb2bc5}
+return true, if str starts with substr 
+
+在文件 string\-\_\-tools.\-cpp 第 158 行定义.
+
+\hypertarget{group__utils_ga18235ef006dc52e266590591f895157d}{\index{Utils@{Utils}!str\-To\-Lower@{str\-To\-Lower}}
+\index{str\-To\-Lower@{str\-To\-Lower}!Utils@{Utils}}
+\subsubsection[{str\-To\-Lower}]{\setlength{\rightskip}{0pt plus 5cm}G2\-O\-\_\-\-C\-O\-R\-E\-\_\-\-A\-P\-I std\-::string g2o\-::str\-To\-Lower (
+\begin{DoxyParamCaption}
+\item[{const std\-::string \&}]{s}
+\end{DoxyParamCaption}
+)}}\label{group__utils_ga18235ef006dc52e266590591f895157d}
+convert the string to lower case 
+
+在文件 string\-\_\-tools.\-cpp 第 81 行定义.
+
+\hypertarget{group__utils_ga70dfb4dd2aeae37635cf2b5bef6321a9}{\index{Utils@{Utils}!str\-To\-Upper@{str\-To\-Upper}}
+\index{str\-To\-Upper@{str\-To\-Upper}!Utils@{Utils}}
+\subsubsection[{str\-To\-Upper}]{\setlength{\rightskip}{0pt plus 5cm}G2\-O\-\_\-\-C\-O\-R\-E\-\_\-\-A\-P\-I std\-::string g2o\-::str\-To\-Upper (
+\begin{DoxyParamCaption}
+\item[{const std\-::string \&}]{s}
+\end{DoxyParamCaption}
+)}}\label{group__utils_ga70dfb4dd2aeae37635cf2b5bef6321a9}
+convert a string to upper case 
+
+在文件 string\-\_\-tools.\-cpp 第 88 行定义.
+
+\hypertarget{group__utils_ga437d185a62afe16a99f27f3b12e108d7}{\index{Utils@{Utils}!trim@{trim}}
+\index{trim@{trim}!Utils@{Utils}}
+\subsubsection[{trim}]{\setlength{\rightskip}{0pt plus 5cm}G2\-O\-\_\-\-C\-O\-R\-E\-\_\-\-A\-P\-I std\-::string g2o\-::trim (
+\begin{DoxyParamCaption}
+\item[{const std\-::string \&}]{s}
+\end{DoxyParamCaption}
+)}}\label{group__utils_ga437d185a62afe16a99f27f3b12e108d7}
+remove whitespaces from the start/end of a string 
+
+在文件 string\-\_\-tools.\-cpp 第 48 行定义.
+
+
+
+参考自 g2o\-::\-Optimizable\-Graph\-::set\-Renamed\-Types\-From\-String() , 以及 g2o\-::\-Property\-Map\-::update\-Map\-From\-String().
+
+
+
+这是这个函数的调用关系图\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group__utils_ga437d185a62afe16a99f27f3b12e108d7_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{group__utils_gad2277aa8d0784f7001f7f27396d59f98}{\index{Utils@{Utils}!trim\-Left@{trim\-Left}}
+\index{trim\-Left@{trim\-Left}!Utils@{Utils}}
+\subsubsection[{trim\-Left}]{\setlength{\rightskip}{0pt plus 5cm}G2\-O\-\_\-\-C\-O\-R\-E\-\_\-\-A\-P\-I std\-::string g2o\-::trim\-Left (
+\begin{DoxyParamCaption}
+\item[{const std\-::string \&}]{s}
+\end{DoxyParamCaption}
+)}}\label{group__utils_gad2277aa8d0784f7001f7f27396d59f98}
+remove whitespaces from the left side of the string 
+
+在文件 string\-\_\-tools.\-cpp 第 59 行定义.
+
+\hypertarget{group__utils_ga7305cbf5d345c0e352ac2baa93b7d30a}{\index{Utils@{Utils}!trim\-Right@{trim\-Right}}
+\index{trim\-Right@{trim\-Right}!Utils@{Utils}}
+\subsubsection[{trim\-Right}]{\setlength{\rightskip}{0pt plus 5cm}G2\-O\-\_\-\-C\-O\-R\-E\-\_\-\-A\-P\-I std\-::string g2o\-::trim\-Right (
+\begin{DoxyParamCaption}
+\item[{const std\-::string \&}]{s}
+\end{DoxyParamCaption}
+)}}\label{group__utils_ga7305cbf5d345c0e352ac2baa93b7d30a}
+remove whitespaced from the right side of the string 
+
+在文件 string\-\_\-tools.\-cpp 第 70 行定义.
+

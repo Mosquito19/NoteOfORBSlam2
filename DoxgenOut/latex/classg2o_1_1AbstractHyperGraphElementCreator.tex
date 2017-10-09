@@ -1,0 +1,99 @@
+\hypertarget{classg2o_1_1AbstractHyperGraphElementCreator}{\section{g2o\-:\-:Abstract\-Hyper\-Graph\-Element\-Creator类 参考}
+\label{classg2o_1_1AbstractHyperGraphElementCreator}\index{g2o\-::\-Abstract\-Hyper\-Graph\-Element\-Creator@{g2o\-::\-Abstract\-Hyper\-Graph\-Element\-Creator}}
+}
+
+
+Abstract interface for allocating Hyper\-Graph\-Element.  
+
+
+
+
+{\ttfamily \#include $<$creators.\-h$>$}
+
+
+
+类 g2o\-:\-:Abstract\-Hyper\-Graph\-Element\-Creator 继承关系图\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=262pt]{classg2o_1_1AbstractHyperGraphElementCreator__inherit__graph}
+\end{center}
+\end{figure}
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+virtual \\*
+\hyperlink{structg2o_1_1HyperGraph_1_1HyperGraphElement}{Hyper\-Graph\-::\-Hyper\-Graph\-Element} $\ast$ \hyperlink{classg2o_1_1AbstractHyperGraphElementCreator_a0b4722fa4b05465bf89d6e7fdc75b153}{construct} ()=0
+\item 
+virtual const std\-::string \& \hyperlink{classg2o_1_1AbstractHyperGraphElementCreator_a238928fbbfd6e473b2c61002112e6f5f}{name} () const =0
+\end{DoxyCompactItemize}
+
+
+\subsection{详细描述}
+Abstract interface for allocating Hyper\-Graph\-Element. 
+
+在文件 creators.\-h 第 43 行定义.
+
+
+
+\subsection{成员函数说明}
+\hypertarget{classg2o_1_1AbstractHyperGraphElementCreator_a0b4722fa4b05465bf89d6e7fdc75b153}{\index{g2o\-::\-Abstract\-Hyper\-Graph\-Element\-Creator@{g2o\-::\-Abstract\-Hyper\-Graph\-Element\-Creator}!construct@{construct}}
+\index{construct@{construct}!g2o::AbstractHyperGraphElementCreator@{g2o\-::\-Abstract\-Hyper\-Graph\-Element\-Creator}}
+\subsubsection[{construct}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf Hyper\-Graph\-::\-Hyper\-Graph\-Element}$\ast$ g2o\-::\-Abstract\-Hyper\-Graph\-Element\-Creator\-::construct (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classg2o_1_1AbstractHyperGraphElementCreator_a0b4722fa4b05465bf89d6e7fdc75b153}
+create a hyper graph element. Has to implemented in derived class. 
+
+在 \hyperlink{classg2o_1_1HyperGraphElementCreator_af5e58366dd05b49700076e0c4ace31e3}{g2o\-::\-Hyper\-Graph\-Element\-Creator$<$ T $>$} 内被实现.
+
+
+
+参考自 g2o\-::\-Factory\-::register\-Type().
+
+
+
+这是这个函数的调用关系图\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classg2o_1_1AbstractHyperGraphElementCreator_a0b4722fa4b05465bf89d6e7fdc75b153_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classg2o_1_1AbstractHyperGraphElementCreator_a238928fbbfd6e473b2c61002112e6f5f}{\index{g2o\-::\-Abstract\-Hyper\-Graph\-Element\-Creator@{g2o\-::\-Abstract\-Hyper\-Graph\-Element\-Creator}!name@{name}}
+\index{name@{name}!g2o::AbstractHyperGraphElementCreator@{g2o\-::\-Abstract\-Hyper\-Graph\-Element\-Creator}}
+\subsubsection[{name}]{\setlength{\rightskip}{0pt plus 5cm}virtual const std\-::string\& g2o\-::\-Abstract\-Hyper\-Graph\-Element\-Creator\-::name (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classg2o_1_1AbstractHyperGraphElementCreator_a238928fbbfd6e473b2c61002112e6f5f}
+name of the class to be created. Has to implemented in derived class. 
+
+在 \hyperlink{classg2o_1_1HyperGraphElementCreator_a48df4ada5c8540e65e6e4925b7a00a04}{g2o\-::\-Hyper\-Graph\-Element\-Creator$<$ T $>$} 内被实现.
+
+
+
+参考自 g2o\-::\-Factory\-::register\-Type() , 以及 g2o\-::\-Factory\-::unregister\-Type().
+
+
+
+这是这个函数的调用关系图\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classg2o_1_1AbstractHyperGraphElementCreator_a238928fbbfd6e473b2c61002112e6f5f_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+该类的文档由以下文件生成\-:\begin{DoxyCompactItemize}
+\item 
+Thirdparty/g2o/g2o/core/creators.\-h\end{DoxyCompactItemize}

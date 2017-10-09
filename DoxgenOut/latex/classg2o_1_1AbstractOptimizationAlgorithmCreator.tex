@@ -1,0 +1,56 @@
+\hypertarget{classg2o_1_1AbstractOptimizationAlgorithmCreator}{\section{g2o\-:\-:Abstract\-Optimization\-Algorithm\-Creator类 参考}
+\label{classg2o_1_1AbstractOptimizationAlgorithmCreator}\index{g2o\-::\-Abstract\-Optimization\-Algorithm\-Creator@{g2o\-::\-Abstract\-Optimization\-Algorithm\-Creator}}
+}
+
+
+base for allocating an optimization algorithm  
+
+
+
+
+{\ttfamily \#include $<$optimization\-\_\-algorithm\-\_\-factory.\-h$>$}
+
+
+
+g2o\-:\-:Abstract\-Optimization\-Algorithm\-Creator 的协作图\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=214pt]{classg2o_1_1AbstractOptimizationAlgorithmCreator__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classg2o_1_1AbstractOptimizationAlgorithmCreator_ae9f64a630d2e641043aabc98660495d8}{{\bfseries Abstract\-Optimization\-Algorithm\-Creator} (const \hyperlink{structg2o_1_1OptimizationAlgorithmProperty}{Optimization\-Algorithm\-Property} \&p)}\label{classg2o_1_1AbstractOptimizationAlgorithmCreator_ae9f64a630d2e641043aabc98660495d8}
+
+\item 
+\hypertarget{classg2o_1_1AbstractOptimizationAlgorithmCreator_a96a737bda0f932ac7dd51aa468795353}{virtual \hyperlink{classg2o_1_1OptimizationAlgorithm}{Optimization\-Algorithm} $\ast$ \hyperlink{classg2o_1_1AbstractOptimizationAlgorithmCreator_a96a737bda0f932ac7dd51aa468795353}{construct} ()=0}\label{classg2o_1_1AbstractOptimizationAlgorithmCreator_a96a737bda0f932ac7dd51aa468795353}
+
+\begin{DoxyCompactList}\small\item\em allocate a solver operating on optimizer, re-\/implement for your creator \end{DoxyCompactList}\item 
+\hypertarget{classg2o_1_1AbstractOptimizationAlgorithmCreator_af070d079a64f6d23afe6df25e154b160}{const \\*
+\hyperlink{structg2o_1_1OptimizationAlgorithmProperty}{Optimization\-Algorithm\-Property} \& \hyperlink{classg2o_1_1AbstractOptimizationAlgorithmCreator_af070d079a64f6d23afe6df25e154b160}{property} () const }\label{classg2o_1_1AbstractOptimizationAlgorithmCreator_af070d079a64f6d23afe6df25e154b160}
+
+\begin{DoxyCompactList}\small\item\em return the properties of the solver \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected 属性}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classg2o_1_1AbstractOptimizationAlgorithmCreator_acf2663d0d6dec71049e4853a9825eafb}{\hyperlink{structg2o_1_1OptimizationAlgorithmProperty}{Optimization\-Algorithm\-Property} {\bfseries \-\_\-property}}\label{classg2o_1_1AbstractOptimizationAlgorithmCreator_acf2663d0d6dec71049e4853a9825eafb}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{详细描述}
+base for allocating an optimization algorithm 
+
+Allocating a solver for a given optimizer. The method \hyperlink{classg2o_1_1AbstractOptimizationAlgorithmCreator_a96a737bda0f932ac7dd51aa468795353}{construct()} has to be implemented in your derived class to allocate the desired solver. 
+
+在文件 optimization\-\_\-algorithm\-\_\-factory.\-h 第 54 行定义.
+
+
+
+该类的文档由以下文件生成\-:\begin{DoxyCompactItemize}
+\item 
+Thirdparty/g2o/g2o/core/optimization\-\_\-algorithm\-\_\-factory.\-h\item 
+Thirdparty/g2o/g2o/core/optimization\-\_\-algorithm\-\_\-factory.\-cpp\end{DoxyCompactItemize}

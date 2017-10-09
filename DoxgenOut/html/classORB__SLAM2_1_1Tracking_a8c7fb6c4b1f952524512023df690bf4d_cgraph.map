@@ -1,0 +1,10 @@
+<map id="ORB_SLAM2::Tracking::CreateNewKeyFrame" name="ORB_SLAM2::Tracking::CreateNewKeyFrame">
+<area shape="rect" id="node2" href="$classORB__SLAM2_1_1Map.html#a2d8e1b4376778dfe32df90ec00b599e3" title="Insert MapPoint in the map. " alt="" coords="214,5,434,32"/>
+<area shape="rect" id="node3" href="$classORB__SLAM2_1_1KeyFrame.html#a16ea4f0cfa1ca411bb3382107fe69d2d" title="Add MapPoint to KeyFrame. " alt="" coords="239,57,409,98"/>
+<area shape="rect" id="node4" href="$classORB__SLAM2_1_1MapPoint.html#a37277ee3c7d8657976e749ab920bb13f" title="添加观测 " alt="" coords="242,122,406,163"/>
+<area shape="rect" id="node5" href="$classORB__SLAM2_1_1MapPoint.html#ab4c3dfd8f5f05a4b1888021f1fac3d84" title="计算具有代表的描述子 " alt="" coords="218,187,430,229"/>
+<area shape="rect" id="node6" href="$classORB__SLAM2_1_1LocalMapping.html#af2d70466a1a217fb7e55d874931ce688" title="插入关键帧 " alt="" coords="229,253,419,294"/>
+<area shape="rect" id="node7" href="$classORB__SLAM2_1_1Frame.html#a46084d187e1fc60181e1c72f77c733ca" title="Backprojects a keypoint (if stereo/depth info available) into 3D world coordinates. " alt="" coords="219,318,429,359"/>
+<area shape="rect" id="node8" href="$classORB__SLAM2_1_1MapPoint.html#ac5b8e4ec6a7737860af57058bdd16124" title="更新平均观测方向以及观测距离范围 " alt="" coords="238,383,410,425"/>
+<area shape="rect" id="node9" href="$classORB__SLAM2_1_1Frame.html#a0a18d3024a23f6fa2cab9c7d987598c2" title="Computes rotation, translation and camera center matrices from the camera pose. " alt="" coords="226,449,422,490"/>
+</map>

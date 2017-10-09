@@ -1,0 +1,5 @@
+<map id="ORB_SLAM2::Tracking::UpdateLastFrame" name="ORB_SLAM2::Tracking::UpdateLastFrame">
+<area shape="rect" id="node2" href="$classORB__SLAM2_1_1Frame.html#a95cf2ea68735ef3e8c2d820eada11bf4" title="Set the camera pose. " alt="" coords="217,12,421,39"/>
+<area shape="rect" id="node4" href="$classORB__SLAM2_1_1Frame.html#a46084d187e1fc60181e1c72f77c733ca" title="Backprojects a keypoint (if stereo/depth info available) into 3D world coordinates. " alt="" coords="213,63,424,105"/>
+<area shape="rect" id="node3" href="$classORB__SLAM2_1_1Frame.html#a0a18d3024a23f6fa2cab9c7d987598c2" title="Computes rotation, translation and camera center matrices from the camera pose. " alt="" coords="473,5,669,46"/>
+</map>

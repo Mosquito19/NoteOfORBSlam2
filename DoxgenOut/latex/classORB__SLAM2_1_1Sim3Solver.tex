@@ -1,0 +1,188 @@
+\hypertarget{classORB__SLAM2_1_1Sim3Solver}{\section{O\-R\-B\-\_\-\-S\-L\-A\-M2\-:\-:Sim3\-Solver类 参考}
+\label{classORB__SLAM2_1_1Sim3Solver}\index{O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Sim3\-Solver@{O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Sim3\-Solver}}
+}
+
+
+O\-R\-B\-\_\-\-S\-L\-A\-M2\-:\-:Sim3\-Solver 的协作图\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classORB__SLAM2_1_1Sim3Solver__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classORB__SLAM2_1_1Sim3Solver_ade0519fb4d34edfdb18fc103a03e99e1}{{\bfseries Sim3\-Solver} (\hyperlink{classORB__SLAM2_1_1KeyFrame}{Key\-Frame} $\ast$p\-K\-F1, \hyperlink{classORB__SLAM2_1_1KeyFrame}{Key\-Frame} $\ast$p\-K\-F2, const std\-::vector$<$ \hyperlink{classORB__SLAM2_1_1MapPoint}{Map\-Point} $\ast$ $>$ \&vp\-Matched12, const bool b\-Fix\-Scale=true)}\label{classORB__SLAM2_1_1Sim3Solver_ade0519fb4d34edfdb18fc103a03e99e1}
+
+\item 
+\hypertarget{classORB__SLAM2_1_1Sim3Solver_ab90d591f1b9eac3d846efd35c2c04920}{void {\bfseries Set\-Ransac\-Parameters} (double probability=0.\-99, int min\-Inliers=6, int max\-Iterations=300)}\label{classORB__SLAM2_1_1Sim3Solver_ab90d591f1b9eac3d846efd35c2c04920}
+
+\item 
+\hypertarget{classORB__SLAM2_1_1Sim3Solver_a34ba62d5d8033ab12a811c241f30544b}{cv\-::\-Mat {\bfseries find} (std\-::vector$<$ bool $>$ \&vb\-Inliers12, int \&n\-Inliers)}\label{classORB__SLAM2_1_1Sim3Solver_a34ba62d5d8033ab12a811c241f30544b}
+
+\item 
+\hypertarget{classORB__SLAM2_1_1Sim3Solver_ae07cddad85e41611bd454f8026de31a6}{cv\-::\-Mat {\bfseries iterate} (int n\-Iterations, bool \&b\-No\-More, std\-::vector$<$ bool $>$ \&vb\-Inliers, int \&n\-Inliers)}\label{classORB__SLAM2_1_1Sim3Solver_ae07cddad85e41611bd454f8026de31a6}
+
+\item 
+\hypertarget{classORB__SLAM2_1_1Sim3Solver_a9cf5646f2530a074e30320ae5cf1cb4b}{cv\-::\-Mat {\bfseries Get\-Estimated\-Rotation} ()}\label{classORB__SLAM2_1_1Sim3Solver_a9cf5646f2530a074e30320ae5cf1cb4b}
+
+\item 
+\hypertarget{classORB__SLAM2_1_1Sim3Solver_a27f28d7708a7215279751e592a17d0d5}{cv\-::\-Mat {\bfseries Get\-Estimated\-Translation} ()}\label{classORB__SLAM2_1_1Sim3Solver_a27f28d7708a7215279751e592a17d0d5}
+
+\item 
+\hypertarget{classORB__SLAM2_1_1Sim3Solver_a3942b204d02957269bad6a00c03a1e4b}{float {\bfseries Get\-Estimated\-Scale} ()}\label{classORB__SLAM2_1_1Sim3Solver_a3942b204d02957269bad6a00c03a1e4b}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classORB__SLAM2_1_1Sim3Solver_aad8da5d1d78fcd8d6511ad29d9cb6db5}{void {\bfseries Compute\-Centroid} (cv\-::\-Mat \&P, cv\-::\-Mat \&Pr, cv\-::\-Mat \&C)}\label{classORB__SLAM2_1_1Sim3Solver_aad8da5d1d78fcd8d6511ad29d9cb6db5}
+
+\item 
+\hypertarget{classORB__SLAM2_1_1Sim3Solver_a87ee2729feee5729397c650b26927a8f}{void {\bfseries Compute\-Sim3} (cv\-::\-Mat \&P1, cv\-::\-Mat \&P2)}\label{classORB__SLAM2_1_1Sim3Solver_a87ee2729feee5729397c650b26927a8f}
+
+\item 
+\hypertarget{classORB__SLAM2_1_1Sim3Solver_a7abb9ede799e916a5c5954c2c8da09c7}{void {\bfseries Check\-Inliers} ()}\label{classORB__SLAM2_1_1Sim3Solver_a7abb9ede799e916a5c5954c2c8da09c7}
+
+\item 
+\hypertarget{classORB__SLAM2_1_1Sim3Solver_af44c59a21d53b04ec7f867b8291dcf25}{void {\bfseries Project} (const std\-::vector$<$ cv\-::\-Mat $>$ \&v\-P3\-Dw, std\-::vector$<$ cv\-::\-Mat $>$ \&v\-P2\-D, cv\-::\-Mat Tcw, cv\-::\-Mat K)}\label{classORB__SLAM2_1_1Sim3Solver_af44c59a21d53b04ec7f867b8291dcf25}
+
+\item 
+\hypertarget{classORB__SLAM2_1_1Sim3Solver_afbe734fae65ebb9b1c9a38ebd3bacbc3}{void {\bfseries From\-Camera\-To\-Image} (const std\-::vector$<$ cv\-::\-Mat $>$ \&v\-P3\-Dc, std\-::vector$<$ cv\-::\-Mat $>$ \&v\-P2\-D, cv\-::\-Mat K)}\label{classORB__SLAM2_1_1Sim3Solver_afbe734fae65ebb9b1c9a38ebd3bacbc3}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected 属性}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classORB__SLAM2_1_1Sim3Solver_a719501a8d39a83a81a67d7334704f42c}{\hyperlink{classORB__SLAM2_1_1KeyFrame}{Key\-Frame} $\ast$ {\bfseries mp\-K\-F1}}\label{classORB__SLAM2_1_1Sim3Solver_a719501a8d39a83a81a67d7334704f42c}
+
+\item 
+\hypertarget{classORB__SLAM2_1_1Sim3Solver_abc8fbea249fc4397c901694b7ecbe2bf}{\hyperlink{classORB__SLAM2_1_1KeyFrame}{Key\-Frame} $\ast$ {\bfseries mp\-K\-F2}}\label{classORB__SLAM2_1_1Sim3Solver_abc8fbea249fc4397c901694b7ecbe2bf}
+
+\item 
+\hypertarget{classORB__SLAM2_1_1Sim3Solver_a9674b6ca24874c387ebd38b9f1a4560a}{std\-::vector$<$ cv\-::\-Mat $>$ {\bfseries mv\-X3\-Dc1}}\label{classORB__SLAM2_1_1Sim3Solver_a9674b6ca24874c387ebd38b9f1a4560a}
+
+\item 
+\hypertarget{classORB__SLAM2_1_1Sim3Solver_afa91dd6da039c45e15d7713eae0c60b7}{std\-::vector$<$ cv\-::\-Mat $>$ {\bfseries mv\-X3\-Dc2}}\label{classORB__SLAM2_1_1Sim3Solver_afa91dd6da039c45e15d7713eae0c60b7}
+
+\item 
+\hypertarget{classORB__SLAM2_1_1Sim3Solver_af4ea0c3fb99c1db31b40d4f0f0bcc749}{std\-::vector$<$ \hyperlink{classORB__SLAM2_1_1MapPoint}{Map\-Point} $\ast$ $>$ {\bfseries mvp\-Map\-Points1}}\label{classORB__SLAM2_1_1Sim3Solver_af4ea0c3fb99c1db31b40d4f0f0bcc749}
+
+\item 
+\hypertarget{classORB__SLAM2_1_1Sim3Solver_a752181b1c6efe5cc79b0204af7edf44b}{std\-::vector$<$ \hyperlink{classORB__SLAM2_1_1MapPoint}{Map\-Point} $\ast$ $>$ {\bfseries mvp\-Map\-Points2}}\label{classORB__SLAM2_1_1Sim3Solver_a752181b1c6efe5cc79b0204af7edf44b}
+
+\item 
+\hypertarget{classORB__SLAM2_1_1Sim3Solver_aa86f37922ef6499404aadc3b0a2526c7}{std\-::vector$<$ \hyperlink{classORB__SLAM2_1_1MapPoint}{Map\-Point} $\ast$ $>$ {\bfseries mvp\-Matches12}}\label{classORB__SLAM2_1_1Sim3Solver_aa86f37922ef6499404aadc3b0a2526c7}
+
+\item 
+\hypertarget{classORB__SLAM2_1_1Sim3Solver_a81ad716802ccd2a3761882a796a0205d}{std\-::vector$<$ size\-\_\-t $>$ {\bfseries mvn\-Indices1}}\label{classORB__SLAM2_1_1Sim3Solver_a81ad716802ccd2a3761882a796a0205d}
+
+\item 
+\hypertarget{classORB__SLAM2_1_1Sim3Solver_af44092ee71f95ec084db6b0144bbfc40}{std\-::vector$<$ size\-\_\-t $>$ {\bfseries mv\-Sigma\-Square1}}\label{classORB__SLAM2_1_1Sim3Solver_af44092ee71f95ec084db6b0144bbfc40}
+
+\item 
+\hypertarget{classORB__SLAM2_1_1Sim3Solver_afd96d2f2d32f1cda0e709c5b704f1f7b}{std\-::vector$<$ size\-\_\-t $>$ {\bfseries mv\-Sigma\-Square2}}\label{classORB__SLAM2_1_1Sim3Solver_afd96d2f2d32f1cda0e709c5b704f1f7b}
+
+\item 
+\hypertarget{classORB__SLAM2_1_1Sim3Solver_a5f739ba98d0da8c39c04e9396a697443}{std\-::vector$<$ size\-\_\-t $>$ {\bfseries mvn\-Max\-Error1}}\label{classORB__SLAM2_1_1Sim3Solver_a5f739ba98d0da8c39c04e9396a697443}
+
+\item 
+\hypertarget{classORB__SLAM2_1_1Sim3Solver_a26ca815b24366cf32e9ce065be4ab8a7}{std\-::vector$<$ size\-\_\-t $>$ {\bfseries mvn\-Max\-Error2}}\label{classORB__SLAM2_1_1Sim3Solver_a26ca815b24366cf32e9ce065be4ab8a7}
+
+\item 
+\hypertarget{classORB__SLAM2_1_1Sim3Solver_a8081f9438c71d5cdf9fc2aacf985136c}{int {\bfseries N}}\label{classORB__SLAM2_1_1Sim3Solver_a8081f9438c71d5cdf9fc2aacf985136c}
+
+\item 
+\hypertarget{classORB__SLAM2_1_1Sim3Solver_a366db3149066adadf76fa4f4ecb39d50}{int {\bfseries m\-N1}}\label{classORB__SLAM2_1_1Sim3Solver_a366db3149066adadf76fa4f4ecb39d50}
+
+\item 
+\hypertarget{classORB__SLAM2_1_1Sim3Solver_afc5eba1e475226a4ab7f0d0de8fc6e48}{cv\-::\-Mat {\bfseries m\-R12i}}\label{classORB__SLAM2_1_1Sim3Solver_afc5eba1e475226a4ab7f0d0de8fc6e48}
+
+\item 
+\hypertarget{classORB__SLAM2_1_1Sim3Solver_a7747196dceb3ef3d2dc341e7aff798aa}{cv\-::\-Mat {\bfseries mt12i}}\label{classORB__SLAM2_1_1Sim3Solver_a7747196dceb3ef3d2dc341e7aff798aa}
+
+\item 
+\hypertarget{classORB__SLAM2_1_1Sim3Solver_a6ba87aac963290a1b18172573890a50a}{float {\bfseries ms12i}}\label{classORB__SLAM2_1_1Sim3Solver_a6ba87aac963290a1b18172573890a50a}
+
+\item 
+\hypertarget{classORB__SLAM2_1_1Sim3Solver_a299a04a059df22bd4b7938a4ade791c3}{cv\-::\-Mat {\bfseries m\-T12i}}\label{classORB__SLAM2_1_1Sim3Solver_a299a04a059df22bd4b7938a4ade791c3}
+
+\item 
+\hypertarget{classORB__SLAM2_1_1Sim3Solver_add3bff26c47ec9d454ea3efe92630e77}{cv\-::\-Mat {\bfseries m\-T21i}}\label{classORB__SLAM2_1_1Sim3Solver_add3bff26c47ec9d454ea3efe92630e77}
+
+\item 
+\hypertarget{classORB__SLAM2_1_1Sim3Solver_a0c909819990b1b62edc9aba6c7e7d94f}{std\-::vector$<$ bool $>$ {\bfseries mvb\-Inliersi}}\label{classORB__SLAM2_1_1Sim3Solver_a0c909819990b1b62edc9aba6c7e7d94f}
+
+\item 
+\hypertarget{classORB__SLAM2_1_1Sim3Solver_abc2d59150f4f6f446032cdb6bb77ee43}{int {\bfseries mn\-Inliersi}}\label{classORB__SLAM2_1_1Sim3Solver_abc2d59150f4f6f446032cdb6bb77ee43}
+
+\item 
+\hypertarget{classORB__SLAM2_1_1Sim3Solver_a2fc877cd37c96ad164bbf36f2a6cd5e9}{int {\bfseries mn\-Iterations}}\label{classORB__SLAM2_1_1Sim3Solver_a2fc877cd37c96ad164bbf36f2a6cd5e9}
+
+\item 
+\hypertarget{classORB__SLAM2_1_1Sim3Solver_ac2f1c6a9abd3fef76f18ab0e9665e2ea}{std\-::vector$<$ bool $>$ {\bfseries mvb\-Best\-Inliers}}\label{classORB__SLAM2_1_1Sim3Solver_ac2f1c6a9abd3fef76f18ab0e9665e2ea}
+
+\item 
+\hypertarget{classORB__SLAM2_1_1Sim3Solver_af19a65050bd50bcf65f7cf48683c8045}{int {\bfseries mn\-Best\-Inliers}}\label{classORB__SLAM2_1_1Sim3Solver_af19a65050bd50bcf65f7cf48683c8045}
+
+\item 
+\hypertarget{classORB__SLAM2_1_1Sim3Solver_adb1eeb9e1774d656c4e8c77f5fc57539}{cv\-::\-Mat {\bfseries m\-Best\-T12}}\label{classORB__SLAM2_1_1Sim3Solver_adb1eeb9e1774d656c4e8c77f5fc57539}
+
+\item 
+\hypertarget{classORB__SLAM2_1_1Sim3Solver_a69cf052880d6e926e11b74e1b59a05e0}{cv\-::\-Mat {\bfseries m\-Best\-Rotation}}\label{classORB__SLAM2_1_1Sim3Solver_a69cf052880d6e926e11b74e1b59a05e0}
+
+\item 
+\hypertarget{classORB__SLAM2_1_1Sim3Solver_a9aca06ce2678d686a318266fe3262a0b}{cv\-::\-Mat {\bfseries m\-Best\-Translation}}\label{classORB__SLAM2_1_1Sim3Solver_a9aca06ce2678d686a318266fe3262a0b}
+
+\item 
+\hypertarget{classORB__SLAM2_1_1Sim3Solver_ab10aee88f18c5a5b80aabb5c21a6489c}{float {\bfseries m\-Best\-Scale}}\label{classORB__SLAM2_1_1Sim3Solver_ab10aee88f18c5a5b80aabb5c21a6489c}
+
+\item 
+\hypertarget{classORB__SLAM2_1_1Sim3Solver_a39aa9674bb73b257e0d834cbec52acce}{bool {\bfseries mb\-Fix\-Scale}}\label{classORB__SLAM2_1_1Sim3Solver_a39aa9674bb73b257e0d834cbec52acce}
+
+\item 
+\hypertarget{classORB__SLAM2_1_1Sim3Solver_abcc39b417f6d09e436d39712fb2a2b11}{std\-::vector$<$ size\-\_\-t $>$ {\bfseries mv\-All\-Indices}}\label{classORB__SLAM2_1_1Sim3Solver_abcc39b417f6d09e436d39712fb2a2b11}
+
+\item 
+\hypertarget{classORB__SLAM2_1_1Sim3Solver_af39b00b7b87b0d240503884a927e5f5b}{std\-::vector$<$ cv\-::\-Mat $>$ {\bfseries mv\-P1im1}}\label{classORB__SLAM2_1_1Sim3Solver_af39b00b7b87b0d240503884a927e5f5b}
+
+\item 
+\hypertarget{classORB__SLAM2_1_1Sim3Solver_a8e6a6be273522fdeeecd9fd7d3c07b9c}{std\-::vector$<$ cv\-::\-Mat $>$ {\bfseries mv\-P2im2}}\label{classORB__SLAM2_1_1Sim3Solver_a8e6a6be273522fdeeecd9fd7d3c07b9c}
+
+\item 
+\hypertarget{classORB__SLAM2_1_1Sim3Solver_aba7cc52c8995b747eda6fbdb02e719b9}{double {\bfseries m\-Ransac\-Prob}}\label{classORB__SLAM2_1_1Sim3Solver_aba7cc52c8995b747eda6fbdb02e719b9}
+
+\item 
+\hypertarget{classORB__SLAM2_1_1Sim3Solver_a67cd1b0b3d88691f85776f85aed0c496}{int {\bfseries m\-Ransac\-Min\-Inliers}}\label{classORB__SLAM2_1_1Sim3Solver_a67cd1b0b3d88691f85776f85aed0c496}
+
+\item 
+\hypertarget{classORB__SLAM2_1_1Sim3Solver_a98e30ee1a61e81e3f864b41e56eed0f6}{int {\bfseries m\-Ransac\-Max\-Its}}\label{classORB__SLAM2_1_1Sim3Solver_a98e30ee1a61e81e3f864b41e56eed0f6}
+
+\item 
+\hypertarget{classORB__SLAM2_1_1Sim3Solver_ad3d4d9b7d09902e156178987d5898625}{float {\bfseries m\-Th}}\label{classORB__SLAM2_1_1Sim3Solver_ad3d4d9b7d09902e156178987d5898625}
+
+\item 
+\hypertarget{classORB__SLAM2_1_1Sim3Solver_a9ea7da2fe7cb33526dc3fd60b556cde8}{float {\bfseries m\-Sigma2}}\label{classORB__SLAM2_1_1Sim3Solver_a9ea7da2fe7cb33526dc3fd60b556cde8}
+
+\item 
+\hypertarget{classORB__SLAM2_1_1Sim3Solver_af802b30069d1bf8d7c6236a695525a10}{cv\-::\-Mat {\bfseries m\-K1}}\label{classORB__SLAM2_1_1Sim3Solver_af802b30069d1bf8d7c6236a695525a10}
+
+\item 
+\hypertarget{classORB__SLAM2_1_1Sim3Solver_ae647640668c16a2716db73a43c812e7a}{cv\-::\-Mat {\bfseries m\-K2}}\label{classORB__SLAM2_1_1Sim3Solver_ae647640668c16a2716db73a43c812e7a}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{详细描述}
+
+
+在文件 Sim3\-Solver.\-h 第 35 行定义.
+
+
+
+该类的文档由以下文件生成\-:\begin{DoxyCompactItemize}
+\item 
+include/Sim3\-Solver.\-h\item 
+src/Sim3\-Solver.\-cpp\end{DoxyCompactItemize}

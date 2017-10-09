@@ -1,0 +1,329 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.6"/>
+<title>My Project: Thirdparty/g2o/g2o/core/sparse_optimizer.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">My Project
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.6 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="pages.html"><span>相关页面</span></a></li>
+      <li><a href="modules.html"><span>模块</span></a></li>
+      <li><a href="namespaces.html"><span>命名空间</span></a></li>
+      <li><a href="annotated.html"><span>类</span></a></li>
+      <li class="current"><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>文件列表</span></a></li>
+      <li><a href="globals.html"><span>文件成员</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('sparse__optimizer_8h_source.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>命名空间</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>友元</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>组</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>页</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">sparse_optimizer.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">// g2o - General Graph Optimization</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">// Copyright (C) 2011 R. Kuemmerle, G. Grisetti, W. Burgard</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">// All rights reserved.</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">//</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment">// Redistribution and use in source and binary forms, with or without</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment">// modification, are permitted provided that the following conditions are</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment">// met:</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment">//</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment">// * Redistributions of source code must retain the above copyright notice,</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment">//   this list of conditions and the following disclaimer.</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment">// * Redistributions in binary form must reproduce the above copyright</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment">//   notice, this list of conditions and the following disclaimer in the</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment">//   documentation and/or other materials provided with the distribution.</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment">//</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment">// THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS &quot;AS</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment">// IS&quot; AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment">// TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment">// PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment">// HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment">// SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="comment">// TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="comment">// PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="comment">// LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="comment">// NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="comment">// SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#ifndef G2O_GRAPH_OPTIMIZER_CHOL_H_</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define G2O_GRAPH_OPTIMIZER_CHOL_H_</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#include &quot;../stuff/macros.h&quot;</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#include &quot;optimizable_graph.h&quot;</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor">#include &quot;sparse_block_matrix.h&quot;</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">#include &quot;batch_stats.h&quot;</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="preprocessor">#include &quot;g2o_core_api.h&quot;</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="preprocessor">#include &lt;map&gt;</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="keyword">namespace </span>g2o {</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  <span class="comment">// forward declaration</span></div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  <span class="keyword">class </span>ActivePathCostFunction;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  <span class="keyword">class </span>OptimizationAlgorithm;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  <span class="keyword">class </span>EstimatePropagatorCost;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div>
+<div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="classg2o_1_1SparseOptimizer.html">   46</a></span>&#160;  <span class="keyword">class </span>G2O_CORE_API <a class="code" href="classg2o_1_1SparseOptimizer.html">SparseOptimizer</a> : <span class="keyword">public</span> <a class="code" href="structg2o_1_1OptimizableGraph.html">OptimizableGraph</a> {</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keyword">enum</span> {</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;      AT_COMPUTEACTIVERROR = OptimizableGraph::AT_NUM_ELEMENTS,</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;      AT_NUM_ELEMENTS, <span class="comment">// keep as last element</span></div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    };</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keyword">friend</span> <span class="keyword">class </span>ActivePathCostFunction;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="comment">// Attention: _solver &amp; _statistics is own by SparseOptimizer and will be</span></div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="comment">// deleted in its destructor.</span></div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <a class="code" href="classg2o_1_1SparseOptimizer.html">SparseOptimizer</a>();</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keyword">virtual</span> ~<a class="code" href="classg2o_1_1SparseOptimizer.html">SparseOptimizer</a>();</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="comment">// new interface for the optimizer</span></div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="comment">// the old functions will be dropped</span></div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="comment"></span>    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> initializeOptimization(HyperGraph::EdgeSet&amp; eset);</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> initializeOptimization(HyperGraph::VertexSet&amp; vset, <span class="keywordtype">int</span> level=0);</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> initializeOptimization(<span class="keywordtype">int</span> level=0);</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> updateInitialization(HyperGraph::VertexSet&amp; vset, HyperGraph::EdgeSet&amp; eset);</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;  </div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> computeInitialGuess();</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> computeInitialGuess(<a class="code" href="classg2o_1_1EstimatePropagatorCost.html">EstimatePropagatorCost</a>&amp; propagator);</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> setToOrigin();</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;    <span class="keywordtype">int</span> optimize(<span class="keywordtype">int</span> iterations, <span class="keywordtype">bool</span> online = <span class="keyword">false</span>);</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;    <span class="keywordtype">bool</span> computeMarginals(<a class="code" href="classg2o_1_1SparseBlockMatrix.html">SparseBlockMatrix&lt;MatrixXd&gt;</a>&amp; spinv, <span class="keyword">const</span> std::vector&lt;std::pair&lt;int, int&gt; &gt;&amp; blockIndices);</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;</div>
+<div class="line"><a name="l00139"></a><span class="lineno"><a class="line" href="classg2o_1_1SparseOptimizer.html#ad9f7ba03f7f37114f757f34f67dd48e5">  139</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classg2o_1_1SparseOptimizer.html#ad9f7ba03f7f37114f757f34f67dd48e5">computeMarginals</a>(<a class="code" href="classg2o_1_1SparseBlockMatrix.html">SparseBlockMatrix&lt;MatrixXd&gt;</a>&amp; spinv, <span class="keyword">const</span> <a class="code" href="classg2o_1_1HyperGraph_1_1Vertex.html">Vertex</a>* vertex) {</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;      <span class="keywordflow">if</span> (vertex-&gt;hessianIndex() &lt; 0) {</div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;          <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;      }</div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;      std::vector&lt;std::pair&lt;int, int&gt; &gt; index;</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;      index.push_back(std::pair&lt;int, int&gt;(vertex-&gt;hessianIndex(), vertex-&gt;hessianIndex()));</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;      <span class="keywordflow">return</span> computeMarginals(spinv, index);</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;    }</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;</div>
+<div class="line"><a name="l00154"></a><span class="lineno"><a class="line" href="classg2o_1_1SparseOptimizer.html#a06bd3e9f1576dafeae317d2697c6f532">  154</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classg2o_1_1SparseOptimizer.html#a06bd3e9f1576dafeae317d2697c6f532">computeMarginals</a>(<a class="code" href="classg2o_1_1SparseBlockMatrix.html">SparseBlockMatrix&lt;MatrixXd&gt;</a>&amp; spinv, <span class="keyword">const</span> VertexContainer&amp; vertices) {</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;      std::vector&lt;std::pair&lt;int, int&gt; &gt; indices;</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;      <span class="keywordflow">for</span> (VertexContainer::const_iterator it = vertices.begin(); it != vertices.end(); ++it) {</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;        indices.push_back(std::pair&lt;int, int&gt;((*it)-&gt;hessianIndex(),(*it)-&gt;hessianIndex()));</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;      }</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;      <span class="keywordflow">return</span> computeMarginals(spinv, indices);</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;    }</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;    <span class="comment">// The gauge should be fixed() and then the optimization can work (if no additional dof are in</span></div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;    <span class="comment">// the system. The default implementation returns a node with maximum dimension.</span></div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;    <span class="keyword">virtual</span> Vertex* findGauge();</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;</div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;    <span class="keywordtype">bool</span> gaugeFreedom();</div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;    <span class="keywordtype">double</span> activeChi2() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;    <span class="keywordtype">double</span> activeRobustChi2() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;</div>
+<div class="line"><a name="l00179"></a><span class="lineno"><a class="line" href="classg2o_1_1SparseOptimizer.html#a99851ba4f2a507e724de43d7fe92f903">  179</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classg2o_1_1SparseOptimizer.html#a99851ba4f2a507e724de43d7fe92f903">verbose</a>()<span class="keyword">  const </span>{<span class="keywordflow">return</span> _verbose;}</div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;    <span class="keywordtype">void</span> setVerbose(<span class="keywordtype">bool</span> verbose);</div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;</div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;    <span class="keywordtype">void</span> setForceStopFlag(<span class="keywordtype">bool</span>* flag);</div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;    <span class="keywordtype">bool</span>* forceStopFlag()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> _forceStopFlag;};</div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;</div>
+<div class="line"><a name="l00189"></a><span class="lineno"><a class="line" href="classg2o_1_1SparseOptimizer.html#ae592f525151d0cfb5bde3e7213f7ab11">  189</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classg2o_1_1SparseOptimizer.html#ae592f525151d0cfb5bde3e7213f7ab11">terminate</a>() {<span class="keywordflow">return</span> _forceStopFlag ? (*_forceStopFlag) : <span class="keyword">false</span>; }</div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;</div>
+<div class="line"><a name="l00192"></a><span class="lineno"><a class="line" href="classg2o_1_1SparseOptimizer.html#a5e98a5f879f04c013b20f9c39a9057da">  192</a></span>&#160;    <span class="keyword">const</span> VertexContainer&amp; <a class="code" href="classg2o_1_1SparseOptimizer.html#a5e98a5f879f04c013b20f9c39a9057da">indexMapping</a>()<span class="keyword"> const </span>{<span class="keywordflow">return</span> _ivMap;}</div>
+<div class="line"><a name="l00194"></a><span class="lineno"><a class="line" href="classg2o_1_1SparseOptimizer.html#a5715f0bab2cb9c1e8a330b2c3c217859">  194</a></span>&#160;    <span class="keyword">const</span> VertexContainer&amp; <a class="code" href="classg2o_1_1SparseOptimizer.html#a5715f0bab2cb9c1e8a330b2c3c217859">activeVertices</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> _activeVertices;}</div>
+<div class="line"><a name="l00196"></a><span class="lineno"><a class="line" href="classg2o_1_1SparseOptimizer.html#aef20b7dd401862d572a851349d1bc124">  196</a></span>&#160;    <span class="keyword">const</span> EdgeContainer&amp; <a class="code" href="classg2o_1_1SparseOptimizer.html#aef20b7dd401862d572a851349d1bc124">activeEdges</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> _activeEdges;}</div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;</div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> removeVertex(<a class="code" href="classg2o_1_1HyperGraph_1_1Vertex.html">HyperGraph::Vertex</a>* v);</div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;</div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;    VertexContainer::const_iterator findActiveVertex(<span class="keyword">const</span> <a class="code" href="classg2o_1_1OptimizableGraph_1_1Vertex.html">OptimizableGraph::Vertex</a>* v) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;    EdgeContainer::const_iterator findActiveEdge(<span class="keyword">const</span> <a class="code" href="classg2o_1_1OptimizableGraph_1_1Edge.html">OptimizableGraph::Edge</a>* e) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;</div>
+<div class="line"><a name="l00218"></a><span class="lineno"><a class="line" href="classg2o_1_1SparseOptimizer.html#a7dad5beea6a44d92b1cc47c0e526a676">  218</a></span>&#160;    <span class="keyword">const</span> <a class="code" href="classg2o_1_1OptimizationAlgorithm.html">OptimizationAlgorithm</a>* <a class="code" href="classg2o_1_1SparseOptimizer.html#a7dad5beea6a44d92b1cc47c0e526a676">algorithm</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> _algorithm;}</div>
+<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;    <a class="code" href="classg2o_1_1OptimizationAlgorithm.html">OptimizationAlgorithm</a>* solver() { <span class="keywordflow">return</span> _algorithm;}</div>
+<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;    <span class="keywordtype">void</span> setAlgorithm(OptimizationAlgorithm* algorithm);</div>
+<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;</div>
+<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;    <span class="keywordtype">void</span> push(<a class="code" href="structg2o_1_1OptimizableGraph.html#a54f01b9b6071e65e6abeebe4afb29dec">SparseOptimizer::VertexContainer</a>&amp; vlist);</div>
+<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;    <span class="keywordtype">void</span> push(HyperGraph::VertexSet&amp; vlist);</div>
+<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;    <span class="keywordtype">void</span> push();</div>
+<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;    <span class="keywordtype">void</span> pop(<a class="code" href="structg2o_1_1OptimizableGraph.html#a54f01b9b6071e65e6abeebe4afb29dec">SparseOptimizer::VertexContainer</a>&amp; vlist);</div>
+<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;    <span class="keywordtype">void</span> pop(HyperGraph::VertexSet&amp; vlist);</div>
+<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;    <span class="keywordtype">void</span> pop();</div>
+<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;</div>
+<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;    <span class="keywordtype">void</span> discardTop(<a class="code" href="structg2o_1_1OptimizableGraph.html#a54f01b9b6071e65e6abeebe4afb29dec">SparseOptimizer::VertexContainer</a>&amp; vlist);</div>
+<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;    <span class="keywordtype">void</span> discardTop();</div>
+<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;    <span class="keyword">using</span> <a class="code" href="structg2o_1_1OptimizableGraph.html#a368b5f22dbc57abd2f651a20d039f61c">OptimizableGraph::discardTop</a>;</div>
+<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;</div>
+<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> clear();</div>
+<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;</div>
+<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;    <span class="keywordtype">void</span> computeActiveErrors();</div>
+<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;</div>
+<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;    G2O_ATTRIBUTE_DEPRECATED(<span class="keywordtype">void</span> linearizeSystem())</div>
+<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;    {</div>
+<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;      <span class="comment">// nothing needed, linearization is now done inside the solver</span></div>
+<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;    }</div>
+<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;</div>
+<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;    <span class="keywordtype">void</span> update(<span class="keyword">const</span> <span class="keywordtype">double</span>* update);</div>
+<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;</div>
+<div class="line"><a name="l00272"></a><span class="lineno"><a class="line" href="classg2o_1_1SparseOptimizer.html#ac0b9e0f3c9d05f600882b9c9b8a5c7c1">  272</a></span>&#160;    <span class="keyword">const</span> BatchStatisticsContainer&amp; <a class="code" href="classg2o_1_1SparseOptimizer.html#ac0b9e0f3c9d05f600882b9c9b8a5c7c1">batchStatistics</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> _batchStatistics;}</div>
+<div class="line"><a name="l00276"></a><span class="lineno"><a class="line" href="classg2o_1_1SparseOptimizer.html#aa93ecf8d3b99e2eef3709a5c70cc8632">  276</a></span>&#160;    BatchStatisticsContainer&amp; <a class="code" href="classg2o_1_1SparseOptimizer.html#aa93ecf8d3b99e2eef3709a5c70cc8632">batchStatistics</a>() { <span class="keywordflow">return</span> _batchStatistics;}</div>
+<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;    </div>
+<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;    <span class="keywordtype">void</span> setComputeBatchStatistics(<span class="keywordtype">bool</span> computeBatchStatistics);</div>
+<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;    </div>
+<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;    <span class="keywordtype">bool</span> computeBatchStatistics()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> _computeBatchStatistics;}</div>
+<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;</div>
+<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;    <span class="comment">/**** callbacks ****/</span></div>
+<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;    <span class="keywordtype">bool</span> addComputeErrorAction(HyperGraphAction* action);</div>
+<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;    <span class="keywordtype">bool</span> removeComputeErrorAction(HyperGraphAction* action);</div>
+<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;</div>
+<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;    </div>
+<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;</div>
+<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;    <span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;    <span class="keywordtype">bool</span>* _forceStopFlag;</div>
+<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;    <span class="keywordtype">bool</span> _verbose;</div>
+<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;</div>
+<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;    VertexContainer _ivMap;</div>
+<div class="line"><a name="l00295"></a><span class="lineno"><a class="line" href="classg2o_1_1SparseOptimizer.html#a805e1db97802980fa4dfef95cfa5e63e">  295</a></span>&#160;    VertexContainer <a class="code" href="classg2o_1_1SparseOptimizer.html#a805e1db97802980fa4dfef95cfa5e63e">_activeVertices</a>;   </div>
+<div class="line"><a name="l00296"></a><span class="lineno"><a class="line" href="classg2o_1_1SparseOptimizer.html#a3207df163943bc1672fc7872964a6d6c">  296</a></span>&#160;    EdgeContainer <a class="code" href="classg2o_1_1SparseOptimizer.html#a3207df163943bc1672fc7872964a6d6c">_activeEdges</a>;        </div>
+<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;</div>
+<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;    <span class="keywordtype">void</span> sortVectorContainers();</div>
+<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160; </div>
+<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;    <a class="code" href="classg2o_1_1OptimizationAlgorithm.html">OptimizationAlgorithm</a>* _algorithm;</div>
+<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;</div>
+<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;    <span class="keywordtype">bool</span> buildIndexMapping(SparseOptimizer::VertexContainer&amp; vlist);</div>
+<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;    <span class="keywordtype">void</span> clearIndexMapping();</div>
+<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;</div>
+<div class="line"><a name="l00308"></a><span class="lineno"><a class="line" href="classg2o_1_1SparseOptimizer.html#a21215378d9e8de28aee8d55b4d25ff89">  308</a></span>&#160;    BatchStatisticsContainer <a class="code" href="classg2o_1_1SparseOptimizer.html#a21215378d9e8de28aee8d55b4d25ff89">_batchStatistics</a>;   </div>
+<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;    <span class="keywordtype">bool</span> _computeBatchStatistics;</div>
+<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;  };</div>
+<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;} <span class="comment">// end namespace</span></div>
+<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;</div>
+<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="classg2o_1_1SparseOptimizer_html_ac0b9e0f3c9d05f600882b9c9b8a5c7c1"><div class="ttname"><a href="classg2o_1_1SparseOptimizer.html#ac0b9e0f3c9d05f600882b9c9b8a5c7c1">g2o::SparseOptimizer::batchStatistics</a></div><div class="ttdeci">const BatchStatisticsContainer &amp; batchStatistics() const </div><div class="ttdef"><b>Definition:</b> <a href="sparse__optimizer_8h_source.html#l00272">sparse_optimizer.h:272</a></div></div>
+<div class="ttc" id="structg2o_1_1OptimizableGraph_html_a54f01b9b6071e65e6abeebe4afb29dec"><div class="ttname"><a href="structg2o_1_1OptimizableGraph.html#a54f01b9b6071e65e6abeebe4afb29dec">g2o::OptimizableGraph::VertexContainer</a></div><div class="ttdeci">std::vector&lt; OptimizableGraph::Vertex * &gt; VertexContainer</div><div class="ttdoc">vector container for vertices </div><div class="ttdef"><b>Definition:</b> <a href="optimizable__graph_8h_source.html#l00121">optimizable_graph.h:121</a></div></div>
+<div class="ttc" id="classg2o_1_1SparseOptimizer_html_ae592f525151d0cfb5bde3e7213f7ab11"><div class="ttname"><a href="classg2o_1_1SparseOptimizer.html#ae592f525151d0cfb5bde3e7213f7ab11">g2o::SparseOptimizer::terminate</a></div><div class="ttdeci">bool terminate()</div><div class="ttdoc">if external stop flag is given, return its state. False otherwise </div><div class="ttdef"><b>Definition:</b> <a href="sparse__optimizer_8h_source.html#l00189">sparse_optimizer.h:189</a></div></div>
+<div class="ttc" id="classg2o_1_1SparseOptimizer_html_a805e1db97802980fa4dfef95cfa5e63e"><div class="ttname"><a href="classg2o_1_1SparseOptimizer.html#a805e1db97802980fa4dfef95cfa5e63e">g2o::SparseOptimizer::_activeVertices</a></div><div class="ttdeci">VertexContainer _activeVertices</div><div class="ttdoc">sorted according to VertexIDCompare </div><div class="ttdef"><b>Definition:</b> <a href="sparse__optimizer_8h_source.html#l00295">sparse_optimizer.h:295</a></div></div>
+<div class="ttc" id="classg2o_1_1SparseOptimizer_html_a06bd3e9f1576dafeae317d2697c6f532"><div class="ttname"><a href="classg2o_1_1SparseOptimizer.html#a06bd3e9f1576dafeae317d2697c6f532">g2o::SparseOptimizer::computeMarginals</a></div><div class="ttdeci">bool computeMarginals(SparseBlockMatrix&lt; MatrixXd &gt; &amp;spinv, const VertexContainer &amp;vertices)</div><div class="ttdef"><b>Definition:</b> <a href="sparse__optimizer_8h_source.html#l00154">sparse_optimizer.h:154</a></div></div>
+<div class="ttc" id="classg2o_1_1SparseOptimizer_html_aef20b7dd401862d572a851349d1bc124"><div class="ttname"><a href="classg2o_1_1SparseOptimizer.html#aef20b7dd401862d572a851349d1bc124">g2o::SparseOptimizer::activeEdges</a></div><div class="ttdeci">const EdgeContainer &amp; activeEdges() const </div><div class="ttdoc">the edges active in the current optimization </div><div class="ttdef"><b>Definition:</b> <a href="sparse__optimizer_8h_source.html#l00196">sparse_optimizer.h:196</a></div></div>
+<div class="ttc" id="classg2o_1_1SparseOptimizer_html_a21215378d9e8de28aee8d55b4d25ff89"><div class="ttname"><a href="classg2o_1_1SparseOptimizer.html#a21215378d9e8de28aee8d55b4d25ff89">g2o::SparseOptimizer::_batchStatistics</a></div><div class="ttdeci">BatchStatisticsContainer _batchStatistics</div><div class="ttdoc">global statistics of the optimizer, e.g., timing, num-non-zeros </div><div class="ttdef"><b>Definition:</b> <a href="sparse__optimizer_8h_source.html#l00308">sparse_optimizer.h:308</a></div></div>
+<div class="ttc" id="classg2o_1_1SparseOptimizer_html_a5e98a5f879f04c013b20f9c39a9057da"><div class="ttname"><a href="classg2o_1_1SparseOptimizer.html#a5e98a5f879f04c013b20f9c39a9057da">g2o::SparseOptimizer::indexMapping</a></div><div class="ttdeci">const VertexContainer &amp; indexMapping() const </div><div class="ttdoc">the index mapping of the vertices </div><div class="ttdef"><b>Definition:</b> <a href="sparse__optimizer_8h_source.html#l00192">sparse_optimizer.h:192</a></div></div>
+<div class="ttc" id="classg2o_1_1SparseOptimizer_html_a3207df163943bc1672fc7872964a6d6c"><div class="ttname"><a href="classg2o_1_1SparseOptimizer.html#a3207df163943bc1672fc7872964a6d6c">g2o::SparseOptimizer::_activeEdges</a></div><div class="ttdeci">EdgeContainer _activeEdges</div><div class="ttdoc">sorted according to EdgeIDCompare </div><div class="ttdef"><b>Definition:</b> <a href="sparse__optimizer_8h_source.html#l00296">sparse_optimizer.h:296</a></div></div>
+<div class="ttc" id="classg2o_1_1EstimatePropagatorCost_html"><div class="ttname"><a href="classg2o_1_1EstimatePropagatorCost.html">g2o::EstimatePropagatorCost</a></div><div class="ttdoc">cost for traversing along active edges in the optimizer </div><div class="ttdef"><b>Definition:</b> <a href="estimate__propagator_8h_source.html#l00053">estimate_propagator.h:53</a></div></div>
+<div class="ttc" id="classg2o_1_1SparseOptimizer_html_aa93ecf8d3b99e2eef3709a5c70cc8632"><div class="ttname"><a href="classg2o_1_1SparseOptimizer.html#aa93ecf8d3b99e2eef3709a5c70cc8632">g2o::SparseOptimizer::batchStatistics</a></div><div class="ttdeci">BatchStatisticsContainer &amp; batchStatistics()</div><div class="ttdef"><b>Definition:</b> <a href="sparse__optimizer_8h_source.html#l00276">sparse_optimizer.h:276</a></div></div>
+<div class="ttc" id="classg2o_1_1OptimizableGraph_1_1Vertex_html"><div class="ttname"><a href="classg2o_1_1OptimizableGraph_1_1Vertex.html">g2o::OptimizableGraph::Vertex</a></div><div class="ttdoc">A general case Vertex for optimization. </div><div class="ttdef"><b>Definition:</b> <a href="optimizable__graph_8h_source.html#l00128">optimizable_graph.h:128</a></div></div>
+<div class="ttc" id="classg2o_1_1HyperGraph_1_1Vertex_html"><div class="ttname"><a href="classg2o_1_1HyperGraph_1_1Vertex.html">g2o::HyperGraph::Vertex</a></div><div class="ttdoc">abstract Vertex, your types must derive from that one </div><div class="ttdef"><b>Definition:</b> <a href="hyper__graph_8h_source.html#l00102">hyper_graph.h:102</a></div></div>
+<div class="ttc" id="structg2o_1_1OptimizableGraph_html"><div class="ttname"><a href="structg2o_1_1OptimizableGraph.html">g2o::OptimizableGraph</a></div><div class="ttdef"><b>Definition:</b> <a href="optimizable__graph_8h_source.html#l00065">optimizable_graph.h:65</a></div></div>
+<div class="ttc" id="classg2o_1_1SparseOptimizer_html"><div class="ttname"><a href="classg2o_1_1SparseOptimizer.html">g2o::SparseOptimizer</a></div><div class="ttdef"><b>Definition:</b> <a href="sparse__optimizer_8h_source.html#l00046">sparse_optimizer.h:46</a></div></div>
+<div class="ttc" id="classg2o_1_1SparseOptimizer_html_a5715f0bab2cb9c1e8a330b2c3c217859"><div class="ttname"><a href="classg2o_1_1SparseOptimizer.html#a5715f0bab2cb9c1e8a330b2c3c217859">g2o::SparseOptimizer::activeVertices</a></div><div class="ttdeci">const VertexContainer &amp; activeVertices() const </div><div class="ttdoc">the vertices active in the current optimization </div><div class="ttdef"><b>Definition:</b> <a href="sparse__optimizer_8h_source.html#l00194">sparse_optimizer.h:194</a></div></div>
+<div class="ttc" id="structg2o_1_1OptimizableGraph_html_a368b5f22dbc57abd2f651a20d039f61c"><div class="ttname"><a href="structg2o_1_1OptimizableGraph.html#a368b5f22dbc57abd2f651a20d039f61c">g2o::OptimizableGraph::discardTop</a></div><div class="ttdeci">virtual void discardTop()</div><div class="ttdoc">discard the last backup of the estimate for all variables by removing it from the stack ...</div><div class="ttdef"><b>Definition:</b> <a href="optimizable__graph_8cpp_source.html#l00315">optimizable_graph.cpp:315</a></div></div>
+<div class="ttc" id="classg2o_1_1OptimizationAlgorithm_html"><div class="ttname"><a href="classg2o_1_1OptimizationAlgorithm.html">g2o::OptimizationAlgorithm</a></div><div class="ttdoc">Generic interface for a non-linear solver operating on a graph. </div><div class="ttdef"><b>Definition:</b> <a href="optimization__algorithm_8h_source.html#l00047">optimization_algorithm.h:47</a></div></div>
+<div class="ttc" id="classg2o_1_1OptimizableGraph_1_1Edge_html"><div class="ttname"><a href="classg2o_1_1OptimizableGraph_1_1Edge.html">g2o::OptimizableGraph::Edge</a></div><div class="ttdef"><b>Definition:</b> <a href="optimizable__graph_8h_source.html#l00383">optimizable_graph.h:383</a></div></div>
+<div class="ttc" id="classg2o_1_1SparseOptimizer_html_a99851ba4f2a507e724de43d7fe92f903"><div class="ttname"><a href="classg2o_1_1SparseOptimizer.html#a99851ba4f2a507e724de43d7fe92f903">g2o::SparseOptimizer::verbose</a></div><div class="ttdeci">bool verbose() const </div><div class="ttdoc">verbose information during optimization </div><div class="ttdef"><b>Definition:</b> <a href="sparse__optimizer_8h_source.html#l00179">sparse_optimizer.h:179</a></div></div>
+<div class="ttc" id="classg2o_1_1SparseOptimizer_html_a7dad5beea6a44d92b1cc47c0e526a676"><div class="ttname"><a href="classg2o_1_1SparseOptimizer.html#a7dad5beea6a44d92b1cc47c0e526a676">g2o::SparseOptimizer::algorithm</a></div><div class="ttdeci">const OptimizationAlgorithm * algorithm() const </div><div class="ttdoc">the solver used by the optimizer </div><div class="ttdef"><b>Definition:</b> <a href="sparse__optimizer_8h_source.html#l00218">sparse_optimizer.h:218</a></div></div>
+<div class="ttc" id="classg2o_1_1SparseBlockMatrix_html"><div class="ttname"><a href="classg2o_1_1SparseBlockMatrix.html">g2o::SparseBlockMatrix</a></div><div class="ttdoc">Sparse matrix which uses blocks. </div><div class="ttdef"><b>Definition:</b> <a href="sparse__block__matrix_8h_source.html#l00062">sparse_block_matrix.h:62</a></div></div>
+<div class="ttc" id="classg2o_1_1SparseOptimizer_html_ad9f7ba03f7f37114f757f34f67dd48e5"><div class="ttname"><a href="classg2o_1_1SparseOptimizer.html#ad9f7ba03f7f37114f757f34f67dd48e5">g2o::SparseOptimizer::computeMarginals</a></div><div class="ttdeci">bool computeMarginals(SparseBlockMatrix&lt; MatrixXd &gt; &amp;spinv, const Vertex *vertex)</div><div class="ttdef"><b>Definition:</b> <a href="sparse__optimizer_8h_source.html#l00139">sparse_optimizer.h:139</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_08235c883c2d11e586a63e6645937db5.html">Thirdparty</a></li><li class="navelem"><a class="el" href="dir_6238d635334f7e809f450ee18181fd21.html">g2o</a></li><li class="navelem"><a class="el" href="dir_62a53d30c17c36057e41412a1a4f77b8.html">g2o</a></li><li class="navelem"><a class="el" href="dir_b7aaf3f9367a0f07449e9b09401b4637.html">core</a></li><li class="navelem"><b>sparse_optimizer.h</b></li>
+    <li class="footer">生成于 2017年 七月 18日 星期二 17:13:37 , 为 My Project使用 
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
+  </ul>
+</div>
+</body>
+</html>

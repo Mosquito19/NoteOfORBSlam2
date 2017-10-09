@@ -1,0 +1,4 @@
+<map id="g2o::EdgeSim3::initialEstimate" name="g2o::EdgeSim3::initialEstimate">
+<area shape="rect" id="node2" href="$classg2o_1_1BaseVertex.html#abb9caa0d2d00af70e95963a11ee9660a" title="return the current estimate of the vertex " alt="" coords="266,5,443,32"/>
+<area shape="rect" id="node3" href="$classg2o_1_1BaseVertex.html#acb6e8e8f39caa04f62dd93a3dd400e06" title="set the estimate for the vertex also calls updateCache() " alt="" coords="256,56,453,83"/>
+</map>

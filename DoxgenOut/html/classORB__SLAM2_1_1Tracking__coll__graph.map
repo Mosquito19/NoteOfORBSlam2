@@ -1,0 +1,19 @@
+<map id="ORB_SLAM2::Tracking" name="ORB_SLAM2::Tracking">
+<area shape="rect" id="node12" href="$classORB__SLAM2_1_1LoopClosing.html" title="ORB_SLAM2::LoopClosing" alt="" coords="2053,759,2235,785"/>
+<area shape="rect" id="node14" href="$classORB__SLAM2_1_1LocalMapping.html" title="ORB_SLAM2::LocalMapping" alt="" coords="2381,615,2571,641"/>
+<area shape="rect" id="node2" href="$classORB__SLAM2_1_1FrameDrawer.html" title="ORB_SLAM2::FrameDrawer" alt="" coords="1233,172,1421,199"/>
+<area shape="rect" id="node3" href="$classORB__SLAM2_1_1Map.html" title="ORB_SLAM2::Map" alt="" coords="675,147,810,173"/>
+<area shape="rect" id="node7" href="$classORB__SLAM2_1_1KeyFrame.html" title="ORB_SLAM2::KeyFrame" alt="" coords="1029,583,1198,609"/>
+<area shape="rect" id="node16" href="$classORB__SLAM2_1_1MapDrawer.html" title="ORB_SLAM2::MapDrawer" alt="" coords="1239,232,1415,259"/>
+<area shape="rect" id="node4" href="$classORB__SLAM2_1_1KeyFrameDatabase.html" title="ORB_SLAM2::KeyFrameDatabase" alt="" coords="630,737,855,764"/>
+<area shape="rect" id="node5" href="$classDBoW2_1_1TemplatedVocabulary.html" title="Generic Vocabulary. " alt="" coords="329,790,532,831"/>
+<area shape="rect" id="node17" href="$classORB__SLAM2_1_1Frame.html" title="ORB_SLAM2::Frame" alt="" coords="1453,439,1600,465"/>
+<area shape="rect" id="node6" href="$classDBoW2_1_1GeneralScoring.html" title="Base class of scoring functions. " alt="" coords="5,797,171,824"/>
+<area shape="rect" id="node8" href="$classDBoW2_1_1FeatureVector.html" title="Vector of nodes with indexes of local features。正索引，node，对应的特征的标号 " alt="" coords="663,448,822,475"/>
+<area shape="rect" id="node10" href="$classDBoW2_1_1BowVector.html" title="DBoW2::BowVector" alt="" coords="673,521,813,548"/>
+<area shape="rect" id="node13" href="$structg2o_1_1Sim3.html" title="g2o::Sim3" alt="" coords="1789,921,1870,948"/>
+<area shape="rect" id="node15" href="$classORB__SLAM2_1_1Initializer.html" title="单目SLAM初始化相关，双目和RGBD不会使用这个类 " alt="" coords="1446,567,1607,593"/>
+<area shape="rect" id="node18" href="$classORB__SLAM2_1_1ORBextractor.html" title="ORB_SLAM2::ORBextractor" alt="" coords="1019,347,1208,373"/>
+<area shape="rect" id="node19" href="$classORB__SLAM2_1_1Viewer.html" title="ORB_SLAM2::Viewer" alt="" coords="1452,617,1601,644"/>
+<area shape="rect" id="node20" href="$classORB__SLAM2_1_1System.html" title="ORB_SLAM2::System" alt="" coords="1449,388,1604,415"/>
+</map>

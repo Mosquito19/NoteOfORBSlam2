@@ -1,0 +1,6 @@
+<map id="g2o::OptimizableGraph::setRenamedTypesFromString" name="g2o::OptimizableGraph::setRenamedTypesFromString">
+<area shape="rect" id="node2" href="$classg2o_1_1Factory.html#a8a1f33e017c5ad59399cef48972578ae" title="return the instance " alt="" coords="264,5,416,32"/>
+<area shape="rect" id="node3" href="$classg2o_1_1Factory.html#a57d370d8b31c214215cd6df31e5eb472" title="g2o::Factory::knowsTag" alt="" coords="259,56,421,83"/>
+<area shape="rect" id="node4" href="$group__utils.html#ga0a56de67e98afa3f8307e7b4ddb4cc83" title="g2o::strSplit" alt="" coords="294,107,386,133"/>
+<area shape="rect" id="node5" href="$group__utils.html#ga437d185a62afe16a99f27f3b12e108d7" title="g2o::trim" alt="" coords="303,157,377,184"/>
+</map>

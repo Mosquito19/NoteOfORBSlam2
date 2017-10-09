@@ -1,0 +1,13 @@
+<map id="ORB_SLAM2::Tracking::StereoInitialization" name="ORB_SLAM2::Tracking::StereoInitialization">
+<area shape="rect" id="node2" href="$classORB__SLAM2_1_1Map.html#a688de3b072e0176bb288bb70d36cd0e9" title="Insert KeyFrame in the map. " alt="" coords="214,5,439,32"/>
+<area shape="rect" id="node3" href="$classORB__SLAM2_1_1Map.html#a2d8e1b4376778dfe32df90ec00b599e3" title="Insert MapPoint in the map. " alt="" coords="217,56,437,83"/>
+<area shape="rect" id="node4" href="$classORB__SLAM2_1_1KeyFrame.html#a16ea4f0cfa1ca411bb3382107fe69d2d" title="Add MapPoint to KeyFrame. " alt="" coords="242,107,411,149"/>
+<area shape="rect" id="node5" href="$classORB__SLAM2_1_1MapPoint.html#a37277ee3c7d8657976e749ab920bb13f" title="添加观测 " alt="" coords="245,173,409,214"/>
+<area shape="rect" id="node6" href="$classORB__SLAM2_1_1MapPoint.html#ab4c3dfd8f5f05a4b1888021f1fac3d84" title="计算具有代表的描述子 " alt="" coords="221,238,433,279"/>
+<area shape="rect" id="node7" href="$classORB__SLAM2_1_1LocalMapping.html#af2d70466a1a217fb7e55d874931ce688" title="插入关键帧 " alt="" coords="232,303,421,345"/>
+<area shape="rect" id="node8" href="$classORB__SLAM2_1_1Frame.html#a95cf2ea68735ef3e8c2d820eada11bf4" title="Set the camera pose. " alt="" coords="225,369,429,396"/>
+<area shape="rect" id="node10" href="$classORB__SLAM2_1_1Map.html#a90aeb2ade0c536688bd42728457e9483" title="设置参考MapPoints，将用于DrawMapPoints函数画图 " alt="" coords="215,421,438,462"/>
+<area shape="rect" id="node11" href="$classORB__SLAM2_1_1Frame.html#a46084d187e1fc60181e1c72f77c733ca" title="Backprojects a keypoint (if stereo/depth info available) into 3D world coordinates. " alt="" coords="221,486,432,527"/>
+<area shape="rect" id="node12" href="$classORB__SLAM2_1_1MapPoint.html#ac5b8e4ec6a7737860af57058bdd16124" title="更新平均观测方向以及观测距离范围 " alt="" coords="241,551,413,593"/>
+<area shape="rect" id="node9" href="$classORB__SLAM2_1_1Frame.html#a0a18d3024a23f6fa2cab9c7d987598c2" title="Computes rotation, translation and camera center matrices from the camera pose. " alt="" coords="489,362,685,403"/>
+</map>

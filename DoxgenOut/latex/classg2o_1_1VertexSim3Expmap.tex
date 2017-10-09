@@ -1,0 +1,102 @@
+\hypertarget{classg2o_1_1VertexSim3Expmap}{\section{g2o\-:\-:Vertex\-Sim3\-Expmap类 参考}
+\label{classg2o_1_1VertexSim3Expmap}\index{g2o\-::\-Vertex\-Sim3\-Expmap@{g2o\-::\-Vertex\-Sim3\-Expmap}}
+}
+
+
+\hyperlink{structg2o_1_1Sim3}{Sim3} Vertex, (x,y,z,qw,qx,qy,qz) the parameterization for the increments constructed is a 7d vector (x,y,z,qx,qy,qz) (note that we leave out the w part of the quaternion.  
+
+
+
+
+{\ttfamily \#include $<$types\-\_\-seven\-\_\-dof\-\_\-expmap.\-h$>$}
+
+
+
+类 g2o\-:\-:Vertex\-Sim3\-Expmap 继承关系图\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=228pt]{classg2o_1_1VertexSim3Expmap__inherit__graph}
+\end{center}
+\end{figure}
+
+
+g2o\-:\-:Vertex\-Sim3\-Expmap 的协作图\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classg2o_1_1VertexSim3Expmap__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classg2o_1_1VertexSim3Expmap_a16b4ef216ad1c4709a6fc6aa452d8e61}{virtual bool \hyperlink{classg2o_1_1VertexSim3Expmap_a16b4ef216ad1c4709a6fc6aa452d8e61}{read} (std\-::istream \&is)}\label{classg2o_1_1VertexSim3Expmap_a16b4ef216ad1c4709a6fc6aa452d8e61}
+
+\begin{DoxyCompactList}\small\item\em read the vertex from a stream, i.\-e., the internal state of the vertex \end{DoxyCompactList}\item 
+\hypertarget{classg2o_1_1VertexSim3Expmap_afdc6079061312466de17b7493e4c491a}{virtual bool \hyperlink{classg2o_1_1VertexSim3Expmap_afdc6079061312466de17b7493e4c491a}{write} (std\-::ostream \&os) const }\label{classg2o_1_1VertexSim3Expmap_afdc6079061312466de17b7493e4c491a}
+
+\begin{DoxyCompactList}\small\item\em write the vertex to a stream \end{DoxyCompactList}\item 
+\hypertarget{classg2o_1_1VertexSim3Expmap_ab076d5964ab55f95251a75bcf341ce05}{virtual void \hyperlink{classg2o_1_1VertexSim3Expmap_ab076d5964ab55f95251a75bcf341ce05}{set\-To\-Origin\-Impl} ()}\label{classg2o_1_1VertexSim3Expmap_ab076d5964ab55f95251a75bcf341ce05}
+
+\begin{DoxyCompactList}\small\item\em sets the node to the origin (used in the multilevel stuff) \end{DoxyCompactList}\item 
+virtual void \hyperlink{classg2o_1_1VertexSim3Expmap_abef7e4d10825caa129984f69251508c2}{oplus\-Impl} (const double $\ast$update\-\_\-)
+\item 
+\hypertarget{classg2o_1_1VertexSim3Expmap_a6ca0c90f25fcde9ab38881b100bab6bc}{Vector2d {\bfseries cam\-\_\-map1} (const Vector2d \&v) const }\label{classg2o_1_1VertexSim3Expmap_a6ca0c90f25fcde9ab38881b100bab6bc}
+
+\item 
+\hypertarget{classg2o_1_1VertexSim3Expmap_a4841c2bbe7b883be30f74b50e078b42e}{Vector2d {\bfseries cam\-\_\-map2} (const Vector2d \&v) const }\label{classg2o_1_1VertexSim3Expmap_a4841c2bbe7b883be30f74b50e078b42e}
+
+\end{DoxyCompactItemize}
+\subsection*{Public 属性}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classg2o_1_1VertexSim3Expmap_a0bf270a1f6d9f45e5b1ee683d4877e1d}{Vector2d {\bfseries \-\_\-principle\-\_\-point1}}\label{classg2o_1_1VertexSim3Expmap_a0bf270a1f6d9f45e5b1ee683d4877e1d}
+
+\item 
+\hypertarget{classg2o_1_1VertexSim3Expmap_aae09e8dc5707e524901e49af4d022edb}{Vector2d {\bfseries \-\_\-principle\-\_\-point2}}\label{classg2o_1_1VertexSim3Expmap_aae09e8dc5707e524901e49af4d022edb}
+
+\item 
+\hypertarget{classg2o_1_1VertexSim3Expmap_a05a79614b17cc700acaeb86039c2e181}{Vector2d {\bfseries \-\_\-focal\-\_\-length1}}\label{classg2o_1_1VertexSim3Expmap_a05a79614b17cc700acaeb86039c2e181}
+
+\item 
+\hypertarget{classg2o_1_1VertexSim3Expmap_a05c121f708922185d7b0823251c28290}{Vector2d {\bfseries \-\_\-focal\-\_\-length2}}\label{classg2o_1_1VertexSim3Expmap_a05c121f708922185d7b0823251c28290}
+
+\item 
+\hypertarget{classg2o_1_1VertexSim3Expmap_a63854235b605e45825798d327890930e}{bool {\bfseries \-\_\-fix\-\_\-scale}}\label{classg2o_1_1VertexSim3Expmap_a63854235b605e45825798d327890930e}
+
+\end{DoxyCompactItemize}
+\subsection*{额外继承的成员函数}
+
+
+\subsection{详细描述}
+\hyperlink{structg2o_1_1Sim3}{Sim3} Vertex, (x,y,z,qw,qx,qy,qz) the parameterization for the increments constructed is a 7d vector (x,y,z,qx,qy,qz) (note that we leave out the w part of the quaternion. 
+
+在文件 types\-\_\-seven\-\_\-dof\-\_\-expmap.\-h 第 49 行定义.
+
+
+
+\subsection{成员函数说明}
+\hypertarget{classg2o_1_1VertexSim3Expmap_abef7e4d10825caa129984f69251508c2}{\index{g2o\-::\-Vertex\-Sim3\-Expmap@{g2o\-::\-Vertex\-Sim3\-Expmap}!oplus\-Impl@{oplus\-Impl}}
+\index{oplus\-Impl@{oplus\-Impl}!g2o::VertexSim3Expmap@{g2o\-::\-Vertex\-Sim3\-Expmap}}
+\subsubsection[{oplus\-Impl}]{\setlength{\rightskip}{0pt plus 5cm}virtual void g2o\-::\-Vertex\-Sim3\-Expmap\-::oplus\-Impl (
+\begin{DoxyParamCaption}
+\item[{const double $\ast$}]{v}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classg2o_1_1VertexSim3Expmap_abef7e4d10825caa129984f69251508c2}
+update the position of the node from the parameters in v. Implement in your class! 
+
+实现了 \hyperlink{classg2o_1_1OptimizableGraph_1_1Vertex_a4537a46afb8d12c3f18c88ba9601c625}{g2o\-::\-Optimizable\-Graph\-::\-Vertex}.
+
+
+
+在文件 types\-\_\-seven\-\_\-dof\-\_\-expmap.\-h 第 61 行定义.
+
+
+
+该类的文档由以下文件生成\-:\begin{DoxyCompactItemize}
+\item 
+Thirdparty/g2o/g2o/types/types\-\_\-seven\-\_\-dof\-\_\-expmap.\-h\item 
+Thirdparty/g2o/g2o/types/types\-\_\-seven\-\_\-dof\-\_\-expmap.\-cpp\end{DoxyCompactItemize}

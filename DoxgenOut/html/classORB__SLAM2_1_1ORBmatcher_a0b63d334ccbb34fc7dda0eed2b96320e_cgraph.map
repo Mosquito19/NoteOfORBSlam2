@@ -1,0 +1,5 @@
+<map id="ORB_SLAM2::ORBmatcher::Fuse" name="ORB_SLAM2::ORBmatcher::Fuse">
+<area shape="rect" id="node2" href="$classORB__SLAM2_1_1KeyFrame.html#a16ea4f0cfa1ca411bb3382107fe69d2d" title="Add MapPoint to KeyFrame. " alt="" coords="241,5,410,46"/>
+<area shape="rect" id="node3" href="$classORB__SLAM2_1_1MapPoint.html#a37277ee3c7d8657976e749ab920bb13f" title="添加观测 " alt="" coords="243,70,407,111"/>
+<area shape="rect" id="node4" href="$classORB__SLAM2_1_1MapPoint.html#a7a8c48a885598ba4da3b188791dfd009" title="check MapPoint is in keyframe " alt="" coords="243,135,407,177"/>
+</map>

@@ -1,0 +1,1213 @@
+\hypertarget{classDBoW2_1_1TemplatedVocabulary}{\section{D\-Bo\-W2\-:\-:Templated\-Vocabulary$<$ T\-Descriptor, F $>$ 模板类 参考}
+\label{classDBoW2_1_1TemplatedVocabulary}\index{D\-Bo\-W2\-::\-Templated\-Vocabulary$<$ T\-Descriptor, F $>$@{D\-Bo\-W2\-::\-Templated\-Vocabulary$<$ T\-Descriptor, F $>$}}
+}
+
+
+Generic Vocabulary.  
+
+
+
+
+{\ttfamily \#include $<$Templated\-Vocabulary.\-h$>$}
+
+
+
+D\-Bo\-W2\-:\-:Templated\-Vocabulary$<$ T\-Descriptor, F $>$ 的协作图\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=236pt]{classDBoW2_1_1TemplatedVocabulary__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{类}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structDBoW2_1_1TemplatedVocabulary_1_1Node}{Node}
+\begin{DoxyCompactList}\small\item\em Tree node. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classDBoW2_1_1TemplatedVocabulary_a0dbbcb6bf766b09f08d945a2af0dbea8}{Templated\-Vocabulary} (int k=10, int L=5, \hyperlink{namespaceDBoW2_a5de5c8a307aca9a84ffefda2a9bc467a}{Weighting\-Type} weighting=T\-F\-\_\-\-I\-D\-F, \hyperlink{namespaceDBoW2_aa252a592dd607c6e60dede06ceef2722}{Scoring\-Type} scoring=L1\-\_\-\-N\-O\-R\-M)
+\item 
+\hyperlink{classDBoW2_1_1TemplatedVocabulary_a72fc6a164a5174003d19bd3c54615de6}{Templated\-Vocabulary} (const std\-::string \&filename)
+\item 
+\hyperlink{classDBoW2_1_1TemplatedVocabulary_a255d68e7b4235487f8d2d8ea0cbaf43a}{Templated\-Vocabulary} (const char $\ast$filename)
+\item 
+\hyperlink{classDBoW2_1_1TemplatedVocabulary_aac48ee5331b5d88a4db1a3c93cb0f6a5}{Templated\-Vocabulary} (const \hyperlink{classDBoW2_1_1TemplatedVocabulary}{Templated\-Vocabulary}$<$ T\-Descriptor, F $>$ \&voc)
+\item 
+virtual \hyperlink{classDBoW2_1_1TemplatedVocabulary_a9d15f985a0c3badc1518be0fbe663099}{$\sim$\-Templated\-Vocabulary} ()
+\item 
+\hyperlink{classDBoW2_1_1TemplatedVocabulary}{Templated\-Vocabulary}\\*
+$<$ T\-Descriptor, F $>$ \& \hyperlink{classDBoW2_1_1TemplatedVocabulary_a5355c25b6f37c11acffe48996e19323f}{operator=} (const \hyperlink{classDBoW2_1_1TemplatedVocabulary}{Templated\-Vocabulary}$<$ T\-Descriptor, F $>$ \&voc)
+\item 
+virtual void \hyperlink{classDBoW2_1_1TemplatedVocabulary_a3679b5a8f2043021a4faab99ccfe4ebe}{create} (const std\-::vector$<$ std\-::vector$<$ T\-Descriptor $>$ $>$ \&training\-\_\-features)
+\item 
+virtual void \hyperlink{classDBoW2_1_1TemplatedVocabulary_a94d48231b043a1102af4c35e256f2054}{create} (const std\-::vector$<$ std\-::vector$<$ T\-Descriptor $>$ $>$ \&training\-\_\-features, int k, int L)
+\item 
+virtual void \hyperlink{classDBoW2_1_1TemplatedVocabulary_a1e4a3e90f4aa1e6b6ea4d7491c223fd4}{create} (const std\-::vector$<$ std\-::vector$<$ T\-Descriptor $>$ $>$ \&training\-\_\-features, int k, int L, \hyperlink{namespaceDBoW2_a5de5c8a307aca9a84ffefda2a9bc467a}{Weighting\-Type} weighting, \hyperlink{namespaceDBoW2_aa252a592dd607c6e60dede06ceef2722}{Scoring\-Type} scoring)
+\item 
+virtual unsigned int \hyperlink{classDBoW2_1_1TemplatedVocabulary_a3907da675f135821894fb497f113ccb0}{size} () const 
+\item 
+virtual bool \hyperlink{classDBoW2_1_1TemplatedVocabulary_ac897310f6a3475da1c0f0ef118b337d1}{empty} () const 
+\item 
+virtual void \hyperlink{classDBoW2_1_1TemplatedVocabulary_af9fc1935403dcaf1fd8c44d96ae3328d}{transform} (const std\-::vector$<$ T\-Descriptor $>$ \&features, \hyperlink{classDBoW2_1_1BowVector}{Bow\-Vector} \&v) const 
+\item 
+virtual void \hyperlink{classDBoW2_1_1TemplatedVocabulary_acae97a5b78d9850a627d45cb05969041}{transform} (const std\-::vector$<$ T\-Descriptor $>$ \&features, \hyperlink{classDBoW2_1_1BowVector}{Bow\-Vector} \&v, \hyperlink{classDBoW2_1_1FeatureVector}{Feature\-Vector} \&fv, int levelsup) const 
+\item 
+virtual \hyperlink{namespaceDBoW2_ab1a0d3283b2d4690a383372ed20bfeb5}{Word\-Id} \hyperlink{classDBoW2_1_1TemplatedVocabulary_a7bdb12ed8de8e2da937dd0c6de96a53a}{transform} (const T\-Descriptor \&feature) const 
+\item 
+double \hyperlink{classDBoW2_1_1TemplatedVocabulary_a4988c1ab067de25259115bf9963b02d9}{score} (const \hyperlink{classDBoW2_1_1BowVector}{Bow\-Vector} \&a, const \hyperlink{classDBoW2_1_1BowVector}{Bow\-Vector} \&b) const 
+\item 
+virtual \hyperlink{namespaceDBoW2_a3a0fa9c50c0df508759362d6204566f2}{Node\-Id} \hyperlink{classDBoW2_1_1TemplatedVocabulary_aa59e9b47d05bce5ecd4e90afbcd63727}{get\-Parent\-Node} (\hyperlink{namespaceDBoW2_ab1a0d3283b2d4690a383372ed20bfeb5}{Word\-Id} wid, int levelsup) const 
+\item 
+void \hyperlink{classDBoW2_1_1TemplatedVocabulary_a916015cc8e6cd6f53c6e067c7b829f75}{get\-Words\-From\-Node} (\hyperlink{namespaceDBoW2_a3a0fa9c50c0df508759362d6204566f2}{Node\-Id} nid, std\-::vector$<$ \hyperlink{namespaceDBoW2_ab1a0d3283b2d4690a383372ed20bfeb5}{Word\-Id} $>$ \&words) const 
+\item 
+int \hyperlink{classDBoW2_1_1TemplatedVocabulary_afadb7942a23548903deb4548ca1d6e7d}{get\-Branching\-Factor} () const 
+\item 
+int \hyperlink{classDBoW2_1_1TemplatedVocabulary_a60d5e4d240d69042c47473d4c6497e01}{get\-Depth\-Levels} () const 
+\item 
+float \hyperlink{classDBoW2_1_1TemplatedVocabulary_acee6fb9313d844fbcf05f470379c6dc3}{get\-Effective\-Levels} () const 
+\item 
+virtual T\-Descriptor \hyperlink{classDBoW2_1_1TemplatedVocabulary_aed50a053fac7e270bf8369a8667cf2c6}{get\-Word} (\hyperlink{namespaceDBoW2_ab1a0d3283b2d4690a383372ed20bfeb5}{Word\-Id} wid) const 
+\item 
+virtual \hyperlink{namespaceDBoW2_a55fcd7333e591a38e96b91f41bc182f6}{Word\-Value} \hyperlink{classDBoW2_1_1TemplatedVocabulary_a95edc3ffa594ac7a798aec0808997b4a}{get\-Word\-Weight} (\hyperlink{namespaceDBoW2_ab1a0d3283b2d4690a383372ed20bfeb5}{Word\-Id} wid) const 
+\item 
+\hyperlink{namespaceDBoW2_a5de5c8a307aca9a84ffefda2a9bc467a}{Weighting\-Type} \hyperlink{classDBoW2_1_1TemplatedVocabulary_aa1b7c6f984353736ecf4a2483b1c1b6b}{get\-Weighting\-Type} () const 
+\item 
+\hyperlink{namespaceDBoW2_aa252a592dd607c6e60dede06ceef2722}{Scoring\-Type} \hyperlink{classDBoW2_1_1TemplatedVocabulary_adca2e844333011cd9341d42be9cec5e3}{get\-Scoring\-Type} () const 
+\item 
+void \hyperlink{classDBoW2_1_1TemplatedVocabulary_aa8f63a3379debd40214899d996cfc733}{set\-Weighting\-Type} (\hyperlink{namespaceDBoW2_a5de5c8a307aca9a84ffefda2a9bc467a}{Weighting\-Type} type)
+\item 
+void \hyperlink{classDBoW2_1_1TemplatedVocabulary_a05a6c2f46184618c9ea8368f53e6980c}{set\-Scoring\-Type} (\hyperlink{namespaceDBoW2_aa252a592dd607c6e60dede06ceef2722}{Scoring\-Type} type)
+\item 
+bool \hyperlink{classDBoW2_1_1TemplatedVocabulary_a5447d0744100254c4da88ea039fb3414}{load\-From\-Text\-File} (const std\-::string \&filename)
+\item 
+void \hyperlink{classDBoW2_1_1TemplatedVocabulary_a8856121ae0d46ed08db95e51ba74e6eb}{save\-To\-Text\-File} (const std\-::string \&filename) const 
+\item 
+bool \hyperlink{classDBoW2_1_1TemplatedVocabulary_aa8c05732a3c2a063b0a8c1cbc418597a}{load\-From\-Binary\-File} (const std\-::string \&filename)
+\item 
+void \hyperlink{classDBoW2_1_1TemplatedVocabulary_a54f4d76e7ebe4a3a5ead07dabe9c6688}{save\-To\-Binary\-File} (const std\-::string \&filename) const 
+\item 
+void \hyperlink{classDBoW2_1_1TemplatedVocabulary_af85fb30a5eb9e00ceeea9a4f3c178f1d}{save} (const std\-::string \&filename) const 
+\item 
+void \hyperlink{classDBoW2_1_1TemplatedVocabulary_afdec2031c98b9109451b1454f73348b0}{load} (const std\-::string \&filename)
+\item 
+virtual void \hyperlink{classDBoW2_1_1TemplatedVocabulary_a19159c3993fce7b4573a6de208b4a973}{save} (cv\-::\-File\-Storage \&fs, const std\-::string \&name=\char`\"{}vocabulary\char`\"{}) const 
+\item 
+virtual void \hyperlink{classDBoW2_1_1TemplatedVocabulary_a037ba240314ff30f3620fb4de6845c66}{load} (const cv\-::\-File\-Storage \&fs, const std\-::string \&name=\char`\"{}vocabulary\char`\"{})
+\item 
+virtual int \hyperlink{classDBoW2_1_1TemplatedVocabulary_a0b6721fde54bd8cd008f6a120398741e}{stop\-Words} (double min\-Weight)
+\end{DoxyCompactItemize}
+\subsection*{Protected 类型}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classDBoW2_1_1TemplatedVocabulary_a40913d67e369e6993c2eab80a968f829}{typedef const T\-Descriptor $\ast$ \hyperlink{classDBoW2_1_1TemplatedVocabulary_a40913d67e369e6993c2eab80a968f829}{p\-Descriptor}}\label{classDBoW2_1_1TemplatedVocabulary_a40913d67e369e6993c2eab80a968f829}
+
+\begin{DoxyCompactList}\small\item\em Pointer to descriptor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classDBoW2_1_1TemplatedVocabulary_a3244d5a3d0f75ba9c9ae905c5365335d}{create\-Scoring\-Object} ()
+\item 
+void \hyperlink{classDBoW2_1_1TemplatedVocabulary_aea3a7a5d8944a9c71982921d4f3786fa}{get\-Features} (const vector$<$ vector$<$ T\-Descriptor $>$ $>$ \&training\-\_\-features, vector$<$ \hyperlink{classDBoW2_1_1TemplatedVocabulary_a40913d67e369e6993c2eab80a968f829}{p\-Descriptor} $>$ \&features) const 
+\item 
+virtual void \hyperlink{classDBoW2_1_1TemplatedVocabulary_a41e77294037788a9b2744f89ac64ecea}{transform} (const T\-Descriptor \&feature, \hyperlink{namespaceDBoW2_ab1a0d3283b2d4690a383372ed20bfeb5}{Word\-Id} \&id, \hyperlink{namespaceDBoW2_a55fcd7333e591a38e96b91f41bc182f6}{Word\-Value} \&weight, \hyperlink{namespaceDBoW2_a3a0fa9c50c0df508759362d6204566f2}{Node\-Id} $\ast$nid=N\-U\-L\-L, int levelsup=0) const 
+\item 
+virtual void \hyperlink{classDBoW2_1_1TemplatedVocabulary_a4369ffc35f61467b0987a89fcc5a7224}{transform} (const T\-Descriptor \&feature, \hyperlink{namespaceDBoW2_ab1a0d3283b2d4690a383372ed20bfeb5}{Word\-Id} \&id) const 
+\item 
+void \hyperlink{classDBoW2_1_1TemplatedVocabulary_ab79623d30a8550414e1f4bf916869f05}{H\-Kmeans\-Step} (\hyperlink{namespaceDBoW2_a3a0fa9c50c0df508759362d6204566f2}{Node\-Id} parent\-\_\-id, const vector$<$ \hyperlink{classDBoW2_1_1TemplatedVocabulary_a40913d67e369e6993c2eab80a968f829}{p\-Descriptor} $>$ \&descriptors, int current\-\_\-level)
+\item 
+virtual void \hyperlink{classDBoW2_1_1TemplatedVocabulary_a41c464fe0d2f043bbef17ab01cc46e14}{initiate\-Clusters} (const vector$<$ \hyperlink{classDBoW2_1_1TemplatedVocabulary_a40913d67e369e6993c2eab80a968f829}{p\-Descriptor} $>$ \&descriptors, vector$<$ T\-Descriptor $>$ \&clusters) const 
+\item 
+void \hyperlink{classDBoW2_1_1TemplatedVocabulary_ab6a5aedb8c5645d2597a8ca8a3994efe}{initiate\-Clusters\-K\-Mpp} (const vector$<$ \hyperlink{classDBoW2_1_1TemplatedVocabulary_a40913d67e369e6993c2eab80a968f829}{p\-Descriptor} $>$ \&descriptors, vector$<$ T\-Descriptor $>$ \&clusters) const 
+\item 
+void \hyperlink{classDBoW2_1_1TemplatedVocabulary_a9b74d107b7dc6142cbed4e6ef44a8519}{create\-Words} ()
+\item 
+void \hyperlink{classDBoW2_1_1TemplatedVocabulary_af7bf0ecd2d1ecc7d31ddca3aa7d1ddc8}{set\-Node\-Weights} (const vector$<$ vector$<$ T\-Descriptor $>$ $>$ \&features)
+\end{DoxyCompactItemize}
+\subsection*{Protected 属性}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classDBoW2_1_1TemplatedVocabulary_aa5f7f829033a49833fe4fb5652b99337}{int \hyperlink{classDBoW2_1_1TemplatedVocabulary_aa5f7f829033a49833fe4fb5652b99337}{m\-\_\-k}}\label{classDBoW2_1_1TemplatedVocabulary_aa5f7f829033a49833fe4fb5652b99337}
+
+\begin{DoxyCompactList}\small\item\em Branching factor. \end{DoxyCompactList}\item 
+\hypertarget{classDBoW2_1_1TemplatedVocabulary_a16735d9e2c8b901f01d541faea67971e}{int \hyperlink{classDBoW2_1_1TemplatedVocabulary_a16735d9e2c8b901f01d541faea67971e}{m\-\_\-\-L}}\label{classDBoW2_1_1TemplatedVocabulary_a16735d9e2c8b901f01d541faea67971e}
+
+\begin{DoxyCompactList}\small\item\em Depth levels. \end{DoxyCompactList}\item 
+\hypertarget{classDBoW2_1_1TemplatedVocabulary_abf03c6430d630674ddca5bab9c120c51}{\hyperlink{namespaceDBoW2_a5de5c8a307aca9a84ffefda2a9bc467a}{Weighting\-Type} \hyperlink{classDBoW2_1_1TemplatedVocabulary_abf03c6430d630674ddca5bab9c120c51}{m\-\_\-weighting}}\label{classDBoW2_1_1TemplatedVocabulary_abf03c6430d630674ddca5bab9c120c51}
+
+\begin{DoxyCompactList}\small\item\em Weighting method. \end{DoxyCompactList}\item 
+\hypertarget{classDBoW2_1_1TemplatedVocabulary_a89d8aa037f2b5c3c5cc953734bb5cb9f}{\hyperlink{namespaceDBoW2_aa252a592dd607c6e60dede06ceef2722}{Scoring\-Type} \hyperlink{classDBoW2_1_1TemplatedVocabulary_a89d8aa037f2b5c3c5cc953734bb5cb9f}{m\-\_\-scoring}}\label{classDBoW2_1_1TemplatedVocabulary_a89d8aa037f2b5c3c5cc953734bb5cb9f}
+
+\begin{DoxyCompactList}\small\item\em Scoring method. \end{DoxyCompactList}\item 
+\hypertarget{classDBoW2_1_1TemplatedVocabulary_a34144d0e2056d6ed8b925a2937b67418}{\hyperlink{classDBoW2_1_1GeneralScoring}{General\-Scoring} $\ast$ \hyperlink{classDBoW2_1_1TemplatedVocabulary_a34144d0e2056d6ed8b925a2937b67418}{m\-\_\-scoring\-\_\-object}}\label{classDBoW2_1_1TemplatedVocabulary_a34144d0e2056d6ed8b925a2937b67418}
+
+\begin{DoxyCompactList}\small\item\em Object for computing scores. \end{DoxyCompactList}\item 
+\hypertarget{classDBoW2_1_1TemplatedVocabulary_a82be6d310eae6f4f57a72d340489320b}{std\-::vector$<$ \hyperlink{structDBoW2_1_1TemplatedVocabulary_1_1Node}{Node} $>$ \hyperlink{classDBoW2_1_1TemplatedVocabulary_a82be6d310eae6f4f57a72d340489320b}{m\-\_\-nodes}}\label{classDBoW2_1_1TemplatedVocabulary_a82be6d310eae6f4f57a72d340489320b}
+
+\begin{DoxyCompactList}\small\item\em Tree nodes. \end{DoxyCompactList}\item 
+std\-::vector$<$ \hyperlink{structDBoW2_1_1TemplatedVocabulary_1_1Node}{Node} $\ast$ $>$ \hyperlink{classDBoW2_1_1TemplatedVocabulary_a1665546b54f954d2d54d59a6982df3ca}{m\-\_\-words}
+\end{DoxyCompactItemize}
+
+
+\subsection{详细描述}
+\subsubsection*{template$<$class T\-Descriptor, class F$>$class D\-Bo\-W2\-::\-Templated\-Vocabulary$<$ T\-Descriptor, F $>$}
+
+Generic Vocabulary. 
+
+
+\begin{DoxyParams}{参数}
+{\em T\-Descriptor} & class of descriptor \\
+\hline
+{\em F} & class of descriptor functions \\
+\hline
+\end{DoxyParams}
+
+
+在文件 Templated\-Vocabulary.\-h 第 46 行定义.
+
+
+
+\subsection{构造及析构函数说明}
+\hypertarget{classDBoW2_1_1TemplatedVocabulary_a0dbbcb6bf766b09f08d945a2af0dbea8}{\index{D\-Bo\-W2\-::\-Templated\-Vocabulary@{D\-Bo\-W2\-::\-Templated\-Vocabulary}!Templated\-Vocabulary@{Templated\-Vocabulary}}
+\index{Templated\-Vocabulary@{Templated\-Vocabulary}!DBoW2::TemplatedVocabulary@{D\-Bo\-W2\-::\-Templated\-Vocabulary}}
+\subsubsection[{Templated\-Vocabulary}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T\-Descriptor , class F $>$ {\bf D\-Bo\-W2\-::\-Templated\-Vocabulary}$<$ T\-Descriptor, F $>$\-::{\bf Templated\-Vocabulary} (
+\begin{DoxyParamCaption}
+\item[{int}]{k = {\ttfamily 10}, }
+\item[{int}]{L = {\ttfamily 5}, }
+\item[{{\bf Weighting\-Type}}]{weighting = {\ttfamily TF\-\_\-IDF}, }
+\item[{{\bf Scoring\-Type}}]{scoring = {\ttfamily L1\-\_\-NORM}}
+\end{DoxyParamCaption}
+)}}\label{classDBoW2_1_1TemplatedVocabulary_a0dbbcb6bf766b09f08d945a2af0dbea8}
+Initiates an empty vocabulary 
+\begin{DoxyParams}{参数}
+{\em k} & branching factor \\
+\hline
+{\em L} & depth levels \\
+\hline
+{\em weighting} & weighting type \\
+\hline
+{\em scoring} & scoring type \\
+\hline
+\end{DoxyParams}
+
+
+在文件 Templated\-Vocabulary.\-h 第 450 行定义.
+
+\hypertarget{classDBoW2_1_1TemplatedVocabulary_a72fc6a164a5174003d19bd3c54615de6}{\index{D\-Bo\-W2\-::\-Templated\-Vocabulary@{D\-Bo\-W2\-::\-Templated\-Vocabulary}!Templated\-Vocabulary@{Templated\-Vocabulary}}
+\index{Templated\-Vocabulary@{Templated\-Vocabulary}!DBoW2::TemplatedVocabulary@{D\-Bo\-W2\-::\-Templated\-Vocabulary}}
+\subsubsection[{Templated\-Vocabulary}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T\-Descriptor , class F $>$ {\bf D\-Bo\-W2\-::\-Templated\-Vocabulary}$<$ T\-Descriptor, F $>$\-::{\bf Templated\-Vocabulary} (
+\begin{DoxyParamCaption}
+\item[{const std\-::string \&}]{filename}
+\end{DoxyParamCaption}
+)}}\label{classDBoW2_1_1TemplatedVocabulary_a72fc6a164a5174003d19bd3c54615de6}
+Creates the vocabulary by loading a file 
+\begin{DoxyParams}{参数}
+{\em filename} & \\
+\hline
+\end{DoxyParams}
+
+
+在文件 Templated\-Vocabulary.\-h 第 461 行定义.
+
+\hypertarget{classDBoW2_1_1TemplatedVocabulary_a255d68e7b4235487f8d2d8ea0cbaf43a}{\index{D\-Bo\-W2\-::\-Templated\-Vocabulary@{D\-Bo\-W2\-::\-Templated\-Vocabulary}!Templated\-Vocabulary@{Templated\-Vocabulary}}
+\index{Templated\-Vocabulary@{Templated\-Vocabulary}!DBoW2::TemplatedVocabulary@{D\-Bo\-W2\-::\-Templated\-Vocabulary}}
+\subsubsection[{Templated\-Vocabulary}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T\-Descriptor , class F $>$ {\bf D\-Bo\-W2\-::\-Templated\-Vocabulary}$<$ T\-Descriptor, F $>$\-::{\bf Templated\-Vocabulary} (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{filename}
+\end{DoxyParamCaption}
+)}}\label{classDBoW2_1_1TemplatedVocabulary_a255d68e7b4235487f8d2d8ea0cbaf43a}
+Creates the vocabulary by loading a file 
+\begin{DoxyParams}{参数}
+{\em filename} & \\
+\hline
+\end{DoxyParams}
+
+
+在文件 Templated\-Vocabulary.\-h 第 470 行定义.
+
+\hypertarget{classDBoW2_1_1TemplatedVocabulary_aac48ee5331b5d88a4db1a3c93cb0f6a5}{\index{D\-Bo\-W2\-::\-Templated\-Vocabulary@{D\-Bo\-W2\-::\-Templated\-Vocabulary}!Templated\-Vocabulary@{Templated\-Vocabulary}}
+\index{Templated\-Vocabulary@{Templated\-Vocabulary}!DBoW2::TemplatedVocabulary@{D\-Bo\-W2\-::\-Templated\-Vocabulary}}
+\subsubsection[{Templated\-Vocabulary}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T\-Descriptor , class F $>$ {\bf D\-Bo\-W2\-::\-Templated\-Vocabulary}$<$ T\-Descriptor, F $>$\-::{\bf Templated\-Vocabulary} (
+\begin{DoxyParamCaption}
+\item[{const {\bf Templated\-Vocabulary}$<$ T\-Descriptor, F $>$ \&}]{voc}
+\end{DoxyParamCaption}
+)}}\label{classDBoW2_1_1TemplatedVocabulary_aac48ee5331b5d88a4db1a3c93cb0f6a5}
+Copy constructor 
+\begin{DoxyParams}{参数}
+{\em voc} & \\
+\hline
+\end{DoxyParams}
+
+
+在文件 Templated\-Vocabulary.\-h 第 532 行定义.
+
+\hypertarget{classDBoW2_1_1TemplatedVocabulary_a9d15f985a0c3badc1518be0fbe663099}{\index{D\-Bo\-W2\-::\-Templated\-Vocabulary@{D\-Bo\-W2\-::\-Templated\-Vocabulary}!$\sim$\-Templated\-Vocabulary@{$\sim$\-Templated\-Vocabulary}}
+\index{$\sim$\-Templated\-Vocabulary@{$\sim$\-Templated\-Vocabulary}!DBoW2::TemplatedVocabulary@{D\-Bo\-W2\-::\-Templated\-Vocabulary}}
+\subsubsection[{$\sim$\-Templated\-Vocabulary}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T\-Descriptor , class F $>$ {\bf D\-Bo\-W2\-::\-Templated\-Vocabulary}$<$ T\-Descriptor, F $>$\-::$\sim${\bf Templated\-Vocabulary} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classDBoW2_1_1TemplatedVocabulary_a9d15f985a0c3badc1518be0fbe663099}
+Destructor 
+
+在文件 Templated\-Vocabulary.\-h 第 542 行定义.
+
+
+
+\subsection{成员函数说明}
+\hypertarget{classDBoW2_1_1TemplatedVocabulary_a3679b5a8f2043021a4faab99ccfe4ebe}{\index{D\-Bo\-W2\-::\-Templated\-Vocabulary@{D\-Bo\-W2\-::\-Templated\-Vocabulary}!create@{create}}
+\index{create@{create}!DBoW2::TemplatedVocabulary@{D\-Bo\-W2\-::\-Templated\-Vocabulary}}
+\subsubsection[{create}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T\-Descriptor , class F $>$ void {\bf D\-Bo\-W2\-::\-Templated\-Vocabulary}$<$ T\-Descriptor, F $>$\-::create (
+\begin{DoxyParamCaption}
+\item[{const std\-::vector$<$ std\-::vector$<$ T\-Descriptor $>$ $>$ \&}]{training\-\_\-features}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classDBoW2_1_1TemplatedVocabulary_a3679b5a8f2043021a4faab99ccfe4ebe}
+Creates a vocabulary from the training features with the already defined parameters 
+\begin{DoxyParams}{参数}
+{\em training\-\_\-features} & \\
+\hline
+\end{DoxyParams}
+
+
+在文件 Templated\-Vocabulary.\-h 第 573 行定义.
+
+\hypertarget{classDBoW2_1_1TemplatedVocabulary_a94d48231b043a1102af4c35e256f2054}{\index{D\-Bo\-W2\-::\-Templated\-Vocabulary@{D\-Bo\-W2\-::\-Templated\-Vocabulary}!create@{create}}
+\index{create@{create}!DBoW2::TemplatedVocabulary@{D\-Bo\-W2\-::\-Templated\-Vocabulary}}
+\subsubsection[{create}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T\-Descriptor , class F $>$ void {\bf D\-Bo\-W2\-::\-Templated\-Vocabulary}$<$ T\-Descriptor, F $>$\-::create (
+\begin{DoxyParamCaption}
+\item[{const std\-::vector$<$ std\-::vector$<$ T\-Descriptor $>$ $>$ \&}]{training\-\_\-features, }
+\item[{int}]{k, }
+\item[{int}]{L}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classDBoW2_1_1TemplatedVocabulary_a94d48231b043a1102af4c35e256f2054}
+Creates a vocabulary from the training features, setting the branching factor and the depth levels of the tree 
+\begin{DoxyParams}{参数}
+{\em training\-\_\-features} & \\
+\hline
+{\em k} & branching factor \\
+\hline
+{\em L} & depth levels \\
+\hline
+\end{DoxyParams}
+
+
+在文件 Templated\-Vocabulary.\-h 第 607 行定义.
+
+\hypertarget{classDBoW2_1_1TemplatedVocabulary_a1e4a3e90f4aa1e6b6ea4d7491c223fd4}{\index{D\-Bo\-W2\-::\-Templated\-Vocabulary@{D\-Bo\-W2\-::\-Templated\-Vocabulary}!create@{create}}
+\index{create@{create}!DBoW2::TemplatedVocabulary@{D\-Bo\-W2\-::\-Templated\-Vocabulary}}
+\subsubsection[{create}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T\-Descriptor , class F $>$ void {\bf D\-Bo\-W2\-::\-Templated\-Vocabulary}$<$ T\-Descriptor, F $>$\-::create (
+\begin{DoxyParamCaption}
+\item[{const std\-::vector$<$ std\-::vector$<$ T\-Descriptor $>$ $>$ \&}]{training\-\_\-features, }
+\item[{int}]{k, }
+\item[{int}]{L, }
+\item[{{\bf Weighting\-Type}}]{weighting, }
+\item[{{\bf Scoring\-Type}}]{scoring}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classDBoW2_1_1TemplatedVocabulary_a1e4a3e90f4aa1e6b6ea4d7491c223fd4}
+Creates a vocabulary from the training features, setting the branching factor nad the depth levels of the tree, and the weighting and scoring schemes 
+
+在文件 Templated\-Vocabulary.\-h 第 620 行定义.
+
+\hypertarget{classDBoW2_1_1TemplatedVocabulary_a3244d5a3d0f75ba9c9ae905c5365335d}{\index{D\-Bo\-W2\-::\-Templated\-Vocabulary@{D\-Bo\-W2\-::\-Templated\-Vocabulary}!create\-Scoring\-Object@{create\-Scoring\-Object}}
+\index{create\-Scoring\-Object@{create\-Scoring\-Object}!DBoW2::TemplatedVocabulary@{D\-Bo\-W2\-::\-Templated\-Vocabulary}}
+\subsubsection[{create\-Scoring\-Object}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T\-Descriptor , class F $>$ void {\bf D\-Bo\-W2\-::\-Templated\-Vocabulary}$<$ T\-Descriptor, F $>$\-::create\-Scoring\-Object (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classDBoW2_1_1TemplatedVocabulary_a3244d5a3d0f75ba9c9ae905c5365335d}
+Creates an instance of the scoring object accoring to m\-\_\-scoring 
+
+在文件 Templated\-Vocabulary.\-h 第 478 行定义.
+
+\hypertarget{classDBoW2_1_1TemplatedVocabulary_a9b74d107b7dc6142cbed4e6ef44a8519}{\index{D\-Bo\-W2\-::\-Templated\-Vocabulary@{D\-Bo\-W2\-::\-Templated\-Vocabulary}!create\-Words@{create\-Words}}
+\index{create\-Words@{create\-Words}!DBoW2::TemplatedVocabulary@{D\-Bo\-W2\-::\-Templated\-Vocabulary}}
+\subsubsection[{create\-Words}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T\-Descriptor , class F $>$ void {\bf D\-Bo\-W2\-::\-Templated\-Vocabulary}$<$ T\-Descriptor, F $>$\-::create\-Words (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classDBoW2_1_1TemplatedVocabulary_a9b74d107b7dc6142cbed4e6ef44a8519}
+Create the words of the vocabulary once the tree has been built 
+
+在文件 Templated\-Vocabulary.\-h 第 942 行定义.
+
+\hypertarget{classDBoW2_1_1TemplatedVocabulary_ac897310f6a3475da1c0f0ef118b337d1}{\index{D\-Bo\-W2\-::\-Templated\-Vocabulary@{D\-Bo\-W2\-::\-Templated\-Vocabulary}!empty@{empty}}
+\index{empty@{empty}!DBoW2::TemplatedVocabulary@{D\-Bo\-W2\-::\-Templated\-Vocabulary}}
+\subsubsection[{empty}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T\-Descriptor , class F $>$ bool {\bf D\-Bo\-W2\-::\-Templated\-Vocabulary}$<$ T\-Descriptor, F $>$\-::empty (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classDBoW2_1_1TemplatedVocabulary_ac897310f6a3475da1c0f0ef118b337d1}
+Returns whether the vocabulary is empty (i.\-e. it has not been trained) \begin{DoxyReturn}{返回}
+true iff the vocabulary is empty 
+\end{DoxyReturn}
+
+
+在文件 Templated\-Vocabulary.\-h 第 1033 行定义.
+
+\hypertarget{classDBoW2_1_1TemplatedVocabulary_afadb7942a23548903deb4548ca1d6e7d}{\index{D\-Bo\-W2\-::\-Templated\-Vocabulary@{D\-Bo\-W2\-::\-Templated\-Vocabulary}!get\-Branching\-Factor@{get\-Branching\-Factor}}
+\index{get\-Branching\-Factor@{get\-Branching\-Factor}!DBoW2::TemplatedVocabulary@{D\-Bo\-W2\-::\-Templated\-Vocabulary}}
+\subsubsection[{get\-Branching\-Factor}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T\-Descriptor, class F$>$ int {\bf D\-Bo\-W2\-::\-Templated\-Vocabulary}$<$ T\-Descriptor, F $>$\-::get\-Branching\-Factor (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classDBoW2_1_1TemplatedVocabulary_afadb7942a23548903deb4548ca1d6e7d}
+Returns the branching factor of the tree (k) \begin{DoxyReturn}{返回}
+k 
+\end{DoxyReturn}
+
+
+在文件 Templated\-Vocabulary.\-h 第 187 行定义.
+
+
+
+参考自 D\-Bo\-W2\-::operator$<$$<$().
+
+
+
+这是这个函数的调用关系图\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classDBoW2_1_1TemplatedVocabulary_afadb7942a23548903deb4548ca1d6e7d_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classDBoW2_1_1TemplatedVocabulary_a60d5e4d240d69042c47473d4c6497e01}{\index{D\-Bo\-W2\-::\-Templated\-Vocabulary@{D\-Bo\-W2\-::\-Templated\-Vocabulary}!get\-Depth\-Levels@{get\-Depth\-Levels}}
+\index{get\-Depth\-Levels@{get\-Depth\-Levels}!DBoW2::TemplatedVocabulary@{D\-Bo\-W2\-::\-Templated\-Vocabulary}}
+\subsubsection[{get\-Depth\-Levels}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T\-Descriptor, class F$>$ int {\bf D\-Bo\-W2\-::\-Templated\-Vocabulary}$<$ T\-Descriptor, F $>$\-::get\-Depth\-Levels (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classDBoW2_1_1TemplatedVocabulary_a60d5e4d240d69042c47473d4c6497e01}
+Returns the depth levels of the tree (L) \begin{DoxyReturn}{返回}
+L 
+\end{DoxyReturn}
+
+
+在文件 Templated\-Vocabulary.\-h 第 193 行定义.
+
+
+
+参考自 D\-Bo\-W2\-::operator$<$$<$().
+
+
+
+这是这个函数的调用关系图\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classDBoW2_1_1TemplatedVocabulary_a60d5e4d240d69042c47473d4c6497e01_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classDBoW2_1_1TemplatedVocabulary_acee6fb9313d844fbcf05f470379c6dc3}{\index{D\-Bo\-W2\-::\-Templated\-Vocabulary@{D\-Bo\-W2\-::\-Templated\-Vocabulary}!get\-Effective\-Levels@{get\-Effective\-Levels}}
+\index{get\-Effective\-Levels@{get\-Effective\-Levels}!DBoW2::TemplatedVocabulary@{D\-Bo\-W2\-::\-Templated\-Vocabulary}}
+\subsubsection[{get\-Effective\-Levels}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T\-Descriptor , class F $>$ float {\bf D\-Bo\-W2\-::\-Templated\-Vocabulary}$<$ T\-Descriptor, F $>$\-::get\-Effective\-Levels (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classDBoW2_1_1TemplatedVocabulary_acee6fb9313d844fbcf05f470379c6dc3}
+Returns the real depth levels of the tree on average \begin{DoxyReturn}{返回}
+average of depth levels of leaves 
+\end{DoxyReturn}
+
+
+在文件 Templated\-Vocabulary.\-h 第 1041 行定义.
+
+
+
+参考 D\-Bo\-W2\-::\-Templated\-Vocabulary$<$ T\-Descriptor, F $>$\-::\-Node\-::id , 以及 D\-Bo\-W2\-::\-Templated\-Vocabulary$<$ T\-Descriptor, F $>$\-::\-Node\-::parent.
+
+\hypertarget{classDBoW2_1_1TemplatedVocabulary_aea3a7a5d8944a9c71982921d4f3786fa}{\index{D\-Bo\-W2\-::\-Templated\-Vocabulary@{D\-Bo\-W2\-::\-Templated\-Vocabulary}!get\-Features@{get\-Features}}
+\index{get\-Features@{get\-Features}!DBoW2::TemplatedVocabulary@{D\-Bo\-W2\-::\-Templated\-Vocabulary}}
+\subsubsection[{get\-Features}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T\-Descriptor , class F $>$ void {\bf D\-Bo\-W2\-::\-Templated\-Vocabulary}$<$ T\-Descriptor, F $>$\-::get\-Features (
+\begin{DoxyParamCaption}
+\item[{const vector$<$ vector$<$ T\-Descriptor $>$ $>$ \&}]{training\-\_\-features, }
+\item[{vector$<$ {\bf p\-Descriptor} $>$ \&}]{features}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [protected]}}}\label{classDBoW2_1_1TemplatedVocabulary_aea3a7a5d8944a9c71982921d4f3786fa}
+Returns a set of pointers to descriptores 
+\begin{DoxyParams}{参数}
+{\em training\-\_\-features} & all the features \\
+\hline
+{\em features} & (out) pointers to the training features \\
+\hline
+\end{DoxyParams}
+
+
+在文件 Templated\-Vocabulary.\-h 第 636 行定义.
+
+\hypertarget{classDBoW2_1_1TemplatedVocabulary_aa59e9b47d05bce5ecd4e90afbcd63727}{\index{D\-Bo\-W2\-::\-Templated\-Vocabulary@{D\-Bo\-W2\-::\-Templated\-Vocabulary}!get\-Parent\-Node@{get\-Parent\-Node}}
+\index{get\-Parent\-Node@{get\-Parent\-Node}!DBoW2::TemplatedVocabulary@{D\-Bo\-W2\-::\-Templated\-Vocabulary}}
+\subsubsection[{get\-Parent\-Node}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T\-Descriptor , class F $>$ {\bf Node\-Id} {\bf D\-Bo\-W2\-::\-Templated\-Vocabulary}$<$ T\-Descriptor, F $>$\-::get\-Parent\-Node (
+\begin{DoxyParamCaption}
+\item[{{\bf Word\-Id}}]{wid, }
+\item[{int}]{levelsup}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classDBoW2_1_1TemplatedVocabulary_aa59e9b47d05bce5ecd4e90afbcd63727}
+Returns the id of the node that is \char`\"{}levelsup\char`\"{} levels from the word given 
+\begin{DoxyParams}{参数}
+{\em wid} & word id \\
+\hline
+{\em levelsup} & 0..L \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+node id. if levelsup is 0, returns the node id associated to the word id 
+\end{DoxyReturn}
+
+
+在文件 Templated\-Vocabulary.\-h 第 1289 行定义.
+
+\hypertarget{classDBoW2_1_1TemplatedVocabulary_adca2e844333011cd9341d42be9cec5e3}{\index{D\-Bo\-W2\-::\-Templated\-Vocabulary@{D\-Bo\-W2\-::\-Templated\-Vocabulary}!get\-Scoring\-Type@{get\-Scoring\-Type}}
+\index{get\-Scoring\-Type@{get\-Scoring\-Type}!DBoW2::TemplatedVocabulary@{D\-Bo\-W2\-::\-Templated\-Vocabulary}}
+\subsubsection[{get\-Scoring\-Type}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T\-Descriptor, class F$>$ {\bf Scoring\-Type} {\bf D\-Bo\-W2\-::\-Templated\-Vocabulary}$<$ T\-Descriptor, F $>$\-::get\-Scoring\-Type (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classDBoW2_1_1TemplatedVocabulary_adca2e844333011cd9341d42be9cec5e3}
+Returns the scoring method \begin{DoxyReturn}{返回}
+scoring method 
+\end{DoxyReturn}
+
+
+在文件 Templated\-Vocabulary.\-h 第 225 行定义.
+
+
+
+参考自 D\-Bo\-W2\-::operator$<$$<$().
+
+
+
+这是这个函数的调用关系图\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classDBoW2_1_1TemplatedVocabulary_adca2e844333011cd9341d42be9cec5e3_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classDBoW2_1_1TemplatedVocabulary_aa1b7c6f984353736ecf4a2483b1c1b6b}{\index{D\-Bo\-W2\-::\-Templated\-Vocabulary@{D\-Bo\-W2\-::\-Templated\-Vocabulary}!get\-Weighting\-Type@{get\-Weighting\-Type}}
+\index{get\-Weighting\-Type@{get\-Weighting\-Type}!DBoW2::TemplatedVocabulary@{D\-Bo\-W2\-::\-Templated\-Vocabulary}}
+\subsubsection[{get\-Weighting\-Type}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T\-Descriptor, class F$>$ {\bf Weighting\-Type} {\bf D\-Bo\-W2\-::\-Templated\-Vocabulary}$<$ T\-Descriptor, F $>$\-::get\-Weighting\-Type (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classDBoW2_1_1TemplatedVocabulary_aa1b7c6f984353736ecf4a2483b1c1b6b}
+Returns the weighting method \begin{DoxyReturn}{返回}
+weighting method 
+\end{DoxyReturn}
+
+
+在文件 Templated\-Vocabulary.\-h 第 219 行定义.
+
+
+
+参考自 D\-Bo\-W2\-::operator$<$$<$().
+
+
+
+这是这个函数的调用关系图\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classDBoW2_1_1TemplatedVocabulary_aa1b7c6f984353736ecf4a2483b1c1b6b_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classDBoW2_1_1TemplatedVocabulary_aed50a053fac7e270bf8369a8667cf2c6}{\index{D\-Bo\-W2\-::\-Templated\-Vocabulary@{D\-Bo\-W2\-::\-Templated\-Vocabulary}!get\-Word@{get\-Word}}
+\index{get\-Word@{get\-Word}!DBoW2::TemplatedVocabulary@{D\-Bo\-W2\-::\-Templated\-Vocabulary}}
+\subsubsection[{get\-Word}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T\-Descriptor , class F $>$ T\-Descriptor {\bf D\-Bo\-W2\-::\-Templated\-Vocabulary}$<$ T\-Descriptor, F $>$\-::get\-Word (
+\begin{DoxyParamCaption}
+\item[{{\bf Word\-Id}}]{wid}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classDBoW2_1_1TemplatedVocabulary_aed50a053fac7e270bf8369a8667cf2c6}
+Returns the descriptor of a word 
+\begin{DoxyParams}{参数}
+{\em wid} & word id \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+descriptor 
+\end{DoxyReturn}
+
+
+在文件 Templated\-Vocabulary.\-h 第 1058 行定义.
+
+\hypertarget{classDBoW2_1_1TemplatedVocabulary_a916015cc8e6cd6f53c6e067c7b829f75}{\index{D\-Bo\-W2\-::\-Templated\-Vocabulary@{D\-Bo\-W2\-::\-Templated\-Vocabulary}!get\-Words\-From\-Node@{get\-Words\-From\-Node}}
+\index{get\-Words\-From\-Node@{get\-Words\-From\-Node}!DBoW2::TemplatedVocabulary@{D\-Bo\-W2\-::\-Templated\-Vocabulary}}
+\subsubsection[{get\-Words\-From\-Node}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T\-Descriptor , class F $>$ void {\bf D\-Bo\-W2\-::\-Templated\-Vocabulary}$<$ T\-Descriptor, F $>$\-::get\-Words\-From\-Node (
+\begin{DoxyParamCaption}
+\item[{{\bf Node\-Id}}]{nid, }
+\item[{std\-::vector$<$ {\bf Word\-Id} $>$ \&}]{words}
+\end{DoxyParamCaption}
+) const}}\label{classDBoW2_1_1TemplatedVocabulary_a916015cc8e6cd6f53c6e067c7b829f75}
+Returns the ids of all the words that are under the given node id, by traversing any of the branches that goes down from the node 
+\begin{DoxyParams}{参数}
+{\em nid} & starting node id \\
+\hline
+{\em words} & ids of words \\
+\hline
+\end{DoxyParams}
+
+
+在文件 Templated\-Vocabulary.\-h 第 1304 行定义.
+
+
+
+参考 D\-Bo\-W2\-::\-Templated\-Vocabulary$<$ T\-Descriptor, F $>$\-::\-Node\-::is\-Leaf() , 以及 D\-Bo\-W2\-::\-Templated\-Vocabulary$<$ T\-Descriptor, F $>$\-::\-Node\-::word\-\_\-id.
+
+
+
+函数调用图\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classDBoW2_1_1TemplatedVocabulary_a916015cc8e6cd6f53c6e067c7b829f75_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classDBoW2_1_1TemplatedVocabulary_a95edc3ffa594ac7a798aec0808997b4a}{\index{D\-Bo\-W2\-::\-Templated\-Vocabulary@{D\-Bo\-W2\-::\-Templated\-Vocabulary}!get\-Word\-Weight@{get\-Word\-Weight}}
+\index{get\-Word\-Weight@{get\-Word\-Weight}!DBoW2::TemplatedVocabulary@{D\-Bo\-W2\-::\-Templated\-Vocabulary}}
+\subsubsection[{get\-Word\-Weight}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T\-Descriptor , class F $>$ {\bf Word\-Value} {\bf D\-Bo\-W2\-::\-Templated\-Vocabulary}$<$ T\-Descriptor, F $>$\-::get\-Word\-Weight (
+\begin{DoxyParamCaption}
+\item[{{\bf Word\-Id}}]{wid}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classDBoW2_1_1TemplatedVocabulary_a95edc3ffa594ac7a798aec0808997b4a}
+Returns the weight of a word 
+\begin{DoxyParams}{参数}
+{\em wid} & word id \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+weight 
+\end{DoxyReturn}
+
+
+在文件 Templated\-Vocabulary.\-h 第 1066 行定义.
+
+\hypertarget{classDBoW2_1_1TemplatedVocabulary_ab79623d30a8550414e1f4bf916869f05}{\index{D\-Bo\-W2\-::\-Templated\-Vocabulary@{D\-Bo\-W2\-::\-Templated\-Vocabulary}!H\-Kmeans\-Step@{H\-Kmeans\-Step}}
+\index{H\-Kmeans\-Step@{H\-Kmeans\-Step}!DBoW2::TemplatedVocabulary@{D\-Bo\-W2\-::\-Templated\-Vocabulary}}
+\subsubsection[{H\-Kmeans\-Step}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T\-Descriptor , class F $>$ void {\bf D\-Bo\-W2\-::\-Templated\-Vocabulary}$<$ T\-Descriptor, F $>$\-::H\-Kmeans\-Step (
+\begin{DoxyParamCaption}
+\item[{{\bf Node\-Id}}]{parent\-\_\-id, }
+\item[{const vector$<$ {\bf p\-Descriptor} $>$ \&}]{descriptors, }
+\item[{int}]{current\-\_\-level}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classDBoW2_1_1TemplatedVocabulary_ab79623d30a8550414e1f4bf916869f05}
+Creates a level in the tree, under the parent, by running kmeans with a descriptor set, and recursively creates the subsequent levels too 
+\begin{DoxyParams}{参数}
+{\em parent\-\_\-id} & id of parent node \\
+\hline
+{\em descriptors} & descriptors to run the kmeans on \\
+\hline
+{\em current\-\_\-level} & current level in the tree \\
+\hline
+\end{DoxyParams}
+
+
+在文件 Templated\-Vocabulary.\-h 第 657 行定义.
+
+\hypertarget{classDBoW2_1_1TemplatedVocabulary_a41c464fe0d2f043bbef17ab01cc46e14}{\index{D\-Bo\-W2\-::\-Templated\-Vocabulary@{D\-Bo\-W2\-::\-Templated\-Vocabulary}!initiate\-Clusters@{initiate\-Clusters}}
+\index{initiate\-Clusters@{initiate\-Clusters}!DBoW2::TemplatedVocabulary@{D\-Bo\-W2\-::\-Templated\-Vocabulary}}
+\subsubsection[{initiate\-Clusters}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T\-Descriptor , class F $>$ void {\bf D\-Bo\-W2\-::\-Templated\-Vocabulary}$<$ T\-Descriptor, F $>$\-::initiate\-Clusters (
+\begin{DoxyParamCaption}
+\item[{const vector$<$ {\bf p\-Descriptor} $>$ \&}]{descriptors, }
+\item[{vector$<$ T\-Descriptor $>$ \&}]{clusters}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}}\label{classDBoW2_1_1TemplatedVocabulary_a41c464fe0d2f043bbef17ab01cc46e14}
+Creates k clusters from the given descriptors with some seeding algorithm. \begin{DoxyNote}{注解}
+In this class, kmeans++ is used, but this function should be overriden by inherited classes. 
+\end{DoxyNote}
+
+
+在文件 Templated\-Vocabulary.\-h 第 841 行定义.
+
+\hypertarget{classDBoW2_1_1TemplatedVocabulary_ab6a5aedb8c5645d2597a8ca8a3994efe}{\index{D\-Bo\-W2\-::\-Templated\-Vocabulary@{D\-Bo\-W2\-::\-Templated\-Vocabulary}!initiate\-Clusters\-K\-Mpp@{initiate\-Clusters\-K\-Mpp}}
+\index{initiate\-Clusters\-K\-Mpp@{initiate\-Clusters\-K\-Mpp}!DBoW2::TemplatedVocabulary@{D\-Bo\-W2\-::\-Templated\-Vocabulary}}
+\subsubsection[{initiate\-Clusters\-K\-Mpp}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T\-Descriptor , class F $>$ void {\bf D\-Bo\-W2\-::\-Templated\-Vocabulary}$<$ T\-Descriptor, F $>$\-::initiate\-Clusters\-K\-Mpp (
+\begin{DoxyParamCaption}
+\item[{const vector$<$ {\bf p\-Descriptor} $>$ \&}]{descriptors, }
+\item[{vector$<$ T\-Descriptor $>$ \&}]{clusters}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [protected]}}}\label{classDBoW2_1_1TemplatedVocabulary_ab6a5aedb8c5645d2597a8ca8a3994efe}
+Creates k clusters from the given descriptor sets by running the initial step of kmeans++ 
+\begin{DoxyParams}{参数}
+{\em descriptors} & \\
+\hline
+{\em clusters} & resulting clusters \\
+\hline
+\end{DoxyParams}
+
+
+在文件 Templated\-Vocabulary.\-h 第 849 行定义.
+
+
+
+参考 D\-Utils\-::\-Random\-::\-Random\-Int() , 以及 D\-Utils\-::\-Random\-::\-Seed\-Rand\-Once().
+
+
+
+函数调用图\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classDBoW2_1_1TemplatedVocabulary_ab6a5aedb8c5645d2597a8ca8a3994efe_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classDBoW2_1_1TemplatedVocabulary_afdec2031c98b9109451b1454f73348b0}{\index{D\-Bo\-W2\-::\-Templated\-Vocabulary@{D\-Bo\-W2\-::\-Templated\-Vocabulary}!load@{load}}
+\index{load@{load}!DBoW2::TemplatedVocabulary@{D\-Bo\-W2\-::\-Templated\-Vocabulary}}
+\subsubsection[{load}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T\-Descriptor , class F $>$ void {\bf D\-Bo\-W2\-::\-Templated\-Vocabulary}$<$ T\-Descriptor, F $>$\-::load (
+\begin{DoxyParamCaption}
+\item[{const std\-::string \&}]{filename}
+\end{DoxyParamCaption}
+)}}\label{classDBoW2_1_1TemplatedVocabulary_afdec2031c98b9109451b1454f73348b0}
+Loads the vocabulary from a file 
+\begin{DoxyParams}{参数}
+{\em filename} & \\
+\hline
+\end{DoxyParams}
+
+
+在文件 Templated\-Vocabulary.\-h 第 1564 行定义.
+
+\hypertarget{classDBoW2_1_1TemplatedVocabulary_a037ba240314ff30f3620fb4de6845c66}{\index{D\-Bo\-W2\-::\-Templated\-Vocabulary@{D\-Bo\-W2\-::\-Templated\-Vocabulary}!load@{load}}
+\index{load@{load}!DBoW2::TemplatedVocabulary@{D\-Bo\-W2\-::\-Templated\-Vocabulary}}
+\subsubsection[{load}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T\-Descriptor , class F $>$ void {\bf D\-Bo\-W2\-::\-Templated\-Vocabulary}$<$ T\-Descriptor, F $>$\-::load (
+\begin{DoxyParamCaption}
+\item[{const cv\-::\-File\-Storage \&}]{fs, }
+\item[{const std\-::string \&}]{name = {\ttfamily \char`\"{}vocabulary\char`\"{}}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classDBoW2_1_1TemplatedVocabulary_a037ba240314ff30f3620fb4de6845c66}
+Loads the vocabulary from a file storage node 
+\begin{DoxyParams}{参数}
+{\em fn} & first node \\
+\hline
+{\em subname} & name of the child node of fn where the tree is stored. If not given, the fn node is used instead \\
+\hline
+\end{DoxyParams}
+
+
+在文件 Templated\-Vocabulary.\-h 第 1672 行定义.
+
+\hypertarget{classDBoW2_1_1TemplatedVocabulary_aa8c05732a3c2a063b0a8c1cbc418597a}{\index{D\-Bo\-W2\-::\-Templated\-Vocabulary@{D\-Bo\-W2\-::\-Templated\-Vocabulary}!load\-From\-Binary\-File@{load\-From\-Binary\-File}}
+\index{load\-From\-Binary\-File@{load\-From\-Binary\-File}!DBoW2::TemplatedVocabulary@{D\-Bo\-W2\-::\-Templated\-Vocabulary}}
+\subsubsection[{load\-From\-Binary\-File}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T\-Descriptor , class F $>$ bool {\bf D\-Bo\-W2\-::\-Templated\-Vocabulary}$<$ T\-Descriptor, F $>$\-::load\-From\-Binary\-File (
+\begin{DoxyParamCaption}
+\item[{const std\-::string \&}]{filename}
+\end{DoxyParamCaption}
+)}}\label{classDBoW2_1_1TemplatedVocabulary_aa8c05732a3c2a063b0a8c1cbc418597a}
+Loads the vocabulary from a binary file 
+\begin{DoxyParams}{参数}
+{\em filename} & \\
+\hline
+\end{DoxyParams}
+
+
+在文件 Templated\-Vocabulary.\-h 第 1478 行定义.
+
+
+
+参考自 O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-System\-::\-System().
+
+
+
+这是这个函数的调用关系图\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classDBoW2_1_1TemplatedVocabulary_aa8c05732a3c2a063b0a8c1cbc418597a_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classDBoW2_1_1TemplatedVocabulary_a5447d0744100254c4da88ea039fb3414}{\index{D\-Bo\-W2\-::\-Templated\-Vocabulary@{D\-Bo\-W2\-::\-Templated\-Vocabulary}!load\-From\-Text\-File@{load\-From\-Text\-File}}
+\index{load\-From\-Text\-File@{load\-From\-Text\-File}!DBoW2::TemplatedVocabulary@{D\-Bo\-W2\-::\-Templated\-Vocabulary}}
+\subsubsection[{load\-From\-Text\-File}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T\-Descriptor , class F $>$ bool {\bf D\-Bo\-W2\-::\-Templated\-Vocabulary}$<$ T\-Descriptor, F $>$\-::load\-From\-Text\-File (
+\begin{DoxyParamCaption}
+\item[{const std\-::string \&}]{filename}
+\end{DoxyParamCaption}
+)}}\label{classDBoW2_1_1TemplatedVocabulary_a5447d0744100254c4da88ea039fb3414}
+Loads the vocabulary from a text file 
+\begin{DoxyParams}{参数}
+{\em filename} & \\
+\hline
+\end{DoxyParams}
+
+
+在文件 Templated\-Vocabulary.\-h 第 1362 行定义.
+
+
+
+参考自 O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-System\-::\-System().
+
+
+
+这是这个函数的调用关系图\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classDBoW2_1_1TemplatedVocabulary_a5447d0744100254c4da88ea039fb3414_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classDBoW2_1_1TemplatedVocabulary_a5355c25b6f37c11acffe48996e19323f}{\index{D\-Bo\-W2\-::\-Templated\-Vocabulary@{D\-Bo\-W2\-::\-Templated\-Vocabulary}!operator=@{operator=}}
+\index{operator=@{operator=}!DBoW2::TemplatedVocabulary@{D\-Bo\-W2\-::\-Templated\-Vocabulary}}
+\subsubsection[{operator=}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T\-Descriptor , class F $>$ {\bf Templated\-Vocabulary}$<$ T\-Descriptor, F $>$ \& {\bf D\-Bo\-W2\-::\-Templated\-Vocabulary}$<$ T\-Descriptor, F $>$\-::operator= (
+\begin{DoxyParamCaption}
+\item[{const {\bf Templated\-Vocabulary}$<$ T\-Descriptor, F $>$ \&}]{voc}
+\end{DoxyParamCaption}
+)}}\label{classDBoW2_1_1TemplatedVocabulary_a5355c25b6f37c11acffe48996e19323f}
+Assigns the given vocabulary to this by copying its data and removing all the data contained by this vocabulary before 
+\begin{DoxyParams}{参数}
+{\em voc} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+reference to this vocabulary 
+\end{DoxyReturn}
+
+
+在文件 Templated\-Vocabulary.\-h 第 552 行定义.
+
+
+
+参考 D\-Bo\-W2\-::\-Templated\-Vocabulary$<$ T\-Descriptor, F $>$\-::m\-\_\-k.
+
+\hypertarget{classDBoW2_1_1TemplatedVocabulary_af85fb30a5eb9e00ceeea9a4f3c178f1d}{\index{D\-Bo\-W2\-::\-Templated\-Vocabulary@{D\-Bo\-W2\-::\-Templated\-Vocabulary}!save@{save}}
+\index{save@{save}!DBoW2::TemplatedVocabulary@{D\-Bo\-W2\-::\-Templated\-Vocabulary}}
+\subsubsection[{save}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T\-Descriptor , class F $>$ void {\bf D\-Bo\-W2\-::\-Templated\-Vocabulary}$<$ T\-Descriptor, F $>$\-::save (
+\begin{DoxyParamCaption}
+\item[{const std\-::string \&}]{filename}
+\end{DoxyParamCaption}
+) const}}\label{classDBoW2_1_1TemplatedVocabulary_af85fb30a5eb9e00ceeea9a4f3c178f1d}
+Saves the vocabulary into a file 
+\begin{DoxyParams}{参数}
+{\em filename} & \\
+\hline
+\end{DoxyParams}
+
+
+在文件 Templated\-Vocabulary.\-h 第 1553 行定义.
+
+\hypertarget{classDBoW2_1_1TemplatedVocabulary_a19159c3993fce7b4573a6de208b4a973}{\index{D\-Bo\-W2\-::\-Templated\-Vocabulary@{D\-Bo\-W2\-::\-Templated\-Vocabulary}!save@{save}}
+\index{save@{save}!DBoW2::TemplatedVocabulary@{D\-Bo\-W2\-::\-Templated\-Vocabulary}}
+\subsubsection[{save}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T\-Descriptor , class F $>$ void {\bf D\-Bo\-W2\-::\-Templated\-Vocabulary}$<$ T\-Descriptor, F $>$\-::save (
+\begin{DoxyParamCaption}
+\item[{cv\-::\-File\-Storage \&}]{fs, }
+\item[{const std\-::string \&}]{name = {\ttfamily \char`\"{}vocabulary\char`\"{}}}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classDBoW2_1_1TemplatedVocabulary_a19159c3993fce7b4573a6de208b4a973}
+Saves the vocabulary to a file storage structure 
+\begin{DoxyParams}{参数}
+{\em fn} & node in file storage \\
+\hline
+\end{DoxyParams}
+
+
+在文件 Templated\-Vocabulary.\-h 第 1575 行定义.
+
+
+
+参考 D\-Bo\-W2\-::\-Templated\-Vocabulary$<$ T\-Descriptor, F $>$\-::\-Node\-::children, D\-Bo\-W2\-::\-Templated\-Vocabulary$<$ T\-Descriptor, F $>$\-::\-Node\-::descriptor, D\-Bo\-W2\-::\-Templated\-Vocabulary$<$ T\-Descriptor, F $>$\-::\-Node\-::id, D\-Bo\-W2\-::\-Templated\-Vocabulary$<$ T\-Descriptor, F $>$\-::\-Node\-::is\-Leaf() , 以及 D\-Bo\-W2\-::\-Templated\-Vocabulary$<$ T\-Descriptor, F $>$\-::\-Node\-::weight.
+
+
+
+函数调用图\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classDBoW2_1_1TemplatedVocabulary_a19159c3993fce7b4573a6de208b4a973_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classDBoW2_1_1TemplatedVocabulary_a54f4d76e7ebe4a3a5ead07dabe9c6688}{\index{D\-Bo\-W2\-::\-Templated\-Vocabulary@{D\-Bo\-W2\-::\-Templated\-Vocabulary}!save\-To\-Binary\-File@{save\-To\-Binary\-File}}
+\index{save\-To\-Binary\-File@{save\-To\-Binary\-File}!DBoW2::TemplatedVocabulary@{D\-Bo\-W2\-::\-Templated\-Vocabulary}}
+\subsubsection[{save\-To\-Binary\-File}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T\-Descriptor , class F $>$ void {\bf D\-Bo\-W2\-::\-Templated\-Vocabulary}$<$ T\-Descriptor, F $>$\-::save\-To\-Binary\-File (
+\begin{DoxyParamCaption}
+\item[{const std\-::string \&}]{filename}
+\end{DoxyParamCaption}
+) const}}\label{classDBoW2_1_1TemplatedVocabulary_a54f4d76e7ebe4a3a5ead07dabe9c6688}
+Saves the vocabulary into a binary file 
+\begin{DoxyParams}{参数}
+{\em filename} & \\
+\hline
+\end{DoxyParams}
+
+
+在文件 Templated\-Vocabulary.\-h 第 1528 行定义.
+
+
+
+参考 D\-Bo\-W2\-::\-Templated\-Vocabulary$<$ T\-Descriptor, F $>$\-::\-Node\-::descriptor, D\-Bo\-W2\-::\-Templated\-Vocabulary$<$ T\-Descriptor, F $>$\-::\-Node\-::is\-Leaf(), D\-Bo\-W2\-::\-Templated\-Vocabulary$<$ T\-Descriptor, F $>$\-::\-Node\-::parent , 以及 D\-Bo\-W2\-::\-Templated\-Vocabulary$<$ T\-Descriptor, F $>$\-::\-Node\-::weight.
+
+
+
+函数调用图\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classDBoW2_1_1TemplatedVocabulary_a54f4d76e7ebe4a3a5ead07dabe9c6688_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classDBoW2_1_1TemplatedVocabulary_a8856121ae0d46ed08db95e51ba74e6eb}{\index{D\-Bo\-W2\-::\-Templated\-Vocabulary@{D\-Bo\-W2\-::\-Templated\-Vocabulary}!save\-To\-Text\-File@{save\-To\-Text\-File}}
+\index{save\-To\-Text\-File@{save\-To\-Text\-File}!DBoW2::TemplatedVocabulary@{D\-Bo\-W2\-::\-Templated\-Vocabulary}}
+\subsubsection[{save\-To\-Text\-File}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T\-Descriptor , class F $>$ void {\bf D\-Bo\-W2\-::\-Templated\-Vocabulary}$<$ T\-Descriptor, F $>$\-::save\-To\-Text\-File (
+\begin{DoxyParamCaption}
+\item[{const std\-::string \&}]{filename}
+\end{DoxyParamCaption}
+) const}}\label{classDBoW2_1_1TemplatedVocabulary_a8856121ae0d46ed08db95e51ba74e6eb}
+Saves the vocabulary into a text file 
+\begin{DoxyParams}{参数}
+{\em filename} & \\
+\hline
+\end{DoxyParams}
+
+
+在文件 Templated\-Vocabulary.\-h 第 1453 行定义.
+
+
+
+参考 D\-Bo\-W2\-::\-Templated\-Vocabulary$<$ T\-Descriptor, F $>$\-::\-Node\-::descriptor, D\-Bo\-W2\-::\-Templated\-Vocabulary$<$ T\-Descriptor, F $>$\-::\-Node\-::is\-Leaf(), D\-Bo\-W2\-::\-Templated\-Vocabulary$<$ T\-Descriptor, F $>$\-::\-Node\-::parent , 以及 D\-Bo\-W2\-::\-Templated\-Vocabulary$<$ T\-Descriptor, F $>$\-::\-Node\-::weight.
+
+
+
+函数调用图\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classDBoW2_1_1TemplatedVocabulary_a8856121ae0d46ed08db95e51ba74e6eb_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classDBoW2_1_1TemplatedVocabulary_a4988c1ab067de25259115bf9963b02d9}{\index{D\-Bo\-W2\-::\-Templated\-Vocabulary@{D\-Bo\-W2\-::\-Templated\-Vocabulary}!score@{score}}
+\index{score@{score}!DBoW2::TemplatedVocabulary@{D\-Bo\-W2\-::\-Templated\-Vocabulary}}
+\subsubsection[{score}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T\-Descriptor , class F $>$ double {\bf D\-Bo\-W2\-::\-Templated\-Vocabulary}$<$ T\-Descriptor, F $>$\-::score (
+\begin{DoxyParamCaption}
+\item[{const {\bf Bow\-Vector} \&}]{a, }
+\item[{const {\bf Bow\-Vector} \&}]{b}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classDBoW2_1_1TemplatedVocabulary_a4988c1ab067de25259115bf9963b02d9}
+Returns the score of two vectors 
+\begin{DoxyParams}{参数}
+{\em a} & vector \\
+\hline
+{\em b} & vector \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+score between vectors 
+\end{DoxyReturn}
+\begin{DoxyNote}{注解}
+the vectors must be already sorted and normalized if necessary 
+\end{DoxyNote}
+
+
+在文件 Templated\-Vocabulary.\-h 第 1224 行定义.
+
+
+
+参考自 O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Loop\-Closing\-::\-Detect\-Loop(), O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Key\-Frame\-Database\-::\-Detect\-Loop\-Candidates() , 以及 O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Key\-Frame\-Database\-::\-Detect\-Relocalization\-Candidates().
+
+
+
+这是这个函数的调用关系图\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classDBoW2_1_1TemplatedVocabulary_a4988c1ab067de25259115bf9963b02d9_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classDBoW2_1_1TemplatedVocabulary_af7bf0ecd2d1ecc7d31ddca3aa7d1ddc8}{\index{D\-Bo\-W2\-::\-Templated\-Vocabulary@{D\-Bo\-W2\-::\-Templated\-Vocabulary}!set\-Node\-Weights@{set\-Node\-Weights}}
+\index{set\-Node\-Weights@{set\-Node\-Weights}!DBoW2::TemplatedVocabulary@{D\-Bo\-W2\-::\-Templated\-Vocabulary}}
+\subsubsection[{set\-Node\-Weights}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T\-Descriptor , class F $>$ void {\bf D\-Bo\-W2\-::\-Templated\-Vocabulary}$<$ T\-Descriptor, F $>$\-::set\-Node\-Weights (
+\begin{DoxyParamCaption}
+\item[{const vector$<$ vector$<$ T\-Descriptor $>$ $>$ \&}]{features}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classDBoW2_1_1TemplatedVocabulary_af7bf0ecd2d1ecc7d31ddca3aa7d1ddc8}
+Sets the weights of the nodes of tree according to the given features. Before calling this function, the nodes and the words must be already created (by calling H\-Kmeans\-Step and create\-Words) 
+\begin{DoxyParams}{参数}
+{\em features} & \\
+\hline
+\end{DoxyParams}
+
+
+在文件 Templated\-Vocabulary.\-h 第 968 行定义.
+
+\hypertarget{classDBoW2_1_1TemplatedVocabulary_a05a6c2f46184618c9ea8368f53e6980c}{\index{D\-Bo\-W2\-::\-Templated\-Vocabulary@{D\-Bo\-W2\-::\-Templated\-Vocabulary}!set\-Scoring\-Type@{set\-Scoring\-Type}}
+\index{set\-Scoring\-Type@{set\-Scoring\-Type}!DBoW2::TemplatedVocabulary@{D\-Bo\-W2\-::\-Templated\-Vocabulary}}
+\subsubsection[{set\-Scoring\-Type}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T\-Descriptor , class F $>$ void {\bf D\-Bo\-W2\-::\-Templated\-Vocabulary}$<$ T\-Descriptor, F $>$\-::set\-Scoring\-Type (
+\begin{DoxyParamCaption}
+\item[{{\bf Scoring\-Type}}]{type}
+\end{DoxyParamCaption}
+)}}\label{classDBoW2_1_1TemplatedVocabulary_a05a6c2f46184618c9ea8368f53e6980c}
+Changes the scoring method 
+\begin{DoxyParams}{参数}
+{\em type} & new scoring type \\
+\hline
+\end{DoxyParams}
+
+
+在文件 Templated\-Vocabulary.\-h 第 515 行定义.
+
+\hypertarget{classDBoW2_1_1TemplatedVocabulary_aa8f63a3379debd40214899d996cfc733}{\index{D\-Bo\-W2\-::\-Templated\-Vocabulary@{D\-Bo\-W2\-::\-Templated\-Vocabulary}!set\-Weighting\-Type@{set\-Weighting\-Type}}
+\index{set\-Weighting\-Type@{set\-Weighting\-Type}!DBoW2::TemplatedVocabulary@{D\-Bo\-W2\-::\-Templated\-Vocabulary}}
+\subsubsection[{set\-Weighting\-Type}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T\-Descriptor , class F $>$ void {\bf D\-Bo\-W2\-::\-Templated\-Vocabulary}$<$ T\-Descriptor, F $>$\-::set\-Weighting\-Type (
+\begin{DoxyParamCaption}
+\item[{{\bf Weighting\-Type}}]{type}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classDBoW2_1_1TemplatedVocabulary_aa8f63a3379debd40214899d996cfc733}
+Changes the weighting method 
+\begin{DoxyParams}{参数}
+{\em type} & new weighting type \\
+\hline
+\end{DoxyParams}
+
+
+在文件 Templated\-Vocabulary.\-h 第 524 行定义.
+
+\hypertarget{classDBoW2_1_1TemplatedVocabulary_a3907da675f135821894fb497f113ccb0}{\index{D\-Bo\-W2\-::\-Templated\-Vocabulary@{D\-Bo\-W2\-::\-Templated\-Vocabulary}!size@{size}}
+\index{size@{size}!DBoW2::TemplatedVocabulary@{D\-Bo\-W2\-::\-Templated\-Vocabulary}}
+\subsubsection[{size}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T\-Descriptor , class F $>$ unsigned int {\bf D\-Bo\-W2\-::\-Templated\-Vocabulary}$<$ T\-Descriptor, F $>$\-::size (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classDBoW2_1_1TemplatedVocabulary_a3907da675f135821894fb497f113ccb0}
+Returns the number of words in the vocabulary \begin{DoxyReturn}{返回}
+number of words 
+\end{DoxyReturn}
+
+
+在文件 Templated\-Vocabulary.\-h 第 1025 行定义.
+
+
+
+参考自 D\-Bo\-W2\-::operator$<$$<$().
+
+
+
+这是这个函数的调用关系图\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classDBoW2_1_1TemplatedVocabulary_a3907da675f135821894fb497f113ccb0_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classDBoW2_1_1TemplatedVocabulary_a0b6721fde54bd8cd008f6a120398741e}{\index{D\-Bo\-W2\-::\-Templated\-Vocabulary@{D\-Bo\-W2\-::\-Templated\-Vocabulary}!stop\-Words@{stop\-Words}}
+\index{stop\-Words@{stop\-Words}!DBoW2::TemplatedVocabulary@{D\-Bo\-W2\-::\-Templated\-Vocabulary}}
+\subsubsection[{stop\-Words}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T\-Descriptor , class F $>$ int {\bf D\-Bo\-W2\-::\-Templated\-Vocabulary}$<$ T\-Descriptor, F $>$\-::stop\-Words (
+\begin{DoxyParamCaption}
+\item[{double}]{min\-Weight}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classDBoW2_1_1TemplatedVocabulary_a0b6721fde54bd8cd008f6a120398741e}
+Stops those words whose weight is below min\-Weight. Words are stopped by setting their weight to 0. There are not returned later when transforming image features into vectors. Note that when using I\-D\-F or T\-F\-\_\-\-I\-D\-F, the weight is the idf part, which is equivalent to -\/log(f), where f is the frequency of the word (f = Ni/\-N, Ni\-: number of training images where the word is present, N\-: number of training images). Note that the old weight is forgotten, and subsequent calls to this function with a lower min\-Weight have no effect. \begin{DoxyReturn}{返回}
+number of words stopped now 
+\end{DoxyReturn}
+
+
+在文件 Templated\-Vocabulary.\-h 第 1344 行定义.
+
+\hypertarget{classDBoW2_1_1TemplatedVocabulary_af9fc1935403dcaf1fd8c44d96ae3328d}{\index{D\-Bo\-W2\-::\-Templated\-Vocabulary@{D\-Bo\-W2\-::\-Templated\-Vocabulary}!transform@{transform}}
+\index{transform@{transform}!DBoW2::TemplatedVocabulary@{D\-Bo\-W2\-::\-Templated\-Vocabulary}}
+\subsubsection[{transform}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T\-Descriptor , class F $>$ void {\bf D\-Bo\-W2\-::\-Templated\-Vocabulary}$<$ T\-Descriptor, F $>$\-::transform (
+\begin{DoxyParamCaption}
+\item[{const std\-::vector$<$ T\-Descriptor $>$ \&}]{features, }
+\item[{{\bf Bow\-Vector} \&}]{v}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classDBoW2_1_1TemplatedVocabulary_af9fc1935403dcaf1fd8c44d96ae3328d}
+Transforms a set of descriptores into a bow vector 
+\begin{DoxyParams}{参数}
+{\em features} & \\
+\hline
+{\em v} & (out) bow vector of weighted words \\
+\hline
+\end{DoxyParams}
+
+
+在文件 Templated\-Vocabulary.\-h 第 1090 行定义.
+
+
+
+参考 D\-Bo\-W2\-::\-Bow\-Vector\-::add\-If\-Not\-Exist(), D\-Bo\-W2\-::\-Bow\-Vector\-::add\-Weight() , 以及 D\-Bo\-W2\-::\-Bow\-Vector\-::normalize().
+
+
+
+参考自 O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Key\-Frame\-::\-Compute\-Bo\-W() , 以及 O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Frame\-::\-Compute\-Bo\-W().
+
+
+
+函数调用图\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classDBoW2_1_1TemplatedVocabulary_af9fc1935403dcaf1fd8c44d96ae3328d_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+这是这个函数的调用关系图\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classDBoW2_1_1TemplatedVocabulary_af9fc1935403dcaf1fd8c44d96ae3328d_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classDBoW2_1_1TemplatedVocabulary_acae97a5b78d9850a627d45cb05969041}{\index{D\-Bo\-W2\-::\-Templated\-Vocabulary@{D\-Bo\-W2\-::\-Templated\-Vocabulary}!transform@{transform}}
+\index{transform@{transform}!DBoW2::TemplatedVocabulary@{D\-Bo\-W2\-::\-Templated\-Vocabulary}}
+\subsubsection[{transform}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T\-Descriptor , class F $>$ void {\bf D\-Bo\-W2\-::\-Templated\-Vocabulary}$<$ T\-Descriptor, F $>$\-::transform (
+\begin{DoxyParamCaption}
+\item[{const std\-::vector$<$ T\-Descriptor $>$ \&}]{features, }
+\item[{{\bf Bow\-Vector} \&}]{v, }
+\item[{{\bf Feature\-Vector} \&}]{fv, }
+\item[{int}]{levelsup}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classDBoW2_1_1TemplatedVocabulary_acae97a5b78d9850a627d45cb05969041}
+Transform a set of descriptors into a bow vector and a feature vector 
+\begin{DoxyParams}{参数}
+{\em features} & \\
+\hline
+{\em v} & (out) bow vector \\
+\hline
+{\em fv} & (out) feature vector of nodes and feature indexes \\
+\hline
+{\em levelsup} & levels to go up the vocabulary tree to get the node index \\
+\hline
+\end{DoxyParams}
+
+
+在文件 Templated\-Vocabulary.\-h 第 1151 行定义.
+
+
+
+参考 D\-Bo\-W2\-::\-Feature\-Vector\-::add\-Feature(), D\-Bo\-W2\-::\-Bow\-Vector\-::add\-If\-Not\-Exist(), D\-Bo\-W2\-::\-Bow\-Vector\-::add\-Weight() , 以及 D\-Bo\-W2\-::\-Bow\-Vector\-::normalize().
+
+
+
+函数调用图\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classDBoW2_1_1TemplatedVocabulary_acae97a5b78d9850a627d45cb05969041_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classDBoW2_1_1TemplatedVocabulary_a7bdb12ed8de8e2da937dd0c6de96a53a}{\index{D\-Bo\-W2\-::\-Templated\-Vocabulary@{D\-Bo\-W2\-::\-Templated\-Vocabulary}!transform@{transform}}
+\index{transform@{transform}!DBoW2::TemplatedVocabulary@{D\-Bo\-W2\-::\-Templated\-Vocabulary}}
+\subsubsection[{transform}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T\-Descriptor , class F $>$ {\bf Word\-Id} {\bf D\-Bo\-W2\-::\-Templated\-Vocabulary}$<$ T\-Descriptor, F $>$\-::transform (
+\begin{DoxyParamCaption}
+\item[{const T\-Descriptor \&}]{feature}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classDBoW2_1_1TemplatedVocabulary_a7bdb12ed8de8e2da937dd0c6de96a53a}
+Transforms a single feature into a word (without weight) 
+\begin{DoxyParams}{参数}
+{\em feature} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+word id 
+\end{DoxyReturn}
+
+
+在文件 Templated\-Vocabulary.\-h 第 1075 行定义.
+
+\hypertarget{classDBoW2_1_1TemplatedVocabulary_a41e77294037788a9b2744f89ac64ecea}{\index{D\-Bo\-W2\-::\-Templated\-Vocabulary@{D\-Bo\-W2\-::\-Templated\-Vocabulary}!transform@{transform}}
+\index{transform@{transform}!DBoW2::TemplatedVocabulary@{D\-Bo\-W2\-::\-Templated\-Vocabulary}}
+\subsubsection[{transform}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T\-Descriptor , class F $>$ void {\bf D\-Bo\-W2\-::\-Templated\-Vocabulary}$<$ T\-Descriptor, F $>$\-::transform (
+\begin{DoxyParamCaption}
+\item[{const T\-Descriptor \&}]{feature, }
+\item[{{\bf Word\-Id} \&}]{id, }
+\item[{{\bf Word\-Value} \&}]{weight, }
+\item[{{\bf Node\-Id} $\ast$}]{nid = {\ttfamily NULL}, }
+\item[{int}]{levelsup = {\ttfamily 0}}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}}\label{classDBoW2_1_1TemplatedVocabulary_a41e77294037788a9b2744f89ac64ecea}
+Returns the word id associated to a feature 
+\begin{DoxyParams}{参数}
+{\em feature} & \\
+\hline
+{\em id} & (out) word id \\
+\hline
+{\em weight} & (out) word weight \\
+\hline
+{\em nid} & (out) if given, id of the node \char`\"{}levelsup\char`\"{} levels up \\
+\hline
+{\em levelsup} & \\
+\hline
+\end{DoxyParams}
+
+
+在文件 Templated\-Vocabulary.\-h 第 1242 行定义.
+
+\hypertarget{classDBoW2_1_1TemplatedVocabulary_a4369ffc35f61467b0987a89fcc5a7224}{\index{D\-Bo\-W2\-::\-Templated\-Vocabulary@{D\-Bo\-W2\-::\-Templated\-Vocabulary}!transform@{transform}}
+\index{transform@{transform}!DBoW2::TemplatedVocabulary@{D\-Bo\-W2\-::\-Templated\-Vocabulary}}
+\subsubsection[{transform}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T\-Descriptor , class F $>$ void {\bf D\-Bo\-W2\-::\-Templated\-Vocabulary}$<$ T\-Descriptor, F $>$\-::transform (
+\begin{DoxyParamCaption}
+\item[{const T\-Descriptor \&}]{feature, }
+\item[{{\bf Word\-Id} \&}]{id}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}}\label{classDBoW2_1_1TemplatedVocabulary_a4369ffc35f61467b0987a89fcc5a7224}
+Returns the word id associated to a feature 
+\begin{DoxyParams}{参数}
+{\em feature} & \\
+\hline
+{\em id} & (out) word id \\
+\hline
+\end{DoxyParams}
+
+
+在文件 Templated\-Vocabulary.\-h 第 1233 行定义.
+
+
+
+\subsection{类成员变量说明}
+\hypertarget{classDBoW2_1_1TemplatedVocabulary_a1665546b54f954d2d54d59a6982df3ca}{\index{D\-Bo\-W2\-::\-Templated\-Vocabulary@{D\-Bo\-W2\-::\-Templated\-Vocabulary}!m\-\_\-words@{m\-\_\-words}}
+\index{m\-\_\-words@{m\-\_\-words}!DBoW2::TemplatedVocabulary@{D\-Bo\-W2\-::\-Templated\-Vocabulary}}
+\subsubsection[{m\-\_\-words}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T\-Descriptor, class F$>$ std\-::vector$<${\bf Node}$\ast$$>$ {\bf D\-Bo\-W2\-::\-Templated\-Vocabulary}$<$ T\-Descriptor, F $>$\-::m\-\_\-words\hspace{0.3cm}{\ttfamily [protected]}}}\label{classDBoW2_1_1TemplatedVocabulary_a1665546b54f954d2d54d59a6982df3ca}
+Words of the vocabulary (tree leaves) this condition holds\-: m\-\_\-words\mbox{[}wid\mbox{]}-\/$>$word\-\_\-id == wid 
+
+在文件 Templated\-Vocabulary.\-h 第 442 行定义.
+
+
+
+该类的文档由以下文件生成\-:\begin{DoxyCompactItemize}
+\item 
+Thirdparty/\-D\-Bo\-W2/\-D\-Bo\-W2/Templated\-Vocabulary.\-h\end{DoxyCompactItemize}

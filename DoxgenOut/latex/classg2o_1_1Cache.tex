@@ -1,0 +1,150 @@
+\hypertarget{classg2o_1_1Cache}{\section{g2o\-:\-:Cache类 参考}
+\label{classg2o_1_1Cache}\index{g2o\-::\-Cache@{g2o\-::\-Cache}}
+}
+
+
+类 g2o\-:\-:Cache 继承关系图\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=228pt]{classg2o_1_1Cache__inherit__graph}
+\end{center}
+\end{figure}
+
+
+g2o\-:\-:Cache 的协作图\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classg2o_1_1Cache__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{类}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classg2o_1_1Cache_1_1CacheKey}{Cache\-Key}
+\end{DoxyCompactItemize}
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classg2o_1_1Cache_adb5e57e9f06505511fdedb247a977cc3}{{\bfseries Cache} (\hyperlink{classg2o_1_1CacheContainer}{Cache\-Container} $\ast$container\-\_\-=0, const Parameter\-Vector \&parameters\-\_\-=Parameter\-Vector())}\label{classg2o_1_1Cache_adb5e57e9f06505511fdedb247a977cc3}
+
+\item 
+\hypertarget{classg2o_1_1Cache_a12c78ed261c8659c2539b6ebe52aea8f}{\hyperlink{classg2o_1_1Cache_1_1CacheKey}{Cache\-Key} {\bfseries key} () const }\label{classg2o_1_1Cache_a12c78ed261c8659c2539b6ebe52aea8f}
+
+\item 
+\hypertarget{classg2o_1_1Cache_ab94788e39d7e81201d14bc8ac58325c7}{\hyperlink{classg2o_1_1OptimizableGraph_1_1Vertex}{Optimizable\-Graph\-::\-Vertex} $\ast$ {\bfseries vertex} ()}\label{classg2o_1_1Cache_ab94788e39d7e81201d14bc8ac58325c7}
+
+\item 
+\hypertarget{classg2o_1_1Cache_a1a4480a445469d2d02b8db449e6cb57c}{\hyperlink{structg2o_1_1OptimizableGraph}{Optimizable\-Graph} $\ast$ {\bfseries graph} ()}\label{classg2o_1_1Cache_a1a4480a445469d2d02b8db449e6cb57c}
+
+\item 
+\hypertarget{classg2o_1_1Cache_a249ffa5c8ac120b3123bd151200082c9}{\hyperlink{classg2o_1_1CacheContainer}{Cache\-Container} $\ast$ {\bfseries container} ()}\label{classg2o_1_1Cache_a249ffa5c8ac120b3123bd151200082c9}
+
+\item 
+\hypertarget{classg2o_1_1Cache_a16e471be92f9fe24a3abdf11a0c546d2}{Parameter\-Vector \& {\bfseries parameters} ()}\label{classg2o_1_1Cache_a16e471be92f9fe24a3abdf11a0c546d2}
+
+\item 
+\hypertarget{classg2o_1_1Cache_aaea446a5eb59569acc67c94793975a0b}{void {\bfseries update} ()}\label{classg2o_1_1Cache_aaea446a5eb59569acc67c94793975a0b}
+
+\item 
+virtual \\*
+Hyper\-Graph\-::\-Hyper\-Graph\-Element\-Type \hyperlink{classg2o_1_1Cache_a975c586e5a84dd3f4a85f364d5f92f91}{element\-Type} () const 
+\end{DoxyCompactItemize}
+\subsection*{Protected 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classg2o_1_1Cache_ae46e4a4e37c034925edd6bbfdfaa1cb2}{virtual void \hyperlink{classg2o_1_1Cache_ae46e4a4e37c034925edd6bbfdfaa1cb2}{update\-Impl} ()=0}\label{classg2o_1_1Cache_ae46e4a4e37c034925edd6bbfdfaa1cb2}
+
+\begin{DoxyCompactList}\small\item\em redefine this to do the update \end{DoxyCompactList}\item 
+\hyperlink{classg2o_1_1Cache}{Cache} $\ast$ \hyperlink{classg2o_1_1Cache_a776574fb98726ff61bc1280ea624c6e5}{install\-Dependency} (const std\-::string \&type\-\_\-, const std\-::vector$<$ int $>$ \&parameter\-Indices)
+\item 
+virtual bool \hyperlink{classg2o_1_1Cache_a0c26f0baa33a5902002f1ca2d5f57ece}{resolve\-Dependancies} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected 属性}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classg2o_1_1Cache_a28d0ad45da71d9b7bc6de4cf1fb0f9e4}{bool {\bfseries \-\_\-update\-Needed}}\label{classg2o_1_1Cache_a28d0ad45da71d9b7bc6de4cf1fb0f9e4}
+
+\item 
+\hypertarget{classg2o_1_1Cache_ad596a1a7591adece4664a43fc87b881d}{Parameter\-Vector {\bfseries \-\_\-parameters}}\label{classg2o_1_1Cache_ad596a1a7591adece4664a43fc87b881d}
+
+\item 
+\hypertarget{classg2o_1_1Cache_a0b38f0c773c02903acf8964f73c3aa26}{std\-::vector$<$ \hyperlink{classg2o_1_1Cache}{Cache} $\ast$ $>$ {\bfseries \-\_\-parent\-Caches}}\label{classg2o_1_1Cache_a0b38f0c773c02903acf8964f73c3aa26}
+
+\item 
+\hypertarget{classg2o_1_1Cache_a098aeecd7f0daa19a58f710ae7cb27c3}{\hyperlink{classg2o_1_1CacheContainer}{Cache\-Container} $\ast$ {\bfseries \-\_\-container}}\label{classg2o_1_1Cache_a098aeecd7f0daa19a58f710ae7cb27c3}
+
+\end{DoxyCompactItemize}
+\subsection*{友元}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classg2o_1_1Cache_a86dec1e0424aa4ae4e6867c69efd7868}{class {\bfseries Cache\-Container}}\label{classg2o_1_1Cache_a86dec1e0424aa4ae4e6867c69efd7868}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{详细描述}
+
+
+在文件 cache.\-h 第 39 行定义.
+
+
+
+\subsection{成员函数说明}
+\hypertarget{classg2o_1_1Cache_a975c586e5a84dd3f4a85f364d5f92f91}{\index{g2o\-::\-Cache@{g2o\-::\-Cache}!element\-Type@{element\-Type}}
+\index{element\-Type@{element\-Type}!g2o::Cache@{g2o\-::\-Cache}}
+\subsubsection[{element\-Type}]{\setlength{\rightskip}{0pt plus 5cm}virtual Hyper\-Graph\-::\-Hyper\-Graph\-Element\-Type g2o\-::\-Cache\-::element\-Type (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classg2o_1_1Cache_a975c586e5a84dd3f4a85f364d5f92f91}
+returns the type of the graph element, see Hyper\-Graph\-Element\-Type 
+
+实现了 \hyperlink{structg2o_1_1HyperGraph_1_1HyperGraphElement_a1a9d7b748698c09d202373e06e413ef2}{g2o\-::\-Hyper\-Graph\-::\-Hyper\-Graph\-Element}.
+
+
+
+在文件 cache.\-h 第 71 行定义.
+
+\hypertarget{classg2o_1_1Cache_a776574fb98726ff61bc1280ea624c6e5}{\index{g2o\-::\-Cache@{g2o\-::\-Cache}!install\-Dependency@{install\-Dependency}}
+\index{install\-Dependency@{install\-Dependency}!g2o::Cache@{g2o\-::\-Cache}}
+\subsubsection[{install\-Dependency}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Cache} $\ast$ g2o\-::\-Cache\-::install\-Dependency (
+\begin{DoxyParamCaption}
+\item[{const std\-::string \&}]{type\-\_\-, }
+\item[{const std\-::vector$<$ int $>$ \&}]{parameter\-Indices}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classg2o_1_1Cache_a776574fb98726ff61bc1280ea624c6e5}
+this function installs and satisfies a cache 
+\begin{DoxyParams}{参数}
+{\em type\-\_\-} & the typename of the dependency \\
+\hline
+{\em parameter\-Indices} & a vector containing the indices if the parameters in \-\_\-parameters that will be used to assemble the Key of the cache being created For example if I have a cache of type C2, having parameters \char`\"{}\-A, B, and C\char`\"{}, and it depends on a cache of type C1 that depends on the parameters A and C, the parameter\-Indices should contain \char`\"{}0, 2\char`\"{}, since they are the positions in the parameter vector of C2 of the parameters needed to construct C1. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+the newly created cache 
+\end{DoxyReturn}
+
+
+在文件 cache.\-cpp 第 95 行定义.
+
+\hypertarget{classg2o_1_1Cache_a0c26f0baa33a5902002f1ca2d5f57ece}{\index{g2o\-::\-Cache@{g2o\-::\-Cache}!resolve\-Dependancies@{resolve\-Dependancies}}
+\index{resolve\-Dependancies@{resolve\-Dependancies}!g2o::Cache@{g2o\-::\-Cache}}
+\subsubsection[{resolve\-Dependancies}]{\setlength{\rightskip}{0pt plus 5cm}bool g2o\-::\-Cache\-::resolve\-Dependancies (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}}\label{classg2o_1_1Cache_a0c26f0baa33a5902002f1ca2d5f57ece}
+Function to be called from a cache that has dependencies. It just invokes a sequence of \hyperlink{classg2o_1_1Cache_a776574fb98726ff61bc1280ea624c6e5}{install\-Dependency()}. Although the caches returned are stored in the \-\_\-parent\-Cache vector, it is better that you redefine your own cache member variables, for better readability 
+
+在文件 cache.\-cpp 第 114 行定义.
+
+
+
+该类的文档由以下文件生成\-:\begin{DoxyCompactItemize}
+\item 
+Thirdparty/g2o/g2o/core/cache.\-h\item 
+Thirdparty/g2o/g2o/core/cache.\-cpp\end{DoxyCompactItemize}

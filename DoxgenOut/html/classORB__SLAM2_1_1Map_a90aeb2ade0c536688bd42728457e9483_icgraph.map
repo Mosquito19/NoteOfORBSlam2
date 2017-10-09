@@ -1,0 +1,8 @@
+<map id="ORB_SLAM2::Map::SetReferenceMapPoints" name="ORB_SLAM2::Map::SetReferenceMapPoints">
+<area shape="rect" id="node2" href="$classORB__SLAM2_1_1Tracking.html#afeb077c81cd700d779348b80698086e8" title="CreateInitialMapMonocular. " alt="" coords="278,9,463,50"/>
+<area shape="rect" id="node5" href="$classORB__SLAM2_1_1Tracking.html#ad3da849e4204d766e5db4ac47b52132c" title="双目和rgbd的地图初始化 " alt="" coords="513,70,671,111"/>
+<area shape="rect" id="node6" href="$classORB__SLAM2_1_1Tracking.html#a22723e9972c18a888dd51a82eec27b0a" title="更新LocalMap " alt="" coords="291,131,450,173"/>
+<area shape="rect" id="node3" href="$classORB__SLAM2_1_1Tracking.html#a7e81c68bb6ced27fcbfa2edec38ef6e0" title="单目的地图初始化 " alt="" coords="513,5,671,46"/>
+<area shape="rect" id="node4" href="$classORB__SLAM2_1_1Tracking.html#af1f2c9c533642d8c33854540e90d1918" title="Main tracking function. It is independent of the input sensor. " alt="" coords="721,70,879,111"/>
+<area shape="rect" id="node7" href="$classORB__SLAM2_1_1Tracking.html#af670c614f4e10d58c9f7aad9865b5c08" title="对Local Map的MapPoints进行跟踪 " alt="" coords="513,135,671,177"/>
+</map>

@@ -1,0 +1,7 @@
+<map id="ORB_SLAM2::Tracking::UpdateLocalMap" name="ORB_SLAM2::Tracking::UpdateLocalMap">
+<area shape="rect" id="node2" href="$classORB__SLAM2_1_1Map.html#a90aeb2ade0c536688bd42728457e9483" title="设置参考MapPoints，将用于DrawMapPoints函数画图 " alt="" coords="214,5,437,46"/>
+<area shape="rect" id="node3" href="$classORB__SLAM2_1_1Tracking.html#a42bed56bbbe8282eb77733e7168d8599" title="更新局部关键帧，called by UpdateLocalMap() " alt="" coords="240,70,411,111"/>
+<area shape="rect" id="node5" href="$classORB__SLAM2_1_1Tracking.html#a25843575116bf18c065d6cc7645f5b26" title="更新局部关键点，called by UpdateLocalMap() " alt="" coords="246,135,405,177"/>
+<area shape="rect" id="node4" href="$classORB__SLAM2_1_1KeyFrame.html#a2ecb2df01af804fb727c93948a28475f" title="得到与该关键帧连接的前N个关键帧(已按权值排序) " alt="" coords="486,70,695,111"/>
+<area shape="rect" id="node6" href="$classORB__SLAM2_1_1KeyFrame.html#aabc5f6491c32999d9f546669737547bf" title="Get MapPoint Matches. " alt="" coords="506,135,675,177"/>
+</map>

@@ -1,0 +1,6 @@
+<map id="g2o::EstimatePropagator::propagate" name="g2o::EstimatePropagator::propagate">
+<area shape="rect" id="node2" href="$classg2o_1_1HyperGraph_1_1Vertex.html#a0805a5575511327262c89585f1953b8e" title="returns the set of hyper&#45;edges that are leaving/entering in this vertex " alt="" coords="231,5,398,46"/>
+<area shape="rect" id="node3" href="$classg2o_1_1HyperGraph_1_1Vertex.html#ad76b71c368b71971ac5affb5d57183d3" title="returns the id " alt="" coords="222,71,407,97"/>
+<area shape="rect" id="node4" href="$classg2o_1_1HyperGraph_1_1Edge.html#aaec0b2c92c5496d0f0fea8f1abdc4311" title="g2o::HyperGraph::Edge\l::vertex" alt="" coords="235,122,394,163"/>
+<area shape="rect" id="node5" href="$classg2o_1_1HyperGraph_1_1Edge.html#a6410bb70a917b5407770ef1f1090b5f5" title="g2o::HyperGraph::Edge\l::vertices" alt="" coords="235,187,394,229"/>
+</map>

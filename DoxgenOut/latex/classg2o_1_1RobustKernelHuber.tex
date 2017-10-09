@@ -1,0 +1,114 @@
+\hypertarget{classg2o_1_1RobustKernelHuber}{\section{g2o\-:\-:Robust\-Kernel\-Huber类 参考}
+\label{classg2o_1_1RobustKernelHuber}\index{g2o\-::\-Robust\-Kernel\-Huber@{g2o\-::\-Robust\-Kernel\-Huber}}
+}
+
+
+Huber Cost Function.  
+
+
+
+
+{\ttfamily \#include $<$robust\-\_\-kernel\-\_\-impl.\-h$>$}
+
+
+
+类 g2o\-:\-:Robust\-Kernel\-Huber 继承关系图\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=202pt]{classg2o_1_1RobustKernelHuber__inherit__graph}
+\end{center}
+\end{figure}
+
+
+g2o\-:\-:Robust\-Kernel\-Huber 的协作图\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=202pt]{classg2o_1_1RobustKernelHuber__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \hyperlink{classg2o_1_1RobustKernelHuber_a7e9ee4bbc9483dcd3d10a4c1f506a4d2}{set\-Delta} (double delta)
+\item 
+\hypertarget{classg2o_1_1RobustKernelHuber_ad243b5888d71a3573e9f9372abead870}{virtual void {\bfseries set\-Delta\-Sqr} (const double \&delta, const double \&delta\-Sqr)}\label{classg2o_1_1RobustKernelHuber_ad243b5888d71a3573e9f9372abead870}
+
+\item 
+virtual void \hyperlink{classg2o_1_1RobustKernelHuber_a702ac5453740284ba6addeb41157e45e}{robustify} (double e2, Eigen\-::\-Vector3d \&rho) const 
+\end{DoxyCompactItemize}
+\subsection*{额外继承的成员函数}
+
+
+\subsection{详细描述}
+Huber Cost Function. 
+
+Loss function as described by Huber See \href{http://en.wikipedia.org/wiki/Huber_loss_function}{\tt http\-://en.\-wikipedia.\-org/wiki/\-Huber\-\_\-loss\-\_\-function}
+
+If e$^\wedge$(1/2) $<$ d rho(e) = e
+
+else \begin{DoxyVerb}          1/2    2
+\end{DoxyVerb}
+ rho(e) = 2 d e -\/ d 
+
+在文件 robust\-\_\-kernel\-\_\-impl.\-h 第 77 行定义.
+
+
+
+\subsection{成员函数说明}
+\hypertarget{classg2o_1_1RobustKernelHuber_a702ac5453740284ba6addeb41157e45e}{\index{g2o\-::\-Robust\-Kernel\-Huber@{g2o\-::\-Robust\-Kernel\-Huber}!robustify@{robustify}}
+\index{robustify@{robustify}!g2o::RobustKernelHuber@{g2o\-::\-Robust\-Kernel\-Huber}}
+\subsubsection[{robustify}]{\setlength{\rightskip}{0pt plus 5cm}void g2o\-::\-Robust\-Kernel\-Huber\-::robustify (
+\begin{DoxyParamCaption}
+\item[{double}]{squared\-Error, }
+\item[{Eigen\-::\-Vector3d \&}]{rho}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classg2o_1_1RobustKernelHuber_a702ac5453740284ba6addeb41157e45e}
+compute the scaling factor for a error\-: The error is e$^\wedge$\-T Omega e The output rho is rho\mbox{[}0\mbox{]}\-: The actual scaled error value rho\mbox{[}1\mbox{]}\-: First derivative of the scaling function rho\mbox{[}2\mbox{]}\-: Second derivative of the scaling function 
+
+实现了 \hyperlink{classg2o_1_1RobustKernel_ab47b071a0cfe466be063f0104bc41d0f}{g2o\-::\-Robust\-Kernel}.
+
+
+
+在文件 robust\-\_\-kernel\-\_\-impl.\-cpp 第 78 行定义.
+
+\hypertarget{classg2o_1_1RobustKernelHuber_a7e9ee4bbc9483dcd3d10a4c1f506a4d2}{\index{g2o\-::\-Robust\-Kernel\-Huber@{g2o\-::\-Robust\-Kernel\-Huber}!set\-Delta@{set\-Delta}}
+\index{set\-Delta@{set\-Delta}!g2o::RobustKernelHuber@{g2o\-::\-Robust\-Kernel\-Huber}}
+\subsubsection[{set\-Delta}]{\setlength{\rightskip}{0pt plus 5cm}void g2o\-::\-Robust\-Kernel\-Huber\-::set\-Delta (
+\begin{DoxyParamCaption}
+\item[{double}]{delta}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classg2o_1_1RobustKernelHuber_a7e9ee4bbc9483dcd3d10a4c1f506a4d2}
+set the window size of the error. A squared error above delta$^\wedge$2 is considered as outlier in the data. 
+
+重载 \hyperlink{classg2o_1_1RobustKernel_a8d85269635c436fca51324d7cb16a798}{g2o\-::\-Robust\-Kernel} .
+
+
+
+在文件 robust\-\_\-kernel\-\_\-impl.\-cpp 第 65 行定义.
+
+
+
+参考自 O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Optimizer\-::\-Bundle\-Adjustment(), O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Optimizer\-::\-Local\-Bundle\-Adjustment(), O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Optimizer\-::\-Optimize\-Sim3() , 以及 O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Optimizer\-::\-Pose\-Optimization().
+
+
+
+这是这个函数的调用关系图\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classg2o_1_1RobustKernelHuber_a7e9ee4bbc9483dcd3d10a4c1f506a4d2_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+该类的文档由以下文件生成\-:\begin{DoxyCompactItemize}
+\item 
+Thirdparty/g2o/g2o/core/robust\-\_\-kernel\-\_\-impl.\-h\item 
+Thirdparty/g2o/g2o/core/robust\-\_\-kernel\-\_\-impl.\-cpp\end{DoxyCompactItemize}

@@ -1,0 +1,5 @@
+<map id="DUtils::Random::SeedRandOnce" name="DUtils::Random::SeedRandOnce">
+<area shape="rect" id="node2" href="$classDUtils_1_1Random.html#a719a6489316343a771e062f0be58050f" title="DUtils::Random::SeedRand" alt="" coords="270,45,455,72"/>
+<area shape="rect" id="node3" href="$classDUtils_1_1Timestamp.html#a6830126c3f35278345791148a80a5b86" title="DUtils::Timestamp::\lgetFloatTime" alt="" coords="505,5,645,46"/>
+<area shape="rect" id="node4" href="$classDUtils_1_1Timestamp.html#ae27c920f3833c104096213c6fb17f4d8" title="DUtils::Timestamp::\lsetToCurrentTime" alt="" coords="505,70,645,111"/>
+</map>

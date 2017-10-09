@@ -1,0 +1,7 @@
+<map id="g2o::EdgeStereoSE3ProjectXYZOnlyPose::computeError" name="g2o::EdgeStereoSE3ProjectXYZOnlyPose::computeError">
+<area shape="rect" id="node2" href="$classORB__SLAM2_1_1Optimizer.html#a7415d78b8a2323b88e108fa1ea3bf2d3" title="Pose Only Optimization. " alt="" coords="245,70,411,111"/>
+<area shape="rect" id="node3" href="$classORB__SLAM2_1_1Tracking.html#a737c5409c93844353561a0fe724ed1c2" title="对参考关键帧的MapPoints进行跟踪 " alt="" coords="459,5,642,46"/>
+<area shape="rect" id="node5" href="$classORB__SLAM2_1_1Tracking.html#aca19f1d69b30a6c6e49281d422ac8298" title="根据匀速度模型对上一帧的MapPoints进行跟踪 " alt="" coords="469,70,633,111"/>
+<area shape="rect" id="node6" href="$classORB__SLAM2_1_1Tracking.html#af670c614f4e10d58c9f7aad9865b5c08" title="对Local Map的MapPoints进行跟踪 " alt="" coords="471,135,630,177"/>
+<area shape="rect" id="node4" href="$classORB__SLAM2_1_1Tracking.html#af1f2c9c533642d8c33854540e90d1918" title="Main tracking function. It is independent of the input sensor. " alt="" coords="691,70,850,111"/>
+</map>

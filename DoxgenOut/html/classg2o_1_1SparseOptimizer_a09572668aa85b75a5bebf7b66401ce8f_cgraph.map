@@ -1,0 +1,4 @@
+<map id="g2o::SparseOptimizer::computeActiveErrors" name="g2o::SparseOptimizer::computeActiveErrors">
+<area shape="rect" id="node2" href="$classg2o_1_1OptimizableGraph_1_1Edge.html#a90a86891adc47a179a7cd7ef31549916" title="returns the dimensions of the error function " alt="" coords="205,5,360,46"/>
+<area shape="rect" id="node3" href="$classg2o_1_1OptimizableGraph_1_1Edge.html#a5f2a4b6efa2d0ae600f94a28a6ba58cf" title="returns the error vector cached after calling the computeError; " alt="" coords="205,70,360,111"/>
+</map>

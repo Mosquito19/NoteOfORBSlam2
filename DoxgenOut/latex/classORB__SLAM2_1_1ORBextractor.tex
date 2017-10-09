@@ -1,0 +1,266 @@
+\hypertarget{classORB__SLAM2_1_1ORBextractor}{\section{O\-R\-B\-\_\-\-S\-L\-A\-M2\-:\-:O\-R\-Bextractor类 参考}
+\label{classORB__SLAM2_1_1ORBextractor}\index{O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-O\-R\-Bextractor@{O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-O\-R\-Bextractor}}
+}
+\subsection*{Public 类型}
+\begin{DoxyCompactItemize}
+\item 
+enum \{ {\bfseries H\-A\-R\-R\-I\-S\-\_\-\-S\-C\-O\-R\-E} =0, 
+{\bfseries F\-A\-S\-T\-\_\-\-S\-C\-O\-R\-E} =1
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classORB__SLAM2_1_1ORBextractor_aaa8e010415e516246e171b9bbb9f84af}{O\-R\-Bextractor} (int nfeatures, float scale\-Factor, int nlevels, int ini\-Th\-F\-A\-S\-T, int min\-Th\-F\-A\-S\-T)
+\item 
+void \hyperlink{classORB__SLAM2_1_1ORBextractor_a05117a839e4261638b0413fff2dc9e1b}{operator()} (cv\-::\-Input\-Array image, cv\-::\-Input\-Array mask, std\-::vector$<$ cv\-::\-Key\-Point $>$ \&keypoints, cv\-::\-Output\-Array descriptors)
+\item 
+\hypertarget{classORB__SLAM2_1_1ORBextractor_abaad86a9c65eed8a2f8af9604b1a53ee}{int {\bfseries Get\-Levels} ()}\label{classORB__SLAM2_1_1ORBextractor_abaad86a9c65eed8a2f8af9604b1a53ee}
+
+\item 
+\hypertarget{classORB__SLAM2_1_1ORBextractor_a3352294ae4ae250a406140d2ae6f7286}{float {\bfseries Get\-Scale\-Factor} ()}\label{classORB__SLAM2_1_1ORBextractor_a3352294ae4ae250a406140d2ae6f7286}
+
+\item 
+\hypertarget{classORB__SLAM2_1_1ORBextractor_a977d96ed602e3a6ff036afc2f2f213fd}{std\-::vector$<$ float $>$ {\bfseries Get\-Scale\-Factors} ()}\label{classORB__SLAM2_1_1ORBextractor_a977d96ed602e3a6ff036afc2f2f213fd}
+
+\item 
+\hypertarget{classORB__SLAM2_1_1ORBextractor_aa56b36e338372ec7cba3945c9194da4a}{std\-::vector$<$ float $>$ {\bfseries Get\-Inverse\-Scale\-Factors} ()}\label{classORB__SLAM2_1_1ORBextractor_aa56b36e338372ec7cba3945c9194da4a}
+
+\item 
+\hypertarget{classORB__SLAM2_1_1ORBextractor_a8f574b3b1314c5aa645135cb2f3dca3c}{std\-::vector$<$ float $>$ {\bfseries Get\-Scale\-Sigma\-Squares} ()}\label{classORB__SLAM2_1_1ORBextractor_a8f574b3b1314c5aa645135cb2f3dca3c}
+
+\item 
+\hypertarget{classORB__SLAM2_1_1ORBextractor_a1ddabdd67709d7df17000cc2966c47c7}{std\-::vector$<$ float $>$ {\bfseries Get\-Inverse\-Scale\-Sigma\-Squares} ()}\label{classORB__SLAM2_1_1ORBextractor_a1ddabdd67709d7df17000cc2966c47c7}
+
+\end{DoxyCompactItemize}
+\subsection*{Public 属性}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classORB__SLAM2_1_1ORBextractor_a57f88e0959582dde9ae5bdee1fe3de65}{std\-::vector$<$ cv\-::\-Mat $>$ {\bfseries mv\-Image\-Pyramid}}\label{classORB__SLAM2_1_1ORBextractor_a57f88e0959582dde9ae5bdee1fe3de65}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classORB__SLAM2_1_1ORBextractor_a058f24d80bb0b2c7d6fc0bdd3d9144d1}{Compute\-Pyramid} (cv\-::\-Mat image)
+\item 
+void \hyperlink{classORB__SLAM2_1_1ORBextractor_a9a543d9b2aec1e521058ee9522937adc}{Compute\-Key\-Points\-Oct\-Tree} (std\-::vector$<$ std\-::vector$<$ cv\-::\-Key\-Point $>$ $>$ \&all\-Keypoints)
+\item 
+std\-::vector$<$ cv\-::\-Key\-Point $>$ \hyperlink{classORB__SLAM2_1_1ORBextractor_ac6b7b27447324af33fa60d6dc0c8ffa0}{Distribute\-Oct\-Tree} (const std\-::vector$<$ cv\-::\-Key\-Point $>$ \&v\-To\-Distribute\-Keys, const int \&min\-X, const int \&max\-X, const int \&min\-Y, const int \&max\-Y, const int \&n\-Features, const int \&level)
+\item 
+\hypertarget{classORB__SLAM2_1_1ORBextractor_a56890a2032077fbfdf48687786985548}{void {\bfseries Compute\-Key\-Points\-Old} (std\-::vector$<$ std\-::vector$<$ cv\-::\-Key\-Point $>$ $>$ \&all\-Keypoints)}\label{classORB__SLAM2_1_1ORBextractor_a56890a2032077fbfdf48687786985548}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected 属性}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classORB__SLAM2_1_1ORBextractor_a3a2e4f9495adf52773613987f09ae9d9}{std\-::vector$<$ cv\-::\-Point $>$ {\bfseries pattern}}\label{classORB__SLAM2_1_1ORBextractor_a3a2e4f9495adf52773613987f09ae9d9}
+
+\item 
+\hypertarget{classORB__SLAM2_1_1ORBextractor_ab74b569810b3d3288c642cc48fd65c4c}{int {\bfseries nfeatures}}\label{classORB__SLAM2_1_1ORBextractor_ab74b569810b3d3288c642cc48fd65c4c}
+
+\item 
+\hypertarget{classORB__SLAM2_1_1ORBextractor_a13b9c3883b3fb19cb756f841cb948908}{double {\bfseries scale\-Factor}}\label{classORB__SLAM2_1_1ORBextractor_a13b9c3883b3fb19cb756f841cb948908}
+
+\item 
+\hypertarget{classORB__SLAM2_1_1ORBextractor_aaf5c435dfb3fb2220c3847cd5f536e2f}{int {\bfseries nlevels}}\label{classORB__SLAM2_1_1ORBextractor_aaf5c435dfb3fb2220c3847cd5f536e2f}
+
+\item 
+\hypertarget{classORB__SLAM2_1_1ORBextractor_a8997b404b50b563ffd2aea6b8130dd2a}{int {\bfseries ini\-Th\-F\-A\-S\-T}}\label{classORB__SLAM2_1_1ORBextractor_a8997b404b50b563ffd2aea6b8130dd2a}
+
+\item 
+\hypertarget{classORB__SLAM2_1_1ORBextractor_a72fcac0df56c0bfe430475082df56823}{int {\bfseries min\-Th\-F\-A\-S\-T}}\label{classORB__SLAM2_1_1ORBextractor_a72fcac0df56c0bfe430475082df56823}
+
+\item 
+\hypertarget{classORB__SLAM2_1_1ORBextractor_a2eef0343b411bff8681782115a279e2a}{std\-::vector$<$ int $>$ {\bfseries mn\-Features\-Per\-Level}}\label{classORB__SLAM2_1_1ORBextractor_a2eef0343b411bff8681782115a279e2a}
+
+\item 
+\hypertarget{classORB__SLAM2_1_1ORBextractor_a8c75fd715b20fbaf61fce11e03729901}{std\-::vector$<$ int $>$ {\bfseries umax}}\label{classORB__SLAM2_1_1ORBextractor_a8c75fd715b20fbaf61fce11e03729901}
+
+\item 
+\hypertarget{classORB__SLAM2_1_1ORBextractor_a9432037b97eccc06715383d8c34965e9}{std\-::vector$<$ float $>$ {\bfseries mv\-Scale\-Factor}}\label{classORB__SLAM2_1_1ORBextractor_a9432037b97eccc06715383d8c34965e9}
+
+\item 
+\hypertarget{classORB__SLAM2_1_1ORBextractor_a7eeb10aded635b28fc49422348dc72d0}{std\-::vector$<$ float $>$ {\bfseries mv\-Inv\-Scale\-Factor}}\label{classORB__SLAM2_1_1ORBextractor_a7eeb10aded635b28fc49422348dc72d0}
+
+\item 
+\hypertarget{classORB__SLAM2_1_1ORBextractor_a2f9c99c509a4d1408013e91f452ef953}{std\-::vector$<$ float $>$ {\bfseries mv\-Level\-Sigma2}}\label{classORB__SLAM2_1_1ORBextractor_a2f9c99c509a4d1408013e91f452ef953}
+
+\item 
+\hypertarget{classORB__SLAM2_1_1ORBextractor_af99de18a5fa2679ff1199f42b9090bf2}{std\-::vector$<$ float $>$ {\bfseries mv\-Inv\-Level\-Sigma2}}\label{classORB__SLAM2_1_1ORBextractor_af99de18a5fa2679ff1199f42b9090bf2}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{详细描述}
+
+
+在文件 O\-R\-Bextractor.\-h 第 45 行定义.
+
+
+
+\subsection{构造及析构函数说明}
+\hypertarget{classORB__SLAM2_1_1ORBextractor_aaa8e010415e516246e171b9bbb9f84af}{\index{O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-O\-R\-Bextractor@{O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-O\-R\-Bextractor}!O\-R\-Bextractor@{O\-R\-Bextractor}}
+\index{O\-R\-Bextractor@{O\-R\-Bextractor}!ORB_SLAM2::ORBextractor@{O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-O\-R\-Bextractor}}
+\subsubsection[{O\-R\-Bextractor}]{\setlength{\rightskip}{0pt plus 5cm}O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-O\-R\-Bextractor\-::\-O\-R\-Bextractor (
+\begin{DoxyParamCaption}
+\item[{int}]{nfeatures, }
+\item[{float}]{scale\-Factor, }
+\item[{int}]{nlevels, }
+\item[{int}]{ini\-Th\-F\-A\-S\-T, }
+\item[{int}]{min\-Th\-F\-A\-S\-T}
+\end{DoxyParamCaption}
+)}}\label{classORB__SLAM2_1_1ORBextractor_aaa8e010415e516246e171b9bbb9f84af}
+期望的特征点数。2000$\ast$（1-\/1/1.2)/（1-\/pow(0.\-833,8);//60..
+
+为了计算方向。。。 
+
+在文件 O\-R\-Bextractor.\-cpp 第 435 行定义.
+
+
+
+\subsection{成员函数说明}
+\hypertarget{classORB__SLAM2_1_1ORBextractor_a9a543d9b2aec1e521058ee9522937adc}{\index{O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-O\-R\-Bextractor@{O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-O\-R\-Bextractor}!Compute\-Key\-Points\-Oct\-Tree@{Compute\-Key\-Points\-Oct\-Tree}}
+\index{Compute\-Key\-Points\-Oct\-Tree@{Compute\-Key\-Points\-Oct\-Tree}!ORB_SLAM2::ORBextractor@{O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-O\-R\-Bextractor}}
+\subsubsection[{Compute\-Key\-Points\-Oct\-Tree}]{\setlength{\rightskip}{0pt plus 5cm}void O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-O\-R\-Bextractor\-::\-Compute\-Key\-Points\-Oct\-Tree (
+\begin{DoxyParamCaption}
+\item[{std\-::vector$<$ std\-::vector$<$ cv\-::\-Key\-Point $>$ $>$ \&}]{all\-Keypoints}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classORB__SLAM2_1_1ORBextractor_a9a543d9b2aec1e521058ee9522937adc}
+8层的keypoint 
+
+在文件 O\-R\-Bextractor.\-cpp 第 798 行定义.
+
+
+
+参考 Distribute\-Oct\-Tree().
+
+
+
+参考自 operator()().
+
+
+
+函数调用图\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classORB__SLAM2_1_1ORBextractor_a9a543d9b2aec1e521058ee9522937adc_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+这是这个函数的调用关系图\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classORB__SLAM2_1_1ORBextractor_a9a543d9b2aec1e521058ee9522937adc_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classORB__SLAM2_1_1ORBextractor_a058f24d80bb0b2c7d6fc0bdd3d9144d1}{\index{O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-O\-R\-Bextractor@{O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-O\-R\-Bextractor}!Compute\-Pyramid@{Compute\-Pyramid}}
+\index{Compute\-Pyramid@{Compute\-Pyramid}!ORB_SLAM2::ORBextractor@{O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-O\-R\-Bextractor}}
+\subsubsection[{Compute\-Pyramid}]{\setlength{\rightskip}{0pt plus 5cm}void O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-O\-R\-Bextractor\-::\-Compute\-Pyramid (
+\begin{DoxyParamCaption}
+\item[{cv\-::\-Mat}]{image}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classORB__SLAM2_1_1ORBextractor_a058f24d80bb0b2c7d6fc0bdd3d9144d1}
+构建图像金字塔 
+\begin{DoxyParams}{参数}
+{\em image} & 输入图像 \\
+\hline
+\end{DoxyParams}
+
+
+在文件 O\-R\-Bextractor.\-cpp 第 1149 行定义.
+
+
+
+参考自 operator()().
+
+
+
+这是这个函数的调用关系图\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classORB__SLAM2_1_1ORBextractor_a058f24d80bb0b2c7d6fc0bdd3d9144d1_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classORB__SLAM2_1_1ORBextractor_ac6b7b27447324af33fa60d6dc0c8ffa0}{\index{O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-O\-R\-Bextractor@{O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-O\-R\-Bextractor}!Distribute\-Oct\-Tree@{Distribute\-Oct\-Tree}}
+\index{Distribute\-Oct\-Tree@{Distribute\-Oct\-Tree}!ORB_SLAM2::ORBextractor@{O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-O\-R\-Bextractor}}
+\subsubsection[{Distribute\-Oct\-Tree}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$ cv\-::\-Key\-Point $>$ O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-O\-R\-Bextractor\-::\-Distribute\-Oct\-Tree (
+\begin{DoxyParamCaption}
+\item[{const std\-::vector$<$ cv\-::\-Key\-Point $>$ \&}]{v\-To\-Distribute\-Keys, }
+\item[{const int \&}]{min\-X, }
+\item[{const int \&}]{max\-X, }
+\item[{const int \&}]{min\-Y, }
+\item[{const int \&}]{max\-Y, }
+\item[{const int \&}]{n\-Features, }
+\item[{const int \&}]{level}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classORB__SLAM2_1_1ORBextractor_ac6b7b27447324af33fa60d6dc0c8ffa0}
+x/y约等于1 
+
+在文件 O\-R\-Bextractor.\-cpp 第 565 行定义.
+
+
+
+参考自 Compute\-Key\-Points\-Oct\-Tree().
+
+
+
+这是这个函数的调用关系图\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classORB__SLAM2_1_1ORBextractor_ac6b7b27447324af33fa60d6dc0c8ffa0_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classORB__SLAM2_1_1ORBextractor_a05117a839e4261638b0413fff2dc9e1b}{\index{O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-O\-R\-Bextractor@{O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-O\-R\-Bextractor}!operator()@{operator()}}
+\index{operator()@{operator()}!ORB_SLAM2::ORBextractor@{O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-O\-R\-Bextractor}}
+\subsubsection[{operator()}]{\setlength{\rightskip}{0pt plus 5cm}void O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-O\-R\-Bextractor\-::operator() (
+\begin{DoxyParamCaption}
+\item[{cv\-::\-Input\-Array}]{image, }
+\item[{cv\-::\-Input\-Array}]{mask, }
+\item[{std\-::vector$<$ cv\-::\-Key\-Point $>$ \&}]{keypoints, }
+\item[{cv\-::\-Output\-Array}]{descriptors}
+\end{DoxyParamCaption}
+)}}\label{classORB__SLAM2_1_1ORBextractor_a05117a839e4261638b0413fff2dc9e1b}
+尺度，比如 $\ast$2,这层的所有坐标就放大两倍。。。 
+
+在文件 O\-R\-Bextractor.\-cpp 第 1079 行定义.
+
+
+
+参考 Compute\-Key\-Points\-Oct\-Tree() , 以及 Compute\-Pyramid().
+
+
+
+函数调用图\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classORB__SLAM2_1_1ORBextractor_a05117a839e4261638b0413fff2dc9e1b_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+该类的文档由以下文件生成\-:\begin{DoxyCompactItemize}
+\item 
+include/O\-R\-Bextractor.\-h\item 
+src/O\-R\-Bextractor.\-cpp\end{DoxyCompactItemize}

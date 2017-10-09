@@ -1,0 +1,65 @@
+\hypertarget{classg2o_1_1EstimatePropagatorCost}{\section{g2o\-:\-:Estimate\-Propagator\-Cost类 参考}
+\label{classg2o_1_1EstimatePropagatorCost}\index{g2o\-::\-Estimate\-Propagator\-Cost@{g2o\-::\-Estimate\-Propagator\-Cost}}
+}
+
+
+cost for traversing along active edges in the optimizer  
+
+
+
+
+{\ttfamily \#include $<$estimate\-\_\-propagator.\-h$>$}
+
+
+
+类 g2o\-:\-:Estimate\-Propagator\-Cost 继承关系图\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=226pt]{classg2o_1_1EstimatePropagatorCost__inherit__graph}
+\end{center}
+\end{figure}
+
+
+g2o\-:\-:Estimate\-Propagator\-Cost 的协作图\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classg2o_1_1EstimatePropagatorCost__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classg2o_1_1EstimatePropagatorCost_aebd56e3597a99b225bc3799ec8145bc9}{{\bfseries Estimate\-Propagator\-Cost} (\hyperlink{classg2o_1_1SparseOptimizer}{Sparse\-Optimizer} $\ast$graph)}\label{classg2o_1_1EstimatePropagatorCost_aebd56e3597a99b225bc3799ec8145bc9}
+
+\item 
+\hypertarget{classg2o_1_1EstimatePropagatorCost_abbff40e061153f9049a40514c44b4492}{virtual double {\bfseries operator()} (\hyperlink{classg2o_1_1OptimizableGraph_1_1Edge}{Optimizable\-Graph\-::\-Edge} $\ast$edge, const Optimizable\-Graph\-::\-Vertex\-Set \&from, \hyperlink{classg2o_1_1OptimizableGraph_1_1Vertex}{Optimizable\-Graph\-::\-Vertex} $\ast$to\-\_\-) const }\label{classg2o_1_1EstimatePropagatorCost_abbff40e061153f9049a40514c44b4492}
+
+\item 
+\hypertarget{classg2o_1_1EstimatePropagatorCost_a302b70a2b5d83d4ae5863f4b88742589}{virtual const char $\ast$ {\bfseries name} () const }\label{classg2o_1_1EstimatePropagatorCost_a302b70a2b5d83d4ae5863f4b88742589}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected 属性}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classg2o_1_1EstimatePropagatorCost_adf778ed8de5b54eb934e88107fe77980}{\hyperlink{classg2o_1_1SparseOptimizer}{Sparse\-Optimizer} $\ast$ {\bfseries \-\_\-graph}}\label{classg2o_1_1EstimatePropagatorCost_adf778ed8de5b54eb934e88107fe77980}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{详细描述}
+cost for traversing along active edges in the optimizer 
+
+You may derive an own one, if necessary. The default is to return initial\-Estimate\-Possible(from, to) for the edge. 
+
+在文件 estimate\-\_\-propagator.\-h 第 53 行定义.
+
+
+
+该类的文档由以下文件生成\-:\begin{DoxyCompactItemize}
+\item 
+Thirdparty/g2o/g2o/core/estimate\-\_\-propagator.\-h\item 
+Thirdparty/g2o/g2o/core/estimate\-\_\-propagator.\-cpp\end{DoxyCompactItemize}

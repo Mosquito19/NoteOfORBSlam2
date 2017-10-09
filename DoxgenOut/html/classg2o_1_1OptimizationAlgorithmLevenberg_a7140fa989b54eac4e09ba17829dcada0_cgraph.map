@@ -1,0 +1,24 @@
+<map id="g2o::OptimizationAlgorithmLevenberg::solve" name="g2o::OptimizationAlgorithmLevenberg::solve">
+<area shape="rect" id="node2" href="$classg2o_1_1SparseOptimizer.html#ae47c5023e53685523499fc00d6057d14" title="g2o::SparseOptimizer\l::activeRobustChi2" alt="" coords="261,83,409,125"/>
+<area shape="rect" id="node6" href="$classg2o_1_1Solver.html#a6c93ac0f528ffe05867d33150c54f46f" title="g2o::Solver::buildStructure" alt="" coords="247,164,423,191"/>
+<area shape="rect" id="node7" href="$classg2o_1_1Solver.html#ac1565e85d5ca68a87ad7f06f8164a8c0" title="g2o::Solver::buildSystem" alt="" coords="251,215,419,241"/>
+<area shape="rect" id="node8" href="$classg2o_1_1SparseOptimizer.html#a09572668aa85b75a5bebf7b66401ce8f" title="g2o::SparseOptimizer\l::computeActiveErrors" alt="" coords="259,266,411,307"/>
+<area shape="rect" id="node11" href="$classg2o_1_1OptimizationAlgorithmLevenberg.html#a84d860857af44977ab5358527475ce54" title="g2o::OptimizationAlgorithm\lLevenberg::computeLambdaInit" alt="" coords="233,331,437,373"/>
+<area shape="rect" id="node15" href="$classg2o_1_1SparseOptimizer.html#ac6344493dc9f66d5443759ff9f2abf6c" title="ignore the latest stored element on the stack, remove it from the stack but do not restore the estima..." alt="" coords="261,397,409,438"/>
+<area shape="rect" id="node16" href="$classg2o_1_1Solver.html#a9ea585f131ab02ae1e0c0192126f0b5f" title="the optimizer (graph) on which the solver works " alt="" coords="260,463,409,489"/>
+<area shape="rect" id="node17" href="$classg2o_1_1SparseOptimizer.html#a57dbbb584122c6cfa292bb79d8fcd7ad" title="pop (restore) the estimate a subset of the variables from the stack " alt="" coords="246,513,423,540"/>
+<area shape="rect" id="node18" href="$classg2o_1_1SparseOptimizer.html#a08833d6f9ae487f5608f6113f3635b6b" title="push the estimate of a subset of the variables onto a stack " alt="" coords="261,565,409,606"/>
+<area shape="rect" id="node19" href="$classg2o_1_1Solver.html#a3c40dae9b999c4d18e57b02fd0e0ade2" title="g2o::Solver::restoreDiagonal" alt="" coords="241,631,428,657"/>
+<area shape="rect" id="node20" href="$classg2o_1_1Solver.html#a94a0d5196c7859c6c37fc2368ac56be3" title="g2o::Solver::setLambda" alt="" coords="255,681,415,708"/>
+<area shape="rect" id="node21" href="$classg2o_1_1Solver.html#a9c359a886db57f2f81e54a2113f3bd38" title="g2o::Solver::solve" alt="" coords="271,732,398,759"/>
+<area shape="rect" id="node22" href="$classg2o_1_1SparseOptimizer.html#ae592f525151d0cfb5bde3e7213f7ab11" title="if external stop flag is given, return its state. False otherwise " alt="" coords="261,783,409,825"/>
+<area shape="rect" id="node23" href="$classg2o_1_1Solver.html#acb097d8568624a1f3af4dba808e5593b" title="return x, the solution vector " alt="" coords="283,849,386,876"/>
+<area shape="rect" id="node3" href="$classg2o_1_1OptimizableGraph_1_1Edge.html#aeb6ce9f3bf7b896f58272ea0d3feb8ff" title="if NOT NULL, error of this edge will be robustifed with the kernel " alt="" coords="485,5,640,46"/>
+<area shape="rect" id="node4" href="$classg2o_1_1RobustKernel.html#ab47b071a0cfe466be063f0104bc41d0f" title="g2o::RobustKernel::\lrobustify" alt="" coords="493,70,632,111"/>
+<area shape="rect" id="node5" href="$classg2o_1_1OptimizableGraph_1_1Edge.html#a182bd2c109d50283c638d9b295f2f3d7" title="computes the chi2 based on the cached error value, only valid after computeError has been called..." alt="" coords="485,135,640,177"/>
+<area shape="rect" id="node9" href="$classg2o_1_1OptimizableGraph_1_1Edge.html#a5f2a4b6efa2d0ae600f94a28a6ba58cf" title="returns the error vector cached after calling the computeError; " alt="" coords="485,201,640,242"/>
+<area shape="rect" id="node10" href="$classg2o_1_1OptimizableGraph_1_1Edge.html#a90a86891adc47a179a7cd7ef31549916" title="returns the dimensions of the error function " alt="" coords="485,266,640,307"/>
+<area shape="rect" id="node12" href="$classg2o_1_1OptimizableGraph_1_1Vertex.html#a1037b978fec531eaf860d0037b992079" title="dimension of the estimated state belonging to this node " alt="" coords="485,331,640,373"/>
+<area shape="rect" id="node13" href="$classg2o_1_1OptimizableGraph_1_1Vertex.html#af46fa4f0baa4c87e29b137f24e713acb" title="get the element from the hessian matrix " alt="" coords="485,397,640,438"/>
+<area shape="rect" id="node14" href="$classg2o_1_1SparseOptimizer.html#a5e98a5f879f04c013b20f9c39a9057da" title="the index mapping of the vertices " alt="" coords="489,462,637,503"/>
+</map>

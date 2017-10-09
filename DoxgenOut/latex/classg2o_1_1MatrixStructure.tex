@@ -1,0 +1,112 @@
+\hypertarget{classg2o_1_1MatrixStructure}{\section{g2o\-:\-:Matrix\-Structure类 参考}
+\label{classg2o_1_1MatrixStructure}\index{g2o\-::\-Matrix\-Structure@{g2o\-::\-Matrix\-Structure}}
+}
+
+
+representing the structure of a matrix in column compressed structure (only the upper triangular part of the matrix)  
+
+
+
+
+{\ttfamily \#include $<$matrix\-\_\-structure.\-h$>$}
+
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classg2o_1_1MatrixStructure_aeda2f4fd97499545773af331cd2c10f2}{alloc} (int n\-\_\-, int nz)
+\item 
+\hypertarget{classg2o_1_1MatrixStructure_a4bc9281fa8ae82dab908506fe0819498}{void {\bfseries free} ()}\label{classg2o_1_1MatrixStructure_a4bc9281fa8ae82dab908506fe0819498}
+
+\item 
+bool \hyperlink{classg2o_1_1MatrixStructure_ac8fbebec703b3a4255025445e640314e}{write} (const char $\ast$filename) const 
+\item 
+\hypertarget{classg2o_1_1MatrixStructure_a358efab55a4eee51f7dfaab21d7d9c11}{int \hyperlink{classg2o_1_1MatrixStructure_a358efab55a4eee51f7dfaab21d7d9c11}{nz\-Max} () const }\label{classg2o_1_1MatrixStructure_a358efab55a4eee51f7dfaab21d7d9c11}
+
+\begin{DoxyCompactList}\small\item\em max number of non-\/zeros blocks \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public 属性}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classg2o_1_1MatrixStructure_aa91f296406c17ab3a826d03bf75cfea7}{int \hyperlink{classg2o_1_1MatrixStructure_aa91f296406c17ab3a826d03bf75cfea7}{n}}\label{classg2o_1_1MatrixStructure_aa91f296406c17ab3a826d03bf75cfea7}
+
+\begin{DoxyCompactList}\small\item\em A is m-\/by-\/n. n must be $>$= 0. \end{DoxyCompactList}\item 
+\hypertarget{classg2o_1_1MatrixStructure_a9cceed2097dcbaa27ed88b7005440616}{int \hyperlink{classg2o_1_1MatrixStructure_a9cceed2097dcbaa27ed88b7005440616}{m}}\label{classg2o_1_1MatrixStructure_a9cceed2097dcbaa27ed88b7005440616}
+
+\begin{DoxyCompactList}\small\item\em A is m-\/by-\/n. m must be $>$= 0. \end{DoxyCompactList}\item 
+\hypertarget{classg2o_1_1MatrixStructure_aeeff8e78fb766a433aecbfda4a2e3ffc}{int $\ast$ \hyperlink{classg2o_1_1MatrixStructure_aeeff8e78fb766a433aecbfda4a2e3ffc}{Ap}}\label{classg2o_1_1MatrixStructure_aeeff8e78fb766a433aecbfda4a2e3ffc}
+
+\begin{DoxyCompactList}\small\item\em column pointers for A, of size n+1 \end{DoxyCompactList}\item 
+\hypertarget{classg2o_1_1MatrixStructure_a7984bf429b8694070ab8db5f5852d8bb}{int $\ast$ \hyperlink{classg2o_1_1MatrixStructure_a7984bf429b8694070ab8db5f5852d8bb}{Aii}}\label{classg2o_1_1MatrixStructure_a7984bf429b8694070ab8db5f5852d8bb}
+
+\begin{DoxyCompactList}\small\item\em row indices of A, of size nz = Ap \mbox{[}n\mbox{]} \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected 属性}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classg2o_1_1MatrixStructure_a098e58ed3d37bf957307a64f7dc55f32}{int \hyperlink{classg2o_1_1MatrixStructure_a098e58ed3d37bf957307a64f7dc55f32}{max\-N}}\label{classg2o_1_1MatrixStructure_a098e58ed3d37bf957307a64f7dc55f32}
+
+\begin{DoxyCompactList}\small\item\em size of the allocated memory \end{DoxyCompactList}\item 
+\hypertarget{classg2o_1_1MatrixStructure_a049708086bd4123721351d0580ce5ba1}{int \hyperlink{classg2o_1_1MatrixStructure_a049708086bd4123721351d0580ce5ba1}{max\-Nz}}\label{classg2o_1_1MatrixStructure_a049708086bd4123721351d0580ce5ba1}
+
+\begin{DoxyCompactList}\small\item\em size of the allocated memory \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{详细描述}
+representing the structure of a matrix in column compressed structure (only the upper triangular part of the matrix) 
+
+在文件 matrix\-\_\-structure.\-h 第 37 行定义.
+
+
+
+\subsection{成员函数说明}
+\hypertarget{classg2o_1_1MatrixStructure_aeda2f4fd97499545773af331cd2c10f2}{\index{g2o\-::\-Matrix\-Structure@{g2o\-::\-Matrix\-Structure}!alloc@{alloc}}
+\index{alloc@{alloc}!g2o::MatrixStructure@{g2o\-::\-Matrix\-Structure}}
+\subsubsection[{alloc}]{\setlength{\rightskip}{0pt plus 5cm}void g2o\-::\-Matrix\-Structure\-::alloc (
+\begin{DoxyParamCaption}
+\item[{int}]{n\-\_\-, }
+\item[{int}]{nz}
+\end{DoxyParamCaption}
+)}}\label{classg2o_1_1MatrixStructure_aeda2f4fd97499545773af331cd2c10f2}
+allocate space for the Matrix Structure. You may call this on an already allocated struct, it will then reallocate the memory + additional space (double the required space). 
+
+在文件 matrix\-\_\-structure.\-cpp 第 55 行定义.
+
+
+
+参考 Aii, Ap, max\-N, max\-Nz , 以及 n.
+
+
+
+参考自 g2o\-::\-Sparse\-Block\-Matrix$<$ Matrix\-Type $>$\-::fill\-Block\-Structure().
+
+
+
+这是这个函数的调用关系图\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=344pt]{classg2o_1_1MatrixStructure_aeda2f4fd97499545773af331cd2c10f2_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classg2o_1_1MatrixStructure_ac8fbebec703b3a4255025445e640314e}{\index{g2o\-::\-Matrix\-Structure@{g2o\-::\-Matrix\-Structure}!write@{write}}
+\index{write@{write}!g2o::MatrixStructure@{g2o\-::\-Matrix\-Structure}}
+\subsubsection[{write}]{\setlength{\rightskip}{0pt plus 5cm}bool g2o\-::\-Matrix\-Structure\-::write (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{filename}
+\end{DoxyParamCaption}
+) const}}\label{classg2o_1_1MatrixStructure_ac8fbebec703b3a4255025445e640314e}
+Write the matrix pattern to a file. File is also loadable by octave, e.\-g., then use spy(matrix) 
+
+在文件 matrix\-\_\-structure.\-cpp 第 88 行定义.
+
+
+
+参考 Aii, Ap, m , 以及 n.
+
+
+
+该类的文档由以下文件生成\-:\begin{DoxyCompactItemize}
+\item 
+Thirdparty/g2o/g2o/core/matrix\-\_\-structure.\-h\item 
+Thirdparty/g2o/g2o/core/matrix\-\_\-structure.\-cpp\end{DoxyCompactItemize}

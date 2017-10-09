@@ -1,0 +1,246 @@
+\hypertarget{classg2o_1_1BaseBinaryEdge}{\section{g2o\-:\-:Base\-Binary\-Edge$<$ D, E, Vertex\-Xi, Vertex\-Xj $>$ 模板类 参考}
+\label{classg2o_1_1BaseBinaryEdge}\index{g2o\-::\-Base\-Binary\-Edge$<$ D, E, Vertex\-Xi, Vertex\-Xj $>$@{g2o\-::\-Base\-Binary\-Edge$<$ D, E, Vertex\-Xi, Vertex\-Xj $>$}}
+}
+
+
+类 g2o\-:\-:Base\-Binary\-Edge$<$ D, E, Vertex\-Xi, Vertex\-Xj $>$ 继承关系图\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=228pt]{classg2o_1_1BaseBinaryEdge__inherit__graph}
+\end{center}
+\end{figure}
+
+
+g2o\-:\-:Base\-Binary\-Edge$<$ D, E, Vertex\-Xi, Vertex\-Xj $>$ 的协作图\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classg2o_1_1BaseBinaryEdge__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public 类型}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classg2o_1_1BaseBinaryEdge_aa8e2b04b2c0c90adc48384d6d41063cc}{typedef Vertex\-Xi {\bfseries Vertex\-Xi\-Type}}\label{classg2o_1_1BaseBinaryEdge_aa8e2b04b2c0c90adc48384d6d41063cc}
+
+\item 
+\hypertarget{classg2o_1_1BaseBinaryEdge_aa489ae37680c37d7b2c3c1a197f90de9}{typedef Vertex\-Xj {\bfseries Vertex\-Xj\-Type}}\label{classg2o_1_1BaseBinaryEdge_aa489ae37680c37d7b2c3c1a197f90de9}
+
+\item 
+\hypertarget{classg2o_1_1BaseBinaryEdge_ac1e9249e9906747a6669a9c90013944b}{typedef \hyperlink{classg2o_1_1BaseEdge}{Base\-Edge}$<$ D, E $>$\\*
+\-::Measurement {\bfseries Measurement}}\label{classg2o_1_1BaseBinaryEdge_ac1e9249e9906747a6669a9c90013944b}
+
+\item 
+\hypertarget{classg2o_1_1BaseBinaryEdge_ab1cde84224b129603bcd95db027e0167}{typedef Matrix$<$ double, D, Di $>$\\*
+\-::Aligned\-Map\-Type {\bfseries Jacobian\-Xi\-Oplus\-Type}}\label{classg2o_1_1BaseBinaryEdge_ab1cde84224b129603bcd95db027e0167}
+
+\item 
+\hypertarget{classg2o_1_1BaseBinaryEdge_a83e5dec2135b33e86255c87be3b5d062}{typedef Matrix$<$ double, D, Dj $>$\\*
+\-::Aligned\-Map\-Type {\bfseries Jacobian\-Xj\-Oplus\-Type}}\label{classg2o_1_1BaseBinaryEdge_a83e5dec2135b33e86255c87be3b5d062}
+
+\item 
+\hypertarget{classg2o_1_1BaseBinaryEdge_ae1cccf6068b2446ece316b6a69a46acf}{typedef \hyperlink{classg2o_1_1BaseEdge}{Base\-Edge}$<$ D, E $>$\\*
+\-::Error\-Vector {\bfseries Error\-Vector}}\label{classg2o_1_1BaseBinaryEdge_ae1cccf6068b2446ece316b6a69a46acf}
+
+\item 
+\hypertarget{classg2o_1_1BaseBinaryEdge_a4530ef6462aadaf2ab826d440d3b3318}{typedef \hyperlink{classg2o_1_1BaseEdge}{Base\-Edge}$<$ D, E $>$\\*
+\-::Information\-Type {\bfseries Information\-Type}}\label{classg2o_1_1BaseBinaryEdge_a4530ef6462aadaf2ab826d440d3b3318}
+
+\item 
+\hypertarget{classg2o_1_1BaseBinaryEdge_a7eadbbe6abffe4d2ebdf6231272789a5}{typedef Eigen\-::\-Map$<$ Matrix\\*
+$<$ double, Di, Dj $>$, Matrix\\*
+$<$ double, Di, Dj $>$\-::Flags \\*
+\&Aligned\-Bit?Aligned\-:\-Unaligned $>$ {\bfseries Hessian\-Block\-Type}}\label{classg2o_1_1BaseBinaryEdge_a7eadbbe6abffe4d2ebdf6231272789a5}
+
+\item 
+\hypertarget{classg2o_1_1BaseBinaryEdge_aec0d5b1819f702b7658574fcd6324b49}{typedef Eigen\-::\-Map$<$ Matrix\\*
+$<$ double, Dj, Di $>$, Matrix\\*
+$<$ double, Dj, Di $>$\-::Flags \\*
+\&Aligned\-Bit?Aligned\-:\-Unaligned $>$ {\bfseries Hessian\-Block\-Transposed\-Type}}\label{classg2o_1_1BaseBinaryEdge_aec0d5b1819f702b7658574fcd6324b49}
+
+\end{DoxyCompactItemize}
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classg2o_1_1BaseBinaryEdge_a32bfc93b6dede619c7d99db2fb60f80d}{virtual \hyperlink{classg2o_1_1OptimizableGraph_1_1Vertex}{Optimizable\-Graph\-::\-Vertex} $\ast$ {\bfseries create\-From} ()}\label{classg2o_1_1BaseBinaryEdge_a32bfc93b6dede619c7d99db2fb60f80d}
+
+\item 
+\hypertarget{classg2o_1_1BaseBinaryEdge_ac7cce17e3229445e5a33c3cb8a569320}{virtual \hyperlink{classg2o_1_1OptimizableGraph_1_1Vertex}{Optimizable\-Graph\-::\-Vertex} $\ast$ {\bfseries create\-To} ()}\label{classg2o_1_1BaseBinaryEdge_ac7cce17e3229445e5a33c3cb8a569320}
+
+\item 
+virtual void \hyperlink{classg2o_1_1BaseBinaryEdge_a06e64067fa5fff4a5e2d058249b55478}{resize} (size\-\_\-t size)
+\item 
+\hypertarget{classg2o_1_1BaseBinaryEdge_a1895c3b7141e93fd05bf271daeda7568}{virtual bool {\bfseries all\-Vertices\-Fixed} () const }\label{classg2o_1_1BaseBinaryEdge_a1895c3b7141e93fd05bf271daeda7568}
+
+\item 
+virtual void \hyperlink{classg2o_1_1BaseBinaryEdge_afc3b6470e7679f027c2614484b394925}{linearize\-Oplus} (\hyperlink{classg2o_1_1JacobianWorkspace}{Jacobian\-Workspace} \&jacobian\-Workspace)
+\item 
+virtual void \hyperlink{classg2o_1_1BaseBinaryEdge_af0fb8a693c8c7996fa65566e7263fbc4}{linearize\-Oplus} ()
+\item 
+\hypertarget{classg2o_1_1BaseBinaryEdge_ad036a59a5bc1d04d1799d61b9be15864}{const Jacobian\-Xi\-Oplus\-Type \& \hyperlink{classg2o_1_1BaseBinaryEdge_ad036a59a5bc1d04d1799d61b9be15864}{jacobian\-Oplus\-Xi} () const }\label{classg2o_1_1BaseBinaryEdge_ad036a59a5bc1d04d1799d61b9be15864}
+
+\begin{DoxyCompactList}\small\item\em returns the result of the linearization in the manifold space for the node xi \end{DoxyCompactList}\item 
+\hypertarget{classg2o_1_1BaseBinaryEdge_a8a8ed568c4a00f74943fc1efe5bbc72c}{const Jacobian\-Xj\-Oplus\-Type \& \hyperlink{classg2o_1_1BaseBinaryEdge_a8a8ed568c4a00f74943fc1efe5bbc72c}{jacobian\-Oplus\-Xj} () const }\label{classg2o_1_1BaseBinaryEdge_a8a8ed568c4a00f74943fc1efe5bbc72c}
+
+\begin{DoxyCompactList}\small\item\em returns the result of the linearization in the manifold space for the node xj \end{DoxyCompactList}\item 
+virtual void \hyperlink{classg2o_1_1BaseBinaryEdge_a06a18745d95017c6d3c841f838a65364}{construct\-Quadratic\-Form} ()
+\item 
+virtual void \hyperlink{classg2o_1_1BaseBinaryEdge_ada358930854d386a4e8c32f64078e052}{map\-Hessian\-Memory} (double $\ast$d, int i, int j, bool row\-Major)
+\end{DoxyCompactItemize}
+\subsection*{静态 Public 属性}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classg2o_1_1BaseBinaryEdge_abfe232196405a7204bc299a747c1cc8b}{static const int {\bfseries Di} = Vertex\-Xi\-Type\-::\-Dimension}\label{classg2o_1_1BaseBinaryEdge_abfe232196405a7204bc299a747c1cc8b}
+
+\item 
+\hypertarget{classg2o_1_1BaseBinaryEdge_ab718b94950a34d589371fe6f5583b259}{static const int {\bfseries Dj} = Vertex\-Xj\-Type\-::\-Dimension}\label{classg2o_1_1BaseBinaryEdge_ab718b94950a34d589371fe6f5583b259}
+
+\item 
+\hypertarget{classg2o_1_1BaseBinaryEdge_af3c134948e48c446762fa4e427d1cca5}{static const int {\bfseries Dimension} = \hyperlink{classg2o_1_1BaseEdge}{Base\-Edge}$<$D, E$>$\-::Dimension}\label{classg2o_1_1BaseBinaryEdge_af3c134948e48c446762fa4e427d1cca5}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected 属性}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classg2o_1_1BaseBinaryEdge_aeb5c1f09a4433a6bd76ce4ab67bd9a64}{bool {\bfseries \-\_\-hessian\-Row\-Major}}\label{classg2o_1_1BaseBinaryEdge_aeb5c1f09a4433a6bd76ce4ab67bd9a64}
+
+\item 
+\hypertarget{classg2o_1_1BaseBinaryEdge_a5036f75e3b20c79cb014fcc929d8eef9}{Hessian\-Block\-Type {\bfseries \-\_\-hessian}}\label{classg2o_1_1BaseBinaryEdge_a5036f75e3b20c79cb014fcc929d8eef9}
+
+\item 
+\hypertarget{classg2o_1_1BaseBinaryEdge_aa61657904b00fcfa19df382094386f11}{Hessian\-Block\-Transposed\-Type {\bfseries \-\_\-hessian\-Transposed}}\label{classg2o_1_1BaseBinaryEdge_aa61657904b00fcfa19df382094386f11}
+
+\item 
+\hypertarget{classg2o_1_1BaseBinaryEdge_aa21b9d84924ec93192374761ee0adfa7}{Jacobian\-Xi\-Oplus\-Type {\bfseries \-\_\-jacobian\-Oplus\-Xi}}\label{classg2o_1_1BaseBinaryEdge_aa21b9d84924ec93192374761ee0adfa7}
+
+\item 
+\hypertarget{classg2o_1_1BaseBinaryEdge_ad448518247044496cb99c9d70bd1a363}{Jacobian\-Xj\-Oplus\-Type {\bfseries \-\_\-jacobian\-Oplus\-Xj}}\label{classg2o_1_1BaseBinaryEdge_ad448518247044496cb99c9d70bd1a363}
+
+\end{DoxyCompactItemize}
+\subsection*{额外继承的成员函数}
+
+
+\subsection{详细描述}
+\subsubsection*{template$<$int D, typename E, typename Vertex\-Xi, typename Vertex\-Xj$>$class g2o\-::\-Base\-Binary\-Edge$<$ D, E, Vertex\-Xi, Vertex\-Xj $>$}
+
+
+
+在文件 base\-\_\-binary\-\_\-edge.\-h 第 42 行定义.
+
+
+
+\subsection{成员函数说明}
+\hypertarget{classg2o_1_1BaseBinaryEdge_a06a18745d95017c6d3c841f838a65364}{\index{g2o\-::\-Base\-Binary\-Edge@{g2o\-::\-Base\-Binary\-Edge}!construct\-Quadratic\-Form@{construct\-Quadratic\-Form}}
+\index{construct\-Quadratic\-Form@{construct\-Quadratic\-Form}!g2o::BaseBinaryEdge@{g2o\-::\-Base\-Binary\-Edge}}
+\subsubsection[{construct\-Quadratic\-Form}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int D, typename E , typename Vertex\-Xi\-Type , typename Vertex\-Xj\-Type $>$ void Base\-Binary\-Edge\-::construct\-Quadratic\-Form (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classg2o_1_1BaseBinaryEdge_a06a18745d95017c6d3c841f838a65364}
+Linearizes the constraint in the edge. Makes side effect on the vertices of the graph by changing the parameter vector b and the hessian blocks ii and jj. The off diagoinal block is accesed via \-\_\-hessian. 
+
+实现了 \hyperlink{classg2o_1_1OptimizableGraph_1_1Edge_a56fbf3430ddf591e3c619bdd1b7e4499}{g2o\-::\-Optimizable\-Graph\-::\-Edge}.
+
+
+
+在文件 base\-\_\-binary\-\_\-edge.\-h 第 56 行定义.
+
+
+
+参考 g2o\-::\-Hyper\-Graph\-::\-Edge\-::resize().
+
+
+
+函数调用图\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classg2o_1_1BaseBinaryEdge_a06a18745d95017c6d3c841f838a65364_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classg2o_1_1BaseBinaryEdge_afc3b6470e7679f027c2614484b394925}{\index{g2o\-::\-Base\-Binary\-Edge@{g2o\-::\-Base\-Binary\-Edge}!linearize\-Oplus@{linearize\-Oplus}}
+\index{linearize\-Oplus@{linearize\-Oplus}!g2o::BaseBinaryEdge@{g2o\-::\-Base\-Binary\-Edge}}
+\subsubsection[{linearize\-Oplus}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int D, typename E , typename Vertex\-Xi\-Type , typename Vertex\-Xj\-Type $>$ void Base\-Binary\-Edge\-::linearize\-Oplus (
+\begin{DoxyParamCaption}
+\item[{{\bf Jacobian\-Workspace} \&}]{jacobian\-Workspace}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classg2o_1_1BaseBinaryEdge_afc3b6470e7679f027c2614484b394925}
+Linearizes the constraint in the edge in the manifold space, and store the result in the given workspace 
+
+实现了 \hyperlink{classg2o_1_1OptimizableGraph_1_1Edge_a0fdad5ebfb4efec9f893b57f67e0fbe1}{g2o\-::\-Optimizable\-Graph\-::\-Edge}.
+
+
+
+在文件 base\-\_\-binary\-\_\-edge.\-h 第 124 行定义.
+
+\hypertarget{classg2o_1_1BaseBinaryEdge_af0fb8a693c8c7996fa65566e7263fbc4}{\index{g2o\-::\-Base\-Binary\-Edge@{g2o\-::\-Base\-Binary\-Edge}!linearize\-Oplus@{linearize\-Oplus}}
+\index{linearize\-Oplus@{linearize\-Oplus}!g2o::BaseBinaryEdge@{g2o\-::\-Base\-Binary\-Edge}}
+\subsubsection[{linearize\-Oplus}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int D, typename E , typename Vertex\-Xi\-Type , typename Vertex\-Xj\-Type $>$ void Base\-Binary\-Edge\-::linearize\-Oplus (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classg2o_1_1BaseBinaryEdge_af0fb8a693c8c7996fa65566e7263fbc4}
+Linearizes the oplus operator in the vertex, and stores the result in temporary variables \-\_\-jacobian\-Oplus\-Xi and \-\_\-jacobian\-Oplus\-Xj 
+
+被 \hyperlink{classg2o_1_1EdgeStereoSE3ProjectXYZ_aea04d86a304c6cb4e2a3f34b35166f30}{g2o\-::\-Edge\-Stereo\-S\-E3\-Project\-X\-Y\-Z} , 以及 \hyperlink{classg2o_1_1EdgeSE3ProjectXYZ_a7454e89740635d782c9e4efaef35ec44}{g2o\-::\-Edge\-S\-E3\-Project\-X\-Y\-Z} 重载.
+
+
+
+在文件 base\-\_\-binary\-\_\-edge.\-h 第 132 行定义.
+
+\hypertarget{classg2o_1_1BaseBinaryEdge_ada358930854d386a4e8c32f64078e052}{\index{g2o\-::\-Base\-Binary\-Edge@{g2o\-::\-Base\-Binary\-Edge}!map\-Hessian\-Memory@{map\-Hessian\-Memory}}
+\index{map\-Hessian\-Memory@{map\-Hessian\-Memory}!g2o::BaseBinaryEdge@{g2o\-::\-Base\-Binary\-Edge}}
+\subsubsection[{map\-Hessian\-Memory}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int D, typename E , typename Vertex\-Xi\-Type , typename Vertex\-Xj\-Type $>$ void Base\-Binary\-Edge\-::map\-Hessian\-Memory (
+\begin{DoxyParamCaption}
+\item[{double $\ast$}]{d, }
+\item[{int}]{i, }
+\item[{int}]{j, }
+\item[{bool}]{row\-Major}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classg2o_1_1BaseBinaryEdge_ada358930854d386a4e8c32f64078e052}
+maps the internal matrix to some external memory location, you need to provide the memory before calling construct\-Quadratic\-Form 
+\begin{DoxyParams}{参数}
+{\em d} & the memory location to which we map \\
+\hline
+{\em i} & index of the vertex i \\
+\hline
+{\em j} & index of the vertex j (j $>$ i, upper triangular fashion) \\
+\hline
+{\em row\-Major} & if true, will write in row\-Major order to the block. Since E\-I\-G\-E\-N is column\-Major by default, this results in writing the transposed \\
+\hline
+\end{DoxyParams}
+
+
+实现了 \hyperlink{classg2o_1_1OptimizableGraph_1_1Edge_a3bd233fd552daa166039acf47b69a5a7}{g2o\-::\-Optimizable\-Graph\-::\-Edge}.
+
+
+
+在文件 base\-\_\-binary\-\_\-edge.\-h 第 209 行定义.
+
+\hypertarget{classg2o_1_1BaseBinaryEdge_a06e64067fa5fff4a5e2d058249b55478}{\index{g2o\-::\-Base\-Binary\-Edge@{g2o\-::\-Base\-Binary\-Edge}!resize@{resize}}
+\index{resize@{resize}!g2o::BaseBinaryEdge@{g2o\-::\-Base\-Binary\-Edge}}
+\subsubsection[{resize}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int D, typename E , typename Vertex\-Xi\-Type , typename Vertex\-Xj\-Type $>$ void Base\-Binary\-Edge\-::resize (
+\begin{DoxyParamCaption}
+\item[{size\-\_\-t}]{size}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classg2o_1_1BaseBinaryEdge_a06e64067fa5fff4a5e2d058249b55478}
+resizes the number of vertices connected by this edge 
+
+重载 \hyperlink{classg2o_1_1HyperGraph_1_1Edge_ad8913f1149a0fd5bb628f0f1c8a91a55}{g2o\-::\-Hyper\-Graph\-::\-Edge} .
+
+
+
+在文件 base\-\_\-binary\-\_\-edge.\-h 第 40 行定义.
+
+
+
+该类的文档由以下文件生成\-:\begin{DoxyCompactItemize}
+\item 
+Thirdparty/g2o/g2o/core/base\-\_\-binary\-\_\-edge.\-h\item 
+Thirdparty/g2o/g2o/core/base\-\_\-binary\-\_\-edge.\-hpp\end{DoxyCompactItemize}

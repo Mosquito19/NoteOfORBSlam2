@@ -1,0 +1,6 @@
+<map id="g2o::HyperGraph::vertices" name="g2o::HyperGraph::vertices">
+<area shape="rect" id="node2" href="$structg2o_1_1OptimizableGraph.html#acea1342d9ab0bf717710c8f78b74ff25" title="adds all edges and vertices of the graph g to this graph. " alt="" coords="229,5,384,46"/>
+<area shape="rect" id="node3" href="$structg2o_1_1OptimizableGraph.html#a186d6d06a59395488cd15d25bf112ad9" title="g2o::OptimizableGraph\l::dimensions" alt="" coords="229,70,384,111"/>
+<area shape="rect" id="node5" href="$structg2o_1_1OptimizableGraph.html#abb25500d3f73dae8f2325ae11991c46f" title="return the maximum dimension of all vertices in the graph " alt="" coords="229,135,384,177"/>
+<area shape="rect" id="node4" href="$structg2o_1_1OptimizableGraph.html#a4a3a8c7ffa964d2ab27ccdfdaca6a0cc" title="g2o::OptimizableGraph\l::isSolverSuitable" alt="" coords="432,70,587,111"/>
+</map>

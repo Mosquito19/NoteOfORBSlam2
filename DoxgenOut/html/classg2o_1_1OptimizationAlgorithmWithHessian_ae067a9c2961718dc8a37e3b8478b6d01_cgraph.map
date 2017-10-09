@@ -1,0 +1,7 @@
+<map id="g2o::OptimizationAlgorithmWithHessian::init" name="g2o::OptimizationAlgorithmWithHessian::init">
+<area shape="rect" id="node2" href="$classg2o_1_1SparseOptimizer.html#a5715f0bab2cb9c1e8a330b2c3c217859" title="the vertices active in the current optimization " alt="" coords="250,5,398,46"/>
+<area shape="rect" id="node3" href="$classg2o_1_1Solver.html#a532174e1ee53642880d2d59c128b037b" title="g2o::Solver::init" alt="" coords="267,71,381,97"/>
+<area shape="rect" id="node4" href="$classg2o_1_1OptimizableGraph_1_1Vertex.html#a214c01f0b3cab575f3496be729f6ccb1" title="true =&gt; this node is marginalized out during the optimization " alt="" coords="247,122,401,163"/>
+<area shape="rect" id="node5" href="$classg2o_1_1Solver.html#ad3ef2a487d991363ba86af2840b0d7cd" title="g2o::Solver::setWriteDebug" alt="" coords="233,188,415,215"/>
+<area shape="rect" id="node6" href="$classg2o_1_1Solver.html#a36c68f7bc0b8864ee7722bc3c06de554" title="g2o::Solver::supportsSchur" alt="" coords="234,239,414,265"/>
+</map>

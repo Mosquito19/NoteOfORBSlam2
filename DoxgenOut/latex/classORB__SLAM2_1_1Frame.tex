@@ -1,0 +1,550 @@
+\hypertarget{classORB__SLAM2_1_1Frame}{\section{O\-R\-B\-\_\-\-S\-L\-A\-M2\-:\-:Frame类 参考}
+\label{classORB__SLAM2_1_1Frame}\index{O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Frame@{O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Frame}}
+}
+
+
+O\-R\-B\-\_\-\-S\-L\-A\-M2\-:\-:Frame 的协作图\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classORB__SLAM2_1_1Frame__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classORB__SLAM2_1_1Frame_ac7e6ed9973b81ec85e91228e3d4ecf22}{Frame} (const \hyperlink{classORB__SLAM2_1_1Frame}{Frame} \&frame)
+\begin{DoxyCompactList}\small\item\em Copy constructor. \end{DoxyCompactList}\item 
+\hypertarget{classORB__SLAM2_1_1Frame_a24d3c1a1a811fa0f9d44e717a044b2a4}{{\bfseries Frame} (const cv\-::\-Mat \&im\-Left, const cv\-::\-Mat \&im\-Right, const double \&time\-Stamp, \hyperlink{classORB__SLAM2_1_1ORBextractor}{O\-R\-Bextractor} $\ast$extractor\-Left, \hyperlink{classORB__SLAM2_1_1ORBextractor}{O\-R\-Bextractor} $\ast$extractor\-Right, \hyperlink{classDBoW2_1_1TemplatedVocabulary}{O\-R\-B\-Vocabulary} $\ast$voc, cv\-::\-Mat \&K, cv\-::\-Mat \&dist\-Coef, const float \&bf, const float \&th\-Depth)}\label{classORB__SLAM2_1_1Frame_a24d3c1a1a811fa0f9d44e717a044b2a4}
+
+\item 
+\hypertarget{classORB__SLAM2_1_1Frame_ac205fd2081c647e4841369828902f8fe}{{\bfseries Frame} (const cv\-::\-Mat \&im\-Gray, const cv\-::\-Mat \&im\-Depth, const double \&time\-Stamp, \hyperlink{classORB__SLAM2_1_1ORBextractor}{O\-R\-Bextractor} $\ast$extractor, \hyperlink{classDBoW2_1_1TemplatedVocabulary}{O\-R\-B\-Vocabulary} $\ast$voc, cv\-::\-Mat \&K, cv\-::\-Mat \&dist\-Coef, const float \&bf, const float \&th\-Depth)}\label{classORB__SLAM2_1_1Frame_ac205fd2081c647e4841369828902f8fe}
+
+\item 
+\hypertarget{classORB__SLAM2_1_1Frame_a39a57316938495a9ca8a053edd74b414}{{\bfseries Frame} (const cv\-::\-Mat \&im\-Gray, const double \&time\-Stamp, \hyperlink{classORB__SLAM2_1_1ORBextractor}{O\-R\-Bextractor} $\ast$extractor, \hyperlink{classDBoW2_1_1TemplatedVocabulary}{O\-R\-B\-Vocabulary} $\ast$voc, cv\-::\-Mat \&K, cv\-::\-Mat \&dist\-Coef, const float \&bf, const float \&th\-Depth)}\label{classORB__SLAM2_1_1Frame_a39a57316938495a9ca8a053edd74b414}
+
+\item 
+\hypertarget{classORB__SLAM2_1_1Frame_a626aef981e9fd9caff63bf93f1abf47f}{void {\bfseries Extract\-O\-R\-B} (int flag, const cv\-::\-Mat \&im)}\label{classORB__SLAM2_1_1Frame_a626aef981e9fd9caff63bf93f1abf47f}
+
+\item 
+void \hyperlink{classORB__SLAM2_1_1Frame_ac748d2318f9a409406dba4910ff5ef8e}{Compute\-Bo\-W} ()
+\begin{DoxyCompactList}\small\item\em Bag of Words Representation. \end{DoxyCompactList}\item 
+void \hyperlink{classORB__SLAM2_1_1Frame_a95cf2ea68735ef3e8c2d820eada11bf4}{Set\-Pose} (cv\-::\-Mat Tcw)
+\begin{DoxyCompactList}\small\item\em Set the camera pose. \end{DoxyCompactList}\item 
+void \hyperlink{classORB__SLAM2_1_1Frame_a0a18d3024a23f6fa2cab9c7d987598c2}{Update\-Pose\-Matrices} ()
+\begin{DoxyCompactList}\small\item\em Computes rotation, translation and camera center matrices from the camera pose. \end{DoxyCompactList}\item 
+\hypertarget{classORB__SLAM2_1_1Frame_a48c8983df3a521ed7439d9654b28e390}{cv\-::\-Mat {\bfseries Get\-Camera\-Center} ()}\label{classORB__SLAM2_1_1Frame_a48c8983df3a521ed7439d9654b28e390}
+
+\item 
+\hypertarget{classORB__SLAM2_1_1Frame_a96ec2c272f2ecea3f94b8472add80478}{cv\-::\-Mat {\bfseries Get\-Rotation\-Inverse} ()}\label{classORB__SLAM2_1_1Frame_a96ec2c272f2ecea3f94b8472add80478}
+
+\item 
+bool \hyperlink{classORB__SLAM2_1_1Frame_a0929e100e3380dba1baba12dfa8904c4}{is\-In\-Frustum} (\hyperlink{classORB__SLAM2_1_1MapPoint}{Map\-Point} $\ast$p\-M\-P, float viewing\-Cos\-Limit)
+\begin{DoxyCompactList}\small\item\em 判断一个点是否在视野内 \end{DoxyCompactList}\item 
+\hypertarget{classORB__SLAM2_1_1Frame_ae2bc4b1482d2010511da5423d298c9bd}{bool {\bfseries Pos\-In\-Grid} (const cv\-::\-Key\-Point \&kp, int \&pos\-X, int \&pos\-Y)}\label{classORB__SLAM2_1_1Frame_ae2bc4b1482d2010511da5423d298c9bd}
+
+\item 
+vector$<$ size\-\_\-t $>$ \hyperlink{classORB__SLAM2_1_1Frame_ab92eb055abb54bf7f73db7612673dbca}{Get\-Features\-In\-Area} (const float \&x, const float \&y, const float \&r, const int min\-Level=-\/1, const int max\-Level=-\/1) const 
+\begin{DoxyCompactList}\small\item\em 找到在 以x,y为中心,边长为2r的方形内且在\mbox{[}min\-Level, max\-Level\mbox{]}的特征点---指定层了 \end{DoxyCompactList}\item 
+void \hyperlink{classORB__SLAM2_1_1Frame_a77a570d7851bad90ca31c4d55a5105e7}{Compute\-Stereo\-Matches} ()
+\begin{DoxyCompactList}\small\item\em 双目匹配 \end{DoxyCompactList}\item 
+\hypertarget{classORB__SLAM2_1_1Frame_a2818781adf6aec30b8bd8783ba228dce}{void {\bfseries Compute\-Stereo\-From\-R\-G\-B\-D} (const cv\-::\-Mat \&im\-Depth)}\label{classORB__SLAM2_1_1Frame_a2818781adf6aec30b8bd8783ba228dce}
+
+\item 
+cv\-::\-Mat \hyperlink{classORB__SLAM2_1_1Frame_a46084d187e1fc60181e1c72f77c733ca}{Unproject\-Stereo} (const int \&i)
+\begin{DoxyCompactList}\small\item\em Backprojects a keypoint (if stereo/depth info available) into 3\-D world coordinates. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public 属性}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classORB__SLAM2_1_1Frame_a4c54c9963da838cd6fa83a65930bd1b7}{\hyperlink{classDBoW2_1_1TemplatedVocabulary}{O\-R\-B\-Vocabulary} $\ast$ {\bfseries mp\-O\-R\-Bvocabulary}}\label{classORB__SLAM2_1_1Frame_a4c54c9963da838cd6fa83a65930bd1b7}
+
+\item 
+\hypertarget{classORB__SLAM2_1_1Frame_a5c4f28562114c30c6276f2e42aac6607}{\hyperlink{classORB__SLAM2_1_1ORBextractor}{O\-R\-Bextractor} $\ast$ {\bfseries mp\-O\-R\-Bextractor\-Left}}\label{classORB__SLAM2_1_1Frame_a5c4f28562114c30c6276f2e42aac6607}
+
+\item 
+\hypertarget{classORB__SLAM2_1_1Frame_a53cd56c00a153e8b54be49ea73b64672}{\hyperlink{classORB__SLAM2_1_1ORBextractor}{O\-R\-Bextractor} $\ast$ {\bfseries mp\-O\-R\-Bextractor\-Right}}\label{classORB__SLAM2_1_1Frame_a53cd56c00a153e8b54be49ea73b64672}
+
+\item 
+\hypertarget{classORB__SLAM2_1_1Frame_a7987de59d3b4bf655614e19db0c90278}{double {\bfseries m\-Time\-Stamp}}\label{classORB__SLAM2_1_1Frame_a7987de59d3b4bf655614e19db0c90278}
+
+\item 
+\hypertarget{classORB__SLAM2_1_1Frame_a6508d43259538370dcb77911122dc85b}{cv\-::\-Mat {\bfseries m\-K}}\label{classORB__SLAM2_1_1Frame_a6508d43259538370dcb77911122dc85b}
+
+\item 
+\hypertarget{classORB__SLAM2_1_1Frame_aef15cff1b0d7572f49975d3200ffd140}{cv\-::\-Mat {\bfseries m\-Dist\-Coef}}\label{classORB__SLAM2_1_1Frame_aef15cff1b0d7572f49975d3200ffd140}
+
+\item 
+\hypertarget{classORB__SLAM2_1_1Frame_afb4090340565194b372b2ce0d95f16fb}{float {\bfseries mbf}}\label{classORB__SLAM2_1_1Frame_afb4090340565194b372b2ce0d95f16fb}
+
+\item 
+\hypertarget{classORB__SLAM2_1_1Frame_a950131e5ed7fca2a73fc5a50e6d9b2de}{float {\bfseries mb}}\label{classORB__SLAM2_1_1Frame_a950131e5ed7fca2a73fc5a50e6d9b2de}
+
+\item 
+\hypertarget{classORB__SLAM2_1_1Frame_a15e0251e1e18b84f385ad817f0e8ba1a}{float {\bfseries m\-Th\-Depth}}\label{classORB__SLAM2_1_1Frame_a15e0251e1e18b84f385ad817f0e8ba1a}
+
+\item 
+\hypertarget{classORB__SLAM2_1_1Frame_a0035828f1744f1bdd4ae8681e7cbbd32}{int \hyperlink{classORB__SLAM2_1_1Frame_a0035828f1744f1bdd4ae8681e7cbbd32}{N}}\label{classORB__SLAM2_1_1Frame_a0035828f1744f1bdd4ae8681e7cbbd32}
+
+\begin{DoxyCompactList}\small\item\em Key\-Points数量 \end{DoxyCompactList}\item 
+\hypertarget{classORB__SLAM2_1_1Frame_a86563de6facec0433e31f726723057e4}{std\-::vector$<$ cv\-::\-Key\-Point $>$ {\bfseries mv\-Keys}}\label{classORB__SLAM2_1_1Frame_a86563de6facec0433e31f726723057e4}
+
+\item 
+\hypertarget{classORB__SLAM2_1_1Frame_a15b04baf8fc5282883ccc002eb703a8e}{std\-::vector$<$ cv\-::\-Key\-Point $>$ {\bfseries mv\-Keys\-Right}}\label{classORB__SLAM2_1_1Frame_a15b04baf8fc5282883ccc002eb703a8e}
+
+\item 
+\hypertarget{classORB__SLAM2_1_1Frame_a13737fa65f0ce693275f1919240bac35}{std\-::vector$<$ cv\-::\-Key\-Point $>$ {\bfseries mv\-Keys\-Un}}\label{classORB__SLAM2_1_1Frame_a13737fa65f0ce693275f1919240bac35}
+
+\item 
+\hypertarget{classORB__SLAM2_1_1Frame_a09a1957b966542e640ecabc41ec76c16}{std\-::vector$<$ float $>$ {\bfseries mvu\-Right}}\label{classORB__SLAM2_1_1Frame_a09a1957b966542e640ecabc41ec76c16}
+
+\item 
+\hypertarget{classORB__SLAM2_1_1Frame_a4232b92ebf890728291ef2a66e7d39bb}{std\-::vector$<$ float $>$ {\bfseries mv\-Depth}}\label{classORB__SLAM2_1_1Frame_a4232b92ebf890728291ef2a66e7d39bb}
+
+\item 
+\hypertarget{classORB__SLAM2_1_1Frame_a68bbc187861a8e5c0ed9d92b5308c2cb}{\hyperlink{classDBoW2_1_1BowVector}{D\-Bo\-W2\-::\-Bow\-Vector} {\bfseries m\-Bow\-Vec}}\label{classORB__SLAM2_1_1Frame_a68bbc187861a8e5c0ed9d92b5308c2cb}
+
+\item 
+\hypertarget{classORB__SLAM2_1_1Frame_a8153622c07ed98421bd7c7b2b7451b03}{\hyperlink{classDBoW2_1_1FeatureVector}{D\-Bo\-W2\-::\-Feature\-Vector} {\bfseries m\-Feat\-Vec}}\label{classORB__SLAM2_1_1Frame_a8153622c07ed98421bd7c7b2b7451b03}
+
+\item 
+\hypertarget{classORB__SLAM2_1_1Frame_a0dfc1a363215ad0a09303e612a1ffbe7}{cv\-::\-Mat {\bfseries m\-Descriptors}}\label{classORB__SLAM2_1_1Frame_a0dfc1a363215ad0a09303e612a1ffbe7}
+
+\item 
+\hypertarget{classORB__SLAM2_1_1Frame_afe3cee153dda7e06d5004fd959fcd88e}{cv\-::\-Mat {\bfseries m\-Descriptors\-Right}}\label{classORB__SLAM2_1_1Frame_afe3cee153dda7e06d5004fd959fcd88e}
+
+\item 
+\hypertarget{classORB__SLAM2_1_1Frame_a48e791ae28b483211dad6b3474027935}{std\-::vector$<$ \hyperlink{classORB__SLAM2_1_1MapPoint}{Map\-Point} $\ast$ $>$ {\bfseries mvp\-Map\-Points}}\label{classORB__SLAM2_1_1Frame_a48e791ae28b483211dad6b3474027935}
+
+\item 
+\hypertarget{classORB__SLAM2_1_1Frame_aa05cc57f36b5b04a2e1690e576c93fc8}{std\-::vector$<$ bool $>$ {\bfseries mvb\-Outlier}}\label{classORB__SLAM2_1_1Frame_aa05cc57f36b5b04a2e1690e576c93fc8}
+
+\item 
+\hypertarget{classORB__SLAM2_1_1Frame_a194dca06186458639d46234d828afeed}{std\-::vector$<$ std\-::size\-\_\-t $>$ {\bfseries m\-Grid} \mbox{[}F\-R\-A\-M\-E\-\_\-\-G\-R\-I\-D\-\_\-\-C\-O\-L\-S\mbox{]}\mbox{[}F\-R\-A\-M\-E\-\_\-\-G\-R\-I\-D\-\_\-\-R\-O\-W\-S\mbox{]}}\label{classORB__SLAM2_1_1Frame_a194dca06186458639d46234d828afeed}
+
+\item 
+\hypertarget{classORB__SLAM2_1_1Frame_a3be6708cfd359fae30307f9408abd6f9}{cv\-::\-Mat \hyperlink{classORB__SLAM2_1_1Frame_a3be6708cfd359fae30307f9408abd6f9}{m\-Tcw}}\label{classORB__SLAM2_1_1Frame_a3be6708cfd359fae30307f9408abd6f9}
+
+\begin{DoxyCompactList}\small\item\em 相机姿态 世界坐标系到相机坐标坐标系的变换矩阵 \end{DoxyCompactList}\item 
+\hypertarget{classORB__SLAM2_1_1Frame_acd59686475a89bfdfcae316dfa6b6069}{long unsigned int \hyperlink{classORB__SLAM2_1_1Frame_acd59686475a89bfdfcae316dfa6b6069}{mn\-Id}}\label{classORB__SLAM2_1_1Frame_acd59686475a89bfdfcae316dfa6b6069}
+
+\begin{DoxyCompactList}\small\item\em Current \hyperlink{classORB__SLAM2_1_1Frame}{Frame} id. \end{DoxyCompactList}\item 
+\hypertarget{classORB__SLAM2_1_1Frame_a4f5187c3a75ef493687fa0582fed0aa8}{\hyperlink{classORB__SLAM2_1_1KeyFrame}{Key\-Frame} $\ast$ {\bfseries mp\-Reference\-K\-F}}\label{classORB__SLAM2_1_1Frame_a4f5187c3a75ef493687fa0582fed0aa8}
+
+\item 
+\hypertarget{classORB__SLAM2_1_1Frame_a4c4b02f27be28aec6cb8bb1bab3f622f}{int {\bfseries mn\-Scale\-Levels}}\label{classORB__SLAM2_1_1Frame_a4c4b02f27be28aec6cb8bb1bab3f622f}
+
+\item 
+\hypertarget{classORB__SLAM2_1_1Frame_aab180286bac29f4e030ce850c51c435c}{float {\bfseries mf\-Scale\-Factor}}\label{classORB__SLAM2_1_1Frame_aab180286bac29f4e030ce850c51c435c}
+
+\item 
+\hypertarget{classORB__SLAM2_1_1Frame_ad3ddefb0665fb5128391a7e59a236e9a}{float {\bfseries mf\-Log\-Scale\-Factor}}\label{classORB__SLAM2_1_1Frame_ad3ddefb0665fb5128391a7e59a236e9a}
+
+\item 
+\hypertarget{classORB__SLAM2_1_1Frame_a55d7bd3fa5d3fa8d2ecf18609e91f98e}{vector$<$ float $>$ {\bfseries mv\-Scale\-Factors}}\label{classORB__SLAM2_1_1Frame_a55d7bd3fa5d3fa8d2ecf18609e91f98e}
+
+\item 
+\hypertarget{classORB__SLAM2_1_1Frame_a4c7ed1316a886b9a7c3f02ee13219b8c}{vector$<$ float $>$ {\bfseries mv\-Inv\-Scale\-Factors}}\label{classORB__SLAM2_1_1Frame_a4c7ed1316a886b9a7c3f02ee13219b8c}
+
+\item 
+\hypertarget{classORB__SLAM2_1_1Frame_afba8ed34e98d14761be2c1922863cd65}{vector$<$ float $>$ {\bfseries mv\-Level\-Sigma2}}\label{classORB__SLAM2_1_1Frame_afba8ed34e98d14761be2c1922863cd65}
+
+\item 
+\hypertarget{classORB__SLAM2_1_1Frame_a1979f999e1d3a858bf7db733791a477e}{vector$<$ float $>$ {\bfseries mv\-Inv\-Level\-Sigma2}}\label{classORB__SLAM2_1_1Frame_a1979f999e1d3a858bf7db733791a477e}
+
+\end{DoxyCompactItemize}
+\subsection*{静态 Public 属性}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classORB__SLAM2_1_1Frame_ab505e3f86afa1c3d16b98fda89ec394c}{static float {\bfseries fx}}\label{classORB__SLAM2_1_1Frame_ab505e3f86afa1c3d16b98fda89ec394c}
+
+\item 
+\hypertarget{classORB__SLAM2_1_1Frame_a226a0adc90bc7a09502fc4db00ee20d7}{static float {\bfseries fy}}\label{classORB__SLAM2_1_1Frame_a226a0adc90bc7a09502fc4db00ee20d7}
+
+\item 
+\hypertarget{classORB__SLAM2_1_1Frame_a5f2803f215bc30016bd0833d8c7d5942}{static float {\bfseries cx}}\label{classORB__SLAM2_1_1Frame_a5f2803f215bc30016bd0833d8c7d5942}
+
+\item 
+\hypertarget{classORB__SLAM2_1_1Frame_abf6a631b787270da2d5b3c0f53615b62}{static float {\bfseries cy}}\label{classORB__SLAM2_1_1Frame_abf6a631b787270da2d5b3c0f53615b62}
+
+\item 
+\hypertarget{classORB__SLAM2_1_1Frame_a617c29a929afd74d599c9e41fc71abea}{static float {\bfseries invfx}}\label{classORB__SLAM2_1_1Frame_a617c29a929afd74d599c9e41fc71abea}
+
+\item 
+\hypertarget{classORB__SLAM2_1_1Frame_ad1dfdeb6378b11477c1b94233f881345}{static float {\bfseries invfy}}\label{classORB__SLAM2_1_1Frame_ad1dfdeb6378b11477c1b94233f881345}
+
+\item 
+\hypertarget{classORB__SLAM2_1_1Frame_afc2f7799428918dbbf46f7dfc4ccd59d}{static float {\bfseries mf\-Grid\-Element\-Width\-Inv}}\label{classORB__SLAM2_1_1Frame_afc2f7799428918dbbf46f7dfc4ccd59d}
+
+\item 
+\hypertarget{classORB__SLAM2_1_1Frame_a010327bee872485894b5905d17462086}{static float {\bfseries mf\-Grid\-Element\-Height\-Inv}}\label{classORB__SLAM2_1_1Frame_a010327bee872485894b5905d17462086}
+
+\item 
+\hypertarget{classORB__SLAM2_1_1Frame_a1ea8a00151931d155747283850467733}{static long unsigned int \hyperlink{classORB__SLAM2_1_1Frame_a1ea8a00151931d155747283850467733}{n\-Next\-Id} =0}\label{classORB__SLAM2_1_1Frame_a1ea8a00151931d155747283850467733}
+
+\begin{DoxyCompactList}\small\item\em Next \hyperlink{classORB__SLAM2_1_1Frame}{Frame} id. \end{DoxyCompactList}\item 
+\hypertarget{classORB__SLAM2_1_1Frame_ac119d458dd562196240e72b7dbb54f3d}{static float {\bfseries mn\-Min\-X}}\label{classORB__SLAM2_1_1Frame_ac119d458dd562196240e72b7dbb54f3d}
+
+\item 
+\hypertarget{classORB__SLAM2_1_1Frame_ade32bf37203ae9578e4bd9a02cc0f7c1}{static float {\bfseries mn\-Max\-X}}\label{classORB__SLAM2_1_1Frame_ade32bf37203ae9578e4bd9a02cc0f7c1}
+
+\item 
+\hypertarget{classORB__SLAM2_1_1Frame_a38d30251e5bf5e44411e83b688dfac97}{static float {\bfseries mn\-Min\-Y}}\label{classORB__SLAM2_1_1Frame_a38d30251e5bf5e44411e83b688dfac97}
+
+\item 
+\hypertarget{classORB__SLAM2_1_1Frame_ac63dd82413eba002462109e625207ab4}{static float {\bfseries mn\-Max\-Y}}\label{classORB__SLAM2_1_1Frame_ac63dd82413eba002462109e625207ab4}
+
+\item 
+\hypertarget{classORB__SLAM2_1_1Frame_a9f57238f88850695d8cf032b5af0dad6}{static bool {\bfseries mb\-Initial\-Computations} =true}\label{classORB__SLAM2_1_1Frame_a9f57238f88850695d8cf032b5af0dad6}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{详细描述}
+
+
+在文件 Frame.\-h 第 43 行定义.
+
+
+
+\subsection{构造及析构函数说明}
+\hypertarget{classORB__SLAM2_1_1Frame_ac7e6ed9973b81ec85e91228e3d4ecf22}{\index{O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Frame@{O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Frame}!Frame@{Frame}}
+\index{Frame@{Frame}!ORB_SLAM2::Frame@{O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Frame}}
+\subsubsection[{Frame}]{\setlength{\rightskip}{0pt plus 5cm}O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Frame\-::\-Frame (
+\begin{DoxyParamCaption}
+\item[{const {\bf Frame} \&}]{frame}
+\end{DoxyParamCaption}
+)}}\label{classORB__SLAM2_1_1Frame_ac7e6ed9973b81ec85e91228e3d4ecf22}
+
+
+Copy constructor. 
+
+复制构造函数, m\-Last\-Frame = Frame(m\-Current\-Frame) 
+
+在文件 Frame.\-cpp 第 43 行定义.
+
+
+
+参考 m\-Tcw , 以及 Set\-Pose().
+
+
+
+函数调用图\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classORB__SLAM2_1_1Frame_ac7e6ed9973b81ec85e91228e3d4ecf22_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{成员函数说明}
+\hypertarget{classORB__SLAM2_1_1Frame_ac748d2318f9a409406dba4910ff5ef8e}{\index{O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Frame@{O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Frame}!Compute\-Bo\-W@{Compute\-Bo\-W}}
+\index{Compute\-Bo\-W@{Compute\-Bo\-W}!ORB_SLAM2::Frame@{O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Frame}}
+\subsubsection[{Compute\-Bo\-W}]{\setlength{\rightskip}{0pt plus 5cm}void O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Frame\-::\-Compute\-Bo\-W (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classORB__SLAM2_1_1Frame_ac748d2318f9a409406dba4910ff5ef8e}
+
+
+Bag of Words Representation. 
+
+计算词包m\-Bow\-Vec和m\-Feat\-Vec，其中m\-Feat\-Vec记录了属于第i个node（在第4层）的ni个描述子 \begin{DoxySeeAlso}{参见}
+Create\-Initial\-Map\-Monocular() Track\-Reference\-Key\-Frame() Relocalization() 
+\end{DoxySeeAlso}
+
+
+在文件 Frame.\-cpp 第 455 行定义.
+
+
+
+参考 O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Converter\-::to\-Descriptor\-Vector() , 以及 D\-Bo\-W2\-::\-Templated\-Vocabulary$<$ T\-Descriptor, F $>$\-::transform().
+
+
+
+参考自 O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Tracking\-::\-Track\-Reference\-Key\-Frame().
+
+
+
+函数调用图\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classORB__SLAM2_1_1Frame_ac748d2318f9a409406dba4910ff5ef8e_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+这是这个函数的调用关系图\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classORB__SLAM2_1_1Frame_ac748d2318f9a409406dba4910ff5ef8e_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classORB__SLAM2_1_1Frame_a77a570d7851bad90ca31c4d55a5105e7}{\index{O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Frame@{O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Frame}!Compute\-Stereo\-Matches@{Compute\-Stereo\-Matches}}
+\index{Compute\-Stereo\-Matches@{Compute\-Stereo\-Matches}!ORB_SLAM2::Frame@{O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Frame}}
+\subsubsection[{Compute\-Stereo\-Matches}]{\setlength{\rightskip}{0pt plus 5cm}void O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Frame\-::\-Compute\-Stereo\-Matches (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classORB__SLAM2_1_1Frame_a77a570d7851bad90ca31c4d55a5105e7}
+
+
+双目匹配 
+
+为左图的每一个特征点在右图中找到匹配点 \par
+根据基线(有冗余范围)上描述子距离找到匹配, 再进行\-S\-A\-D精确定位 \par
+最后对所有\-S\-A\-D的值进行排序, 剔除\-S\-A\-D值较大的匹配对，然后利用抛物线拟合得到亚像素精度的匹配 \par
+匹配成功后会更新 mvu\-Right(ur) 和 mv\-Depth(\-Z) 
+
+在文件 Frame.\-cpp 第 543 行定义.
+
+
+
+参考 N.
+
+\hypertarget{classORB__SLAM2_1_1Frame_ab92eb055abb54bf7f73db7612673dbca}{\index{O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Frame@{O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Frame}!Get\-Features\-In\-Area@{Get\-Features\-In\-Area}}
+\index{Get\-Features\-In\-Area@{Get\-Features\-In\-Area}!ORB_SLAM2::Frame@{O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Frame}}
+\subsubsection[{Get\-Features\-In\-Area}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$ size\-\_\-t $>$ O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Frame\-::\-Get\-Features\-In\-Area (
+\begin{DoxyParamCaption}
+\item[{const float \&}]{x, }
+\item[{const float \&}]{y, }
+\item[{const float \&}]{r, }
+\item[{const int}]{min\-Level = {\ttfamily -\/1}, }
+\item[{const int}]{max\-Level = {\ttfamily -\/1}}
+\end{DoxyParamCaption}
+) const}}\label{classORB__SLAM2_1_1Frame_ab92eb055abb54bf7f73db7612673dbca}
+
+
+找到在 以x,y为中心,边长为2r的方形内且在\mbox{[}min\-Level, max\-Level\mbox{]}的特征点---指定层了 
+
+
+\begin{DoxyParams}{参数}
+{\em x} & 图像坐标u \\
+\hline
+{\em y} & 图像坐标v \\
+\hline
+{\em r} & 边长 \\
+\hline
+{\em min\-Level} & 最小尺度 \\
+\hline
+{\em max\-Level} & 最大尺度 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+满足条件的特征点的序号 
+\end{DoxyReturn}
+小的x坐标
+
+0$\sim$64左右
+
+如果这个特征不是要求的minlevel层，就放弃
+
+关键点的x减去 给定的x的距离值 
+
+在文件 Frame.\-cpp 第 382 行定义.
+
+
+
+参考自 O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-O\-R\-Bmatcher\-::\-Search\-By\-Projection() , 以及 O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-O\-R\-Bmatcher\-::\-Search\-For\-Initialization().
+
+
+
+这是这个函数的调用关系图\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classORB__SLAM2_1_1Frame_ab92eb055abb54bf7f73db7612673dbca_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classORB__SLAM2_1_1Frame_a0929e100e3380dba1baba12dfa8904c4}{\index{O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Frame@{O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Frame}!is\-In\-Frustum@{is\-In\-Frustum}}
+\index{is\-In\-Frustum@{is\-In\-Frustum}!ORB_SLAM2::Frame@{O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Frame}}
+\subsubsection[{is\-In\-Frustum}]{\setlength{\rightskip}{0pt plus 5cm}bool O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Frame\-::is\-In\-Frustum (
+\begin{DoxyParamCaption}
+\item[{{\bf Map\-Point} $\ast$}]{p\-M\-P, }
+\item[{float}]{viewing\-Cos\-Limit}
+\end{DoxyParamCaption}
+)}}\label{classORB__SLAM2_1_1Frame_a0929e100e3380dba1baba12dfa8904c4}
+
+
+判断一个点是否在视野内 
+
+计算了重投影坐标，观测方向夹角，预测在当前帧的尺度 
+\begin{DoxyParams}{参数}
+{\em p\-M\-P} & \hyperlink{classORB__SLAM2_1_1MapPoint}{Map\-Point} \\
+\hline
+{\em viewing\-Cos\-Limit} & 视角和平均视角的方向阈值 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+true if is in view 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{参见}
+Search\-Local\-Points() 
+\end{DoxySeeAlso}
+
+
+在文件 Frame.\-cpp 第 307 行定义.
+
+
+
+参考自 O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Tracking\-::\-Search\-Local\-Points().
+
+
+
+这是这个函数的调用关系图\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classORB__SLAM2_1_1Frame_a0929e100e3380dba1baba12dfa8904c4_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classORB__SLAM2_1_1Frame_a95cf2ea68735ef3e8c2d820eada11bf4}{\index{O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Frame@{O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Frame}!Set\-Pose@{Set\-Pose}}
+\index{Set\-Pose@{Set\-Pose}!ORB_SLAM2::Frame@{O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Frame}}
+\subsubsection[{Set\-Pose}]{\setlength{\rightskip}{0pt plus 5cm}void O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Frame\-::\-Set\-Pose (
+\begin{DoxyParamCaption}
+\item[{cv\-::\-Mat}]{Tcw}
+\end{DoxyParamCaption}
+)}}\label{classORB__SLAM2_1_1Frame_a95cf2ea68735ef3e8c2d820eada11bf4}
+
+
+Set the camera pose. 
+
+设置相机姿态，随后会调用 \hyperlink{classORB__SLAM2_1_1Frame_a0a18d3024a23f6fa2cab9c7d987598c2}{Update\-Pose\-Matrices()} 来改变m\-Rcw,m\-Rwc等变量的值 
+\begin{DoxyParams}{参数}
+{\em Tcw} & Transformation from world to camera \\
+\hline
+\end{DoxyParams}
+
+
+在文件 Frame.\-cpp 第 275 行定义.
+
+
+
+参考 m\-Tcw , 以及 Update\-Pose\-Matrices().
+
+
+
+参考自 O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Tracking\-::\-Create\-Initial\-Map\-Monocular(), Frame(), O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Tracking\-::\-Monocular\-Initialization(), O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Optimizer\-::\-Pose\-Optimization(), O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Tracking\-::\-Stereo\-Initialization(), O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Tracking\-::\-Track(), O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Tracking\-::\-Track\-Reference\-Key\-Frame(), O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Tracking\-::\-Track\-With\-Motion\-Model() , 以及 O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Tracking\-::\-Update\-Last\-Frame().
+
+
+
+函数调用图\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classORB__SLAM2_1_1Frame_a95cf2ea68735ef3e8c2d820eada11bf4_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+这是这个函数的调用关系图\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classORB__SLAM2_1_1Frame_a95cf2ea68735ef3e8c2d820eada11bf4_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classORB__SLAM2_1_1Frame_a46084d187e1fc60181e1c72f77c733ca}{\index{O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Frame@{O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Frame}!Unproject\-Stereo@{Unproject\-Stereo}}
+\index{Unproject\-Stereo@{Unproject\-Stereo}!ORB_SLAM2::Frame@{O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Frame}}
+\subsubsection[{Unproject\-Stereo}]{\setlength{\rightskip}{0pt plus 5cm}cv\-::\-Mat O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Frame\-::\-Unproject\-Stereo (
+\begin{DoxyParamCaption}
+\item[{const int \&}]{i}
+\end{DoxyParamCaption}
+)}}\label{classORB__SLAM2_1_1Frame_a46084d187e1fc60181e1c72f77c733ca}
+
+
+Backprojects a keypoint (if stereo/depth info available) into 3\-D world coordinates. 
+
+
+\begin{DoxyParams}{参数}
+{\em i} & 第i个keypoint \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+3\-D点（相对于世界坐标系） 
+\end{DoxyReturn}
+
+
+在文件 Frame.\-cpp 第 783 行定义.
+
+
+
+参考自 O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Tracking\-::\-Create\-New\-Key\-Frame(), O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Tracking\-::\-Stereo\-Initialization() , 以及 O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Tracking\-::\-Update\-Last\-Frame().
+
+
+
+这是这个函数的调用关系图\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classORB__SLAM2_1_1Frame_a46084d187e1fc60181e1c72f77c733ca_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classORB__SLAM2_1_1Frame_a0a18d3024a23f6fa2cab9c7d987598c2}{\index{O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Frame@{O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Frame}!Update\-Pose\-Matrices@{Update\-Pose\-Matrices}}
+\index{Update\-Pose\-Matrices@{Update\-Pose\-Matrices}!ORB_SLAM2::Frame@{O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Frame}}
+\subsubsection[{Update\-Pose\-Matrices}]{\setlength{\rightskip}{0pt plus 5cm}void O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Frame\-::\-Update\-Pose\-Matrices (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classORB__SLAM2_1_1Frame_a0a18d3024a23f6fa2cab9c7d987598c2}
+
+
+Computes rotation, translation and camera center matrices from the camera pose. 
+
+根据\-Tcw计算m\-Rcw、mtcw和m\-Rwc、m\-Ow 
+
+在文件 Frame.\-cpp 第 286 行定义.
+
+
+
+参考 m\-Tcw.
+
+
+
+参考自 O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Tracking\-::\-Create\-New\-Key\-Frame() , 以及 Set\-Pose().
+
+
+
+这是这个函数的调用关系图\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classORB__SLAM2_1_1Frame_a0a18d3024a23f6fa2cab9c7d987598c2_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+该类的文档由以下文件生成\-:\begin{DoxyCompactItemize}
+\item 
+include/Frame.\-h\item 
+src/Frame.\-cpp\end{DoxyCompactItemize}

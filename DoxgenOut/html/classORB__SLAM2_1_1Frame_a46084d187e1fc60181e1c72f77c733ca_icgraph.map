@@ -1,0 +1,7 @@
+<map id="ORB_SLAM2::Frame::UnprojectStereo" name="ORB_SLAM2::Frame::UnprojectStereo">
+<area shape="rect" id="node2" href="$classORB__SLAM2_1_1Tracking.html#a8c7fb6c4b1f952524512023df690bf4d" title="创建新的关键帧 " alt="" coords="475,5,634,46"/>
+<area shape="rect" id="node4" href="$classORB__SLAM2_1_1Tracking.html#ad3da849e4204d766e5db4ac47b52132c" title="双目和rgbd的地图初始化 " alt="" coords="265,63,423,105"/>
+<area shape="rect" id="node5" href="$classORB__SLAM2_1_1Tracking.html#aa84a20277d5bd022b527d79a58830bc5" title="双目或rgbd摄像头根据深度值为上一帧产生新的MapPoints " alt="" coords="265,129,423,170"/>
+<area shape="rect" id="node3" href="$classORB__SLAM2_1_1Tracking.html#af1f2c9c533642d8c33854540e90d1918" title="Main tracking function. It is independent of the input sensor. " alt="" coords="686,63,845,105"/>
+<area shape="rect" id="node6" href="$classORB__SLAM2_1_1Tracking.html#aca19f1d69b30a6c6e49281d422ac8298" title="根据匀速度模型对上一帧的MapPoints进行跟踪 " alt="" coords="473,125,637,166"/>
+</map>

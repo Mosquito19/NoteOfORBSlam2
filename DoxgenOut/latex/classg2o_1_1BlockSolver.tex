@@ -1,0 +1,476 @@
+\hypertarget{classg2o_1_1BlockSolver}{\section{g2o\-:\-:Block\-Solver$<$ Traits $>$ 模板类 参考}
+\label{classg2o_1_1BlockSolver}\index{g2o\-::\-Block\-Solver$<$ Traits $>$@{g2o\-::\-Block\-Solver$<$ Traits $>$}}
+}
+
+
+Implementation of a solver operating on the blocks of the Hessian.  
+
+
+
+
+{\ttfamily \#include $<$block\-\_\-solver.\-h$>$}
+
+
+
+类 g2o\-:\-:Block\-Solver$<$ Traits $>$ 继承关系图\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=214pt]{classg2o_1_1BlockSolver__inherit__graph}
+\end{center}
+\end{figure}
+
+
+g2o\-:\-:Block\-Solver$<$ Traits $>$ 的协作图\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classg2o_1_1BlockSolver__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public 类型}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classg2o_1_1BlockSolver_a8c7c43d361bd31e3e0353889ba703bc0}{typedef Traits\-::\-Pose\-Matrix\-Type {\bfseries Pose\-Matrix\-Type}}\label{classg2o_1_1BlockSolver_a8c7c43d361bd31e3e0353889ba703bc0}
+
+\item 
+\hypertarget{classg2o_1_1BlockSolver_afd898a666343291129d37a979e23ded6}{typedef Traits\-::\-Landmark\-Matrix\-Type {\bfseries Landmark\-Matrix\-Type}}\label{classg2o_1_1BlockSolver_afd898a666343291129d37a979e23ded6}
+
+\item 
+\hypertarget{classg2o_1_1BlockSolver_a96bf60b923f816086cd2f24de38736ec}{typedef \\*
+Traits\-::\-Pose\-Landmark\-Matrix\-Type {\bfseries Pose\-Landmark\-Matrix\-Type}}\label{classg2o_1_1BlockSolver_a96bf60b923f816086cd2f24de38736ec}
+
+\item 
+\hypertarget{classg2o_1_1BlockSolver_a65d51b9281e2e2597df05eb00801ee76}{typedef Traits\-::\-Pose\-Vector\-Type {\bfseries Pose\-Vector\-Type}}\label{classg2o_1_1BlockSolver_a65d51b9281e2e2597df05eb00801ee76}
+
+\item 
+\hypertarget{classg2o_1_1BlockSolver_a19ade5e432f32e46557192ae75074304}{typedef Traits\-::\-Landmark\-Vector\-Type {\bfseries Landmark\-Vector\-Type}}\label{classg2o_1_1BlockSolver_a19ade5e432f32e46557192ae75074304}
+
+\item 
+\hypertarget{classg2o_1_1BlockSolver_a0e7f862860a1e3391cec3cfaf69c48be}{typedef Traits\-::\-Pose\-Hessian\-Type {\bfseries Pose\-Hessian\-Type}}\label{classg2o_1_1BlockSolver_a0e7f862860a1e3391cec3cfaf69c48be}
+
+\item 
+\hypertarget{classg2o_1_1BlockSolver_a465b1252905d90fd69b4243716620c45}{typedef Traits\-::\-Landmark\-Hessian\-Type {\bfseries Landmark\-Hessian\-Type}}\label{classg2o_1_1BlockSolver_a465b1252905d90fd69b4243716620c45}
+
+\item 
+\hypertarget{classg2o_1_1BlockSolver_aed8b44e394d2f19ca03c87adf90cc97c}{typedef \\*
+Traits\-::\-Pose\-Landmark\-Hessian\-Type {\bfseries Pose\-Landmark\-Hessian\-Type}}\label{classg2o_1_1BlockSolver_aed8b44e394d2f19ca03c87adf90cc97c}
+
+\item 
+\hypertarget{classg2o_1_1BlockSolver_a717fa8cb1dd5a212e41d8ebef67955e6}{typedef Traits\-::\-Linear\-Solver\-Type {\bfseries Linear\-Solver\-Type}}\label{classg2o_1_1BlockSolver_a717fa8cb1dd5a212e41d8ebef67955e6}
+
+\end{DoxyCompactItemize}
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classg2o_1_1BlockSolver_a04701a223a14708c9c84ce4d7e7af3f6}{Block\-Solver} (Linear\-Solver\-Type $\ast$linear\-Solver)
+\item 
+virtual bool \hyperlink{classg2o_1_1BlockSolver_a8bf01018abc3bfddfa3b29a380a1d6cb}{init} (\hyperlink{classg2o_1_1SparseOptimizer}{Sparse\-Optimizer} $\ast$optmizer, bool online=false)
+\item 
+virtual bool \hyperlink{classg2o_1_1BlockSolver_a17e4392d3cca9a9d7cf38bb46d073b86}{build\-Structure} (bool zero\-Blocks=false)
+\item 
+virtual bool \hyperlink{classg2o_1_1BlockSolver_acc497239c5e681ddec2140e34dfc5938}{update\-Structure} (const std\-::vector$<$ \hyperlink{classg2o_1_1HyperGraph_1_1Vertex}{Hyper\-Graph\-::\-Vertex} $\ast$ $>$ \&vset, const Hyper\-Graph\-::\-Edge\-Set \&edges)
+\item 
+virtual bool \hyperlink{classg2o_1_1BlockSolver_a2654a8d52f38e5ce23720a8de302e2e7}{build\-System} ()
+\item 
+virtual bool \hyperlink{classg2o_1_1BlockSolver_a589a75a131cce100c1945ad2786214d7}{solve} ()
+\item 
+virtual bool \hyperlink{classg2o_1_1BlockSolver_ac21cd7e2c9b8a1414f7a2dccb0d30a0e}{compute\-Marginals} (\hyperlink{classg2o_1_1SparseBlockMatrix}{Sparse\-Block\-Matrix}$<$ Matrix\-Xd $>$ \&spinv, const std\-::vector$<$ std\-::pair$<$ int, int $>$ $>$ \&block\-Indices)
+\item 
+virtual bool \hyperlink{classg2o_1_1BlockSolver_acc63a23e5b35e4f72d46dc22719aa56f}{set\-Lambda} (double lambda, bool backup=false)
+\item 
+virtual void \hyperlink{classg2o_1_1BlockSolver_a2136931d7aa2f54df5207556c4685809}{restore\-Diagonal} ()
+\item 
+virtual bool \hyperlink{classg2o_1_1BlockSolver_a68dc822ce48e80ceacce69c7bd029674}{supports\-Schur} ()
+\item 
+\hypertarget{classg2o_1_1BlockSolver_a382173946f1dd929a625e3708c959883}{virtual bool \hyperlink{classg2o_1_1BlockSolver_a382173946f1dd929a625e3708c959883}{schur} ()}\label{classg2o_1_1BlockSolver_a382173946f1dd929a625e3708c959883}
+
+\begin{DoxyCompactList}\small\item\em should the solver perform the schur complement or not \end{DoxyCompactList}\item 
+\hypertarget{classg2o_1_1BlockSolver_a6dd8e7e7a099410005cb96ff874d8866}{virtual void {\bfseries set\-Schur} (bool s)}\label{classg2o_1_1BlockSolver_a6dd8e7e7a099410005cb96ff874d8866}
+
+\item 
+\hypertarget{classg2o_1_1BlockSolver_adb09637f5f87327d26928f672d6caadf}{\hyperlink{classg2o_1_1LinearSolver}{Linear\-Solver}$<$ Pose\-Matrix\-Type $>$ $\ast$ {\bfseries linear\-Solver} () const }\label{classg2o_1_1BlockSolver_adb09637f5f87327d26928f672d6caadf}
+
+\item 
+virtual void \hyperlink{classg2o_1_1BlockSolver_a1bff5dc13e3408fa76c019347104acd0}{set\-Write\-Debug} (bool write\-Debug)
+\item 
+\hypertarget{classg2o_1_1BlockSolver_a5a127b36e9f6ec45b2b1d39c22a9901f}{virtual bool {\bfseries write\-Debug} () const }\label{classg2o_1_1BlockSolver_a5a127b36e9f6ec45b2b1d39c22a9901f}
+
+\item 
+\hypertarget{classg2o_1_1BlockSolver_a79adbc8926b11c564bdd8cf73a55b1ef}{virtual bool \hyperlink{classg2o_1_1BlockSolver_a79adbc8926b11c564bdd8cf73a55b1ef}{save\-Hessian} (const std\-::string \&file\-Name) const }\label{classg2o_1_1BlockSolver_a79adbc8926b11c564bdd8cf73a55b1ef}
+
+\begin{DoxyCompactList}\small\item\em write the hessian to disk using the specified file name \end{DoxyCompactList}\item 
+virtual void \hyperlink{classg2o_1_1BlockSolver_a615892075357273ec8bb06e101d9155b}{multiply\-Hessian} (double $\ast$dest, const double $\ast$src) const 
+\end{DoxyCompactItemize}
+\subsection*{静态 Public 属性}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classg2o_1_1BlockSolver_a9a68f557c8e04cd76565fc45e1747e45}{static const int {\bfseries Pose\-Dim} = Traits\-::\-Pose\-Dim}\label{classg2o_1_1BlockSolver_a9a68f557c8e04cd76565fc45e1747e45}
+
+\item 
+\hypertarget{classg2o_1_1BlockSolver_a2d5e499f65a71985a8256e98c1608dd9}{static const int {\bfseries Landmark\-Dim} = Traits\-::\-Landmark\-Dim}\label{classg2o_1_1BlockSolver_a2d5e499f65a71985a8256e98c1608dd9}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classg2o_1_1BlockSolver_a0075af2df18364cf99fd80f813b8ce4b}{void {\bfseries resize} (int $\ast$block\-Pose\-Indices, int num\-Pose\-Blocks, int $\ast$block\-Landmark\-Indices, int num\-Landmark\-Blocks, int total\-Dim)}\label{classg2o_1_1BlockSolver_a0075af2df18364cf99fd80f813b8ce4b}
+
+\item 
+\hypertarget{classg2o_1_1BlockSolver_a1877467844b7b9ab51bd6600e3a93eb0}{void {\bfseries deallocate} ()}\label{classg2o_1_1BlockSolver_a1877467844b7b9ab51bd6600e3a93eb0}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected 属性}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classg2o_1_1BlockSolver_ac222d4342825ed8632a87b4f5be94618}{\hyperlink{classg2o_1_1SparseBlockMatrix}{Sparse\-Block\-Matrix}\\*
+$<$ Pose\-Matrix\-Type $>$ $\ast$ {\bfseries \-\_\-\-Hpp}}\label{classg2o_1_1BlockSolver_ac222d4342825ed8632a87b4f5be94618}
+
+\item 
+\hypertarget{classg2o_1_1BlockSolver_a88d4c24df24a8fb72be1a4e4cff03d71}{\hyperlink{classg2o_1_1SparseBlockMatrix}{Sparse\-Block\-Matrix}\\*
+$<$ Landmark\-Matrix\-Type $>$ $\ast$ {\bfseries \-\_\-\-Hll}}\label{classg2o_1_1BlockSolver_a88d4c24df24a8fb72be1a4e4cff03d71}
+
+\item 
+\hypertarget{classg2o_1_1BlockSolver_a0f6051339990e95aa587145a8a6f4f5f}{\hyperlink{classg2o_1_1SparseBlockMatrix}{Sparse\-Block\-Matrix}\\*
+$<$ Pose\-Landmark\-Matrix\-Type $>$ $\ast$ {\bfseries \-\_\-\-Hpl}}\label{classg2o_1_1BlockSolver_a0f6051339990e95aa587145a8a6f4f5f}
+
+\item 
+\hypertarget{classg2o_1_1BlockSolver_a46977934a3e4fb0cd36bc4181ed3ec0e}{\hyperlink{classg2o_1_1SparseBlockMatrix}{Sparse\-Block\-Matrix}\\*
+$<$ Pose\-Matrix\-Type $>$ $\ast$ {\bfseries \-\_\-\-Hschur}}\label{classg2o_1_1BlockSolver_a46977934a3e4fb0cd36bc4181ed3ec0e}
+
+\item 
+\hypertarget{classg2o_1_1BlockSolver_ad6a1a8f17c8fb854962a8204c79bc981}{\hyperlink{classg2o_1_1SparseBlockMatrixDiagonal}{Sparse\-Block\-Matrix\-Diagonal}\\*
+$<$ Landmark\-Matrix\-Type $>$ $\ast$ {\bfseries \-\_\-\-D\-Inv\-Schur}}\label{classg2o_1_1BlockSolver_ad6a1a8f17c8fb854962a8204c79bc981}
+
+\item 
+\hypertarget{classg2o_1_1BlockSolver_ab54eb7bb13f8b3a8a5f135a98f2050ec}{\hyperlink{classg2o_1_1SparseBlockMatrixCCS}{Sparse\-Block\-Matrix\-C\-C\-S}\\*
+$<$ Pose\-Landmark\-Matrix\-Type $>$ $\ast$ {\bfseries \-\_\-\-Hpl\-C\-C\-S}}\label{classg2o_1_1BlockSolver_ab54eb7bb13f8b3a8a5f135a98f2050ec}
+
+\item 
+\hypertarget{classg2o_1_1BlockSolver_acea4b8ea8db5a29b63bea4bc568b0b26}{\hyperlink{classg2o_1_1SparseBlockMatrixCCS}{Sparse\-Block\-Matrix\-C\-C\-S}\\*
+$<$ Pose\-Matrix\-Type $>$ $\ast$ {\bfseries \-\_\-\-Hschur\-Transposed\-C\-C\-S}}\label{classg2o_1_1BlockSolver_acea4b8ea8db5a29b63bea4bc568b0b26}
+
+\item 
+\hypertarget{classg2o_1_1BlockSolver_a676a4ef473ccaecb23050284e19659af}{\hyperlink{classg2o_1_1LinearSolver}{Linear\-Solver}$<$ Pose\-Matrix\-Type $>$ $\ast$ {\bfseries \-\_\-linear\-Solver}}\label{classg2o_1_1BlockSolver_a676a4ef473ccaecb23050284e19659af}
+
+\item 
+\hypertarget{classg2o_1_1BlockSolver_a3cb6f86c522c2ea26478ad44b7c32f76}{std\-::vector$<$ Pose\-Vector\-Type, \\*
+Eigen\-::aligned\-\_\-allocator\\*
+$<$ Pose\-Vector\-Type $>$ $>$ {\bfseries \-\_\-diagonal\-Backup\-Pose}}\label{classg2o_1_1BlockSolver_a3cb6f86c522c2ea26478ad44b7c32f76}
+
+\item 
+\hypertarget{classg2o_1_1BlockSolver_a3bc5b19faa2c45e2c04a6743b3a083de}{std\-::vector\\*
+$<$ Landmark\-Vector\-Type, \\*
+Eigen\-::aligned\-\_\-allocator\\*
+$<$ Landmark\-Vector\-Type $>$ $>$ {\bfseries \-\_\-diagonal\-Backup\-Landmark}}\label{classg2o_1_1BlockSolver_a3bc5b19faa2c45e2c04a6743b3a083de}
+
+\item 
+\hypertarget{classg2o_1_1BlockSolver_ab375a5fac964182442f38288bd8a103a}{bool {\bfseries \-\_\-do\-Schur}}\label{classg2o_1_1BlockSolver_ab375a5fac964182442f38288bd8a103a}
+
+\item 
+\hypertarget{classg2o_1_1BlockSolver_a416f480d4b27d7f8962ae7ae363f2e32}{double $\ast$ {\bfseries \-\_\-coefficients}}\label{classg2o_1_1BlockSolver_a416f480d4b27d7f8962ae7ae363f2e32}
+
+\item 
+\hypertarget{classg2o_1_1BlockSolver_aafddeb1d0a4218fc9c3c77169e20f81a}{double $\ast$ {\bfseries \-\_\-bschur}}\label{classg2o_1_1BlockSolver_aafddeb1d0a4218fc9c3c77169e20f81a}
+
+\item 
+\hypertarget{classg2o_1_1BlockSolver_a709259fc290d746f4174d25410b7458a}{int {\bfseries \-\_\-num\-Poses}}\label{classg2o_1_1BlockSolver_a709259fc290d746f4174d25410b7458a}
+
+\item 
+\hypertarget{classg2o_1_1BlockSolver_ab98231b7ca8e6d7f138c33d26c6f4326}{int {\bfseries \-\_\-num\-Landmarks}}\label{classg2o_1_1BlockSolver_ab98231b7ca8e6d7f138c33d26c6f4326}
+
+\item 
+\hypertarget{classg2o_1_1BlockSolver_a39ec000379885ce09cdd8c23ab6d4567}{int {\bfseries \-\_\-size\-Poses}}\label{classg2o_1_1BlockSolver_a39ec000379885ce09cdd8c23ab6d4567}
+
+\item 
+\hypertarget{classg2o_1_1BlockSolver_a13a49b5aac8ae3b12ed0c349fc0788e7}{int {\bfseries \-\_\-size\-Landmarks}}\label{classg2o_1_1BlockSolver_a13a49b5aac8ae3b12ed0c349fc0788e7}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{详细描述}
+\subsubsection*{template$<$typename Traits$>$class g2o\-::\-Block\-Solver$<$ Traits $>$}
+
+Implementation of a solver operating on the blocks of the Hessian. 
+
+在文件 block\-\_\-solver.\-h 第 97 行定义.
+
+
+
+\subsection{构造及析构函数说明}
+\hypertarget{classg2o_1_1BlockSolver_a04701a223a14708c9c84ce4d7e7af3f6}{\index{g2o\-::\-Block\-Solver@{g2o\-::\-Block\-Solver}!Block\-Solver@{Block\-Solver}}
+\index{Block\-Solver@{Block\-Solver}!g2o::BlockSolver@{g2o\-::\-Block\-Solver}}
+\subsubsection[{Block\-Solver}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Traits $>$ {\bf g2o\-::\-Block\-Solver}$<$ Traits $>$\-::{\bf Block\-Solver} (
+\begin{DoxyParamCaption}
+\item[{Linear\-Solver\-Type $\ast$}]{linear\-Solver}
+\end{DoxyParamCaption}
+)}}\label{classg2o_1_1BlockSolver_a04701a223a14708c9c84ce4d7e7af3f6}
+allocate a block solver ontop of the underlying linear solver. N\-O\-T\-E\-: The \hyperlink{classg2o_1_1BlockSolver}{Block\-Solver} assumes exclusive access to the linear solver and will therefore free the pointer in its destructor. 
+
+在文件 block\-\_\-solver.\-hpp 第 43 行定义.
+
+
+
+\subsection{成员函数说明}
+\hypertarget{classg2o_1_1BlockSolver_a17e4392d3cca9a9d7cf38bb46d073b86}{\index{g2o\-::\-Block\-Solver@{g2o\-::\-Block\-Solver}!build\-Structure@{build\-Structure}}
+\index{build\-Structure@{build\-Structure}!g2o::BlockSolver@{g2o\-::\-Block\-Solver}}
+\subsubsection[{build\-Structure}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Traits $>$ bool {\bf g2o\-::\-Block\-Solver}$<$ Traits $>$\-::build\-Structure (
+\begin{DoxyParamCaption}
+\item[{bool}]{zero\-Blocks = {\ttfamily false}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classg2o_1_1BlockSolver_a17e4392d3cca9a9d7cf38bb46d073b86}
+build the structure of the system 
+
+实现了 \hyperlink{classg2o_1_1Solver_a6c93ac0f528ffe05867d33150c54f46f}{g2o\-::\-Solver}.
+
+
+
+在文件 block\-\_\-solver.\-hpp 第 144 行定义.
+
+
+
+参考 g2o\-::\-Sparse\-Block\-Matrix\-Hash\-Map$<$ Matrix\-Type $>$\-::add\-Block(), g2o\-::\-Sparse\-Block\-Matrix\-Hash\-Map$<$ Matrix\-Type $>$\-::block\-Cols(), g2o\-::\-Optimizable\-Graph\-::\-Vertex\-::dimension(), g2o\-::\-Hyper\-Graph\-::\-Vertex\-::edges(), g2o\-::\-Optimizable\-Graph\-::\-Vertex\-::hessian\-Index(), g2o\-::\-Optimizable\-Graph\-::\-Vertex\-::map\-Hessian\-Memory(), g2o\-::\-Optimizable\-Graph\-::\-Edge\-::map\-Hessian\-Memory(), g2o\-::\-Optimizable\-Graph\-::\-Vertex\-::marginalized(), g2o\-::\-Optimizable\-Graph\-::\-Vertex\-::set\-Col\-In\-Hessian(), g2o\-::\-Hyper\-Graph\-::\-Edge\-::vertex() , 以及 g2o\-::\-Hyper\-Graph\-::\-Edge\-::vertices().
+
+
+
+函数调用图\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classg2o_1_1BlockSolver_a17e4392d3cca9a9d7cf38bb46d073b86_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classg2o_1_1BlockSolver_a2654a8d52f38e5ce23720a8de302e2e7}{\index{g2o\-::\-Block\-Solver@{g2o\-::\-Block\-Solver}!build\-System@{build\-System}}
+\index{build\-System@{build\-System}!g2o::BlockSolver@{g2o\-::\-Block\-Solver}}
+\subsubsection[{build\-System}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Traits $>$ bool {\bf g2o\-::\-Block\-Solver}$<$ Traits $>$\-::build\-System (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classg2o_1_1BlockSolver_a2654a8d52f38e5ce23720a8de302e2e7}
+build the current system 
+
+实现了 \hyperlink{classg2o_1_1Solver_ac1565e85d5ca68a87ad7f06f8164a8c0}{g2o\-::\-Solver}.
+
+
+
+在文件 block\-\_\-solver.\-hpp 第 503 行定义.
+
+
+
+参考 g2o\-::\-Optimizable\-Graph\-::\-Vertex\-::clear\-Quadratic\-Form(), g2o\-::\-Optimizable\-Graph\-::\-Vertex\-::col\-In\-Hessian(), g2o\-::\-Optimizable\-Graph\-::\-Edge\-::construct\-Quadratic\-Form(), g2o\-::\-Optimizable\-Graph\-::\-Vertex\-::copy\-B(), g2o\-::\-Optimizable\-Graph\-::\-Vertex\-::dimension(), g2o\-::\-Optimizable\-Graph\-::\-Edge\-::dimension(), g2o\-::\-Optimizable\-Graph\-::\-Vertex\-::fixed(), g2o\-::\-Optimizable\-Graph\-::\-Edge\-::linearize\-Oplus(), g2o\-::\-Optimizable\-Graph\-::\-Vertex\-::marginalized(), g2o\-::\-Hyper\-Graph\-::\-Edge\-::vertex(), g2o\-::\-Hyper\-Graph\-::\-Edge\-::vertices() , 以及 g2o\-::\-Jacobian\-Workspace\-::workspace\-For\-Vertex().
+
+
+
+函数调用图\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classg2o_1_1BlockSolver_a2654a8d52f38e5ce23720a8de302e2e7_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classg2o_1_1BlockSolver_ac21cd7e2c9b8a1414f7a2dccb0d30a0e}{\index{g2o\-::\-Block\-Solver@{g2o\-::\-Block\-Solver}!compute\-Marginals@{compute\-Marginals}}
+\index{compute\-Marginals@{compute\-Marginals}!g2o::BlockSolver@{g2o\-::\-Block\-Solver}}
+\subsubsection[{compute\-Marginals}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Traits $>$ bool {\bf g2o\-::\-Block\-Solver}$<$ Traits $>$\-::compute\-Marginals (
+\begin{DoxyParamCaption}
+\item[{{\bf Sparse\-Block\-Matrix}$<$ Matrix\-Xd $>$ \&}]{spinv, }
+\item[{const std\-::vector$<$ std\-::pair$<$ int, int $>$ $>$ \&}]{block\-Indices}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classg2o_1_1BlockSolver_ac21cd7e2c9b8a1414f7a2dccb0d30a0e}
+computes the block diagonal elements of the pattern specified in the input and stores them in given \hyperlink{classg2o_1_1SparseBlockMatrix}{Sparse\-Block\-Matrix} 
+
+实现了 \hyperlink{classg2o_1_1Solver_afc33768e6c024e11d9e3c9d938b59b7f}{g2o\-::\-Solver}.
+
+
+
+在文件 block\-\_\-solver.\-hpp 第 491 行定义.
+
+
+
+参考 g2o\-::\-G2\-O\-Batch\-Statistics\-::time\-Marginals.
+
+\hypertarget{classg2o_1_1BlockSolver_a8bf01018abc3bfddfa3b29a380a1d6cb}{\index{g2o\-::\-Block\-Solver@{g2o\-::\-Block\-Solver}!init@{init}}
+\index{init@{init}!g2o::BlockSolver@{g2o\-::\-Block\-Solver}}
+\subsubsection[{init}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Traits $>$ bool {\bf g2o\-::\-Block\-Solver}$<$ Traits $>$\-::init (
+\begin{DoxyParamCaption}
+\item[{{\bf Sparse\-Optimizer} $\ast$}]{optimizer, }
+\item[{bool}]{online = {\ttfamily false}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classg2o_1_1BlockSolver_a8bf01018abc3bfddfa3b29a380a1d6cb}
+initialize the solver, called once before the first iteration 
+
+实现了 \hyperlink{classg2o_1_1Solver_a532174e1ee53642880d2d59c128b037b}{g2o\-::\-Solver}.
+
+
+
+在文件 block\-\_\-solver.\-hpp 第 608 行定义.
+
+
+
+参考 g2o\-::\-Sparse\-Optimizer\-::clear().
+
+
+
+函数调用图\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=338pt]{classg2o_1_1BlockSolver_a8bf01018abc3bfddfa3b29a380a1d6cb_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classg2o_1_1BlockSolver_a615892075357273ec8bb06e101d9155b}{\index{g2o\-::\-Block\-Solver@{g2o\-::\-Block\-Solver}!multiply\-Hessian@{multiply\-Hessian}}
+\index{multiply\-Hessian@{multiply\-Hessian}!g2o::BlockSolver@{g2o\-::\-Block\-Solver}}
+\subsubsection[{multiply\-Hessian}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Traits $>$ virtual void {\bf g2o\-::\-Block\-Solver}$<$ Traits $>$\-::multiply\-Hessian (
+\begin{DoxyParamCaption}
+\item[{double $\ast$}]{dest, }
+\item[{const double $\ast$}]{src}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classg2o_1_1BlockSolver_a615892075357273ec8bb06e101d9155b}
+compute dest = H $\ast$ src 
+
+实现了 \hyperlink{classg2o_1_1BlockSolverBase_a4ff7072751bfa1b7fcf91f8219e18e13}{g2o\-::\-Block\-Solver\-Base}.
+
+
+
+在文件 block\-\_\-solver.\-h 第 142 行定义.
+
+\hypertarget{classg2o_1_1BlockSolver_a2136931d7aa2f54df5207556c4685809}{\index{g2o\-::\-Block\-Solver@{g2o\-::\-Block\-Solver}!restore\-Diagonal@{restore\-Diagonal}}
+\index{restore\-Diagonal@{restore\-Diagonal}!g2o::BlockSolver@{g2o\-::\-Block\-Solver}}
+\subsubsection[{restore\-Diagonal}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Traits $>$ void {\bf g2o\-::\-Block\-Solver}$<$ Traits $>$\-::restore\-Diagonal (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classg2o_1_1BlockSolver_a2136931d7aa2f54df5207556c4685809}
+restore a previosly made backup of the diagonal 
+
+实现了 \hyperlink{classg2o_1_1Solver_a3c40dae9b999c4d18e57b02fd0e0ade2}{g2o\-::\-Solver}.
+
+
+
+在文件 block\-\_\-solver.\-hpp 第 593 行定义.
+
+\hypertarget{classg2o_1_1BlockSolver_acc63a23e5b35e4f72d46dc22719aa56f}{\index{g2o\-::\-Block\-Solver@{g2o\-::\-Block\-Solver}!set\-Lambda@{set\-Lambda}}
+\index{set\-Lambda@{set\-Lambda}!g2o::BlockSolver@{g2o\-::\-Block\-Solver}}
+\subsubsection[{set\-Lambda}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Traits $>$ bool {\bf g2o\-::\-Block\-Solver}$<$ Traits $>$\-::set\-Lambda (
+\begin{DoxyParamCaption}
+\item[{double}]{lambda, }
+\item[{bool}]{backup = {\ttfamily false}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classg2o_1_1BlockSolver_acc63a23e5b35e4f72d46dc22719aa56f}
+update the system while performing Levenberg, i.\-e., modifying the diagonal components of A by doing += lambda along the main diagonal of the Matrix. Note that this function may be called with a positive and a negative lambda. The latter is used to undo a former modification. If backup is true, then the solver should store a backup of the diagonal, which can be restored by \hyperlink{classg2o_1_1BlockSolver_a2136931d7aa2f54df5207556c4685809}{restore\-Diagonal()} 
+
+实现了 \hyperlink{classg2o_1_1Solver_a94a0d5196c7859c6c37fc2368ac56be3}{g2o\-::\-Solver}.
+
+
+
+在文件 block\-\_\-solver.\-hpp 第 565 行定义.
+
+\hypertarget{classg2o_1_1BlockSolver_a1bff5dc13e3408fa76c019347104acd0}{\index{g2o\-::\-Block\-Solver@{g2o\-::\-Block\-Solver}!set\-Write\-Debug@{set\-Write\-Debug}}
+\index{set\-Write\-Debug@{set\-Write\-Debug}!g2o::BlockSolver@{g2o\-::\-Block\-Solver}}
+\subsubsection[{set\-Write\-Debug}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Traits $>$ void {\bf g2o\-::\-Block\-Solver}$<$ Traits $>$\-::set\-Write\-Debug (
+\begin{DoxyParamCaption}
+\item[{bool}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classg2o_1_1BlockSolver_a1bff5dc13e3408fa76c019347104acd0}
+write debug output of the Hessian if system is not positive definite 
+
+实现了 \hyperlink{classg2o_1_1Solver_ad3ef2a487d991363ba86af2840b0d7cd}{g2o\-::\-Solver}.
+
+
+
+在文件 block\-\_\-solver.\-hpp 第 624 行定义.
+
+\hypertarget{classg2o_1_1BlockSolver_a589a75a131cce100c1945ad2786214d7}{\index{g2o\-::\-Block\-Solver@{g2o\-::\-Block\-Solver}!solve@{solve}}
+\index{solve@{solve}!g2o::BlockSolver@{g2o\-::\-Block\-Solver}}
+\subsubsection[{solve}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Traits $>$ bool {\bf g2o\-::\-Block\-Solver}$<$ Traits $>$\-::solve (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classg2o_1_1BlockSolver_a589a75a131cce100c1945ad2786214d7}
+solve Ax = b 
+
+实现了 \hyperlink{classg2o_1_1Solver_a9c359a886db57f2f81e54a2113f3bd38}{g2o\-::\-Solver}.
+
+
+
+在文件 block\-\_\-solver.\-hpp 第 355 行定义.
+
+
+
+参考 g2o\-::\-Sparse\-Block\-Matrix\-C\-C\-S$<$ Matrix\-Type $>$\-::block\-Cols(), g2o\-::\-Sparse\-Block\-Matrix$<$ Matrix\-Type $>$\-::block\-Cols(), g2o\-::\-G2\-O\-Batch\-Statistics\-::hessian\-Dimension, g2o\-::\-G2\-O\-Batch\-Statistics\-::hessian\-Landmark\-Dimension, g2o\-::\-G2\-O\-Batch\-Statistics\-::hessian\-Pose\-Dimension, g2o\-::\-G2\-O\-Batch\-Statistics\-::time\-Linear\-Solver , 以及 g2o\-::\-G2\-O\-Batch\-Statistics\-::time\-Schur\-Complement.
+
+
+
+函数调用图\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classg2o_1_1BlockSolver_a589a75a131cce100c1945ad2786214d7_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classg2o_1_1BlockSolver_a68dc822ce48e80ceacce69c7bd029674}{\index{g2o\-::\-Block\-Solver@{g2o\-::\-Block\-Solver}!supports\-Schur@{supports\-Schur}}
+\index{supports\-Schur@{supports\-Schur}!g2o::BlockSolver@{g2o\-::\-Block\-Solver}}
+\subsubsection[{supports\-Schur}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Traits $>$ virtual bool {\bf g2o\-::\-Block\-Solver}$<$ Traits $>$\-::supports\-Schur (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classg2o_1_1BlockSolver_a68dc822ce48e80ceacce69c7bd029674}
+does this solver support the Schur complement for solving a system consisting of poses and landmarks. Re-\/implemement in a derived solver, if your solver supports it. 
+
+重载 \hyperlink{classg2o_1_1Solver_a36c68f7bc0b8864ee7722bc3c06de554}{g2o\-::\-Solver} .
+
+
+
+在文件 block\-\_\-solver.\-h 第 131 行定义.
+
+\hypertarget{classg2o_1_1BlockSolver_acc497239c5e681ddec2140e34dfc5938}{\index{g2o\-::\-Block\-Solver@{g2o\-::\-Block\-Solver}!update\-Structure@{update\-Structure}}
+\index{update\-Structure@{update\-Structure}!g2o::BlockSolver@{g2o\-::\-Block\-Solver}}
+\subsubsection[{update\-Structure}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Traits $>$ bool {\bf g2o\-::\-Block\-Solver}$<$ Traits $>$\-::update\-Structure (
+\begin{DoxyParamCaption}
+\item[{const std\-::vector$<$ {\bf Hyper\-Graph\-::\-Vertex} $\ast$ $>$ \&}]{vset, }
+\item[{const Hyper\-Graph\-::\-Edge\-Set \&}]{edges}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classg2o_1_1BlockSolver_acc497239c5e681ddec2140e34dfc5938}
+update the structures for online processing 
+
+实现了 \hyperlink{classg2o_1_1Solver_a035b8effea7178eabfb35e1c78b25987}{g2o\-::\-Solver}.
+
+
+
+在文件 block\-\_\-solver.\-hpp 第 299 行定义.
+
+
+
+参考 g2o\-::\-Optimizable\-Graph\-::\-Vertex\-::dimension(), g2o\-::\-Optimizable\-Graph\-::\-Vertex\-::hessian\-Index(), g2o\-::\-Optimizable\-Graph\-::\-Vertex\-::map\-Hessian\-Memory(), g2o\-::\-Optimizable\-Graph\-::\-Edge\-::map\-Hessian\-Memory(), g2o\-::\-Optimizable\-Graph\-::\-Vertex\-::marginalized(), g2o\-::\-Optimizable\-Graph\-::\-Vertex\-::set\-Col\-In\-Hessian(), g2o\-::\-Hyper\-Graph\-::\-Edge\-::vertex() , 以及 g2o\-::\-Hyper\-Graph\-::\-Edge\-::vertices().
+
+
+
+函数调用图\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classg2o_1_1BlockSolver_acc497239c5e681ddec2140e34dfc5938_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+该类的文档由以下文件生成\-:\begin{DoxyCompactItemize}
+\item 
+Thirdparty/g2o/g2o/core/block\-\_\-solver.\-h\item 
+Thirdparty/g2o/g2o/core/block\-\_\-solver.\-hpp\end{DoxyCompactItemize}

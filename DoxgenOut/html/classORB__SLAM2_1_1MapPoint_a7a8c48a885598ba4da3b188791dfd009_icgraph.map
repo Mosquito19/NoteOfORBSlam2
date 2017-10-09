@@ -1,0 +1,5 @@
+<map id="ORB_SLAM2::MapPoint::IsInKeyFrame" name="ORB_SLAM2::MapPoint::IsInKeyFrame">
+<area shape="rect" id="node2" href="$classORB__SLAM2_1_1ORBmatcher.html#a0b63d334ccbb34fc7dda0eed2b96320e" title="将MapPoints投影到关键帧pKF中，并判断是否有重复的MapPoints 1.如果MapPoint能匹配关键帧的特征点，并且该点有对应的MapPoint，那么将两个MapPoint合并（选择观测数..." alt="" coords="221,5,406,46"/>
+<area shape="rect" id="node4" href="$classORB__SLAM2_1_1LocalMapping.html#a84eea8f268cce9d919a4906ae634dd22" title="处理列表中的关键帧 " alt="" coords="219,70,408,111"/>
+<area shape="rect" id="node3" href="$classORB__SLAM2_1_1LocalMapping.html#a5d5e0bc6fd15d9a6bf1ca8a258f104f1" title="ORB_SLAM2::LocalMapping\l::SearchInNeighbors" alt="" coords="456,5,645,46"/>
+</map>

@@ -1,0 +1,9 @@
+<map id="g2o::OptimizableGraph::addEdge" name="g2o::OptimizableGraph::addEdge">
+<area shape="rect" id="node2" href="$classg2o_1_1HyperGraph.html#a0f1d35009a2879b238c8148c33485c89" title="g2o::HyperGraph::addEdge" alt="" coords="209,77,389,104"/>
+<area shape="rect" id="node5" href="$classg2o_1_1JacobianWorkspace.html#a2d16ad6db1a51aa93c806cc9c06e223f" title="g2o::JacobianWorkspace\l::updateSize" alt="" coords="214,135,383,177"/>
+<area shape="rect" id="node3" href="$classg2o_1_1HyperGraph_1_1Vertex.html#a0805a5575511327262c89585f1953b8e" title="returns the set of hyper&#45;edges that are leaving/entering in this vertex " alt="" coords="438,5,605,46"/>
+<area shape="rect" id="node4" href="$classg2o_1_1HyperGraph_1_1Edge.html#a6410bb70a917b5407770ef1f1090b5f5" title="g2o::HyperGraph::Edge\l::vertices" alt="" coords="442,70,601,111"/>
+<area shape="rect" id="node6" href="$classg2o_1_1OptimizableGraph_1_1Vertex.html#a1037b978fec531eaf860d0037b992079" title="dimension of the estimated state belonging to this node " alt="" coords="444,135,599,177"/>
+<area shape="rect" id="node7" href="$classg2o_1_1OptimizableGraph_1_1Edge.html#a90a86891adc47a179a7cd7ef31549916" title="returns the dimensions of the error function " alt="" coords="444,201,599,242"/>
+<area shape="rect" id="node8" href="$classg2o_1_1HyperGraph_1_1Edge.html#aaec0b2c92c5496d0f0fea8f1abdc4311" title="g2o::HyperGraph::Edge\l::vertex" alt="" coords="442,266,601,307"/>
+</map>

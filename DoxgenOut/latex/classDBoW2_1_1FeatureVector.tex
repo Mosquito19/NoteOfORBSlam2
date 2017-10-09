@@ -1,0 +1,144 @@
+\hypertarget{classDBoW2_1_1FeatureVector}{\section{D\-Bo\-W2\-:\-:Feature\-Vector类 参考}
+\label{classDBoW2_1_1FeatureVector}\index{D\-Bo\-W2\-::\-Feature\-Vector@{D\-Bo\-W2\-::\-Feature\-Vector}}
+}
+
+
+Vector of nodes with indexes of local features。正索引，node，对应的特征的标号  
+
+
+
+
+{\ttfamily \#include $<$Feature\-Vector.\-h$>$}
+
+
+
+类 D\-Bo\-W2\-:\-:Feature\-Vector 继承关系图\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=208pt]{classDBoW2_1_1FeatureVector__inherit__graph}
+\end{center}
+\end{figure}
+
+
+D\-Bo\-W2\-:\-:Feature\-Vector 的协作图\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=208pt]{classDBoW2_1_1FeatureVector__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classDBoW2_1_1FeatureVector_a66c069d269c8c98dcf3ae39cbc6f861b}{Feature\-Vector} (void)
+\item 
+\hyperlink{classDBoW2_1_1FeatureVector_a44514a020719b7e5ac552332a9922bd9}{$\sim$\-Feature\-Vector} (void)
+\item 
+void \hyperlink{classDBoW2_1_1FeatureVector_ae9554bfcbebc85439616de08f47f2238}{add\-Feature} (\hyperlink{namespaceDBoW2_a3a0fa9c50c0df508759362d6204566f2}{Node\-Id} id, unsigned int i\-\_\-feature)
+\end{DoxyCompactItemize}
+\subsection*{友元}
+\begin{DoxyCompactItemize}
+\item 
+std\-::ostream \& \hyperlink{classDBoW2_1_1FeatureVector_a34aa65c93dc5f6be269610e3f238d9b1}{operator$<$$<$} (std\-::ostream \&out, const \hyperlink{classDBoW2_1_1FeatureVector}{Feature\-Vector} \&v)
+\end{DoxyCompactItemize}
+
+
+\subsection{详细描述}
+Vector of nodes with indexes of local features。正索引，node，对应的特征的标号 
+
+在文件 Feature\-Vector.\-h 第 23 行定义.
+
+
+
+\subsection{构造及析构函数说明}
+\hypertarget{classDBoW2_1_1FeatureVector_a66c069d269c8c98dcf3ae39cbc6f861b}{\index{D\-Bo\-W2\-::\-Feature\-Vector@{D\-Bo\-W2\-::\-Feature\-Vector}!Feature\-Vector@{Feature\-Vector}}
+\index{Feature\-Vector@{Feature\-Vector}!DBoW2::FeatureVector@{D\-Bo\-W2\-::\-Feature\-Vector}}
+\subsubsection[{Feature\-Vector}]{\setlength{\rightskip}{0pt plus 5cm}D\-Bo\-W2\-::\-Feature\-Vector\-::\-Feature\-Vector (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{classDBoW2_1_1FeatureVector_a66c069d269c8c98dcf3ae39cbc6f861b}
+Constructor 
+
+在文件 Feature\-Vector.\-cpp 第 19 行定义.
+
+\hypertarget{classDBoW2_1_1FeatureVector_a44514a020719b7e5ac552332a9922bd9}{\index{D\-Bo\-W2\-::\-Feature\-Vector@{D\-Bo\-W2\-::\-Feature\-Vector}!$\sim$\-Feature\-Vector@{$\sim$\-Feature\-Vector}}
+\index{$\sim$\-Feature\-Vector@{$\sim$\-Feature\-Vector}!DBoW2::FeatureVector@{D\-Bo\-W2\-::\-Feature\-Vector}}
+\subsubsection[{$\sim$\-Feature\-Vector}]{\setlength{\rightskip}{0pt plus 5cm}D\-Bo\-W2\-::\-Feature\-Vector\-::$\sim$\-Feature\-Vector (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{classDBoW2_1_1FeatureVector_a44514a020719b7e5ac552332a9922bd9}
+Destructor 
+
+在文件 Feature\-Vector.\-cpp 第 25 行定义.
+
+
+
+\subsection{成员函数说明}
+\hypertarget{classDBoW2_1_1FeatureVector_ae9554bfcbebc85439616de08f47f2238}{\index{D\-Bo\-W2\-::\-Feature\-Vector@{D\-Bo\-W2\-::\-Feature\-Vector}!add\-Feature@{add\-Feature}}
+\index{add\-Feature@{add\-Feature}!DBoW2::FeatureVector@{D\-Bo\-W2\-::\-Feature\-Vector}}
+\subsubsection[{add\-Feature}]{\setlength{\rightskip}{0pt plus 5cm}void D\-Bo\-W2\-::\-Feature\-Vector\-::add\-Feature (
+\begin{DoxyParamCaption}
+\item[{{\bf Node\-Id}}]{id, }
+\item[{unsigned int}]{i\-\_\-feature}
+\end{DoxyParamCaption}
+)}}\label{classDBoW2_1_1FeatureVector_ae9554bfcbebc85439616de08f47f2238}
+Adds a feature to an existing node, or adds a new node with an initial feature 
+\begin{DoxyParams}{参数}
+{\em id} & node id to add or to modify \\
+\hline
+{\em i\-\_\-feature} & index of feature to add to the given node \\
+\hline
+\end{DoxyParams}
+
+
+在文件 Feature\-Vector.\-cpp 第 31 行定义.
+
+
+
+参考自 D\-Bo\-W2\-::\-Templated\-Vocabulary$<$ T\-Descriptor, F $>$\-::transform().
+
+
+
+这是这个函数的调用关系图\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classDBoW2_1_1FeatureVector_ae9554bfcbebc85439616de08f47f2238_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{友元及相关函数文档}
+\hypertarget{classDBoW2_1_1FeatureVector_a34aa65c93dc5f6be269610e3f238d9b1}{\index{D\-Bo\-W2\-::\-Feature\-Vector@{D\-Bo\-W2\-::\-Feature\-Vector}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!DBoW2::FeatureVector@{D\-Bo\-W2\-::\-Feature\-Vector}}
+\subsubsection[{operator$<$$<$}]{\setlength{\rightskip}{0pt plus 5cm}std\-::ostream\& operator$<$$<$ (
+\begin{DoxyParamCaption}
+\item[{std\-::ostream \&}]{out, }
+\item[{const {\bf Feature\-Vector} \&}]{v}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [friend]}}}\label{classDBoW2_1_1FeatureVector_a34aa65c93dc5f6be269610e3f238d9b1}
+Sends a string versions of the feature vector through the stream 
+\begin{DoxyParams}{参数}
+{\em out} & stream \\
+\hline
+{\em v} & feature vector \\
+\hline
+\end{DoxyParams}
+
+
+在文件 Feature\-Vector.\-cpp 第 49 行定义.
+
+
+
+该类的文档由以下文件生成\-:\begin{DoxyCompactItemize}
+\item 
+Thirdparty/\-D\-Bo\-W2/\-D\-Bo\-W2/Feature\-Vector.\-h\item 
+Thirdparty/\-D\-Bo\-W2/\-D\-Bo\-W2/Feature\-Vector.\-cpp\end{DoxyCompactItemize}

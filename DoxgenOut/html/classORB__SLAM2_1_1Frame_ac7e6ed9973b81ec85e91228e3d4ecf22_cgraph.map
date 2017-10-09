@@ -1,0 +1,4 @@
+<map id="ORB_SLAM2::Frame::Frame" name="ORB_SLAM2::Frame::Frame">
+<area shape="rect" id="node2" href="$classORB__SLAM2_1_1Frame.html#a95cf2ea68735ef3e8c2d820eada11bf4" title="Set the camera pose. " alt="" coords="246,12,450,39"/>
+<area shape="rect" id="node3" href="$classORB__SLAM2_1_1Frame.html#a0a18d3024a23f6fa2cab9c7d987598c2" title="Computes rotation, translation and camera center matrices from the camera pose. " alt="" coords="499,5,695,46"/>
+</map>

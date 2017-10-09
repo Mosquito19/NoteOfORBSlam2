@@ -1,0 +1,209 @@
+\hypertarget{classg2o_1_1LinearSolverEigen}{\section{g2o\-:\-:Linear\-Solver\-Eigen$<$ Matrix\-Type $>$ 模板类 参考}
+\label{classg2o_1_1LinearSolverEigen}\index{g2o\-::\-Linear\-Solver\-Eigen$<$ Matrix\-Type $>$@{g2o\-::\-Linear\-Solver\-Eigen$<$ Matrix\-Type $>$}}
+}
+
+
+linear solver which uses the sparse Cholesky solver from Eigen  
+
+
+
+
+{\ttfamily \#include $<$linear\-\_\-solver\-\_\-eigen.\-h$>$}
+
+
+
+类 g2o\-:\-:Linear\-Solver\-Eigen$<$ Matrix\-Type $>$ 继承关系图\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=196pt]{classg2o_1_1LinearSolverEigen__inherit__graph}
+\end{center}
+\end{figure}
+
+
+g2o\-:\-:Linear\-Solver\-Eigen$<$ Matrix\-Type $>$ 的协作图\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classg2o_1_1LinearSolverEigen__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{类}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classg2o_1_1LinearSolverEigen_1_1CholeskyDecomposition}{Cholesky\-Decomposition}
+\begin{DoxyCompactList}\small\item\em Sub-\/classing Eigen's Simplicial\-L\-D\-L\-T to perform ordering with a given ordering. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public 类型}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classg2o_1_1LinearSolverEigen_aeb7e2400bed3a249b5f29ce7cc00cd33}{typedef Eigen\-::\-Sparse\-Matrix\\*
+$<$ double, Eigen\-::\-Col\-Major $>$ {\bfseries Sparse\-Matrix}}\label{classg2o_1_1LinearSolverEigen_aeb7e2400bed3a249b5f29ce7cc00cd33}
+
+\item 
+\hypertarget{classg2o_1_1LinearSolverEigen_a602c24e05d2f46022aa1827fdbc45638}{typedef Eigen\-::\-Triplet$<$ double $>$ {\bfseries Triplet}}\label{classg2o_1_1LinearSolverEigen_a602c24e05d2f46022aa1827fdbc45638}
+
+\item 
+\hypertarget{classg2o_1_1LinearSolverEigen_acd9dd4e15dfbbad2720f1b83519333e8}{typedef \\*
+Eigen\-::\-Permutation\-Matrix\\*
+$<$ Eigen\-::\-Dynamic, \\*
+Eigen\-::\-Dynamic, \\*
+Sparse\-Matrix\-::\-Index $>$ {\bfseries Permutation\-Matrix}}\label{classg2o_1_1LinearSolverEigen_acd9dd4e15dfbbad2720f1b83519333e8}
+
+\end{DoxyCompactItemize}
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+virtual bool \hyperlink{classg2o_1_1LinearSolverEigen_a8fca4bb987dcbeb94a366b1532dee139}{init} ()
+\item 
+bool \hyperlink{classg2o_1_1LinearSolverEigen_ae4ac566af324a238a31145c1e50b52e1}{solve} (const \hyperlink{classg2o_1_1SparseBlockMatrix}{Sparse\-Block\-Matrix}$<$ Matrix\-Type $>$ \&A, double $\ast$x, double $\ast$b)
+\item 
+\hypertarget{classg2o_1_1LinearSolverEigen_a962d9062e095399706ae4614f058a27c}{bool \hyperlink{classg2o_1_1LinearSolverEigen_a962d9062e095399706ae4614f058a27c}{block\-Ordering} () const }\label{classg2o_1_1LinearSolverEigen_a962d9062e095399706ae4614f058a27c}
+
+\begin{DoxyCompactList}\small\item\em do the A\-M\-D ordering on the blocks or on the scalar matrix \end{DoxyCompactList}\item 
+\hypertarget{classg2o_1_1LinearSolverEigen_a33a924364fc517e69c5ade5aeacd8ee3}{void {\bfseries set\-Block\-Ordering} (bool \hyperlink{classg2o_1_1LinearSolverEigen_a962d9062e095399706ae4614f058a27c}{block\-Ordering})}\label{classg2o_1_1LinearSolverEigen_a33a924364fc517e69c5ade5aeacd8ee3}
+
+\item 
+\hypertarget{classg2o_1_1LinearSolverEigen_a6b70f3c7b1c8c8105c05c7c560c670c2}{virtual bool \hyperlink{classg2o_1_1LinearSolverEigen_a6b70f3c7b1c8c8105c05c7c560c670c2}{write\-Debug} () const }\label{classg2o_1_1LinearSolverEigen_a6b70f3c7b1c8c8105c05c7c560c670c2}
+
+\begin{DoxyCompactList}\small\item\em write a debug dump of the system matrix if it is not S\-P\-D in solve \end{DoxyCompactList}\item 
+\hypertarget{classg2o_1_1LinearSolverEigen_a5ceaab3ba944d327b21f7329c7e19c8c}{virtual void {\bfseries set\-Write\-Debug} (bool b)}\label{classg2o_1_1LinearSolverEigen_a5ceaab3ba944d327b21f7329c7e19c8c}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classg2o_1_1LinearSolverEigen_a12307526d419d194620e982d8c683767}{compute\-Symbolic\-Decomposition} (const \hyperlink{classg2o_1_1SparseBlockMatrix}{Sparse\-Block\-Matrix}$<$ Matrix\-Type $>$ \&A)
+\item 
+\hypertarget{classg2o_1_1LinearSolverEigen_a8ab862dc1eebb6ec5815f3970e9073f3}{void {\bfseries fill\-Sparse\-Matrix} (const \hyperlink{classg2o_1_1SparseBlockMatrix}{Sparse\-Block\-Matrix}$<$ Matrix\-Type $>$ \&A, bool only\-Values)}\label{classg2o_1_1LinearSolverEigen_a8ab862dc1eebb6ec5815f3970e9073f3}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected 属性}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classg2o_1_1LinearSolverEigen_a52c02e9b24e4f6ade190e6adb29b05b4}{bool {\bfseries \-\_\-init}}\label{classg2o_1_1LinearSolverEigen_a52c02e9b24e4f6ade190e6adb29b05b4}
+
+\item 
+\hypertarget{classg2o_1_1LinearSolverEigen_a041970f37a5a6e63778f0c40e7c6e948}{bool {\bfseries \-\_\-block\-Ordering}}\label{classg2o_1_1LinearSolverEigen_a041970f37a5a6e63778f0c40e7c6e948}
+
+\item 
+\hypertarget{classg2o_1_1LinearSolverEigen_a2d331575853451fc94ca6f6420f0bdcb}{bool {\bfseries \-\_\-write\-Debug}}\label{classg2o_1_1LinearSolverEigen_a2d331575853451fc94ca6f6420f0bdcb}
+
+\item 
+\hypertarget{classg2o_1_1LinearSolverEigen_a39682995a9cf32dc79848281c6d4d9b9}{Sparse\-Matrix {\bfseries \-\_\-sparse\-Matrix}}\label{classg2o_1_1LinearSolverEigen_a39682995a9cf32dc79848281c6d4d9b9}
+
+\item 
+\hypertarget{classg2o_1_1LinearSolverEigen_ab7205de4c6820b3ecd7ed7f39bbdf573}{\hyperlink{classg2o_1_1LinearSolverEigen_1_1CholeskyDecomposition}{Cholesky\-Decomposition} {\bfseries \-\_\-cholesky}}\label{classg2o_1_1LinearSolverEigen_ab7205de4c6820b3ecd7ed7f39bbdf573}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{详细描述}
+\subsubsection*{template$<$typename Matrix\-Type$>$class g2o\-::\-Linear\-Solver\-Eigen$<$ Matrix\-Type $>$}
+
+linear solver which uses the sparse Cholesky solver from Eigen 
+
+Has no dependencies except Eigen. Hence, should compile almost everywhere without to much issues. Performance should be similar to C\-Sparse, I guess. 
+
+在文件 linear\-\_\-solver\-\_\-eigen.\-h 第 51 行定义.
+
+
+
+\subsection{成员函数说明}
+\hypertarget{classg2o_1_1LinearSolverEigen_a12307526d419d194620e982d8c683767}{\index{g2o\-::\-Linear\-Solver\-Eigen@{g2o\-::\-Linear\-Solver\-Eigen}!compute\-Symbolic\-Decomposition@{compute\-Symbolic\-Decomposition}}
+\index{compute\-Symbolic\-Decomposition@{compute\-Symbolic\-Decomposition}!g2o::LinearSolverEigen@{g2o\-::\-Linear\-Solver\-Eigen}}
+\subsubsection[{compute\-Symbolic\-Decomposition}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Matrix\-Type$>$ void {\bf g2o\-::\-Linear\-Solver\-Eigen}$<$ Matrix\-Type $>$\-::compute\-Symbolic\-Decomposition (
+\begin{DoxyParamCaption}
+\item[{const {\bf Sparse\-Block\-Matrix}$<$ Matrix\-Type $>$ \&}]{A}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}}\label{classg2o_1_1LinearSolverEigen_a12307526d419d194620e982d8c683767}
+compute the symbolic decompostion of the matrix only once. Since A has the same pattern in all the iterations, we only compute the fill-\/in reducing ordering once and re-\/use for all the following iterations. 
+
+在文件 linear\-\_\-solver\-\_\-eigen.\-h 第 147 行定义.
+
+
+
+参考 g2o\-::\-Sparse\-Block\-Matrix$<$ Matrix\-Type $>$\-::block\-Cols(), g2o\-::\-Sparse\-Block\-Matrix$<$ Matrix\-Type $>$\-::col\-Base\-Of\-Block(), g2o\-::\-Sparse\-Block\-Matrix$<$ Matrix\-Type $>$\-::cols(), g2o\-::\-Sparse\-Block\-Matrix$<$ Matrix\-Type $>$\-::cols\-Of\-Block(), g2o\-::\-Sparse\-Block\-Matrix$<$ Matrix\-Type $>$\-::rows() , 以及 g2o\-::\-G2\-O\-Batch\-Statistics\-::time\-Symbolic\-Decomposition.
+
+
+
+参考自 g2o\-::\-Linear\-Solver\-Eigen$<$ Matrix\-Type $>$\-::solve().
+
+
+
+函数调用图\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classg2o_1_1LinearSolverEigen_a12307526d419d194620e982d8c683767_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+这是这个函数的调用关系图\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classg2o_1_1LinearSolverEigen_a12307526d419d194620e982d8c683767_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classg2o_1_1LinearSolverEigen_a8fca4bb987dcbeb94a366b1532dee139}{\index{g2o\-::\-Linear\-Solver\-Eigen@{g2o\-::\-Linear\-Solver\-Eigen}!init@{init}}
+\index{init@{init}!g2o::LinearSolverEigen@{g2o\-::\-Linear\-Solver\-Eigen}}
+\subsubsection[{init}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Matrix\-Type$>$ virtual bool {\bf g2o\-::\-Linear\-Solver\-Eigen}$<$ Matrix\-Type $>$\-::init (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classg2o_1_1LinearSolverEigen_a8fca4bb987dcbeb94a366b1532dee139}
+init for operating on matrices with a different non-\/zero pattern like before 
+
+实现了 \hyperlink{classg2o_1_1LinearSolver_aebd961a94ef6de1bc66d2ca41dd2b17b}{g2o\-::\-Linear\-Solver$<$ Matrix\-Type $>$}.
+
+
+
+在文件 linear\-\_\-solver\-\_\-eigen.\-h 第 88 行定义.
+
+\hypertarget{classg2o_1_1LinearSolverEigen_ae4ac566af324a238a31145c1e50b52e1}{\index{g2o\-::\-Linear\-Solver\-Eigen@{g2o\-::\-Linear\-Solver\-Eigen}!solve@{solve}}
+\index{solve@{solve}!g2o::LinearSolverEigen@{g2o\-::\-Linear\-Solver\-Eigen}}
+\subsubsection[{solve}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Matrix\-Type$>$ bool {\bf g2o\-::\-Linear\-Solver\-Eigen}$<$ Matrix\-Type $>$\-::solve (
+\begin{DoxyParamCaption}
+\item[{const {\bf Sparse\-Block\-Matrix}$<$ Matrix\-Type $>$ \&}]{A, }
+\item[{double $\ast$}]{x, }
+\item[{double $\ast$}]{b}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classg2o_1_1LinearSolverEigen_ae4ac566af324a238a31145c1e50b52e1}
+Assumes that A is the same matrix for several calls. Among other assumptions, the non-\/zero pattern does not change! If the matrix changes call \hyperlink{classg2o_1_1LinearSolverEigen_a8fca4bb987dcbeb94a366b1532dee139}{init()} before. solve system Ax = b, x and b have to allocated beforehand!! 
+
+实现了 \hyperlink{classg2o_1_1LinearSolver_aa44b40826d50203c8ce2ff258c34e030}{g2o\-::\-Linear\-Solver$<$ Matrix\-Type $>$}.
+
+
+
+在文件 linear\-\_\-solver\-\_\-eigen.\-h 第 94 行定义.
+
+
+
+参考 g2o\-::\-G2\-O\-Batch\-Statistics\-::cholesky\-N\-N\-Z, g2o\-::\-Sparse\-Block\-Matrix$<$ Matrix\-Type $>$\-::cols(), g2o\-::\-Linear\-Solver\-Eigen$<$ Matrix\-Type $>$\-::compute\-Symbolic\-Decomposition(), g2o\-::\-Sparse\-Block\-Matrix$<$ Matrix\-Type $>$\-::rows(), g2o\-::\-G2\-O\-Batch\-Statistics\-::time\-Numeric\-Decomposition , 以及 g2o\-::\-Sparse\-Block\-Matrix$<$ Matrix\-Type $>$\-::write\-Octave().
+
+
+
+函数调用图\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classg2o_1_1LinearSolverEigen_ae4ac566af324a238a31145c1e50b52e1_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+该类的文档由以下文件生成\-:\begin{DoxyCompactItemize}
+\item 
+Thirdparty/g2o/g2o/solvers/linear\-\_\-solver\-\_\-eigen.\-h\end{DoxyCompactItemize}

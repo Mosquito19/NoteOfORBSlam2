@@ -1,0 +1,231 @@
+\hypertarget{classDBoW2_1_1BowVector}{\section{D\-Bo\-W2\-:\-:Bow\-Vector类 参考}
+\label{classDBoW2_1_1BowVector}\index{D\-Bo\-W2\-::\-Bow\-Vector@{D\-Bo\-W2\-::\-Bow\-Vector}}
+}
+
+
+{\ttfamily \#include $<$Bow\-Vector.\-h$>$}
+
+
+
+类 D\-Bo\-W2\-:\-:Bow\-Vector 继承关系图\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=236pt]{classDBoW2_1_1BowVector__inherit__graph}
+\end{center}
+\end{figure}
+
+
+D\-Bo\-W2\-:\-:Bow\-Vector 的协作图\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=236pt]{classDBoW2_1_1BowVector__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classDBoW2_1_1BowVector_ac4da23e700adc4ee083d66b23ce86e90}{Bow\-Vector} (void)
+\item 
+\hyperlink{classDBoW2_1_1BowVector_a7210cac6ce006c7232f4d097faa338d0}{$\sim$\-Bow\-Vector} (void)
+\item 
+void \hyperlink{classDBoW2_1_1BowVector_a3ac92a805b252c93dc6535240d02df47}{add\-Weight} (\hyperlink{namespaceDBoW2_ab1a0d3283b2d4690a383372ed20bfeb5}{Word\-Id} id, \hyperlink{namespaceDBoW2_a55fcd7333e591a38e96b91f41bc182f6}{Word\-Value} v)
+\item 
+void \hyperlink{classDBoW2_1_1BowVector_a5ddf10e444d10425e5bd3568dc7ffe5e}{add\-If\-Not\-Exist} (\hyperlink{namespaceDBoW2_ab1a0d3283b2d4690a383372ed20bfeb5}{Word\-Id} id, \hyperlink{namespaceDBoW2_a55fcd7333e591a38e96b91f41bc182f6}{Word\-Value} v)
+\item 
+void \hyperlink{classDBoW2_1_1BowVector_acd2dd34023e3053a4cc75d70c8b6ac13}{normalize} (\hyperlink{namespaceDBoW2_a53e9e0bcfc25c861815e413a7cf3fa51}{L\-Norm} norm\-\_\-type)
+\item 
+void \hyperlink{classDBoW2_1_1BowVector_af15c4fde81b89e0f76a00337883b6b4a}{save\-M} (const std\-::string \&filename, size\-\_\-t W) const 
+\end{DoxyCompactItemize}
+\subsection*{友元}
+\begin{DoxyCompactItemize}
+\item 
+std\-::ostream \& \hyperlink{classDBoW2_1_1BowVector_a1a7d9ac0f9128538859adfea38453ae1}{operator$<$$<$} (std\-::ostream \&out, const \hyperlink{classDBoW2_1_1BowVector}{Bow\-Vector} \&v)
+\end{DoxyCompactItemize}
+
+
+\subsection{详细描述}
+Vector of words to represent images stl的map结构，key为word\-Id，value为tfidf中的tf 
+
+在文件 Bow\-Vector.\-h 第 59 行定义.
+
+
+
+\subsection{构造及析构函数说明}
+\hypertarget{classDBoW2_1_1BowVector_ac4da23e700adc4ee083d66b23ce86e90}{\index{D\-Bo\-W2\-::\-Bow\-Vector@{D\-Bo\-W2\-::\-Bow\-Vector}!Bow\-Vector@{Bow\-Vector}}
+\index{Bow\-Vector@{Bow\-Vector}!DBoW2::BowVector@{D\-Bo\-W2\-::\-Bow\-Vector}}
+\subsubsection[{Bow\-Vector}]{\setlength{\rightskip}{0pt plus 5cm}D\-Bo\-W2\-::\-Bow\-Vector\-::\-Bow\-Vector (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{classDBoW2_1_1BowVector_ac4da23e700adc4ee083d66b23ce86e90}
+Constructor 
+
+在文件 Bow\-Vector.\-cpp 第 22 行定义.
+
+\hypertarget{classDBoW2_1_1BowVector_a7210cac6ce006c7232f4d097faa338d0}{\index{D\-Bo\-W2\-::\-Bow\-Vector@{D\-Bo\-W2\-::\-Bow\-Vector}!$\sim$\-Bow\-Vector@{$\sim$\-Bow\-Vector}}
+\index{$\sim$\-Bow\-Vector@{$\sim$\-Bow\-Vector}!DBoW2::BowVector@{D\-Bo\-W2\-::\-Bow\-Vector}}
+\subsubsection[{$\sim$\-Bow\-Vector}]{\setlength{\rightskip}{0pt plus 5cm}D\-Bo\-W2\-::\-Bow\-Vector\-::$\sim$\-Bow\-Vector (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{classDBoW2_1_1BowVector_a7210cac6ce006c7232f4d097faa338d0}
+Destructor 
+
+在文件 Bow\-Vector.\-cpp 第 28 行定义.
+
+
+
+\subsection{成员函数说明}
+\hypertarget{classDBoW2_1_1BowVector_a5ddf10e444d10425e5bd3568dc7ffe5e}{\index{D\-Bo\-W2\-::\-Bow\-Vector@{D\-Bo\-W2\-::\-Bow\-Vector}!add\-If\-Not\-Exist@{add\-If\-Not\-Exist}}
+\index{add\-If\-Not\-Exist@{add\-If\-Not\-Exist}!DBoW2::BowVector@{D\-Bo\-W2\-::\-Bow\-Vector}}
+\subsubsection[{add\-If\-Not\-Exist}]{\setlength{\rightskip}{0pt plus 5cm}void D\-Bo\-W2\-::\-Bow\-Vector\-::add\-If\-Not\-Exist (
+\begin{DoxyParamCaption}
+\item[{{\bf Word\-Id}}]{id, }
+\item[{{\bf Word\-Value}}]{v}
+\end{DoxyParamCaption}
+)}}\label{classDBoW2_1_1BowVector_a5ddf10e444d10425e5bd3568dc7ffe5e}
+Adds a word with a value to the vector only if this does not exist yet 
+\begin{DoxyParams}{参数}
+{\em id} & word id to look for \\
+\hline
+{\em v} & value to give to the word if this does not exist \\
+\hline
+\end{DoxyParams}
+
+
+在文件 Bow\-Vector.\-cpp 第 50 行定义.
+
+
+
+参考自 D\-Bo\-W2\-::\-Templated\-Vocabulary$<$ T\-Descriptor, F $>$\-::transform().
+
+
+
+这是这个函数的调用关系图\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classDBoW2_1_1BowVector_a5ddf10e444d10425e5bd3568dc7ffe5e_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classDBoW2_1_1BowVector_a3ac92a805b252c93dc6535240d02df47}{\index{D\-Bo\-W2\-::\-Bow\-Vector@{D\-Bo\-W2\-::\-Bow\-Vector}!add\-Weight@{add\-Weight}}
+\index{add\-Weight@{add\-Weight}!DBoW2::BowVector@{D\-Bo\-W2\-::\-Bow\-Vector}}
+\subsubsection[{add\-Weight}]{\setlength{\rightskip}{0pt plus 5cm}void D\-Bo\-W2\-::\-Bow\-Vector\-::add\-Weight (
+\begin{DoxyParamCaption}
+\item[{{\bf Word\-Id}}]{id, }
+\item[{{\bf Word\-Value}}]{v}
+\end{DoxyParamCaption}
+)}}\label{classDBoW2_1_1BowVector_a3ac92a805b252c93dc6535240d02df47}
+Adds a value to a word value existing in the vector, or creates a new word with the given value 
+\begin{DoxyParams}{参数}
+{\em id} & word id to look for \\
+\hline
+{\em v} & value to create the word with, or to add to existing word \\
+\hline
+\end{DoxyParams}
+
+
+在文件 Bow\-Vector.\-cpp 第 34 行定义.
+
+
+
+参考自 D\-Bo\-W2\-::\-Templated\-Vocabulary$<$ T\-Descriptor, F $>$\-::transform().
+
+
+
+这是这个函数的调用关系图\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classDBoW2_1_1BowVector_a3ac92a805b252c93dc6535240d02df47_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classDBoW2_1_1BowVector_acd2dd34023e3053a4cc75d70c8b6ac13}{\index{D\-Bo\-W2\-::\-Bow\-Vector@{D\-Bo\-W2\-::\-Bow\-Vector}!normalize@{normalize}}
+\index{normalize@{normalize}!DBoW2::BowVector@{D\-Bo\-W2\-::\-Bow\-Vector}}
+\subsubsection[{normalize}]{\setlength{\rightskip}{0pt plus 5cm}void D\-Bo\-W2\-::\-Bow\-Vector\-::normalize (
+\begin{DoxyParamCaption}
+\item[{{\bf L\-Norm}}]{norm\-\_\-type}
+\end{DoxyParamCaption}
+)}}\label{classDBoW2_1_1BowVector_acd2dd34023e3053a4cc75d70c8b6ac13}
+L1-\/\-Normalizes the values in the vector 
+\begin{DoxyParams}{参数}
+{\em norm\-\_\-type} & norm used \\
+\hline
+\end{DoxyParams}
+
+
+在文件 Bow\-Vector.\-cpp 第 62 行定义.
+
+
+
+参考自 D\-Bo\-W2\-::\-Templated\-Vocabulary$<$ T\-Descriptor, F $>$\-::transform().
+
+
+
+这是这个函数的调用关系图\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classDBoW2_1_1BowVector_acd2dd34023e3053a4cc75d70c8b6ac13_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classDBoW2_1_1BowVector_af15c4fde81b89e0f76a00337883b6b4a}{\index{D\-Bo\-W2\-::\-Bow\-Vector@{D\-Bo\-W2\-::\-Bow\-Vector}!save\-M@{save\-M}}
+\index{save\-M@{save\-M}!DBoW2::BowVector@{D\-Bo\-W2\-::\-Bow\-Vector}}
+\subsubsection[{save\-M}]{\setlength{\rightskip}{0pt plus 5cm}void D\-Bo\-W2\-::\-Bow\-Vector\-::save\-M (
+\begin{DoxyParamCaption}
+\item[{const std\-::string \&}]{filename, }
+\item[{size\-\_\-t}]{W}
+\end{DoxyParamCaption}
+) const}}\label{classDBoW2_1_1BowVector_af15c4fde81b89e0f76a00337883b6b4a}
+Saves the bow vector as a vector in a matlab file 
+\begin{DoxyParams}{参数}
+{\em filename} & \\
+\hline
+{\em W} & number of words in the vocabulary \\
+\hline
+\end{DoxyParams}
+
+
+在文件 Bow\-Vector.\-cpp 第 105 行定义.
+
+
+
+\subsection{友元及相关函数文档}
+\hypertarget{classDBoW2_1_1BowVector_a1a7d9ac0f9128538859adfea38453ae1}{\index{D\-Bo\-W2\-::\-Bow\-Vector@{D\-Bo\-W2\-::\-Bow\-Vector}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!DBoW2::BowVector@{D\-Bo\-W2\-::\-Bow\-Vector}}
+\subsubsection[{operator$<$$<$}]{\setlength{\rightskip}{0pt plus 5cm}std\-::ostream\& operator$<$$<$ (
+\begin{DoxyParamCaption}
+\item[{std\-::ostream \&}]{out, }
+\item[{const {\bf Bow\-Vector} \&}]{v}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [friend]}}}\label{classDBoW2_1_1BowVector_a1a7d9ac0f9128538859adfea38453ae1}
+Prints the content of the bow vector 
+\begin{DoxyParams}{参数}
+{\em out} & stream \\
+\hline
+{\em v} & \\
+\hline
+\end{DoxyParams}
+
+
+在文件 Bow\-Vector.\-cpp 第 88 行定义.
+
+
+
+该类的文档由以下文件生成\-:\begin{DoxyCompactItemize}
+\item 
+Thirdparty/\-D\-Bo\-W2/\-D\-Bo\-W2/Bow\-Vector.\-h\item 
+Thirdparty/\-D\-Bo\-W2/\-D\-Bo\-W2/Bow\-Vector.\-cpp\end{DoxyCompactItemize}

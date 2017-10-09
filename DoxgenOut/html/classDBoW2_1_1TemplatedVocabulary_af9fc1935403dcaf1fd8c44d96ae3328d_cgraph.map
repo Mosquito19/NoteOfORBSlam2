@@ -1,0 +1,5 @@
+<map id="DBoW2::TemplatedVocabulary::transform" name="DBoW2::TemplatedVocabulary::transform">
+<area shape="rect" id="node2" href="$classDBoW2_1_1BowVector.html#a5ddf10e444d10425e5bd3568dc7ffe5e" title="DBoW2::BowVector::addIfNot\lExist" alt="" coords="262,5,461,46"/>
+<area shape="rect" id="node3" href="$classDBoW2_1_1BowVector.html#a3ac92a805b252c93dc6535240d02df47" title="DBoW2::BowVector::addWeight" alt="" coords="256,71,467,97"/>
+<area shape="rect" id="node4" href="$classDBoW2_1_1BowVector.html#acd2dd34023e3053a4cc75d70c8b6ac13" title="DBoW2::BowVector::normalize" alt="" coords="259,121,463,148"/>
+</map>

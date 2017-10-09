@@ -1,0 +1,227 @@
+\hypertarget{classg2o_1_1Factory}{\section{g2o\-:\-:Factory类 参考}
+\label{classg2o_1_1Factory}\index{g2o\-::\-Factory@{g2o\-::\-Factory}}
+}
+
+
+create vertices and edges based on T\-A\-Gs in, for example, a file  
+
+
+
+
+{\ttfamily \#include $<$factory.\-h$>$}
+
+\subsection*{类}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classg2o_1_1Factory_1_1CreatorInformation}{Creator\-Information}
+\end{DoxyCompactItemize}
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classg2o_1_1Factory_aba2f2e40635fd1b996981cefdb65c346}{register\-Type} (const std\-::string \&\hyperlink{classg2o_1_1Factory_a337d1377ea4e47c31dd04e85e51a2516}{tag}, \hyperlink{classg2o_1_1AbstractHyperGraphElementCreator}{Abstract\-Hyper\-Graph\-Element\-Creator} $\ast$c)
+\item 
+void \hyperlink{classg2o_1_1Factory_a01b16c7d5a49ddab5ccd5980f76900b7}{unregister\-Type} (const std\-::string \&\hyperlink{classg2o_1_1Factory_a337d1377ea4e47c31dd04e85e51a2516}{tag})
+\item 
+\hyperlink{structg2o_1_1HyperGraph_1_1HyperGraphElement}{Hyper\-Graph\-::\-Hyper\-Graph\-Element} $\ast$ \hyperlink{classg2o_1_1Factory_afd0e0c7021e344087a09ade1c11bc15c}{construct} (const std\-::string \&\hyperlink{classg2o_1_1Factory_a337d1377ea4e47c31dd04e85e51a2516}{tag}) const 
+\item 
+\hyperlink{structg2o_1_1HyperGraph_1_1HyperGraphElement}{Hyper\-Graph\-::\-Hyper\-Graph\-Element} $\ast$ \hyperlink{classg2o_1_1Factory_adb39d806299cacf7e1d4f982bc22a45f}{construct} (const std\-::string \&\hyperlink{classg2o_1_1Factory_a337d1377ea4e47c31dd04e85e51a2516}{tag}, const Hyper\-Graph\-::\-Graph\-Elem\-Bitset \&elems\-To\-Construct) const 
+\item 
+bool \hyperlink{classg2o_1_1Factory_a57d370d8b31c214215cd6df31e5eb472}{knows\-Tag} (const std\-::string \&\hyperlink{classg2o_1_1Factory_a337d1377ea4e47c31dd04e85e51a2516}{tag}, int $\ast$element\-Type=0) const 
+\item 
+\hypertarget{classg2o_1_1Factory_a337d1377ea4e47c31dd04e85e51a2516}{const std\-::string \& \hyperlink{classg2o_1_1Factory_a337d1377ea4e47c31dd04e85e51a2516}{tag} (const \hyperlink{structg2o_1_1HyperGraph_1_1HyperGraphElement}{Hyper\-Graph\-::\-Hyper\-Graph\-Element} $\ast$v) const }\label{classg2o_1_1Factory_a337d1377ea4e47c31dd04e85e51a2516}
+
+\begin{DoxyCompactList}\small\item\em return the T\-A\-G given a vertex \end{DoxyCompactList}\item 
+void \hyperlink{classg2o_1_1Factory_ae7c0f4e892d3c5af8cd198ceb144476f}{fill\-Known\-Types} (std\-::vector$<$ std\-::string $>$ \&types) const 
+\item 
+void \hyperlink{classg2o_1_1Factory_a0a9e898c4025151062856f4aa5ab6092}{print\-Registered\-Types} (std\-::ostream \&os, bool comment=false) const 
+\end{DoxyCompactItemize}
+\subsection*{静态 Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classg2o_1_1Factory_a8a1f33e017c5ad59399cef48972578ae}{static \hyperlink{classg2o_1_1Factory}{Factory} $\ast$ \hyperlink{classg2o_1_1Factory_a8a1f33e017c5ad59399cef48972578ae}{instance} ()}\label{classg2o_1_1Factory_a8a1f33e017c5ad59399cef48972578ae}
+
+\begin{DoxyCompactList}\small\item\em return the instance \end{DoxyCompactList}\item 
+\hypertarget{classg2o_1_1Factory_ab40f0aa18dabb91a35de7186ede9355a}{static void \hyperlink{classg2o_1_1Factory_ab40f0aa18dabb91a35de7186ede9355a}{destroy} ()}\label{classg2o_1_1Factory_ab40f0aa18dabb91a35de7186ede9355a}
+
+\begin{DoxyCompactList}\small\item\em free the instance \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected 类型}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classg2o_1_1Factory_a639c8d850892dddc20098e9aa97ef9e8}{typedef std\-::map$<$ std\-::string, \\*
+\hyperlink{classg2o_1_1Factory_1_1CreatorInformation}{Creator\-Information} $\ast$ $>$ {\bfseries Creator\-Map}}\label{classg2o_1_1Factory_a639c8d850892dddc20098e9aa97ef9e8}
+
+\item 
+\hypertarget{classg2o_1_1Factory_aba274179c053b3b71dcef6a20c898496}{typedef std\-::map$<$ std\-::string, \\*
+std\-::string $>$ {\bfseries Tag\-Lookup}}\label{classg2o_1_1Factory_aba274179c053b3b71dcef6a20c898496}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected 属性}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classg2o_1_1Factory_a38e27fb1014dfb8691f4df045ebb5130}{Creator\-Map \hyperlink{classg2o_1_1Factory_a38e27fb1014dfb8691f4df045ebb5130}{\-\_\-creator}}\label{classg2o_1_1Factory_a38e27fb1014dfb8691f4df045ebb5130}
+
+\begin{DoxyCompactList}\small\item\em look-\/up map for the existing creators \end{DoxyCompactList}\item 
+\hypertarget{classg2o_1_1Factory_a93fbd79ea000ed88101c1f23b19e6e2a}{Tag\-Lookup \hyperlink{classg2o_1_1Factory_a93fbd79ea000ed88101c1f23b19e6e2a}{\-\_\-tag\-Lookup}}\label{classg2o_1_1Factory_a93fbd79ea000ed88101c1f23b19e6e2a}
+
+\begin{DoxyCompactList}\small\item\em reverse look-\/up, class name to tag \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{详细描述}
+create vertices and edges based on T\-A\-Gs in, for example, a file 
+
+在文件 factory.\-h 第 50 行定义.
+
+
+
+\subsection{成员函数说明}
+\hypertarget{classg2o_1_1Factory_afd0e0c7021e344087a09ade1c11bc15c}{\index{g2o\-::\-Factory@{g2o\-::\-Factory}!construct@{construct}}
+\index{construct@{construct}!g2o::Factory@{g2o\-::\-Factory}}
+\subsubsection[{construct}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Hyper\-Graph\-::\-Hyper\-Graph\-Element} $\ast$ g2o\-::\-Factory\-::construct (
+\begin{DoxyParamCaption}
+\item[{const std\-::string \&}]{tag}
+\end{DoxyParamCaption}
+) const}}\label{classg2o_1_1Factory_afd0e0c7021e344087a09ade1c11bc15c}
+construct a graph element based on its tag 
+
+在文件 factory.\-cpp 第 147 行定义.
+
+
+
+参考自 g2o\-::\-Parameter\-Container\-::read().
+
+
+
+这是这个函数的调用关系图\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classg2o_1_1Factory_afd0e0c7021e344087a09ade1c11bc15c_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classg2o_1_1Factory_adb39d806299cacf7e1d4f982bc22a45f}{\index{g2o\-::\-Factory@{g2o\-::\-Factory}!construct@{construct}}
+\index{construct@{construct}!g2o::Factory@{g2o\-::\-Factory}}
+\subsubsection[{construct}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Hyper\-Graph\-::\-Hyper\-Graph\-Element} $\ast$ g2o\-::\-Factory\-::construct (
+\begin{DoxyParamCaption}
+\item[{const std\-::string \&}]{tag, }
+\item[{const Hyper\-Graph\-::\-Graph\-Elem\-Bitset \&}]{elems\-To\-Construct}
+\end{DoxyParamCaption}
+) const}}\label{classg2o_1_1Factory_adb39d806299cacf7e1d4f982bc22a45f}
+construct a graph element based on its tag, but only if it's type (a bitmask) matches. A bitmask without any bit set will construct any item. Otherwise a bit has to be set to allow construction of a graph element. 
+
+在文件 factory.\-cpp 第 204 行定义.
+
+\hypertarget{classg2o_1_1Factory_ae7c0f4e892d3c5af8cd198ceb144476f}{\index{g2o\-::\-Factory@{g2o\-::\-Factory}!fill\-Known\-Types@{fill\-Known\-Types}}
+\index{fill\-Known\-Types@{fill\-Known\-Types}!g2o::Factory@{g2o\-::\-Factory}}
+\subsubsection[{fill\-Known\-Types}]{\setlength{\rightskip}{0pt plus 5cm}void g2o\-::\-Factory\-::fill\-Known\-Types (
+\begin{DoxyParamCaption}
+\item[{std\-::vector$<$ std\-::string $>$ \&}]{types}
+\end{DoxyParamCaption}
+) const}}\label{classg2o_1_1Factory_ae7c0f4e892d3c5af8cd198ceb144476f}
+get a list of all known types 
+
+在文件 factory.\-cpp 第 166 行定义.
+
+\hypertarget{classg2o_1_1Factory_a57d370d8b31c214215cd6df31e5eb472}{\index{g2o\-::\-Factory@{g2o\-::\-Factory}!knows\-Tag@{knows\-Tag}}
+\index{knows\-Tag@{knows\-Tag}!g2o::Factory@{g2o\-::\-Factory}}
+\subsubsection[{knows\-Tag}]{\setlength{\rightskip}{0pt plus 5cm}bool g2o\-::\-Factory\-::knows\-Tag (
+\begin{DoxyParamCaption}
+\item[{const std\-::string \&}]{tag, }
+\item[{int $\ast$}]{element\-Type = {\ttfamily 0}}
+\end{DoxyParamCaption}
+) const}}\label{classg2o_1_1Factory_a57d370d8b31c214215cd6df31e5eb472}
+return whether the factory knows this tag or not 
+
+在文件 factory.\-cpp 第 173 行定义.
+
+
+
+参考自 g2o\-::\-Optimizable\-Graph\-::set\-Renamed\-Types\-From\-String().
+
+
+
+这是这个函数的调用关系图\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classg2o_1_1Factory_a57d370d8b31c214215cd6df31e5eb472_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classg2o_1_1Factory_a0a9e898c4025151062856f4aa5ab6092}{\index{g2o\-::\-Factory@{g2o\-::\-Factory}!print\-Registered\-Types@{print\-Registered\-Types}}
+\index{print\-Registered\-Types@{print\-Registered\-Types}!g2o::Factory@{g2o\-::\-Factory}}
+\subsubsection[{print\-Registered\-Types}]{\setlength{\rightskip}{0pt plus 5cm}void g2o\-::\-Factory\-::print\-Registered\-Types (
+\begin{DoxyParamCaption}
+\item[{std\-::ostream \&}]{os, }
+\item[{bool}]{comment = {\ttfamily false}}
+\end{DoxyParamCaption}
+) const}}\label{classg2o_1_1Factory_a0a9e898c4025151062856f4aa5ab6092}
+print a list of the known registered types to the given stream 
+
+在文件 factory.\-cpp 第 192 行定义.
+
+\hypertarget{classg2o_1_1Factory_aba2f2e40635fd1b996981cefdb65c346}{\index{g2o\-::\-Factory@{g2o\-::\-Factory}!register\-Type@{register\-Type}}
+\index{register\-Type@{register\-Type}!g2o::Factory@{g2o\-::\-Factory}}
+\subsubsection[{register\-Type}]{\setlength{\rightskip}{0pt plus 5cm}void g2o\-::\-Factory\-::register\-Type (
+\begin{DoxyParamCaption}
+\item[{const std\-::string \&}]{tag, }
+\item[{{\bf Abstract\-Hyper\-Graph\-Element\-Creator} $\ast$}]{c}
+\end{DoxyParamCaption}
+)}}\label{classg2o_1_1Factory_aba2f2e40635fd1b996981cefdb65c346}
+register a tag for a specific creator 
+
+在文件 factory.\-cpp 第 73 行定义.
+
+
+
+参考 g2o\-::\-Abstract\-Hyper\-Graph\-Element\-Creator\-::construct() , 以及 g2o\-::\-Abstract\-Hyper\-Graph\-Element\-Creator\-::name().
+
+
+
+函数调用图\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classg2o_1_1Factory_aba2f2e40635fd1b996981cefdb65c346_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classg2o_1_1Factory_a01b16c7d5a49ddab5ccd5980f76900b7}{\index{g2o\-::\-Factory@{g2o\-::\-Factory}!unregister\-Type@{unregister\-Type}}
+\index{unregister\-Type@{unregister\-Type}!g2o::Factory@{g2o\-::\-Factory}}
+\subsubsection[{unregister\-Type}]{\setlength{\rightskip}{0pt plus 5cm}void g2o\-::\-Factory\-::unregister\-Type (
+\begin{DoxyParamCaption}
+\item[{const std\-::string \&}]{tag}
+\end{DoxyParamCaption}
+)}}\label{classg2o_1_1Factory_a01b16c7d5a49ddab5ccd5980f76900b7}
+unregister a tag for a specific creator 
+
+在文件 factory.\-cpp 第 128 行定义.
+
+
+
+参考 g2o\-::\-Abstract\-Hyper\-Graph\-Element\-Creator\-::name().
+
+
+
+函数调用图\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classg2o_1_1Factory_a01b16c7d5a49ddab5ccd5980f76900b7_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+该类的文档由以下文件生成\-:\begin{DoxyCompactItemize}
+\item 
+Thirdparty/g2o/g2o/core/factory.\-h\item 
+Thirdparty/g2o/g2o/core/factory.\-cpp\end{DoxyCompactItemize}

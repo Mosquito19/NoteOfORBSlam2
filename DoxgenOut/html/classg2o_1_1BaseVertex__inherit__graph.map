@@ -1,0 +1,5 @@
+<map id="g2o::BaseVertex&lt; D, T &gt;" name="g2o::BaseVertex&lt; D, T &gt;">
+<area shape="rect" id="node2" href="$classg2o_1_1OptimizableGraph_1_1Vertex.html" title="A general case Vertex for optimization. " alt="" coords="27,171,180,213"/>
+<area shape="rect" id="node3" href="$classg2o_1_1HyperGraph_1_1Vertex.html" title="abstract Vertex, your types must derive from that one " alt="" coords="21,96,187,123"/>
+<area shape="rect" id="node4" href="$structg2o_1_1HyperGraph_1_1HyperGraphElement.html" title="g2o::HyperGraph::HyperGraph\lElement" alt="" coords="5,6,203,47"/>
+</map>

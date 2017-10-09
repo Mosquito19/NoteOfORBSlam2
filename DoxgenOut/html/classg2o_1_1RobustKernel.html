@@ -1,0 +1,249 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.6"/>
+<title>My Project: g2o::RobustKernel类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">My Project
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.6 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="pages.html"><span>相关页面</span></a></li>
+      <li><a href="modules.html"><span>模块</span></a></li>
+      <li><a href="namespaces.html"><span>命名空间</span></a></li>
+      <li class="current"><a href="annotated.html"><span>类</span></a></li>
+      <li><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>类列表</span></a></li>
+      <li><a href="classes.html"><span>类索引</span></a></li>
+      <li><a href="inherits.html"><span>类继承关系</span></a></li>
+      <li><a href="functions.html"><span>类成员</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('classg2o_1_1RobustKernel.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>命名空间</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>友元</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>组</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>页</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pro-attribs">Protected 属性</a> &#124;
+<a href="classg2o_1_1RobustKernel-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">g2o::RobustKernel类 参考<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>base for all robust cost functions  
+ <a href="classg2o_1_1RobustKernel.html#details">更多...</a></p>
+
+<p><code>#include &lt;<a class="el" href="robust__kernel_8h_source.html">robust_kernel.h</a>&gt;</code></p>
+<div class="dynheader">
+类 g2o::RobustKernel 继承关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classg2o_1_1RobustKernel__inherit__graph.png" border="0" usemap="#g2o_1_1RobustKernel_inherit__map" alt="Inheritance graph"/></div>
+<map name="g2o_1_1RobustKernel_inherit__map" id="g2o_1_1RobustKernel_inherit__map">
+<area shape="rect" id="node2" href="classg2o_1_1RobustKernelCauchy.html" title="Cauchy cost function. " alt="" coords="202,5,377,32"/><area shape="rect" id="node3" href="classg2o_1_1RobustKernelDCS.html" title="Dynamic covariance scaling &#45; DCS. " alt="" coords="210,56,369,83"/><area shape="rect" id="node4" href="classg2o_1_1RobustKernelHuber.html" title="Huber Cost Function. " alt="" coords="207,107,372,133"/><area shape="rect" id="node5" href="classg2o_1_1RobustKernelPseudoHuber.html" title="Pseudo Huber Cost Function. " alt="" coords="185,157,394,184"/><area shape="rect" id="node6" href="classg2o_1_1RobustKernelSaturated.html" title="Saturated cost function. " alt="" coords="196,208,383,235"/><area shape="rect" id="node7" href="classg2o_1_1RobustKernelScaleDelta.html" title="scale a robust kernel to another delta (window size) " alt="" coords="192,259,387,285"/><area shape="rect" id="node8" href="classg2o_1_1RobustKernelTukey.html" title="Tukey Cost Function. " alt="" coords="206,309,373,336"/></map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">图例</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:aabd6883d9c5e33b567453585a80c7ad8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aabd6883d9c5e33b567453585a80c7ad8"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>RobustKernel</b> (double delta)</td></tr>
+<tr class="separator:aabd6883d9c5e33b567453585a80c7ad8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab47b071a0cfe466be063f0104bc41d0f"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classg2o_1_1RobustKernel.html#ab47b071a0cfe466be063f0104bc41d0f">robustify</a> (double squaredError, Eigen::Vector3d &amp;rho) const =0</td></tr>
+<tr class="separator:ab47b071a0cfe466be063f0104bc41d0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8d85269635c436fca51324d7cb16a798"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classg2o_1_1RobustKernel.html#a8d85269635c436fca51324d7cb16a798">setDelta</a> (double delta)</td></tr>
+<tr class="separator:a8d85269635c436fca51324d7cb16a798"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c94f88f5c97f47c519a9adb44b4da36"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8c94f88f5c97f47c519a9adb44b4da36"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><b>delta</b> () const </td></tr>
+<tr class="separator:a8c94f88f5c97f47c519a9adb44b4da36"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
+Protected 属性</h2></td></tr>
+<tr class="memitem:a4b03953a6e7bfca64efea37fb98548aa"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4b03953a6e7bfca64efea37fb98548aa"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><b>_delta</b></td></tr>
+<tr class="separator:a4b03953a6e7bfca64efea37fb98548aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>base for all robust cost functions </p>
+<p>Note in all the implementations for the other cost functions the e in the funtions corresponds to the sqaured errors, i.e., the robustification functions gets passed the squared error.</p>
+<p>e.g. the robustified least squares function is</p>
+<p>chi^2 = sum_{e} rho( e^T Omega e ) </p>
+
+<p>在文件 <a class="el" href="robust__kernel_8h_source.html">robust_kernel.h</a> 第 <a class="el" href="robust__kernel_8h_source.html#l00056">56</a> 行定义.</p>
+</div><h2 class="groupheader">成员函数说明</h2>
+<a class="anchor" id="ab47b071a0cfe466be063f0104bc41d0f"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void g2o::RobustKernel::robustify </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>squaredError</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Eigen::Vector3d &amp;&#160;</td>
+          <td class="paramname"><em>rho</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>compute the scaling factor for a error: The error is e^T Omega e The output rho is rho[0]: The actual scaled error value rho[1]: First derivative of the scaling function rho[2]: Second derivative of the scaling function </p>
+
+<p>在 <a class="el" href="classg2o_1_1RobustKernelDCS.html#a4b9b1d991bf3b86093dd4759a032cd78">g2o::RobustKernelDCS</a>, <a class="el" href="classg2o_1_1RobustKernelSaturated.html#abfae37d6c54155859549ac710a8a8c83">g2o::RobustKernelSaturated</a>, <a class="el" href="classg2o_1_1RobustKernelCauchy.html#adfe1678456e327b1a8a33f5b8b499493">g2o::RobustKernelCauchy</a>, <a class="el" href="classg2o_1_1RobustKernelPseudoHuber.html#a297dce8c836d499bd4c2818628574933">g2o::RobustKernelPseudoHuber</a>, <a class="el" href="classg2o_1_1RobustKernelTukey.html#abcc5f9921110f775db6d652f8fcf4f42">g2o::RobustKernelTukey</a>, <a class="el" href="classg2o_1_1RobustKernelHuber.html#a702ac5453740284ba6addeb41157e45e">g2o::RobustKernelHuber</a> , 以及 <a class="el" href="classg2o_1_1RobustKernelScaleDelta.html#aa0dd08d5175fac24ce96b1efe08be67b">g2o::RobustKernelScaleDelta</a> 内被实现.</p>
+
+<p>参考自 <a class="el" href="sparse__optimizer_8cpp_source.html#l00100">g2o::SparseOptimizer::activeRobustChi2()</a>.</p>
+
+<p><div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classg2o_1_1RobustKernel_ab47b071a0cfe466be063f0104bc41d0f_icgraph.png" border="0" usemap="#classg2o_1_1RobustKernel_ab47b071a0cfe466be063f0104bc41d0f_icgraph" alt=""/></div>
+<map name="classg2o_1_1RobustKernel_ab47b071a0cfe466be063f0104bc41d0f_icgraph" id="classg2o_1_1RobustKernel_ab47b071a0cfe466be063f0104bc41d0f_icgraph">
+<area shape="rect" id="node2" href="classg2o_1_1SparseOptimizer.html#ae47c5023e53685523499fc00d6057d14" title="g2o::SparseOptimizer\l::activeRobustChi2" alt="" coords="193,38,341,79"/><area shape="rect" id="node3" href="classg2o_1_1OptimizationAlgorithmDogleg.html#ace62fd809c18655bd7ff104285748610" title="g2o::OptimizationAlgorithm\lDogleg::solve" alt="" coords="389,5,568,46"/><area shape="rect" id="node4" href="classg2o_1_1OptimizationAlgorithmLevenberg.html#a7140fa989b54eac4e09ba17829dcada0" title="g2o::OptimizationAlgorithm\lLevenberg::solve" alt="" coords="389,70,568,111"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a8d85269635c436fca51324d7cb16a798"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void g2o::RobustKernel::setDelta </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>delta</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>set the window size of the error. A squared error above delta^2 is considered as outlier in the data. </p>
+
+<p>被 <a class="el" href="classg2o_1_1RobustKernelHuber.html#a7e9ee4bbc9483dcd3d10a4c1f506a4d2">g2o::RobustKernelHuber</a> 重载.</p>
+
+<p>在文件 <a class="el" href="robust__kernel_8cpp_source.html">robust_kernel.cpp</a> 第 <a class="el" href="robust__kernel_8cpp_source.html#l00041">41</a> 行定义.</p>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>Thirdparty/g2o/g2o/core/<a class="el" href="robust__kernel_8h_source.html">robust_kernel.h</a></li>
+<li>Thirdparty/g2o/g2o/core/<a class="el" href="robust__kernel_8cpp_source.html">robust_kernel.cpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><b>g2o</b></li><li class="navelem"><a class="el" href="classg2o_1_1RobustKernel.html">RobustKernel</a></li>
+    <li class="footer">生成于 2017年 七月 18日 星期二 17:13:39 , 为 My Project使用 
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
+  </ul>
+</div>
+</body>
+</html>

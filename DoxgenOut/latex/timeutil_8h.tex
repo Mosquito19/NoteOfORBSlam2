@@ -1,0 +1,59 @@
+\hypertarget{timeutil_8h}{\section{Thirdparty/g2o/g2o/stuff/timeutil.h 文件参考}
+\label{timeutil_8h}\index{Thirdparty/g2o/g2o/stuff/timeutil.\-h@{Thirdparty/g2o/g2o/stuff/timeutil.\-h}}
+}
+
+
+utility functions for handling time related stuff  
+
+
+{\ttfamily \#include $<$sys/time.\-h$>$}\\*
+{\ttfamily \#include $<$string$>$}\\*
+{\ttfamily \#include \char`\"{}../core/g2o\-\_\-core\-\_\-api.\-h\char`\"{}}\\*
+timeutil.\-h 的引用(Include)关系图\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=331pt]{timeutil_8h__incl}
+\end{center}
+\end{figure}
+此图展示该文件直接或间接的被哪些文件引用了\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{timeutil_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{类}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classg2o_1_1ScopeTime}{g2o\-::\-Scope\-Time}
+\begin{DoxyCompactList}\small\item\em Class to measure the time spent in a scope. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{宏定义}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{group__utils_ga9b9f34c01b03b47644c2762bf256be32}{D\-O\-\_\-\-E\-V\-E\-R\-Y\-\_\-\-T\-S}(secs, current\-Time, code)
+\item 
+\hypertarget{group__utils_gabfe958da8833edbe74250507adc61635}{\#define \hyperlink{group__utils_gabfe958da8833edbe74250507adc61635}{D\-O\-\_\-\-E\-V\-E\-R\-Y}(secs, code)~\hyperlink{group__utils_ga9b9f34c01b03b47644c2762bf256be32}{D\-O\-\_\-\-E\-V\-E\-R\-Y\-\_\-\-T\-S}(secs, g2o\-::get\-\_\-time(), code)}\label{group__utils_gabfe958da8833edbe74250507adc61635}
+
+\begin{DoxyCompactList}\small\item\em Executes code, only if secs are gone since last exec. \end{DoxyCompactList}\item 
+\#define {\bfseries M\-E\-A\-S\-U\-R\-E\-\_\-\-T\-I\-M\-E}(text, code)
+\item 
+\hypertarget{group__utils_gae79acf8eb730f80c029d60e19332b4b9}{\#define {\bfseries M\-E\-A\-S\-U\-R\-E\-\_\-\-F\-U\-N\-C\-T\-I\-O\-N\-\_\-\-T\-I\-M\-E}~\hyperlink{classg2o_1_1ScopeTime}{g2o\-::\-Scope\-Time} scope\-Time(\-\_\-\-\_\-\-P\-R\-E\-T\-T\-Y\-\_\-\-F\-U\-N\-C\-T\-I\-O\-N\-\_\-\-\_\-)}\label{group__utils_gae79acf8eb730f80c029d60e19332b4b9}
+
+\end{DoxyCompactItemize}
+\subsection*{函数}
+\begin{DoxyCompactItemize}
+\item 
+double {\bfseries g2o\-::get\-\_\-time} ()
+\item 
+double {\bfseries g2o\-::get\-\_\-monotonic\-\_\-time} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{详细描述}
+utility functions for handling time related stuff 
+
+在文件 \hyperlink{timeutil_8h_source}{timeutil.\-h} 中定义.
+

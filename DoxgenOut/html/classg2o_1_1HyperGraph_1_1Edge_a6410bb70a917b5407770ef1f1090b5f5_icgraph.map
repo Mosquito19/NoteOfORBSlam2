@@ -1,0 +1,27 @@
+<map id="g2o::HyperGraph::Edge::vertices" name="g2o::HyperGraph::Edge::vertices">
+<area shape="rect" id="node2" href="$classg2o_1_1HyperGraph.html#a0f1d35009a2879b238c8148c33485c89" title="g2o::HyperGraph::addEdge" alt="" coords="229,81,409,108"/>
+<area shape="rect" id="node15" href="$structg2o_1_1OptimizableGraph.html#acea1342d9ab0bf717710c8f78b74ff25" title="adds all edges and vertices of the graph g to this graph. " alt="" coords="739,45,893,86"/>
+<area shape="rect" id="node16" href="$classg2o_1_1BlockSolver.html#a17e4392d3cca9a9d7cf38bb46d073b86" title="g2o::BlockSolver::buildStructure" alt="" coords="214,132,423,159"/>
+<area shape="rect" id="node17" href="$classg2o_1_1BlockSolver.html#a2654a8d52f38e5ce23720a8de302e2e7" title="g2o::BlockSolver::buildSystem" alt="" coords="218,183,419,209"/>
+<area shape="rect" id="node18" href="$classg2o_1_1SparseOptimizer.html#a2fba11c8572fce4a8c1bcca4fa3e43fb" title="g2o::SparseOptimizer\l::computeInitialGuess" alt="" coords="244,234,393,275"/>
+<area shape="rect" id="node19" href="$classg2o_1_1SparseOptimizer.html#ab16dd36e32577ba5856239ce721ec70b" title="g2o::SparseOptimizer\l::initializeOptimization" alt="" coords="243,299,394,341"/>
+<area shape="rect" id="node20" href="$classg2o_1_1EstimatePropagator.html#ae24b104ec3e8162bc75a70db9941f342" title="g2o::EstimatePropagator\l::propagate" alt="" coords="235,365,402,406"/>
+<area shape="rect" id="node21" href="$classg2o_1_1HyperGraph.html#a33e5a60705ce673d647aa1613da9d99b" title="removes a vertex from the graph. Returns true on success (edge was present) " alt="" coords="217,496,420,523"/>
+<area shape="rect" id="node23" href="$classg2o_1_1JacobianWorkspace.html#a2d16ad6db1a51aa93c806cc9c06e223f" title="g2o::JacobianWorkspace\l::updateSize" alt="" coords="234,430,403,471"/>
+<area shape="rect" id="node25" href="$classg2o_1_1BlockSolver.html#acc497239c5e681ddec2140e34dfc5938" title="g2o::BlockSolver::update\lStructure" alt="" coords="235,547,403,589"/>
+<area shape="rect" id="node26" href="$structg2o_1_1OptimizableGraph.html#aae5f20da3c13042a9bc1f491f2150d59" title="g2o::OptimizableGraph\l::verifyInformationMatrices" alt="" coords="230,613,407,654"/>
+<area shape="rect" id="node3" href="$structg2o_1_1OptimizableGraph.html#a6831ed69fce3dba691f53302a2813070" title="g2o::OptimizableGraph\l::addEdge" alt="" coords="500,227,655,269"/>
+<area shape="rect" id="node4" href="$classORB__SLAM2_1_1Optimizer.html#a5e855fe6b54082739b7e7013048e6340" title="bundle adjustment Optimization " alt="" coords="733,217,899,258"/>
+<area shape="rect" id="node5" href="$classORB__SLAM2_1_1Optimizer.html#a7415d78b8a2323b88e108fa1ea3bf2d3" title="Pose Only Optimization. " alt="" coords="733,282,899,323"/>
+<area shape="rect" id="node10" href="$classORB__SLAM2_1_1Optimizer.html#ab70e0b4f366b65a0c1ae8b2def19d339" title="Local Bundle Adjustment. " alt="" coords="733,347,899,389"/>
+<area shape="rect" id="node11" href="$classORB__SLAM2_1_1Optimizer.html#ad36bb1a7167c84f385c3f299bc96f20e" title="闭环检测后，EssentialGraph优化 " alt="" coords="731,151,901,193"/>
+<area shape="rect" id="node13" href="$classORB__SLAM2_1_1Optimizer.html#ad8fe00ad3e6564b859b07ff9e7b2224e" title="形成闭环时进行Sim3优化 " alt="" coords="733,433,899,474"/>
+<area shape="rect" id="node6" href="$classORB__SLAM2_1_1Tracking.html#a737c5409c93844353561a0fe724ed1c2" title="对参考关键帧的MapPoints进行跟踪 " alt="" coords="950,217,1133,258"/>
+<area shape="rect" id="node8" href="$classORB__SLAM2_1_1Tracking.html#aca19f1d69b30a6c6e49281d422ac8298" title="根据匀速度模型对上一帧的MapPoints进行跟踪 " alt="" coords="959,282,1123,323"/>
+<area shape="rect" id="node9" href="$classORB__SLAM2_1_1Tracking.html#af670c614f4e10d58c9f7aad9865b5c08" title="对Local Map的MapPoints进行跟踪 " alt="" coords="962,347,1121,389"/>
+<area shape="rect" id="node7" href="$classORB__SLAM2_1_1Tracking.html#af1f2c9c533642d8c33854540e90d1918" title="Main tracking function. It is independent of the input sensor. " alt="" coords="1182,282,1341,323"/>
+<area shape="rect" id="node12" href="$classORB__SLAM2_1_1LoopClosing.html#aa007e0678582ec0de5d71280d23af540" title="闭环 " alt="" coords="951,151,1132,193"/>
+<area shape="rect" id="node14" href="$classORB__SLAM2_1_1LoopClosing.html#ab4fcf814eed5b5dd2aec96454561b078" title="计算当前帧与闭环帧的Sim3变换等 " alt="" coords="951,433,1132,474"/>
+<area shape="rect" id="node22" href="$classg2o_1_1HyperGraph.html#a97ab8302aa027d513253387bba9e0dd5" title="removes a vertex from the graph. Returns true on success (vertex was present) " alt="" coords="472,471,683,497"/>
+<area shape="rect" id="node24" href="$classg2o_1_1JacobianWorkspace.html#ae3d715bd25e196d8db81661ef0fbd09b" title="g2o::JacobianWorkspace\l::updateSize" alt="" coords="493,405,662,446"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="g2o::OptimizationAlgorithmLevenberg::computeLambdaInit" name="g2o::OptimizationAlgorithmLevenberg::computeLambdaInit">
+<area shape="rect" id="node2" href="$classg2o_1_1OptimizableGraph_1_1Vertex.html#a1037b978fec531eaf860d0037b992079" title="dimension of the estimated state belonging to this node " alt="" coords="259,5,413,46"/>
+<area shape="rect" id="node3" href="$classg2o_1_1OptimizableGraph_1_1Vertex.html#af46fa4f0baa4c87e29b137f24e713acb" title="get the element from the hessian matrix " alt="" coords="259,70,413,111"/>
+<area shape="rect" id="node4" href="$classg2o_1_1SparseOptimizer.html#a5e98a5f879f04c013b20f9c39a9057da" title="the index mapping of the vertices " alt="" coords="262,135,410,177"/>
+</map>

@@ -1,0 +1,79 @@
+\hypertarget{classg2o_1_1SparseBlockMatrixDiagonal}{\section{g2o\-:\-:Sparse\-Block\-Matrix\-Diagonal$<$ Matrix\-Type $>$ 模板类 参考}
+\label{classg2o_1_1SparseBlockMatrixDiagonal}\index{g2o\-::\-Sparse\-Block\-Matrix\-Diagonal$<$ Matrix\-Type $>$@{g2o\-::\-Sparse\-Block\-Matrix\-Diagonal$<$ Matrix\-Type $>$}}
+}
+
+
+Sparse matrix which uses blocks on the diagonal.  
+
+
+
+
+{\ttfamily \#include $<$sparse\-\_\-block\-\_\-matrix\-\_\-diagonal.\-h$>$}
+
+\subsection*{Public 类型}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classg2o_1_1SparseBlockMatrixDiagonal_a93a57bc93d5b099fcd424ba1fc1a0585}{typedef Matrix\-Type \hyperlink{classg2o_1_1SparseBlockMatrixDiagonal_a93a57bc93d5b099fcd424ba1fc1a0585}{Sparse\-Matrix\-Block}}\label{classg2o_1_1SparseBlockMatrixDiagonal_a93a57bc93d5b099fcd424ba1fc1a0585}
+
+\begin{DoxyCompactList}\small\item\em this is the type of the elementary block, it is an Eigen\-::\-Matrix. \end{DoxyCompactList}\item 
+\hypertarget{classg2o_1_1SparseBlockMatrixDiagonal_a2eb7fc4130fac5c499b57f3bec855812}{typedef std\-::vector\\*
+$<$ Matrix\-Type, \\*
+Eigen\-::aligned\-\_\-allocator\\*
+$<$ Matrix\-Type $>$ $>$ {\bfseries Diagonal\-Vector}}\label{classg2o_1_1SparseBlockMatrixDiagonal_a2eb7fc4130fac5c499b57f3bec855812}
+
+\end{DoxyCompactItemize}
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classg2o_1_1SparseBlockMatrixDiagonal_ad732f51a1553530d5645c24861975207}{int \hyperlink{classg2o_1_1SparseBlockMatrixDiagonal_ad732f51a1553530d5645c24861975207}{cols} () const }\label{classg2o_1_1SparseBlockMatrixDiagonal_ad732f51a1553530d5645c24861975207}
+
+\begin{DoxyCompactList}\small\item\em columns of the matrix \end{DoxyCompactList}\item 
+\hypertarget{classg2o_1_1SparseBlockMatrixDiagonal_aa255d0a5069a9ad0ca6674a4e70c8397}{int \hyperlink{classg2o_1_1SparseBlockMatrixDiagonal_aa255d0a5069a9ad0ca6674a4e70c8397}{rows} () const }\label{classg2o_1_1SparseBlockMatrixDiagonal_aa255d0a5069a9ad0ca6674a4e70c8397}
+
+\begin{DoxyCompactList}\small\item\em rows of the matrix \end{DoxyCompactList}\item 
+\hypertarget{classg2o_1_1SparseBlockMatrixDiagonal_a0e01566c4ff881af058f366672291b27}{{\bfseries Sparse\-Block\-Matrix\-Diagonal} (const std\-::vector$<$ int $>$ \&\hyperlink{classg2o_1_1SparseBlockMatrixDiagonal_acac6778f21aea2355fccad48de1c6f08}{block\-Indices})}\label{classg2o_1_1SparseBlockMatrixDiagonal_a0e01566c4ff881af058f366672291b27}
+
+\item 
+\hypertarget{classg2o_1_1SparseBlockMatrixDiagonal_a80f1f9af0e97734b92f6c26054e8b316}{int \hyperlink{classg2o_1_1SparseBlockMatrixDiagonal_a80f1f9af0e97734b92f6c26054e8b316}{dim\-Of\-Block} (int r) const }\label{classg2o_1_1SparseBlockMatrixDiagonal_a80f1f9af0e97734b92f6c26054e8b316}
+
+\begin{DoxyCompactList}\small\item\em how many rows/cols does the block at block-\/row / block-\/column r has? \end{DoxyCompactList}\item 
+\hypertarget{classg2o_1_1SparseBlockMatrixDiagonal_a282013b87fc71fa5ef6657ea4f58855d}{int \hyperlink{classg2o_1_1SparseBlockMatrixDiagonal_a282013b87fc71fa5ef6657ea4f58855d}{base\-Of\-Block} (int r) const }\label{classg2o_1_1SparseBlockMatrixDiagonal_a282013b87fc71fa5ef6657ea4f58855d}
+
+\begin{DoxyCompactList}\small\item\em where does the row /col at block-\/row / block-\/column r starts? \end{DoxyCompactList}\item 
+\hypertarget{classg2o_1_1SparseBlockMatrixDiagonal_a762097ac116728fec0cc64cf05610a96}{const Diagonal\-Vector \& \hyperlink{classg2o_1_1SparseBlockMatrixDiagonal_a762097ac116728fec0cc64cf05610a96}{diagonal} () const }\label{classg2o_1_1SparseBlockMatrixDiagonal_a762097ac116728fec0cc64cf05610a96}
+
+\begin{DoxyCompactList}\small\item\em the block matrices per block-\/column \end{DoxyCompactList}\item 
+\hypertarget{classg2o_1_1SparseBlockMatrixDiagonal_af75593896065195f7dc2342132c565cc}{Diagonal\-Vector \& {\bfseries diagonal} ()}\label{classg2o_1_1SparseBlockMatrixDiagonal_af75593896065195f7dc2342132c565cc}
+
+\item 
+\hypertarget{classg2o_1_1SparseBlockMatrixDiagonal_acac6778f21aea2355fccad48de1c6f08}{const std\-::vector$<$ int $>$ \& \hyperlink{classg2o_1_1SparseBlockMatrixDiagonal_acac6778f21aea2355fccad48de1c6f08}{block\-Indices} () const }\label{classg2o_1_1SparseBlockMatrixDiagonal_acac6778f21aea2355fccad48de1c6f08}
+
+\begin{DoxyCompactList}\small\item\em indices of the row blocks \end{DoxyCompactList}\item 
+\hypertarget{classg2o_1_1SparseBlockMatrixDiagonal_a3b6da3a28659e6b86410885ce7297ce2}{void {\bfseries multiply} (double $\ast$\&dest, const double $\ast$src) const }\label{classg2o_1_1SparseBlockMatrixDiagonal_a3b6da3a28659e6b86410885ce7297ce2}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected 属性}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classg2o_1_1SparseBlockMatrixDiagonal_a12ca3362997c3ca21c8b2a203177485e}{const std\-::vector$<$ int $>$ \& \hyperlink{classg2o_1_1SparseBlockMatrixDiagonal_a12ca3362997c3ca21c8b2a203177485e}{\-\_\-block\-Indices}}\label{classg2o_1_1SparseBlockMatrixDiagonal_a12ca3362997c3ca21c8b2a203177485e}
+
+\begin{DoxyCompactList}\small\item\em vector of the indices of the blocks along the diagonal \end{DoxyCompactList}\item 
+\hypertarget{classg2o_1_1SparseBlockMatrixDiagonal_a0679df785f9e7b79a1e9dfe623af5341}{Diagonal\-Vector {\bfseries \-\_\-diagonal}}\label{classg2o_1_1SparseBlockMatrixDiagonal_a0679df785f9e7b79a1e9dfe623af5341}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{详细描述}
+\subsubsection*{template$<$class Matrix\-Type$>$class g2o\-::\-Sparse\-Block\-Matrix\-Diagonal$<$ Matrix\-Type $>$}
+
+Sparse matrix which uses blocks on the diagonal. 
+
+This class is used as a const view on a \hyperlink{classg2o_1_1SparseBlockMatrix}{Sparse\-Block\-Matrix} which allows a faster iteration over the elements of the matrix. 
+
+在文件 sparse\-\_\-block\-\_\-matrix\-\_\-diagonal.\-h 第 47 行定义.
+
+
+
+该类的文档由以下文件生成\-:\begin{DoxyCompactItemize}
+\item 
+Thirdparty/g2o/g2o/core/sparse\-\_\-block\-\_\-matrix\-\_\-diagonal.\-h\end{DoxyCompactItemize}

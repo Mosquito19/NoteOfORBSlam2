@@ -1,0 +1,10 @@
+<map id="g2o::BlockSolver::updateStructure" name="g2o::BlockSolver::updateStructure">
+<area shape="rect" id="node2" href="$classg2o_1_1OptimizableGraph_1_1Vertex.html#a1037b978fec531eaf860d0037b992079" title="dimension of the estimated state belonging to this node " alt="" coords="243,5,397,46"/>
+<area shape="rect" id="node3" href="$classg2o_1_1OptimizableGraph_1_1Vertex.html#a33009d06f2d3682a3c774182c807c48a" title="temporary index of this node in the parameter vector obtained from linearization " alt="" coords="243,70,397,111"/>
+<area shape="rect" id="node4" href="$classg2o_1_1OptimizableGraph_1_1Vertex.html#a1008c0f7981a9fb11be3e3df5c4a9758" title="g2o::OptimizableGraph\l::Vertex::mapHessianMemory" alt="" coords="222,135,418,177"/>
+<area shape="rect" id="node5" href="$classg2o_1_1OptimizableGraph_1_1Edge.html#a3bd233fd552daa166039acf47b69a5a7" title="g2o::OptimizableGraph\l::Edge::mapHessianMemory" alt="" coords="226,201,414,242"/>
+<area shape="rect" id="node6" href="$classg2o_1_1OptimizableGraph_1_1Vertex.html#a214c01f0b3cab575f3496be729f6ccb1" title="true =&gt; this node is marginalized out during the optimization " alt="" coords="243,266,397,307"/>
+<area shape="rect" id="node7" href="$classg2o_1_1OptimizableGraph_1_1Vertex.html#aa605891d46b99ed97accf659f10bc8d5" title="set the row of this vertex in the Hessian " alt="" coords="233,331,407,373"/>
+<area shape="rect" id="node8" href="$classg2o_1_1HyperGraph_1_1Edge.html#aaec0b2c92c5496d0f0fea8f1abdc4311" title="g2o::HyperGraph::Edge\l::vertex" alt="" coords="241,397,399,438"/>
+<area shape="rect" id="node9" href="$classg2o_1_1HyperGraph_1_1Edge.html#a6410bb70a917b5407770ef1f1090b5f5" title="g2o::HyperGraph::Edge\l::vertices" alt="" coords="241,462,399,503"/>
+</map>

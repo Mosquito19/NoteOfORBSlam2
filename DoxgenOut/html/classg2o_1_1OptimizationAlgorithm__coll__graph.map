@@ -1,0 +1,8 @@
+<map id="g2o::OptimizationAlgorithm" name="g2o::OptimizationAlgorithm">
+<area shape="rect" id="node4" href="$classg2o_1_1SparseOptimizer.html" title="g2o::SparseOptimizer" alt="" coords="357,280,504,307"/>
+<area shape="rect" id="node2" href="$classg2o_1_1PropertyMap.html" title="a collection of properties mapping from name to the property itself " alt="" coords="545,99,671,125"/>
+<area shape="rect" id="node5" href="$structg2o_1_1OptimizableGraph.html" title="g2o::OptimizableGraph" alt="" coords="191,189,344,216"/>
+<area shape="rect" id="node6" href="$classg2o_1_1HyperGraph.html" title="g2o::HyperGraph" alt="" coords="5,99,125,125"/>
+<area shape="rect" id="node7" href="$classg2o_1_1JacobianWorkspace.html" title="provide memory workspace for computing the Jacobians " alt="" coords="150,99,319,125"/>
+<area shape="rect" id="node8" href="$classg2o_1_1ParameterContainer.html" title="map id to parameters " alt="" coords="343,99,509,125"/>
+</map>

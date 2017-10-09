@@ -1,0 +1,9 @@
+<map id="DBoW2::TemplatedVocabulary::transform" name="DBoW2::TemplatedVocabulary::transform">
+<area shape="rect" id="node2" href="$classORB__SLAM2_1_1KeyFrame.html#ac376017c23823c05a6bb851ffb2fdd8f" title="Bag of Words Representation. " alt="" coords="290,70,459,111"/>
+<area shape="rect" id="node7" href="$classORB__SLAM2_1_1Frame.html#ac748d2318f9a409406dba4910ff5ef8e" title="Bag of Words Representation. " alt="" coords="257,137,493,164"/>
+<area shape="rect" id="node3" href="$classORB__SLAM2_1_1LocalMapping.html#a84eea8f268cce9d919a4906ae634dd22" title="处理列表中的关键帧 " alt="" coords="541,5,731,46"/>
+<area shape="rect" id="node4" href="$classORB__SLAM2_1_1Tracking.html#afeb077c81cd700d779348b80698086e8" title="CreateInitialMapMonocular. " alt="" coords="543,70,729,111"/>
+<area shape="rect" id="node5" href="$classORB__SLAM2_1_1Tracking.html#a7e81c68bb6ced27fcbfa2edec38ef6e0" title="单目的地图初始化 " alt="" coords="791,69,950,110"/>
+<area shape="rect" id="node6" href="$classORB__SLAM2_1_1Tracking.html#af1f2c9c533642d8c33854540e90d1918" title="Main tracking function. It is independent of the input sensor. " alt="" coords="1011,102,1170,143"/>
+<area shape="rect" id="node8" href="$classORB__SLAM2_1_1Tracking.html#a737c5409c93844353561a0fe724ed1c2" title="对参考关键帧的MapPoints进行跟踪 " alt="" coords="779,134,962,175"/>
+</map>

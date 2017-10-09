@@ -1,0 +1,985 @@
+\hypertarget{classORB__SLAM2_1_1Tracking}{\section{O\-R\-B\-\_\-\-S\-L\-A\-M2\-:\-:Tracking类 参考}
+\label{classORB__SLAM2_1_1Tracking}\index{O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Tracking@{O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Tracking}}
+}
+
+
+O\-R\-B\-\_\-\-S\-L\-A\-M2\-:\-:Tracking 的协作图\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classORB__SLAM2_1_1Tracking__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public 类型}
+\begin{DoxyCompactItemize}
+\item 
+enum {\bfseries e\-Tracking\-State} \{ \\*
+{\bfseries S\-Y\-S\-T\-E\-M\-\_\-\-N\-O\-T\-\_\-\-R\-E\-A\-D\-Y} =-\/1, 
+{\bfseries N\-O\-\_\-\-I\-M\-A\-G\-E\-S\-\_\-\-Y\-E\-T} =0, 
+{\bfseries N\-O\-T\-\_\-\-I\-N\-I\-T\-I\-A\-L\-I\-Z\-E\-D} =1, 
+{\bfseries O\-K} =2, 
+\\*
+{\bfseries L\-O\-S\-T} =3
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classORB__SLAM2_1_1Tracking_a2e5ff2f26f1518166a028911b830c5b1}{{\bfseries Tracking} (\hyperlink{classORB__SLAM2_1_1System}{System} $\ast$p\-Sys, \hyperlink{classDBoW2_1_1TemplatedVocabulary}{O\-R\-B\-Vocabulary} $\ast$p\-Voc, \hyperlink{classORB__SLAM2_1_1FrameDrawer}{Frame\-Drawer} $\ast$p\-Frame\-Drawer, \hyperlink{classORB__SLAM2_1_1MapDrawer}{Map\-Drawer} $\ast$p\-Map\-Drawer, \hyperlink{classORB__SLAM2_1_1Map}{Map} $\ast$p\-Map, \hyperlink{classORB__SLAM2_1_1KeyFrameDatabase}{Key\-Frame\-Database} $\ast$p\-K\-F\-D\-B, const string \&str\-Setting\-Path, const int sensor)}\label{classORB__SLAM2_1_1Tracking_a2e5ff2f26f1518166a028911b830c5b1}
+
+\item 
+\hypertarget{classORB__SLAM2_1_1Tracking_a7cba47a41978fc1c83f47547813aff2c}{cv\-::\-Mat {\bfseries Grab\-Image\-Stereo} (const cv\-::\-Mat \&im\-Rect\-Left, const cv\-::\-Mat \&im\-Rect\-Right, const double \&timestamp)}\label{classORB__SLAM2_1_1Tracking_a7cba47a41978fc1c83f47547813aff2c}
+
+\item 
+\hypertarget{classORB__SLAM2_1_1Tracking_a99cf542c9a7cc551745877cc11ce8ef9}{cv\-::\-Mat {\bfseries Grab\-Image\-R\-G\-B\-D} (const cv\-::\-Mat \&im\-R\-G\-B, const cv\-::\-Mat \&im\-D, const double \&timestamp)}\label{classORB__SLAM2_1_1Tracking_a99cf542c9a7cc551745877cc11ce8ef9}
+
+\item 
+\hypertarget{classORB__SLAM2_1_1Tracking_ad3de28bf6f7638c4da2248c9d595f394}{cv\-::\-Mat {\bfseries Grab\-Image\-Monocular} (const cv\-::\-Mat \&im, const double \&timestamp)}\label{classORB__SLAM2_1_1Tracking_ad3de28bf6f7638c4da2248c9d595f394}
+
+\item 
+\hypertarget{classORB__SLAM2_1_1Tracking_a95061551f3756408221df3b1a996b777}{void {\bfseries Set\-Local\-Mapper} (\hyperlink{classORB__SLAM2_1_1LocalMapping}{Local\-Mapping} $\ast$p\-Local\-Mapper)}\label{classORB__SLAM2_1_1Tracking_a95061551f3756408221df3b1a996b777}
+
+\item 
+\hypertarget{classORB__SLAM2_1_1Tracking_a92b878e0559740646f8b1c635ac068dc}{void {\bfseries Set\-Loop\-Closing} (\hyperlink{classORB__SLAM2_1_1LoopClosing}{Loop\-Closing} $\ast$p\-Loop\-Closing)}\label{classORB__SLAM2_1_1Tracking_a92b878e0559740646f8b1c635ac068dc}
+
+\item 
+\hypertarget{classORB__SLAM2_1_1Tracking_ac86c2461ac6cf3bec906759f4fbea15c}{void {\bfseries Set\-Viewer} (\hyperlink{classORB__SLAM2_1_1Viewer}{Viewer} $\ast$p\-Viewer)}\label{classORB__SLAM2_1_1Tracking_ac86c2461ac6cf3bec906759f4fbea15c}
+
+\item 
+\hypertarget{classORB__SLAM2_1_1Tracking_a7be9bebf51fda1413d253224cdacf7cd}{void {\bfseries Change\-Calibration} (const string \&str\-Setting\-Path)}\label{classORB__SLAM2_1_1Tracking_a7be9bebf51fda1413d253224cdacf7cd}
+
+\item 
+\hypertarget{classORB__SLAM2_1_1Tracking_abb047099ca3376f7aabc9a90c74aecfc}{void {\bfseries Inform\-Only\-Tracking} (const bool \&flag)}\label{classORB__SLAM2_1_1Tracking_abb047099ca3376f7aabc9a90c74aecfc}
+
+\item 
+\hypertarget{classORB__SLAM2_1_1Tracking_a899967ca49b1c3446854ecce3873323c}{void {\bfseries Reset} ()}\label{classORB__SLAM2_1_1Tracking_a899967ca49b1c3446854ecce3873323c}
+
+\end{DoxyCompactItemize}
+\subsection*{Public 属性}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classORB__SLAM2_1_1Tracking_a37cadc53a335fd802fed2fd9b24e93e1}{e\-Tracking\-State {\bfseries m\-State}}\label{classORB__SLAM2_1_1Tracking_a37cadc53a335fd802fed2fd9b24e93e1}
+
+\item 
+\hypertarget{classORB__SLAM2_1_1Tracking_a98be1e579a7e9271449d079c4f3c8769}{e\-Tracking\-State {\bfseries m\-Last\-Processed\-State}}\label{classORB__SLAM2_1_1Tracking_a98be1e579a7e9271449d079c4f3c8769}
+
+\item 
+\hypertarget{classORB__SLAM2_1_1Tracking_a18bffeb950dd18e5d74807cd9741c013}{int {\bfseries m\-Sensor}}\label{classORB__SLAM2_1_1Tracking_a18bffeb950dd18e5d74807cd9741c013}
+
+\item 
+\hypertarget{classORB__SLAM2_1_1Tracking_ad21299ab1995c8fb7115bda57773d307}{\hyperlink{classORB__SLAM2_1_1Frame}{Frame} {\bfseries m\-Current\-Frame}}\label{classORB__SLAM2_1_1Tracking_ad21299ab1995c8fb7115bda57773d307}
+
+\item 
+\hypertarget{classORB__SLAM2_1_1Tracking_af7ef78c9eed81f0701a1d12b3f377875}{cv\-::\-Mat {\bfseries m\-Im\-Gray}}\label{classORB__SLAM2_1_1Tracking_af7ef78c9eed81f0701a1d12b3f377875}
+
+\item 
+\hypertarget{classORB__SLAM2_1_1Tracking_ace08a986d9cbe3fe578c189242b94489}{std\-::vector$<$ int $>$ {\bfseries mv\-Ini\-Last\-Matches}}\label{classORB__SLAM2_1_1Tracking_ace08a986d9cbe3fe578c189242b94489}
+
+\item 
+\hypertarget{classORB__SLAM2_1_1Tracking_a1c89fa1b3512238f15283857ed94c79a}{std\-::vector$<$ int $>$ {\bfseries mv\-Ini\-Matches}}\label{classORB__SLAM2_1_1Tracking_a1c89fa1b3512238f15283857ed94c79a}
+
+\item 
+\hypertarget{classORB__SLAM2_1_1Tracking_a9ee7c26c1db845fef73c55ee0bb5c9f2}{std\-::vector$<$ cv\-::\-Point2f $>$ {\bfseries mvb\-Prev\-Matched}}\label{classORB__SLAM2_1_1Tracking_a9ee7c26c1db845fef73c55ee0bb5c9f2}
+
+\item 
+\hypertarget{classORB__SLAM2_1_1Tracking_adced44c2c047c18f3db6c7bfd7b289f0}{std\-::vector$<$ cv\-::\-Point3f $>$ {\bfseries mv\-Ini\-P3\-D}}\label{classORB__SLAM2_1_1Tracking_adced44c2c047c18f3db6c7bfd7b289f0}
+
+\item 
+\hypertarget{classORB__SLAM2_1_1Tracking_a691ba65eb45f76829c8a2622f42ba446}{\hyperlink{classORB__SLAM2_1_1Frame}{Frame} {\bfseries m\-Initial\-Frame}}\label{classORB__SLAM2_1_1Tracking_a691ba65eb45f76829c8a2622f42ba446}
+
+\item 
+\hypertarget{classORB__SLAM2_1_1Tracking_a5e0bb2d9fe720c4f4dc9eef57ad1f168}{list$<$ cv\-::\-Mat $>$ {\bfseries ml\-Relative\-Frame\-Poses}}\label{classORB__SLAM2_1_1Tracking_a5e0bb2d9fe720c4f4dc9eef57ad1f168}
+
+\item 
+\hypertarget{classORB__SLAM2_1_1Tracking_ad214f6515a2cf4996d0c7765d9de73a8}{list$<$ \hyperlink{classORB__SLAM2_1_1KeyFrame}{Key\-Frame} $\ast$ $>$ {\bfseries mlp\-References}}\label{classORB__SLAM2_1_1Tracking_ad214f6515a2cf4996d0c7765d9de73a8}
+
+\item 
+\hypertarget{classORB__SLAM2_1_1Tracking_ae867f703e70c18b7ff0798191807cb4d}{list$<$ double $>$ {\bfseries ml\-Frame\-Times}}\label{classORB__SLAM2_1_1Tracking_ae867f703e70c18b7ff0798191807cb4d}
+
+\item 
+\hypertarget{classORB__SLAM2_1_1Tracking_aca83e100e47cfcc0cba1bcfac72764cc}{list$<$ bool $>$ {\bfseries mlb\-Lost}}\label{classORB__SLAM2_1_1Tracking_aca83e100e47cfcc0cba1bcfac72764cc}
+
+\item 
+\hypertarget{classORB__SLAM2_1_1Tracking_ae8c6db8ff320af10acacd5078a0801f6}{bool {\bfseries mb\-Only\-Tracking}}\label{classORB__SLAM2_1_1Tracking_ae8c6db8ff320af10acacd5078a0801f6}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classORB__SLAM2_1_1Tracking_af1f2c9c533642d8c33854540e90d1918}{Track} ()
+\begin{DoxyCompactList}\small\item\em Main tracking function. It is independent of the input sensor. \end{DoxyCompactList}\item 
+void \hyperlink{classORB__SLAM2_1_1Tracking_ad3da849e4204d766e5db4ac47b52132c}{Stereo\-Initialization} ()
+\begin{DoxyCompactList}\small\item\em 双目和rgbd的地图初始化 \end{DoxyCompactList}\item 
+void \hyperlink{classORB__SLAM2_1_1Tracking_a7e81c68bb6ced27fcbfa2edec38ef6e0}{Monocular\-Initialization} ()
+\begin{DoxyCompactList}\small\item\em 单目的地图初始化 \end{DoxyCompactList}\item 
+void \hyperlink{classORB__SLAM2_1_1Tracking_afeb077c81cd700d779348b80698086e8}{Create\-Initial\-Map\-Monocular} ()
+\begin{DoxyCompactList}\small\item\em Create\-Initial\-Map\-Monocular. \end{DoxyCompactList}\item 
+void \hyperlink{classORB__SLAM2_1_1Tracking_a2ca003d3234b2e8444f70dcd2132126f}{Check\-Replaced\-In\-Last\-Frame} ()
+\begin{DoxyCompactList}\small\item\em 检查上一帧中的\-Map\-Points是否被替换 \end{DoxyCompactList}\item 
+bool \hyperlink{classORB__SLAM2_1_1Tracking_a737c5409c93844353561a0fe724ed1c2}{Track\-Reference\-Key\-Frame} ()
+\begin{DoxyCompactList}\small\item\em 对参考关键帧的\-Map\-Points进行跟踪 \end{DoxyCompactList}\item 
+void \hyperlink{classORB__SLAM2_1_1Tracking_aa84a20277d5bd022b527d79a58830bc5}{Update\-Last\-Frame} ()
+\begin{DoxyCompactList}\small\item\em 双目或rgbd摄像头根据深度值为上一帧产生新的\-Map\-Points \end{DoxyCompactList}\item 
+bool \hyperlink{classORB__SLAM2_1_1Tracking_aca19f1d69b30a6c6e49281d422ac8298}{Track\-With\-Motion\-Model} ()
+\begin{DoxyCompactList}\small\item\em 根据匀速度模型对上一帧的\-Map\-Points进行跟踪 \end{DoxyCompactList}\item 
+\hypertarget{classORB__SLAM2_1_1Tracking_acd4ea9e7097bed16428a4b78fe4b6a67}{bool {\bfseries Relocalization} ()}\label{classORB__SLAM2_1_1Tracking_acd4ea9e7097bed16428a4b78fe4b6a67}
+
+\item 
+void \hyperlink{classORB__SLAM2_1_1Tracking_a22723e9972c18a888dd51a82eec27b0a}{Update\-Local\-Map} ()
+\begin{DoxyCompactList}\small\item\em 更新\-Local\-Map \end{DoxyCompactList}\item 
+void \hyperlink{classORB__SLAM2_1_1Tracking_a25843575116bf18c065d6cc7645f5b26}{Update\-Local\-Points} ()
+\begin{DoxyCompactList}\small\item\em 更新局部关键点，called by \hyperlink{classORB__SLAM2_1_1Tracking_a22723e9972c18a888dd51a82eec27b0a}{Update\-Local\-Map()} \end{DoxyCompactList}\item 
+void \hyperlink{classORB__SLAM2_1_1Tracking_a42bed56bbbe8282eb77733e7168d8599}{Update\-Local\-Key\-Frames} ()
+\begin{DoxyCompactList}\small\item\em 更新局部关键帧，called by \hyperlink{classORB__SLAM2_1_1Tracking_a22723e9972c18a888dd51a82eec27b0a}{Update\-Local\-Map()} \end{DoxyCompactList}\item 
+bool \hyperlink{classORB__SLAM2_1_1Tracking_af670c614f4e10d58c9f7aad9865b5c08}{Track\-Local\-Map} ()
+\begin{DoxyCompactList}\small\item\em 对\-Local Map的\-Map\-Points进行跟踪 \end{DoxyCompactList}\item 
+void \hyperlink{classORB__SLAM2_1_1Tracking_a451c0e5372c24645c7634fcebc8fa847}{Search\-Local\-Points} ()
+\begin{DoxyCompactList}\small\item\em 对\-Local Map\-Points进行跟踪 \end{DoxyCompactList}\item 
+bool \hyperlink{classORB__SLAM2_1_1Tracking_afc013c5a20bc6beb772b96a875b19216}{Need\-New\-Key\-Frame} ()
+\begin{DoxyCompactList}\small\item\em 断当前帧是否为关键帧 \end{DoxyCompactList}\item 
+void \hyperlink{classORB__SLAM2_1_1Tracking_a8c7fb6c4b1f952524512023df690bf4d}{Create\-New\-Key\-Frame} ()
+\begin{DoxyCompactList}\small\item\em 创建新的关键帧 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected 属性}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classORB__SLAM2_1_1Tracking_a44ad79261b565797bdf53d503f6defca}{bool {\bfseries mb\-V\-O}}\label{classORB__SLAM2_1_1Tracking_a44ad79261b565797bdf53d503f6defca}
+
+\item 
+\hypertarget{classORB__SLAM2_1_1Tracking_a83692a6e9626c3c11b329d3b0a35c2f1}{\hyperlink{classORB__SLAM2_1_1LocalMapping}{Local\-Mapping} $\ast$ {\bfseries mp\-Local\-Mapper}}\label{classORB__SLAM2_1_1Tracking_a83692a6e9626c3c11b329d3b0a35c2f1}
+
+\item 
+\hypertarget{classORB__SLAM2_1_1Tracking_aed45d56071fcbba3db0552726c897e0d}{\hyperlink{classORB__SLAM2_1_1LoopClosing}{Loop\-Closing} $\ast$ {\bfseries mp\-Loop\-Closing}}\label{classORB__SLAM2_1_1Tracking_aed45d56071fcbba3db0552726c897e0d}
+
+\item 
+\hypertarget{classORB__SLAM2_1_1Tracking_abd41b4020d02e8ca272263964ae400b2}{\hyperlink{classORB__SLAM2_1_1ORBextractor}{O\-R\-Bextractor} $\ast$ {\bfseries mp\-O\-R\-Bextractor\-Left}}\label{classORB__SLAM2_1_1Tracking_abd41b4020d02e8ca272263964ae400b2}
+
+\item 
+\hypertarget{classORB__SLAM2_1_1Tracking_a6eaa5950f4ed2503392ecf240914ddac}{\hyperlink{classORB__SLAM2_1_1ORBextractor}{O\-R\-Bextractor} $\ast$ {\bfseries mp\-O\-R\-Bextractor\-Right}}\label{classORB__SLAM2_1_1Tracking_a6eaa5950f4ed2503392ecf240914ddac}
+
+\item 
+\hypertarget{classORB__SLAM2_1_1Tracking_a8d25e231894baf85a6a48ab57ce0ddb3}{\hyperlink{classORB__SLAM2_1_1ORBextractor}{O\-R\-Bextractor} $\ast$ {\bfseries mp\-Ini\-O\-R\-Bextractor}}\label{classORB__SLAM2_1_1Tracking_a8d25e231894baf85a6a48ab57ce0ddb3}
+
+\item 
+\hypertarget{classORB__SLAM2_1_1Tracking_a79358a4f15c71538e37e874a5646f43e}{\hyperlink{classDBoW2_1_1TemplatedVocabulary}{O\-R\-B\-Vocabulary} $\ast$ {\bfseries mp\-O\-R\-B\-Vocabulary}}\label{classORB__SLAM2_1_1Tracking_a79358a4f15c71538e37e874a5646f43e}
+
+\item 
+\hypertarget{classORB__SLAM2_1_1Tracking_a0ee7e13527e3bb18adb24bc511fd5800}{\hyperlink{classORB__SLAM2_1_1KeyFrameDatabase}{Key\-Frame\-Database} $\ast$ {\bfseries mp\-Key\-Frame\-D\-B}}\label{classORB__SLAM2_1_1Tracking_a0ee7e13527e3bb18adb24bc511fd5800}
+
+\item 
+\hypertarget{classORB__SLAM2_1_1Tracking_a9194420033fe0d556053685844a534be}{\hyperlink{classORB__SLAM2_1_1Initializer}{Initializer} $\ast$ {\bfseries mp\-Initializer}}\label{classORB__SLAM2_1_1Tracking_a9194420033fe0d556053685844a534be}
+
+\item 
+\hypertarget{classORB__SLAM2_1_1Tracking_ade9676c7c26eb653beddaa05b37ecc08}{\hyperlink{classORB__SLAM2_1_1KeyFrame}{Key\-Frame} $\ast$ {\bfseries mp\-Reference\-K\-F}}\label{classORB__SLAM2_1_1Tracking_ade9676c7c26eb653beddaa05b37ecc08}
+
+\item 
+\hypertarget{classORB__SLAM2_1_1Tracking_a46ade9f7ec2c89544ae77f2906000b3a}{std\-::vector$<$ \hyperlink{classORB__SLAM2_1_1KeyFrame}{Key\-Frame} $\ast$ $>$ {\bfseries mvp\-Local\-Key\-Frames}}\label{classORB__SLAM2_1_1Tracking_a46ade9f7ec2c89544ae77f2906000b3a}
+
+\item 
+\hypertarget{classORB__SLAM2_1_1Tracking_a89074acc520094ba0d0fc7f4c0f8cf09}{std\-::vector$<$ \hyperlink{classORB__SLAM2_1_1MapPoint}{Map\-Point} $\ast$ $>$ {\bfseries mvp\-Local\-Map\-Points}}\label{classORB__SLAM2_1_1Tracking_a89074acc520094ba0d0fc7f4c0f8cf09}
+
+\item 
+\hypertarget{classORB__SLAM2_1_1Tracking_a1ab3d15e53005d5147620b0ee37c33ed}{\hyperlink{classORB__SLAM2_1_1System}{System} $\ast$ {\bfseries mp\-System}}\label{classORB__SLAM2_1_1Tracking_a1ab3d15e53005d5147620b0ee37c33ed}
+
+\item 
+\hypertarget{classORB__SLAM2_1_1Tracking_a4952ab24b73effdbba6266e2fb26548e}{\hyperlink{classORB__SLAM2_1_1Viewer}{Viewer} $\ast$ {\bfseries mp\-Viewer}}\label{classORB__SLAM2_1_1Tracking_a4952ab24b73effdbba6266e2fb26548e}
+
+\item 
+\hypertarget{classORB__SLAM2_1_1Tracking_afc0759bfbd1d8d83e86c9d677a35429b}{\hyperlink{classORB__SLAM2_1_1FrameDrawer}{Frame\-Drawer} $\ast$ {\bfseries mp\-Frame\-Drawer}}\label{classORB__SLAM2_1_1Tracking_afc0759bfbd1d8d83e86c9d677a35429b}
+
+\item 
+\hypertarget{classORB__SLAM2_1_1Tracking_a3fb103211ff7b984910943f0975d5ceb}{\hyperlink{classORB__SLAM2_1_1MapDrawer}{Map\-Drawer} $\ast$ {\bfseries mp\-Map\-Drawer}}\label{classORB__SLAM2_1_1Tracking_a3fb103211ff7b984910943f0975d5ceb}
+
+\item 
+\hypertarget{classORB__SLAM2_1_1Tracking_acc0b5ae59012946da8238d84a331d72c}{\hyperlink{classORB__SLAM2_1_1Map}{Map} $\ast$ {\bfseries mp\-Map}}\label{classORB__SLAM2_1_1Tracking_acc0b5ae59012946da8238d84a331d72c}
+
+\item 
+\hypertarget{classORB__SLAM2_1_1Tracking_a6926ae3c49c09bf9f402d13900740405}{cv\-::\-Mat {\bfseries m\-K}}\label{classORB__SLAM2_1_1Tracking_a6926ae3c49c09bf9f402d13900740405}
+
+\item 
+\hypertarget{classORB__SLAM2_1_1Tracking_a7df0851817d1a1345324c196b6a79c3a}{cv\-::\-Mat {\bfseries m\-Dist\-Coef}}\label{classORB__SLAM2_1_1Tracking_a7df0851817d1a1345324c196b6a79c3a}
+
+\item 
+\hypertarget{classORB__SLAM2_1_1Tracking_a8de5f87734670485f6b6097b14dd1fcb}{float {\bfseries mbf}}\label{classORB__SLAM2_1_1Tracking_a8de5f87734670485f6b6097b14dd1fcb}
+
+\item 
+\hypertarget{classORB__SLAM2_1_1Tracking_a53369ce9ebf152a1a76e93445821e395}{int {\bfseries m\-Min\-Frames}}\label{classORB__SLAM2_1_1Tracking_a53369ce9ebf152a1a76e93445821e395}
+
+\item 
+\hypertarget{classORB__SLAM2_1_1Tracking_a8a96fe16c7ed5c29d8714c1af036f1da}{int {\bfseries m\-Max\-Frames}}\label{classORB__SLAM2_1_1Tracking_a8a96fe16c7ed5c29d8714c1af036f1da}
+
+\item 
+\hypertarget{classORB__SLAM2_1_1Tracking_aded3124bdf36aba88411327024a7c2d3}{float {\bfseries m\-Th\-Depth}}\label{classORB__SLAM2_1_1Tracking_aded3124bdf36aba88411327024a7c2d3}
+
+\item 
+\hypertarget{classORB__SLAM2_1_1Tracking_abbe2cb26c58f023bab9c95b251778208}{float {\bfseries m\-Depth\-Map\-Factor}}\label{classORB__SLAM2_1_1Tracking_abbe2cb26c58f023bab9c95b251778208}
+
+\item 
+\hypertarget{classORB__SLAM2_1_1Tracking_ad58b66226a6345581227560aae2ea72f}{int {\bfseries mn\-Matches\-Inliers}}\label{classORB__SLAM2_1_1Tracking_ad58b66226a6345581227560aae2ea72f}
+
+\item 
+\hypertarget{classORB__SLAM2_1_1Tracking_aa833de1f76843c64dbcc1631c12de7fd}{\hyperlink{classORB__SLAM2_1_1KeyFrame}{Key\-Frame} $\ast$ {\bfseries mp\-Last\-Key\-Frame}}\label{classORB__SLAM2_1_1Tracking_aa833de1f76843c64dbcc1631c12de7fd}
+
+\item 
+\hypertarget{classORB__SLAM2_1_1Tracking_a4f0a80cfb3ddadcb43d7745d15ac9f35}{\hyperlink{classORB__SLAM2_1_1Frame}{Frame} {\bfseries m\-Last\-Frame}}\label{classORB__SLAM2_1_1Tracking_a4f0a80cfb3ddadcb43d7745d15ac9f35}
+
+\item 
+\hypertarget{classORB__SLAM2_1_1Tracking_abe5270bc94032722923f43efe7a7bac6}{unsigned int {\bfseries mn\-Last\-Key\-Frame\-Id}}\label{classORB__SLAM2_1_1Tracking_abe5270bc94032722923f43efe7a7bac6}
+
+\item 
+\hypertarget{classORB__SLAM2_1_1Tracking_af95975f569dcc3e378c556b8199604b2}{unsigned int {\bfseries mn\-Last\-Reloc\-Frame\-Id}}\label{classORB__SLAM2_1_1Tracking_af95975f569dcc3e378c556b8199604b2}
+
+\item 
+\hypertarget{classORB__SLAM2_1_1Tracking_ac2283c13ccf08207c90a6a163d8dbe3c}{cv\-::\-Mat {\bfseries m\-Velocity}}\label{classORB__SLAM2_1_1Tracking_ac2283c13ccf08207c90a6a163d8dbe3c}
+
+\item 
+\hypertarget{classORB__SLAM2_1_1Tracking_a01522faf940cc80402f0750b0d90ecf2}{bool {\bfseries mb\-R\-G\-B}}\label{classORB__SLAM2_1_1Tracking_a01522faf940cc80402f0750b0d90ecf2}
+
+\item 
+\hypertarget{classORB__SLAM2_1_1Tracking_aadc2690944688adbebeef4a60bdf3cad}{list$<$ \hyperlink{classORB__SLAM2_1_1MapPoint}{Map\-Point} $\ast$ $>$ {\bfseries mlp\-Temporal\-Points}}\label{classORB__SLAM2_1_1Tracking_aadc2690944688adbebeef4a60bdf3cad}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{详细描述}
+
+
+在文件 Tracking.\-h 第 53 行定义.
+
+
+
+\subsection{成员函数说明}
+\hypertarget{classORB__SLAM2_1_1Tracking_a2ca003d3234b2e8444f70dcd2132126f}{\index{O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Tracking@{O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Tracking}!Check\-Replaced\-In\-Last\-Frame@{Check\-Replaced\-In\-Last\-Frame}}
+\index{Check\-Replaced\-In\-Last\-Frame@{Check\-Replaced\-In\-Last\-Frame}!ORB_SLAM2::Tracking@{O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Tracking}}
+\subsubsection[{Check\-Replaced\-In\-Last\-Frame}]{\setlength{\rightskip}{0pt plus 5cm}void O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Tracking\-::\-Check\-Replaced\-In\-Last\-Frame (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classORB__SLAM2_1_1Tracking_a2ca003d3234b2e8444f70dcd2132126f}
+
+
+检查上一帧中的\-Map\-Points是否被替换 
+
+Local Mapping线程可能会将关键帧中某些\-Map\-Points进行替换，由于tracking中需要用到m\-Last\-Frame，这里检查并更新上一帧中被替换的\-Map\-Points \begin{DoxySeeAlso}{参见}
+\hyperlink{classORB__SLAM2_1_1LocalMapping_a5d5e0bc6fd15d9a6bf1ca8a258f104f1}{Local\-Mapping\-::\-Search\-In\-Neighbors()} 
+\end{DoxySeeAlso}
+
+
+在文件 Tracking.\-cpp 第 956 行定义.
+
+
+
+参考 O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Frame\-::\-N.
+
+
+
+参考自 Track().
+
+
+
+这是这个函数的调用关系图\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classORB__SLAM2_1_1Tracking_a2ca003d3234b2e8444f70dcd2132126f_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classORB__SLAM2_1_1Tracking_afeb077c81cd700d779348b80698086e8}{\index{O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Tracking@{O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Tracking}!Create\-Initial\-Map\-Monocular@{Create\-Initial\-Map\-Monocular}}
+\index{Create\-Initial\-Map\-Monocular@{Create\-Initial\-Map\-Monocular}!ORB_SLAM2::Tracking@{O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Tracking}}
+\subsubsection[{Create\-Initial\-Map\-Monocular}]{\setlength{\rightskip}{0pt plus 5cm}void O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Tracking\-::\-Create\-Initial\-Map\-Monocular (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classORB__SLAM2_1_1Tracking_afeb077c81cd700d779348b80698086e8}
+
+
+Create\-Initial\-Map\-Monocular. 
+
+为单目摄像头三角化生成\-Map\-Points mv\-Ini\-Matches\mbox{[}I\mbox{]}里面的值 -\/1 -\/1 383 385.。。。表示\-Mathcde索引值。
+
+对应的 mv\-Ini\-P3\-D\mbox{[}I\mbox{]}里面的值，就是3\-D点 （0,0,0) （0,0,0) （-\/1.5,0.\-7,25)。。。
+
+pkfini中是 Add\-Map\-Point(pmp,4);而pkfcur中是\-Add\-Map\-Point(pmp,384);
+
+关键帧里面添加地图点 
+
+在文件 Tracking.\-cpp 第 825 行定义.
+
+
+
+参考 O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Map\-::\-Add\-Key\-Frame(), O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Map\-::\-Add\-Map\-Point(), O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Key\-Frame\-::\-Add\-Map\-Point(), O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Map\-Point\-::\-Add\-Observation(), O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Key\-Frame\-::\-Compute\-Bo\-W(), O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Map\-Point\-::\-Compute\-Distinctive\-Descriptors(), O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Key\-Frame\-::\-Compute\-Scene\-Median\-Depth(), O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Key\-Frame\-::\-Get\-Map\-Point\-Matches(), O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Local\-Mapping\-::\-Insert\-Key\-Frame(), O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Frame\-::mn\-Id, O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Frame\-::\-Set\-Pose(), O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Map\-::\-Set\-Reference\-Map\-Points(), O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Key\-Frame\-::\-Update\-Connections() , 以及 O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Map\-Point\-::\-Update\-Normal\-And\-Depth().
+
+
+
+参考自 Monocular\-Initialization().
+
+
+
+函数调用图\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classORB__SLAM2_1_1Tracking_afeb077c81cd700d779348b80698086e8_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+这是这个函数的调用关系图\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classORB__SLAM2_1_1Tracking_afeb077c81cd700d779348b80698086e8_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classORB__SLAM2_1_1Tracking_a8c7fb6c4b1f952524512023df690bf4d}{\index{O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Tracking@{O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Tracking}!Create\-New\-Key\-Frame@{Create\-New\-Key\-Frame}}
+\index{Create\-New\-Key\-Frame@{Create\-New\-Key\-Frame}!ORB_SLAM2::Tracking@{O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Tracking}}
+\subsubsection[{Create\-New\-Key\-Frame}]{\setlength{\rightskip}{0pt plus 5cm}void O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Tracking\-::\-Create\-New\-Key\-Frame (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classORB__SLAM2_1_1Tracking_a8c7fb6c4b1f952524512023df690bf4d}
+
+
+创建新的关键帧 
+
+对于非单目的情况，同时创建新的\-Map\-Points 
+
+在文件 Tracking.\-cpp 第 1402 行定义.
+
+
+
+参考 O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Map\-::\-Add\-Map\-Point(), O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Key\-Frame\-::\-Add\-Map\-Point(), O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Map\-Point\-::\-Add\-Observation(), O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Map\-Point\-::\-Compute\-Distinctive\-Descriptors(), O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Local\-Mapping\-::\-Insert\-Key\-Frame(), O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Frame\-::mn\-Id, O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Frame\-::\-N, O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Frame\-::\-Unproject\-Stereo(), O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Map\-Point\-::\-Update\-Normal\-And\-Depth() , 以及 O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Frame\-::\-Update\-Pose\-Matrices().
+
+
+
+参考自 Track().
+
+
+
+函数调用图\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classORB__SLAM2_1_1Tracking_a8c7fb6c4b1f952524512023df690bf4d_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+这是这个函数的调用关系图\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classORB__SLAM2_1_1Tracking_a8c7fb6c4b1f952524512023df690bf4d_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classORB__SLAM2_1_1Tracking_a7e81c68bb6ced27fcbfa2edec38ef6e0}{\index{O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Tracking@{O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Tracking}!Monocular\-Initialization@{Monocular\-Initialization}}
+\index{Monocular\-Initialization@{Monocular\-Initialization}!ORB_SLAM2::Tracking@{O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Tracking}}
+\subsubsection[{Monocular\-Initialization}]{\setlength{\rightskip}{0pt plus 5cm}void O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Tracking\-::\-Monocular\-Initialization (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classORB__SLAM2_1_1Tracking_a7e81c68bb6ced27fcbfa2edec38ef6e0}
+
+
+单目的地图初始化 
+
+并行地计算基础矩阵和单应性矩阵，选取其中一个模型，恢复出最开始两帧之间的相对姿态以及点云 得到初始两帧的匹配、相对运动、初始\-Map\-Points 
+
+在文件 Tracking.\-cpp 第 725 行定义.
+
+
+
+参考 Create\-Initial\-Map\-Monocular(), O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Initializer\-::\-Initialize(), O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-O\-R\-Bmatcher\-::\-Search\-For\-Initialization() , 以及 O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Frame\-::\-Set\-Pose().
+
+
+
+参考自 Track().
+
+
+
+函数调用图\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classORB__SLAM2_1_1Tracking_a7e81c68bb6ced27fcbfa2edec38ef6e0_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+这是这个函数的调用关系图\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classORB__SLAM2_1_1Tracking_a7e81c68bb6ced27fcbfa2edec38ef6e0_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classORB__SLAM2_1_1Tracking_afc013c5a20bc6beb772b96a875b19216}{\index{O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Tracking@{O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Tracking}!Need\-New\-Key\-Frame@{Need\-New\-Key\-Frame}}
+\index{Need\-New\-Key\-Frame@{Need\-New\-Key\-Frame}!ORB_SLAM2::Tracking@{O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Tracking}}
+\subsubsection[{Need\-New\-Key\-Frame}]{\setlength{\rightskip}{0pt plus 5cm}bool O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Tracking\-::\-Need\-New\-Key\-Frame (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classORB__SLAM2_1_1Tracking_afc013c5a20bc6beb772b96a875b19216}
+
+
+断当前帧是否为关键帧 
+
+\begin{DoxyReturn}{返回}
+true if needed 
+\end{DoxyReturn}
+
+
+在文件 Tracking.\-cpp 第 1276 行定义.
+
+
+
+参考 O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Frame\-::mn\-Id, O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Frame\-::\-N , 以及 O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Key\-Frame\-::\-Tracked\-Map\-Points().
+
+
+
+参考自 Track().
+
+
+
+函数调用图\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classORB__SLAM2_1_1Tracking_afc013c5a20bc6beb772b96a875b19216_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+这是这个函数的调用关系图\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classORB__SLAM2_1_1Tracking_afc013c5a20bc6beb772b96a875b19216_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classORB__SLAM2_1_1Tracking_a451c0e5372c24645c7634fcebc8fa847}{\index{O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Tracking@{O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Tracking}!Search\-Local\-Points@{Search\-Local\-Points}}
+\index{Search\-Local\-Points@{Search\-Local\-Points}!ORB_SLAM2::Tracking@{O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Tracking}}
+\subsubsection[{Search\-Local\-Points}]{\setlength{\rightskip}{0pt plus 5cm}void O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Tracking\-::\-Search\-Local\-Points (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classORB__SLAM2_1_1Tracking_a451c0e5372c24645c7634fcebc8fa847}
+
+
+对\-Local Map\-Points进行跟踪 
+
+在局部地图中查找在当前帧视野范围内的点，将视野范围内的点和当前帧的特征点进行投影匹配 
+
+在文件 Tracking.\-cpp 第 1502 行定义.
+
+
+
+参考 O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Map\-Point\-::\-Increase\-Visible(), O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Frame\-::is\-In\-Frustum(), O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Frame\-::mn\-Id , 以及 O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-O\-R\-Bmatcher\-::\-Search\-By\-Projection().
+
+
+
+参考自 Track\-Local\-Map().
+
+
+
+函数调用图\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classORB__SLAM2_1_1Tracking_a451c0e5372c24645c7634fcebc8fa847_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+这是这个函数的调用关系图\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classORB__SLAM2_1_1Tracking_a451c0e5372c24645c7634fcebc8fa847_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classORB__SLAM2_1_1Tracking_ad3da849e4204d766e5db4ac47b52132c}{\index{O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Tracking@{O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Tracking}!Stereo\-Initialization@{Stereo\-Initialization}}
+\index{Stereo\-Initialization@{Stereo\-Initialization}!ORB_SLAM2::Tracking@{O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Tracking}}
+\subsubsection[{Stereo\-Initialization}]{\setlength{\rightskip}{0pt plus 5cm}void O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Tracking\-::\-Stereo\-Initialization (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classORB__SLAM2_1_1Tracking_ad3da849e4204d766e5db4ac47b52132c}
+
+
+双目和rgbd的地图初始化 
+
+由于具有深度信息，直接生成\-Map\-Points 
+
+在文件 Tracking.\-cpp 第 637 行定义.
+
+
+
+参考 O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Map\-::\-Add\-Key\-Frame(), O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Map\-::\-Add\-Map\-Point(), O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Key\-Frame\-::\-Add\-Map\-Point(), O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Map\-Point\-::\-Add\-Observation(), O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Map\-Point\-::\-Compute\-Distinctive\-Descriptors(), O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Local\-Mapping\-::\-Insert\-Key\-Frame(), O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Frame\-::mn\-Id, O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Frame\-::m\-Tcw, O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Frame\-::\-N, O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Frame\-::\-Set\-Pose(), O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Map\-::\-Set\-Reference\-Map\-Points(), O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Frame\-::\-Unproject\-Stereo() , 以及 O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Map\-Point\-::\-Update\-Normal\-And\-Depth().
+
+
+
+参考自 Track().
+
+
+
+函数调用图\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classORB__SLAM2_1_1Tracking_ad3da849e4204d766e5db4ac47b52132c_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+这是这个函数的调用关系图\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classORB__SLAM2_1_1Tracking_ad3da849e4204d766e5db4ac47b52132c_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classORB__SLAM2_1_1Tracking_af1f2c9c533642d8c33854540e90d1918}{\index{O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Tracking@{O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Tracking}!Track@{Track}}
+\index{Track@{Track}!ORB_SLAM2::Tracking@{O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Tracking}}
+\subsubsection[{Track}]{\setlength{\rightskip}{0pt plus 5cm}void O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Tracking\-::\-Track (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classORB__SLAM2_1_1Tracking_af1f2c9c533642d8c33854540e90d1918}
+
+
+Main tracking function. It is independent of the input sensor. 
+
+\hyperlink{classORB__SLAM2_1_1Tracking}{Tracking} 线程 
+
+在文件 Tracking.\-cpp 第 317 行定义.
+
+
+
+参考 Check\-Replaced\-In\-Last\-Frame(), Create\-New\-Key\-Frame(), O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Frame\-::mn\-Id, Monocular\-Initialization(), O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Frame\-::m\-Tcw, O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Frame\-::\-N, Need\-New\-Key\-Frame(), O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Frame\-::\-Set\-Pose(), Stereo\-Initialization(), Track\-Local\-Map(), Track\-Reference\-Key\-Frame() , 以及 Track\-With\-Motion\-Model().
+
+
+
+函数调用图\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classORB__SLAM2_1_1Tracking_af1f2c9c533642d8c33854540e90d1918_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classORB__SLAM2_1_1Tracking_af670c614f4e10d58c9f7aad9865b5c08}{\index{O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Tracking@{O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Tracking}!Track\-Local\-Map@{Track\-Local\-Map}}
+\index{Track\-Local\-Map@{Track\-Local\-Map}!ORB_SLAM2::Tracking@{O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Tracking}}
+\subsubsection[{Track\-Local\-Map}]{\setlength{\rightskip}{0pt plus 5cm}bool O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Tracking\-::\-Track\-Local\-Map (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classORB__SLAM2_1_1Tracking_af670c614f4e10d58c9f7aad9865b5c08}
+
+
+对\-Local Map的\-Map\-Points进行跟踪 
+
+
+\begin{DoxyEnumerate}
+\item 更新局部地图，包括局部关键帧和关键点
+\item 对局部\-Map\-Points进行投影匹配
+\item 根据匹配对估计当前帧的姿态
+\item 根据姿态剔除误匹配 \begin{DoxyReturn}{返回}
+true if success 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{参见}
+V-\/\-D track Local \hyperlink{classORB__SLAM2_1_1Map}{Map} 
+\end{DoxySeeAlso}
+
+\end{DoxyEnumerate}
+
+在文件 Tracking.\-cpp 第 1215 行定义.
+
+
+
+参考 O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Frame\-::mn\-Id, O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Frame\-::\-N, O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Optimizer\-::\-Pose\-Optimization(), Search\-Local\-Points() , 以及 Update\-Local\-Map().
+
+
+
+参考自 Track().
+
+
+
+函数调用图\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classORB__SLAM2_1_1Tracking_af670c614f4e10d58c9f7aad9865b5c08_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+这是这个函数的调用关系图\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classORB__SLAM2_1_1Tracking_af670c614f4e10d58c9f7aad9865b5c08_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classORB__SLAM2_1_1Tracking_a737c5409c93844353561a0fe724ed1c2}{\index{O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Tracking@{O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Tracking}!Track\-Reference\-Key\-Frame@{Track\-Reference\-Key\-Frame}}
+\index{Track\-Reference\-Key\-Frame@{Track\-Reference\-Key\-Frame}!ORB_SLAM2::Tracking@{O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Tracking}}
+\subsubsection[{Track\-Reference\-Key\-Frame}]{\setlength{\rightskip}{0pt plus 5cm}bool O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Tracking\-::\-Track\-Reference\-Key\-Frame (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classORB__SLAM2_1_1Tracking_a737c5409c93844353561a0fe724ed1c2}
+
+
+对参考关键帧的\-Map\-Points进行跟踪 
+
+
+\begin{DoxyEnumerate}
+\item 计算当前帧的词包，将当前帧的特征点分到特定层的nodes上
+\item 对属于同一node的描述子进行匹配
+\item 根据匹配对估计当前帧的姿态
+\item 根据姿态剔除误匹配 \begin{DoxyReturn}{返回}
+如果匹配数大于10，返回true 
+\end{DoxyReturn}
+
+\end{DoxyEnumerate}
+
+在文件 Tracking.\-cpp 第 982 行定义.
+
+
+
+参考 O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Frame\-::\-Compute\-Bo\-W(), O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Frame\-::mn\-Id, O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Frame\-::m\-Tcw, O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Frame\-::\-N, O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Optimizer\-::\-Pose\-Optimization(), O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-O\-R\-Bmatcher\-::\-Search\-By\-Bo\-W() , 以及 O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Frame\-::\-Set\-Pose().
+
+
+
+参考自 Track().
+
+
+
+函数调用图\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classORB__SLAM2_1_1Tracking_a737c5409c93844353561a0fe724ed1c2_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+这是这个函数的调用关系图\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classORB__SLAM2_1_1Tracking_a737c5409c93844353561a0fe724ed1c2_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classORB__SLAM2_1_1Tracking_aca19f1d69b30a6c6e49281d422ac8298}{\index{O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Tracking@{O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Tracking}!Track\-With\-Motion\-Model@{Track\-With\-Motion\-Model}}
+\index{Track\-With\-Motion\-Model@{Track\-With\-Motion\-Model}!ORB_SLAM2::Tracking@{O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Tracking}}
+\subsubsection[{Track\-With\-Motion\-Model}]{\setlength{\rightskip}{0pt plus 5cm}bool O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Tracking\-::\-Track\-With\-Motion\-Model (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classORB__SLAM2_1_1Tracking_aca19f1d69b30a6c6e49281d422ac8298}
+
+
+根据匀速度模型对上一帧的\-Map\-Points进行跟踪 
+
+
+\begin{DoxyEnumerate}
+\item 非单目情况，需要对上一帧产生一些新的\-Map\-Points（临时）
+\item 将上一帧的\-Map\-Points投影到当前帧的图像平面上，在投影的位置进行区域匹配
+\item 根据匹配对估计当前帧的姿态
+\item 根据姿态剔除误匹配 \begin{DoxyReturn}{返回}
+如果匹配数大于10，返回true 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{参见}
+V-\/\-B Initial Pose Estimation From Previous \hyperlink{classORB__SLAM2_1_1Frame}{Frame} 
+\end{DoxySeeAlso}
+
+\end{DoxyEnumerate}
+
+在文件 Tracking.\-cpp 第 1131 行定义.
+
+
+
+参考 O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Frame\-::mn\-Id, O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Frame\-::m\-Tcw, O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Frame\-::\-N, O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Optimizer\-::\-Pose\-Optimization(), O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-O\-R\-Bmatcher\-::\-Search\-By\-Projection(), O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Frame\-::\-Set\-Pose() , 以及 Update\-Last\-Frame().
+
+
+
+参考自 Track().
+
+
+
+函数调用图\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classORB__SLAM2_1_1Tracking_aca19f1d69b30a6c6e49281d422ac8298_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+这是这个函数的调用关系图\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classORB__SLAM2_1_1Tracking_aca19f1d69b30a6c6e49281d422ac8298_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classORB__SLAM2_1_1Tracking_aa84a20277d5bd022b527d79a58830bc5}{\index{O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Tracking@{O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Tracking}!Update\-Last\-Frame@{Update\-Last\-Frame}}
+\index{Update\-Last\-Frame@{Update\-Last\-Frame}!ORB_SLAM2::Tracking@{O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Tracking}}
+\subsubsection[{Update\-Last\-Frame}]{\setlength{\rightskip}{0pt plus 5cm}void O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Tracking\-::\-Update\-Last\-Frame (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classORB__SLAM2_1_1Tracking_aa84a20277d5bd022b527d79a58830bc5}
+
+
+双目或rgbd摄像头根据深度值为上一帧产生新的\-Map\-Points 
+
+在双目和rgbd情况下，选取一些深度小一些的点（可靠一些） \par
+可以通过深度值产生一些新的\-Map\-Points 
+
+在文件 Tracking.\-cpp 第 1038 行定义.
+
+
+
+参考 O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Frame\-::mn\-Id, O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Frame\-::\-N, O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Frame\-::\-Set\-Pose() , 以及 O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Frame\-::\-Unproject\-Stereo().
+
+
+
+参考自 Track\-With\-Motion\-Model().
+
+
+
+函数调用图\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classORB__SLAM2_1_1Tracking_aa84a20277d5bd022b527d79a58830bc5_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+这是这个函数的调用关系图\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classORB__SLAM2_1_1Tracking_aa84a20277d5bd022b527d79a58830bc5_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classORB__SLAM2_1_1Tracking_a42bed56bbbe8282eb77733e7168d8599}{\index{O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Tracking@{O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Tracking}!Update\-Local\-Key\-Frames@{Update\-Local\-Key\-Frames}}
+\index{Update\-Local\-Key\-Frames@{Update\-Local\-Key\-Frames}!ORB_SLAM2::Tracking@{O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Tracking}}
+\subsubsection[{Update\-Local\-Key\-Frames}]{\setlength{\rightskip}{0pt plus 5cm}void O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Tracking\-::\-Update\-Local\-Key\-Frames (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classORB__SLAM2_1_1Tracking_a42bed56bbbe8282eb77733e7168d8599}
+
+
+更新局部关键帧，called by \hyperlink{classORB__SLAM2_1_1Tracking_a22723e9972c18a888dd51a82eec27b0a}{Update\-Local\-Map()} 
+
+遍历当前帧的\-Map\-Points，将观测到这些\-Map\-Points的关键帧和相邻的关键帧取出，更新mvp\-Local\-Key\-Frames ?什么用法？？--改变对应的keyframe$\ast$ 的int 值，0,1,2,3$\sim$$\sim$$\sim$, 
+
+在文件 Tracking.\-cpp 第 1628 行定义.
+
+
+
+参考 O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Key\-Frame\-::\-Get\-Best\-Covisibility\-Key\-Frames(), O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Frame\-::mn\-Id , 以及 O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Frame\-::\-N.
+
+
+
+参考自 Update\-Local\-Map().
+
+
+
+函数调用图\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classORB__SLAM2_1_1Tracking_a42bed56bbbe8282eb77733e7168d8599_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+这是这个函数的调用关系图\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classORB__SLAM2_1_1Tracking_a42bed56bbbe8282eb77733e7168d8599_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classORB__SLAM2_1_1Tracking_a22723e9972c18a888dd51a82eec27b0a}{\index{O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Tracking@{O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Tracking}!Update\-Local\-Map@{Update\-Local\-Map}}
+\index{Update\-Local\-Map@{Update\-Local\-Map}!ORB_SLAM2::Tracking@{O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Tracking}}
+\subsubsection[{Update\-Local\-Map}]{\setlength{\rightskip}{0pt plus 5cm}void O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Tracking\-::\-Update\-Local\-Map (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classORB__SLAM2_1_1Tracking_a22723e9972c18a888dd51a82eec27b0a}
+
+
+更新\-Local\-Map 
+
+局部地图包括： \par
+
+\begin{DoxyItemize}
+\item K1个关键帧、\-K2个临近关键帧和参考关键帧
+\item 由这些关键帧观测到的\-Map\-Points 
+\end{DoxyItemize}
+
+在文件 Tracking.\-cpp 第 1577 行定义.
+
+
+
+参考 O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Map\-::\-Set\-Reference\-Map\-Points(), Update\-Local\-Key\-Frames() , 以及 Update\-Local\-Points().
+
+
+
+参考自 Track\-Local\-Map().
+
+
+
+函数调用图\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classORB__SLAM2_1_1Tracking_a22723e9972c18a888dd51a82eec27b0a_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+这是这个函数的调用关系图\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classORB__SLAM2_1_1Tracking_a22723e9972c18a888dd51a82eec27b0a_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classORB__SLAM2_1_1Tracking_a25843575116bf18c065d6cc7645f5b26}{\index{O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Tracking@{O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Tracking}!Update\-Local\-Points@{Update\-Local\-Points}}
+\index{Update\-Local\-Points@{Update\-Local\-Points}!ORB_SLAM2::Tracking@{O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Tracking}}
+\subsubsection[{Update\-Local\-Points}]{\setlength{\rightskip}{0pt plus 5cm}void O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Tracking\-::\-Update\-Local\-Points (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classORB__SLAM2_1_1Tracking_a25843575116bf18c065d6cc7645f5b26}
+
+
+更新局部关键点，called by \hyperlink{classORB__SLAM2_1_1Tracking_a22723e9972c18a888dd51a82eec27b0a}{Update\-Local\-Map()} 
+
+局部关键帧mvp\-Local\-Key\-Frames的\-Map\-Points，更新mvp\-Local\-Map\-Points 对每个push进去了的点做个标记，，， 
+
+在文件 Tracking.\-cpp 第 1594 行定义.
+
+
+
+参考 O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Key\-Frame\-::\-Get\-Map\-Point\-Matches() , 以及 O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Frame\-::mn\-Id.
+
+
+
+参考自 Update\-Local\-Map().
+
+
+
+函数调用图\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classORB__SLAM2_1_1Tracking_a25843575116bf18c065d6cc7645f5b26_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+这是这个函数的调用关系图\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classORB__SLAM2_1_1Tracking_a25843575116bf18c065d6cc7645f5b26_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+该类的文档由以下文件生成\-:\begin{DoxyCompactItemize}
+\item 
+include/Tracking.\-h\item 
+src/Tracking.\-cpp\end{DoxyCompactItemize}

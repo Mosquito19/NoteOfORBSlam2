@@ -1,0 +1,119 @@
+\hypertarget{structDBoW2_1_1TemplatedVocabulary_1_1Node}{\section{D\-Bo\-W2\-:\-:Templated\-Vocabulary$<$ T\-Descriptor, F $>$\-:\-:Node结构体 参考}
+\label{structDBoW2_1_1TemplatedVocabulary_1_1Node}\index{D\-Bo\-W2\-::\-Templated\-Vocabulary$<$ T\-Descriptor, F $>$\-::\-Node@{D\-Bo\-W2\-::\-Templated\-Vocabulary$<$ T\-Descriptor, F $>$\-::\-Node}}
+}
+
+
+Tree node.  
+
+
+
+
+{\ttfamily \#include $<$Templated\-Vocabulary.\-h$>$}
+
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structDBoW2_1_1TemplatedVocabulary_1_1Node_a1339ee00108c4c652cd1ca55a37c3fd3}{Node} ()
+\item 
+\hyperlink{structDBoW2_1_1TemplatedVocabulary_1_1Node_a9f1fcb620025ba6103a47e5c2b169cd6}{Node} (\hyperlink{namespaceDBoW2_a3a0fa9c50c0df508759362d6204566f2}{Node\-Id} \-\_\-id)
+\item 
+bool \hyperlink{structDBoW2_1_1TemplatedVocabulary_1_1Node_a163e5d59292f2cf694b67089b37f79be}{is\-Leaf} () const 
+\end{DoxyCompactItemize}
+\subsection*{Public 属性}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{structDBoW2_1_1TemplatedVocabulary_1_1Node_a62fb0c85332741c114110463252c64e9}{\hyperlink{namespaceDBoW2_a3a0fa9c50c0df508759362d6204566f2}{Node\-Id} \hyperlink{structDBoW2_1_1TemplatedVocabulary_1_1Node_a62fb0c85332741c114110463252c64e9}{id}}\label{structDBoW2_1_1TemplatedVocabulary_1_1Node_a62fb0c85332741c114110463252c64e9}
+
+\begin{DoxyCompactList}\small\item\em \hyperlink{structDBoW2_1_1TemplatedVocabulary_1_1Node}{Node} id. \end{DoxyCompactList}\item 
+\hypertarget{structDBoW2_1_1TemplatedVocabulary_1_1Node_ae1e261135cb7af400f1c4c4795cdba41}{\hyperlink{namespaceDBoW2_a55fcd7333e591a38e96b91f41bc182f6}{Word\-Value} \hyperlink{structDBoW2_1_1TemplatedVocabulary_1_1Node_ae1e261135cb7af400f1c4c4795cdba41}{weight}}\label{structDBoW2_1_1TemplatedVocabulary_1_1Node_ae1e261135cb7af400f1c4c4795cdba41}
+
+\begin{DoxyCompactList}\small\item\em Weight if the node is a word. \end{DoxyCompactList}\item 
+\hypertarget{structDBoW2_1_1TemplatedVocabulary_1_1Node_a0305ad0a8964947347da1d38ef0363ed}{vector$<$ \hyperlink{namespaceDBoW2_a3a0fa9c50c0df508759362d6204566f2}{Node\-Id} $>$ \hyperlink{structDBoW2_1_1TemplatedVocabulary_1_1Node_a0305ad0a8964947347da1d38ef0363ed}{children}}\label{structDBoW2_1_1TemplatedVocabulary_1_1Node_a0305ad0a8964947347da1d38ef0363ed}
+
+\begin{DoxyCompactList}\small\item\em Children. \end{DoxyCompactList}\item 
+\hypertarget{structDBoW2_1_1TemplatedVocabulary_1_1Node_a082fba9dcf272b78354ffd5b1d58f5fa}{\hyperlink{namespaceDBoW2_a3a0fa9c50c0df508759362d6204566f2}{Node\-Id} \hyperlink{structDBoW2_1_1TemplatedVocabulary_1_1Node_a082fba9dcf272b78354ffd5b1d58f5fa}{parent}}\label{structDBoW2_1_1TemplatedVocabulary_1_1Node_a082fba9dcf272b78354ffd5b1d58f5fa}
+
+\begin{DoxyCompactList}\small\item\em Parent node (undefined in case of root) \end{DoxyCompactList}\item 
+\hypertarget{structDBoW2_1_1TemplatedVocabulary_1_1Node_ab785e994eeae8e6c1d67ee45ad4c8450}{T\-Descriptor \hyperlink{structDBoW2_1_1TemplatedVocabulary_1_1Node_ab785e994eeae8e6c1d67ee45ad4c8450}{descriptor}}\label{structDBoW2_1_1TemplatedVocabulary_1_1Node_ab785e994eeae8e6c1d67ee45ad4c8450}
+
+\begin{DoxyCompactList}\small\item\em \hyperlink{structDBoW2_1_1TemplatedVocabulary_1_1Node}{Node} descriptor. \end{DoxyCompactList}\item 
+\hypertarget{structDBoW2_1_1TemplatedVocabulary_1_1Node_aa56418d848932be4583fac6b3021c708}{\hyperlink{namespaceDBoW2_ab1a0d3283b2d4690a383372ed20bfeb5}{Word\-Id} \hyperlink{structDBoW2_1_1TemplatedVocabulary_1_1Node_aa56418d848932be4583fac6b3021c708}{word\-\_\-id}}\label{structDBoW2_1_1TemplatedVocabulary_1_1Node_aa56418d848932be4583fac6b3021c708}
+
+\begin{DoxyCompactList}\small\item\em Word id if the node is a word. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{详细描述}
+\subsubsection*{template$<$class T\-Descriptor, class F$>$struct D\-Bo\-W2\-::\-Templated\-Vocabulary$<$ T\-Descriptor, F $>$\-::\-Node}
+
+Tree node. 
+
+在文件 Templated\-Vocabulary.\-h 第 312 行定义.
+
+
+
+\subsection{构造及析构函数说明}
+\hypertarget{structDBoW2_1_1TemplatedVocabulary_1_1Node_a1339ee00108c4c652cd1ca55a37c3fd3}{\index{D\-Bo\-W2\-::\-Templated\-Vocabulary\-::\-Node@{D\-Bo\-W2\-::\-Templated\-Vocabulary\-::\-Node}!Node@{Node}}
+\index{Node@{Node}!DBoW2::TemplatedVocabulary::Node@{D\-Bo\-W2\-::\-Templated\-Vocabulary\-::\-Node}}
+\subsubsection[{Node}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T\-Descriptor, class F$>$ {\bf D\-Bo\-W2\-::\-Templated\-Vocabulary}$<$ T\-Descriptor, F $>$\-::Node\-::\-Node (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{structDBoW2_1_1TemplatedVocabulary_1_1Node_a1339ee00108c4c652cd1ca55a37c3fd3}
+Empty constructor 
+
+在文件 Templated\-Vocabulary.\-h 第 331 行定义.
+
+\hypertarget{structDBoW2_1_1TemplatedVocabulary_1_1Node_a9f1fcb620025ba6103a47e5c2b169cd6}{\index{D\-Bo\-W2\-::\-Templated\-Vocabulary\-::\-Node@{D\-Bo\-W2\-::\-Templated\-Vocabulary\-::\-Node}!Node@{Node}}
+\index{Node@{Node}!DBoW2::TemplatedVocabulary::Node@{D\-Bo\-W2\-::\-Templated\-Vocabulary\-::\-Node}}
+\subsubsection[{Node}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T\-Descriptor, class F$>$ {\bf D\-Bo\-W2\-::\-Templated\-Vocabulary}$<$ T\-Descriptor, F $>$\-::Node\-::\-Node (
+\begin{DoxyParamCaption}
+\item[{{\bf Node\-Id}}]{\-\_\-id}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{structDBoW2_1_1TemplatedVocabulary_1_1Node_a9f1fcb620025ba6103a47e5c2b169cd6}
+Constructor 
+\begin{DoxyParams}{参数}
+{\em \-\_\-id} & node id \\
+\hline
+\end{DoxyParams}
+
+
+在文件 Templated\-Vocabulary.\-h 第 337 行定义.
+
+
+
+\subsection{成员函数说明}
+\hypertarget{structDBoW2_1_1TemplatedVocabulary_1_1Node_a163e5d59292f2cf694b67089b37f79be}{\index{D\-Bo\-W2\-::\-Templated\-Vocabulary\-::\-Node@{D\-Bo\-W2\-::\-Templated\-Vocabulary\-::\-Node}!is\-Leaf@{is\-Leaf}}
+\index{is\-Leaf@{is\-Leaf}!DBoW2::TemplatedVocabulary::Node@{D\-Bo\-W2\-::\-Templated\-Vocabulary\-::\-Node}}
+\subsubsection[{is\-Leaf}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T\-Descriptor, class F$>$ bool {\bf D\-Bo\-W2\-::\-Templated\-Vocabulary}$<$ T\-Descriptor, F $>$\-::Node\-::is\-Leaf (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{structDBoW2_1_1TemplatedVocabulary_1_1Node_a163e5d59292f2cf694b67089b37f79be}
+Returns whether the node is a leaf node \begin{DoxyReturn}{返回}
+true iff the node is a leaf 
+\end{DoxyReturn}
+
+
+在文件 Templated\-Vocabulary.\-h 第 343 行定义.
+
+
+
+参考自 D\-Bo\-W2\-::\-Templated\-Vocabulary$<$ T\-Descriptor, F $>$\-::get\-Words\-From\-Node(), D\-Bo\-W2\-::\-Templated\-Vocabulary$<$ T\-Descriptor, F $>$\-::save(), D\-Bo\-W2\-::\-Templated\-Vocabulary$<$ T\-Descriptor, F $>$\-::save\-To\-Binary\-File() , 以及 D\-Bo\-W2\-::\-Templated\-Vocabulary$<$ T\-Descriptor, F $>$\-::save\-To\-Text\-File().
+
+
+
+这是这个函数的调用关系图\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structDBoW2_1_1TemplatedVocabulary_1_1Node_a163e5d59292f2cf694b67089b37f79be_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+该结构体的文档由以下文件生成\-:\begin{DoxyCompactItemize}
+\item 
+Thirdparty/\-D\-Bo\-W2/\-D\-Bo\-W2/Templated\-Vocabulary.\-h\end{DoxyCompactItemize}

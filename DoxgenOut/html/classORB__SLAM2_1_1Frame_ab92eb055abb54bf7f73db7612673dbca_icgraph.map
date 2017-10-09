@@ -1,0 +1,6 @@
+<map id="ORB_SLAM2::Frame::GetFeaturesInArea" name="ORB_SLAM2::Frame::GetFeaturesInArea">
+<area shape="rect" id="node2" href="$classORB__SLAM2_1_1ORBmatcher.html#a0dba0b2bed7d16ca56e27ff4df00f557" title="通过投影，对上一帧的特征点进行跟踪 " alt="" coords="281,5,466,46"/>
+<area shape="rect" id="node3" href="$classORB__SLAM2_1_1ORBmatcher.html#aff9b6dde7878d59e334ed5ad2ddd04eb" title="ORB_SLAM2::ORBmatcher\l::SearchForInitialization" alt="" coords="281,70,466,111"/>
+<area shape="rect" id="node4" href="$classORB__SLAM2_1_1Tracking.html#a7e81c68bb6ced27fcbfa2edec38ef6e0" title="单目的地图初始化 " alt="" coords="515,70,674,111"/>
+<area shape="rect" id="node5" href="$classORB__SLAM2_1_1Tracking.html#af1f2c9c533642d8c33854540e90d1918" title="Main tracking function. It is independent of the input sensor. " alt="" coords="723,70,882,111"/>
+</map>

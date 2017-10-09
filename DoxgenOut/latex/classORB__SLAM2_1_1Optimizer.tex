@@ -1,0 +1,413 @@
+\hypertarget{classORB__SLAM2_1_1Optimizer}{\section{O\-R\-B\-\_\-\-S\-L\-A\-M2\-:\-:Optimizer类 参考}
+\label{classORB__SLAM2_1_1Optimizer}\index{O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Optimizer@{O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Optimizer}}
+}
+\subsection*{静态 Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+static void \hyperlink{classORB__SLAM2_1_1Optimizer_a5e855fe6b54082739b7e7013048e6340}{Bundle\-Adjustment} (const std\-::vector$<$ \hyperlink{classORB__SLAM2_1_1KeyFrame}{Key\-Frame} $\ast$ $>$ \&vp\-K\-F, const std\-::vector$<$ \hyperlink{classORB__SLAM2_1_1MapPoint}{Map\-Point} $\ast$ $>$ \&vp\-M\-P, int n\-Iterations=5, bool $\ast$pb\-Stop\-Flag=N\-U\-L\-L, const unsigned long n\-Loop\-K\-F=0, const bool b\-Robust=true)
+\begin{DoxyCompactList}\small\item\em bundle adjustment Optimization \end{DoxyCompactList}\item 
+\hypertarget{classORB__SLAM2_1_1Optimizer_aaa9b8a4c16296bf2981b0aaf4ee3189c}{static void {\bfseries Global\-Bundle\-Adjustemnt} (\hyperlink{classORB__SLAM2_1_1Map}{Map} $\ast$p\-Map, int n\-Iterations=5, bool $\ast$pb\-Stop\-Flag=N\-U\-L\-L, const unsigned long n\-Loop\-K\-F=0, const bool b\-Robust=true)}\label{classORB__SLAM2_1_1Optimizer_aaa9b8a4c16296bf2981b0aaf4ee3189c}
+
+\item 
+static void \hyperlink{classORB__SLAM2_1_1Optimizer_ab70e0b4f366b65a0c1ae8b2def19d339}{Local\-Bundle\-Adjustment} (\hyperlink{classORB__SLAM2_1_1KeyFrame}{Key\-Frame} $\ast$p\-K\-F, bool $\ast$pb\-Stop\-Flag, \hyperlink{classORB__SLAM2_1_1Map}{Map} $\ast$p\-Map)
+\begin{DoxyCompactList}\small\item\em Local Bundle Adjustment. \end{DoxyCompactList}\item 
+static int \hyperlink{classORB__SLAM2_1_1Optimizer_a7415d78b8a2323b88e108fa1ea3bf2d3}{Pose\-Optimization} (\hyperlink{classORB__SLAM2_1_1Frame}{Frame} $\ast$p\-Frame)
+\begin{DoxyCompactList}\small\item\em Pose Only Optimization. \end{DoxyCompactList}\item 
+static void \hyperlink{classORB__SLAM2_1_1Optimizer_ad36bb1a7167c84f385c3f299bc96f20e}{Optimize\-Essential\-Graph} (\hyperlink{classORB__SLAM2_1_1Map}{Map} $\ast$p\-Map, \hyperlink{classORB__SLAM2_1_1KeyFrame}{Key\-Frame} $\ast$p\-Loop\-K\-F, \hyperlink{classORB__SLAM2_1_1KeyFrame}{Key\-Frame} $\ast$p\-Cur\-K\-F, const Loop\-Closing\-::\-Key\-Frame\-And\-Pose \&Non\-Corrected\-Sim3, const Loop\-Closing\-::\-Key\-Frame\-And\-Pose \&Corrected\-Sim3, const map$<$ \hyperlink{classORB__SLAM2_1_1KeyFrame}{Key\-Frame} $\ast$, set$<$ \hyperlink{classORB__SLAM2_1_1KeyFrame}{Key\-Frame} $\ast$ $>$ $>$ \&Loop\-Connections, const bool \&b\-Fix\-Scale)
+\begin{DoxyCompactList}\small\item\em 闭环检测后，\-Essential\-Graph优化 \end{DoxyCompactList}\item 
+static int \hyperlink{classORB__SLAM2_1_1Optimizer_ad8fe00ad3e6564b859b07ff9e7b2224e}{Optimize\-Sim3} (\hyperlink{classORB__SLAM2_1_1KeyFrame}{Key\-Frame} $\ast$p\-K\-F1, \hyperlink{classORB__SLAM2_1_1KeyFrame}{Key\-Frame} $\ast$p\-K\-F2, std\-::vector$<$ \hyperlink{classORB__SLAM2_1_1MapPoint}{Map\-Point} $\ast$ $>$ \&vp\-Matches1, \hyperlink{structg2o_1_1Sim3}{g2o\-::\-Sim3} \&g2o\-S12, const float th2, const bool b\-Fix\-Scale)
+\begin{DoxyCompactList}\small\item\em 形成闭环时进行\-Sim3优化 \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{详细描述}
+
+
+在文件 Optimizer.\-h 第 37 行定义.
+
+
+
+\subsection{成员函数说明}
+\hypertarget{classORB__SLAM2_1_1Optimizer_a5e855fe6b54082739b7e7013048e6340}{\index{O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Optimizer@{O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Optimizer}!Bundle\-Adjustment@{Bundle\-Adjustment}}
+\index{Bundle\-Adjustment@{Bundle\-Adjustment}!ORB_SLAM2::Optimizer@{O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Optimizer}}
+\subsubsection[{Bundle\-Adjustment}]{\setlength{\rightskip}{0pt plus 5cm}void O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Optimizer\-::\-Bundle\-Adjustment (
+\begin{DoxyParamCaption}
+\item[{const std\-::vector$<$ {\bf Key\-Frame} $\ast$ $>$ \&}]{vp\-K\-F, }
+\item[{const std\-::vector$<$ {\bf Map\-Point} $\ast$ $>$ \&}]{vp\-M\-P, }
+\item[{int}]{n\-Iterations = {\ttfamily 5}, }
+\item[{bool $\ast$}]{pb\-Stop\-Flag = {\ttfamily NULL}, }
+\item[{const unsigned long}]{n\-Loop\-K\-F = {\ttfamily 0}, }
+\item[{const bool}]{b\-Robust = {\ttfamily true}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classORB__SLAM2_1_1Optimizer_a5e855fe6b54082739b7e7013048e6340}
+
+
+bundle adjustment Optimization 
+
+3\-D-\/2\-D 最小化重投影误差 e = (u,v) -\/ project(\-Tcw$\ast$\-Pw) \par
+
+\begin{DoxyEnumerate}
+\item Vertex\-: \hyperlink{classg2o_1_1VertexSE3Expmap}{g2o\-::\-Vertex\-S\-E3\-Expmap()}，即当前帧的\-Tcw \hyperlink{classg2o_1_1VertexSBAPointXYZ}{g2o\-::\-Vertex\-S\-B\-A\-Point\-X\-Y\-Z()}，\-Map\-Point的m\-World\-Pos
+\item Edge\-:
+\begin{DoxyItemize}
+\item \hyperlink{classg2o_1_1EdgeSE3ProjectXYZ}{g2o\-::\-Edge\-S\-E3\-Project\-X\-Y\-Z()}，\-Base\-Binary\-Edge
+\begin{DoxyItemize}
+\item Vertex：待优化当前帧的\-Tcw
+\item Vertex：待优化\-Map\-Point的m\-World\-Pos
+\item measurement：\-Map\-Point在当前帧中的二维位置(u,v)
+\item Info\-Matrix\-: inv\-Sigma2(与特征点所在的尺度有关)
+\end{DoxyItemize}
+\end{DoxyItemize}
+\end{DoxyEnumerate}
+
+
+\begin{DoxyParams}{参数}
+{\em vp\-K\-Fs} & 关键帧 vp\-M\-P Map\-Points n\-Iterations 迭代次数（20次） pb\-Stop\-Flag 是否强制暂停 n\-Loop\-K\-F 关键帧的个数 b\-Robust 是否使用核函数 \\
+\hline
+\end{DoxyParams}
+
+
+在文件 Optimizer.\-cpp 第 72 行定义.
+
+
+
+参考 g2o\-::\-Optimizable\-Graph\-::add\-Edge(), g2o\-::\-Optimizable\-Graph\-::add\-Vertex(), g2o\-::\-Edge\-Stereo\-S\-E3\-Project\-X\-Y\-Z\-::bf, g2o\-::\-Base\-Vertex$<$ D, T $>$\-::estimate(), g2o\-::\-Sparse\-Optimizer\-::initialize\-Optimization(), O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Map\-Point\-::mn\-Id, g2o\-::\-Sparse\-Optimizer\-::optimize(), g2o\-::\-Sparse\-Optimizer\-::remove\-Vertex(), g2o\-::\-Robust\-Kernel\-Huber\-::set\-Delta(), g2o\-::\-Base\-Vertex$<$ D, T $>$\-::set\-Estimate(), g2o\-::\-Optimizable\-Graph\-::\-Vertex\-::set\-Fixed(), g2o\-::\-Sparse\-Optimizer\-::set\-Force\-Stop\-Flag(), g2o\-::\-Optimizable\-Graph\-::\-Vertex\-::set\-Id(), g2o\-::\-Optimizable\-Graph\-::\-Vertex\-::set\-Marginalized(), g2o\-::\-Optimizable\-Graph\-::\-Edge\-::set\-Robust\-Kernel(), g2o\-::\-Hyper\-Graph\-::\-Edge\-::set\-Vertex(), O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Converter\-::to\-S\-E3\-Quat(), O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Map\-Point\-::\-Update\-Normal\-And\-Depth() , 以及 g2o\-::\-Optimizable\-Graph\-::vertex().
+
+
+
+函数调用图\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classORB__SLAM2_1_1Optimizer_a5e855fe6b54082739b7e7013048e6340_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classORB__SLAM2_1_1Optimizer_ab70e0b4f366b65a0c1ae8b2def19d339}{\index{O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Optimizer@{O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Optimizer}!Local\-Bundle\-Adjustment@{Local\-Bundle\-Adjustment}}
+\index{Local\-Bundle\-Adjustment@{Local\-Bundle\-Adjustment}!ORB_SLAM2::Optimizer@{O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Optimizer}}
+\subsubsection[{Local\-Bundle\-Adjustment}]{\setlength{\rightskip}{0pt plus 5cm}void O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Optimizer\-::\-Local\-Bundle\-Adjustment (
+\begin{DoxyParamCaption}
+\item[{{\bf Key\-Frame} $\ast$}]{p\-K\-F, }
+\item[{bool $\ast$}]{pb\-Stop\-Flag, }
+\item[{{\bf Map} $\ast$}]{p\-Map}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classORB__SLAM2_1_1Optimizer_ab70e0b4f366b65a0c1ae8b2def19d339}
+
+
+Local Bundle Adjustment. 
+
+
+\begin{DoxyEnumerate}
+\item Vertex\-:
+\begin{DoxyItemize}
+\item \hyperlink{classg2o_1_1VertexSE3Expmap}{g2o\-::\-Vertex\-S\-E3\-Expmap()}，\-Local\-Key\-Frames，即当前关键帧的位姿、与当前关键帧相连的关键帧的位姿
+\item \hyperlink{classg2o_1_1VertexSE3Expmap}{g2o\-::\-Vertex\-S\-E3\-Expmap()}，\-Fixed\-Cameras，即能观测到\-Local\-Map\-Points的关键帧（并且不属于\-Local\-Key\-Frames）的位姿，在优化中这些关键帧的位姿不变
+\item \hyperlink{classg2o_1_1VertexSBAPointXYZ}{g2o\-::\-Vertex\-S\-B\-A\-Point\-X\-Y\-Z()}，\-Local\-Map\-Points，即\-Local\-Key\-Frames能观测到的所有\-Map\-Points的位置
+\end{DoxyItemize}
+\item Edge\-:
+\begin{DoxyItemize}
+\item \hyperlink{classg2o_1_1EdgeSE3ProjectXYZ}{g2o\-::\-Edge\-S\-E3\-Project\-X\-Y\-Z()}，\-Base\-Binary\-Edge
+\begin{DoxyItemize}
+\item Vertex：关键帧的\-Tcw，\-Map\-Point的\-Pw
+\item measurement：\-Map\-Point在关键帧中的二维位置(u,v)
+\item Info\-Matrix\-: inv\-Sigma2(与特征点所在的尺度有关)
+\end{DoxyItemize}
+\item \hyperlink{classg2o_1_1EdgeStereoSE3ProjectXYZ}{g2o\-::\-Edge\-Stereo\-S\-E3\-Project\-X\-Y\-Z()}，\-Base\-Binary\-Edge
+\begin{DoxyItemize}
+\item Vertex：关键帧的\-Tcw，\-Map\-Point的\-Pw
+\item measurement：\-Map\-Point在关键帧中的二维位置(ul,v,ur)
+\item Info\-Matrix\-: inv\-Sigma2(与特征点所在的尺度有关)
+\end{DoxyItemize}
+\end{DoxyItemize}
+\end{DoxyEnumerate}
+
+
+\begin{DoxyParams}{参数}
+{\em p\-K\-F} & \hyperlink{classORB__SLAM2_1_1KeyFrame}{Key\-Frame} \\
+\hline
+{\em pb\-Stop\-Flag} & 是否停止优化的标志 \\
+\hline
+{\em p\-Map} & 在优化后，更新状态时需要用到\-Map的互斥量m\-Mutex\-Map\-Update \\
+\hline
+\end{DoxyParams}
+
+
+在文件 Optimizer.\-cpp 第 536 行定义.
+
+
+
+参考 g2o\-::\-Optimizable\-Graph\-::add\-Edge(), g2o\-::\-Optimizable\-Graph\-::add\-Vertex(), g2o\-::\-Edge\-Stereo\-S\-E3\-Project\-X\-Y\-Z\-::bf, g2o\-::\-Base\-Edge$<$ D, E $>$\-::chi2(), g2o\-::\-Base\-Vertex$<$ D, T $>$\-::estimate(), O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Key\-Frame\-::\-Get\-Vector\-Covisible\-Key\-Frames(), g2o\-::\-Sparse\-Optimizer\-::initialize\-Optimization(), g2o\-::\-Edge\-S\-E3\-Project\-X\-Y\-Z\-::is\-Depth\-Positive(), g2o\-::\-Edge\-Stereo\-S\-E3\-Project\-X\-Y\-Z\-::is\-Depth\-Positive(), O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Map\-Point\-::mn\-Id, g2o\-::\-Sparse\-Optimizer\-::optimize(), g2o\-::\-Robust\-Kernel\-Huber\-::set\-Delta(), g2o\-::\-Base\-Vertex$<$ D, T $>$\-::set\-Estimate(), g2o\-::\-Optimizable\-Graph\-::\-Vertex\-::set\-Fixed(), g2o\-::\-Sparse\-Optimizer\-::set\-Force\-Stop\-Flag(), g2o\-::\-Optimizable\-Graph\-::\-Vertex\-::set\-Id(), g2o\-::\-Optimizable\-Graph\-::\-Edge\-::set\-Level(), g2o\-::\-Optimizable\-Graph\-::\-Vertex\-::set\-Marginalized(), g2o\-::\-Optimizable\-Graph\-::\-Edge\-::set\-Robust\-Kernel(), g2o\-::\-Hyper\-Graph\-::\-Edge\-::set\-Vertex(), O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Converter\-::to\-S\-E3\-Quat(), O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Map\-Point\-::\-Update\-Normal\-And\-Depth() , 以及 g2o\-::\-Optimizable\-Graph\-::vertex().
+
+
+
+函数调用图\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classORB__SLAM2_1_1Optimizer_ab70e0b4f366b65a0c1ae8b2def19d339_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classORB__SLAM2_1_1Optimizer_ad36bb1a7167c84f385c3f299bc96f20e}{\index{O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Optimizer@{O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Optimizer}!Optimize\-Essential\-Graph@{Optimize\-Essential\-Graph}}
+\index{Optimize\-Essential\-Graph@{Optimize\-Essential\-Graph}!ORB_SLAM2::Optimizer@{O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Optimizer}}
+\subsubsection[{Optimize\-Essential\-Graph}]{\setlength{\rightskip}{0pt plus 5cm}void O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Optimizer\-::\-Optimize\-Essential\-Graph (
+\begin{DoxyParamCaption}
+\item[{{\bf Map} $\ast$}]{p\-Map, }
+\item[{{\bf Key\-Frame} $\ast$}]{p\-Loop\-K\-F, }
+\item[{{\bf Key\-Frame} $\ast$}]{p\-Cur\-K\-F, }
+\item[{const Loop\-Closing\-::\-Key\-Frame\-And\-Pose \&}]{Non\-Corrected\-Sim3, }
+\item[{const Loop\-Closing\-::\-Key\-Frame\-And\-Pose \&}]{Corrected\-Sim3, }
+\item[{const map$<$ {\bf Key\-Frame} $\ast$, set$<$ {\bf Key\-Frame} $\ast$ $>$ $>$ \&}]{Loop\-Connections, }
+\item[{const bool \&}]{b\-Fix\-Scale}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classORB__SLAM2_1_1Optimizer_ad36bb1a7167c84f385c3f299bc96f20e}
+
+
+闭环检测后，\-Essential\-Graph优化 
+
+
+\begin{DoxyEnumerate}
+\item Vertex\-:
+\begin{DoxyItemize}
+\item g2o\-::\-Vertex\-Sim3\-Expmap，\-Essential graph中关键帧的位姿
+\end{DoxyItemize}
+\item Edge\-:
+\begin{DoxyItemize}
+\item \hyperlink{classg2o_1_1EdgeSim3}{g2o\-::\-Edge\-Sim3()}，\-Base\-Binary\-Edge
+\begin{DoxyItemize}
+\item Vertex：关键帧的\-Tcw，\-Map\-Point的\-Pw
+\item measurement：经过\-Correct\-Loop函数步骤2，\-Sim3传播校正后的位姿
+\item Info\-Matrix\-: 单位矩阵
+\end{DoxyItemize}
+\end{DoxyItemize}
+\end{DoxyEnumerate}
+
+
+\begin{DoxyParams}{参数}
+{\em p\-Map} & 全局地图 \\
+\hline
+{\em p\-Loop\-K\-F} & 闭环匹配上的关键帧 \\
+\hline
+{\em p\-Cur\-K\-F} & 当前关键帧 \\
+\hline
+{\em Non\-Corrected\-Sim3} & 未经过\-Sim3传播调整过的关键帧位姿 \\
+\hline
+{\em Corrected\-Sim3} & 经过\-Sim3传播调整过的关键帧位姿 \\
+\hline
+{\em Loop\-Connections} & 因闭环时\-Map\-Points调整而新生成的边 \\
+\hline
+\end{DoxyParams}
+
+
+在文件 Optimizer.\-cpp 第 905 行定义.
+
+
+
+参考 g2o\-::\-Optimizable\-Graph\-::add\-Edge(), g2o\-::\-Optimizable\-Graph\-::add\-Vertex(), g2o\-::\-Base\-Vertex$<$ D, T $>$\-::estimate(), O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Key\-Frame\-::\-Get\-Covisibles\-By\-Weight(), O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Key\-Frame\-::\-Get\-Weight(), g2o\-::\-Base\-Edge$<$ D, E $>$\-::information(), g2o\-::\-Sparse\-Optimizer\-::initialize\-Optimization(), g2o\-::\-Sparse\-Optimizer\-::optimize(), g2o\-::\-Base\-Vertex$<$ D, T $>$\-::set\-Estimate(), g2o\-::\-Optimizable\-Graph\-::\-Vertex\-::set\-Fixed(), g2o\-::\-Optimizable\-Graph\-::\-Vertex\-::set\-Id(), g2o\-::\-Optimizable\-Graph\-::\-Vertex\-::set\-Marginalized(), g2o\-::\-Optimization\-Algorithm\-Levenberg\-::set\-User\-Lambda\-Init(), g2o\-::\-Hyper\-Graph\-::\-Edge\-::set\-Vertex(), O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Map\-Point\-::\-Update\-Normal\-And\-Depth() , 以及 g2o\-::\-Optimizable\-Graph\-::vertex().
+
+
+
+参考自 O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Loop\-Closing\-::\-Correct\-Loop().
+
+
+
+函数调用图\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classORB__SLAM2_1_1Optimizer_ad36bb1a7167c84f385c3f299bc96f20e_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+这是这个函数的调用关系图\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classORB__SLAM2_1_1Optimizer_ad36bb1a7167c84f385c3f299bc96f20e_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classORB__SLAM2_1_1Optimizer_ad8fe00ad3e6564b859b07ff9e7b2224e}{\index{O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Optimizer@{O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Optimizer}!Optimize\-Sim3@{Optimize\-Sim3}}
+\index{Optimize\-Sim3@{Optimize\-Sim3}!ORB_SLAM2::Optimizer@{O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Optimizer}}
+\subsubsection[{Optimize\-Sim3}]{\setlength{\rightskip}{0pt plus 5cm}int O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Optimizer\-::\-Optimize\-Sim3 (
+\begin{DoxyParamCaption}
+\item[{{\bf Key\-Frame} $\ast$}]{p\-K\-F1, }
+\item[{{\bf Key\-Frame} $\ast$}]{p\-K\-F2, }
+\item[{std\-::vector$<$ {\bf Map\-Point} $\ast$ $>$ \&}]{vp\-Matches1, }
+\item[{{\bf g2o\-::\-Sim3} \&}]{g2o\-S12, }
+\item[{const float}]{th2, }
+\item[{const bool}]{b\-Fix\-Scale}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classORB__SLAM2_1_1Optimizer_ad8fe00ad3e6564b859b07ff9e7b2224e}
+
+
+形成闭环时进行\-Sim3优化 
+
+
+\begin{DoxyEnumerate}
+\item Vertex\-:
+\begin{DoxyItemize}
+\item \hyperlink{classg2o_1_1VertexSim3Expmap}{g2o\-::\-Vertex\-Sim3\-Expmap()}，两个关键帧的位姿
+\item \hyperlink{classg2o_1_1VertexSBAPointXYZ}{g2o\-::\-Vertex\-S\-B\-A\-Point\-X\-Y\-Z()}，两个关键帧共有的\-Map\-Points
+\end{DoxyItemize}
+\item Edge\-:
+\begin{DoxyItemize}
+\item \hyperlink{classg2o_1_1EdgeSim3ProjectXYZ}{g2o\-::\-Edge\-Sim3\-Project\-X\-Y\-Z()}，\-Base\-Binary\-Edge
+\begin{DoxyItemize}
+\item Vertex：关键帧的\-Sim3，\-Map\-Point的\-Pw
+\item measurement：\-Map\-Point在关键帧中的二维位置(u,v)
+\item Info\-Matrix\-: inv\-Sigma2(与特征点所在的尺度有关)
+\end{DoxyItemize}
+\item \hyperlink{classg2o_1_1EdgeInverseSim3ProjectXYZ}{g2o\-::\-Edge\-Inverse\-Sim3\-Project\-X\-Y\-Z()}，\-Base\-Binary\-Edge
+\begin{DoxyItemize}
+\item Vertex：关键帧的\-Sim3，\-Map\-Point的\-Pw
+\item measurement：\-Map\-Point在关键帧中的二维位置(u,v)
+\item Info\-Matrix\-: inv\-Sigma2(与特征点所在的尺度有关)
+\end{DoxyItemize}
+\end{DoxyItemize}
+\end{DoxyEnumerate}
+
+
+\begin{DoxyParams}{参数}
+{\em p\-K\-F1} & \hyperlink{classORB__SLAM2_1_1KeyFrame}{Key\-Frame} \\
+\hline
+{\em p\-K\-F2} & \hyperlink{classORB__SLAM2_1_1KeyFrame}{Key\-Frame} \\
+\hline
+{\em vp\-Matches1} & 两个关键帧的匹配关系 \\
+\hline
+{\em g2o\-S12} & 两个关键帧间的\-Sim3变换 \\
+\hline
+{\em th2} & 核函数阈值 \\
+\hline
+{\em b\-Fix\-Scale} & 是否优化尺度，弹目进行尺度优化，双目不进行尺度优化 \\
+\hline
+\end{DoxyParams}
+
+
+在文件 Optimizer.\-cpp 第 1225 行定义.
+
+
+
+参考 g2o\-::\-Optimizable\-Graph\-::add\-Edge(), g2o\-::\-Optimizable\-Graph\-::add\-Vertex(), g2o\-::\-Base\-Edge$<$ D, E $>$\-::chi2(), g2o\-::\-Base\-Vertex$<$ D, T $>$\-::estimate(), O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Key\-Frame\-::\-Get\-Map\-Point\-Matches(), g2o\-::\-Sparse\-Optimizer\-::initialize\-Optimization(), g2o\-::\-Sparse\-Optimizer\-::optimize(), g2o\-::\-Hyper\-Graph\-::remove\-Edge(), g2o\-::\-Robust\-Kernel\-Huber\-::set\-Delta(), g2o\-::\-Base\-Vertex$<$ D, T $>$\-::set\-Estimate(), g2o\-::\-Optimizable\-Graph\-::\-Vertex\-::set\-Fixed(), g2o\-::\-Optimizable\-Graph\-::\-Vertex\-::set\-Id(), g2o\-::\-Optimizable\-Graph\-::\-Edge\-::set\-Robust\-Kernel(), g2o\-::\-Hyper\-Graph\-::\-Edge\-::set\-Vertex() , 以及 g2o\-::\-Optimizable\-Graph\-::vertex().
+
+
+
+参考自 O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Loop\-Closing\-::\-Compute\-Sim3().
+
+
+
+函数调用图\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classORB__SLAM2_1_1Optimizer_ad8fe00ad3e6564b859b07ff9e7b2224e_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+这是这个函数的调用关系图\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classORB__SLAM2_1_1Optimizer_ad8fe00ad3e6564b859b07ff9e7b2224e_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classORB__SLAM2_1_1Optimizer_a7415d78b8a2323b88e108fa1ea3bf2d3}{\index{O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Optimizer@{O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Optimizer}!Pose\-Optimization@{Pose\-Optimization}}
+\index{Pose\-Optimization@{Pose\-Optimization}!ORB_SLAM2::Optimizer@{O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Optimizer}}
+\subsubsection[{Pose\-Optimization}]{\setlength{\rightskip}{0pt plus 5cm}int O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Optimizer\-::\-Pose\-Optimization (
+\begin{DoxyParamCaption}
+\item[{{\bf Frame} $\ast$}]{p\-Frame}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classORB__SLAM2_1_1Optimizer_a7415d78b8a2323b88e108fa1ea3bf2d3}
+
+
+Pose Only Optimization. 
+
+3\-D-\/2\-D 最小化重投影误差 e = (u,v) -\/ project(\-Tcw$\ast$\-Pw) \par
+只优化\-Frame的\-Tcw!!!!!!!!不优化\-Map\-Points的坐标!!!!!!!!!!!!!!!!
+
+
+\begin{DoxyEnumerate}
+\item Vertex\-: \hyperlink{classg2o_1_1VertexSE3Expmap}{g2o\-::\-Vertex\-S\-E3\-Expmap()}，即当前帧的\-Tcw
+\item Edge\-:
+\begin{DoxyItemize}
+\item \hyperlink{classg2o_1_1EdgeSE3ProjectXYZOnlyPose}{g2o\-::\-Edge\-S\-E3\-Project\-X\-Y\-Z\-Only\-Pose()}，\-Base\-Unary\-Edge
+\begin{DoxyItemize}
+\item Vertex：待优化当前帧的\-Tcw
+\item measurement：\-Map\-Point在当前帧中的二维位置(u,v)!!!!
+\item Info\-Matrix\-: inv\-Sigma2(与特征点所在的尺度有关)
+\end{DoxyItemize}
+\item \hyperlink{classg2o_1_1EdgeStereoSE3ProjectXYZOnlyPose}{g2o\-::\-Edge\-Stereo\-S\-E3\-Project\-X\-Y\-Z\-Only\-Pose()}，\-Base\-Unary\-Edge
+\begin{DoxyItemize}
+\item Vertex：待优化当前帧的\-Tcw
+\item measurement：\-Map\-Point在当前帧中的二维位置(ul,v,ur)
+\item Info\-Matrix\-: inv\-Sigma2(与特征点所在的尺度有关)
+\end{DoxyItemize}
+\end{DoxyItemize}
+\end{DoxyEnumerate}
+
+
+\begin{DoxyParams}{参数}
+{\em p\-Frame} & \hyperlink{classORB__SLAM2_1_1Frame}{Frame} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+inliers数量 
+\end{DoxyReturn}
+
+
+在文件 Optimizer.\-cpp 第 291 行定义.
+
+
+
+参考 g2o\-::\-Optimizable\-Graph\-::add\-Edge(), g2o\-::\-Optimizable\-Graph\-::add\-Vertex(), g2o\-::\-Edge\-Stereo\-S\-E3\-Project\-X\-Y\-Z\-Only\-Pose\-::bf, g2o\-::\-Base\-Edge$<$ D, E $>$\-::chi2(), g2o\-::\-Edge\-S\-E3\-Project\-X\-Y\-Z\-Only\-Pose\-::compute\-Error(), g2o\-::\-Edge\-Stereo\-S\-E3\-Project\-X\-Y\-Z\-Only\-Pose\-::compute\-Error(), g2o\-::\-Edge\-S\-E3\-Project\-X\-Y\-Z\-Only\-Pose\-::cy, g2o\-::\-Hyper\-Graph\-::edges(), g2o\-::\-Base\-Vertex$<$ D, T $>$\-::estimate(), g2o\-::\-Sparse\-Optimizer\-::initialize\-Optimization(), O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Frame\-::m\-Tcw, O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Frame\-::\-N, g2o\-::\-Sparse\-Optimizer\-::optimize(), g2o\-::\-Robust\-Kernel\-Huber\-::set\-Delta(), g2o\-::\-Base\-Vertex$<$ D, T $>$\-::set\-Estimate(), g2o\-::\-Optimizable\-Graph\-::\-Vertex\-::set\-Fixed(), g2o\-::\-Optimizable\-Graph\-::\-Vertex\-::set\-Id(), g2o\-::\-Optimizable\-Graph\-::\-Edge\-::set\-Level(), O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Frame\-::\-Set\-Pose(), g2o\-::\-Optimizable\-Graph\-::\-Edge\-::set\-Robust\-Kernel(), g2o\-::\-Hyper\-Graph\-::\-Edge\-::set\-Vertex(), O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Converter\-::to\-S\-E3\-Quat(), g2o\-::\-Optimizable\-Graph\-::vertex(), g2o\-::\-Edge\-S\-E3\-Project\-X\-Y\-Z\-Only\-Pose\-::\-Xw , 以及 g2o\-::\-Edge\-Stereo\-S\-E3\-Project\-X\-Y\-Z\-Only\-Pose\-::\-Xw.
+
+
+
+参考自 O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Tracking\-::\-Track\-Local\-Map(), O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Tracking\-::\-Track\-Reference\-Key\-Frame() , 以及 O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Tracking\-::\-Track\-With\-Motion\-Model().
+
+
+
+函数调用图\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classORB__SLAM2_1_1Optimizer_a7415d78b8a2323b88e108fa1ea3bf2d3_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+这是这个函数的调用关系图\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classORB__SLAM2_1_1Optimizer_a7415d78b8a2323b88e108fa1ea3bf2d3_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+该类的文档由以下文件生成\-:\begin{DoxyCompactItemize}
+\item 
+include/Optimizer.\-h\item 
+src/Optimizer.\-cpp\end{DoxyCompactItemize}

@@ -1,0 +1,14 @@
+<map id="g2o::BlockSolver::buildSystem" name="g2o::BlockSolver::buildSystem">
+<area shape="rect" id="node2" href="$classg2o_1_1OptimizableGraph_1_1Vertex.html#a803897f6bae25dece4d7e23330f0f9da" title="g2o::OptimizableGraph\l::Vertex::clearQuadraticForm" alt="" coords="265,5,455,46"/>
+<area shape="rect" id="node3" href="$classg2o_1_1OptimizableGraph_1_1Vertex.html#a9559c391b2962de131045a90815a9b5a" title="get the row of this vertex in the Hessian " alt="" coords="283,70,437,111"/>
+<area shape="rect" id="node4" href="$classg2o_1_1OptimizableGraph_1_1Edge.html#a56fbf3430ddf591e3c619bdd1b7e4499" title="g2o::OptimizableGraph\l::Edge::constructQuadraticForm" alt="" coords="256,135,464,177"/>
+<area shape="rect" id="node5" href="$classg2o_1_1OptimizableGraph_1_1Vertex.html#af544f0050ea6e05950fd6e53931bdf61" title="g2o::OptimizableGraph\l::Vertex::copyB" alt="" coords="283,201,437,242"/>
+<area shape="rect" id="node6" href="$classg2o_1_1OptimizableGraph_1_1Vertex.html#a1037b978fec531eaf860d0037b992079" title="dimension of the estimated state belonging to this node " alt="" coords="283,266,437,307"/>
+<area shape="rect" id="node7" href="$classg2o_1_1OptimizableGraph_1_1Edge.html#a90a86891adc47a179a7cd7ef31549916" title="returns the dimensions of the error function " alt="" coords="283,331,437,373"/>
+<area shape="rect" id="node8" href="$classg2o_1_1OptimizableGraph_1_1Vertex.html#ac83c34e6176f0cc5315ad7401a49efb3" title="true =&gt; this node is fixed during the optimization " alt="" coords="283,397,437,438"/>
+<area shape="rect" id="node9" href="$classg2o_1_1OptimizableGraph_1_1Edge.html#a0fdad5ebfb4efec9f893b57f67e0fbe1" title="g2o::OptimizableGraph\l::Edge::linearizeOplus" alt="" coords="283,462,437,503"/>
+<area shape="rect" id="node10" href="$classg2o_1_1OptimizableGraph_1_1Vertex.html#a214c01f0b3cab575f3496be729f6ccb1" title="true =&gt; this node is marginalized out during the optimization " alt="" coords="283,527,437,569"/>
+<area shape="rect" id="node11" href="$classg2o_1_1HyperGraph_1_1Edge.html#aaec0b2c92c5496d0f0fea8f1abdc4311" title="g2o::HyperGraph::Edge\l::vertex" alt="" coords="281,593,439,634"/>
+<area shape="rect" id="node12" href="$classg2o_1_1HyperGraph_1_1Edge.html#a6410bb70a917b5407770ef1f1090b5f5" title="g2o::HyperGraph::Edge\l::vertices" alt="" coords="281,658,439,699"/>
+<area shape="rect" id="node13" href="$classg2o_1_1JacobianWorkspace.html#ad68c37d7779d3a034bc1b864cd98690b" title="g2o::JacobianWorkspace\l::workspaceForVertex" alt="" coords="275,723,445,765"/>
+</map>

@@ -1,0 +1,8 @@
+<map id="ORB_SLAM2::LoopClosing::DetectLoop" name="ORB_SLAM2::LoopClosing::DetectLoop">
+<area shape="rect" id="node2" href="$classORB__SLAM2_1_1KeyFrameDatabase.html#a1b3a362116e3ecf2cd7e151be2ca3fcb" title="根据关键帧的词包，更新数据库的倒排索引 " alt="" coords="235,5,490,32"/>
+<area shape="rect" id="node3" href="$classORB__SLAM2_1_1KeyFrameDatabase.html#a2d396aae02c4318ea8c7e7eff8059c69" title="在闭环检测中找到与该关键帧可能闭环的关键帧 " alt="" coords="250,107,475,149"/>
+<area shape="rect" id="node5" href="$classORB__SLAM2_1_1KeyFrame.html#af4ffdf4441477a36c42d6605c573f1cf" title="得到与该关键帧连接的关键帧 " alt="" coords="553,42,735,83"/>
+<area shape="rect" id="node6" href="$classDBoW2_1_1TemplatedVocabulary.html#a4988c1ab067de25259115bf9963b02d9" title="DBoW2::TemplatedVocabulary\l::score" alt="" coords="543,173,745,214"/>
+<area shape="rect" id="node7" href="$classORB__SLAM2_1_1KeyFrame.html#a9315d396634f6637f70f716336777b8d" title="得到与该关键帧连接的关键帧(已按权值排序) " alt="" coords="257,225,468,266"/>
+<area shape="rect" id="node4" href="$classORB__SLAM2_1_1KeyFrame.html#a2ecb2df01af804fb727c93948a28475f" title="得到与该关键帧连接的前N个关键帧(已按权值排序) " alt="" coords="539,107,749,149"/>
+</map>

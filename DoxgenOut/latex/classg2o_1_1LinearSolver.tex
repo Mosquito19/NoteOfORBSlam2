@@ -1,0 +1,113 @@
+\hypertarget{classg2o_1_1LinearSolver}{\section{g2o\-:\-:Linear\-Solver$<$ Matrix\-Type $>$ 模板类 参考}
+\label{classg2o_1_1LinearSolver}\index{g2o\-::\-Linear\-Solver$<$ Matrix\-Type $>$@{g2o\-::\-Linear\-Solver$<$ Matrix\-Type $>$}}
+}
+
+
+basic solver for Ax = b  
+
+
+
+
+{\ttfamily \#include $<$linear\-\_\-solver.\-h$>$}
+
+
+
+类 g2o\-:\-:Linear\-Solver$<$ Matrix\-Type $>$ 继承关系图\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=336pt]{classg2o_1_1LinearSolver__inherit__graph}
+\end{center}
+\end{figure}
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+virtual bool \hyperlink{classg2o_1_1LinearSolver_aebd961a94ef6de1bc66d2ca41dd2b17b}{init} ()=0
+\item 
+virtual bool \hyperlink{classg2o_1_1LinearSolver_aa44b40826d50203c8ce2ff258c34e030}{solve} (const \hyperlink{classg2o_1_1SparseBlockMatrix}{Sparse\-Block\-Matrix}$<$ Matrix\-Type $>$ \&A, double $\ast$x, double $\ast$b)=0
+\item 
+virtual bool \hyperlink{classg2o_1_1LinearSolver_a252e3658b3ba0c3577c33f846c514535}{solve\-Blocks} (double $\ast$$\ast$\&blocks, const \hyperlink{classg2o_1_1SparseBlockMatrix}{Sparse\-Block\-Matrix}$<$ Matrix\-Type $>$ \&A)
+\item 
+virtual bool \hyperlink{classg2o_1_1LinearSolver_adc74484f72bbe373622581fd597c1be3}{solve\-Pattern} (\hyperlink{classg2o_1_1SparseBlockMatrix}{Sparse\-Block\-Matrix}$<$ Matrix\-Xd $>$ \&spinv, const std\-::vector$<$ std\-::pair$<$ int, int $>$ $>$ \&block\-Indices, const \hyperlink{classg2o_1_1SparseBlockMatrix}{Sparse\-Block\-Matrix}$<$ Matrix\-Type $>$ \&A)
+\item 
+\hypertarget{classg2o_1_1LinearSolver_a8b6a84bd88f1bbc13d2c80c3a14d4693}{virtual bool \hyperlink{classg2o_1_1LinearSolver_a8b6a84bd88f1bbc13d2c80c3a14d4693}{write\-Debug} () const }\label{classg2o_1_1LinearSolver_a8b6a84bd88f1bbc13d2c80c3a14d4693}
+
+\begin{DoxyCompactList}\small\item\em write a debug dump of the system matrix if it is not P\-S\-D in solve \end{DoxyCompactList}\item 
+\hypertarget{classg2o_1_1LinearSolver_a969c406ccacc38705b2a88f5ed23cb9a}{virtual void {\bfseries set\-Write\-Debug} (bool)}\label{classg2o_1_1LinearSolver_a969c406ccacc38705b2a88f5ed23cb9a}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{详细描述}
+\subsubsection*{template$<$typename Matrix\-Type$>$class g2o\-::\-Linear\-Solver$<$ Matrix\-Type $>$}
+
+basic solver for Ax = b 
+
+basic solver for Ax = b which has to reimplemented for different linear algebra libraries. A is assumed to be symmetric (only upper triangular block is stored) and positive-\/semi-\/definit. 
+
+在文件 linear\-\_\-solver.\-h 第 41 行定义.
+
+
+
+\subsection{成员函数说明}
+\hypertarget{classg2o_1_1LinearSolver_aebd961a94ef6de1bc66d2ca41dd2b17b}{\index{g2o\-::\-Linear\-Solver@{g2o\-::\-Linear\-Solver}!init@{init}}
+\index{init@{init}!g2o::LinearSolver@{g2o\-::\-Linear\-Solver}}
+\subsubsection[{init}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Matrix\-Type$>$ virtual bool {\bf g2o\-::\-Linear\-Solver}$<$ Matrix\-Type $>$\-::init (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classg2o_1_1LinearSolver_aebd961a94ef6de1bc66d2ca41dd2b17b}
+init for operating on matrices with a different non-\/zero pattern like before 
+
+在 \hyperlink{classg2o_1_1LinearSolverEigen_a8fca4bb987dcbeb94a366b1532dee139}{g2o\-::\-Linear\-Solver\-Eigen$<$ Matrix\-Type $>$} , 以及 \hyperlink{classg2o_1_1LinearSolverDense_a24f68ecd4b022269dbfc4d990eb5c57b}{g2o\-::\-Linear\-Solver\-Dense$<$ Matrix\-Type $>$} 内被实现.
+
+\hypertarget{classg2o_1_1LinearSolver_aa44b40826d50203c8ce2ff258c34e030}{\index{g2o\-::\-Linear\-Solver@{g2o\-::\-Linear\-Solver}!solve@{solve}}
+\index{solve@{solve}!g2o::LinearSolver@{g2o\-::\-Linear\-Solver}}
+\subsubsection[{solve}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Matrix\-Type$>$ virtual bool {\bf g2o\-::\-Linear\-Solver}$<$ Matrix\-Type $>$\-::solve (
+\begin{DoxyParamCaption}
+\item[{const {\bf Sparse\-Block\-Matrix}$<$ Matrix\-Type $>$ \&}]{A, }
+\item[{double $\ast$}]{x, }
+\item[{double $\ast$}]{b}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classg2o_1_1LinearSolver_aa44b40826d50203c8ce2ff258c34e030}
+Assumes that A is the same matrix for several calls. Among other assumptions, the non-\/zero pattern does not change! If the matrix changes call \hyperlink{classg2o_1_1LinearSolver_aebd961a94ef6de1bc66d2ca41dd2b17b}{init()} before. solve system Ax = b, x and b have to allocated beforehand!! 
+
+在 \hyperlink{classg2o_1_1LinearSolverEigen_ae4ac566af324a238a31145c1e50b52e1}{g2o\-::\-Linear\-Solver\-Eigen$<$ Matrix\-Type $>$} , 以及 \hyperlink{classg2o_1_1LinearSolverDense_a8b6eafa6e53b9f705a4e8eb436eeb403}{g2o\-::\-Linear\-Solver\-Dense$<$ Matrix\-Type $>$} 内被实现.
+
+\hypertarget{classg2o_1_1LinearSolver_a252e3658b3ba0c3577c33f846c514535}{\index{g2o\-::\-Linear\-Solver@{g2o\-::\-Linear\-Solver}!solve\-Blocks@{solve\-Blocks}}
+\index{solve\-Blocks@{solve\-Blocks}!g2o::LinearSolver@{g2o\-::\-Linear\-Solver}}
+\subsubsection[{solve\-Blocks}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Matrix\-Type$>$ virtual bool {\bf g2o\-::\-Linear\-Solver}$<$ Matrix\-Type $>$\-::solve\-Blocks (
+\begin{DoxyParamCaption}
+\item[{double $\ast$$\ast$\&}]{blocks, }
+\item[{const {\bf Sparse\-Block\-Matrix}$<$ Matrix\-Type $>$ \&}]{A}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classg2o_1_1LinearSolver_a252e3658b3ba0c3577c33f846c514535}
+Inverts the diagonal blocks of A \begin{DoxyReturn}{返回}
+false if not defined. 
+\end{DoxyReturn}
+
+
+在文件 linear\-\_\-solver.\-h 第 64 行定义.
+
+\hypertarget{classg2o_1_1LinearSolver_adc74484f72bbe373622581fd597c1be3}{\index{g2o\-::\-Linear\-Solver@{g2o\-::\-Linear\-Solver}!solve\-Pattern@{solve\-Pattern}}
+\index{solve\-Pattern@{solve\-Pattern}!g2o::LinearSolver@{g2o\-::\-Linear\-Solver}}
+\subsubsection[{solve\-Pattern}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Matrix\-Type$>$ virtual bool {\bf g2o\-::\-Linear\-Solver}$<$ Matrix\-Type $>$\-::solve\-Pattern (
+\begin{DoxyParamCaption}
+\item[{{\bf Sparse\-Block\-Matrix}$<$ Matrix\-Xd $>$ \&}]{spinv, }
+\item[{const std\-::vector$<$ std\-::pair$<$ int, int $>$ $>$ \&}]{block\-Indices, }
+\item[{const {\bf Sparse\-Block\-Matrix}$<$ Matrix\-Type $>$ \&}]{A}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classg2o_1_1LinearSolver_adc74484f72bbe373622581fd597c1be3}
+Inverts the a block pattern of A in spinv \begin{DoxyReturn}{返回}
+false if not defined. 
+\end{DoxyReturn}
+
+
+在文件 linear\-\_\-solver.\-h 第 71 行定义.
+
+
+
+该类的文档由以下文件生成\-:\begin{DoxyCompactItemize}
+\item 
+Thirdparty/g2o/g2o/core/linear\-\_\-solver.\-h\end{DoxyCompactItemize}

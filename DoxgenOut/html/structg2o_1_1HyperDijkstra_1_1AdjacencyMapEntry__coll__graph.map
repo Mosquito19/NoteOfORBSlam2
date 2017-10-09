@@ -1,0 +1,5 @@
+<map id="g2o::HyperDijkstra::AdjacencyMapEntry" name="g2o::HyperDijkstra::AdjacencyMapEntry">
+<area shape="rect" id="node2" href="$classg2o_1_1HyperGraph_1_1Vertex.html" title="abstract Vertex, your types must derive from that one " alt="" coords="5,99,171,125"/>
+<area shape="rect" id="node3" href="$structg2o_1_1HyperGraph_1_1HyperGraphElement.html" title="g2o::HyperGraph::HyperGraph\lElement" alt="" coords="101,6,299,47"/>
+<area shape="rect" id="node4" href="$classg2o_1_1HyperGraph_1_1Edge.html" title="g2o::HyperGraph::Edge" alt="" coords="195,99,353,125"/>
+</map>

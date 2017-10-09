@@ -1,0 +1,215 @@
+\hypertarget{classg2o_1_1OptimizationAlgorithmDogleg}{\section{g2o\-:\-:Optimization\-Algorithm\-Dogleg类 参考}
+\label{classg2o_1_1OptimizationAlgorithmDogleg}\index{g2o\-::\-Optimization\-Algorithm\-Dogleg@{g2o\-::\-Optimization\-Algorithm\-Dogleg}}
+}
+
+
+Implementation of Powell's Dogleg Algorithm.  
+
+
+
+
+{\ttfamily \#include $<$optimization\-\_\-algorithm\-\_\-dogleg.\-h$>$}
+
+
+
+类 g2o\-:\-:Optimization\-Algorithm\-Dogleg 继承关系图\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=214pt]{classg2o_1_1OptimizationAlgorithmDogleg__inherit__graph}
+\end{center}
+\end{figure}
+
+
+g2o\-:\-:Optimization\-Algorithm\-Dogleg 的协作图\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classg2o_1_1OptimizationAlgorithmDogleg__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public 类型}
+\begin{DoxyCompactItemize}
+\item 
+enum \{ {\bfseries S\-T\-E\-P\-\_\-\-U\-N\-D\-E\-F\-I\-N\-E\-D}, 
+{\bfseries S\-T\-E\-P\-\_\-\-S\-D}, 
+{\bfseries S\-T\-E\-P\-\_\-\-G\-N}, 
+{\bfseries S\-T\-E\-P\-\_\-\-D\-L}
+ \}
+\begin{DoxyCompactList}\small\item\em type of the step to take \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classg2o_1_1OptimizationAlgorithmDogleg_ab332f8fb049d1a1fecba18105083052a}{Optimization\-Algorithm\-Dogleg} (\hyperlink{classg2o_1_1BlockSolverBase}{Block\-Solver\-Base} $\ast$\hyperlink{classg2o_1_1OptimizationAlgorithmWithHessian_a85473a4073c76b1a52cf9cf175e31c45}{solver})
+\item 
+virtual Solver\-Result \hyperlink{classg2o_1_1OptimizationAlgorithmDogleg_ace62fd809c18655bd7ff104285748610}{solve} (int iteration, bool online=false)
+\item 
+virtual void \hyperlink{classg2o_1_1OptimizationAlgorithmDogleg_a9bed238c5d36c094ca10103bb1c3979e}{print\-Verbose} (std\-::ostream \&os) const 
+\item 
+\hypertarget{classg2o_1_1OptimizationAlgorithmDogleg_a53a17375bcc00da1e56ad6582dff5d7b}{int \hyperlink{classg2o_1_1OptimizationAlgorithmDogleg_a53a17375bcc00da1e56ad6582dff5d7b}{last\-Step} () const }\label{classg2o_1_1OptimizationAlgorithmDogleg_a53a17375bcc00da1e56ad6582dff5d7b}
+
+\begin{DoxyCompactList}\small\item\em return the type of the last step taken by the algorithm \end{DoxyCompactList}\item 
+\hypertarget{classg2o_1_1OptimizationAlgorithmDogleg_a6cf67489a9b88d02ab74d6125df35f4b}{double \hyperlink{classg2o_1_1OptimizationAlgorithmDogleg_a6cf67489a9b88d02ab74d6125df35f4b}{trust\-Region} () const }\label{classg2o_1_1OptimizationAlgorithmDogleg_a6cf67489a9b88d02ab74d6125df35f4b}
+
+\begin{DoxyCompactList}\small\item\em return the diameter of the trust region \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{静态 Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classg2o_1_1OptimizationAlgorithmDogleg_a65f193c6451ffcd2bd6fd8f8d19e2a12}{static const char $\ast$ \hyperlink{classg2o_1_1OptimizationAlgorithmDogleg_a65f193c6451ffcd2bd6fd8f8d19e2a12}{step\-Type2\-Str} (int step\-Type)}\label{classg2o_1_1OptimizationAlgorithmDogleg_a65f193c6451ffcd2bd6fd8f8d19e2a12}
+
+\begin{DoxyCompactList}\small\item\em convert the type into an integer \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected 属性}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classg2o_1_1OptimizationAlgorithmDogleg_a5993c68e69cd037b1420b4addf9f7e50}{\hyperlink{classg2o_1_1Property}{Property}$<$ int $>$ $\ast$ {\bfseries \-\_\-max\-Trials\-After\-Failure}}\label{classg2o_1_1OptimizationAlgorithmDogleg_a5993c68e69cd037b1420b4addf9f7e50}
+
+\item 
+\hypertarget{classg2o_1_1OptimizationAlgorithmDogleg_ae77ffaea89872affeb61f122f20efeb9}{\hyperlink{classg2o_1_1Property}{Property}$<$ double $>$ $\ast$ {\bfseries \-\_\-user\-Delta\-Init}}\label{classg2o_1_1OptimizationAlgorithmDogleg_ae77ffaea89872affeb61f122f20efeb9}
+
+\item 
+\hypertarget{classg2o_1_1OptimizationAlgorithmDogleg_a3a94c7696f07e3def38ec96a1979babd}{\hyperlink{classg2o_1_1Property}{Property}$<$ double $>$ $\ast$ {\bfseries \-\_\-initial\-Lambda}}\label{classg2o_1_1OptimizationAlgorithmDogleg_a3a94c7696f07e3def38ec96a1979babd}
+
+\item 
+\hypertarget{classg2o_1_1OptimizationAlgorithmDogleg_a6855a511dc998efef7eaa0ef99e1b814}{\hyperlink{classg2o_1_1Property}{Property}$<$ double $>$ $\ast$ {\bfseries \-\_\-lamdba\-Factor}}\label{classg2o_1_1OptimizationAlgorithmDogleg_a6855a511dc998efef7eaa0ef99e1b814}
+
+\item 
+\hypertarget{classg2o_1_1OptimizationAlgorithmDogleg_a8f4ee408fbf3999063d094cf61e852b7}{Eigen\-::\-Vector\-Xd \hyperlink{classg2o_1_1OptimizationAlgorithmDogleg_a8f4ee408fbf3999063d094cf61e852b7}{\-\_\-hsd}}\label{classg2o_1_1OptimizationAlgorithmDogleg_a8f4ee408fbf3999063d094cf61e852b7}
+
+\begin{DoxyCompactList}\small\item\em steepest decent step \end{DoxyCompactList}\item 
+\hypertarget{classg2o_1_1OptimizationAlgorithmDogleg_aaf433c824153a7bd76b27690eb53113b}{Eigen\-::\-Vector\-Xd \hyperlink{classg2o_1_1OptimizationAlgorithmDogleg_aaf433c824153a7bd76b27690eb53113b}{\-\_\-hdl}}\label{classg2o_1_1OptimizationAlgorithmDogleg_aaf433c824153a7bd76b27690eb53113b}
+
+\begin{DoxyCompactList}\small\item\em final dogleg step \end{DoxyCompactList}\item 
+\hypertarget{classg2o_1_1OptimizationAlgorithmDogleg_a225092fe67ce75eb64011c1f45d8d936}{Eigen\-::\-Vector\-Xd \hyperlink{classg2o_1_1OptimizationAlgorithmDogleg_a225092fe67ce75eb64011c1f45d8d936}{\-\_\-aux\-Vector}}\label{classg2o_1_1OptimizationAlgorithmDogleg_a225092fe67ce75eb64011c1f45d8d936}
+
+\begin{DoxyCompactList}\small\item\em auxilary vector used to perform multiplications or other stuff \end{DoxyCompactList}\item 
+\hypertarget{classg2o_1_1OptimizationAlgorithmDogleg_aacc051a6740fc6017dac7c424dc7df3d}{double \hyperlink{classg2o_1_1OptimizationAlgorithmDogleg_aacc051a6740fc6017dac7c424dc7df3d}{\-\_\-current\-Lambda}}\label{classg2o_1_1OptimizationAlgorithmDogleg_aacc051a6740fc6017dac7c424dc7df3d}
+
+\begin{DoxyCompactList}\small\item\em the damping factor to force positive definite matrix \end{DoxyCompactList}\item 
+\hypertarget{classg2o_1_1OptimizationAlgorithmDogleg_a3484b12efddd9fc0051100634effecd6}{double \hyperlink{classg2o_1_1OptimizationAlgorithmDogleg_a3484b12efddd9fc0051100634effecd6}{\-\_\-delta}}\label{classg2o_1_1OptimizationAlgorithmDogleg_a3484b12efddd9fc0051100634effecd6}
+
+\begin{DoxyCompactList}\small\item\em trust region \end{DoxyCompactList}\item 
+\hypertarget{classg2o_1_1OptimizationAlgorithmDogleg_a3bf898af0087c0ed8287d0cd13e4c943}{int \hyperlink{classg2o_1_1OptimizationAlgorithmDogleg_a3bf898af0087c0ed8287d0cd13e4c943}{\-\_\-last\-Step}}\label{classg2o_1_1OptimizationAlgorithmDogleg_a3bf898af0087c0ed8287d0cd13e4c943}
+
+\begin{DoxyCompactList}\small\item\em type of the step taken by the algorithm \end{DoxyCompactList}\item 
+\hypertarget{classg2o_1_1OptimizationAlgorithmDogleg_af921ebbebaf059f73e410fc751616ec2}{bool \hyperlink{classg2o_1_1OptimizationAlgorithmDogleg_af921ebbebaf059f73e410fc751616ec2}{\-\_\-was\-P\-D\-In\-All\-Iterations}}\label{classg2o_1_1OptimizationAlgorithmDogleg_af921ebbebaf059f73e410fc751616ec2}
+
+\begin{DoxyCompactList}\small\item\em the matrix we solve was positive definite in all iterations -\/$>$ if not apply damping \end{DoxyCompactList}\item 
+\hypertarget{classg2o_1_1OptimizationAlgorithmDogleg_aeab37f3f587dc8b37b5a42d36fd8217c}{int {\bfseries \-\_\-last\-Num\-Tries}}\label{classg2o_1_1OptimizationAlgorithmDogleg_aeab37f3f587dc8b37b5a42d36fd8217c}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{详细描述}
+Implementation of Powell's Dogleg Algorithm. 
+
+在文件 optimization\-\_\-algorithm\-\_\-dogleg.\-h 第 39 行定义.
+
+
+
+\subsection{构造及析构函数说明}
+\hypertarget{classg2o_1_1OptimizationAlgorithmDogleg_ab332f8fb049d1a1fecba18105083052a}{\index{g2o\-::\-Optimization\-Algorithm\-Dogleg@{g2o\-::\-Optimization\-Algorithm\-Dogleg}!Optimization\-Algorithm\-Dogleg@{Optimization\-Algorithm\-Dogleg}}
+\index{Optimization\-Algorithm\-Dogleg@{Optimization\-Algorithm\-Dogleg}!g2o::OptimizationAlgorithmDogleg@{g2o\-::\-Optimization\-Algorithm\-Dogleg}}
+\subsubsection[{Optimization\-Algorithm\-Dogleg}]{\setlength{\rightskip}{0pt plus 5cm}g2o\-::\-Optimization\-Algorithm\-Dogleg\-::\-Optimization\-Algorithm\-Dogleg (
+\begin{DoxyParamCaption}
+\item[{{\bf Block\-Solver\-Base} $\ast$}]{solver}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [explicit]}}}\label{classg2o_1_1OptimizationAlgorithmDogleg_ab332f8fb049d1a1fecba18105083052a}
+construct the Dogleg algorithm, which will use the given \hyperlink{classg2o_1_1Solver}{Solver} for solving the linearized system. 
+
+在文件 optimization\-\_\-algorithm\-\_\-dogleg.\-cpp 第 41 行定义.
+
+
+
+参考 \-\_\-delta, \-\_\-last\-Step, g2o\-::\-Optimization\-Algorithm\-::\-\_\-properties, \-\_\-was\-P\-D\-In\-All\-Iterations , 以及 g2o\-::\-Property\-Map\-::make\-Property().
+
+
+
+函数调用图\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classg2o_1_1OptimizationAlgorithmDogleg_ab332f8fb049d1a1fecba18105083052a_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{成员函数说明}
+\hypertarget{classg2o_1_1OptimizationAlgorithmDogleg_a9bed238c5d36c094ca10103bb1c3979e}{\index{g2o\-::\-Optimization\-Algorithm\-Dogleg@{g2o\-::\-Optimization\-Algorithm\-Dogleg}!print\-Verbose@{print\-Verbose}}
+\index{print\-Verbose@{print\-Verbose}!g2o::OptimizationAlgorithmDogleg@{g2o\-::\-Optimization\-Algorithm\-Dogleg}}
+\subsubsection[{print\-Verbose}]{\setlength{\rightskip}{0pt plus 5cm}void g2o\-::\-Optimization\-Algorithm\-Dogleg\-::print\-Verbose (
+\begin{DoxyParamCaption}
+\item[{std\-::ostream \&}]{os}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classg2o_1_1OptimizationAlgorithmDogleg_a9bed238c5d36c094ca10103bb1c3979e}
+called by the optimizer if verbose. re-\/implement, if you want to print something 
+
+重载 \hyperlink{classg2o_1_1OptimizationAlgorithm_a61fe205d498ed3b0ac1f812a78c4b0f0}{g2o\-::\-Optimization\-Algorithm} .
+
+
+
+在文件 optimization\-\_\-algorithm\-\_\-dogleg.\-cpp 第 209 行定义.
+
+
+
+参考 \-\_\-current\-Lambda, \-\_\-delta, \-\_\-last\-Step, \-\_\-was\-P\-D\-In\-All\-Iterations , 以及 step\-Type2\-Str().
+
+
+
+函数调用图\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classg2o_1_1OptimizationAlgorithmDogleg_a9bed238c5d36c094ca10103bb1c3979e_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classg2o_1_1OptimizationAlgorithmDogleg_ace62fd809c18655bd7ff104285748610}{\index{g2o\-::\-Optimization\-Algorithm\-Dogleg@{g2o\-::\-Optimization\-Algorithm\-Dogleg}!solve@{solve}}
+\index{solve@{solve}!g2o::OptimizationAlgorithmDogleg@{g2o\-::\-Optimization\-Algorithm\-Dogleg}}
+\subsubsection[{solve}]{\setlength{\rightskip}{0pt plus 5cm}Optimization\-Algorithm\-::\-Solver\-Result g2o\-::\-Optimization\-Algorithm\-Dogleg\-::solve (
+\begin{DoxyParamCaption}
+\item[{int}]{iteration, }
+\item[{bool}]{online = {\ttfamily false}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classg2o_1_1OptimizationAlgorithmDogleg_ace62fd809c18655bd7ff104285748610}
+Solve one iteration. The \hyperlink{classg2o_1_1SparseOptimizer}{Sparse\-Optimizer} running on-\/top will call this for the given number of iterations. 
+\begin{DoxyParams}{参数}
+{\em iteration} & indicates the current iteration \\
+\hline
+\end{DoxyParams}
+
+
+实现了 \hyperlink{classg2o_1_1OptimizationAlgorithm_ab174deeeb2551ceaf715ea09f0f9c077}{g2o\-::\-Optimization\-Algorithm}.
+
+
+
+在文件 optimization\-\_\-algorithm\-\_\-dogleg.\-cpp 第 57 行定义.
+
+
+
+参考 \-\_\-aux\-Vector, \-\_\-current\-Lambda, \-\_\-delta, \-\_\-hdl, \-\_\-hsd, \-\_\-last\-Step, g2o\-::\-Optimization\-Algorithm\-::\-\_\-optimizer, \-\_\-was\-P\-D\-In\-All\-Iterations, g2o\-::\-Sparse\-Optimizer\-::active\-Robust\-Chi2(), g2o\-::\-Solver\-::b(), g2o\-::\-Solver\-::build\-Structure(), g2o\-::\-Solver\-::build\-System(), g2o\-::\-Sparse\-Optimizer\-::compute\-Active\-Errors(), g2o\-::\-Sparse\-Optimizer\-::discard\-Top(), g2o\-::\-Block\-Solver\-Base\-::multiply\-Hessian(), g2o\-::\-Solver\-::optimizer(), g2o\-::\-Sparse\-Optimizer\-::pop(), g2o\-::\-Sparse\-Optimizer\-::push(), g2o\-::\-Solver\-::restore\-Diagonal(), g2o\-::\-Solver\-::set\-Lambda(), g2o\-::\-Solver\-::solve(), g2o\-::\-G2\-O\-Batch\-Statistics\-::time\-Quadratic\-Form, g2o\-::\-G2\-O\-Batch\-Statistics\-::time\-Residuals, g2o\-::\-Solver\-::vector\-Size() , 以及 g2o\-::\-Solver\-::x().
+
+
+
+函数调用图\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classg2o_1_1OptimizationAlgorithmDogleg_ace62fd809c18655bd7ff104285748610_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+该类的文档由以下文件生成\-:\begin{DoxyCompactItemize}
+\item 
+Thirdparty/g2o/g2o/core/optimization\-\_\-algorithm\-\_\-dogleg.\-h\item 
+Thirdparty/g2o/g2o/core/optimization\-\_\-algorithm\-\_\-dogleg.\-cpp\end{DoxyCompactItemize}

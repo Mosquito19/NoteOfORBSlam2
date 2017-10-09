@@ -1,0 +1,5 @@
+<map id="DBoW2::TemplatedVocabulary::score" name="DBoW2::TemplatedVocabulary::score">
+<area shape="rect" id="node2" href="$classORB__SLAM2_1_1LoopClosing.html#aa8110ca79cebaf509e378d30e55f1381" title="ORB_SLAM2::LoopClosing\l::DetectLoop" alt="" coords="531,5,712,46"/>
+<area shape="rect" id="node3" href="$classORB__SLAM2_1_1KeyFrameDatabase.html#a2d396aae02c4318ea8c7e7eff8059c69" title="在闭环检测中找到与该关键帧可能闭环的关键帧 " alt="" coords="257,34,482,75"/>
+<area shape="rect" id="node4" href="$classORB__SLAM2_1_1KeyFrameDatabase.html#a008586e4d07ece0d948d0f1633447a2b" title="在重定位中找到与该帧相似的关键帧 " alt="" coords="257,99,482,141"/>
+</map>

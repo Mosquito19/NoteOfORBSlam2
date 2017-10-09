@@ -1,0 +1,81 @@
+\hypertarget{classg2o_1_1BlockSolverBase}{\section{g2o\-:\-:Block\-Solver\-Base类 参考}
+\label{classg2o_1_1BlockSolverBase}\index{g2o\-::\-Block\-Solver\-Base@{g2o\-::\-Block\-Solver\-Base}}
+}
+
+
+base for the block solvers with some basic function interfaces  
+
+
+
+
+{\ttfamily \#include $<$block\-\_\-solver.\-h$>$}
+
+
+
+类 g2o\-:\-:Block\-Solver\-Base 继承关系图\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=214pt]{classg2o_1_1BlockSolverBase__inherit__graph}
+\end{center}
+\end{figure}
+
+
+g2o\-:\-:Block\-Solver\-Base 的协作图\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classg2o_1_1BlockSolverBase__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \hyperlink{classg2o_1_1BlockSolverBase_a4ff7072751bfa1b7fcf91f8219e18e13}{multiply\-Hessian} (double $\ast$dest, const double $\ast$src) const =0
+\end{DoxyCompactItemize}
+\subsection*{额外继承的成员函数}
+
+
+\subsection{详细描述}
+base for the block solvers with some basic function interfaces 
+
+在文件 block\-\_\-solver.\-h 第 83 行定义.
+
+
+
+\subsection{成员函数说明}
+\hypertarget{classg2o_1_1BlockSolverBase_a4ff7072751bfa1b7fcf91f8219e18e13}{\index{g2o\-::\-Block\-Solver\-Base@{g2o\-::\-Block\-Solver\-Base}!multiply\-Hessian@{multiply\-Hessian}}
+\index{multiply\-Hessian@{multiply\-Hessian}!g2o::BlockSolverBase@{g2o\-::\-Block\-Solver\-Base}}
+\subsubsection[{multiply\-Hessian}]{\setlength{\rightskip}{0pt plus 5cm}virtual void g2o\-::\-Block\-Solver\-Base\-::multiply\-Hessian (
+\begin{DoxyParamCaption}
+\item[{double $\ast$}]{dest, }
+\item[{const double $\ast$}]{src}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classg2o_1_1BlockSolverBase_a4ff7072751bfa1b7fcf91f8219e18e13}
+compute dest = H $\ast$ src 
+
+在 \hyperlink{classg2o_1_1BlockSolver_a615892075357273ec8bb06e101d9155b}{g2o\-::\-Block\-Solver$<$ Traits $>$} 内被实现.
+
+
+
+参考自 g2o\-::\-Optimization\-Algorithm\-Dogleg\-::solve().
+
+
+
+这是这个函数的调用关系图\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classg2o_1_1BlockSolverBase_a4ff7072751bfa1b7fcf91f8219e18e13_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+该类的文档由以下文件生成\-:\begin{DoxyCompactItemize}
+\item 
+Thirdparty/g2o/g2o/core/block\-\_\-solver.\-h\end{DoxyCompactItemize}

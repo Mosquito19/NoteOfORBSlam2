@@ -1,0 +1,6 @@
+<map id="ORB_SLAM2::KeyFrame::ComputeSceneMedianDepth" name="ORB_SLAM2::KeyFrame::ComputeSceneMedianDepth">
+<area shape="rect" id="node2" href="$classORB__SLAM2_1_1Tracking.html#afeb077c81cd700d779348b80698086e8" title="CreateInitialMapMonocular. " alt="" coords="253,5,438,46"/>
+<area shape="rect" id="node5" href="$classORB__SLAM2_1_1LocalMapping.html#ac06b513357429d9eff89e29d2ae58d6c" title="ORB_SLAM2::LocalMapping\l::CreateNewMapPoints" alt="" coords="251,70,440,111"/>
+<area shape="rect" id="node3" href="$classORB__SLAM2_1_1Tracking.html#a7e81c68bb6ced27fcbfa2edec38ef6e0" title="单目的地图初始化 " alt="" coords="489,5,647,46"/>
+<area shape="rect" id="node4" href="$classORB__SLAM2_1_1Tracking.html#af1f2c9c533642d8c33854540e90d1918" title="Main tracking function. It is independent of the input sensor. " alt="" coords="697,5,855,46"/>
+</map>

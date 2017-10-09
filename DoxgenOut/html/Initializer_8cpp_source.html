@@ -1,0 +1,1198 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.6"/>
+<title>My Project: src/Initializer.cpp 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">My Project
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.6 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="pages.html"><span>相关页面</span></a></li>
+      <li><a href="modules.html"><span>模块</span></a></li>
+      <li><a href="namespaces.html"><span>命名空间</span></a></li>
+      <li><a href="annotated.html"><span>类</span></a></li>
+      <li class="current"><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>文件列表</span></a></li>
+      <li><a href="globals.html"><span>文件成员</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('Initializer_8cpp_source.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>命名空间</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>友元</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>组</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>页</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">Initializer.cpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#include &quot;Initializer.h&quot;</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#include &quot;Thirdparty/DBoW2/DUtils/Random.h&quot;</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#include &quot;Optimizer.h&quot;</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#include &quot;ORBmatcher.h&quot;</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#include&lt;thread&gt;</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="keyword">namespace </span>ORB_SLAM2</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;{</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div>
+<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="classORB__SLAM2_1_1Initializer.html#ac492345a970665cd8a1b1d8cf41d44af">   41</a></span>&#160;<a class="code" href="classORB__SLAM2_1_1Initializer.html#ac492345a970665cd8a1b1d8cf41d44af">Initializer::Initializer</a>(<span class="keyword">const</span> <a class="code" href="classORB__SLAM2_1_1Frame.html">Frame</a> &amp;ReferenceFrame, <span class="keywordtype">float</span> sigma, <span class="keywordtype">int</span> iterations)</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;{</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    mK = ReferenceFrame.mK.clone();</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    mvKeys1 = ReferenceFrame.mvKeysUn;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    mSigma = sigma;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    mSigma2 = sigma*sigma;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    mMaxIterations = iterations;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;}</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div>
+<div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="classORB__SLAM2_1_1Initializer.html#a40d41840e2bdb7199ab024871d028c2c">   55</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="classORB__SLAM2_1_1Initializer.html#a40d41840e2bdb7199ab024871d028c2c">Initializer::Initialize</a>(<span class="keyword">const</span> <a class="code" href="classORB__SLAM2_1_1Frame.html">Frame</a> &amp;CurrentFrame, <span class="keyword">const</span> vector&lt;int&gt; &amp;vMatches12, cv::Mat &amp;R21, cv::Mat &amp;t21,</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;                             vector&lt;cv::Point3f&gt; &amp;vP3D, vector&lt;bool&gt; &amp;vbTriangulated)</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;{</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="comment">// Fill structures with current keypoints and matches with reference frame</span></div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="comment">// Reference Frame: 1, Current Frame: 2</span></div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="comment">// Frame2 特征点</span></div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    mvKeys2 = CurrentFrame.mvKeysUn;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="comment">// mvMatches12记录匹配上的特征点对</span></div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    mvMatches12.clear();</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    mvMatches12.reserve(mvKeys2.size());</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="comment">// mvbMatched1记录每个特征点是否有匹配的特征点，</span></div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="comment">// 这个变量后面没有用到，后面只关心匹配上的特征点</span></div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    mvbMatched1.resize(mvKeys1.size());</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="comment">// 步骤1：组织特征点对</span></div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="keywordflow">for</span>(<span class="keywordtype">size_t</span> i=0, iend=vMatches12.size();i&lt;iend; i++)</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    {</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        <span class="keywordflow">if</span>(vMatches12[i]&gt;=0)</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    {</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;      <span class="comment">//注意 mvMatches12 类型是 vector&lt;Match&gt; ；Match类型是&lt;int,int&gt;</span></div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;            mvMatches12.push_back(make_pair(i,vMatches12[i]));</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;            mvbMatched1[i]=<span class="keyword">true</span>;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        }</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;        <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;            mvbMatched1[i]=<span class="keyword">false</span>;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    }</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <span class="comment">// 匹配上的特征点的个数</span></div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">int</span> N = mvMatches12.size();</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <span class="comment">// Indices for minimum set selection</span></div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <span class="comment">// 新建一个容器vAllIndices，生成0到N-1的数作为特征点的索引</span></div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    vector&lt;size_t&gt; vAllIndices;</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    vAllIndices.reserve(N);</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    vector&lt;size_t&gt; vAvailableIndices;</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i=0; i&lt;N; i++)</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    {</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;        vAllIndices.push_back(i);</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    }</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    <span class="comment">// Generate sets of 8 points for each RANSAC iteration</span></div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    <span class="comment">// 步骤2：在所有匹配特征点对中随机选择8对匹配特征点为一组，共选择mMaxIterations组</span></div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    <span class="comment">// 用于FindHomography和FindFundamental求解</span></div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    <span class="comment">// mMaxIterations:200</span></div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    mvSets = vector&lt; vector&lt;size_t&gt; &gt;(mMaxIterations,vector&lt;size_t&gt;(8,0));</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    <a class="code" href="classDUtils_1_1Random.html#a168e77d82ce1e66c6759e97ef27adbbc">DUtils::Random::SeedRandOnce</a>(0);</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    <span class="keywordflow">for</span>(<span class="keywordtype">int</span> it=0; it&lt;mMaxIterations; it++)</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    {</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;        vAvailableIndices = vAllIndices;</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;        <span class="comment">// Select a minimum set</span></div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;        <span class="keywordflow">for</span>(<span class="keywordtype">size_t</span> j=0; j&lt;8; j++)</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;        {</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;            <span class="comment">// 产生0到N-1的随机数</span></div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;            <span class="keywordtype">int</span> randi = <a class="code" href="classDUtils_1_1Random.html#aa25012101ecbca54025d5430bcf93d86">DUtils::Random::RandomInt</a>(0,vAvailableIndices.size()-1);</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;            <span class="comment">// idx表示哪一个索引对应的特征点被选中</span></div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;            <span class="keywordtype">int</span> idx = vAvailableIndices[randi];</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;            mvSets[it][j] = idx;</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;            <span class="comment">// randi对应的索引已经被选过了，从容器中删除---防止重复！！！</span></div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;            <span class="comment">// randi对应的索引用最后一个元素替换，并删掉最后一个元素-------真巧妙。。</span></div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;            vAvailableIndices[randi] = vAvailableIndices.back();</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;            vAvailableIndices.pop_back();</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;        }</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;    }</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;    <span class="comment">// Launch threads to compute in parallel a fundamental matrix and a homography</span></div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;    <span class="comment">// 步骤3：调用多线程分别用于计算fundamental matrix和homography</span></div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;    vector&lt;bool&gt; vbMatchesInliersH, vbMatchesInliersF;</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;    <span class="keywordtype">float</span> SH, SF; <span class="comment">// score for H and F</span></div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;    cv::Mat H, F; <span class="comment">// H and F</span></div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;    <span class="comment">// ref是引用的功能:http://en.cppreference.com/w/cpp/utility/functional/ref</span></div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;    <span class="comment">// 计算homograpy并打分</span></div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;    thread threadH(&amp;Initializer::FindHomography,<span class="keyword">this</span>,ref(vbMatchesInliersH), ref(SH), ref(H));</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;    <span class="comment">// 计算fundamental matrix并打分</span></div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;    thread threadF(&amp;Initializer::FindFundamental,<span class="keyword">this</span>,ref(vbMatchesInliersF), ref(SF), ref(F));</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;    <span class="comment">// Wait until both threads have finished</span></div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;    threadH.join();</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;    threadF.join();</div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;</div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;    <span class="comment">// Compute ratio of scores</span></div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;    <span class="comment">// 步骤4：计算得分比例，选取某个模型</span></div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;    <span class="keywordtype">float</span> RH = SH/(SH+SF);</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;    <span class="comment">// Try to reconstruct from homography or fundamental depending on the ratio (0.40-0.45)</span></div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;    <span class="comment">// 步骤5：从H矩阵或F矩阵中恢复R,t</span></div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;    <span class="keywordflow">if</span>(RH&gt;0.40)</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;        <span class="keywordflow">return</span> ReconstructH(vbMatchesInliersH,H,mK,R21,t21,vP3D,vbTriangulated,1.0,50);</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;    <span class="keywordflow">else</span> <span class="comment">//if(pF_HF&gt;0.6)</span></div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;        <span class="keywordflow">return</span> ReconstructF(vbMatchesInliersF,F,mK,R21,t21,vP3D,vbTriangulated,1.0,50);</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;}</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;<span class="keywordtype">void</span> Initializer::FindHomography(vector&lt;bool&gt; &amp;vbMatchesInliers, <span class="keywordtype">float</span> &amp;score, cv::Mat &amp;H21)</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;{</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;    <span class="comment">// Number of putative matches</span></div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">int</span> N = mvMatches12.size();</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;    <span class="comment">// Normalize coordinates</span></div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;    <span class="comment">// 将mvKeys1和mvKey2归一化到均值为0，一阶绝对矩为1，归一化矩阵分别为T1、T2</span></div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;    vector&lt;cv::Point2f&gt; vPn1, vPn2;</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;    cv::Mat T1, T2;</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;    Normalize(mvKeys1,vPn1, T1);</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;    Normalize(mvKeys2,vPn2, T2);</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;    cv::Mat T2inv = T2.inv();</div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;    <span class="comment">// Best Results variables</span></div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;    <span class="comment">// 最终最佳的MatchesInliers与得分</span></div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;    score = 0.0;</div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;    vbMatchesInliers = vector&lt;bool&gt;(N,<span class="keyword">false</span>);</div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;</div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;    <span class="comment">// Iteration variables</span></div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;    vector&lt;cv::Point2f&gt; vPn1i(8);</div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;    vector&lt;cv::Point2f&gt; vPn2i(8);</div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;    cv::Mat H21i, H12i;</div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;    <span class="comment">// 每次RANSAC的MatchesInliers与得分</span></div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;    vector&lt;bool&gt; vbCurrentInliers(N,<span class="keyword">false</span>);</div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;    <span class="keywordtype">float</span> currentScore;</div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;</div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;    <span class="comment">// Perform all RANSAC iterations and save the solution with highest score</span></div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;    <span class="comment">//迭代200次，保存一个最好的值...觉得有点奇怪呢.....</span></div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;    <span class="keywordflow">for</span>(<span class="keywordtype">int</span> it=0; it&lt;mMaxIterations; it++)</div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;    {</div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;        <span class="comment">// Select a minimum set</span></div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;        <span class="keywordflow">for</span>(<span class="keywordtype">size_t</span> j=0; j&lt;8; j++)</div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;        {</div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;            <span class="keywordtype">int</span> idx = mvSets[it][j];</div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;</div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;            <span class="comment">// vPn1i和vPn2i为匹配的特征点对的坐标</span></div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;            vPn1i[j] = vPn1[mvMatches12[idx].first];</div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;            vPn2i[j] = vPn2[mvMatches12[idx].second];</div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;        }</div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;</div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;        cv::Mat Hn = ComputeH21(vPn1i,vPn2i);</div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;        <span class="comment">// 恢复原始的均值和尺度</span></div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;        H21i = T2inv*Hn*T1;</div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;        H12i = H21i.inv();</div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;</div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;        <span class="comment">// 利用重投影误差为当次RANSAC的结果评分------------循环200次,找到 currentScore最大的那个值 ,,这个值越大,就代表重映射误差 小于th阈值的多,匹配好</span></div>
+<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;        currentScore = CheckHomography(H21i, H12i, vbCurrentInliers, mSigma);</div>
+<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;</div>
+<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;        <span class="comment">// 得到最优的vbMatchesInliers与score</span></div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;        <span class="keywordflow">if</span>(currentScore&gt;score)</div>
+<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;        {</div>
+<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;            H21 = H21i.clone();</div>
+<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;            vbMatchesInliers = vbCurrentInliers;</div>
+<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;            score = currentScore;</div>
+<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;        }</div>
+<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;    }</div>
+<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;}</div>
+<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;</div>
+<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;<span class="keywordtype">void</span> Initializer::FindFundamental(vector&lt;bool&gt; &amp;vbMatchesInliers, <span class="keywordtype">float</span> &amp;score, cv::Mat &amp;F21)</div>
+<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;{</div>
+<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;<span class="comment">//     // Number of putative matches//假设的匹配 0个。</span></div>
+<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">int</span> N = vbMatchesInliers.size();</div>
+<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;</div>
+<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;    <span class="comment">// Normalize coordinates</span></div>
+<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;    vector&lt;cv::Point2f&gt; vPn1, vPn2;</div>
+<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;    cv::Mat T1, T2;</div>
+<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;    Normalize(mvKeys1,vPn1, T1);</div>
+<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;    Normalize(mvKeys2,vPn2, T2);</div>
+<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;    cv::Mat T2t = T2.t();</div>
+<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;</div>
+<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;    <span class="comment">// Best Results variables</span></div>
+<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;    score = 0.0;</div>
+<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;    vbMatchesInliers = vector&lt;bool&gt;(N,<span class="keyword">false</span>);</div>
+<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;</div>
+<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;    <span class="comment">// Iteration variables</span></div>
+<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;    vector&lt;cv::Point2f&gt; vPn1i(8);</div>
+<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;    vector&lt;cv::Point2f&gt; vPn2i(8);</div>
+<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;    cv::Mat F21i;</div>
+<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;    vector&lt;bool&gt; vbCurrentInliers(N,<span class="keyword">false</span>);</div>
+<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;    <span class="keywordtype">float</span> currentScore;</div>
+<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;</div>
+<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;    <span class="comment">// Perform all RANSAC iterations and save the solution with highest score</span></div>
+<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;    <span class="keywordflow">for</span>(<span class="keywordtype">int</span> it=0; it&lt;mMaxIterations; it++)</div>
+<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;    {</div>
+<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;        <span class="comment">// Select a minimum set</span></div>
+<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;        <span class="keywordflow">for</span>(<span class="keywordtype">int</span> j=0; j&lt;8; j++)</div>
+<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;        {</div>
+<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;            <span class="keywordtype">int</span> idx = mvSets[it][j];</div>
+<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;</div>
+<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;            vPn1i[j] = vPn1[mvMatches12[idx].first];</div>
+<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;            vPn2i[j] = vPn2[mvMatches12[idx].second];<span class="comment">//first是vPn1[8]对应一个点，。。</span></div>
+<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;        }</div>
+<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;</div>
+<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;        cv::Mat Fn = ComputeF21(vPn1i,vPn2i);</div>
+<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;</div>
+<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;        F21i = T2t*Fn*T1;</div>
+<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;</div>
+<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;        <span class="comment">// 利用重投影误差为当次RANSAC的结果评分</span></div>
+<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;        currentScore = CheckFundamental(F21i, vbCurrentInliers, mSigma);</div>
+<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;</div>
+<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;        <span class="keywordflow">if</span>(currentScore&gt;score)</div>
+<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;        {</div>
+<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;            F21 = F21i.clone();</div>
+<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;            vbMatchesInliers = vbCurrentInliers;</div>
+<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;            score = currentScore;</div>
+<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;        }</div>
+<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;    }</div>
+<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;}</div>
+<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;</div>
+<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;<span class="comment">// |x&#39;|     | h1 h2 h3 ||x|</span></div>
+<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;<span class="comment">// |y&#39;| = a | h4 h5 h6 ||y|  简写: x&#39; = a H x, a为一个尺度因子</span></div>
+<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;<span class="comment">// |1 |     | h7 h8 h9 ||1|</span></div>
+<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;<span class="comment">// 使用DLT(direct linear tranform)求解该模型</span></div>
+<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;<span class="comment">// x&#39; = a H x </span></div>
+<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;<span class="comment">// ---&gt; (x&#39;) 叉乘 (H x)  = 0</span></div>
+<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;<span class="comment">// ---&gt; Ah = 0</span></div>
+<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;<span class="comment">// A = | 0  0  0 -x -y -1 xy&#39; yy&#39; y&#39;|  h = | h1 h2 h3 h4 h5 h6 h7 h8 h9 |</span></div>
+<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;<span class="comment">//     |-x -y -1  0  0  0 xx&#39; yx&#39; x&#39;|</span></div>
+<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;<span class="comment">// 通过SVD求解Ah = 0，A&#39;A最小特征值对应的特征向量即为解</span></div>
+<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;</div>
+<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;cv::Mat Initializer::ComputeH21(<span class="keyword">const</span> vector&lt;cv::Point2f&gt; &amp;vP1, <span class="keyword">const</span> vector&lt;cv::Point2f&gt; &amp;vP2)</div>
+<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;{</div>
+<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">int</span> N = vP1.size();</div>
+<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;</div>
+<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;    cv::Mat A(2*N,9,CV_32F); <span class="comment">// 2N*9 16*9;</span></div>
+<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;</div>
+<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;    <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i=0; i&lt;N; i++)</div>
+<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;    {</div>
+<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">float</span> u1 = vP1[i].x;</div>
+<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">float</span> v1 = vP1[i].y;</div>
+<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">float</span> u2 = vP2[i].x;</div>
+<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">float</span> v2 = vP2[i].y;</div>
+<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;</div>
+<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;        A.at&lt;<span class="keywordtype">float</span>&gt;(2*i,0) = 0.0;</div>
+<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;        A.at&lt;<span class="keywordtype">float</span>&gt;(2*i,1) = 0.0;</div>
+<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;        A.at&lt;<span class="keywordtype">float</span>&gt;(2*i,2) = 0.0;</div>
+<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;        A.at&lt;<span class="keywordtype">float</span>&gt;(2*i,3) = -u1;</div>
+<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;        A.at&lt;<span class="keywordtype">float</span>&gt;(2*i,4) = -v1;</div>
+<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;        A.at&lt;<span class="keywordtype">float</span>&gt;(2*i,5) = -1;</div>
+<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;        A.at&lt;<span class="keywordtype">float</span>&gt;(2*i,6) = v2*u1;</div>
+<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;        A.at&lt;<span class="keywordtype">float</span>&gt;(2*i,7) = v2*v1;</div>
+<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;        A.at&lt;<span class="keywordtype">float</span>&gt;(2*i,8) = v2;</div>
+<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;</div>
+<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;        A.at&lt;<span class="keywordtype">float</span>&gt;(2*i+1,0) = u1;</div>
+<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;        A.at&lt;<span class="keywordtype">float</span>&gt;(2*i+1,1) = v1;</div>
+<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;        A.at&lt;<span class="keywordtype">float</span>&gt;(2*i+1,2) = 1;</div>
+<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;        A.at&lt;<span class="keywordtype">float</span>&gt;(2*i+1,3) = 0.0;</div>
+<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;        A.at&lt;<span class="keywordtype">float</span>&gt;(2*i+1,4) = 0.0;</div>
+<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;        A.at&lt;<span class="keywordtype">float</span>&gt;(2*i+1,5) = 0.0;</div>
+<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;        A.at&lt;<span class="keywordtype">float</span>&gt;(2*i+1,6) = -u2*u1;</div>
+<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;        A.at&lt;<span class="keywordtype">float</span>&gt;(2*i+1,7) = -u2*v1;</div>
+<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;        A.at&lt;<span class="keywordtype">float</span>&gt;(2*i+1,8) = -u2;</div>
+<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;</div>
+<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;    }</div>
+<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;</div>
+<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;    cv::Mat u,w,vt;</div>
+<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;</div>
+<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;    cv::SVDecomp(A,w,u,vt,cv::SVD::MODIFY_A | cv::SVD::FULL_UV);</div>
+<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;</div>
+<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;    <span class="keywordflow">return</span> vt.row(8).reshape(0, 3); <span class="comment">// v的最后一列 reshape 成了3*3的矩阵 ---&gt;H得到</span></div>
+<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;}</div>
+<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;</div>
+<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;<span class="comment">// x&#39;Fx = 0 整理可得：Af = 0</span></div>
+<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;<span class="comment">// A = | x&#39;x x&#39;y x&#39; y&#39;x y&#39;y y&#39; x y 1 |, f = | f1 f2 f3 f4 f5 f6 f7 f8 f9 |</span></div>
+<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;<span class="comment">// 通过SVD求解Af = 0，A&#39;A最小特征值对应的特征向量即为解</span></div>
+<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;</div>
+<div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;cv::Mat Initializer::ComputeF21(<span class="keyword">const</span> vector&lt;cv::Point2f&gt; &amp;vP1,<span class="keyword">const</span> vector&lt;cv::Point2f&gt; &amp;vP2)</div>
+<div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;{</div>
+<div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">int</span> N = vP1.size();</div>
+<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;</div>
+<div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;    cv::Mat A(N,9,CV_32F); <span class="comment">// N*9</span></div>
+<div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;</div>
+<div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;    <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i=0; i&lt;N; i++)</div>
+<div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;    {</div>
+<div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">float</span> u1 = vP1[i].x;</div>
+<div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">float</span> v1 = vP1[i].y;</div>
+<div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">float</span> u2 = vP2[i].x;</div>
+<div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">float</span> v2 = vP2[i].y;</div>
+<div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;</div>
+<div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;        A.at&lt;<span class="keywordtype">float</span>&gt;(i,0) = u2*u1;</div>
+<div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;        A.at&lt;<span class="keywordtype">float</span>&gt;(i,1) = u2*v1;</div>
+<div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;        A.at&lt;<span class="keywordtype">float</span>&gt;(i,2) = u2;</div>
+<div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;        A.at&lt;<span class="keywordtype">float</span>&gt;(i,3) = v2*u1;</div>
+<div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;        A.at&lt;<span class="keywordtype">float</span>&gt;(i,4) = v2*v1;</div>
+<div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;        A.at&lt;<span class="keywordtype">float</span>&gt;(i,5) = v2;</div>
+<div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;        A.at&lt;<span class="keywordtype">float</span>&gt;(i,6) = u1;</div>
+<div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;        A.at&lt;<span class="keywordtype">float</span>&gt;(i,7) = v1;</div>
+<div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;        A.at&lt;<span class="keywordtype">float</span>&gt;(i,8) = 1;</div>
+<div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;    }</div>
+<div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;</div>
+<div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;    cv::Mat u,w,vt;</div>
+<div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;</div>
+<div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;    cv::SVDecomp(A,w,u,vt,cv::SVD::MODIFY_A | cv::SVD::FULL_UV);</div>
+<div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;</div>
+<div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;    cv::Mat Fpre = vt.row(8).reshape(0, 3); <span class="comment">// v的最后一行,1*9reshape成了3*3的矩阵</span></div>
+<div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160;</div>
+<div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;    cv::SVDecomp(Fpre,w,u,vt,cv::SVD::MODIFY_A | cv::SVD::FULL_UV);</div>
+<div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;</div>
+<div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;    w.at&lt;<span class="keywordtype">float</span>&gt;(2)=0; <span class="comment">// 秩2约束，将第3个奇异值设为0</span></div>
+<div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;</div>
+<div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;    <span class="keywordflow">return</span>  u*cv::Mat::diag(w)*vt;</div>
+<div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;}</div>
+<div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;</div>
+<div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160;<span class="keywordtype">float</span> Initializer::CheckHomography(<span class="keyword">const</span> cv::Mat &amp;H21, <span class="keyword">const</span> cv::Mat &amp;H12, vector&lt;bool&gt; &amp;vbMatchesInliers, <span class="keywordtype">float</span> sigma)</div>
+<div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160;{   </div>
+<div class="line"><a name="l00394"></a><span class="lineno">  394</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">int</span> N = mvMatches12.size();</div>
+<div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160;</div>
+<div class="line"><a name="l00396"></a><span class="lineno">  396</span>&#160;    <span class="comment">// |h11 h12 h13|</span></div>
+<div class="line"><a name="l00397"></a><span class="lineno">  397</span>&#160;    <span class="comment">// |h21 h22 h23|</span></div>
+<div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160;    <span class="comment">// |h31 h32 h33|</span></div>
+<div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">float</span> h11 = H21.at&lt;<span class="keywordtype">float</span>&gt;(0,0);</div>
+<div class="line"><a name="l00400"></a><span class="lineno">  400</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">float</span> h12 = H21.at&lt;<span class="keywordtype">float</span>&gt;(0,1);</div>
+<div class="line"><a name="l00401"></a><span class="lineno">  401</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">float</span> h13 = H21.at&lt;<span class="keywordtype">float</span>&gt;(0,2);</div>
+<div class="line"><a name="l00402"></a><span class="lineno">  402</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">float</span> h21 = H21.at&lt;<span class="keywordtype">float</span>&gt;(1,0);</div>
+<div class="line"><a name="l00403"></a><span class="lineno">  403</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">float</span> h22 = H21.at&lt;<span class="keywordtype">float</span>&gt;(1,1);</div>
+<div class="line"><a name="l00404"></a><span class="lineno">  404</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">float</span> h23 = H21.at&lt;<span class="keywordtype">float</span>&gt;(1,2);</div>
+<div class="line"><a name="l00405"></a><span class="lineno">  405</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">float</span> h31 = H21.at&lt;<span class="keywordtype">float</span>&gt;(2,0);</div>
+<div class="line"><a name="l00406"></a><span class="lineno">  406</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">float</span> h32 = H21.at&lt;<span class="keywordtype">float</span>&gt;(2,1);</div>
+<div class="line"><a name="l00407"></a><span class="lineno">  407</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">float</span> h33 = H21.at&lt;<span class="keywordtype">float</span>&gt;(2,2);</div>
+<div class="line"><a name="l00408"></a><span class="lineno">  408</span>&#160;</div>
+<div class="line"><a name="l00409"></a><span class="lineno">  409</span>&#160;    <span class="comment">// |h11inv h12inv h13inv|</span></div>
+<div class="line"><a name="l00410"></a><span class="lineno">  410</span>&#160;    <span class="comment">// |h21inv h22inv h23inv|</span></div>
+<div class="line"><a name="l00411"></a><span class="lineno">  411</span>&#160;    <span class="comment">// |h31inv h32inv h33inv|</span></div>
+<div class="line"><a name="l00412"></a><span class="lineno">  412</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">float</span> h11inv = H12.at&lt;<span class="keywordtype">float</span>&gt;(0,0);</div>
+<div class="line"><a name="l00413"></a><span class="lineno">  413</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">float</span> h12inv = H12.at&lt;<span class="keywordtype">float</span>&gt;(0,1);</div>
+<div class="line"><a name="l00414"></a><span class="lineno">  414</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">float</span> h13inv = H12.at&lt;<span class="keywordtype">float</span>&gt;(0,2);</div>
+<div class="line"><a name="l00415"></a><span class="lineno">  415</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">float</span> h21inv = H12.at&lt;<span class="keywordtype">float</span>&gt;(1,0);</div>
+<div class="line"><a name="l00416"></a><span class="lineno">  416</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">float</span> h22inv = H12.at&lt;<span class="keywordtype">float</span>&gt;(1,1);</div>
+<div class="line"><a name="l00417"></a><span class="lineno">  417</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">float</span> h23inv = H12.at&lt;<span class="keywordtype">float</span>&gt;(1,2);</div>
+<div class="line"><a name="l00418"></a><span class="lineno">  418</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">float</span> h31inv = H12.at&lt;<span class="keywordtype">float</span>&gt;(2,0);</div>
+<div class="line"><a name="l00419"></a><span class="lineno">  419</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">float</span> h32inv = H12.at&lt;<span class="keywordtype">float</span>&gt;(2,1);</div>
+<div class="line"><a name="l00420"></a><span class="lineno">  420</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">float</span> h33inv = H12.at&lt;<span class="keywordtype">float</span>&gt;(2,2);</div>
+<div class="line"><a name="l00421"></a><span class="lineno">  421</span>&#160;</div>
+<div class="line"><a name="l00422"></a><span class="lineno">  422</span>&#160;    vbMatchesInliers.resize(N);</div>
+<div class="line"><a name="l00423"></a><span class="lineno">  423</span>&#160;</div>
+<div class="line"><a name="l00424"></a><span class="lineno">  424</span>&#160;    <span class="keywordtype">float</span> score = 0;</div>
+<div class="line"><a name="l00425"></a><span class="lineno">  425</span>&#160;</div>
+<div class="line"><a name="l00426"></a><span class="lineno">  426</span>&#160;    <span class="comment">// 基于卡方检验计算出的阈值（假设测量有一个像素的偏差）</span></div>
+<div class="line"><a name="l00427"></a><span class="lineno">  427</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">float</span> th = 5.991;</div>
+<div class="line"><a name="l00428"></a><span class="lineno">  428</span>&#160;</div>
+<div class="line"><a name="l00429"></a><span class="lineno">  429</span>&#160;    <span class="comment">//信息矩阵，方差平方的倒数  msigma 初始化值为1 mpInitialzer中初始化的</span></div>
+<div class="line"><a name="l00430"></a><span class="lineno">  430</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">float</span> invSigmaSquare = 1.0/(sigma*sigma);</div>
+<div class="line"><a name="l00431"></a><span class="lineno">  431</span>&#160;</div>
+<div class="line"><a name="l00432"></a><span class="lineno">  432</span>&#160;    <span class="comment">// N对特征匹配点  </span></div>
+<div class="line"><a name="l00433"></a><span class="lineno">  433</span>&#160;    <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i=0; i&lt;N; i++)</div>
+<div class="line"><a name="l00434"></a><span class="lineno">  434</span>&#160;    {</div>
+<div class="line"><a name="l00435"></a><span class="lineno">  435</span>&#160;        <span class="keywordtype">bool</span> bIn = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00436"></a><span class="lineno">  436</span>&#160;    </div>
+<div class="line"><a name="l00437"></a><span class="lineno">  437</span>&#160;</div>
+<div class="line"><a name="l00438"></a><span class="lineno">  438</span>&#160;        <span class="keyword">const</span> cv::KeyPoint &amp;kp1 = mvKeys1[mvMatches12[i].first];</div>
+<div class="line"><a name="l00439"></a><span class="lineno">  439</span>&#160;        <span class="keyword">const</span> cv::KeyPoint &amp;kp2 = mvKeys2[mvMatches12[i].second];</div>
+<div class="line"><a name="l00440"></a><span class="lineno">  440</span>&#160;</div>
+<div class="line"><a name="l00441"></a><span class="lineno">  441</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">float</span> u1 = kp1.pt.x;</div>
+<div class="line"><a name="l00442"></a><span class="lineno">  442</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">float</span> v1 = kp1.pt.y;</div>
+<div class="line"><a name="l00443"></a><span class="lineno">  443</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">float</span> u2 = kp2.pt.x;</div>
+<div class="line"><a name="l00444"></a><span class="lineno">  444</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">float</span> v2 = kp2.pt.y;</div>
+<div class="line"><a name="l00445"></a><span class="lineno">  445</span>&#160;</div>
+<div class="line"><a name="l00446"></a><span class="lineno">  446</span>&#160;        <span class="comment">// Reprojection error in first image</span></div>
+<div class="line"><a name="l00447"></a><span class="lineno">  447</span>&#160;        <span class="comment">// x2in1 = H12*x2 /////////                         H12 是图2到图1的变换矩阵 </span></div>
+<div class="line"><a name="l00448"></a><span class="lineno">  448</span>&#160;        <span class="comment">// 将图像2中的特征点单应到图像1中</span></div>
+<div class="line"><a name="l00449"></a><span class="lineno">  449</span>&#160;        <span class="comment">// |u1|   |h11inv h12inv h13inv||u2|</span></div>
+<div class="line"><a name="l00450"></a><span class="lineno">  450</span>&#160;        <span class="comment">// |v1| = |h21inv h22inv h23inv||v2|</span></div>
+<div class="line"><a name="l00451"></a><span class="lineno">  451</span>&#160;        <span class="comment">// |1 |   |h31inv h32inv h33inv||1 |</span></div>
+<div class="line"><a name="l00452"></a><span class="lineno">  452</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">float</span> w2in1inv = 1.0/(h31inv*u2+h32inv*v2+h33inv);</div>
+<div class="line"><a name="l00453"></a><span class="lineno">  453</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">float</span> u2in1 = (h11inv*u2+h12inv*v2+h13inv)*w2in1inv;</div>
+<div class="line"><a name="l00454"></a><span class="lineno">  454</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">float</span> v2in1 = (h21inv*u2+h22inv*v2+h23inv)*w2in1inv;</div>
+<div class="line"><a name="l00455"></a><span class="lineno">  455</span>&#160;</div>
+<div class="line"><a name="l00456"></a><span class="lineno">  456</span>&#160;        <span class="comment">// 计算重投影误差</span></div>
+<div class="line"><a name="l00457"></a><span class="lineno">  457</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">float</span> squareDist1 = (u1-u2in1)*(u1-u2in1)+(v1-v2in1)*(v1-v2in1);</div>
+<div class="line"><a name="l00458"></a><span class="lineno">  458</span>&#160;</div>
+<div class="line"><a name="l00459"></a><span class="lineno">  459</span>&#160;        <span class="comment">// 根据方差归一化误差</span></div>
+<div class="line"><a name="l00460"></a><span class="lineno">  460</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">float</span> chiSquare1 = squareDist1*invSigmaSquare;</div>
+<div class="line"><a name="l00461"></a><span class="lineno">  461</span>&#160;</div>
+<div class="line"><a name="l00462"></a><span class="lineno">  462</span>&#160;        <span class="keywordflow">if</span>(chiSquare1&gt;th)</div>
+<div class="line"><a name="l00463"></a><span class="lineno">  463</span>&#160;            bIn = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00464"></a><span class="lineno">  464</span>&#160;        <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00465"></a><span class="lineno">  465</span>&#160;            score += th - chiSquare1;</div>
+<div class="line"><a name="l00466"></a><span class="lineno">  466</span>&#160;</div>
+<div class="line"><a name="l00467"></a><span class="lineno">  467</span>&#160;        <span class="comment">// Reprojection error in second image</span></div>
+<div class="line"><a name="l00468"></a><span class="lineno">  468</span>&#160;        <span class="comment">// x1in2 = H21*x1</span></div>
+<div class="line"><a name="l00469"></a><span class="lineno">  469</span>&#160;        <span class="comment">// 将图像1中的特征点单应到图像2中</span></div>
+<div class="line"><a name="l00470"></a><span class="lineno">  470</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">float</span> w1in2inv = 1.0/(h31*u1+h32*v1+h33);</div>
+<div class="line"><a name="l00471"></a><span class="lineno">  471</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">float</span> u1in2 = (h11*u1+h12*v1+h13)*w1in2inv;</div>
+<div class="line"><a name="l00472"></a><span class="lineno">  472</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">float</span> v1in2 = (h21*u1+h22*v1+h23)*w1in2inv;</div>
+<div class="line"><a name="l00473"></a><span class="lineno">  473</span>&#160;</div>
+<div class="line"><a name="l00474"></a><span class="lineno">  474</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">float</span> squareDist2 = (u2-u1in2)*(u2-u1in2)+(v2-v1in2)*(v2-v1in2);</div>
+<div class="line"><a name="l00475"></a><span class="lineno">  475</span>&#160;</div>
+<div class="line"><a name="l00476"></a><span class="lineno">  476</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">float</span> chiSquare2 = squareDist2*invSigmaSquare;</div>
+<div class="line"><a name="l00477"></a><span class="lineno">  477</span>&#160;</div>
+<div class="line"><a name="l00478"></a><span class="lineno">  478</span>&#160;        <span class="keywordflow">if</span>(chiSquare2&gt;th)</div>
+<div class="line"><a name="l00479"></a><span class="lineno">  479</span>&#160;            bIn = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00480"></a><span class="lineno">  480</span>&#160;        <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00481"></a><span class="lineno">  481</span>&#160;            score += th - chiSquare2;</div>
+<div class="line"><a name="l00482"></a><span class="lineno">  482</span>&#160;</div>
+<div class="line"><a name="l00483"></a><span class="lineno">  483</span>&#160;        <span class="keywordflow">if</span>(bIn)</div>
+<div class="line"><a name="l00484"></a><span class="lineno">  484</span>&#160;            vbMatchesInliers[i]=<span class="keyword">true</span>;</div>
+<div class="line"><a name="l00485"></a><span class="lineno">  485</span>&#160;        <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00486"></a><span class="lineno">  486</span>&#160;            vbMatchesInliers[i]=<span class="keyword">false</span>;</div>
+<div class="line"><a name="l00487"></a><span class="lineno">  487</span>&#160;    }</div>
+<div class="line"><a name="l00488"></a><span class="lineno">  488</span>&#160;</div>
+<div class="line"><a name="l00489"></a><span class="lineno">  489</span>&#160;    <span class="keywordflow">return</span> score;</div>
+<div class="line"><a name="l00490"></a><span class="lineno">  490</span>&#160;}</div>
+<div class="line"><a name="l00491"></a><span class="lineno">  491</span>&#160;</div>
+<div class="line"><a name="l00500"></a><span class="lineno">  500</span>&#160;<span class="keywordtype">float</span> Initializer::CheckFundamental(<span class="keyword">const</span> cv::Mat &amp;F21, vector&lt;bool&gt; &amp;vbMatchesInliers, <span class="keywordtype">float</span> sigma)</div>
+<div class="line"><a name="l00501"></a><span class="lineno">  501</span>&#160;{</div>
+<div class="line"><a name="l00502"></a><span class="lineno">  502</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">int</span> N = mvMatches12.size();</div>
+<div class="line"><a name="l00503"></a><span class="lineno">  503</span>&#160;</div>
+<div class="line"><a name="l00504"></a><span class="lineno">  504</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">float</span> f11 = F21.at&lt;<span class="keywordtype">float</span>&gt;(0,0);</div>
+<div class="line"><a name="l00505"></a><span class="lineno">  505</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">float</span> f12 = F21.at&lt;<span class="keywordtype">float</span>&gt;(0,1);</div>
+<div class="line"><a name="l00506"></a><span class="lineno">  506</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">float</span> f13 = F21.at&lt;<span class="keywordtype">float</span>&gt;(0,2);</div>
+<div class="line"><a name="l00507"></a><span class="lineno">  507</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">float</span> f21 = F21.at&lt;<span class="keywordtype">float</span>&gt;(1,0);</div>
+<div class="line"><a name="l00508"></a><span class="lineno">  508</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">float</span> f22 = F21.at&lt;<span class="keywordtype">float</span>&gt;(1,1);</div>
+<div class="line"><a name="l00509"></a><span class="lineno">  509</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">float</span> f23 = F21.at&lt;<span class="keywordtype">float</span>&gt;(1,2);</div>
+<div class="line"><a name="l00510"></a><span class="lineno">  510</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">float</span> f31 = F21.at&lt;<span class="keywordtype">float</span>&gt;(2,0);</div>
+<div class="line"><a name="l00511"></a><span class="lineno">  511</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">float</span> f32 = F21.at&lt;<span class="keywordtype">float</span>&gt;(2,1);</div>
+<div class="line"><a name="l00512"></a><span class="lineno">  512</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">float</span> f33 = F21.at&lt;<span class="keywordtype">float</span>&gt;(2,2);</div>
+<div class="line"><a name="l00513"></a><span class="lineno">  513</span>&#160;</div>
+<div class="line"><a name="l00514"></a><span class="lineno">  514</span>&#160;    vbMatchesInliers.resize(N);</div>
+<div class="line"><a name="l00515"></a><span class="lineno">  515</span>&#160;</div>
+<div class="line"><a name="l00516"></a><span class="lineno">  516</span>&#160;    <span class="keywordtype">float</span> score = 0;</div>
+<div class="line"><a name="l00517"></a><span class="lineno">  517</span>&#160;</div>
+<div class="line"><a name="l00518"></a><span class="lineno">  518</span>&#160;    <span class="comment">// 基于卡方检验计算出的阈值（假设测量有一个像素的偏差）</span></div>
+<div class="line"><a name="l00519"></a><span class="lineno">  519</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">float</span> th = 3.841;</div>
+<div class="line"><a name="l00520"></a><span class="lineno">  520</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">float</span> thScore = 5.991;</div>
+<div class="line"><a name="l00521"></a><span class="lineno">  521</span>&#160;</div>
+<div class="line"><a name="l00522"></a><span class="lineno">  522</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">float</span> invSigmaSquare = 1.0/(sigma*sigma);</div>
+<div class="line"><a name="l00523"></a><span class="lineno">  523</span>&#160;</div>
+<div class="line"><a name="l00524"></a><span class="lineno">  524</span>&#160;    <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i=0; i&lt;N; i++)</div>
+<div class="line"><a name="l00525"></a><span class="lineno">  525</span>&#160;    {</div>
+<div class="line"><a name="l00526"></a><span class="lineno">  526</span>&#160;        <span class="keywordtype">bool</span> bIn = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00527"></a><span class="lineno">  527</span>&#160;</div>
+<div class="line"><a name="l00528"></a><span class="lineno">  528</span>&#160;        <span class="keyword">const</span> cv::KeyPoint &amp;kp1 = mvKeys1[mvMatches12[i].first];</div>
+<div class="line"><a name="l00529"></a><span class="lineno">  529</span>&#160;        <span class="keyword">const</span> cv::KeyPoint &amp;kp2 = mvKeys2[mvMatches12[i].second];</div>
+<div class="line"><a name="l00530"></a><span class="lineno">  530</span>&#160;</div>
+<div class="line"><a name="l00531"></a><span class="lineno">  531</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">float</span> u1 = kp1.pt.x;</div>
+<div class="line"><a name="l00532"></a><span class="lineno">  532</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">float</span> v1 = kp1.pt.y;</div>
+<div class="line"><a name="l00533"></a><span class="lineno">  533</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">float</span> u2 = kp2.pt.x;</div>
+<div class="line"><a name="l00534"></a><span class="lineno">  534</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">float</span> v2 = kp2.pt.y;</div>
+<div class="line"><a name="l00535"></a><span class="lineno">  535</span>&#160;</div>
+<div class="line"><a name="l00536"></a><span class="lineno">  536</span>&#160;        <span class="comment">// Reprojection error in second image</span></div>
+<div class="line"><a name="l00537"></a><span class="lineno">  537</span>&#160;        <span class="comment">// l2=F21x1=(a2,b2,c2)</span></div>
+<div class="line"><a name="l00538"></a><span class="lineno">  538</span>&#160;        <span class="comment">// F21x1可以算出x1在图像中x2对应的线l</span></div>
+<div class="line"><a name="l00539"></a><span class="lineno">  539</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">float</span> a2 = f11*u1+f12*v1+f13;</div>
+<div class="line"><a name="l00540"></a><span class="lineno">  540</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">float</span> b2 = f21*u1+f22*v1+f23;</div>
+<div class="line"><a name="l00541"></a><span class="lineno">  541</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">float</span> c2 = f31*u1+f32*v1+f33;</div>
+<div class="line"><a name="l00542"></a><span class="lineno">  542</span>&#160;</div>
+<div class="line"><a name="l00543"></a><span class="lineno">  543</span>&#160;        <span class="comment">// x2应该在l这条线上:x2点乘l = 0 </span></div>
+<div class="line"><a name="l00544"></a><span class="lineno">  544</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">float</span> num2 = a2*u2+b2*v2+c2;</div>
+<div class="line"><a name="l00545"></a><span class="lineno">  545</span>&#160;</div>
+<div class="line"><a name="l00546"></a><span class="lineno">  546</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">float</span> squareDist1 = num2*num2/(a2*a2+b2*b2); <span class="comment">// 点到线的几何距离 的平方</span></div>
+<div class="line"><a name="l00547"></a><span class="lineno">  547</span>&#160;</div>
+<div class="line"><a name="l00548"></a><span class="lineno">  548</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">float</span> chiSquare1 = squareDist1*invSigmaSquare;</div>
+<div class="line"><a name="l00549"></a><span class="lineno">  549</span>&#160;</div>
+<div class="line"><a name="l00550"></a><span class="lineno">  550</span>&#160;        <span class="keywordflow">if</span>(chiSquare1&gt;th)</div>
+<div class="line"><a name="l00551"></a><span class="lineno">  551</span>&#160;            bIn = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00552"></a><span class="lineno">  552</span>&#160;        <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00553"></a><span class="lineno">  553</span>&#160;            score += thScore - chiSquare1;</div>
+<div class="line"><a name="l00554"></a><span class="lineno">  554</span>&#160;</div>
+<div class="line"><a name="l00555"></a><span class="lineno">  555</span>&#160;        <span class="comment">// Reprojection error in second image</span></div>
+<div class="line"><a name="l00556"></a><span class="lineno">  556</span>&#160;        <span class="comment">// l1 =x2tF21=(a1,b1,c1)</span></div>
+<div class="line"><a name="l00557"></a><span class="lineno">  557</span>&#160;</div>
+<div class="line"><a name="l00558"></a><span class="lineno">  558</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">float</span> a1 = f11*u2+f21*v2+f31;</div>
+<div class="line"><a name="l00559"></a><span class="lineno">  559</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">float</span> b1 = f12*u2+f22*v2+f32;</div>
+<div class="line"><a name="l00560"></a><span class="lineno">  560</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">float</span> c1 = f13*u2+f23*v2+f33;</div>
+<div class="line"><a name="l00561"></a><span class="lineno">  561</span>&#160;</div>
+<div class="line"><a name="l00562"></a><span class="lineno">  562</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">float</span> num1 = a1*u1+b1*v1+c1;</div>
+<div class="line"><a name="l00563"></a><span class="lineno">  563</span>&#160;</div>
+<div class="line"><a name="l00564"></a><span class="lineno">  564</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">float</span> squareDist2 = num1*num1/(a1*a1+b1*b1);</div>
+<div class="line"><a name="l00565"></a><span class="lineno">  565</span>&#160;</div>
+<div class="line"><a name="l00566"></a><span class="lineno">  566</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">float</span> chiSquare2 = squareDist2*invSigmaSquare;</div>
+<div class="line"><a name="l00567"></a><span class="lineno">  567</span>&#160;</div>
+<div class="line"><a name="l00568"></a><span class="lineno">  568</span>&#160;        <span class="keywordflow">if</span>(chiSquare2&gt;th)</div>
+<div class="line"><a name="l00569"></a><span class="lineno">  569</span>&#160;            bIn = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00570"></a><span class="lineno">  570</span>&#160;        <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00571"></a><span class="lineno">  571</span>&#160;            score += thScore - chiSquare2;</div>
+<div class="line"><a name="l00572"></a><span class="lineno">  572</span>&#160;</div>
+<div class="line"><a name="l00573"></a><span class="lineno">  573</span>&#160;        <span class="keywordflow">if</span>(bIn)</div>
+<div class="line"><a name="l00574"></a><span class="lineno">  574</span>&#160;            vbMatchesInliers[i]=<span class="keyword">true</span>;</div>
+<div class="line"><a name="l00575"></a><span class="lineno">  575</span>&#160;        <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00576"></a><span class="lineno">  576</span>&#160;            vbMatchesInliers[i]=<span class="keyword">false</span>;</div>
+<div class="line"><a name="l00577"></a><span class="lineno">  577</span>&#160;    }</div>
+<div class="line"><a name="l00578"></a><span class="lineno">  578</span>&#160;</div>
+<div class="line"><a name="l00579"></a><span class="lineno">  579</span>&#160;    <span class="keywordflow">return</span> score;</div>
+<div class="line"><a name="l00580"></a><span class="lineno">  580</span>&#160;}</div>
+<div class="line"><a name="l00581"></a><span class="lineno">  581</span>&#160;</div>
+<div class="line"><a name="l00582"></a><span class="lineno">  582</span>&#160;</div>
+<div class="line"><a name="l00583"></a><span class="lineno">  583</span>&#160;<span class="comment">//                          |0 -1  0|</span></div>
+<div class="line"><a name="l00584"></a><span class="lineno">  584</span>&#160;<span class="comment">// E = U Sigma V&#39;   let W = |1  0  0|</span></div>
+<div class="line"><a name="l00585"></a><span class="lineno">  585</span>&#160;<span class="comment">//                          |0  0  1|</span></div>
+<div class="line"><a name="l00586"></a><span class="lineno">  586</span>&#160;<span class="comment">// 得到4个解 E = [R|t]</span></div>
+<div class="line"><a name="l00587"></a><span class="lineno">  587</span>&#160;<span class="comment">// R1 = UWV&#39; R2 = UW&#39;V&#39; t1 = U3 t2 = -U3</span></div>
+<div class="line"><a name="l00588"></a><span class="lineno">  588</span>&#160;</div>
+<div class="line"><a name="l00599"></a><span class="lineno">  599</span>&#160;<span class="keywordtype">bool</span> Initializer::ReconstructF(vector&lt;bool&gt; &amp;vbMatchesInliers, cv::Mat &amp;F21, cv::Mat &amp;K,</div>
+<div class="line"><a name="l00600"></a><span class="lineno">  600</span>&#160;                            cv::Mat &amp;R21, cv::Mat &amp;t21, vector&lt;cv::Point3f&gt; &amp;vP3D, vector&lt;bool&gt; &amp;vbTriangulated, <span class="keywordtype">float</span> minParallax, <span class="keywordtype">int</span> minTriangulated)</div>
+<div class="line"><a name="l00601"></a><span class="lineno">  601</span>&#160;{</div>
+<div class="line"><a name="l00602"></a><span class="lineno">  602</span>&#160;    <span class="keywordtype">int</span> N=0;</div>
+<div class="line"><a name="l00603"></a><span class="lineno">  603</span>&#160;    <span class="keywordflow">for</span>(<span class="keywordtype">size_t</span> i=0, iend = vbMatchesInliers.size() ; i&lt;iend; i++)</div>
+<div class="line"><a name="l00604"></a><span class="lineno">  604</span>&#160;        <span class="keywordflow">if</span>(vbMatchesInliers[i])</div>
+<div class="line"><a name="l00605"></a><span class="lineno">  605</span>&#160;            N++;</div>
+<div class="line"><a name="l00606"></a><span class="lineno">  606</span>&#160;</div>
+<div class="line"><a name="l00607"></a><span class="lineno">  607</span>&#160;    <span class="comment">// Compute Essential Matrix from Fundamental Matrix</span></div>
+<div class="line"><a name="l00608"></a><span class="lineno">  608</span>&#160;    cv::Mat E21 = K.t()*F21*K;</div>
+<div class="line"><a name="l00609"></a><span class="lineno">  609</span>&#160;</div>
+<div class="line"><a name="l00610"></a><span class="lineno">  610</span>&#160;    cv::Mat R1, R2, t;</div>
+<div class="line"><a name="l00611"></a><span class="lineno">  611</span>&#160;</div>
+<div class="line"><a name="l00612"></a><span class="lineno">  612</span>&#160;    <span class="comment">// Recover the 4 motion hypotheses</span></div>
+<div class="line"><a name="l00613"></a><span class="lineno">  613</span>&#160;    <span class="comment">// 虽然这个函数对t有归一化，但并没有决定单目整个SLAM过程的尺度</span></div>
+<div class="line"><a name="l00614"></a><span class="lineno">  614</span>&#160;    <span class="comment">// 因为CreateInitialMapMonocular函数对3D点深度会缩放，然后反过来对 t 有改变</span></div>
+<div class="line"><a name="l00615"></a><span class="lineno">  615</span>&#160;    DecomposeE(E21,R1,R2,t);  </div>
+<div class="line"><a name="l00616"></a><span class="lineno">  616</span>&#160;</div>
+<div class="line"><a name="l00617"></a><span class="lineno">  617</span>&#160;    cv::Mat t1=t;</div>
+<div class="line"><a name="l00618"></a><span class="lineno">  618</span>&#160;    cv::Mat t2=-t;</div>
+<div class="line"><a name="l00619"></a><span class="lineno">  619</span>&#160;</div>
+<div class="line"><a name="l00620"></a><span class="lineno">  620</span>&#160;    <span class="comment">// Reconstruct with the 4 hyphoteses and check</span></div>
+<div class="line"><a name="l00621"></a><span class="lineno">  621</span>&#160;    vector&lt;cv::Point3f&gt; vP3D1, vP3D2, vP3D3, vP3D4;</div>
+<div class="line"><a name="l00622"></a><span class="lineno">  622</span>&#160;    vector&lt;bool&gt; vbTriangulated1,vbTriangulated2,vbTriangulated3, vbTriangulated4;</div>
+<div class="line"><a name="l00623"></a><span class="lineno">  623</span>&#160;    <span class="keywordtype">float</span> parallax1,parallax2, parallax3, parallax4;</div>
+<div class="line"><a name="l00624"></a><span class="lineno">  624</span>&#160;</div>
+<div class="line"><a name="l00625"></a><span class="lineno">  625</span>&#160;    <span class="keywordtype">int</span> nGood1 = CheckRT(R1,t1,mvKeys1,mvKeys2,mvMatches12,vbMatchesInliers,K, vP3D1, 4.0*mSigma2, vbTriangulated1, parallax1);</div>
+<div class="line"><a name="l00626"></a><span class="lineno">  626</span>&#160;    <span class="keywordtype">int</span> nGood2 = CheckRT(R2,t1,mvKeys1,mvKeys2,mvMatches12,vbMatchesInliers,K, vP3D2, 4.0*mSigma2, vbTriangulated2, parallax2);</div>
+<div class="line"><a name="l00627"></a><span class="lineno">  627</span>&#160;    <span class="keywordtype">int</span> nGood3 = CheckRT(R1,t2,mvKeys1,mvKeys2,mvMatches12,vbMatchesInliers,K, vP3D3, 4.0*mSigma2, vbTriangulated3, parallax3);</div>
+<div class="line"><a name="l00628"></a><span class="lineno">  628</span>&#160;    <span class="keywordtype">int</span> nGood4 = CheckRT(R2,t2,mvKeys1,mvKeys2,mvMatches12,vbMatchesInliers,K, vP3D4, 4.0*mSigma2, vbTriangulated4, parallax4);</div>
+<div class="line"><a name="l00629"></a><span class="lineno">  629</span>&#160;</div>
+<div class="line"><a name="l00630"></a><span class="lineno">  630</span>&#160;    <span class="keywordtype">int</span> maxGood = max(nGood1,max(nGood2,max(nGood3,nGood4)));</div>
+<div class="line"><a name="l00631"></a><span class="lineno">  631</span>&#160;</div>
+<div class="line"><a name="l00632"></a><span class="lineno">  632</span>&#160;    R21 = cv::Mat();</div>
+<div class="line"><a name="l00633"></a><span class="lineno">  633</span>&#160;    t21 = cv::Mat();</div>
+<div class="line"><a name="l00634"></a><span class="lineno">  634</span>&#160;</div>
+<div class="line"><a name="l00635"></a><span class="lineno">  635</span>&#160;    <span class="comment">// minTriangulated为可以三角化恢复三维点的个数</span></div>
+<div class="line"><a name="l00636"></a><span class="lineno">  636</span>&#160;    <span class="keywordtype">int</span> nMinGood = max(static_cast&lt;int&gt;(0.9*N),minTriangulated);</div>
+<div class="line"><a name="l00637"></a><span class="lineno">  637</span>&#160;</div>
+<div class="line"><a name="l00638"></a><span class="lineno">  638</span>&#160;    <span class="keywordtype">int</span> nsimilar = 0;</div>
+<div class="line"><a name="l00639"></a><span class="lineno">  639</span>&#160;    <span class="keywordflow">if</span>(nGood1&gt;0.7*maxGood)</div>
+<div class="line"><a name="l00640"></a><span class="lineno">  640</span>&#160;        nsimilar++;</div>
+<div class="line"><a name="l00641"></a><span class="lineno">  641</span>&#160;    <span class="keywordflow">if</span>(nGood2&gt;0.7*maxGood)</div>
+<div class="line"><a name="l00642"></a><span class="lineno">  642</span>&#160;        nsimilar++;</div>
+<div class="line"><a name="l00643"></a><span class="lineno">  643</span>&#160;    <span class="keywordflow">if</span>(nGood3&gt;0.7*maxGood)</div>
+<div class="line"><a name="l00644"></a><span class="lineno">  644</span>&#160;        nsimilar++;</div>
+<div class="line"><a name="l00645"></a><span class="lineno">  645</span>&#160;    <span class="keywordflow">if</span>(nGood4&gt;0.7*maxGood)</div>
+<div class="line"><a name="l00646"></a><span class="lineno">  646</span>&#160;        nsimilar++;</div>
+<div class="line"><a name="l00647"></a><span class="lineno">  647</span>&#160;</div>
+<div class="line"><a name="l00648"></a><span class="lineno">  648</span>&#160;    <span class="comment">// If there is not a clear winner or not enough triangulated points reject initialization</span></div>
+<div class="line"><a name="l00649"></a><span class="lineno">  649</span>&#160;    <span class="comment">// 四个结果中如果没有明显的最优结果，则返回失败</span></div>
+<div class="line"><a name="l00650"></a><span class="lineno">  650</span>&#160;    <span class="keywordflow">if</span>(maxGood&lt;nMinGood || nsimilar&gt;1)</div>
+<div class="line"><a name="l00651"></a><span class="lineno">  651</span>&#160;    {</div>
+<div class="line"><a name="l00652"></a><span class="lineno">  652</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00653"></a><span class="lineno">  653</span>&#160;    }</div>
+<div class="line"><a name="l00654"></a><span class="lineno">  654</span>&#160;</div>
+<div class="line"><a name="l00655"></a><span class="lineno">  655</span>&#160;    <span class="comment">// If best reconstruction has enough parallax initialize</span></div>
+<div class="line"><a name="l00656"></a><span class="lineno">  656</span>&#160;    <span class="comment">// 比较大的视差角</span></div>
+<div class="line"><a name="l00657"></a><span class="lineno">  657</span>&#160;    <span class="keywordflow">if</span>(maxGood==nGood1)</div>
+<div class="line"><a name="l00658"></a><span class="lineno">  658</span>&#160;    {</div>
+<div class="line"><a name="l00659"></a><span class="lineno">  659</span>&#160;        <span class="keywordflow">if</span>(parallax1&gt;minParallax)</div>
+<div class="line"><a name="l00660"></a><span class="lineno">  660</span>&#160;        {</div>
+<div class="line"><a name="l00661"></a><span class="lineno">  661</span>&#160;            vP3D = vP3D1;</div>
+<div class="line"><a name="l00662"></a><span class="lineno">  662</span>&#160;            vbTriangulated = vbTriangulated1;</div>
+<div class="line"><a name="l00663"></a><span class="lineno">  663</span>&#160;</div>
+<div class="line"><a name="l00664"></a><span class="lineno">  664</span>&#160;            R1.copyTo(R21);</div>
+<div class="line"><a name="l00665"></a><span class="lineno">  665</span>&#160;            t1.copyTo(t21);</div>
+<div class="line"><a name="l00666"></a><span class="lineno">  666</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00667"></a><span class="lineno">  667</span>&#160;        }</div>
+<div class="line"><a name="l00668"></a><span class="lineno">  668</span>&#160;    }<span class="keywordflow">else</span> <span class="keywordflow">if</span>(maxGood==nGood2)</div>
+<div class="line"><a name="l00669"></a><span class="lineno">  669</span>&#160;    {</div>
+<div class="line"><a name="l00670"></a><span class="lineno">  670</span>&#160;        <span class="keywordflow">if</span>(parallax2&gt;minParallax)</div>
+<div class="line"><a name="l00671"></a><span class="lineno">  671</span>&#160;        {</div>
+<div class="line"><a name="l00672"></a><span class="lineno">  672</span>&#160;            vP3D = vP3D2;</div>
+<div class="line"><a name="l00673"></a><span class="lineno">  673</span>&#160;            vbTriangulated = vbTriangulated2;</div>
+<div class="line"><a name="l00674"></a><span class="lineno">  674</span>&#160;</div>
+<div class="line"><a name="l00675"></a><span class="lineno">  675</span>&#160;            R2.copyTo(R21);</div>
+<div class="line"><a name="l00676"></a><span class="lineno">  676</span>&#160;            t1.copyTo(t21);</div>
+<div class="line"><a name="l00677"></a><span class="lineno">  677</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00678"></a><span class="lineno">  678</span>&#160;        }</div>
+<div class="line"><a name="l00679"></a><span class="lineno">  679</span>&#160;    }<span class="keywordflow">else</span> <span class="keywordflow">if</span>(maxGood==nGood3)</div>
+<div class="line"><a name="l00680"></a><span class="lineno">  680</span>&#160;    {</div>
+<div class="line"><a name="l00681"></a><span class="lineno">  681</span>&#160;        <span class="keywordflow">if</span>(parallax3&gt;minParallax)</div>
+<div class="line"><a name="l00682"></a><span class="lineno">  682</span>&#160;        {</div>
+<div class="line"><a name="l00683"></a><span class="lineno">  683</span>&#160;            vP3D = vP3D3;</div>
+<div class="line"><a name="l00684"></a><span class="lineno">  684</span>&#160;            vbTriangulated = vbTriangulated3;</div>
+<div class="line"><a name="l00685"></a><span class="lineno">  685</span>&#160;</div>
+<div class="line"><a name="l00686"></a><span class="lineno">  686</span>&#160;            R1.copyTo(R21);</div>
+<div class="line"><a name="l00687"></a><span class="lineno">  687</span>&#160;            t2.copyTo(t21);</div>
+<div class="line"><a name="l00688"></a><span class="lineno">  688</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00689"></a><span class="lineno">  689</span>&#160;        }</div>
+<div class="line"><a name="l00690"></a><span class="lineno">  690</span>&#160;    }<span class="keywordflow">else</span> <span class="keywordflow">if</span>(maxGood==nGood4)</div>
+<div class="line"><a name="l00691"></a><span class="lineno">  691</span>&#160;    {</div>
+<div class="line"><a name="l00692"></a><span class="lineno">  692</span>&#160;        <span class="keywordflow">if</span>(parallax4&gt;minParallax)</div>
+<div class="line"><a name="l00693"></a><span class="lineno">  693</span>&#160;        {</div>
+<div class="line"><a name="l00694"></a><span class="lineno">  694</span>&#160;            vP3D = vP3D4;</div>
+<div class="line"><a name="l00695"></a><span class="lineno">  695</span>&#160;            vbTriangulated = vbTriangulated4;</div>
+<div class="line"><a name="l00696"></a><span class="lineno">  696</span>&#160;</div>
+<div class="line"><a name="l00697"></a><span class="lineno">  697</span>&#160;            R2.copyTo(R21);</div>
+<div class="line"><a name="l00698"></a><span class="lineno">  698</span>&#160;            t2.copyTo(t21);</div>
+<div class="line"><a name="l00699"></a><span class="lineno">  699</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00700"></a><span class="lineno">  700</span>&#160;        }</div>
+<div class="line"><a name="l00701"></a><span class="lineno">  701</span>&#160;    }</div>
+<div class="line"><a name="l00702"></a><span class="lineno">  702</span>&#160;</div>
+<div class="line"><a name="l00703"></a><span class="lineno">  703</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00704"></a><span class="lineno">  704</span>&#160;}</div>
+<div class="line"><a name="l00705"></a><span class="lineno">  705</span>&#160;</div>
+<div class="line"><a name="l00706"></a><span class="lineno">  706</span>&#160;<span class="comment">// H矩阵分解常见有两种方法：Faugeras SVD-based decomposition 和 Zhang SVD-based decomposition</span></div>
+<div class="line"><a name="l00707"></a><span class="lineno">  707</span>&#160;<span class="comment">// 参考文献：Motion and structure from motion in a piecewise plannar environment</span></div>
+<div class="line"><a name="l00708"></a><span class="lineno">  708</span>&#160;<span class="comment">// 这篇参考文献和下面的代码使用了Faugeras SVD-based decomposition算法</span></div>
+<div class="line"><a name="l00709"></a><span class="lineno">  709</span>&#160;</div>
+<div class="line"><a name="l00717"></a><span class="lineno">  717</span>&#160;<span class="keywordtype">bool</span> Initializer::ReconstructH(vector&lt;bool&gt; &amp;vbMatchesInliers, cv::Mat &amp;H21, cv::Mat &amp;K,</div>
+<div class="line"><a name="l00718"></a><span class="lineno">  718</span>&#160;                      cv::Mat &amp;R21, cv::Mat &amp;t21, vector&lt;cv::Point3f&gt; &amp;vP3D, vector&lt;bool&gt; &amp;vbTriangulated, <span class="keywordtype">float</span> minParallax, <span class="keywordtype">int</span> minTriangulated)</div>
+<div class="line"><a name="l00719"></a><span class="lineno">  719</span>&#160;{</div>
+<div class="line"><a name="l00720"></a><span class="lineno">  720</span>&#160;    <span class="keywordtype">int</span> N=0;</div>
+<div class="line"><a name="l00721"></a><span class="lineno">  721</span>&#160;    <span class="keywordflow">for</span>(<span class="keywordtype">size_t</span> i=0, iend = vbMatchesInliers.size() ; i&lt;iend; i++)</div>
+<div class="line"><a name="l00722"></a><span class="lineno">  722</span>&#160;        <span class="keywordflow">if</span>(vbMatchesInliers[i])</div>
+<div class="line"><a name="l00723"></a><span class="lineno">  723</span>&#160;            N++;</div>
+<div class="line"><a name="l00724"></a><span class="lineno">  724</span>&#160;</div>
+<div class="line"><a name="l00725"></a><span class="lineno">  725</span>&#160;    <span class="comment">// We recover 8 motion hypotheses using the method of Faugeras et al.</span></div>
+<div class="line"><a name="l00726"></a><span class="lineno">  726</span>&#160;    <span class="comment">// Motion and structure from motion in a piecewise planar environment.</span></div>
+<div class="line"><a name="l00727"></a><span class="lineno">  727</span>&#160;    <span class="comment">// International Journal of Pattern Recognition and Artificial Intelligence, 1988</span></div>
+<div class="line"><a name="l00728"></a><span class="lineno">  728</span>&#160;</div>
+<div class="line"><a name="l00729"></a><span class="lineno">  729</span>&#160;    <span class="comment">// 因为特征点是图像坐标系，所以讲H矩阵由相机坐标系换算到图像坐标系</span></div>
+<div class="line"><a name="l00730"></a><span class="lineno">  730</span>&#160;    cv::Mat invK = K.inv();</div>
+<div class="line"><a name="l00731"></a><span class="lineno">  731</span>&#160;    cv::Mat A = invK*H21*K;</div>
+<div class="line"><a name="l00732"></a><span class="lineno">  732</span>&#160;</div>
+<div class="line"><a name="l00733"></a><span class="lineno">  733</span>&#160;    cv::Mat U,w,Vt,V;</div>
+<div class="line"><a name="l00734"></a><span class="lineno">  734</span>&#160;    cv::SVD::compute(A,w,U,Vt,cv::SVD::FULL_UV);</div>
+<div class="line"><a name="l00735"></a><span class="lineno">  735</span>&#160;    V=Vt.t();</div>
+<div class="line"><a name="l00736"></a><span class="lineno">  736</span>&#160;</div>
+<div class="line"><a name="l00737"></a><span class="lineno">  737</span>&#160;    <span class="keywordtype">float</span> s = cv::determinant(U)*cv::determinant(Vt);</div>
+<div class="line"><a name="l00738"></a><span class="lineno">  738</span>&#160;</div>
+<div class="line"><a name="l00739"></a><span class="lineno">  739</span>&#160;    <span class="keywordtype">float</span> d1 = w.at&lt;<span class="keywordtype">float</span>&gt;(0);</div>
+<div class="line"><a name="l00740"></a><span class="lineno">  740</span>&#160;    <span class="keywordtype">float</span> d2 = w.at&lt;<span class="keywordtype">float</span>&gt;(1);</div>
+<div class="line"><a name="l00741"></a><span class="lineno">  741</span>&#160;    <span class="keywordtype">float</span> d3 = w.at&lt;<span class="keywordtype">float</span>&gt;(2);</div>
+<div class="line"><a name="l00742"></a><span class="lineno">  742</span>&#160;</div>
+<div class="line"><a name="l00743"></a><span class="lineno">  743</span>&#160;    <span class="comment">// SVD分解的正常情况是特征值降序排列</span></div>
+<div class="line"><a name="l00744"></a><span class="lineno">  744</span>&#160;    <span class="keywordflow">if</span>(d1/d2&lt;1.00001 || d2/d3&lt;1.00001)</div>
+<div class="line"><a name="l00745"></a><span class="lineno">  745</span>&#160;    {</div>
+<div class="line"><a name="l00746"></a><span class="lineno">  746</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00747"></a><span class="lineno">  747</span>&#160;    }</div>
+<div class="line"><a name="l00748"></a><span class="lineno">  748</span>&#160;</div>
+<div class="line"><a name="l00749"></a><span class="lineno">  749</span>&#160;    vector&lt;cv::Mat&gt; vR, vt, vn;</div>
+<div class="line"><a name="l00750"></a><span class="lineno">  750</span>&#160;    vR.reserve(8);</div>
+<div class="line"><a name="l00751"></a><span class="lineno">  751</span>&#160;    vt.reserve(8);</div>
+<div class="line"><a name="l00752"></a><span class="lineno">  752</span>&#160;    vn.reserve(8);</div>
+<div class="line"><a name="l00753"></a><span class="lineno">  753</span>&#160;</div>
+<div class="line"><a name="l00754"></a><span class="lineno">  754</span>&#160;    <span class="comment">//n&#39;=[x1 0 x3] 4 posibilities e1=e3=1, e1=1 e3=-1, e1=-1 e3=1, e1=e3=-1</span></div>
+<div class="line"><a name="l00755"></a><span class="lineno">  755</span>&#160;    <span class="comment">// 法向量n&#39;= [x1 0 x3] 对应ppt的公式17</span></div>
+<div class="line"><a name="l00756"></a><span class="lineno">  756</span>&#160;    <span class="keywordtype">float</span> aux1 = sqrt((d1*d1-d2*d2)/(d1*d1-d3*d3));</div>
+<div class="line"><a name="l00757"></a><span class="lineno">  757</span>&#160;    <span class="keywordtype">float</span> aux3 = sqrt((d2*d2-d3*d3)/(d1*d1-d3*d3));</div>
+<div class="line"><a name="l00758"></a><span class="lineno">  758</span>&#160;    <span class="keywordtype">float</span> x1[] = {aux1,aux1,-aux1,-aux1};</div>
+<div class="line"><a name="l00759"></a><span class="lineno">  759</span>&#160;    <span class="keywordtype">float</span> x3[] = {aux3,-aux3,aux3,-aux3};</div>
+<div class="line"><a name="l00760"></a><span class="lineno">  760</span>&#160;</div>
+<div class="line"><a name="l00761"></a><span class="lineno">  761</span>&#160;    <span class="comment">//case d&#39;=d2</span></div>
+<div class="line"><a name="l00762"></a><span class="lineno">  762</span>&#160;    <span class="comment">// 计算ppt中公式19</span></div>
+<div class="line"><a name="l00763"></a><span class="lineno">  763</span>&#160;    <span class="keywordtype">float</span> aux_stheta = sqrt((d1*d1-d2*d2)*(d2*d2-d3*d3))/((d1+d3)*d2);</div>
+<div class="line"><a name="l00764"></a><span class="lineno">  764</span>&#160;</div>
+<div class="line"><a name="l00765"></a><span class="lineno">  765</span>&#160;    <span class="keywordtype">float</span> ctheta = (d2*d2+d1*d3)/((d1+d3)*d2);</div>
+<div class="line"><a name="l00766"></a><span class="lineno">  766</span>&#160;    <span class="keywordtype">float</span> stheta[] = {aux_stheta, -aux_stheta, -aux_stheta, aux_stheta};</div>
+<div class="line"><a name="l00767"></a><span class="lineno">  767</span>&#160;</div>
+<div class="line"><a name="l00768"></a><span class="lineno">  768</span>&#160;    <span class="comment">// 计算旋转矩阵 R‘，计算ppt中公式18</span></div>
+<div class="line"><a name="l00769"></a><span class="lineno">  769</span>&#160;    <span class="comment">//      | ctheta      0   -aux_stheta|       | aux1|</span></div>
+<div class="line"><a name="l00770"></a><span class="lineno">  770</span>&#160;    <span class="comment">// Rp = |    0        1       0      |  tp = |  0  |</span></div>
+<div class="line"><a name="l00771"></a><span class="lineno">  771</span>&#160;    <span class="comment">//      | aux_stheta  0    ctheta    |       |-aux3|</span></div>
+<div class="line"><a name="l00772"></a><span class="lineno">  772</span>&#160;</div>
+<div class="line"><a name="l00773"></a><span class="lineno">  773</span>&#160;    <span class="comment">//      | ctheta      0    aux_stheta|       | aux1|</span></div>
+<div class="line"><a name="l00774"></a><span class="lineno">  774</span>&#160;    <span class="comment">// Rp = |    0        1       0      |  tp = |  0  |</span></div>
+<div class="line"><a name="l00775"></a><span class="lineno">  775</span>&#160;    <span class="comment">//      |-aux_stheta  0    ctheta    |       | aux3|</span></div>
+<div class="line"><a name="l00776"></a><span class="lineno">  776</span>&#160;</div>
+<div class="line"><a name="l00777"></a><span class="lineno">  777</span>&#160;    <span class="comment">//      | ctheta      0    aux_stheta|       |-aux1|</span></div>
+<div class="line"><a name="l00778"></a><span class="lineno">  778</span>&#160;    <span class="comment">// Rp = |    0        1       0      |  tp = |  0  |</span></div>
+<div class="line"><a name="l00779"></a><span class="lineno">  779</span>&#160;    <span class="comment">//      |-aux_stheta  0    ctheta    |       |-aux3|</span></div>
+<div class="line"><a name="l00780"></a><span class="lineno">  780</span>&#160;</div>
+<div class="line"><a name="l00781"></a><span class="lineno">  781</span>&#160;    <span class="comment">//      | ctheta      0   -aux_stheta|       |-aux1|</span></div>
+<div class="line"><a name="l00782"></a><span class="lineno">  782</span>&#160;    <span class="comment">// Rp = |    0        1       0      |  tp = |  0  |</span></div>
+<div class="line"><a name="l00783"></a><span class="lineno">  783</span>&#160;    <span class="comment">//      | aux_stheta  0    ctheta    |       | aux3|</span></div>
+<div class="line"><a name="l00784"></a><span class="lineno">  784</span>&#160;    <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i=0; i&lt;4; i++)</div>
+<div class="line"><a name="l00785"></a><span class="lineno">  785</span>&#160;    {</div>
+<div class="line"><a name="l00786"></a><span class="lineno">  786</span>&#160;        cv::Mat Rp=cv::Mat::eye(3,3,CV_32F);</div>
+<div class="line"><a name="l00787"></a><span class="lineno">  787</span>&#160;        Rp.at&lt;<span class="keywordtype">float</span>&gt;(0,0)=ctheta;</div>
+<div class="line"><a name="l00788"></a><span class="lineno">  788</span>&#160;        Rp.at&lt;<span class="keywordtype">float</span>&gt;(0,2)=-stheta[i];</div>
+<div class="line"><a name="l00789"></a><span class="lineno">  789</span>&#160;        Rp.at&lt;<span class="keywordtype">float</span>&gt;(2,0)=stheta[i];</div>
+<div class="line"><a name="l00790"></a><span class="lineno">  790</span>&#160;        Rp.at&lt;<span class="keywordtype">float</span>&gt;(2,2)=ctheta;</div>
+<div class="line"><a name="l00791"></a><span class="lineno">  791</span>&#160;</div>
+<div class="line"><a name="l00792"></a><span class="lineno">  792</span>&#160;        cv::Mat R = s*U*Rp*Vt;</div>
+<div class="line"><a name="l00793"></a><span class="lineno">  793</span>&#160;        vR.push_back(R);</div>
+<div class="line"><a name="l00794"></a><span class="lineno">  794</span>&#160;</div>
+<div class="line"><a name="l00795"></a><span class="lineno">  795</span>&#160;        cv::Mat tp(3,1,CV_32F);</div>
+<div class="line"><a name="l00796"></a><span class="lineno">  796</span>&#160;        tp.at&lt;<span class="keywordtype">float</span>&gt;(0)=x1[i];</div>
+<div class="line"><a name="l00797"></a><span class="lineno">  797</span>&#160;        tp.at&lt;<span class="keywordtype">float</span>&gt;(1)=0;</div>
+<div class="line"><a name="l00798"></a><span class="lineno">  798</span>&#160;        tp.at&lt;<span class="keywordtype">float</span>&gt;(2)=-x3[i];</div>
+<div class="line"><a name="l00799"></a><span class="lineno">  799</span>&#160;        tp*=d1-d3;</div>
+<div class="line"><a name="l00800"></a><span class="lineno">  800</span>&#160;</div>
+<div class="line"><a name="l00801"></a><span class="lineno">  801</span>&#160;        <span class="comment">// 这里虽然对t有归一化，并没有决定单目整个SLAM过程的尺度</span></div>
+<div class="line"><a name="l00802"></a><span class="lineno">  802</span>&#160;        <span class="comment">// 因为CreateInitialMapMonocular函数对3D点深度会缩放，然后反过来对 t 有改变</span></div>
+<div class="line"><a name="l00803"></a><span class="lineno">  803</span>&#160;        cv::Mat t = U*tp;</div>
+<div class="line"><a name="l00804"></a><span class="lineno">  804</span>&#160;        vt.push_back(t/cv::norm(t));</div>
+<div class="line"><a name="l00805"></a><span class="lineno">  805</span>&#160;</div>
+<div class="line"><a name="l00806"></a><span class="lineno">  806</span>&#160;        cv::Mat np(3,1,CV_32F);</div>
+<div class="line"><a name="l00807"></a><span class="lineno">  807</span>&#160;        np.at&lt;<span class="keywordtype">float</span>&gt;(0)=x1[i];</div>
+<div class="line"><a name="l00808"></a><span class="lineno">  808</span>&#160;        np.at&lt;<span class="keywordtype">float</span>&gt;(1)=0;</div>
+<div class="line"><a name="l00809"></a><span class="lineno">  809</span>&#160;        np.at&lt;<span class="keywordtype">float</span>&gt;(2)=x3[i];</div>
+<div class="line"><a name="l00810"></a><span class="lineno">  810</span>&#160;</div>
+<div class="line"><a name="l00811"></a><span class="lineno">  811</span>&#160;        cv::Mat n = V*np;</div>
+<div class="line"><a name="l00812"></a><span class="lineno">  812</span>&#160;        <span class="keywordflow">if</span>(n.at&lt;<span class="keywordtype">float</span>&gt;(2)&lt;0)</div>
+<div class="line"><a name="l00813"></a><span class="lineno">  813</span>&#160;            n=-n;</div>
+<div class="line"><a name="l00814"></a><span class="lineno">  814</span>&#160;        vn.push_back(n);</div>
+<div class="line"><a name="l00815"></a><span class="lineno">  815</span>&#160;    }</div>
+<div class="line"><a name="l00816"></a><span class="lineno">  816</span>&#160;</div>
+<div class="line"><a name="l00817"></a><span class="lineno">  817</span>&#160;    <span class="comment">//case d&#39;=-d2</span></div>
+<div class="line"><a name="l00818"></a><span class="lineno">  818</span>&#160;    <span class="comment">// 计算ppt中公式22</span></div>
+<div class="line"><a name="l00819"></a><span class="lineno">  819</span>&#160;    <span class="keywordtype">float</span> aux_sphi = sqrt((d1*d1-d2*d2)*(d2*d2-d3*d3))/((d1-d3)*d2);</div>
+<div class="line"><a name="l00820"></a><span class="lineno">  820</span>&#160;</div>
+<div class="line"><a name="l00821"></a><span class="lineno">  821</span>&#160;    <span class="keywordtype">float</span> cphi = (d1*d3-d2*d2)/((d1-d3)*d2);</div>
+<div class="line"><a name="l00822"></a><span class="lineno">  822</span>&#160;    <span class="keywordtype">float</span> sphi[] = {aux_sphi, -aux_sphi, -aux_sphi, aux_sphi};</div>
+<div class="line"><a name="l00823"></a><span class="lineno">  823</span>&#160;</div>
+<div class="line"><a name="l00824"></a><span class="lineno">  824</span>&#160;    <span class="comment">// 计算旋转矩阵 R‘，计算ppt中公式21</span></div>
+<div class="line"><a name="l00825"></a><span class="lineno">  825</span>&#160;    <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i=0; i&lt;4; i++)</div>
+<div class="line"><a name="l00826"></a><span class="lineno">  826</span>&#160;    {</div>
+<div class="line"><a name="l00827"></a><span class="lineno">  827</span>&#160;        cv::Mat Rp=cv::Mat::eye(3,3,CV_32F);</div>
+<div class="line"><a name="l00828"></a><span class="lineno">  828</span>&#160;        Rp.at&lt;<span class="keywordtype">float</span>&gt;(0,0)=cphi;</div>
+<div class="line"><a name="l00829"></a><span class="lineno">  829</span>&#160;        Rp.at&lt;<span class="keywordtype">float</span>&gt;(0,2)=sphi[i];</div>
+<div class="line"><a name="l00830"></a><span class="lineno">  830</span>&#160;        Rp.at&lt;<span class="keywordtype">float</span>&gt;(1,1)=-1;</div>
+<div class="line"><a name="l00831"></a><span class="lineno">  831</span>&#160;        Rp.at&lt;<span class="keywordtype">float</span>&gt;(2,0)=sphi[i];</div>
+<div class="line"><a name="l00832"></a><span class="lineno">  832</span>&#160;        Rp.at&lt;<span class="keywordtype">float</span>&gt;(2,2)=-cphi;</div>
+<div class="line"><a name="l00833"></a><span class="lineno">  833</span>&#160;</div>
+<div class="line"><a name="l00834"></a><span class="lineno">  834</span>&#160;        cv::Mat R = s*U*Rp*Vt;</div>
+<div class="line"><a name="l00835"></a><span class="lineno">  835</span>&#160;        vR.push_back(R);</div>
+<div class="line"><a name="l00836"></a><span class="lineno">  836</span>&#160;</div>
+<div class="line"><a name="l00837"></a><span class="lineno">  837</span>&#160;        cv::Mat tp(3,1,CV_32F);</div>
+<div class="line"><a name="l00838"></a><span class="lineno">  838</span>&#160;        tp.at&lt;<span class="keywordtype">float</span>&gt;(0)=x1[i];</div>
+<div class="line"><a name="l00839"></a><span class="lineno">  839</span>&#160;        tp.at&lt;<span class="keywordtype">float</span>&gt;(1)=0;</div>
+<div class="line"><a name="l00840"></a><span class="lineno">  840</span>&#160;        tp.at&lt;<span class="keywordtype">float</span>&gt;(2)=x3[i];</div>
+<div class="line"><a name="l00841"></a><span class="lineno">  841</span>&#160;        tp*=d1+d3;</div>
+<div class="line"><a name="l00842"></a><span class="lineno">  842</span>&#160;</div>
+<div class="line"><a name="l00843"></a><span class="lineno">  843</span>&#160;        cv::Mat t = U*tp;</div>
+<div class="line"><a name="l00844"></a><span class="lineno">  844</span>&#160;        vt.push_back(t/cv::norm(t));</div>
+<div class="line"><a name="l00845"></a><span class="lineno">  845</span>&#160;</div>
+<div class="line"><a name="l00846"></a><span class="lineno">  846</span>&#160;        cv::Mat np(3,1,CV_32F);</div>
+<div class="line"><a name="l00847"></a><span class="lineno">  847</span>&#160;        np.at&lt;<span class="keywordtype">float</span>&gt;(0)=x1[i];</div>
+<div class="line"><a name="l00848"></a><span class="lineno">  848</span>&#160;        np.at&lt;<span class="keywordtype">float</span>&gt;(1)=0;</div>
+<div class="line"><a name="l00849"></a><span class="lineno">  849</span>&#160;        np.at&lt;<span class="keywordtype">float</span>&gt;(2)=x3[i];</div>
+<div class="line"><a name="l00850"></a><span class="lineno">  850</span>&#160;</div>
+<div class="line"><a name="l00851"></a><span class="lineno">  851</span>&#160;        cv::Mat n = V*np;</div>
+<div class="line"><a name="l00852"></a><span class="lineno">  852</span>&#160;        <span class="keywordflow">if</span>(n.at&lt;<span class="keywordtype">float</span>&gt;(2)&lt;0)</div>
+<div class="line"><a name="l00853"></a><span class="lineno">  853</span>&#160;            n=-n;</div>
+<div class="line"><a name="l00854"></a><span class="lineno">  854</span>&#160;        vn.push_back(n);</div>
+<div class="line"><a name="l00855"></a><span class="lineno">  855</span>&#160;    }</div>
+<div class="line"><a name="l00856"></a><span class="lineno">  856</span>&#160;</div>
+<div class="line"><a name="l00857"></a><span class="lineno">  857</span>&#160;</div>
+<div class="line"><a name="l00858"></a><span class="lineno">  858</span>&#160;    <span class="keywordtype">int</span> bestGood = 0;</div>
+<div class="line"><a name="l00859"></a><span class="lineno">  859</span>&#160;    <span class="keywordtype">int</span> secondBestGood = 0;    </div>
+<div class="line"><a name="l00860"></a><span class="lineno">  860</span>&#160;    <span class="keywordtype">int</span> bestSolutionIdx = -1;</div>
+<div class="line"><a name="l00861"></a><span class="lineno">  861</span>&#160;    <span class="keywordtype">float</span> bestParallax = -1;</div>
+<div class="line"><a name="l00862"></a><span class="lineno">  862</span>&#160;    vector&lt;cv::Point3f&gt; bestP3D;</div>
+<div class="line"><a name="l00863"></a><span class="lineno">  863</span>&#160;    vector&lt;bool&gt; bestTriangulated;</div>
+<div class="line"><a name="l00864"></a><span class="lineno">  864</span>&#160;</div>
+<div class="line"><a name="l00865"></a><span class="lineno">  865</span>&#160;    <span class="comment">// Instead of applying the visibility constraints proposed in the Faugeras&#39; paper (which could fail for points seen with low parallax)</span></div>
+<div class="line"><a name="l00866"></a><span class="lineno">  866</span>&#160;    <span class="comment">// We reconstruct all hypotheses and check in terms of triangulated points and parallax</span></div>
+<div class="line"><a name="l00867"></a><span class="lineno">  867</span>&#160;    <span class="comment">// d&#39;=d2和d&#39;=-d2分别对应8组(R t)</span></div>
+<div class="line"><a name="l00868"></a><span class="lineno">  868</span>&#160;    <span class="keywordflow">for</span>(<span class="keywordtype">size_t</span> i=0; i&lt;8; i++)</div>
+<div class="line"><a name="l00869"></a><span class="lineno">  869</span>&#160;    {</div>
+<div class="line"><a name="l00870"></a><span class="lineno">  870</span>&#160;        <span class="keywordtype">float</span> parallaxi;</div>
+<div class="line"><a name="l00871"></a><span class="lineno">  871</span>&#160;        vector&lt;cv::Point3f&gt; vP3Di;</div>
+<div class="line"><a name="l00872"></a><span class="lineno">  872</span>&#160;        vector&lt;bool&gt; vbTriangulatedi;</div>
+<div class="line"><a name="l00873"></a><span class="lineno">  873</span>&#160;        <span class="keywordtype">int</span> nGood = CheckRT(vR[i],vt[i],mvKeys1,mvKeys2,mvMatches12,vbMatchesInliers,K,vP3Di, 4.0*mSigma2, vbTriangulatedi, parallaxi);</div>
+<div class="line"><a name="l00874"></a><span class="lineno">  874</span>&#160;</div>
+<div class="line"><a name="l00875"></a><span class="lineno">  875</span>&#160;        <span class="comment">// 保留最优的和次优的</span></div>
+<div class="line"><a name="l00876"></a><span class="lineno">  876</span>&#160;        <span class="keywordflow">if</span>(nGood&gt;bestGood)</div>
+<div class="line"><a name="l00877"></a><span class="lineno">  877</span>&#160;        {</div>
+<div class="line"><a name="l00878"></a><span class="lineno">  878</span>&#160;            secondBestGood = bestGood;</div>
+<div class="line"><a name="l00879"></a><span class="lineno">  879</span>&#160;            bestGood = nGood;</div>
+<div class="line"><a name="l00880"></a><span class="lineno">  880</span>&#160;            bestSolutionIdx = i;</div>
+<div class="line"><a name="l00881"></a><span class="lineno">  881</span>&#160;            bestParallax = parallaxi;</div>
+<div class="line"><a name="l00882"></a><span class="lineno">  882</span>&#160;            bestP3D = vP3Di;</div>
+<div class="line"><a name="l00883"></a><span class="lineno">  883</span>&#160;            bestTriangulated = vbTriangulatedi;</div>
+<div class="line"><a name="l00884"></a><span class="lineno">  884</span>&#160;        }</div>
+<div class="line"><a name="l00885"></a><span class="lineno">  885</span>&#160;        <span class="keywordflow">else</span> <span class="keywordflow">if</span>(nGood&gt;secondBestGood)</div>
+<div class="line"><a name="l00886"></a><span class="lineno">  886</span>&#160;        {</div>
+<div class="line"><a name="l00887"></a><span class="lineno">  887</span>&#160;            secondBestGood = nGood;</div>
+<div class="line"><a name="l00888"></a><span class="lineno">  888</span>&#160;        }</div>
+<div class="line"><a name="l00889"></a><span class="lineno">  889</span>&#160;    }</div>
+<div class="line"><a name="l00890"></a><span class="lineno">  890</span>&#160;</div>
+<div class="line"><a name="l00891"></a><span class="lineno">  891</span>&#160;</div>
+<div class="line"><a name="l00892"></a><span class="lineno">  892</span>&#160;    <span class="keywordflow">if</span>(secondBestGood&lt;0.75*bestGood &amp;&amp; bestParallax&gt;=minParallax &amp;&amp; bestGood&gt;minTriangulated &amp;&amp; bestGood&gt;0.9*N)</div>
+<div class="line"><a name="l00893"></a><span class="lineno">  893</span>&#160;    {</div>
+<div class="line"><a name="l00894"></a><span class="lineno">  894</span>&#160;        vR[bestSolutionIdx].copyTo(R21);</div>
+<div class="line"><a name="l00895"></a><span class="lineno">  895</span>&#160;        vt[bestSolutionIdx].copyTo(t21);</div>
+<div class="line"><a name="l00896"></a><span class="lineno">  896</span>&#160;        vP3D = bestP3D;</div>
+<div class="line"><a name="l00897"></a><span class="lineno">  897</span>&#160;        vbTriangulated = bestTriangulated;</div>
+<div class="line"><a name="l00898"></a><span class="lineno">  898</span>&#160;</div>
+<div class="line"><a name="l00899"></a><span class="lineno">  899</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00900"></a><span class="lineno">  900</span>&#160;    }</div>
+<div class="line"><a name="l00901"></a><span class="lineno">  901</span>&#160;</div>
+<div class="line"><a name="l00902"></a><span class="lineno">  902</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00903"></a><span class="lineno">  903</span>&#160;}</div>
+<div class="line"><a name="l00904"></a><span class="lineno">  904</span>&#160;</div>
+<div class="line"><a name="l00905"></a><span class="lineno">  905</span>&#160;</div>
+<div class="line"><a name="l00906"></a><span class="lineno">  906</span>&#160;<span class="comment">// Trianularization: 已知匹配特征点对{x x&#39;} 和 各自相机矩阵{P P&#39;}, 估计三维点 X</span></div>
+<div class="line"><a name="l00907"></a><span class="lineno">  907</span>&#160;<span class="comment">// x&#39; = P&#39;X  x = PX</span></div>
+<div class="line"><a name="l00908"></a><span class="lineno">  908</span>&#160;<span class="comment">// 它们都属于 x = aPX模型</span></div>
+<div class="line"><a name="l00909"></a><span class="lineno">  909</span>&#160;<span class="comment">//                         |X|</span></div>
+<div class="line"><a name="l00910"></a><span class="lineno">  910</span>&#160;<span class="comment">// |x|     |p1 p2  p3  p4 ||Y|     |x|    |--p0--||.|</span></div>
+<div class="line"><a name="l00911"></a><span class="lineno">  911</span>&#160;<span class="comment">// |y| = a |p5 p6  p7  p8 ||Z| ===&gt;|y| = a|--p1--||X|</span></div>
+<div class="line"><a name="l00912"></a><span class="lineno">  912</span>&#160;<span class="comment">// |z|     |p9 p10 p11 p12||1|     |z|    |--p2--||.|</span></div>
+<div class="line"><a name="l00913"></a><span class="lineno">  913</span>&#160;<span class="comment">// 采用DLT的方法：x叉乘PX = 0</span></div>
+<div class="line"><a name="l00914"></a><span class="lineno">  914</span>&#160;<span class="comment">// |yp2 -  p1|     |0|</span></div>
+<div class="line"><a name="l00915"></a><span class="lineno">  915</span>&#160;<span class="comment">// |p0 -  xp2| X = |0|</span></div>
+<div class="line"><a name="l00916"></a><span class="lineno">  916</span>&#160;<span class="comment">// |xp1 - yp0|     |0|</span></div>
+<div class="line"><a name="l00917"></a><span class="lineno">  917</span>&#160;<span class="comment">// 两个点:</span></div>
+<div class="line"><a name="l00918"></a><span class="lineno">  918</span>&#160;<span class="comment">// |yp2   -  p1  |     |0|</span></div>
+<div class="line"><a name="l00919"></a><span class="lineno">  919</span>&#160;<span class="comment">// |p0    -  xp2 | X = |0| ===&gt; AX = 0</span></div>
+<div class="line"><a name="l00920"></a><span class="lineno">  920</span>&#160;<span class="comment">// |y&#39;p2&#39; -  p1&#39; |     |0|</span></div>
+<div class="line"><a name="l00921"></a><span class="lineno">  921</span>&#160;<span class="comment">// |p0&#39;   - x&#39;p2&#39;|     |0|</span></div>
+<div class="line"><a name="l00922"></a><span class="lineno">  922</span>&#160;<span class="comment">// 变成程序中的形式：</span></div>
+<div class="line"><a name="l00923"></a><span class="lineno">  923</span>&#160;<span class="comment">// |xp2  - p0 |     |0|</span></div>
+<div class="line"><a name="l00924"></a><span class="lineno">  924</span>&#160;<span class="comment">// |yp2  - p1 | X = |0| ===&gt; AX = 0</span></div>
+<div class="line"><a name="l00925"></a><span class="lineno">  925</span>&#160;<span class="comment">// |x&#39;p2&#39;- p0&#39;|     |0|</span></div>
+<div class="line"><a name="l00926"></a><span class="lineno">  926</span>&#160;<span class="comment">// |y&#39;p2&#39;- p1&#39;|     |0|</span></div>
+<div class="line"><a name="l00927"></a><span class="lineno">  927</span>&#160;</div>
+<div class="line"><a name="l00938"></a><span class="lineno">  938</span>&#160;<span class="keywordtype">void</span> Initializer::Triangulate(<span class="keyword">const</span> cv::KeyPoint &amp;kp1, <span class="keyword">const</span> cv::KeyPoint &amp;kp2, <span class="keyword">const</span> cv::Mat &amp;P1, <span class="keyword">const</span> cv::Mat &amp;P2, cv::Mat &amp;x3D)</div>
+<div class="line"><a name="l00939"></a><span class="lineno">  939</span>&#160;{</div>
+<div class="line"><a name="l00940"></a><span class="lineno">  940</span>&#160;    <span class="comment">// 在DecomposeE函数和ReconstructH函数中对t有归一化</span></div>
+<div class="line"><a name="l00941"></a><span class="lineno">  941</span>&#160;    <span class="comment">// 这里三角化过程中恢复的3D点深度取决于 t 的尺度，</span></div>
+<div class="line"><a name="l00942"></a><span class="lineno">  942</span>&#160;    <span class="comment">// 但是这里恢复的3D点并没有决定单目整个SLAM过程的尺度</span></div>
+<div class="line"><a name="l00943"></a><span class="lineno">  943</span>&#160;    <span class="comment">// 因为CreateInitialMapMonocular函数对3D点深度会缩放，然后反过来对 t 有改变</span></div>
+<div class="line"><a name="l00944"></a><span class="lineno">  944</span>&#160;</div>
+<div class="line"><a name="l00945"></a><span class="lineno">  945</span>&#160;    cv::Mat A(4,4,CV_32F);</div>
+<div class="line"><a name="l00946"></a><span class="lineno">  946</span>&#160;</div>
+<div class="line"><a name="l00947"></a><span class="lineno">  947</span>&#160;    A.row(0) = kp1.pt.x*P1.row(2)-P1.row(0);</div>
+<div class="line"><a name="l00948"></a><span class="lineno">  948</span>&#160;    A.row(1) = kp1.pt.y*P1.row(2)-P1.row(1);</div>
+<div class="line"><a name="l00949"></a><span class="lineno">  949</span>&#160;    A.row(2) = kp2.pt.x*P2.row(2)-P2.row(0);</div>
+<div class="line"><a name="l00950"></a><span class="lineno">  950</span>&#160;    A.row(3) = kp2.pt.y*P2.row(2)-P2.row(1);</div>
+<div class="line"><a name="l00951"></a><span class="lineno">  951</span>&#160;</div>
+<div class="line"><a name="l00952"></a><span class="lineno">  952</span>&#160;    cv::Mat u,w,vt;</div>
+<div class="line"><a name="l00953"></a><span class="lineno">  953</span>&#160;    cv::SVD::compute(A,w,u,vt,cv::SVD::MODIFY_A| cv::SVD::FULL_UV);</div>
+<div class="line"><a name="l00954"></a><span class="lineno">  954</span>&#160;    x3D = vt.row(3).t();</div>
+<div class="line"><a name="l00955"></a><span class="lineno">  955</span>&#160;    x3D = x3D.rowRange(0,3)/x3D.at&lt;<span class="keywordtype">float</span>&gt;(3);</div>
+<div class="line"><a name="l00956"></a><span class="lineno">  956</span>&#160;}</div>
+<div class="line"><a name="l00957"></a><span class="lineno">  957</span>&#160;</div>
+<div class="line"><a name="l00968"></a><span class="lineno">  968</span>&#160;<span class="keywordtype">void</span> Initializer::Normalize(<span class="keyword">const</span> vector&lt;cv::KeyPoint&gt; &amp;vKeys, vector&lt;cv::Point2f&gt; &amp;vNormalizedPoints, cv::Mat &amp;T)</div>
+<div class="line"><a name="l00969"></a><span class="lineno">  969</span>&#160;{</div>
+<div class="line"><a name="l00970"></a><span class="lineno">  970</span>&#160;    <span class="keywordtype">float</span> meanX = 0;</div>
+<div class="line"><a name="l00971"></a><span class="lineno">  971</span>&#160;    <span class="keywordtype">float</span> meanY = 0;</div>
+<div class="line"><a name="l00972"></a><span class="lineno">  972</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">int</span> N = vKeys.size();</div>
+<div class="line"><a name="l00973"></a><span class="lineno">  973</span>&#160;</div>
+<div class="line"><a name="l00974"></a><span class="lineno">  974</span>&#160;    vNormalizedPoints.resize(N);</div>
+<div class="line"><a name="l00975"></a><span class="lineno">  975</span>&#160;</div>
+<div class="line"><a name="l00976"></a><span class="lineno">  976</span>&#160;    <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i=0; i&lt;N; i++)</div>
+<div class="line"><a name="l00977"></a><span class="lineno">  977</span>&#160;    {</div>
+<div class="line"><a name="l00978"></a><span class="lineno">  978</span>&#160;        meanX += vKeys[i].pt.x;</div>
+<div class="line"><a name="l00979"></a><span class="lineno">  979</span>&#160;        meanY += vKeys[i].pt.y;</div>
+<div class="line"><a name="l00980"></a><span class="lineno">  980</span>&#160;    }</div>
+<div class="line"><a name="l00981"></a><span class="lineno">  981</span>&#160;</div>
+<div class="line"><a name="l00982"></a><span class="lineno">  982</span>&#160;    meanX = meanX/N;</div>
+<div class="line"><a name="l00983"></a><span class="lineno">  983</span>&#160;    meanY = meanY/N;</div>
+<div class="line"><a name="l00984"></a><span class="lineno">  984</span>&#160;</div>
+<div class="line"><a name="l00985"></a><span class="lineno">  985</span>&#160;    <span class="keywordtype">float</span> meanDevX = 0;</div>
+<div class="line"><a name="l00986"></a><span class="lineno">  986</span>&#160;    <span class="keywordtype">float</span> meanDevY = 0;</div>
+<div class="line"><a name="l00987"></a><span class="lineno">  987</span>&#160;</div>
+<div class="line"><a name="l00988"></a><span class="lineno">  988</span>&#160;    <span class="comment">// 将所有vKeys点减去中心坐标，使x坐标和y坐标均值分别为0</span></div>
+<div class="line"><a name="l00989"></a><span class="lineno">  989</span>&#160;    <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i=0; i&lt;N; i++)</div>
+<div class="line"><a name="l00990"></a><span class="lineno">  990</span>&#160;    {</div>
+<div class="line"><a name="l00991"></a><span class="lineno">  991</span>&#160;        vNormalizedPoints[i].x = vKeys[i].pt.x - meanX;</div>
+<div class="line"><a name="l00992"></a><span class="lineno">  992</span>&#160;        vNormalizedPoints[i].y = vKeys[i].pt.y - meanY;</div>
+<div class="line"><a name="l00993"></a><span class="lineno">  993</span>&#160;</div>
+<div class="line"><a name="l00994"></a><span class="lineno">  994</span>&#160;        meanDevX += fabs(vNormalizedPoints[i].x);</div>
+<div class="line"><a name="l00995"></a><span class="lineno">  995</span>&#160;        meanDevY += fabs(vNormalizedPoints[i].y);</div>
+<div class="line"><a name="l00996"></a><span class="lineno">  996</span>&#160;    }</div>
+<div class="line"><a name="l00997"></a><span class="lineno">  997</span>&#160;</div>
+<div class="line"><a name="l00998"></a><span class="lineno">  998</span>&#160;    meanDevX = meanDevX/N;</div>
+<div class="line"><a name="l00999"></a><span class="lineno">  999</span>&#160;    meanDevY = meanDevY/N;</div>
+<div class="line"><a name="l01000"></a><span class="lineno"> 1000</span>&#160;</div>
+<div class="line"><a name="l01001"></a><span class="lineno"> 1001</span>&#160;    <span class="keywordtype">float</span> sX = 1.0/meanDevX;</div>
+<div class="line"><a name="l01002"></a><span class="lineno"> 1002</span>&#160;    <span class="keywordtype">float</span> sY = 1.0/meanDevY;</div>
+<div class="line"><a name="l01003"></a><span class="lineno"> 1003</span>&#160;</div>
+<div class="line"><a name="l01004"></a><span class="lineno"> 1004</span>&#160;    <span class="comment">// 将x坐标和y坐标分别进行尺度缩放，使得x坐标和y坐标的一阶绝对矩分别为1-&gt;就是说到原点的距离为根号2。</span></div>
+<div class="line"><a name="l01005"></a><span class="lineno"> 1005</span>&#160;    <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i=0; i&lt;N; i++)</div>
+<div class="line"><a name="l01006"></a><span class="lineno"> 1006</span>&#160;    {</div>
+<div class="line"><a name="l01007"></a><span class="lineno"> 1007</span>&#160;        vNormalizedPoints[i].x = vNormalizedPoints[i].x * sX;</div>
+<div class="line"><a name="l01008"></a><span class="lineno"> 1008</span>&#160;        vNormalizedPoints[i].y = vNormalizedPoints[i].y * sY;</div>
+<div class="line"><a name="l01009"></a><span class="lineno"> 1009</span>&#160;    }</div>
+<div class="line"><a name="l01010"></a><span class="lineno"> 1010</span>&#160;</div>
+<div class="line"><a name="l01011"></a><span class="lineno"> 1011</span>&#160;    <span class="comment">// |sX  0  -meanx*sX|</span></div>
+<div class="line"><a name="l01012"></a><span class="lineno"> 1012</span>&#160;    <span class="comment">// |0   sY -meany*sY|</span></div>
+<div class="line"><a name="l01013"></a><span class="lineno"> 1013</span>&#160;    <span class="comment">// |0   0      1    |</span></div>
+<div class="line"><a name="l01014"></a><span class="lineno"> 1014</span>&#160;    T = cv::Mat::eye(3,3,CV_32F);</div>
+<div class="line"><a name="l01015"></a><span class="lineno"> 1015</span>&#160;    T.at&lt;<span class="keywordtype">float</span>&gt;(0,0) = sX;</div>
+<div class="line"><a name="l01016"></a><span class="lineno"> 1016</span>&#160;    T.at&lt;<span class="keywordtype">float</span>&gt;(1,1) = sY;</div>
+<div class="line"><a name="l01017"></a><span class="lineno"> 1017</span>&#160;    T.at&lt;<span class="keywordtype">float</span>&gt;(0,2) = -meanX*sX;</div>
+<div class="line"><a name="l01018"></a><span class="lineno"> 1018</span>&#160;    T.at&lt;<span class="keywordtype">float</span>&gt;(1,2) = -meanY*sY;</div>
+<div class="line"><a name="l01019"></a><span class="lineno"> 1019</span>&#160;}</div>
+<div class="line"><a name="l01020"></a><span class="lineno"> 1020</span>&#160;</div>
+<div class="line"><a name="l01024"></a><span class="lineno"> 1024</span>&#160;<span class="keywordtype">int</span> Initializer::CheckRT(<span class="keyword">const</span> cv::Mat &amp;R, <span class="keyword">const</span> cv::Mat &amp;t, <span class="keyword">const</span> vector&lt;cv::KeyPoint&gt; &amp;vKeys1, <span class="keyword">const</span> vector&lt;cv::KeyPoint&gt; &amp;vKeys2,</div>
+<div class="line"><a name="l01025"></a><span class="lineno"> 1025</span>&#160;                       <span class="keyword">const</span> vector&lt;Match&gt; &amp;vMatches12, vector&lt;bool&gt; &amp;vbMatchesInliers,</div>
+<div class="line"><a name="l01026"></a><span class="lineno"> 1026</span>&#160;                       <span class="keyword">const</span> cv::Mat &amp;K, vector&lt;cv::Point3f&gt; &amp;vP3D, <span class="keywordtype">float</span> th2, vector&lt;bool&gt; &amp;vbGood, <span class="keywordtype">float</span> &amp;parallax)</div>
+<div class="line"><a name="l01027"></a><span class="lineno"> 1027</span>&#160;{</div>
+<div class="line"><a name="l01028"></a><span class="lineno"> 1028</span>&#160;    <span class="comment">// Calibration parameters</span></div>
+<div class="line"><a name="l01029"></a><span class="lineno"> 1029</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">float</span> fx = K.at&lt;<span class="keywordtype">float</span>&gt;(0,0);</div>
+<div class="line"><a name="l01030"></a><span class="lineno"> 1030</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">float</span> fy = K.at&lt;<span class="keywordtype">float</span>&gt;(1,1);</div>
+<div class="line"><a name="l01031"></a><span class="lineno"> 1031</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">float</span> cx = K.at&lt;<span class="keywordtype">float</span>&gt;(0,2);</div>
+<div class="line"><a name="l01032"></a><span class="lineno"> 1032</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">float</span> cy = K.at&lt;<span class="keywordtype">float</span>&gt;(1,2);</div>
+<div class="line"><a name="l01033"></a><span class="lineno"> 1033</span>&#160;</div>
+<div class="line"><a name="l01034"></a><span class="lineno"> 1034</span>&#160;    vbGood = vector&lt;bool&gt;(vKeys1.size(),<span class="keyword">false</span>);</div>
+<div class="line"><a name="l01035"></a><span class="lineno"> 1035</span>&#160;    vP3D.resize(vKeys1.size());</div>
+<div class="line"><a name="l01036"></a><span class="lineno"> 1036</span>&#160;</div>
+<div class="line"><a name="l01037"></a><span class="lineno"> 1037</span>&#160;    vector&lt;float&gt; vCosParallax;</div>
+<div class="line"><a name="l01038"></a><span class="lineno"> 1038</span>&#160;    vCosParallax.reserve(vKeys1.size());</div>
+<div class="line"><a name="l01039"></a><span class="lineno"> 1039</span>&#160;</div>
+<div class="line"><a name="l01040"></a><span class="lineno"> 1040</span>&#160;    <span class="comment">// Camera 1 Projection Matrix K[I|0]</span></div>
+<div class="line"><a name="l01041"></a><span class="lineno"> 1041</span>&#160;    <span class="comment">// 步骤1：得到一个相机的投影矩阵</span></div>
+<div class="line"><a name="l01042"></a><span class="lineno"> 1042</span>&#160;    <span class="comment">// 以第一个相机的光心作为世界坐标系</span></div>
+<div class="line"><a name="l01043"></a><span class="lineno"> 1043</span>&#160;    cv::Mat P1(3,4,CV_32F,cv::Scalar(0));</div>
+<div class="line"><a name="l01044"></a><span class="lineno"> 1044</span>&#160;    K.copyTo(P1.rowRange(0,3).colRange(0,3));</div>
+<div class="line"><a name="l01045"></a><span class="lineno"> 1045</span>&#160;    <span class="comment">// 第一个相机的光心在世界坐标系下的坐标</span></div>
+<div class="line"><a name="l01046"></a><span class="lineno"> 1046</span>&#160;    cv::Mat O1 = cv::Mat::zeros(3,1,CV_32F);</div>
+<div class="line"><a name="l01047"></a><span class="lineno"> 1047</span>&#160;</div>
+<div class="line"><a name="l01048"></a><span class="lineno"> 1048</span>&#160;    <span class="comment">// Camera 2 Projection Matrix K[R|t]</span></div>
+<div class="line"><a name="l01049"></a><span class="lineno"> 1049</span>&#160;    <span class="comment">// 步骤2：得到第二个相机的投影矩阵</span></div>
+<div class="line"><a name="l01050"></a><span class="lineno"> 1050</span>&#160;    cv::Mat P2(3,4,CV_32F);</div>
+<div class="line"><a name="l01051"></a><span class="lineno"> 1051</span>&#160;    R.copyTo(P2.rowRange(0,3).colRange(0,3));</div>
+<div class="line"><a name="l01052"></a><span class="lineno"> 1052</span>&#160;    t.copyTo(P2.rowRange(0,3).col(3));</div>
+<div class="line"><a name="l01053"></a><span class="lineno"> 1053</span>&#160;    P2 = K*P2;</div>
+<div class="line"><a name="l01054"></a><span class="lineno"> 1054</span>&#160;    <span class="comment">// 第二个相机的光心在世界坐标系下的坐标</span></div>
+<div class="line"><a name="l01055"></a><span class="lineno"> 1055</span>&#160;    cv::Mat O2 = -R.t()*t;</div>
+<div class="line"><a name="l01056"></a><span class="lineno"> 1056</span>&#160;</div>
+<div class="line"><a name="l01057"></a><span class="lineno"> 1057</span>&#160;    <span class="keywordtype">int</span> nGood=0;</div>
+<div class="line"><a name="l01058"></a><span class="lineno"> 1058</span>&#160;</div>
+<div class="line"><a name="l01059"></a><span class="lineno"> 1059</span>&#160;    <span class="keywordflow">for</span>(<span class="keywordtype">size_t</span> i=0, iend=vMatches12.size();i&lt;iend;i++)</div>
+<div class="line"><a name="l01060"></a><span class="lineno"> 1060</span>&#160;    {</div>
+<div class="line"><a name="l01061"></a><span class="lineno"> 1061</span>&#160;        <span class="keywordflow">if</span>(!vbMatchesInliers[i])</div>
+<div class="line"><a name="l01062"></a><span class="lineno"> 1062</span>&#160;            <span class="keywordflow">continue</span>;</div>
+<div class="line"><a name="l01063"></a><span class="lineno"> 1063</span>&#160;</div>
+<div class="line"><a name="l01064"></a><span class="lineno"> 1064</span>&#160;        <span class="comment">// kp1和kp2是匹配特征点</span></div>
+<div class="line"><a name="l01065"></a><span class="lineno"> 1065</span>&#160;        <span class="keyword">const</span> cv::KeyPoint &amp;kp1 = vKeys1[vMatches12[i].first];</div>
+<div class="line"><a name="l01066"></a><span class="lineno"> 1066</span>&#160;        <span class="keyword">const</span> cv::KeyPoint &amp;kp2 = vKeys2[vMatches12[i].second];</div>
+<div class="line"><a name="l01067"></a><span class="lineno"> 1067</span>&#160;        cv::Mat p3dC1;</div>
+<div class="line"><a name="l01068"></a><span class="lineno"> 1068</span>&#160;</div>
+<div class="line"><a name="l01069"></a><span class="lineno"> 1069</span>&#160;        <span class="comment">// 步骤3：利用三角法恢复三维点p3dC1</span></div>
+<div class="line"><a name="l01070"></a><span class="lineno"> 1070</span>&#160;        Triangulate(kp1,kp2,P1,P2,p3dC1);</div>
+<div class="line"><a name="l01071"></a><span class="lineno"> 1071</span>&#160;</div>
+<div class="line"><a name="l01072"></a><span class="lineno"> 1072</span>&#160;        <span class="keywordflow">if</span>(!isfinite(p3dC1.at&lt;<span class="keywordtype">float</span>&gt;(0)) || !isfinite(p3dC1.at&lt;<span class="keywordtype">float</span>&gt;(1)) || !isfinite(p3dC1.at&lt;<span class="keywordtype">float</span>&gt;(2)))</div>
+<div class="line"><a name="l01073"></a><span class="lineno"> 1073</span>&#160;        {</div>
+<div class="line"><a name="l01074"></a><span class="lineno"> 1074</span>&#160;            vbGood[vMatches12[i].first]=<span class="keyword">false</span>;</div>
+<div class="line"><a name="l01075"></a><span class="lineno"> 1075</span>&#160;            <span class="keywordflow">continue</span>;</div>
+<div class="line"><a name="l01076"></a><span class="lineno"> 1076</span>&#160;        }</div>
+<div class="line"><a name="l01077"></a><span class="lineno"> 1077</span>&#160;</div>
+<div class="line"><a name="l01078"></a><span class="lineno"> 1078</span>&#160;        <span class="comment">// Check parallax</span></div>
+<div class="line"><a name="l01079"></a><span class="lineno"> 1079</span>&#160;        <span class="comment">// 步骤4：计算视差角余弦值</span></div>
+<div class="line"><a name="l01080"></a><span class="lineno"> 1080</span>&#160;        cv::Mat normal1 = p3dC1 - O1;</div>
+<div class="line"><a name="l01081"></a><span class="lineno"> 1081</span>&#160;        <span class="keywordtype">float</span> dist1 = cv::norm(normal1);</div>
+<div class="line"><a name="l01082"></a><span class="lineno"> 1082</span>&#160;</div>
+<div class="line"><a name="l01083"></a><span class="lineno"> 1083</span>&#160;        cv::Mat normal2 = p3dC1 - O2;</div>
+<div class="line"><a name="l01084"></a><span class="lineno"> 1084</span>&#160;        <span class="keywordtype">float</span> dist2 = cv::norm(normal2);</div>
+<div class="line"><a name="l01085"></a><span class="lineno"> 1085</span>&#160;</div>
+<div class="line"><a name="l01086"></a><span class="lineno"> 1086</span>&#160;        <span class="keywordtype">float</span> cosParallax = normal1.dot(normal2)/(dist1*dist2);</div>
+<div class="line"><a name="l01087"></a><span class="lineno"> 1087</span>&#160;</div>
+<div class="line"><a name="l01088"></a><span class="lineno"> 1088</span>&#160;        <span class="comment">// 步骤5：判断3D点是否在两个摄像头前方</span></div>
+<div class="line"><a name="l01089"></a><span class="lineno"> 1089</span>&#160;</div>
+<div class="line"><a name="l01090"></a><span class="lineno"> 1090</span>&#160;        <span class="comment">// Check depth in front of first camera (only if enough parallax, as &quot;infinite&quot; points can easily go to negative depth)</span></div>
+<div class="line"><a name="l01091"></a><span class="lineno"> 1091</span>&#160;        <span class="comment">// 步骤5.1：3D点深度为负，在第一个摄像头后方，淘汰</span></div>
+<div class="line"><a name="l01092"></a><span class="lineno"> 1092</span>&#160;        <span class="keywordflow">if</span>(p3dC1.at&lt;<span class="keywordtype">float</span>&gt;(2)&lt;=0 &amp;&amp; cosParallax&lt;0.99998)</div>
+<div class="line"><a name="l01093"></a><span class="lineno"> 1093</span>&#160;            <span class="keywordflow">continue</span>;</div>
+<div class="line"><a name="l01094"></a><span class="lineno"> 1094</span>&#160;</div>
+<div class="line"><a name="l01095"></a><span class="lineno"> 1095</span>&#160;        <span class="comment">// Check depth in front of second camera (only if enough parallax, as &quot;infinite&quot; points can easily go to negative depth)</span></div>
+<div class="line"><a name="l01096"></a><span class="lineno"> 1096</span>&#160;        <span class="comment">// 步骤5.2：3D点深度为负，在第二个摄像头后方，淘汰</span></div>
+<div class="line"><a name="l01097"></a><span class="lineno"> 1097</span>&#160;        cv::Mat p3dC2 = R*p3dC1+t;</div>
+<div class="line"><a name="l01098"></a><span class="lineno"> 1098</span>&#160;</div>
+<div class="line"><a name="l01099"></a><span class="lineno"> 1099</span>&#160;        <span class="keywordflow">if</span>(p3dC2.at&lt;<span class="keywordtype">float</span>&gt;(2)&lt;=0 &amp;&amp; cosParallax&lt;0.99998)</div>
+<div class="line"><a name="l01100"></a><span class="lineno"> 1100</span>&#160;            <span class="keywordflow">continue</span>;</div>
+<div class="line"><a name="l01101"></a><span class="lineno"> 1101</span>&#160;</div>
+<div class="line"><a name="l01102"></a><span class="lineno"> 1102</span>&#160;        <span class="comment">// 步骤6：计算重投影误差</span></div>
+<div class="line"><a name="l01103"></a><span class="lineno"> 1103</span>&#160;</div>
+<div class="line"><a name="l01104"></a><span class="lineno"> 1104</span>&#160;        <span class="comment">// Check reprojection error in first image</span></div>
+<div class="line"><a name="l01105"></a><span class="lineno"> 1105</span>&#160;        <span class="comment">// 计算3D点在第一个图像上的投影误差</span></div>
+<div class="line"><a name="l01106"></a><span class="lineno"> 1106</span>&#160;        <span class="keywordtype">float</span> im1x, im1y;</div>
+<div class="line"><a name="l01107"></a><span class="lineno"> 1107</span>&#160;        <span class="keywordtype">float</span> invZ1 = 1.0/p3dC1.at&lt;<span class="keywordtype">float</span>&gt;(2);</div>
+<div class="line"><a name="l01108"></a><span class="lineno"> 1108</span>&#160;        im1x = fx*p3dC1.at&lt;<span class="keywordtype">float</span>&gt;(0)*invZ1+cx;</div>
+<div class="line"><a name="l01109"></a><span class="lineno"> 1109</span>&#160;        im1y = fy*p3dC1.at&lt;<span class="keywordtype">float</span>&gt;(1)*invZ1+cy;</div>
+<div class="line"><a name="l01110"></a><span class="lineno"> 1110</span>&#160;</div>
+<div class="line"><a name="l01111"></a><span class="lineno"> 1111</span>&#160;        <span class="keywordtype">float</span> squareError1 = (im1x-kp1.pt.x)*(im1x-kp1.pt.x)+(im1y-kp1.pt.y)*(im1y-kp1.pt.y);</div>
+<div class="line"><a name="l01112"></a><span class="lineno"> 1112</span>&#160;</div>
+<div class="line"><a name="l01113"></a><span class="lineno"> 1113</span>&#160;        <span class="comment">// 步骤6.1：重投影误差太大，跳过淘汰</span></div>
+<div class="line"><a name="l01114"></a><span class="lineno"> 1114</span>&#160;        <span class="comment">// 一般视差角比较小时重投影误差比较大</span></div>
+<div class="line"><a name="l01115"></a><span class="lineno"> 1115</span>&#160;        <span class="keywordflow">if</span>(squareError1&gt;th2)</div>
+<div class="line"><a name="l01116"></a><span class="lineno"> 1116</span>&#160;            <span class="keywordflow">continue</span>;</div>
+<div class="line"><a name="l01117"></a><span class="lineno"> 1117</span>&#160;</div>
+<div class="line"><a name="l01118"></a><span class="lineno"> 1118</span>&#160;        <span class="comment">// Check reprojection error in second image</span></div>
+<div class="line"><a name="l01119"></a><span class="lineno"> 1119</span>&#160;        <span class="comment">// 计算3D点在第二个图像上的投影误差</span></div>
+<div class="line"><a name="l01120"></a><span class="lineno"> 1120</span>&#160;        <span class="keywordtype">float</span> im2x, im2y;</div>
+<div class="line"><a name="l01121"></a><span class="lineno"> 1121</span>&#160;        <span class="keywordtype">float</span> invZ2 = 1.0/p3dC2.at&lt;<span class="keywordtype">float</span>&gt;(2);</div>
+<div class="line"><a name="l01122"></a><span class="lineno"> 1122</span>&#160;        im2x = fx*p3dC2.at&lt;<span class="keywordtype">float</span>&gt;(0)*invZ2+cx;</div>
+<div class="line"><a name="l01123"></a><span class="lineno"> 1123</span>&#160;        im2y = fy*p3dC2.at&lt;<span class="keywordtype">float</span>&gt;(1)*invZ2+cy;</div>
+<div class="line"><a name="l01124"></a><span class="lineno"> 1124</span>&#160;</div>
+<div class="line"><a name="l01125"></a><span class="lineno"> 1125</span>&#160;        <span class="keywordtype">float</span> squareError2 = (im2x-kp2.pt.x)*(im2x-kp2.pt.x)+(im2y-kp2.pt.y)*(im2y-kp2.pt.y);</div>
+<div class="line"><a name="l01126"></a><span class="lineno"> 1126</span>&#160;</div>
+<div class="line"><a name="l01127"></a><span class="lineno"> 1127</span>&#160;        <span class="comment">// 步骤6.2：重投影误差太大，跳过淘汰</span></div>
+<div class="line"><a name="l01128"></a><span class="lineno"> 1128</span>&#160;        <span class="comment">// 一般视差角比较小时重投影误差比较大</span></div>
+<div class="line"><a name="l01129"></a><span class="lineno"> 1129</span>&#160;        <span class="keywordflow">if</span>(squareError2&gt;th2)</div>
+<div class="line"><a name="l01130"></a><span class="lineno"> 1130</span>&#160;            <span class="keywordflow">continue</span>;</div>
+<div class="line"><a name="l01131"></a><span class="lineno"> 1131</span>&#160;</div>
+<div class="line"><a name="l01132"></a><span class="lineno"> 1132</span>&#160;        <span class="comment">// 步骤7：统计经过检验的3D点个数，记录3D点视差角</span></div>
+<div class="line"><a name="l01133"></a><span class="lineno"> 1133</span>&#160;        vCosParallax.push_back(cosParallax);</div>
+<div class="line"><a name="l01134"></a><span class="lineno"> 1134</span>&#160;        vP3D[vMatches12[i].first] = cv::Point3f(p3dC1.at&lt;<span class="keywordtype">float</span>&gt;(0),p3dC1.at&lt;<span class="keywordtype">float</span>&gt;(1),p3dC1.at&lt;<span class="keywordtype">float</span>&gt;(2));</div>
+<div class="line"><a name="l01135"></a><span class="lineno"> 1135</span>&#160;        nGood++;</div>
+<div class="line"><a name="l01136"></a><span class="lineno"> 1136</span>&#160;</div>
+<div class="line"><a name="l01137"></a><span class="lineno"> 1137</span>&#160;        <span class="keywordflow">if</span>(cosParallax&lt;0.99998)</div>
+<div class="line"><a name="l01138"></a><span class="lineno"> 1138</span>&#160;            vbGood[vMatches12[i].first]=<span class="keyword">true</span>;</div>
+<div class="line"><a name="l01139"></a><span class="lineno"> 1139</span>&#160;    }</div>
+<div class="line"><a name="l01140"></a><span class="lineno"> 1140</span>&#160;</div>
+<div class="line"><a name="l01141"></a><span class="lineno"> 1141</span>&#160;    <span class="comment">// 步骤8：得到3D点中较大的视差角</span></div>
+<div class="line"><a name="l01142"></a><span class="lineno"> 1142</span>&#160;    <span class="keywordflow">if</span>(nGood&gt;0)</div>
+<div class="line"><a name="l01143"></a><span class="lineno"> 1143</span>&#160;    {</div>
+<div class="line"><a name="l01144"></a><span class="lineno"> 1144</span>&#160;        <span class="comment">// 从小到大排序</span></div>
+<div class="line"><a name="l01145"></a><span class="lineno"> 1145</span>&#160;        sort(vCosParallax.begin(),vCosParallax.end());</div>
+<div class="line"><a name="l01146"></a><span class="lineno"> 1146</span>&#160;</div>
+<div class="line"><a name="l01147"></a><span class="lineno"> 1147</span>&#160;        <span class="comment">// trick! 排序后并没有取最大的视差角</span></div>
+<div class="line"><a name="l01148"></a><span class="lineno"> 1148</span>&#160;        <span class="comment">// 取一个较大的视差角</span></div>
+<div class="line"><a name="l01149"></a><span class="lineno"> 1149</span>&#160;        <span class="keywordtype">size_t</span> idx = min(50,<span class="keywordtype">int</span>(vCosParallax.size()-1));</div>
+<div class="line"><a name="l01150"></a><span class="lineno"> 1150</span>&#160;        parallax = acos(vCosParallax[idx])*180/CV_PI;</div>
+<div class="line"><a name="l01151"></a><span class="lineno"> 1151</span>&#160;    }</div>
+<div class="line"><a name="l01152"></a><span class="lineno"> 1152</span>&#160;    <span class="keywordflow">else</span></div>
+<div class="line"><a name="l01153"></a><span class="lineno"> 1153</span>&#160;        parallax=0;</div>
+<div class="line"><a name="l01154"></a><span class="lineno"> 1154</span>&#160;</div>
+<div class="line"><a name="l01155"></a><span class="lineno"> 1155</span>&#160;    <span class="keywordflow">return</span> nGood;</div>
+<div class="line"><a name="l01156"></a><span class="lineno"> 1156</span>&#160;}</div>
+<div class="line"><a name="l01157"></a><span class="lineno"> 1157</span>&#160;</div>
+<div class="line"><a name="l01169"></a><span class="lineno"> 1169</span>&#160;<span class="keywordtype">void</span> Initializer::DecomposeE(<span class="keyword">const</span> cv::Mat &amp;E, cv::Mat &amp;R1, cv::Mat &amp;R2, cv::Mat &amp;t)</div>
+<div class="line"><a name="l01170"></a><span class="lineno"> 1170</span>&#160;{</div>
+<div class="line"><a name="l01171"></a><span class="lineno"> 1171</span>&#160;    cv::Mat u,w,vt;</div>
+<div class="line"><a name="l01172"></a><span class="lineno"> 1172</span>&#160;    cv::SVD::compute(E,w,u,vt);</div>
+<div class="line"><a name="l01173"></a><span class="lineno"> 1173</span>&#160;</div>
+<div class="line"><a name="l01174"></a><span class="lineno"> 1174</span>&#160;    <span class="comment">// 对 t 有归一化，但是这个地方并没有决定单目整个SLAM过程的尺度</span></div>
+<div class="line"><a name="l01175"></a><span class="lineno"> 1175</span>&#160;    <span class="comment">// 因为CreateInitialMapMonocular函数对3D点深度会缩放，然后反过来对 t 有改变</span></div>
+<div class="line"><a name="l01176"></a><span class="lineno"> 1176</span>&#160;    u.col(2).copyTo(t);</div>
+<div class="line"><a name="l01177"></a><span class="lineno"> 1177</span>&#160;    t=t/cv::norm(t);</div>
+<div class="line"><a name="l01178"></a><span class="lineno"> 1178</span>&#160;</div>
+<div class="line"><a name="l01179"></a><span class="lineno"> 1179</span>&#160;    cv::Mat W(3,3,CV_32F,cv::Scalar(0));</div>
+<div class="line"><a name="l01180"></a><span class="lineno"> 1180</span>&#160;    W.at&lt;<span class="keywordtype">float</span>&gt;(0,1)=-1;</div>
+<div class="line"><a name="l01181"></a><span class="lineno"> 1181</span>&#160;    W.at&lt;<span class="keywordtype">float</span>&gt;(1,0)=1;</div>
+<div class="line"><a name="l01182"></a><span class="lineno"> 1182</span>&#160;    W.at&lt;<span class="keywordtype">float</span>&gt;(2,2)=1;</div>
+<div class="line"><a name="l01183"></a><span class="lineno"> 1183</span>&#160;</div>
+<div class="line"><a name="l01184"></a><span class="lineno"> 1184</span>&#160;    R1 = u*W*vt;</div>
+<div class="line"><a name="l01185"></a><span class="lineno"> 1185</span>&#160;    <span class="keywordflow">if</span>(cv::determinant(R1)&lt;0) <span class="comment">// 旋转矩阵有行列式为1的约束</span></div>
+<div class="line"><a name="l01186"></a><span class="lineno"> 1186</span>&#160;        R1=-R1;</div>
+<div class="line"><a name="l01187"></a><span class="lineno"> 1187</span>&#160;</div>
+<div class="line"><a name="l01188"></a><span class="lineno"> 1188</span>&#160;    R2 = u*W.t()*vt;</div>
+<div class="line"><a name="l01189"></a><span class="lineno"> 1189</span>&#160;    <span class="keywordflow">if</span>(cv::determinant(R2)&lt;0)</div>
+<div class="line"><a name="l01190"></a><span class="lineno"> 1190</span>&#160;        R2=-R2;</div>
+<div class="line"><a name="l01191"></a><span class="lineno"> 1191</span>&#160;}</div>
+<div class="line"><a name="l01192"></a><span class="lineno"> 1192</span>&#160;</div>
+<div class="line"><a name="l01193"></a><span class="lineno"> 1193</span>&#160;} <span class="comment">//namespace ORB_SLAM</span></div>
+<div class="ttc" id="classDUtils_1_1Random_html_a168e77d82ce1e66c6759e97ef27adbbc"><div class="ttname"><a href="classDUtils_1_1Random.html#a168e77d82ce1e66c6759e97ef27adbbc">DUtils::Random::SeedRandOnce</a></div><div class="ttdeci">static void SeedRandOnce()</div><div class="ttdef"><b>Definition:</b> <a href="Random_8cpp_source.html#l00024">Random.cpp:24</a></div></div>
+<div class="ttc" id="classORB__SLAM2_1_1Frame_html"><div class="ttname"><a href="classORB__SLAM2_1_1Frame.html">ORB_SLAM2::Frame</a></div><div class="ttdef"><b>Definition:</b> <a href="Frame_8h_source.html#l00043">Frame.h:43</a></div></div>
+<div class="ttc" id="classDUtils_1_1Random_html_aa25012101ecbca54025d5430bcf93d86"><div class="ttname"><a href="classDUtils_1_1Random.html#aa25012101ecbca54025d5430bcf93d86">DUtils::Random::RandomInt</a></div><div class="ttdeci">static int RandomInt(int min, int max)</div><div class="ttdef"><b>Definition:</b> <a href="Random_8cpp_source.html#l00047">Random.cpp:47</a></div></div>
+<div class="ttc" id="classORB__SLAM2_1_1Initializer_html_ac492345a970665cd8a1b1d8cf41d44af"><div class="ttname"><a href="classORB__SLAM2_1_1Initializer.html#ac492345a970665cd8a1b1d8cf41d44af">ORB_SLAM2::Initializer::Initializer</a></div><div class="ttdeci">Initializer(const Frame &amp;ReferenceFrame, float sigma=1.0, int iterations=200)</div><div class="ttdoc">给定参考帧构造Initializer </div><div class="ttdef"><b>Definition:</b> <a href="Initializer_8cpp_source.html#l00041">Initializer.cpp:41</a></div></div>
+<div class="ttc" id="classORB__SLAM2_1_1Initializer_html_a40d41840e2bdb7199ab024871d028c2c"><div class="ttname"><a href="classORB__SLAM2_1_1Initializer.html#a40d41840e2bdb7199ab024871d028c2c">ORB_SLAM2::Initializer::Initialize</a></div><div class="ttdeci">bool Initialize(const Frame &amp;CurrentFrame, const vector&lt; int &gt; &amp;vMatches12, cv::Mat &amp;R21, cv::Mat &amp;t21, vector&lt; cv::Point3f &gt; &amp;vP3D, vector&lt; bool &gt; &amp;vbTriangulated)</div><div class="ttdoc">并行地计算基础矩阵和单应性矩阵，选取其中一个模型，恢复出最开始两帧之间的相对姿态以及点云 </div><div class="ttdef"><b>Definition:</b> <a href="Initializer_8cpp_source.html#l00055">Initializer.cpp:55</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><b>Initializer.cpp</b></li>
+    <li class="footer">生成于 2017年 七月 18日 星期二 17:13:36 , 为 My Project使用 
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
+  </ul>
+</div>
+</body>
+</html>

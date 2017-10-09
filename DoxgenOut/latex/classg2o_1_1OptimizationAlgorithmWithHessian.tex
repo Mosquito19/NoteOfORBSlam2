@@ -1,0 +1,189 @@
+\hypertarget{classg2o_1_1OptimizationAlgorithmWithHessian}{\section{g2o\-:\-:Optimization\-Algorithm\-With\-Hessian类 参考}
+\label{classg2o_1_1OptimizationAlgorithmWithHessian}\index{g2o\-::\-Optimization\-Algorithm\-With\-Hessian@{g2o\-::\-Optimization\-Algorithm\-With\-Hessian}}
+}
+
+
+Base for solvers operating on the approximated Hessian, e.\-g., Gauss-\/\-Newton, Levenberg.  
+
+
+
+
+{\ttfamily \#include $<$optimization\-\_\-algorithm\-\_\-with\-\_\-hessian.\-h$>$}
+
+
+
+类 g2o\-:\-:Optimization\-Algorithm\-With\-Hessian 继承关系图\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classg2o_1_1OptimizationAlgorithmWithHessian__inherit__graph}
+\end{center}
+\end{figure}
+
+
+g2o\-:\-:Optimization\-Algorithm\-With\-Hessian 的协作图\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classg2o_1_1OptimizationAlgorithmWithHessian__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classg2o_1_1OptimizationAlgorithmWithHessian_a1358f3500efe8b95a5af4a1b0edecdf0}{{\bfseries Optimization\-Algorithm\-With\-Hessian} (\hyperlink{classg2o_1_1Solver}{Solver} $\ast$\hyperlink{classg2o_1_1OptimizationAlgorithmWithHessian_a85473a4073c76b1a52cf9cf175e31c45}{solver})}\label{classg2o_1_1OptimizationAlgorithmWithHessian_a1358f3500efe8b95a5af4a1b0edecdf0}
+
+\item 
+virtual bool \hyperlink{classg2o_1_1OptimizationAlgorithmWithHessian_ae067a9c2961718dc8a37e3b8478b6d01}{init} (bool online=false)
+\item 
+virtual bool \hyperlink{classg2o_1_1OptimizationAlgorithmWithHessian_af1959727df2b7cf233a171cfed246e9a}{compute\-Marginals} (\hyperlink{classg2o_1_1SparseBlockMatrix}{Sparse\-Block\-Matrix}$<$ Matrix\-Xd $>$ \&spinv, const std\-::vector$<$ std\-::pair$<$ int, int $>$ $>$ \&block\-Indices)
+\item 
+\hypertarget{classg2o_1_1OptimizationAlgorithmWithHessian_aa84732c8554039ba0152693837bd1b4a}{virtual bool {\bfseries build\-Linear\-Structure} ()}\label{classg2o_1_1OptimizationAlgorithmWithHessian_aa84732c8554039ba0152693837bd1b4a}
+
+\item 
+\hypertarget{classg2o_1_1OptimizationAlgorithmWithHessian_a3ceacb3dddb14121b03e0afe7b7cfeaa}{virtual void {\bfseries update\-Linear\-System} ()}\label{classg2o_1_1OptimizationAlgorithmWithHessian_a3ceacb3dddb14121b03e0afe7b7cfeaa}
+
+\item 
+virtual bool \hyperlink{classg2o_1_1OptimizationAlgorithmWithHessian_a9ffffb2bdb70db856bccdb6774776fa3}{update\-Structure} (const std\-::vector$<$ \hyperlink{classg2o_1_1HyperGraph_1_1Vertex}{Hyper\-Graph\-::\-Vertex} $\ast$ $>$ \&vset, const Hyper\-Graph\-::\-Edge\-Set \&edges)
+\item 
+\hypertarget{classg2o_1_1OptimizationAlgorithmWithHessian_a85473a4073c76b1a52cf9cf175e31c45}{\hyperlink{classg2o_1_1Solver}{Solver} $\ast$ \hyperlink{classg2o_1_1OptimizationAlgorithmWithHessian_a85473a4073c76b1a52cf9cf175e31c45}{solver} ()}\label{classg2o_1_1OptimizationAlgorithmWithHessian_a85473a4073c76b1a52cf9cf175e31c45}
+
+\begin{DoxyCompactList}\small\item\em return the underlying solver used to solve the linear system \end{DoxyCompactList}\item 
+virtual void \hyperlink{classg2o_1_1OptimizationAlgorithmWithHessian_a655aee24aae72b55f5edafb0a7a15137}{set\-Write\-Debug} (bool write\-Debug)
+\item 
+\hypertarget{classg2o_1_1OptimizationAlgorithmWithHessian_ac3f458237efd3b000de0032f97bca0b7}{virtual bool {\bfseries write\-Debug} () const }\label{classg2o_1_1OptimizationAlgorithmWithHessian_ac3f458237efd3b000de0032f97bca0b7}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected 属性}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classg2o_1_1OptimizationAlgorithmWithHessian_a88a2d1dccee8f7481ece407f2681a151}{\hyperlink{classg2o_1_1Solver}{Solver} $\ast$ {\bfseries \-\_\-solver}}\label{classg2o_1_1OptimizationAlgorithmWithHessian_a88a2d1dccee8f7481ece407f2681a151}
+
+\item 
+\hypertarget{classg2o_1_1OptimizationAlgorithmWithHessian_a6dd1e4e8dc2d09233c40de02b2c9fe8c}{\hyperlink{classg2o_1_1Property}{Property}$<$ bool $>$ $\ast$ {\bfseries \-\_\-write\-Debug}}\label{classg2o_1_1OptimizationAlgorithmWithHessian_a6dd1e4e8dc2d09233c40de02b2c9fe8c}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{详细描述}
+Base for solvers operating on the approximated Hessian, e.\-g., Gauss-\/\-Newton, Levenberg. 
+
+在文件 optimization\-\_\-algorithm\-\_\-with\-\_\-hessian.\-h 第 40 行定义.
+
+
+
+\subsection{成员函数说明}
+\hypertarget{classg2o_1_1OptimizationAlgorithmWithHessian_af1959727df2b7cf233a171cfed246e9a}{\index{g2o\-::\-Optimization\-Algorithm\-With\-Hessian@{g2o\-::\-Optimization\-Algorithm\-With\-Hessian}!compute\-Marginals@{compute\-Marginals}}
+\index{compute\-Marginals@{compute\-Marginals}!g2o::OptimizationAlgorithmWithHessian@{g2o\-::\-Optimization\-Algorithm\-With\-Hessian}}
+\subsubsection[{compute\-Marginals}]{\setlength{\rightskip}{0pt plus 5cm}bool g2o\-::\-Optimization\-Algorithm\-With\-Hessian\-::compute\-Marginals (
+\begin{DoxyParamCaption}
+\item[{{\bf Sparse\-Block\-Matrix}$<$ Matrix\-Xd $>$ \&}]{spinv, }
+\item[{const std\-::vector$<$ std\-::pair$<$ int, int $>$ $>$ \&}]{block\-Indices}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classg2o_1_1OptimizationAlgorithmWithHessian_af1959727df2b7cf233a171cfed246e9a}
+computes the block diagonal elements of the pattern specified in the input and stores them in given \hyperlink{classg2o_1_1SparseBlockMatrix}{Sparse\-Block\-Matrix}. If your solver does not support computing the marginals, return false. 
+
+实现了 \hyperlink{classg2o_1_1OptimizationAlgorithm_a67b159f3a83471ba9ebcc0a9162a0e23}{g2o\-::\-Optimization\-Algorithm}.
+
+
+
+在文件 optimization\-\_\-algorithm\-\_\-with\-\_\-hessian.\-cpp 第 75 行定义.
+
+
+
+参考 g2o\-::\-Solver\-::compute\-Marginals().
+
+
+
+函数调用图\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classg2o_1_1OptimizationAlgorithmWithHessian_af1959727df2b7cf233a171cfed246e9a_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classg2o_1_1OptimizationAlgorithmWithHessian_ae067a9c2961718dc8a37e3b8478b6d01}{\index{g2o\-::\-Optimization\-Algorithm\-With\-Hessian@{g2o\-::\-Optimization\-Algorithm\-With\-Hessian}!init@{init}}
+\index{init@{init}!g2o::OptimizationAlgorithmWithHessian@{g2o\-::\-Optimization\-Algorithm\-With\-Hessian}}
+\subsubsection[{init}]{\setlength{\rightskip}{0pt plus 5cm}bool g2o\-::\-Optimization\-Algorithm\-With\-Hessian\-::init (
+\begin{DoxyParamCaption}
+\item[{bool}]{online = {\ttfamily false}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classg2o_1_1OptimizationAlgorithmWithHessian_ae067a9c2961718dc8a37e3b8478b6d01}
+initialize the solver, called once before the first call to \hyperlink{classg2o_1_1OptimizationAlgorithm_ab174deeeb2551ceaf715ea09f0f9c077}{solve()} 
+
+实现了 \hyperlink{classg2o_1_1OptimizationAlgorithm_af5b54ea6d40a8ab4c16d448ba02a0c80}{g2o\-::\-Optimization\-Algorithm}.
+
+
+
+在文件 optimization\-\_\-algorithm\-\_\-with\-\_\-hessian.\-cpp 第 50 行定义.
+
+
+
+参考 g2o\-::\-Optimization\-Algorithm\-::\-\_\-optimizer, g2o\-::\-Sparse\-Optimizer\-::active\-Vertices(), g2o\-::\-Solver\-::init(), g2o\-::\-Optimizable\-Graph\-::\-Vertex\-::marginalized(), g2o\-::\-Solver\-::set\-Write\-Debug() , 以及 g2o\-::\-Solver\-::supports\-Schur().
+
+
+
+函数调用图\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classg2o_1_1OptimizationAlgorithmWithHessian_ae067a9c2961718dc8a37e3b8478b6d01_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classg2o_1_1OptimizationAlgorithmWithHessian_a655aee24aae72b55f5edafb0a7a15137}{\index{g2o\-::\-Optimization\-Algorithm\-With\-Hessian@{g2o\-::\-Optimization\-Algorithm\-With\-Hessian}!set\-Write\-Debug@{set\-Write\-Debug}}
+\index{set\-Write\-Debug@{set\-Write\-Debug}!g2o::OptimizationAlgorithmWithHessian@{g2o\-::\-Optimization\-Algorithm\-With\-Hessian}}
+\subsubsection[{set\-Write\-Debug}]{\setlength{\rightskip}{0pt plus 5cm}void g2o\-::\-Optimization\-Algorithm\-With\-Hessian\-::set\-Write\-Debug (
+\begin{DoxyParamCaption}
+\item[{bool}]{write\-Debug}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classg2o_1_1OptimizationAlgorithmWithHessian_a655aee24aae72b55f5edafb0a7a15137}
+write debug output of the Hessian if system is not positive definite 
+
+在文件 optimization\-\_\-algorithm\-\_\-with\-\_\-hessian.\-cpp 第 96 行定义.
+
+\hypertarget{classg2o_1_1OptimizationAlgorithmWithHessian_a9ffffb2bdb70db856bccdb6774776fa3}{\index{g2o\-::\-Optimization\-Algorithm\-With\-Hessian@{g2o\-::\-Optimization\-Algorithm\-With\-Hessian}!update\-Structure@{update\-Structure}}
+\index{update\-Structure@{update\-Structure}!g2o::OptimizationAlgorithmWithHessian@{g2o\-::\-Optimization\-Algorithm\-With\-Hessian}}
+\subsubsection[{update\-Structure}]{\setlength{\rightskip}{0pt plus 5cm}bool g2o\-::\-Optimization\-Algorithm\-With\-Hessian\-::update\-Structure (
+\begin{DoxyParamCaption}
+\item[{const std\-::vector$<$ {\bf Hyper\-Graph\-::\-Vertex} $\ast$ $>$ \&}]{vset, }
+\item[{const Hyper\-Graph\-::\-Edge\-Set \&}]{edges}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classg2o_1_1OptimizationAlgorithmWithHessian_a9ffffb2bdb70db856bccdb6774776fa3}
+update the structures for online processing 
+
+实现了 \hyperlink{classg2o_1_1OptimizationAlgorithm_a6b86c5d3c56a41c18f2aee611b62d71b}{g2o\-::\-Optimization\-Algorithm}.
+
+
+
+在文件 optimization\-\_\-algorithm\-\_\-with\-\_\-hessian.\-cpp 第 91 行定义.
+
+
+
+参考 g2o\-::\-Solver\-::update\-Structure().
+
+
+
+函数调用图\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classg2o_1_1OptimizationAlgorithmWithHessian_a9ffffb2bdb70db856bccdb6774776fa3_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+该类的文档由以下文件生成\-:\begin{DoxyCompactItemize}
+\item 
+Thirdparty/g2o/g2o/core/optimization\-\_\-algorithm\-\_\-with\-\_\-hessian.\-h\item 
+Thirdparty/g2o/g2o/core/optimization\-\_\-algorithm\-\_\-with\-\_\-hessian.\-cpp\end{DoxyCompactItemize}

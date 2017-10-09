@@ -1,0 +1,13 @@
+<map id="ORB_SLAM2::LocalMapping::CreateNewMapPoints" name="ORB_SLAM2::LocalMapping::CreateNewMapPoints">
+<area shape="rect" id="node2" href="$classORB__SLAM2_1_1Map.html#a2d8e1b4376778dfe32df90ec00b599e3" title="Insert MapPoint in the map. " alt="" coords="243,5,463,32"/>
+<area shape="rect" id="node3" href="$classORB__SLAM2_1_1KeyFrame.html#a16ea4f0cfa1ca411bb3382107fe69d2d" title="Add MapPoint to KeyFrame. " alt="" coords="269,57,438,98"/>
+<area shape="rect" id="node4" href="$classORB__SLAM2_1_1MapPoint.html#a37277ee3c7d8657976e749ab920bb13f" title="添加观测 " alt="" coords="271,122,435,163"/>
+<area shape="rect" id="node5" href="$classORB__SLAM2_1_1LocalMapping.html#a27db88f75fe6f2bd43b0bd0769d56462" title="查看列表中是否有等待被插入的关键帧 " alt="" coords="259,187,448,229"/>
+<area shape="rect" id="node6" href="$classORB__SLAM2_1_1MapPoint.html#ab4c3dfd8f5f05a4b1888021f1fac3d84" title="计算具有代表的描述子 " alt="" coords="247,253,459,294"/>
+<area shape="rect" id="node7" href="$classORB__SLAM2_1_1LocalMapping.html#ac72419089ac268253671b8da2ec12c21" title="ORB_SLAM2::LocalMapping\l::ComputeF12" alt="" coords="259,318,448,359"/>
+<area shape="rect" id="node8" href="$classORB__SLAM2_1_1KeyFrame.html#aa4c5f9ea38d377cfa70d441e184803ae" title="评估当前关键帧场景深度，q=2表示中值 " alt="" coords="255,383,452,425"/>
+<area shape="rect" id="node9" href="$classORB__SLAM2_1_1KeyFrame.html#a2ecb2df01af804fb727c93948a28475f" title="得到与该关键帧连接的前N个关键帧(已按权值排序) " alt="" coords="249,449,458,490"/>
+<area shape="rect" id="node10" href="$classORB__SLAM2_1_1ORBmatcher.html#a0ecb7f018e9184c67c4a48ad8616217d" title="利用基本矩阵F12，在两个关键帧之间未匹配的特征点中产生新的3d点 " alt="" coords="261,514,446,555"/>
+<area shape="rect" id="node11" href="$classORB__SLAM2_1_1KeyFrame.html#a0d2dc03ca0d62fc5585773e43d503e79" title="Backprojects a keypoint (if stereo/depth info available) into 3D world coordinates. " alt="" coords="269,579,438,621"/>
+<area shape="rect" id="node12" href="$classORB__SLAM2_1_1MapPoint.html#ac5b8e4ec6a7737860af57058bdd16124" title="更新平均观测方向以及观测距离范围 " alt="" coords="267,645,439,686"/>
+</map>

@@ -1,0 +1,10 @@
+<map id="g2o::OptimizationAlgorithmGaussNewton::solve" name="g2o::OptimizationAlgorithmGaussNewton::solve">
+<area shape="rect" id="node2" href="$classg2o_1_1Solver.html#a6c93ac0f528ffe05867d33150c54f46f" title="g2o::Solver::buildStructure" alt="" coords="232,5,408,32"/>
+<area shape="rect" id="node3" href="$classg2o_1_1Solver.html#ac1565e85d5ca68a87ad7f06f8164a8c0" title="g2o::Solver::buildSystem" alt="" coords="236,56,404,83"/>
+<area shape="rect" id="node4" href="$classg2o_1_1SparseOptimizer.html#a09572668aa85b75a5bebf7b66401ce8f" title="g2o::SparseOptimizer\l::computeActiveErrors" alt="" coords="244,107,396,149"/>
+<area shape="rect" id="node7" href="$classg2o_1_1Solver.html#a9ea585f131ab02ae1e0c0192126f0b5f" title="the optimizer (graph) on which the solver works " alt="" coords="245,173,395,200"/>
+<area shape="rect" id="node8" href="$classg2o_1_1Solver.html#a9c359a886db57f2f81e54a2113f3bd38" title="g2o::Solver::solve" alt="" coords="257,224,383,251"/>
+<area shape="rect" id="node9" href="$classg2o_1_1Solver.html#acb097d8568624a1f3af4dba808e5593b" title="return x, the solution vector " alt="" coords="269,275,371,301"/>
+<area shape="rect" id="node5" href="$classg2o_1_1OptimizableGraph_1_1Edge.html#a5f2a4b6efa2d0ae600f94a28a6ba58cf" title="returns the error vector cached after calling the computeError; " alt="" coords="456,75,611,117"/>
+<area shape="rect" id="node6" href="$classg2o_1_1OptimizableGraph_1_1Edge.html#a90a86891adc47a179a7cd7ef31549916" title="returns the dimensions of the error function " alt="" coords="456,141,611,182"/>
+</map>

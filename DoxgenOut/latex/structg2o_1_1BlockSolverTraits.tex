@@ -1,0 +1,74 @@
+\hypertarget{structg2o_1_1BlockSolverTraits}{\section{g2o\-:\-:Block\-Solver\-Traits$<$ \-\_\-\-Pose\-Dim, \-\_\-\-Landmark\-Dim $>$ 模板结构体 参考}
+\label{structg2o_1_1BlockSolverTraits}\index{g2o\-::\-Block\-Solver\-Traits$<$ \-\_\-\-Pose\-Dim, \-\_\-\-Landmark\-Dim $>$@{g2o\-::\-Block\-Solver\-Traits$<$ \-\_\-\-Pose\-Dim, \-\_\-\-Landmark\-Dim $>$}}
+}
+
+
+traits to summarize the properties of the fixed size optimization problem  
+
+
+
+
+{\ttfamily \#include $<$block\-\_\-solver.\-h$>$}
+
+\subsection*{Public 类型}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{structg2o_1_1BlockSolverTraits_a35e6e4bad138dcfcaa3b1339e168bf30}{typedef Matrix$<$ double, \\*
+Pose\-Dim, Pose\-Dim $>$ {\bfseries Pose\-Matrix\-Type}}\label{structg2o_1_1BlockSolverTraits_a35e6e4bad138dcfcaa3b1339e168bf30}
+
+\item 
+\hypertarget{structg2o_1_1BlockSolverTraits_add9b9fbfef352b7654d41914d5eaa58c}{typedef Matrix$<$ double, \\*
+Landmark\-Dim, Landmark\-Dim $>$ {\bfseries Landmark\-Matrix\-Type}}\label{structg2o_1_1BlockSolverTraits_add9b9fbfef352b7654d41914d5eaa58c}
+
+\item 
+\hypertarget{structg2o_1_1BlockSolverTraits_a91e6510ad42179701d22c3ac312237cd}{typedef Matrix$<$ double, \\*
+Pose\-Dim, Landmark\-Dim $>$ {\bfseries Pose\-Landmark\-Matrix\-Type}}\label{structg2o_1_1BlockSolverTraits_a91e6510ad42179701d22c3ac312237cd}
+
+\item 
+\hypertarget{structg2o_1_1BlockSolverTraits_a032ed57e9bc44c36093f97b32e1506f6}{typedef Matrix$<$ double, \\*
+Pose\-Dim, 1 $>$ {\bfseries Pose\-Vector\-Type}}\label{structg2o_1_1BlockSolverTraits_a032ed57e9bc44c36093f97b32e1506f6}
+
+\item 
+\hypertarget{structg2o_1_1BlockSolverTraits_af5154a15abb566ff5bffc0adb9f0458d}{typedef Matrix$<$ double, \\*
+Landmark\-Dim, 1 $>$ {\bfseries Landmark\-Vector\-Type}}\label{structg2o_1_1BlockSolverTraits_af5154a15abb566ff5bffc0adb9f0458d}
+
+\item 
+\hypertarget{structg2o_1_1BlockSolverTraits_a03351362339d8e6609c577123350bb2a}{typedef \hyperlink{classg2o_1_1SparseBlockMatrix}{Sparse\-Block\-Matrix}\\*
+$<$ Pose\-Matrix\-Type $>$ {\bfseries Pose\-Hessian\-Type}}\label{structg2o_1_1BlockSolverTraits_a03351362339d8e6609c577123350bb2a}
+
+\item 
+\hypertarget{structg2o_1_1BlockSolverTraits_ae761bb32d5267e4d74e5d9c2c7e7ad2f}{typedef \hyperlink{classg2o_1_1SparseBlockMatrix}{Sparse\-Block\-Matrix}\\*
+$<$ Landmark\-Matrix\-Type $>$ {\bfseries Landmark\-Hessian\-Type}}\label{structg2o_1_1BlockSolverTraits_ae761bb32d5267e4d74e5d9c2c7e7ad2f}
+
+\item 
+\hypertarget{structg2o_1_1BlockSolverTraits_af8ef27915a056caae3b12a9ca609eba6}{typedef \hyperlink{classg2o_1_1SparseBlockMatrix}{Sparse\-Block\-Matrix}\\*
+$<$ Pose\-Landmark\-Matrix\-Type $>$ {\bfseries Pose\-Landmark\-Hessian\-Type}}\label{structg2o_1_1BlockSolverTraits_af8ef27915a056caae3b12a9ca609eba6}
+
+\item 
+\hypertarget{structg2o_1_1BlockSolverTraits_add6edae08cb0665c2b1e7c641cdb4dc4}{typedef \hyperlink{classg2o_1_1LinearSolver}{Linear\-Solver}\\*
+$<$ Pose\-Matrix\-Type $>$ {\bfseries Linear\-Solver\-Type}}\label{structg2o_1_1BlockSolverTraits_add6edae08cb0665c2b1e7c641cdb4dc4}
+
+\end{DoxyCompactItemize}
+\subsection*{静态 Public 属性}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{structg2o_1_1BlockSolverTraits_a90a03bcfc60b629da5601f6df9514297}{static const int {\bfseries Pose\-Dim} = \-\_\-\-Pose\-Dim}\label{structg2o_1_1BlockSolverTraits_a90a03bcfc60b629da5601f6df9514297}
+
+\item 
+\hypertarget{structg2o_1_1BlockSolverTraits_a7e6e33971e5243e020a9f41cd3182218}{static const int {\bfseries Landmark\-Dim} = \-\_\-\-Landmark\-Dim}\label{structg2o_1_1BlockSolverTraits_a7e6e33971e5243e020a9f41cd3182218}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{详细描述}
+\subsubsection*{template$<$int \-\_\-\-Pose\-Dim, int \-\_\-\-Landmark\-Dim$>$struct g2o\-::\-Block\-Solver\-Traits$<$ \-\_\-\-Pose\-Dim, \-\_\-\-Landmark\-Dim $>$}
+
+traits to summarize the properties of the fixed size optimization problem 
+
+在文件 block\-\_\-solver.\-h 第 44 行定义.
+
+
+
+该结构体的文档由以下文件生成\-:\begin{DoxyCompactItemize}
+\item 
+Thirdparty/g2o/g2o/core/block\-\_\-solver.\-h\end{DoxyCompactItemize}

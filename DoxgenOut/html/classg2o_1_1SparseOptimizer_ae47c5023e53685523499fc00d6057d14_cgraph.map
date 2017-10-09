@@ -1,0 +1,5 @@
+<map id="g2o::SparseOptimizer::activeRobustChi2" name="g2o::SparseOptimizer::activeRobustChi2">
+<area shape="rect" id="node2" href="$classg2o_1_1OptimizableGraph_1_1Edge.html#a182bd2c109d50283c638d9b295f2f3d7" title="computes the chi2 based on the cached error value, only valid after computeError has been called..." alt="" coords="203,5,357,46"/>
+<area shape="rect" id="node3" href="$classg2o_1_1RobustKernel.html#ab47b071a0cfe466be063f0104bc41d0f" title="g2o::RobustKernel::\lrobustify" alt="" coords="211,70,349,111"/>
+<area shape="rect" id="node4" href="$classg2o_1_1OptimizableGraph_1_1Edge.html#aeb6ce9f3bf7b896f58272ea0d3feb8ff" title="if NOT NULL, error of this edge will be robustifed with the kernel " alt="" coords="203,135,357,177"/>
+</map>

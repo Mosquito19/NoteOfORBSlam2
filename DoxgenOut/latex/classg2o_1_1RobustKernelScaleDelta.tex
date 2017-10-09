@@ -1,0 +1,103 @@
+\hypertarget{classg2o_1_1RobustKernelScaleDelta}{\section{g2o\-:\-:Robust\-Kernel\-Scale\-Delta类 参考}
+\label{classg2o_1_1RobustKernelScaleDelta}\index{g2o\-::\-Robust\-Kernel\-Scale\-Delta@{g2o\-::\-Robust\-Kernel\-Scale\-Delta}}
+}
+
+
+scale a robust kernel to another delta (window size)  
+
+
+
+
+{\ttfamily \#include $<$robust\-\_\-kernel\-\_\-impl.\-h$>$}
+
+
+
+类 g2o\-:\-:Robust\-Kernel\-Scale\-Delta 继承关系图\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=226pt]{classg2o_1_1RobustKernelScaleDelta__inherit__graph}
+\end{center}
+\end{figure}
+
+
+g2o\-:\-:Robust\-Kernel\-Scale\-Delta 的协作图\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=226pt]{classg2o_1_1RobustKernelScaleDelta__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classg2o_1_1RobustKernelScaleDelta_acffeae7f685e69018f5b0222155a6eb2}{Robust\-Kernel\-Scale\-Delta} (const Robust\-Kernel\-Ptr \&\hyperlink{classg2o_1_1RobustKernelScaleDelta_a84185732ac179a67e10995a657cebe59}{kernel}, double delta=1.)
+\item 
+\hypertarget{classg2o_1_1RobustKernelScaleDelta_a537a88b2ff5432fb9e1ad2aaa85f60b9}{{\bfseries Robust\-Kernel\-Scale\-Delta} (double delta=1.)}\label{classg2o_1_1RobustKernelScaleDelta_a537a88b2ff5432fb9e1ad2aaa85f60b9}
+
+\item 
+\hypertarget{classg2o_1_1RobustKernelScaleDelta_a84185732ac179a67e10995a657cebe59}{const Robust\-Kernel\-Ptr \hyperlink{classg2o_1_1RobustKernelScaleDelta_a84185732ac179a67e10995a657cebe59}{kernel} () const }\label{classg2o_1_1RobustKernelScaleDelta_a84185732ac179a67e10995a657cebe59}
+
+\begin{DoxyCompactList}\small\item\em return the underlying kernel \end{DoxyCompactList}\item 
+\hypertarget{classg2o_1_1RobustKernelScaleDelta_a3bcc51d0cf3127e8c0431d1cddc1c75b}{void \hyperlink{classg2o_1_1RobustKernelScaleDelta_a3bcc51d0cf3127e8c0431d1cddc1c75b}{set\-Kernel} (const Robust\-Kernel\-Ptr \&ptr)}\label{classg2o_1_1RobustKernelScaleDelta_a3bcc51d0cf3127e8c0431d1cddc1c75b}
+
+\begin{DoxyCompactList}\small\item\em use another kernel for the underlying operation \end{DoxyCompactList}\item 
+void \hyperlink{classg2o_1_1RobustKernelScaleDelta_aa0dd08d5175fac24ce96b1efe08be67b}{robustify} (double error, Eigen\-::\-Vector3d \&rho) const 
+\end{DoxyCompactItemize}
+\subsection*{Protected 属性}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classg2o_1_1RobustKernelScaleDelta_a4a2976cb5f12553f0e00dfdf239b1231}{Robust\-Kernel\-Ptr {\bfseries \-\_\-kernel}}\label{classg2o_1_1RobustKernelScaleDelta_a4a2976cb5f12553f0e00dfdf239b1231}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{详细描述}
+scale a robust kernel to another delta (window size) 
+
+Scales a robust kernel to another window size. Useful, in case if one implements a kernel which only is designed for a fixed window size. 
+
+在文件 robust\-\_\-kernel\-\_\-impl.\-h 第 42 行定义.
+
+
+
+\subsection{构造及析构函数说明}
+\hypertarget{classg2o_1_1RobustKernelScaleDelta_acffeae7f685e69018f5b0222155a6eb2}{\index{g2o\-::\-Robust\-Kernel\-Scale\-Delta@{g2o\-::\-Robust\-Kernel\-Scale\-Delta}!Robust\-Kernel\-Scale\-Delta@{Robust\-Kernel\-Scale\-Delta}}
+\index{Robust\-Kernel\-Scale\-Delta@{Robust\-Kernel\-Scale\-Delta}!g2o::RobustKernelScaleDelta@{g2o\-::\-Robust\-Kernel\-Scale\-Delta}}
+\subsubsection[{Robust\-Kernel\-Scale\-Delta}]{\setlength{\rightskip}{0pt plus 5cm}g2o\-::\-Robust\-Kernel\-Scale\-Delta\-::\-Robust\-Kernel\-Scale\-Delta (
+\begin{DoxyParamCaption}
+\item[{const Robust\-Kernel\-Ptr \&}]{kernel, }
+\item[{double}]{delta = {\ttfamily 1.}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [explicit]}}}\label{classg2o_1_1RobustKernelScaleDelta_acffeae7f685e69018f5b0222155a6eb2}
+construct the scaled kernel ontop of another kernel which might be shared accross several scaled kernels 
+
+在文件 robust\-\_\-kernel\-\_\-impl.\-cpp 第 34 行定义.
+
+
+
+\subsection{成员函数说明}
+\hypertarget{classg2o_1_1RobustKernelScaleDelta_aa0dd08d5175fac24ce96b1efe08be67b}{\index{g2o\-::\-Robust\-Kernel\-Scale\-Delta@{g2o\-::\-Robust\-Kernel\-Scale\-Delta}!robustify@{robustify}}
+\index{robustify@{robustify}!g2o::RobustKernelScaleDelta@{g2o\-::\-Robust\-Kernel\-Scale\-Delta}}
+\subsubsection[{robustify}]{\setlength{\rightskip}{0pt plus 5cm}void g2o\-::\-Robust\-Kernel\-Scale\-Delta\-::robustify (
+\begin{DoxyParamCaption}
+\item[{double}]{squared\-Error, }
+\item[{Eigen\-::\-Vector3d \&}]{rho}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classg2o_1_1RobustKernelScaleDelta_aa0dd08d5175fac24ce96b1efe08be67b}
+compute the scaling factor for a error\-: The error is e$^\wedge$\-T Omega e The output rho is rho\mbox{[}0\mbox{]}\-: The actual scaled error value rho\mbox{[}1\mbox{]}\-: First derivative of the scaling function rho\mbox{[}2\mbox{]}\-: Second derivative of the scaling function 
+
+实现了 \hyperlink{classg2o_1_1RobustKernel_ab47b071a0cfe466be063f0104bc41d0f}{g2o\-::\-Robust\-Kernel}.
+
+
+
+在文件 robust\-\_\-kernel\-\_\-impl.\-cpp 第 50 行定义.
+
+
+
+该类的文档由以下文件生成\-:\begin{DoxyCompactItemize}
+\item 
+Thirdparty/g2o/g2o/core/robust\-\_\-kernel\-\_\-impl.\-h\item 
+Thirdparty/g2o/g2o/core/robust\-\_\-kernel\-\_\-impl.\-cpp\end{DoxyCompactItemize}

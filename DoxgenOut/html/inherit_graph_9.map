@@ -1,0 +1,4 @@
+<map id="类继承关系图" name="类继承关系图">
+<area shape="rect" id="node1" href="$classg2o_1_1AbstractRobustKernelCreator.html" title="Abstract interface for allocating a robust kernel. " alt="" coords="5,5,184,46"/>
+<area shape="rect" id="node2" href="$classg2o_1_1RobustKernelCreator.html" title="templatized creator class which creates graph elements " alt="" coords="232,12,437,39"/>
+</map>

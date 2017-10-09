@@ -1,0 +1,11 @@
+<map id="g2o::HyperGraph::edges" name="g2o::HyperGraph::edges">
+<area shape="rect" id="node2" href="$structg2o_1_1OptimizableGraph.html#acea1342d9ab0bf717710c8f78b74ff25" title="adds all edges and vertices of the graph g to this graph. " alt="" coords="231,5,385,46"/>
+<area shape="rect" id="node3" href="$structg2o_1_1OptimizableGraph.html#afa9378225b271351f4425bd266f76d3a" title="returns the chi2 of the current configuration " alt="" coords="231,70,385,111"/>
+<area shape="rect" id="node4" href="$classORB__SLAM2_1_1Optimizer.html#a7415d78b8a2323b88e108fa1ea3bf2d3" title="Pose Only Optimization. " alt="" coords="225,135,391,177"/>
+<area shape="rect" id="node9" href="$classg2o_1_1JacobianWorkspace.html#ae3d715bd25e196d8db81661ef0fbd09b" title="g2o::JacobianWorkspace\l::updateSize" alt="" coords="223,201,393,242"/>
+<area shape="rect" id="node10" href="$structg2o_1_1OptimizableGraph.html#aae5f20da3c13042a9bc1f491f2150d59" title="g2o::OptimizableGraph\l::verifyInformationMatrices" alt="" coords="219,266,397,307"/>
+<area shape="rect" id="node5" href="$classORB__SLAM2_1_1Tracking.html#a737c5409c93844353561a0fe724ed1c2" title="对参考关键帧的MapPoints进行跟踪 " alt="" coords="446,70,629,111"/>
+<area shape="rect" id="node7" href="$classORB__SLAM2_1_1Tracking.html#aca19f1d69b30a6c6e49281d422ac8298" title="根据匀速度模型对上一帧的MapPoints进行跟踪 " alt="" coords="455,135,619,177"/>
+<area shape="rect" id="node8" href="$classORB__SLAM2_1_1Tracking.html#af670c614f4e10d58c9f7aad9865b5c08" title="对Local Map的MapPoints进行跟踪 " alt="" coords="458,201,617,242"/>
+<area shape="rect" id="node6" href="$classORB__SLAM2_1_1Tracking.html#af1f2c9c533642d8c33854540e90d1918" title="Main tracking function. It is independent of the input sensor. " alt="" coords="678,135,837,177"/>
+</map>

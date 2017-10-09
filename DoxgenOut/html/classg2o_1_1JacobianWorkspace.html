@@ -1,0 +1,342 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.6"/>
+<title>My Project: g2o::JacobianWorkspace类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">My Project
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.6 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="pages.html"><span>相关页面</span></a></li>
+      <li><a href="modules.html"><span>模块</span></a></li>
+      <li><a href="namespaces.html"><span>命名空间</span></a></li>
+      <li class="current"><a href="annotated.html"><span>类</span></a></li>
+      <li><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>类列表</span></a></li>
+      <li><a href="classes.html"><span>类索引</span></a></li>
+      <li><a href="inherits.html"><span>类继承关系</span></a></li>
+      <li><a href="functions.html"><span>类成员</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('classg2o_1_1JacobianWorkspace.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>命名空间</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>友元</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>组</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>页</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-types">Public 类型</a> &#124;
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pro-attribs">Protected 属性</a> &#124;
+<a href="classg2o_1_1JacobianWorkspace-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">g2o::JacobianWorkspace类 参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>provide memory workspace for computing the Jacobians  
+ <a href="classg2o_1_1JacobianWorkspace.html#details">更多...</a></p>
+
+<p><code>#include &lt;<a class="el" href="jacobian__workspace_8h_source.html">jacobian_workspace.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public 类型</h2></td></tr>
+<tr class="memitem:aee9d767fa1208772a3de83732646e182"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aee9d767fa1208772a3de83732646e182"></a>
+typedef std::vector<br class="typebreak"/>
+&lt; Eigen::VectorXd, <br class="typebreak"/>
+Eigen::aligned_allocator<br class="typebreak"/>
+&lt; Eigen::VectorXd &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>WorkspaceVector</b></td></tr>
+<tr class="separator:aee9d767fa1208772a3de83732646e182"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:a8e1d23ced91b721fdb5bd68c8c4e9fc3"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classg2o_1_1JacobianWorkspace.html#a8e1d23ced91b721fdb5bd68c8c4e9fc3">allocate</a> ()</td></tr>
+<tr class="separator:a8e1d23ced91b721fdb5bd68c8c4e9fc3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d16ad6db1a51aa93c806cc9c06e223f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classg2o_1_1JacobianWorkspace.html#a2d16ad6db1a51aa93c806cc9c06e223f">updateSize</a> (const <a class="el" href="classg2o_1_1HyperGraph_1_1Edge.html">HyperGraph::Edge</a> *e)</td></tr>
+<tr class="separator:a2d16ad6db1a51aa93c806cc9c06e223f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae3d715bd25e196d8db81661ef0fbd09b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classg2o_1_1JacobianWorkspace.html#ae3d715bd25e196d8db81661ef0fbd09b">updateSize</a> (const <a class="el" href="structg2o_1_1OptimizableGraph.html">OptimizableGraph</a> &amp;graph)</td></tr>
+<tr class="separator:ae3d715bd25e196d8db81661ef0fbd09b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa15a007fee3037116ea0e857855080d2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classg2o_1_1JacobianWorkspace.html#aa15a007fee3037116ea0e857855080d2">updateSize</a> (int numVertices, int dimension)</td></tr>
+<tr class="separator:aa15a007fee3037116ea0e857855080d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad68c37d7779d3a034bc1b864cd98690b"><td class="memItemLeft" align="right" valign="top">double *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classg2o_1_1JacobianWorkspace.html#ad68c37d7779d3a034bc1b864cd98690b">workspaceForVertex</a> (int vertexIndex)</td></tr>
+<tr class="separator:ad68c37d7779d3a034bc1b864cd98690b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
+Protected 属性</h2></td></tr>
+<tr class="memitem:af7dbaa3a651808e1bf3f876896bd1bfc"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af7dbaa3a651808e1bf3f876896bd1bfc"></a>
+WorkspaceVector&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classg2o_1_1JacobianWorkspace.html#af7dbaa3a651808e1bf3f876896bd1bfc">_workspace</a></td></tr>
+<tr class="memdesc:af7dbaa3a651808e1bf3f876896bd1bfc"><td class="mdescLeft">&#160;</td><td class="mdescRight">the memory pre-allocated for computing the Jacobians <br/></td></tr>
+<tr class="separator:af7dbaa3a651808e1bf3f876896bd1bfc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a640c84c19a739ce3116fc02c3a66b096"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a640c84c19a739ce3116fc02c3a66b096"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classg2o_1_1JacobianWorkspace.html#a640c84c19a739ce3116fc02c3a66b096">_maxNumVertices</a></td></tr>
+<tr class="memdesc:a640c84c19a739ce3116fc02c3a66b096"><td class="mdescLeft">&#160;</td><td class="mdescRight">the maximum number of vertices connected by a hyper-edge <br/></td></tr>
+<tr class="separator:a640c84c19a739ce3116fc02c3a66b096"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa6cd4fb8bc1bb4fe9ada55d9feefc817"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa6cd4fb8bc1bb4fe9ada55d9feefc817"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classg2o_1_1JacobianWorkspace.html#aa6cd4fb8bc1bb4fe9ada55d9feefc817">_maxDimension</a></td></tr>
+<tr class="memdesc:aa6cd4fb8bc1bb4fe9ada55d9feefc817"><td class="mdescLeft">&#160;</td><td class="mdescRight">the maximum dimension (number of elements) for a Jacobian <br/></td></tr>
+<tr class="separator:aa6cd4fb8bc1bb4fe9ada55d9feefc817"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>provide memory workspace for computing the Jacobians </p>
+<p>The workspace is used by an <a class="el" href="structg2o_1_1OptimizableGraph.html">OptimizableGraph</a> to provide temporary memory for computing the Jacobian of the error functions. Before calling linearizeOplus on an edge, the workspace needs to be allocated by calling <a class="el" href="classg2o_1_1JacobianWorkspace.html#a8e1d23ced91b721fdb5bd68c8c4e9fc3">allocate()</a>. </p>
+
+<p>在文件 <a class="el" href="jacobian__workspace_8h_source.html">jacobian_workspace.h</a> 第 <a class="el" href="jacobian__workspace_8h_source.html#l00051">51</a> 行定义.</p>
+</div><h2 class="groupheader">成员函数说明</h2>
+<a class="anchor" id="a8e1d23ced91b721fdb5bd68c8c4e9fc3"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool g2o::JacobianWorkspace::allocate </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>allocate the workspace </p>
+
+<p>在文件 <a class="el" href="jacobian__workspace_8cpp_source.html">jacobian_workspace.cpp</a> 第 <a class="el" href="jacobian__workspace_8cpp_source.html#l00046">46</a> 行定义.</p>
+
+<p>参考 <a class="el" href="jacobian__workspace_8h_source.html#l00092">_maxDimension</a>, <a class="el" href="jacobian__workspace_8h_source.html#l00091">_maxNumVertices</a> , 以及 <a class="el" href="jacobian__workspace_8h_source.html#l00090">_workspace</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a2d16ad6db1a51aa93c806cc9c06e223f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void g2o::JacobianWorkspace::updateSize </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classg2o_1_1HyperGraph_1_1Edge.html">HyperGraph::Edge</a> *&#160;</td>
+          <td class="paramname"><em>e</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>update the maximum required workspace needed by taking into account this edge </p>
+
+<p>在文件 <a class="el" href="jacobian__workspace_8cpp_source.html">jacobian_workspace.cpp</a> 第 <a class="el" href="jacobian__workspace_8cpp_source.html#l00059">59</a> 行定义.</p>
+
+<p>参考 <a class="el" href="jacobian__workspace_8h_source.html#l00092">_maxDimension</a>, <a class="el" href="jacobian__workspace_8h_source.html#l00091">_maxNumVertices</a>, <a class="el" href="optimizable__graph_8h_source.html#l00316">g2o::OptimizableGraph::Vertex::dimension()</a>, <a class="el" href="optimizable__graph_8h_source.html#l00473">g2o::OptimizableGraph::Edge::dimension()</a>, <a class="el" href="hyper__graph_8h_source.html#l00145">g2o::HyperGraph::Edge::vertex()</a> , 以及 <a class="el" href="hyper__graph_8h_source.html#l00137">g2o::HyperGraph::Edge::vertices()</a>.</p>
+
+<p>参考自 <a class="el" href="optimizable__graph_8cpp_source.html#l00264">g2o::OptimizableGraph::addEdge()</a> , 以及 <a class="el" href="jacobian__workspace_8cpp_source.html#l00075">updateSize()</a>.</p>
+
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classg2o_1_1JacobianWorkspace_a2d16ad6db1a51aa93c806cc9c06e223f_cgraph.png" border="0" usemap="#classg2o_1_1JacobianWorkspace_a2d16ad6db1a51aa93c806cc9c06e223f_cgraph" alt=""/></div>
+<map name="classg2o_1_1JacobianWorkspace_a2d16ad6db1a51aa93c806cc9c06e223f_cgraph" id="classg2o_1_1JacobianWorkspace_a2d16ad6db1a51aa93c806cc9c06e223f_cgraph">
+<area shape="rect" id="node2" href="classg2o_1_1OptimizableGraph_1_1Vertex.html#a1037b978fec531eaf860d0037b992079" title="dimension of the estimated state belonging to this node " alt="" coords="227,5,381,46"/><area shape="rect" id="node3" href="classg2o_1_1OptimizableGraph_1_1Edge.html#a90a86891adc47a179a7cd7ef31549916" title="returns the dimensions of the error function " alt="" coords="227,70,381,111"/><area shape="rect" id="node4" href="classg2o_1_1HyperGraph_1_1Edge.html#aaec0b2c92c5496d0f0fea8f1abdc4311" title="g2o::HyperGraph::Edge\l::vertex" alt="" coords="225,135,383,177"/><area shape="rect" id="node5" href="classg2o_1_1HyperGraph_1_1Edge.html#a6410bb70a917b5407770ef1f1090b5f5" title="g2o::HyperGraph::Edge\l::vertices" alt="" coords="225,201,383,242"/></map>
+</div>
+</p>
+
+<p><div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classg2o_1_1JacobianWorkspace_a2d16ad6db1a51aa93c806cc9c06e223f_icgraph.png" border="0" usemap="#classg2o_1_1JacobianWorkspace_a2d16ad6db1a51aa93c806cc9c06e223f_icgraph" alt=""/></div>
+<map name="classg2o_1_1JacobianWorkspace_a2d16ad6db1a51aa93c806cc9c06e223f_icgraph" id="classg2o_1_1JacobianWorkspace_a2d16ad6db1a51aa93c806cc9c06e223f_icgraph">
+<area shape="rect" id="node2" href="structg2o_1_1OptimizableGraph.html#a6831ed69fce3dba691f53302a2813070" title="g2o::OptimizableGraph\l::addEdge" alt="" coords="232,169,387,210"/><area shape="rect" id="node15" href="classg2o_1_1JacobianWorkspace.html#ae3d715bd25e196d8db81661ef0fbd09b" title="g2o::JacobianWorkspace\l::updateSize" alt="" coords="225,234,394,275"/><area shape="rect" id="node3" href="classORB__SLAM2_1_1Optimizer.html#a5e855fe6b54082739b7e7013048e6340" title="bundle adjustment Optimization " alt="" coords="445,5,611,46"/><area shape="rect" id="node4" href="classORB__SLAM2_1_1Optimizer.html#a7415d78b8a2323b88e108fa1ea3bf2d3" title="Pose Only Optimization. " alt="" coords="445,70,611,111"/><area shape="rect" id="node9" href="classORB__SLAM2_1_1Optimizer.html#ab70e0b4f366b65a0c1ae8b2def19d339" title="Local Bundle Adjustment. " alt="" coords="445,135,611,177"/><area shape="rect" id="node10" href="classORB__SLAM2_1_1Optimizer.html#ad36bb1a7167c84f385c3f299bc96f20e" title="闭环检测后，EssentialGraph优化 " alt="" coords="443,201,613,242"/><area shape="rect" id="node12" href="classORB__SLAM2_1_1Optimizer.html#ad8fe00ad3e6564b859b07ff9e7b2224e" title="形成闭环时进行Sim3优化 " alt="" coords="445,266,611,307"/><area shape="rect" id="node14" href="structg2o_1_1OptimizableGraph.html#acea1342d9ab0bf717710c8f78b74ff25" title="adds all edges and vertices of the graph g to this graph. " alt="" coords="451,331,605,373"/><area shape="rect" id="node5" href="classORB__SLAM2_1_1Tracking.html#a737c5409c93844353561a0fe724ed1c2" title="对参考关键帧的MapPoints进行跟踪 " alt="" coords="662,5,845,46"/><area shape="rect" id="node7" href="classORB__SLAM2_1_1Tracking.html#aca19f1d69b30a6c6e49281d422ac8298" title="根据匀速度模型对上一帧的MapPoints进行跟踪 " alt="" coords="671,70,835,111"/><area shape="rect" id="node8" href="classORB__SLAM2_1_1Tracking.html#af670c614f4e10d58c9f7aad9865b5c08" title="对Local Map的MapPoints进行跟踪 " alt="" coords="674,135,833,177"/><area shape="rect" id="node6" href="classORB__SLAM2_1_1Tracking.html#af1f2c9c533642d8c33854540e90d1918" title="Main tracking function. It is independent of the input sensor. " alt="" coords="894,70,1053,111"/><area shape="rect" id="node11" href="classORB__SLAM2_1_1LoopClosing.html#aa007e0678582ec0de5d71280d23af540" title="闭环 " alt="" coords="663,201,844,242"/><area shape="rect" id="node13" href="classORB__SLAM2_1_1LoopClosing.html#ab4fcf814eed5b5dd2aec96454561b078" title="计算当前帧与闭环帧的Sim3变换等 " alt="" coords="663,266,844,307"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="ae3d715bd25e196d8db81661ef0fbd09b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void g2o::JacobianWorkspace::updateSize </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structg2o_1_1OptimizableGraph.html">OptimizableGraph</a> &amp;&#160;</td>
+          <td class="paramname"><em>graph</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>update the required workspace by looking at a full graph </p>
+
+<p>在文件 <a class="el" href="jacobian__workspace_8cpp_source.html">jacobian_workspace.cpp</a> 第 <a class="el" href="jacobian__workspace_8cpp_source.html#l00075">75</a> 行定义.</p>
+
+<p>参考 <a class="el" href="hyper__graph_8h_source.html#l00187">g2o::HyperGraph::edges()</a> , 以及 <a class="el" href="jacobian__workspace_8cpp_source.html#l00059">updateSize()</a>.</p>
+
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classg2o_1_1JacobianWorkspace_ae3d715bd25e196d8db81661ef0fbd09b_cgraph.png" border="0" usemap="#classg2o_1_1JacobianWorkspace_ae3d715bd25e196d8db81661ef0fbd09b_cgraph" alt=""/></div>
+<map name="classg2o_1_1JacobianWorkspace_ae3d715bd25e196d8db81661ef0fbd09b_cgraph" id="classg2o_1_1JacobianWorkspace_ae3d715bd25e196d8db81661ef0fbd09b_cgraph">
+<area shape="rect" id="node2" href="classg2o_1_1HyperGraph.html#acb3391945ed7c3f09243101d9ef0aaf0" title="g2o::HyperGraph::edges" alt="" coords="227,52,391,79"/><area shape="rect" id="node3" href="classg2o_1_1JacobianWorkspace.html#a2d16ad6db1a51aa93c806cc9c06e223f" title="g2o::JacobianWorkspace\l::updateSize" alt="" coords="225,103,394,145"/><area shape="rect" id="node4" href="classg2o_1_1OptimizableGraph_1_1Vertex.html#a1037b978fec531eaf860d0037b992079" title="dimension of the estimated state belonging to this node " alt="" coords="445,5,600,46"/><area shape="rect" id="node5" href="classg2o_1_1OptimizableGraph_1_1Edge.html#a90a86891adc47a179a7cd7ef31549916" title="returns the dimensions of the error function " alt="" coords="445,70,600,111"/><area shape="rect" id="node6" href="classg2o_1_1HyperGraph_1_1Edge.html#aaec0b2c92c5496d0f0fea8f1abdc4311" title="g2o::HyperGraph::Edge\l::vertex" alt="" coords="443,135,602,177"/><area shape="rect" id="node7" href="classg2o_1_1HyperGraph_1_1Edge.html#a6410bb70a917b5407770ef1f1090b5f5" title="g2o::HyperGraph::Edge\l::vertices" alt="" coords="443,201,602,242"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="aa15a007fee3037116ea0e857855080d2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void g2o::JacobianWorkspace::updateSize </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>numVertices</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>dimension</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>manually update with the given parameters </p>
+
+<p>在文件 <a class="el" href="jacobian__workspace_8cpp_source.html">jacobian_workspace.cpp</a> 第 <a class="el" href="jacobian__workspace_8cpp_source.html#l00083">83</a> 行定义.</p>
+
+<p>参考 <a class="el" href="jacobian__workspace_8h_source.html#l00092">_maxDimension</a> , 以及 <a class="el" href="jacobian__workspace_8h_source.html#l00091">_maxNumVertices</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ad68c37d7779d3a034bc1b864cd98690b"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double* g2o::JacobianWorkspace::workspaceForVertex </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>vertexIndex</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>return the workspace for a vertex in an edge </p>
+
+<p>在文件 <a class="el" href="jacobian__workspace_8h_source.html">jacobian_workspace.h</a> 第 <a class="el" href="jacobian__workspace_8h_source.html#l00083">83</a> 行定义.</p>
+
+<p>参考自 <a class="el" href="block__solver_8hpp_source.html#l00503">g2o::BlockSolver&lt; Traits &gt;::buildSystem()</a>.</p>
+
+<p><div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classg2o_1_1JacobianWorkspace_ad68c37d7779d3a034bc1b864cd98690b_icgraph.png" border="0" usemap="#classg2o_1_1JacobianWorkspace_ad68c37d7779d3a034bc1b864cd98690b_icgraph" alt=""/></div>
+<map name="classg2o_1_1JacobianWorkspace_ad68c37d7779d3a034bc1b864cd98690b_icgraph" id="classg2o_1_1JacobianWorkspace_ad68c37d7779d3a034bc1b864cd98690b_icgraph">
+<area shape="rect" id="node2" href="classg2o_1_1BlockSolver.html#a2654a8d52f38e5ce23720a8de302e2e7" title="g2o::BlockSolver::buildSystem" alt="" coords="225,12,426,39"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>Thirdparty/g2o/g2o/core/<a class="el" href="jacobian__workspace_8h_source.html">jacobian_workspace.h</a></li>
+<li>Thirdparty/g2o/g2o/core/<a class="el" href="jacobian__workspace_8cpp_source.html">jacobian_workspace.cpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><b>g2o</b></li><li class="navelem"><a class="el" href="classg2o_1_1JacobianWorkspace.html">JacobianWorkspace</a></li>
+    <li class="footer">生成于 2017年 七月 18日 星期二 17:13:38 , 为 My Project使用 
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
+  </ul>
+</div>
+</body>
+</html>

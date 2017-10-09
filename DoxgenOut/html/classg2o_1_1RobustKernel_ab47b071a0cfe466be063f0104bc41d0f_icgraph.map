@@ -1,0 +1,5 @@
+<map id="g2o::RobustKernel::robustify" name="g2o::RobustKernel::robustify">
+<area shape="rect" id="node2" href="$classg2o_1_1SparseOptimizer.html#ae47c5023e53685523499fc00d6057d14" title="g2o::SparseOptimizer\l::activeRobustChi2" alt="" coords="193,38,341,79"/>
+<area shape="rect" id="node3" href="$classg2o_1_1OptimizationAlgorithmDogleg.html#ace62fd809c18655bd7ff104285748610" title="g2o::OptimizationAlgorithm\lDogleg::solve" alt="" coords="389,5,568,46"/>
+<area shape="rect" id="node4" href="$classg2o_1_1OptimizationAlgorithmLevenberg.html#a7140fa989b54eac4e09ba17829dcada0" title="g2o::OptimizationAlgorithm\lLevenberg::solve" alt="" coords="389,70,568,111"/>
+</map>

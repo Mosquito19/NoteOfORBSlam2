@@ -1,0 +1,237 @@
+\hypertarget{classORB__SLAM2_1_1KeyFrameDatabase}{\section{O\-R\-B\-\_\-\-S\-L\-A\-M2\-:\-:Key\-Frame\-Database类 参考}
+\label{classORB__SLAM2_1_1KeyFrameDatabase}\index{O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Key\-Frame\-Database@{O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Key\-Frame\-Database}}
+}
+
+
+O\-R\-B\-\_\-\-S\-L\-A\-M2\-:\-:Key\-Frame\-Database 的协作图\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=248pt]{classORB__SLAM2_1_1KeyFrameDatabase__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classORB__SLAM2_1_1KeyFrameDatabase_a83495a11d1fb3cd98e82fa1e2efb6920}{{\bfseries Key\-Frame\-Database} (const \hyperlink{classDBoW2_1_1TemplatedVocabulary}{O\-R\-B\-Vocabulary} \&voc)}\label{classORB__SLAM2_1_1KeyFrameDatabase_a83495a11d1fb3cd98e82fa1e2efb6920}
+
+\item 
+void \hyperlink{classORB__SLAM2_1_1KeyFrameDatabase_a1b3a362116e3ecf2cd7e151be2ca3fcb}{add} (\hyperlink{classORB__SLAM2_1_1KeyFrame}{Key\-Frame} $\ast$p\-K\-F)
+\begin{DoxyCompactList}\small\item\em 根据关键帧的词包，更新数据库的倒排索引 \end{DoxyCompactList}\item 
+void \hyperlink{classORB__SLAM2_1_1KeyFrameDatabase_aa5b56ae1d1cb827fb4602abd61d77a06}{erase} (\hyperlink{classORB__SLAM2_1_1KeyFrame}{Key\-Frame} $\ast$p\-K\-F)
+\begin{DoxyCompactList}\small\item\em 关键帧被删除后，更新数据库的倒排索引 \end{DoxyCompactList}\item 
+\hypertarget{classORB__SLAM2_1_1KeyFrameDatabase_a3eccf99ba2e387d0273f919fd0574ea2}{void {\bfseries clear} ()}\label{classORB__SLAM2_1_1KeyFrameDatabase_a3eccf99ba2e387d0273f919fd0574ea2}
+
+\item 
+std\-::vector$<$ \hyperlink{classORB__SLAM2_1_1KeyFrame}{Key\-Frame} $\ast$ $>$ \hyperlink{classORB__SLAM2_1_1KeyFrameDatabase_a2d396aae02c4318ea8c7e7eff8059c69}{Detect\-Loop\-Candidates} (\hyperlink{classORB__SLAM2_1_1KeyFrame}{Key\-Frame} $\ast$p\-K\-F, float min\-Score)
+\begin{DoxyCompactList}\small\item\em 在闭环检测中找到与该关键帧可能闭环的关键帧 \end{DoxyCompactList}\item 
+std\-::vector$<$ \hyperlink{classORB__SLAM2_1_1KeyFrame}{Key\-Frame} $\ast$ $>$ \hyperlink{classORB__SLAM2_1_1KeyFrameDatabase_a008586e4d07ece0d948d0f1633447a2b}{Detect\-Relocalization\-Candidates} (\hyperlink{classORB__SLAM2_1_1Frame}{Frame} $\ast$F)
+\begin{DoxyCompactList}\small\item\em 在重定位中找到与该帧相似的关键帧 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected 属性}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classORB__SLAM2_1_1KeyFrameDatabase_ad11a653313a5f0ef6f6fbc4880df0b7d}{const \hyperlink{classDBoW2_1_1TemplatedVocabulary}{O\-R\-B\-Vocabulary} $\ast$ \hyperlink{classORB__SLAM2_1_1KeyFrameDatabase_ad11a653313a5f0ef6f6fbc4880df0b7d}{mp\-Voc}}\label{classORB__SLAM2_1_1KeyFrameDatabase_ad11a653313a5f0ef6f6fbc4880df0b7d}
+
+\begin{DoxyCompactList}\small\item\em 预先训练好的词典 \end{DoxyCompactList}\item 
+\hypertarget{classORB__SLAM2_1_1KeyFrameDatabase_a3b6d73823fcd1b96f3ba5a66be0b2227}{std\-::vector$<$ list$<$ \hyperlink{classORB__SLAM2_1_1KeyFrame}{Key\-Frame} $\ast$ $>$ $>$ \hyperlink{classORB__SLAM2_1_1KeyFrameDatabase_a3b6d73823fcd1b96f3ba5a66be0b2227}{mv\-Inverted\-File}}\label{classORB__SLAM2_1_1KeyFrameDatabase_a3b6d73823fcd1b96f3ba5a66be0b2227}
+
+\begin{DoxyCompactList}\small\item\em 倒排索引，mv\-Inverted\-File\mbox{[}i\mbox{]}表示包含了第i个word id的所有关键帧 \end{DoxyCompactList}\item 
+\hypertarget{classORB__SLAM2_1_1KeyFrameDatabase_a31fc30f1474b8c97d81c96135e6912a1}{std\-::mutex {\bfseries m\-Mutex}}\label{classORB__SLAM2_1_1KeyFrameDatabase_a31fc30f1474b8c97d81c96135e6912a1}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{详细描述}
+
+
+在文件 Key\-Frame\-Database.\-h 第 42 行定义.
+
+
+
+\subsection{成员函数说明}
+\hypertarget{classORB__SLAM2_1_1KeyFrameDatabase_a1b3a362116e3ecf2cd7e151be2ca3fcb}{\index{O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Key\-Frame\-Database@{O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Key\-Frame\-Database}!add@{add}}
+\index{add@{add}!ORB_SLAM2::KeyFrameDatabase@{O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Key\-Frame\-Database}}
+\subsubsection[{add}]{\setlength{\rightskip}{0pt plus 5cm}void O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Key\-Frame\-Database\-::add (
+\begin{DoxyParamCaption}
+\item[{{\bf Key\-Frame} $\ast$}]{p\-K\-F}
+\end{DoxyParamCaption}
+)}}\label{classORB__SLAM2_1_1KeyFrameDatabase_a1b3a362116e3ecf2cd7e151be2ca3fcb}
+
+
+根据关键帧的词包，更新数据库的倒排索引 
+
+
+\begin{DoxyParams}{参数}
+{\em p\-K\-F} & 关键帧 \\
+\hline
+\end{DoxyParams}
+
+
+在文件 Key\-Frame\-Database.\-cpp 第 43 行定义.
+
+
+
+参考 O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Key\-Frame\-::m\-Bow\-Vec , 以及 mv\-Inverted\-File.
+
+
+
+参考自 O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Loop\-Closing\-::\-Detect\-Loop().
+
+
+
+这是这个函数的调用关系图\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classORB__SLAM2_1_1KeyFrameDatabase_a1b3a362116e3ecf2cd7e151be2ca3fcb_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classORB__SLAM2_1_1KeyFrameDatabase_a2d396aae02c4318ea8c7e7eff8059c69}{\index{O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Key\-Frame\-Database@{O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Key\-Frame\-Database}!Detect\-Loop\-Candidates@{Detect\-Loop\-Candidates}}
+\index{Detect\-Loop\-Candidates@{Detect\-Loop\-Candidates}!ORB_SLAM2::KeyFrameDatabase@{O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Key\-Frame\-Database}}
+\subsubsection[{Detect\-Loop\-Candidates}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$ {\bf Key\-Frame} $\ast$ $>$ O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Key\-Frame\-Database\-::\-Detect\-Loop\-Candidates (
+\begin{DoxyParamCaption}
+\item[{{\bf Key\-Frame} $\ast$}]{p\-K\-F, }
+\item[{float}]{min\-Score}
+\end{DoxyParamCaption}
+)}}\label{classORB__SLAM2_1_1KeyFrameDatabase_a2d396aae02c4318ea8c7e7eff8059c69}
+
+
+在闭环检测中找到与该关键帧可能闭环的关键帧 
+
+
+\begin{DoxyEnumerate}
+\item 找出和当前帧具有公共单词的所有关键帧（不包括与当前帧相连的关键帧）
+\item 只和具有共同单词较多的关键帧进行相似度计算
+\item 将与关键帧相连（权值最高）的前十个关键帧归为一组，计算累计得分
+\item 只返回累计得分较高的组中分数最高的关键帧 
+\begin{DoxyParams}{参数}
+{\em p\-K\-F} & 需要闭环的关键帧 \\
+\hline
+{\em min\-Score} & 相似性分数最低要求 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+可能闭环的关键帧 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{参见}
+I\-I\-I-\/\-E Bags of Words Place Recognition 
+\end{DoxySeeAlso}
+
+\end{DoxyEnumerate}lit 是一个迭代器，是指针，指向 Key\-Fame$\ast$ 
+
+在文件 Key\-Frame\-Database.\-cpp 第 96 行定义.
+
+
+
+参考 O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Key\-Frame\-::\-Get\-Best\-Covisibility\-Key\-Frames(), O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Key\-Frame\-::\-Get\-Connected\-Key\-Frames(), O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Key\-Frame\-::m\-Bow\-Vec, mp\-Voc, mv\-Inverted\-File , 以及 D\-Bo\-W2\-::\-Templated\-Vocabulary$<$ T\-Descriptor, F $>$\-::score().
+
+
+
+参考自 O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Loop\-Closing\-::\-Detect\-Loop().
+
+
+
+函数调用图\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classORB__SLAM2_1_1KeyFrameDatabase_a2d396aae02c4318ea8c7e7eff8059c69_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+这是这个函数的调用关系图\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classORB__SLAM2_1_1KeyFrameDatabase_a2d396aae02c4318ea8c7e7eff8059c69_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classORB__SLAM2_1_1KeyFrameDatabase_a008586e4d07ece0d948d0f1633447a2b}{\index{O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Key\-Frame\-Database@{O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Key\-Frame\-Database}!Detect\-Relocalization\-Candidates@{Detect\-Relocalization\-Candidates}}
+\index{Detect\-Relocalization\-Candidates@{Detect\-Relocalization\-Candidates}!ORB_SLAM2::KeyFrameDatabase@{O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Key\-Frame\-Database}}
+\subsubsection[{Detect\-Relocalization\-Candidates}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$ {\bf Key\-Frame} $\ast$ $>$ O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Key\-Frame\-Database\-::\-Detect\-Relocalization\-Candidates (
+\begin{DoxyParamCaption}
+\item[{{\bf Frame} $\ast$}]{F}
+\end{DoxyParamCaption}
+)}}\label{classORB__SLAM2_1_1KeyFrameDatabase_a008586e4d07ece0d948d0f1633447a2b}
+
+
+在重定位中找到与该帧相似的关键帧 
+
+
+\begin{DoxyEnumerate}
+\item 找出和当前帧具有公共单词的所有关键帧
+\item 只和具有共同单词较多的关键帧进行相似度计算
+\item 将与关键帧相连（权值最高）的前十个关键帧归为一组，计算累计得分
+\item 只返回累计得分较高的组中分数最高的关键帧 
+\begin{DoxyParams}{参数}
+{\em F} & 需要重定位的帧 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+相似的关键帧 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{参见}
+I\-I\-I-\/\-E Bags of Words Place Recognition 
+\end{DoxySeeAlso}
+
+\end{DoxyEnumerate}
+
+在文件 Key\-Frame\-Database.\-cpp 第 239 行定义.
+
+
+
+参考 O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Key\-Frame\-::\-Get\-Best\-Covisibility\-Key\-Frames(), O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Key\-Frame\-::m\-Bow\-Vec, O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Frame\-::mn\-Id, mp\-Voc, mv\-Inverted\-File , 以及 D\-Bo\-W2\-::\-Templated\-Vocabulary$<$ T\-Descriptor, F $>$\-::score().
+
+
+
+函数调用图\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classORB__SLAM2_1_1KeyFrameDatabase_a008586e4d07ece0d948d0f1633447a2b_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classORB__SLAM2_1_1KeyFrameDatabase_aa5b56ae1d1cb827fb4602abd61d77a06}{\index{O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Key\-Frame\-Database@{O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Key\-Frame\-Database}!erase@{erase}}
+\index{erase@{erase}!ORB_SLAM2::KeyFrameDatabase@{O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Key\-Frame\-Database}}
+\subsubsection[{erase}]{\setlength{\rightskip}{0pt plus 5cm}void O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Key\-Frame\-Database\-::erase (
+\begin{DoxyParamCaption}
+\item[{{\bf Key\-Frame} $\ast$}]{p\-K\-F}
+\end{DoxyParamCaption}
+)}}\label{classORB__SLAM2_1_1KeyFrameDatabase_aa5b56ae1d1cb827fb4602abd61d77a06}
+
+
+关键帧被删除后，更新数据库的倒排索引 
+
+
+\begin{DoxyParams}{参数}
+{\em p\-K\-F} & 关键帧 \\
+\hline
+\end{DoxyParams}
+
+
+在文件 Key\-Frame\-Database.\-cpp 第 56 行定义.
+
+
+
+参考 O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Key\-Frame\-::m\-Bow\-Vec , 以及 mv\-Inverted\-File.
+
+
+
+该类的文档由以下文件生成\-:\begin{DoxyCompactItemize}
+\item 
+include/Key\-Frame\-Database.\-h\item 
+src/Key\-Frame\-Database.\-cpp\end{DoxyCompactItemize}

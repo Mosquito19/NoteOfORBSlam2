@@ -1,0 +1,2116 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.6"/>
+<title>My Project: DBoW2::TemplatedVocabulary&lt; TDescriptor, F &gt; 模板类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">My Project
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.6 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="pages.html"><span>相关页面</span></a></li>
+      <li><a href="modules.html"><span>模块</span></a></li>
+      <li><a href="namespaces.html"><span>命名空间</span></a></li>
+      <li class="current"><a href="annotated.html"><span>类</span></a></li>
+      <li><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>类列表</span></a></li>
+      <li><a href="classes.html"><span>类索引</span></a></li>
+      <li><a href="inherits.html"><span>类继承关系</span></a></li>
+      <li><a href="functions.html"><span>类成员</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('classDBoW2_1_1TemplatedVocabulary.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>命名空间</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>友元</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>组</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>页</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">类</a> &#124;
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pro-types">Protected 类型</a> &#124;
+<a href="#pro-methods">Protected 成员函数</a> &#124;
+<a href="#pro-attribs">Protected 属性</a> &#124;
+<a href="classDBoW2_1_1TemplatedVocabulary-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">DBoW2::TemplatedVocabulary&lt; TDescriptor, F &gt; 模板类 参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Generic Vocabulary.  
+ <a href="classDBoW2_1_1TemplatedVocabulary.html#details">更多...</a></p>
+
+<p><code>#include &lt;<a class="el" href="TemplatedVocabulary_8h_source.html">TemplatedVocabulary.h</a>&gt;</code></p>
+<div class="dynheader">
+DBoW2::TemplatedVocabulary&lt; TDescriptor, F &gt; 的协作图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classDBoW2_1_1TemplatedVocabulary__coll__graph.png" border="0" usemap="#DBoW2_1_1TemplatedVocabulary_3_01TDescriptor_00_01F_01_4_coll__map" alt="Collaboration graph"/></div>
+<map name="DBoW2_1_1TemplatedVocabulary_3_01TDescriptor_00_01F_01_4_coll__map" id="DBoW2_1_1TemplatedVocabulary_3_01TDescriptor_00_01F_01_4_coll__map">
+<area shape="rect" id="node2" href="classDBoW2_1_1GeneralScoring.html" title="Base class of scoring functions. " alt="" coords="24,5,188,32"/></map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">图例</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+类</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structDBoW2_1_1TemplatedVocabulary_1_1Node.html">Node</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tree node.  <a href="structDBoW2_1_1TemplatedVocabulary_1_1Node.html#details">更多...</a><br/></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:a0dbbcb6bf766b09f08d945a2af0dbea8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDBoW2_1_1TemplatedVocabulary.html#a0dbbcb6bf766b09f08d945a2af0dbea8">TemplatedVocabulary</a> (int k=10, int L=5, <a class="el" href="namespaceDBoW2.html#a5de5c8a307aca9a84ffefda2a9bc467a">WeightingType</a> weighting=TF_IDF, <a class="el" href="namespaceDBoW2.html#aa252a592dd607c6e60dede06ceef2722">ScoringType</a> scoring=L1_NORM)</td></tr>
+<tr class="separator:a0dbbcb6bf766b09f08d945a2af0dbea8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a72fc6a164a5174003d19bd3c54615de6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDBoW2_1_1TemplatedVocabulary.html#a72fc6a164a5174003d19bd3c54615de6">TemplatedVocabulary</a> (const std::string &amp;filename)</td></tr>
+<tr class="separator:a72fc6a164a5174003d19bd3c54615de6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a255d68e7b4235487f8d2d8ea0cbaf43a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDBoW2_1_1TemplatedVocabulary.html#a255d68e7b4235487f8d2d8ea0cbaf43a">TemplatedVocabulary</a> (const char *filename)</td></tr>
+<tr class="separator:a255d68e7b4235487f8d2d8ea0cbaf43a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aac48ee5331b5d88a4db1a3c93cb0f6a5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDBoW2_1_1TemplatedVocabulary.html#aac48ee5331b5d88a4db1a3c93cb0f6a5">TemplatedVocabulary</a> (const <a class="el" href="classDBoW2_1_1TemplatedVocabulary.html">TemplatedVocabulary</a>&lt; TDescriptor, F &gt; &amp;voc)</td></tr>
+<tr class="separator:aac48ee5331b5d88a4db1a3c93cb0f6a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9d15f985a0c3badc1518be0fbe663099"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDBoW2_1_1TemplatedVocabulary.html#a9d15f985a0c3badc1518be0fbe663099">~TemplatedVocabulary</a> ()</td></tr>
+<tr class="separator:a9d15f985a0c3badc1518be0fbe663099"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5355c25b6f37c11acffe48996e19323f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDBoW2_1_1TemplatedVocabulary.html">TemplatedVocabulary</a><br class="typebreak"/>
+&lt; TDescriptor, F &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDBoW2_1_1TemplatedVocabulary.html#a5355c25b6f37c11acffe48996e19323f">operator=</a> (const <a class="el" href="classDBoW2_1_1TemplatedVocabulary.html">TemplatedVocabulary</a>&lt; TDescriptor, F &gt; &amp;voc)</td></tr>
+<tr class="separator:a5355c25b6f37c11acffe48996e19323f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3679b5a8f2043021a4faab99ccfe4ebe"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDBoW2_1_1TemplatedVocabulary.html#a3679b5a8f2043021a4faab99ccfe4ebe">create</a> (const std::vector&lt; std::vector&lt; TDescriptor &gt; &gt; &amp;training_features)</td></tr>
+<tr class="separator:a3679b5a8f2043021a4faab99ccfe4ebe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a94d48231b043a1102af4c35e256f2054"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDBoW2_1_1TemplatedVocabulary.html#a94d48231b043a1102af4c35e256f2054">create</a> (const std::vector&lt; std::vector&lt; TDescriptor &gt; &gt; &amp;training_features, int k, int L)</td></tr>
+<tr class="separator:a94d48231b043a1102af4c35e256f2054"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1e4a3e90f4aa1e6b6ea4d7491c223fd4"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDBoW2_1_1TemplatedVocabulary.html#a1e4a3e90f4aa1e6b6ea4d7491c223fd4">create</a> (const std::vector&lt; std::vector&lt; TDescriptor &gt; &gt; &amp;training_features, int k, int L, <a class="el" href="namespaceDBoW2.html#a5de5c8a307aca9a84ffefda2a9bc467a">WeightingType</a> weighting, <a class="el" href="namespaceDBoW2.html#aa252a592dd607c6e60dede06ceef2722">ScoringType</a> scoring)</td></tr>
+<tr class="separator:a1e4a3e90f4aa1e6b6ea4d7491c223fd4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3907da675f135821894fb497f113ccb0"><td class="memItemLeft" align="right" valign="top">virtual unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDBoW2_1_1TemplatedVocabulary.html#a3907da675f135821894fb497f113ccb0">size</a> () const </td></tr>
+<tr class="separator:a3907da675f135821894fb497f113ccb0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac897310f6a3475da1c0f0ef118b337d1"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDBoW2_1_1TemplatedVocabulary.html#ac897310f6a3475da1c0f0ef118b337d1">empty</a> () const </td></tr>
+<tr class="separator:ac897310f6a3475da1c0f0ef118b337d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af9fc1935403dcaf1fd8c44d96ae3328d"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDBoW2_1_1TemplatedVocabulary.html#af9fc1935403dcaf1fd8c44d96ae3328d">transform</a> (const std::vector&lt; TDescriptor &gt; &amp;features, <a class="el" href="classDBoW2_1_1BowVector.html">BowVector</a> &amp;v) const </td></tr>
+<tr class="separator:af9fc1935403dcaf1fd8c44d96ae3328d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acae97a5b78d9850a627d45cb05969041"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDBoW2_1_1TemplatedVocabulary.html#acae97a5b78d9850a627d45cb05969041">transform</a> (const std::vector&lt; TDescriptor &gt; &amp;features, <a class="el" href="classDBoW2_1_1BowVector.html">BowVector</a> &amp;v, <a class="el" href="classDBoW2_1_1FeatureVector.html">FeatureVector</a> &amp;fv, int levelsup) const </td></tr>
+<tr class="separator:acae97a5b78d9850a627d45cb05969041"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7bdb12ed8de8e2da937dd0c6de96a53a"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="namespaceDBoW2.html#ab1a0d3283b2d4690a383372ed20bfeb5">WordId</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDBoW2_1_1TemplatedVocabulary.html#a7bdb12ed8de8e2da937dd0c6de96a53a">transform</a> (const TDescriptor &amp;feature) const </td></tr>
+<tr class="separator:a7bdb12ed8de8e2da937dd0c6de96a53a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4988c1ab067de25259115bf9963b02d9"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDBoW2_1_1TemplatedVocabulary.html#a4988c1ab067de25259115bf9963b02d9">score</a> (const <a class="el" href="classDBoW2_1_1BowVector.html">BowVector</a> &amp;a, const <a class="el" href="classDBoW2_1_1BowVector.html">BowVector</a> &amp;b) const </td></tr>
+<tr class="separator:a4988c1ab067de25259115bf9963b02d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa59e9b47d05bce5ecd4e90afbcd63727"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="namespaceDBoW2.html#a3a0fa9c50c0df508759362d6204566f2">NodeId</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDBoW2_1_1TemplatedVocabulary.html#aa59e9b47d05bce5ecd4e90afbcd63727">getParentNode</a> (<a class="el" href="namespaceDBoW2.html#ab1a0d3283b2d4690a383372ed20bfeb5">WordId</a> wid, int levelsup) const </td></tr>
+<tr class="separator:aa59e9b47d05bce5ecd4e90afbcd63727"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a916015cc8e6cd6f53c6e067c7b829f75"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDBoW2_1_1TemplatedVocabulary.html#a916015cc8e6cd6f53c6e067c7b829f75">getWordsFromNode</a> (<a class="el" href="namespaceDBoW2.html#a3a0fa9c50c0df508759362d6204566f2">NodeId</a> nid, std::vector&lt; <a class="el" href="namespaceDBoW2.html#ab1a0d3283b2d4690a383372ed20bfeb5">WordId</a> &gt; &amp;words) const </td></tr>
+<tr class="separator:a916015cc8e6cd6f53c6e067c7b829f75"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afadb7942a23548903deb4548ca1d6e7d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDBoW2_1_1TemplatedVocabulary.html#afadb7942a23548903deb4548ca1d6e7d">getBranchingFactor</a> () const </td></tr>
+<tr class="separator:afadb7942a23548903deb4548ca1d6e7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a60d5e4d240d69042c47473d4c6497e01"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDBoW2_1_1TemplatedVocabulary.html#a60d5e4d240d69042c47473d4c6497e01">getDepthLevels</a> () const </td></tr>
+<tr class="separator:a60d5e4d240d69042c47473d4c6497e01"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acee6fb9313d844fbcf05f470379c6dc3"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDBoW2_1_1TemplatedVocabulary.html#acee6fb9313d844fbcf05f470379c6dc3">getEffectiveLevels</a> () const </td></tr>
+<tr class="separator:acee6fb9313d844fbcf05f470379c6dc3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aed50a053fac7e270bf8369a8667cf2c6"><td class="memItemLeft" align="right" valign="top">virtual TDescriptor&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDBoW2_1_1TemplatedVocabulary.html#aed50a053fac7e270bf8369a8667cf2c6">getWord</a> (<a class="el" href="namespaceDBoW2.html#ab1a0d3283b2d4690a383372ed20bfeb5">WordId</a> wid) const </td></tr>
+<tr class="separator:aed50a053fac7e270bf8369a8667cf2c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a95edc3ffa594ac7a798aec0808997b4a"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="namespaceDBoW2.html#a55fcd7333e591a38e96b91f41bc182f6">WordValue</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDBoW2_1_1TemplatedVocabulary.html#a95edc3ffa594ac7a798aec0808997b4a">getWordWeight</a> (<a class="el" href="namespaceDBoW2.html#ab1a0d3283b2d4690a383372ed20bfeb5">WordId</a> wid) const </td></tr>
+<tr class="separator:a95edc3ffa594ac7a798aec0808997b4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa1b7c6f984353736ecf4a2483b1c1b6b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceDBoW2.html#a5de5c8a307aca9a84ffefda2a9bc467a">WeightingType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDBoW2_1_1TemplatedVocabulary.html#aa1b7c6f984353736ecf4a2483b1c1b6b">getWeightingType</a> () const </td></tr>
+<tr class="separator:aa1b7c6f984353736ecf4a2483b1c1b6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adca2e844333011cd9341d42be9cec5e3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceDBoW2.html#aa252a592dd607c6e60dede06ceef2722">ScoringType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDBoW2_1_1TemplatedVocabulary.html#adca2e844333011cd9341d42be9cec5e3">getScoringType</a> () const </td></tr>
+<tr class="separator:adca2e844333011cd9341d42be9cec5e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa8f63a3379debd40214899d996cfc733"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDBoW2_1_1TemplatedVocabulary.html#aa8f63a3379debd40214899d996cfc733">setWeightingType</a> (<a class="el" href="namespaceDBoW2.html#a5de5c8a307aca9a84ffefda2a9bc467a">WeightingType</a> type)</td></tr>
+<tr class="separator:aa8f63a3379debd40214899d996cfc733"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a05a6c2f46184618c9ea8368f53e6980c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDBoW2_1_1TemplatedVocabulary.html#a05a6c2f46184618c9ea8368f53e6980c">setScoringType</a> (<a class="el" href="namespaceDBoW2.html#aa252a592dd607c6e60dede06ceef2722">ScoringType</a> type)</td></tr>
+<tr class="separator:a05a6c2f46184618c9ea8368f53e6980c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5447d0744100254c4da88ea039fb3414"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDBoW2_1_1TemplatedVocabulary.html#a5447d0744100254c4da88ea039fb3414">loadFromTextFile</a> (const std::string &amp;filename)</td></tr>
+<tr class="separator:a5447d0744100254c4da88ea039fb3414"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8856121ae0d46ed08db95e51ba74e6eb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDBoW2_1_1TemplatedVocabulary.html#a8856121ae0d46ed08db95e51ba74e6eb">saveToTextFile</a> (const std::string &amp;filename) const </td></tr>
+<tr class="separator:a8856121ae0d46ed08db95e51ba74e6eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa8c05732a3c2a063b0a8c1cbc418597a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDBoW2_1_1TemplatedVocabulary.html#aa8c05732a3c2a063b0a8c1cbc418597a">loadFromBinaryFile</a> (const std::string &amp;filename)</td></tr>
+<tr class="separator:aa8c05732a3c2a063b0a8c1cbc418597a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a54f4d76e7ebe4a3a5ead07dabe9c6688"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDBoW2_1_1TemplatedVocabulary.html#a54f4d76e7ebe4a3a5ead07dabe9c6688">saveToBinaryFile</a> (const std::string &amp;filename) const </td></tr>
+<tr class="separator:a54f4d76e7ebe4a3a5ead07dabe9c6688"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af85fb30a5eb9e00ceeea9a4f3c178f1d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDBoW2_1_1TemplatedVocabulary.html#af85fb30a5eb9e00ceeea9a4f3c178f1d">save</a> (const std::string &amp;filename) const </td></tr>
+<tr class="separator:af85fb30a5eb9e00ceeea9a4f3c178f1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afdec2031c98b9109451b1454f73348b0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDBoW2_1_1TemplatedVocabulary.html#afdec2031c98b9109451b1454f73348b0">load</a> (const std::string &amp;filename)</td></tr>
+<tr class="separator:afdec2031c98b9109451b1454f73348b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a19159c3993fce7b4573a6de208b4a973"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDBoW2_1_1TemplatedVocabulary.html#a19159c3993fce7b4573a6de208b4a973">save</a> (cv::FileStorage &amp;fs, const std::string &amp;name=&quot;vocabulary&quot;) const </td></tr>
+<tr class="separator:a19159c3993fce7b4573a6de208b4a973"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a037ba240314ff30f3620fb4de6845c66"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDBoW2_1_1TemplatedVocabulary.html#a037ba240314ff30f3620fb4de6845c66">load</a> (const cv::FileStorage &amp;fs, const std::string &amp;name=&quot;vocabulary&quot;)</td></tr>
+<tr class="separator:a037ba240314ff30f3620fb4de6845c66"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0b6721fde54bd8cd008f6a120398741e"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDBoW2_1_1TemplatedVocabulary.html#a0b6721fde54bd8cd008f6a120398741e">stopWords</a> (double minWeight)</td></tr>
+<tr class="separator:a0b6721fde54bd8cd008f6a120398741e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-types"></a>
+Protected 类型</h2></td></tr>
+<tr class="memitem:a40913d67e369e6993c2eab80a968f829"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a40913d67e369e6993c2eab80a968f829"></a>
+typedef const TDescriptor *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDBoW2_1_1TemplatedVocabulary.html#a40913d67e369e6993c2eab80a968f829">pDescriptor</a></td></tr>
+<tr class="memdesc:a40913d67e369e6993c2eab80a968f829"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pointer to descriptor. <br/></td></tr>
+<tr class="separator:a40913d67e369e6993c2eab80a968f829"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected 成员函数</h2></td></tr>
+<tr class="memitem:a3244d5a3d0f75ba9c9ae905c5365335d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDBoW2_1_1TemplatedVocabulary.html#a3244d5a3d0f75ba9c9ae905c5365335d">createScoringObject</a> ()</td></tr>
+<tr class="separator:a3244d5a3d0f75ba9c9ae905c5365335d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aea3a7a5d8944a9c71982921d4f3786fa"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDBoW2_1_1TemplatedVocabulary.html#aea3a7a5d8944a9c71982921d4f3786fa">getFeatures</a> (const vector&lt; vector&lt; TDescriptor &gt; &gt; &amp;training_features, vector&lt; <a class="el" href="classDBoW2_1_1TemplatedVocabulary.html#a40913d67e369e6993c2eab80a968f829">pDescriptor</a> &gt; &amp;features) const </td></tr>
+<tr class="separator:aea3a7a5d8944a9c71982921d4f3786fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a41e77294037788a9b2744f89ac64ecea"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDBoW2_1_1TemplatedVocabulary.html#a41e77294037788a9b2744f89ac64ecea">transform</a> (const TDescriptor &amp;feature, <a class="el" href="namespaceDBoW2.html#ab1a0d3283b2d4690a383372ed20bfeb5">WordId</a> &amp;id, <a class="el" href="namespaceDBoW2.html#a55fcd7333e591a38e96b91f41bc182f6">WordValue</a> &amp;weight, <a class="el" href="namespaceDBoW2.html#a3a0fa9c50c0df508759362d6204566f2">NodeId</a> *nid=NULL, int levelsup=0) const </td></tr>
+<tr class="separator:a41e77294037788a9b2744f89ac64ecea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4369ffc35f61467b0987a89fcc5a7224"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDBoW2_1_1TemplatedVocabulary.html#a4369ffc35f61467b0987a89fcc5a7224">transform</a> (const TDescriptor &amp;feature, <a class="el" href="namespaceDBoW2.html#ab1a0d3283b2d4690a383372ed20bfeb5">WordId</a> &amp;id) const </td></tr>
+<tr class="separator:a4369ffc35f61467b0987a89fcc5a7224"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab79623d30a8550414e1f4bf916869f05"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDBoW2_1_1TemplatedVocabulary.html#ab79623d30a8550414e1f4bf916869f05">HKmeansStep</a> (<a class="el" href="namespaceDBoW2.html#a3a0fa9c50c0df508759362d6204566f2">NodeId</a> parent_id, const vector&lt; <a class="el" href="classDBoW2_1_1TemplatedVocabulary.html#a40913d67e369e6993c2eab80a968f829">pDescriptor</a> &gt; &amp;descriptors, int current_level)</td></tr>
+<tr class="separator:ab79623d30a8550414e1f4bf916869f05"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a41c464fe0d2f043bbef17ab01cc46e14"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDBoW2_1_1TemplatedVocabulary.html#a41c464fe0d2f043bbef17ab01cc46e14">initiateClusters</a> (const vector&lt; <a class="el" href="classDBoW2_1_1TemplatedVocabulary.html#a40913d67e369e6993c2eab80a968f829">pDescriptor</a> &gt; &amp;descriptors, vector&lt; TDescriptor &gt; &amp;clusters) const </td></tr>
+<tr class="separator:a41c464fe0d2f043bbef17ab01cc46e14"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab6a5aedb8c5645d2597a8ca8a3994efe"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDBoW2_1_1TemplatedVocabulary.html#ab6a5aedb8c5645d2597a8ca8a3994efe">initiateClustersKMpp</a> (const vector&lt; <a class="el" href="classDBoW2_1_1TemplatedVocabulary.html#a40913d67e369e6993c2eab80a968f829">pDescriptor</a> &gt; &amp;descriptors, vector&lt; TDescriptor &gt; &amp;clusters) const </td></tr>
+<tr class="separator:ab6a5aedb8c5645d2597a8ca8a3994efe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9b74d107b7dc6142cbed4e6ef44a8519"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDBoW2_1_1TemplatedVocabulary.html#a9b74d107b7dc6142cbed4e6ef44a8519">createWords</a> ()</td></tr>
+<tr class="separator:a9b74d107b7dc6142cbed4e6ef44a8519"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af7bf0ecd2d1ecc7d31ddca3aa7d1ddc8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDBoW2_1_1TemplatedVocabulary.html#af7bf0ecd2d1ecc7d31ddca3aa7d1ddc8">setNodeWeights</a> (const vector&lt; vector&lt; TDescriptor &gt; &gt; &amp;features)</td></tr>
+<tr class="separator:af7bf0ecd2d1ecc7d31ddca3aa7d1ddc8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
+Protected 属性</h2></td></tr>
+<tr class="memitem:aa5f7f829033a49833fe4fb5652b99337"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa5f7f829033a49833fe4fb5652b99337"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDBoW2_1_1TemplatedVocabulary.html#aa5f7f829033a49833fe4fb5652b99337">m_k</a></td></tr>
+<tr class="memdesc:aa5f7f829033a49833fe4fb5652b99337"><td class="mdescLeft">&#160;</td><td class="mdescRight">Branching factor. <br/></td></tr>
+<tr class="separator:aa5f7f829033a49833fe4fb5652b99337"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a16735d9e2c8b901f01d541faea67971e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a16735d9e2c8b901f01d541faea67971e"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDBoW2_1_1TemplatedVocabulary.html#a16735d9e2c8b901f01d541faea67971e">m_L</a></td></tr>
+<tr class="memdesc:a16735d9e2c8b901f01d541faea67971e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Depth levels. <br/></td></tr>
+<tr class="separator:a16735d9e2c8b901f01d541faea67971e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf03c6430d630674ddca5bab9c120c51"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abf03c6430d630674ddca5bab9c120c51"></a>
+<a class="el" href="namespaceDBoW2.html#a5de5c8a307aca9a84ffefda2a9bc467a">WeightingType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDBoW2_1_1TemplatedVocabulary.html#abf03c6430d630674ddca5bab9c120c51">m_weighting</a></td></tr>
+<tr class="memdesc:abf03c6430d630674ddca5bab9c120c51"><td class="mdescLeft">&#160;</td><td class="mdescRight">Weighting method. <br/></td></tr>
+<tr class="separator:abf03c6430d630674ddca5bab9c120c51"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a89d8aa037f2b5c3c5cc953734bb5cb9f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a89d8aa037f2b5c3c5cc953734bb5cb9f"></a>
+<a class="el" href="namespaceDBoW2.html#aa252a592dd607c6e60dede06ceef2722">ScoringType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDBoW2_1_1TemplatedVocabulary.html#a89d8aa037f2b5c3c5cc953734bb5cb9f">m_scoring</a></td></tr>
+<tr class="memdesc:a89d8aa037f2b5c3c5cc953734bb5cb9f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Scoring method. <br/></td></tr>
+<tr class="separator:a89d8aa037f2b5c3c5cc953734bb5cb9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a34144d0e2056d6ed8b925a2937b67418"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a34144d0e2056d6ed8b925a2937b67418"></a>
+<a class="el" href="classDBoW2_1_1GeneralScoring.html">GeneralScoring</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDBoW2_1_1TemplatedVocabulary.html#a34144d0e2056d6ed8b925a2937b67418">m_scoring_object</a></td></tr>
+<tr class="memdesc:a34144d0e2056d6ed8b925a2937b67418"><td class="mdescLeft">&#160;</td><td class="mdescRight">Object for computing scores. <br/></td></tr>
+<tr class="separator:a34144d0e2056d6ed8b925a2937b67418"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a82be6d310eae6f4f57a72d340489320b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a82be6d310eae6f4f57a72d340489320b"></a>
+std::vector&lt; <a class="el" href="structDBoW2_1_1TemplatedVocabulary_1_1Node.html">Node</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDBoW2_1_1TemplatedVocabulary.html#a82be6d310eae6f4f57a72d340489320b">m_nodes</a></td></tr>
+<tr class="memdesc:a82be6d310eae6f4f57a72d340489320b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tree nodes. <br/></td></tr>
+<tr class="separator:a82be6d310eae6f4f57a72d340489320b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1665546b54f954d2d54d59a6982df3ca"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="structDBoW2_1_1TemplatedVocabulary_1_1Node.html">Node</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDBoW2_1_1TemplatedVocabulary.html#a1665546b54f954d2d54d59a6982df3ca">m_words</a></td></tr>
+<tr class="separator:a1665546b54f954d2d54d59a6982df3ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><h3>template&lt;class TDescriptor, class F&gt;<br/>
+class DBoW2::TemplatedVocabulary&lt; TDescriptor, F &gt;</h3>
+
+<p>Generic Vocabulary. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">TDescriptor</td><td>class of descriptor </td></tr>
+    <tr><td class="paramname">F</td><td>class of descriptor functions </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>在文件 <a class="el" href="TemplatedVocabulary_8h_source.html">TemplatedVocabulary.h</a> 第 <a class="el" href="TemplatedVocabulary_8h_source.html#l00046">46</a> 行定义.</p>
+</div><h2 class="groupheader">构造及析构函数说明</h2>
+<a class="anchor" id="a0dbbcb6bf766b09f08d945a2af0dbea8"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class TDescriptor , class F &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classDBoW2_1_1TemplatedVocabulary.html">DBoW2::TemplatedVocabulary</a>&lt; TDescriptor, F &gt;::<a class="el" href="classDBoW2_1_1TemplatedVocabulary.html">TemplatedVocabulary</a> </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>k</em> = <code>10</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>L</em> = <code>5</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespaceDBoW2.html#a5de5c8a307aca9a84ffefda2a9bc467a">WeightingType</a>&#160;</td>
+          <td class="paramname"><em>weighting</em> = <code>TF_IDF</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespaceDBoW2.html#aa252a592dd607c6e60dede06ceef2722">ScoringType</a>&#160;</td>
+          <td class="paramname"><em>scoring</em> = <code>L1_NORM</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Initiates an empty vocabulary </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">k</td><td>branching factor </td></tr>
+    <tr><td class="paramname">L</td><td>depth levels </td></tr>
+    <tr><td class="paramname">weighting</td><td>weighting type </td></tr>
+    <tr><td class="paramname">scoring</td><td>scoring type </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>在文件 <a class="el" href="TemplatedVocabulary_8h_source.html">TemplatedVocabulary.h</a> 第 <a class="el" href="TemplatedVocabulary_8h_source.html#l00450">450</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a72fc6a164a5174003d19bd3c54615de6"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class TDescriptor , class F &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classDBoW2_1_1TemplatedVocabulary.html">DBoW2::TemplatedVocabulary</a>&lt; TDescriptor, F &gt;::<a class="el" href="classDBoW2_1_1TemplatedVocabulary.html">TemplatedVocabulary</a> </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>filename</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Creates the vocabulary by loading a file </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">filename</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>在文件 <a class="el" href="TemplatedVocabulary_8h_source.html">TemplatedVocabulary.h</a> 第 <a class="el" href="TemplatedVocabulary_8h_source.html#l00461">461</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a255d68e7b4235487f8d2d8ea0cbaf43a"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class TDescriptor , class F &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classDBoW2_1_1TemplatedVocabulary.html">DBoW2::TemplatedVocabulary</a>&lt; TDescriptor, F &gt;::<a class="el" href="classDBoW2_1_1TemplatedVocabulary.html">TemplatedVocabulary</a> </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>filename</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Creates the vocabulary by loading a file </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">filename</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>在文件 <a class="el" href="TemplatedVocabulary_8h_source.html">TemplatedVocabulary.h</a> 第 <a class="el" href="TemplatedVocabulary_8h_source.html#l00470">470</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="aac48ee5331b5d88a4db1a3c93cb0f6a5"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class TDescriptor , class F &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classDBoW2_1_1TemplatedVocabulary.html">DBoW2::TemplatedVocabulary</a>&lt; TDescriptor, F &gt;::<a class="el" href="classDBoW2_1_1TemplatedVocabulary.html">TemplatedVocabulary</a> </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classDBoW2_1_1TemplatedVocabulary.html">TemplatedVocabulary</a>&lt; TDescriptor, F &gt; &amp;&#160;</td>
+          <td class="paramname"><em>voc</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Copy constructor </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">voc</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>在文件 <a class="el" href="TemplatedVocabulary_8h_source.html">TemplatedVocabulary.h</a> 第 <a class="el" href="TemplatedVocabulary_8h_source.html#l00532">532</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a9d15f985a0c3badc1518be0fbe663099"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class TDescriptor , class F &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classDBoW2_1_1TemplatedVocabulary.html">DBoW2::TemplatedVocabulary</a>&lt; TDescriptor, F &gt;::~<a class="el" href="classDBoW2_1_1TemplatedVocabulary.html">TemplatedVocabulary</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Destructor </p>
+
+<p>在文件 <a class="el" href="TemplatedVocabulary_8h_source.html">TemplatedVocabulary.h</a> 第 <a class="el" href="TemplatedVocabulary_8h_source.html#l00542">542</a> 行定义.</p>
+
+</div>
+</div>
+<h2 class="groupheader">成员函数说明</h2>
+<a class="anchor" id="a3679b5a8f2043021a4faab99ccfe4ebe"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class TDescriptor , class F &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classDBoW2_1_1TemplatedVocabulary.html">DBoW2::TemplatedVocabulary</a>&lt; TDescriptor, F &gt;::create </td>
+          <td>(</td>
+          <td class="paramtype">const std::vector&lt; std::vector&lt; TDescriptor &gt; &gt; &amp;&#160;</td>
+          <td class="paramname"><em>training_features</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Creates a vocabulary from the training features with the already defined parameters </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">training_features</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>在文件 <a class="el" href="TemplatedVocabulary_8h_source.html">TemplatedVocabulary.h</a> 第 <a class="el" href="TemplatedVocabulary_8h_source.html#l00573">573</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a94d48231b043a1102af4c35e256f2054"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class TDescriptor , class F &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classDBoW2_1_1TemplatedVocabulary.html">DBoW2::TemplatedVocabulary</a>&lt; TDescriptor, F &gt;::create </td>
+          <td>(</td>
+          <td class="paramtype">const std::vector&lt; std::vector&lt; TDescriptor &gt; &gt; &amp;&#160;</td>
+          <td class="paramname"><em>training_features</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>k</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>L</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Creates a vocabulary from the training features, setting the branching factor and the depth levels of the tree </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">training_features</td><td></td></tr>
+    <tr><td class="paramname">k</td><td>branching factor </td></tr>
+    <tr><td class="paramname">L</td><td>depth levels </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>在文件 <a class="el" href="TemplatedVocabulary_8h_source.html">TemplatedVocabulary.h</a> 第 <a class="el" href="TemplatedVocabulary_8h_source.html#l00607">607</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a1e4a3e90f4aa1e6b6ea4d7491c223fd4"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class TDescriptor , class F &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classDBoW2_1_1TemplatedVocabulary.html">DBoW2::TemplatedVocabulary</a>&lt; TDescriptor, F &gt;::create </td>
+          <td>(</td>
+          <td class="paramtype">const std::vector&lt; std::vector&lt; TDescriptor &gt; &gt; &amp;&#160;</td>
+          <td class="paramname"><em>training_features</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>k</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>L</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespaceDBoW2.html#a5de5c8a307aca9a84ffefda2a9bc467a">WeightingType</a>&#160;</td>
+          <td class="paramname"><em>weighting</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespaceDBoW2.html#aa252a592dd607c6e60dede06ceef2722">ScoringType</a>&#160;</td>
+          <td class="paramname"><em>scoring</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Creates a vocabulary from the training features, setting the branching factor nad the depth levels of the tree, and the weighting and scoring schemes </p>
+
+<p>在文件 <a class="el" href="TemplatedVocabulary_8h_source.html">TemplatedVocabulary.h</a> 第 <a class="el" href="TemplatedVocabulary_8h_source.html#l00620">620</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a3244d5a3d0f75ba9c9ae905c5365335d"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class TDescriptor , class F &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classDBoW2_1_1TemplatedVocabulary.html">DBoW2::TemplatedVocabulary</a>&lt; TDescriptor, F &gt;::createScoringObject </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Creates an instance of the scoring object accoring to m_scoring </p>
+
+<p>在文件 <a class="el" href="TemplatedVocabulary_8h_source.html">TemplatedVocabulary.h</a> 第 <a class="el" href="TemplatedVocabulary_8h_source.html#l00478">478</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a9b74d107b7dc6142cbed4e6ef44a8519"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class TDescriptor , class F &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classDBoW2_1_1TemplatedVocabulary.html">DBoW2::TemplatedVocabulary</a>&lt; TDescriptor, F &gt;::createWords </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Create the words of the vocabulary once the tree has been built </p>
+
+<p>在文件 <a class="el" href="TemplatedVocabulary_8h_source.html">TemplatedVocabulary.h</a> 第 <a class="el" href="TemplatedVocabulary_8h_source.html#l00942">942</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="ac897310f6a3475da1c0f0ef118b337d1"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class TDescriptor , class F &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="classDBoW2_1_1TemplatedVocabulary.html">DBoW2::TemplatedVocabulary</a>&lt; TDescriptor, F &gt;::empty </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Returns whether the vocabulary is empty (i.e. it has not been trained) </p>
+<dl class="section return"><dt>返回</dt><dd>true iff the vocabulary is empty </dd></dl>
+
+<p>在文件 <a class="el" href="TemplatedVocabulary_8h_source.html">TemplatedVocabulary.h</a> 第 <a class="el" href="TemplatedVocabulary_8h_source.html#l01033">1033</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="afadb7942a23548903deb4548ca1d6e7d"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class TDescriptor, class F&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int <a class="el" href="classDBoW2_1_1TemplatedVocabulary.html">DBoW2::TemplatedVocabulary</a>&lt; TDescriptor, F &gt;::getBranchingFactor </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Returns the branching factor of the tree (k) </p>
+<dl class="section return"><dt>返回</dt><dd>k </dd></dl>
+
+<p>在文件 <a class="el" href="TemplatedVocabulary_8h_source.html">TemplatedVocabulary.h</a> 第 <a class="el" href="TemplatedVocabulary_8h_source.html#l00187">187</a> 行定义.</p>
+
+<p>参考自 <a class="el" href="TemplatedVocabulary_8h_source.html#l01731">DBoW2::operator&lt;&lt;()</a>.</p>
+
+<p><div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classDBoW2_1_1TemplatedVocabulary_afadb7942a23548903deb4548ca1d6e7d_icgraph.png" border="0" usemap="#classDBoW2_1_1TemplatedVocabulary_afadb7942a23548903deb4548ca1d6e7d_icgraph" alt=""/></div>
+<map name="classDBoW2_1_1TemplatedVocabulary_afadb7942a23548903deb4548ca1d6e7d_icgraph" id="classDBoW2_1_1TemplatedVocabulary_afadb7942a23548903deb4548ca1d6e7d_icgraph">
+<area shape="rect" id="node2" href="namespaceDBoW2.html#aecdf616fe16d2cf09f521a603b9d43f1" title="DBoW2::operator\&lt;\&lt;" alt="" coords="256,12,395,39"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a60d5e4d240d69042c47473d4c6497e01"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class TDescriptor, class F&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int <a class="el" href="classDBoW2_1_1TemplatedVocabulary.html">DBoW2::TemplatedVocabulary</a>&lt; TDescriptor, F &gt;::getDepthLevels </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Returns the depth levels of the tree (L) </p>
+<dl class="section return"><dt>返回</dt><dd>L </dd></dl>
+
+<p>在文件 <a class="el" href="TemplatedVocabulary_8h_source.html">TemplatedVocabulary.h</a> 第 <a class="el" href="TemplatedVocabulary_8h_source.html#l00193">193</a> 行定义.</p>
+
+<p>参考自 <a class="el" href="TemplatedVocabulary_8h_source.html#l01731">DBoW2::operator&lt;&lt;()</a>.</p>
+
+<p><div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classDBoW2_1_1TemplatedVocabulary_a60d5e4d240d69042c47473d4c6497e01_icgraph.png" border="0" usemap="#classDBoW2_1_1TemplatedVocabulary_a60d5e4d240d69042c47473d4c6497e01_icgraph" alt=""/></div>
+<map name="classDBoW2_1_1TemplatedVocabulary_a60d5e4d240d69042c47473d4c6497e01_icgraph" id="classDBoW2_1_1TemplatedVocabulary_a60d5e4d240d69042c47473d4c6497e01_icgraph">
+<area shape="rect" id="node2" href="namespaceDBoW2.html#aecdf616fe16d2cf09f521a603b9d43f1" title="DBoW2::operator\&lt;\&lt;" alt="" coords="256,12,395,39"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="acee6fb9313d844fbcf05f470379c6dc3"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class TDescriptor , class F &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">float <a class="el" href="classDBoW2_1_1TemplatedVocabulary.html">DBoW2::TemplatedVocabulary</a>&lt; TDescriptor, F &gt;::getEffectiveLevels </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Returns the real depth levels of the tree on average </p>
+<dl class="section return"><dt>返回</dt><dd>average of depth levels of leaves </dd></dl>
+
+<p>在文件 <a class="el" href="TemplatedVocabulary_8h_source.html">TemplatedVocabulary.h</a> 第 <a class="el" href="TemplatedVocabulary_8h_source.html#l01041">1041</a> 行定义.</p>
+
+<p>参考 <a class="el" href="TemplatedVocabulary_8h_source.html#l00315">DBoW2::TemplatedVocabulary&lt; TDescriptor, F &gt;::Node::id</a> , 以及 <a class="el" href="TemplatedVocabulary_8h_source.html#l00321">DBoW2::TemplatedVocabulary&lt; TDescriptor, F &gt;::Node::parent</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aea3a7a5d8944a9c71982921d4f3786fa"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class TDescriptor , class F &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classDBoW2_1_1TemplatedVocabulary.html">DBoW2::TemplatedVocabulary</a>&lt; TDescriptor, F &gt;::getFeatures </td>
+          <td>(</td>
+          <td class="paramtype">const vector&lt; vector&lt; TDescriptor &gt; &gt; &amp;&#160;</td>
+          <td class="paramname"><em>training_features</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">vector&lt; <a class="el" href="classDBoW2_1_1TemplatedVocabulary.html#a40913d67e369e6993c2eab80a968f829">pDescriptor</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>features</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Returns a set of pointers to descriptores </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">training_features</td><td>all the features </td></tr>
+    <tr><td class="paramname">features</td><td>(out) pointers to the training features </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>在文件 <a class="el" href="TemplatedVocabulary_8h_source.html">TemplatedVocabulary.h</a> 第 <a class="el" href="TemplatedVocabulary_8h_source.html#l00636">636</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="aa59e9b47d05bce5ecd4e90afbcd63727"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class TDescriptor , class F &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespaceDBoW2.html#a3a0fa9c50c0df508759362d6204566f2">NodeId</a> <a class="el" href="classDBoW2_1_1TemplatedVocabulary.html">DBoW2::TemplatedVocabulary</a>&lt; TDescriptor, F &gt;::getParentNode </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespaceDBoW2.html#ab1a0d3283b2d4690a383372ed20bfeb5">WordId</a>&#160;</td>
+          <td class="paramname"><em>wid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>levelsup</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Returns the id of the node that is "levelsup" levels from the word given </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">wid</td><td>word id </td></tr>
+    <tr><td class="paramname">levelsup</td><td>0..L </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>node id. if levelsup is 0, returns the node id associated to the word id </dd></dl>
+
+<p>在文件 <a class="el" href="TemplatedVocabulary_8h_source.html">TemplatedVocabulary.h</a> 第 <a class="el" href="TemplatedVocabulary_8h_source.html#l01289">1289</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="adca2e844333011cd9341d42be9cec5e3"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class TDescriptor, class F&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespaceDBoW2.html#aa252a592dd607c6e60dede06ceef2722">ScoringType</a> <a class="el" href="classDBoW2_1_1TemplatedVocabulary.html">DBoW2::TemplatedVocabulary</a>&lt; TDescriptor, F &gt;::getScoringType </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Returns the scoring method </p>
+<dl class="section return"><dt>返回</dt><dd>scoring method </dd></dl>
+
+<p>在文件 <a class="el" href="TemplatedVocabulary_8h_source.html">TemplatedVocabulary.h</a> 第 <a class="el" href="TemplatedVocabulary_8h_source.html#l00225">225</a> 行定义.</p>
+
+<p>参考自 <a class="el" href="TemplatedVocabulary_8h_source.html#l01731">DBoW2::operator&lt;&lt;()</a>.</p>
+
+<p><div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classDBoW2_1_1TemplatedVocabulary_adca2e844333011cd9341d42be9cec5e3_icgraph.png" border="0" usemap="#classDBoW2_1_1TemplatedVocabulary_adca2e844333011cd9341d42be9cec5e3_icgraph" alt=""/></div>
+<map name="classDBoW2_1_1TemplatedVocabulary_adca2e844333011cd9341d42be9cec5e3_icgraph" id="classDBoW2_1_1TemplatedVocabulary_adca2e844333011cd9341d42be9cec5e3_icgraph">
+<area shape="rect" id="node2" href="namespaceDBoW2.html#aecdf616fe16d2cf09f521a603b9d43f1" title="DBoW2::operator\&lt;\&lt;" alt="" coords="256,12,395,39"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="aa1b7c6f984353736ecf4a2483b1c1b6b"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class TDescriptor, class F&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespaceDBoW2.html#a5de5c8a307aca9a84ffefda2a9bc467a">WeightingType</a> <a class="el" href="classDBoW2_1_1TemplatedVocabulary.html">DBoW2::TemplatedVocabulary</a>&lt; TDescriptor, F &gt;::getWeightingType </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Returns the weighting method </p>
+<dl class="section return"><dt>返回</dt><dd>weighting method </dd></dl>
+
+<p>在文件 <a class="el" href="TemplatedVocabulary_8h_source.html">TemplatedVocabulary.h</a> 第 <a class="el" href="TemplatedVocabulary_8h_source.html#l00219">219</a> 行定义.</p>
+
+<p>参考自 <a class="el" href="TemplatedVocabulary_8h_source.html#l01731">DBoW2::operator&lt;&lt;()</a>.</p>
+
+<p><div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classDBoW2_1_1TemplatedVocabulary_aa1b7c6f984353736ecf4a2483b1c1b6b_icgraph.png" border="0" usemap="#classDBoW2_1_1TemplatedVocabulary_aa1b7c6f984353736ecf4a2483b1c1b6b_icgraph" alt=""/></div>
+<map name="classDBoW2_1_1TemplatedVocabulary_aa1b7c6f984353736ecf4a2483b1c1b6b_icgraph" id="classDBoW2_1_1TemplatedVocabulary_aa1b7c6f984353736ecf4a2483b1c1b6b_icgraph">
+<area shape="rect" id="node2" href="namespaceDBoW2.html#aecdf616fe16d2cf09f521a603b9d43f1" title="DBoW2::operator\&lt;\&lt;" alt="" coords="256,12,395,39"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="aed50a053fac7e270bf8369a8667cf2c6"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class TDescriptor , class F &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">TDescriptor <a class="el" href="classDBoW2_1_1TemplatedVocabulary.html">DBoW2::TemplatedVocabulary</a>&lt; TDescriptor, F &gt;::getWord </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespaceDBoW2.html#ab1a0d3283b2d4690a383372ed20bfeb5">WordId</a>&#160;</td>
+          <td class="paramname"><em>wid</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Returns the descriptor of a word </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">wid</td><td>word id </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>descriptor </dd></dl>
+
+<p>在文件 <a class="el" href="TemplatedVocabulary_8h_source.html">TemplatedVocabulary.h</a> 第 <a class="el" href="TemplatedVocabulary_8h_source.html#l01058">1058</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a916015cc8e6cd6f53c6e067c7b829f75"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class TDescriptor , class F &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classDBoW2_1_1TemplatedVocabulary.html">DBoW2::TemplatedVocabulary</a>&lt; TDescriptor, F &gt;::getWordsFromNode </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespaceDBoW2.html#a3a0fa9c50c0df508759362d6204566f2">NodeId</a>&#160;</td>
+          <td class="paramname"><em>nid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::vector&lt; <a class="el" href="namespaceDBoW2.html#ab1a0d3283b2d4690a383372ed20bfeb5">WordId</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>words</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Returns the ids of all the words that are under the given node id, by traversing any of the branches that goes down from the node </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">nid</td><td>starting node id </td></tr>
+    <tr><td class="paramname">words</td><td>ids of words </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>在文件 <a class="el" href="TemplatedVocabulary_8h_source.html">TemplatedVocabulary.h</a> 第 <a class="el" href="TemplatedVocabulary_8h_source.html#l01304">1304</a> 行定义.</p>
+
+<p>参考 <a class="el" href="TemplatedVocabulary_8h_source.html#l00343">DBoW2::TemplatedVocabulary&lt; TDescriptor, F &gt;::Node::isLeaf()</a> , 以及 <a class="el" href="TemplatedVocabulary_8h_source.html#l00326">DBoW2::TemplatedVocabulary&lt; TDescriptor, F &gt;::Node::word_id</a>.</p>
+
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classDBoW2_1_1TemplatedVocabulary_a916015cc8e6cd6f53c6e067c7b829f75_cgraph.png" border="0" usemap="#classDBoW2_1_1TemplatedVocabulary_a916015cc8e6cd6f53c6e067c7b829f75_cgraph" alt=""/></div>
+<map name="classDBoW2_1_1TemplatedVocabulary_a916015cc8e6cd6f53c6e067c7b829f75_cgraph" id="classDBoW2_1_1TemplatedVocabulary_a916015cc8e6cd6f53c6e067c7b829f75_cgraph">
+<area shape="rect" id="node2" href="structDBoW2_1_1TemplatedVocabulary_1_1Node.html#a163e5d59292f2cf694b67089b37f79be" title="DBoW2::TemplatedVocabulary\l::Node::isLeaf" alt="" coords="256,5,459,46"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a95edc3ffa594ac7a798aec0808997b4a"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class TDescriptor , class F &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespaceDBoW2.html#a55fcd7333e591a38e96b91f41bc182f6">WordValue</a> <a class="el" href="classDBoW2_1_1TemplatedVocabulary.html">DBoW2::TemplatedVocabulary</a>&lt; TDescriptor, F &gt;::getWordWeight </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespaceDBoW2.html#ab1a0d3283b2d4690a383372ed20bfeb5">WordId</a>&#160;</td>
+          <td class="paramname"><em>wid</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Returns the weight of a word </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">wid</td><td>word id </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>weight </dd></dl>
+
+<p>在文件 <a class="el" href="TemplatedVocabulary_8h_source.html">TemplatedVocabulary.h</a> 第 <a class="el" href="TemplatedVocabulary_8h_source.html#l01066">1066</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="ab79623d30a8550414e1f4bf916869f05"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class TDescriptor , class F &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classDBoW2_1_1TemplatedVocabulary.html">DBoW2::TemplatedVocabulary</a>&lt; TDescriptor, F &gt;::HKmeansStep </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespaceDBoW2.html#a3a0fa9c50c0df508759362d6204566f2">NodeId</a>&#160;</td>
+          <td class="paramname"><em>parent_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const vector&lt; <a class="el" href="classDBoW2_1_1TemplatedVocabulary.html#a40913d67e369e6993c2eab80a968f829">pDescriptor</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>descriptors</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>current_level</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Creates a level in the tree, under the parent, by running kmeans with a descriptor set, and recursively creates the subsequent levels too </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parent_id</td><td>id of parent node </td></tr>
+    <tr><td class="paramname">descriptors</td><td>descriptors to run the kmeans on </td></tr>
+    <tr><td class="paramname">current_level</td><td>current level in the tree </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>在文件 <a class="el" href="TemplatedVocabulary_8h_source.html">TemplatedVocabulary.h</a> 第 <a class="el" href="TemplatedVocabulary_8h_source.html#l00657">657</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a41c464fe0d2f043bbef17ab01cc46e14"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class TDescriptor , class F &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classDBoW2_1_1TemplatedVocabulary.html">DBoW2::TemplatedVocabulary</a>&lt; TDescriptor, F &gt;::initiateClusters </td>
+          <td>(</td>
+          <td class="paramtype">const vector&lt; <a class="el" href="classDBoW2_1_1TemplatedVocabulary.html#a40913d67e369e6993c2eab80a968f829">pDescriptor</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>descriptors</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">vector&lt; TDescriptor &gt; &amp;&#160;</td>
+          <td class="paramname"><em>clusters</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Creates k clusters from the given descriptors with some seeding algorithm. </p>
+<dl class="section note"><dt>注解</dt><dd>In this class, kmeans++ is used, but this function should be overriden by inherited classes. </dd></dl>
+
+<p>在文件 <a class="el" href="TemplatedVocabulary_8h_source.html">TemplatedVocabulary.h</a> 第 <a class="el" href="TemplatedVocabulary_8h_source.html#l00841">841</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="ab6a5aedb8c5645d2597a8ca8a3994efe"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class TDescriptor , class F &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classDBoW2_1_1TemplatedVocabulary.html">DBoW2::TemplatedVocabulary</a>&lt; TDescriptor, F &gt;::initiateClustersKMpp </td>
+          <td>(</td>
+          <td class="paramtype">const vector&lt; <a class="el" href="classDBoW2_1_1TemplatedVocabulary.html#a40913d67e369e6993c2eab80a968f829">pDescriptor</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>descriptors</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">vector&lt; TDescriptor &gt; &amp;&#160;</td>
+          <td class="paramname"><em>clusters</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Creates k clusters from the given descriptor sets by running the initial step of kmeans++ </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">descriptors</td><td></td></tr>
+    <tr><td class="paramname">clusters</td><td>resulting clusters </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>在文件 <a class="el" href="TemplatedVocabulary_8h_source.html">TemplatedVocabulary.h</a> 第 <a class="el" href="TemplatedVocabulary_8h_source.html#l00849">849</a> 行定义.</p>
+
+<p>参考 <a class="el" href="Random_8cpp_source.html#l00047">DUtils::Random::RandomInt()</a> , 以及 <a class="el" href="Random_8cpp_source.html#l00024">DUtils::Random::SeedRandOnce()</a>.</p>
+
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classDBoW2_1_1TemplatedVocabulary_ab6a5aedb8c5645d2597a8ca8a3994efe_cgraph.png" border="0" usemap="#classDBoW2_1_1TemplatedVocabulary_ab6a5aedb8c5645d2597a8ca8a3994efe_cgraph" alt=""/></div>
+<map name="classDBoW2_1_1TemplatedVocabulary_ab6a5aedb8c5645d2597a8ca8a3994efe_cgraph" id="classDBoW2_1_1TemplatedVocabulary_ab6a5aedb8c5645d2597a8ca8a3994efe_cgraph">
+<area shape="rect" id="node2" href="classDUtils_1_1Random.html#aa25012101ecbca54025d5430bcf93d86" title="DUtils::Random::RandomInt" alt="" coords="270,5,458,32"/><area shape="rect" id="node3" href="classDUtils_1_1Random.html#a168e77d82ce1e66c6759e97ef27adbbc" title="DUtils::Random::SeedRandOnce" alt="" coords="256,56,472,83"/><area shape="rect" id="node4" href="classDUtils_1_1Random.html#a719a6489316343a771e062f0be58050f" title="DUtils::Random::SeedRand" alt="" coords="521,56,706,83"/><area shape="rect" id="node5" href="classDUtils_1_1Timestamp.html#ae27c920f3833c104096213c6fb17f4d8" title="DUtils::Timestamp::\lsetToCurrentTime" alt="" coords="755,15,895,57"/><area shape="rect" id="node6" href="classDUtils_1_1Timestamp.html#a6830126c3f35278345791148a80a5b86" title="DUtils::Timestamp::\lgetFloatTime" alt="" coords="755,81,895,122"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="afdec2031c98b9109451b1454f73348b0"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class TDescriptor , class F &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classDBoW2_1_1TemplatedVocabulary.html">DBoW2::TemplatedVocabulary</a>&lt; TDescriptor, F &gt;::load </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>filename</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Loads the vocabulary from a file </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">filename</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>在文件 <a class="el" href="TemplatedVocabulary_8h_source.html">TemplatedVocabulary.h</a> 第 <a class="el" href="TemplatedVocabulary_8h_source.html#l01564">1564</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a037ba240314ff30f3620fb4de6845c66"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class TDescriptor , class F &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classDBoW2_1_1TemplatedVocabulary.html">DBoW2::TemplatedVocabulary</a>&lt; TDescriptor, F &gt;::load </td>
+          <td>(</td>
+          <td class="paramtype">const cv::FileStorage &amp;&#160;</td>
+          <td class="paramname"><em>fs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>name</em> = <code>&quot;vocabulary&quot;</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Loads the vocabulary from a file storage node </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">fn</td><td>first node </td></tr>
+    <tr><td class="paramname">subname</td><td>name of the child node of fn where the tree is stored. If not given, the fn node is used instead </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>在文件 <a class="el" href="TemplatedVocabulary_8h_source.html">TemplatedVocabulary.h</a> 第 <a class="el" href="TemplatedVocabulary_8h_source.html#l01672">1672</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="aa8c05732a3c2a063b0a8c1cbc418597a"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class TDescriptor , class F &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="classDBoW2_1_1TemplatedVocabulary.html">DBoW2::TemplatedVocabulary</a>&lt; TDescriptor, F &gt;::loadFromBinaryFile </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>filename</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Loads the vocabulary from a binary file </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">filename</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>在文件 <a class="el" href="TemplatedVocabulary_8h_source.html">TemplatedVocabulary.h</a> 第 <a class="el" href="TemplatedVocabulary_8h_source.html#l01478">1478</a> 行定义.</p>
+
+<p>参考自 <a class="el" href="System_8cpp_source.html#l00037">ORB_SLAM2::System::System()</a>.</p>
+
+<p><div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classDBoW2_1_1TemplatedVocabulary_aa8c05732a3c2a063b0a8c1cbc418597a_icgraph.png" border="0" usemap="#classDBoW2_1_1TemplatedVocabulary_aa8c05732a3c2a063b0a8c1cbc418597a_icgraph" alt=""/></div>
+<map name="classDBoW2_1_1TemplatedVocabulary_aa8c05732a3c2a063b0a8c1cbc418597a_icgraph" id="classDBoW2_1_1TemplatedVocabulary_aa8c05732a3c2a063b0a8c1cbc418597a_icgraph">
+<area shape="rect" id="node2" href="classORB__SLAM2_1_1System.html#a687bbabebe054f6d40b44b1ba64bc57a" title="ORB_SLAM2::System::\lSystem" alt="" coords="256,5,419,46"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a5447d0744100254c4da88ea039fb3414"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class TDescriptor , class F &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="classDBoW2_1_1TemplatedVocabulary.html">DBoW2::TemplatedVocabulary</a>&lt; TDescriptor, F &gt;::loadFromTextFile </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>filename</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Loads the vocabulary from a text file </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">filename</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>在文件 <a class="el" href="TemplatedVocabulary_8h_source.html">TemplatedVocabulary.h</a> 第 <a class="el" href="TemplatedVocabulary_8h_source.html#l01362">1362</a> 行定义.</p>
+
+<p>参考自 <a class="el" href="System_8cpp_source.html#l00037">ORB_SLAM2::System::System()</a>.</p>
+
+<p><div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classDBoW2_1_1TemplatedVocabulary_a5447d0744100254c4da88ea039fb3414_icgraph.png" border="0" usemap="#classDBoW2_1_1TemplatedVocabulary_a5447d0744100254c4da88ea039fb3414_icgraph" alt=""/></div>
+<map name="classDBoW2_1_1TemplatedVocabulary_a5447d0744100254c4da88ea039fb3414_icgraph" id="classDBoW2_1_1TemplatedVocabulary_a5447d0744100254c4da88ea039fb3414_icgraph">
+<area shape="rect" id="node2" href="classORB__SLAM2_1_1System.html#a687bbabebe054f6d40b44b1ba64bc57a" title="ORB_SLAM2::System::\lSystem" alt="" coords="256,5,419,46"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a5355c25b6f37c11acffe48996e19323f"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class TDescriptor , class F &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classDBoW2_1_1TemplatedVocabulary.html">TemplatedVocabulary</a>&lt; TDescriptor, F &gt; &amp; <a class="el" href="classDBoW2_1_1TemplatedVocabulary.html">DBoW2::TemplatedVocabulary</a>&lt; TDescriptor, F &gt;::operator= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classDBoW2_1_1TemplatedVocabulary.html">TemplatedVocabulary</a>&lt; TDescriptor, F &gt; &amp;&#160;</td>
+          <td class="paramname"><em>voc</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Assigns the given vocabulary to this by copying its data and removing all the data contained by this vocabulary before </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">voc</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>reference to this vocabulary </dd></dl>
+
+<p>在文件 <a class="el" href="TemplatedVocabulary_8h_source.html">TemplatedVocabulary.h</a> 第 <a class="el" href="TemplatedVocabulary_8h_source.html#l00552">552</a> 行定义.</p>
+
+<p>参考 <a class="el" href="TemplatedVocabulary_8h_source.html#l00423">DBoW2::TemplatedVocabulary&lt; TDescriptor, F &gt;::m_k</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="af85fb30a5eb9e00ceeea9a4f3c178f1d"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class TDescriptor , class F &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classDBoW2_1_1TemplatedVocabulary.html">DBoW2::TemplatedVocabulary</a>&lt; TDescriptor, F &gt;::save </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>filename</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Saves the vocabulary into a file </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">filename</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>在文件 <a class="el" href="TemplatedVocabulary_8h_source.html">TemplatedVocabulary.h</a> 第 <a class="el" href="TemplatedVocabulary_8h_source.html#l01553">1553</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a19159c3993fce7b4573a6de208b4a973"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class TDescriptor , class F &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classDBoW2_1_1TemplatedVocabulary.html">DBoW2::TemplatedVocabulary</a>&lt; TDescriptor, F &gt;::save </td>
+          <td>(</td>
+          <td class="paramtype">cv::FileStorage &amp;&#160;</td>
+          <td class="paramname"><em>fs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>name</em> = <code>&quot;vocabulary&quot;</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Saves the vocabulary to a file storage structure </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">fn</td><td>node in file storage </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>在文件 <a class="el" href="TemplatedVocabulary_8h_source.html">TemplatedVocabulary.h</a> 第 <a class="el" href="TemplatedVocabulary_8h_source.html#l01575">1575</a> 行定义.</p>
+
+<p>参考 <a class="el" href="TemplatedVocabulary_8h_source.html#l00319">DBoW2::TemplatedVocabulary&lt; TDescriptor, F &gt;::Node::children</a>, <a class="el" href="TemplatedVocabulary_8h_source.html#l00323">DBoW2::TemplatedVocabulary&lt; TDescriptor, F &gt;::Node::descriptor</a>, <a class="el" href="TemplatedVocabulary_8h_source.html#l00315">DBoW2::TemplatedVocabulary&lt; TDescriptor, F &gt;::Node::id</a>, <a class="el" href="TemplatedVocabulary_8h_source.html#l00343">DBoW2::TemplatedVocabulary&lt; TDescriptor, F &gt;::Node::isLeaf()</a> , 以及 <a class="el" href="TemplatedVocabulary_8h_source.html#l00317">DBoW2::TemplatedVocabulary&lt; TDescriptor, F &gt;::Node::weight</a>.</p>
+
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classDBoW2_1_1TemplatedVocabulary_a19159c3993fce7b4573a6de208b4a973_cgraph.png" border="0" usemap="#classDBoW2_1_1TemplatedVocabulary_a19159c3993fce7b4573a6de208b4a973_cgraph" alt=""/></div>
+<map name="classDBoW2_1_1TemplatedVocabulary_a19159c3993fce7b4573a6de208b4a973_cgraph" id="classDBoW2_1_1TemplatedVocabulary_a19159c3993fce7b4573a6de208b4a973_cgraph">
+<area shape="rect" id="node2" href="structDBoW2_1_1TemplatedVocabulary_1_1Node.html#a163e5d59292f2cf694b67089b37f79be" title="DBoW2::TemplatedVocabulary\l::Node::isLeaf" alt="" coords="256,5,459,46"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a54f4d76e7ebe4a3a5ead07dabe9c6688"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class TDescriptor , class F &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classDBoW2_1_1TemplatedVocabulary.html">DBoW2::TemplatedVocabulary</a>&lt; TDescriptor, F &gt;::saveToBinaryFile </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>filename</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Saves the vocabulary into a binary file </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">filename</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>在文件 <a class="el" href="TemplatedVocabulary_8h_source.html">TemplatedVocabulary.h</a> 第 <a class="el" href="TemplatedVocabulary_8h_source.html#l01528">1528</a> 行定义.</p>
+
+<p>参考 <a class="el" href="TemplatedVocabulary_8h_source.html#l00323">DBoW2::TemplatedVocabulary&lt; TDescriptor, F &gt;::Node::descriptor</a>, <a class="el" href="TemplatedVocabulary_8h_source.html#l00343">DBoW2::TemplatedVocabulary&lt; TDescriptor, F &gt;::Node::isLeaf()</a>, <a class="el" href="TemplatedVocabulary_8h_source.html#l00321">DBoW2::TemplatedVocabulary&lt; TDescriptor, F &gt;::Node::parent</a> , 以及 <a class="el" href="TemplatedVocabulary_8h_source.html#l00317">DBoW2::TemplatedVocabulary&lt; TDescriptor, F &gt;::Node::weight</a>.</p>
+
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classDBoW2_1_1TemplatedVocabulary_a54f4d76e7ebe4a3a5ead07dabe9c6688_cgraph.png" border="0" usemap="#classDBoW2_1_1TemplatedVocabulary_a54f4d76e7ebe4a3a5ead07dabe9c6688_cgraph" alt=""/></div>
+<map name="classDBoW2_1_1TemplatedVocabulary_a54f4d76e7ebe4a3a5ead07dabe9c6688_cgraph" id="classDBoW2_1_1TemplatedVocabulary_a54f4d76e7ebe4a3a5ead07dabe9c6688_cgraph">
+<area shape="rect" id="node2" href="structDBoW2_1_1TemplatedVocabulary_1_1Node.html#a163e5d59292f2cf694b67089b37f79be" title="DBoW2::TemplatedVocabulary\l::Node::isLeaf" alt="" coords="256,5,459,46"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a8856121ae0d46ed08db95e51ba74e6eb"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class TDescriptor , class F &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classDBoW2_1_1TemplatedVocabulary.html">DBoW2::TemplatedVocabulary</a>&lt; TDescriptor, F &gt;::saveToTextFile </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>filename</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Saves the vocabulary into a text file </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">filename</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>在文件 <a class="el" href="TemplatedVocabulary_8h_source.html">TemplatedVocabulary.h</a> 第 <a class="el" href="TemplatedVocabulary_8h_source.html#l01453">1453</a> 行定义.</p>
+
+<p>参考 <a class="el" href="TemplatedVocabulary_8h_source.html#l00323">DBoW2::TemplatedVocabulary&lt; TDescriptor, F &gt;::Node::descriptor</a>, <a class="el" href="TemplatedVocabulary_8h_source.html#l00343">DBoW2::TemplatedVocabulary&lt; TDescriptor, F &gt;::Node::isLeaf()</a>, <a class="el" href="TemplatedVocabulary_8h_source.html#l00321">DBoW2::TemplatedVocabulary&lt; TDescriptor, F &gt;::Node::parent</a> , 以及 <a class="el" href="TemplatedVocabulary_8h_source.html#l00317">DBoW2::TemplatedVocabulary&lt; TDescriptor, F &gt;::Node::weight</a>.</p>
+
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classDBoW2_1_1TemplatedVocabulary_a8856121ae0d46ed08db95e51ba74e6eb_cgraph.png" border="0" usemap="#classDBoW2_1_1TemplatedVocabulary_a8856121ae0d46ed08db95e51ba74e6eb_cgraph" alt=""/></div>
+<map name="classDBoW2_1_1TemplatedVocabulary_a8856121ae0d46ed08db95e51ba74e6eb_cgraph" id="classDBoW2_1_1TemplatedVocabulary_a8856121ae0d46ed08db95e51ba74e6eb_cgraph">
+<area shape="rect" id="node2" href="structDBoW2_1_1TemplatedVocabulary_1_1Node.html#a163e5d59292f2cf694b67089b37f79be" title="DBoW2::TemplatedVocabulary\l::Node::isLeaf" alt="" coords="256,5,459,46"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a4988c1ab067de25259115bf9963b02d9"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class TDescriptor , class F &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double <a class="el" href="classDBoW2_1_1TemplatedVocabulary.html">DBoW2::TemplatedVocabulary</a>&lt; TDescriptor, F &gt;::score </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classDBoW2_1_1BowVector.html">BowVector</a> &amp;&#160;</td>
+          <td class="paramname"><em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classDBoW2_1_1BowVector.html">BowVector</a> &amp;&#160;</td>
+          <td class="paramname"><em>b</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Returns the score of two vectors </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">a</td><td>vector </td></tr>
+    <tr><td class="paramname">b</td><td>vector </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>score between vectors </dd></dl>
+<dl class="section note"><dt>注解</dt><dd>the vectors must be already sorted and normalized if necessary </dd></dl>
+
+<p>在文件 <a class="el" href="TemplatedVocabulary_8h_source.html">TemplatedVocabulary.h</a> 第 <a class="el" href="TemplatedVocabulary_8h_source.html#l01224">1224</a> 行定义.</p>
+
+<p>参考自 <a class="el" href="LoopClosing_8cpp_source.html#l00112">ORB_SLAM2::LoopClosing::DetectLoop()</a>, <a class="el" href="KeyFrameDatabase_8cpp_source.html#l00096">ORB_SLAM2::KeyFrameDatabase::DetectLoopCandidates()</a> , 以及 <a class="el" href="KeyFrameDatabase_8cpp_source.html#l00239">ORB_SLAM2::KeyFrameDatabase::DetectRelocalizationCandidates()</a>.</p>
+
+<p><div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classDBoW2_1_1TemplatedVocabulary_a4988c1ab067de25259115bf9963b02d9_icgraph.png" border="0" usemap="#classDBoW2_1_1TemplatedVocabulary_a4988c1ab067de25259115bf9963b02d9_icgraph" alt=""/></div>
+<map name="classDBoW2_1_1TemplatedVocabulary_a4988c1ab067de25259115bf9963b02d9_icgraph" id="classDBoW2_1_1TemplatedVocabulary_a4988c1ab067de25259115bf9963b02d9_icgraph">
+<area shape="rect" id="node2" href="classORB__SLAM2_1_1LoopClosing.html#aa8110ca79cebaf509e378d30e55f1381" title="ORB_SLAM2::LoopClosing\l::DetectLoop" alt="" coords="531,5,712,46"/><area shape="rect" id="node3" href="classORB__SLAM2_1_1KeyFrameDatabase.html#a2d396aae02c4318ea8c7e7eff8059c69" title="在闭环检测中找到与该关键帧可能闭环的关键帧 " alt="" coords="257,34,482,75"/><area shape="rect" id="node4" href="classORB__SLAM2_1_1KeyFrameDatabase.html#a008586e4d07ece0d948d0f1633447a2b" title="在重定位中找到与该帧相似的关键帧 " alt="" coords="257,99,482,141"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="af7bf0ecd2d1ecc7d31ddca3aa7d1ddc8"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class TDescriptor , class F &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classDBoW2_1_1TemplatedVocabulary.html">DBoW2::TemplatedVocabulary</a>&lt; TDescriptor, F &gt;::setNodeWeights </td>
+          <td>(</td>
+          <td class="paramtype">const vector&lt; vector&lt; TDescriptor &gt; &gt; &amp;&#160;</td>
+          <td class="paramname"><em>features</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Sets the weights of the nodes of tree according to the given features. Before calling this function, the nodes and the words must be already created (by calling HKmeansStep and createWords) </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">features</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>在文件 <a class="el" href="TemplatedVocabulary_8h_source.html">TemplatedVocabulary.h</a> 第 <a class="el" href="TemplatedVocabulary_8h_source.html#l00968">968</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a05a6c2f46184618c9ea8368f53e6980c"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class TDescriptor , class F &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classDBoW2_1_1TemplatedVocabulary.html">DBoW2::TemplatedVocabulary</a>&lt; TDescriptor, F &gt;::setScoringType </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespaceDBoW2.html#aa252a592dd607c6e60dede06ceef2722">ScoringType</a>&#160;</td>
+          <td class="paramname"><em>type</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Changes the scoring method </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">type</td><td>new scoring type </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>在文件 <a class="el" href="TemplatedVocabulary_8h_source.html">TemplatedVocabulary.h</a> 第 <a class="el" href="TemplatedVocabulary_8h_source.html#l00515">515</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="aa8f63a3379debd40214899d996cfc733"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class TDescriptor , class F &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classDBoW2_1_1TemplatedVocabulary.html">DBoW2::TemplatedVocabulary</a>&lt; TDescriptor, F &gt;::setWeightingType </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespaceDBoW2.html#a5de5c8a307aca9a84ffefda2a9bc467a">WeightingType</a>&#160;</td>
+          <td class="paramname"><em>type</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Changes the weighting method </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">type</td><td>new weighting type </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>在文件 <a class="el" href="TemplatedVocabulary_8h_source.html">TemplatedVocabulary.h</a> 第 <a class="el" href="TemplatedVocabulary_8h_source.html#l00524">524</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a3907da675f135821894fb497f113ccb0"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class TDescriptor , class F &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int <a class="el" href="classDBoW2_1_1TemplatedVocabulary.html">DBoW2::TemplatedVocabulary</a>&lt; TDescriptor, F &gt;::size </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Returns the number of words in the vocabulary </p>
+<dl class="section return"><dt>返回</dt><dd>number of words </dd></dl>
+
+<p>在文件 <a class="el" href="TemplatedVocabulary_8h_source.html">TemplatedVocabulary.h</a> 第 <a class="el" href="TemplatedVocabulary_8h_source.html#l01025">1025</a> 行定义.</p>
+
+<p>参考自 <a class="el" href="TemplatedVocabulary_8h_source.html#l01731">DBoW2::operator&lt;&lt;()</a>.</p>
+
+<p><div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classDBoW2_1_1TemplatedVocabulary_a3907da675f135821894fb497f113ccb0_icgraph.png" border="0" usemap="#classDBoW2_1_1TemplatedVocabulary_a3907da675f135821894fb497f113ccb0_icgraph" alt=""/></div>
+<map name="classDBoW2_1_1TemplatedVocabulary_a3907da675f135821894fb497f113ccb0_icgraph" id="classDBoW2_1_1TemplatedVocabulary_a3907da675f135821894fb497f113ccb0_icgraph">
+<area shape="rect" id="node2" href="namespaceDBoW2.html#aecdf616fe16d2cf09f521a603b9d43f1" title="DBoW2::operator\&lt;\&lt;" alt="" coords="256,12,395,39"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a0b6721fde54bd8cd008f6a120398741e"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class TDescriptor , class F &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int <a class="el" href="classDBoW2_1_1TemplatedVocabulary.html">DBoW2::TemplatedVocabulary</a>&lt; TDescriptor, F &gt;::stopWords </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>minWeight</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Stops those words whose weight is below minWeight. Words are stopped by setting their weight to 0. There are not returned later when transforming image features into vectors. Note that when using IDF or TF_IDF, the weight is the idf part, which is equivalent to -log(f), where f is the frequency of the word (f = Ni/N, Ni: number of training images where the word is present, N: number of training images). Note that the old weight is forgotten, and subsequent calls to this function with a lower minWeight have no effect. </p>
+<dl class="section return"><dt>返回</dt><dd>number of words stopped now </dd></dl>
+
+<p>在文件 <a class="el" href="TemplatedVocabulary_8h_source.html">TemplatedVocabulary.h</a> 第 <a class="el" href="TemplatedVocabulary_8h_source.html#l01344">1344</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="af9fc1935403dcaf1fd8c44d96ae3328d"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class TDescriptor , class F &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classDBoW2_1_1TemplatedVocabulary.html">DBoW2::TemplatedVocabulary</a>&lt; TDescriptor, F &gt;::transform </td>
+          <td>(</td>
+          <td class="paramtype">const std::vector&lt; TDescriptor &gt; &amp;&#160;</td>
+          <td class="paramname"><em>features</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classDBoW2_1_1BowVector.html">BowVector</a> &amp;&#160;</td>
+          <td class="paramname"><em>v</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Transforms a set of descriptores into a bow vector </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">features</td><td></td></tr>
+    <tr><td class="paramname">v</td><td>(out) bow vector of weighted words </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>在文件 <a class="el" href="TemplatedVocabulary_8h_source.html">TemplatedVocabulary.h</a> 第 <a class="el" href="TemplatedVocabulary_8h_source.html#l01090">1090</a> 行定义.</p>
+
+<p>参考 <a class="el" href="BowVector_8cpp_source.html#l00050">DBoW2::BowVector::addIfNotExist()</a>, <a class="el" href="BowVector_8cpp_source.html#l00034">DBoW2::BowVector::addWeight()</a> , 以及 <a class="el" href="BowVector_8cpp_source.html#l00062">DBoW2::BowVector::normalize()</a>.</p>
+
+<p>参考自 <a class="el" href="KeyFrame_8cpp_source.html#l00065">ORB_SLAM2::KeyFrame::ComputeBoW()</a> , 以及 <a class="el" href="Frame_8cpp_source.html#l00455">ORB_SLAM2::Frame::ComputeBoW()</a>.</p>
+
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classDBoW2_1_1TemplatedVocabulary_af9fc1935403dcaf1fd8c44d96ae3328d_cgraph.png" border="0" usemap="#classDBoW2_1_1TemplatedVocabulary_af9fc1935403dcaf1fd8c44d96ae3328d_cgraph" alt=""/></div>
+<map name="classDBoW2_1_1TemplatedVocabulary_af9fc1935403dcaf1fd8c44d96ae3328d_cgraph" id="classDBoW2_1_1TemplatedVocabulary_af9fc1935403dcaf1fd8c44d96ae3328d_cgraph">
+<area shape="rect" id="node2" href="classDBoW2_1_1BowVector.html#a5ddf10e444d10425e5bd3568dc7ffe5e" title="DBoW2::BowVector::addIfNot\lExist" alt="" coords="262,5,461,46"/><area shape="rect" id="node3" href="classDBoW2_1_1BowVector.html#a3ac92a805b252c93dc6535240d02df47" title="DBoW2::BowVector::addWeight" alt="" coords="256,71,467,97"/><area shape="rect" id="node4" href="classDBoW2_1_1BowVector.html#acd2dd34023e3053a4cc75d70c8b6ac13" title="DBoW2::BowVector::normalize" alt="" coords="259,121,463,148"/></map>
+</div>
+</p>
+
+<p><div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classDBoW2_1_1TemplatedVocabulary_af9fc1935403dcaf1fd8c44d96ae3328d_icgraph.png" border="0" usemap="#classDBoW2_1_1TemplatedVocabulary_af9fc1935403dcaf1fd8c44d96ae3328d_icgraph" alt=""/></div>
+<map name="classDBoW2_1_1TemplatedVocabulary_af9fc1935403dcaf1fd8c44d96ae3328d_icgraph" id="classDBoW2_1_1TemplatedVocabulary_af9fc1935403dcaf1fd8c44d96ae3328d_icgraph">
+<area shape="rect" id="node2" href="classORB__SLAM2_1_1KeyFrame.html#ac376017c23823c05a6bb851ffb2fdd8f" title="Bag of Words Representation. " alt="" coords="290,70,459,111"/><area shape="rect" id="node7" href="classORB__SLAM2_1_1Frame.html#ac748d2318f9a409406dba4910ff5ef8e" title="Bag of Words Representation. " alt="" coords="257,137,493,164"/><area shape="rect" id="node3" href="classORB__SLAM2_1_1LocalMapping.html#a84eea8f268cce9d919a4906ae634dd22" title="处理列表中的关键帧 " alt="" coords="541,5,731,46"/><area shape="rect" id="node4" href="classORB__SLAM2_1_1Tracking.html#afeb077c81cd700d779348b80698086e8" title="CreateInitialMapMonocular. " alt="" coords="543,70,729,111"/><area shape="rect" id="node5" href="classORB__SLAM2_1_1Tracking.html#a7e81c68bb6ced27fcbfa2edec38ef6e0" title="单目的地图初始化 " alt="" coords="791,69,950,110"/><area shape="rect" id="node6" href="classORB__SLAM2_1_1Tracking.html#af1f2c9c533642d8c33854540e90d1918" title="Main tracking function. It is independent of the input sensor. " alt="" coords="1011,102,1170,143"/><area shape="rect" id="node8" href="classORB__SLAM2_1_1Tracking.html#a737c5409c93844353561a0fe724ed1c2" title="对参考关键帧的MapPoints进行跟踪 " alt="" coords="779,134,962,175"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="acae97a5b78d9850a627d45cb05969041"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class TDescriptor , class F &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classDBoW2_1_1TemplatedVocabulary.html">DBoW2::TemplatedVocabulary</a>&lt; TDescriptor, F &gt;::transform </td>
+          <td>(</td>
+          <td class="paramtype">const std::vector&lt; TDescriptor &gt; &amp;&#160;</td>
+          <td class="paramname"><em>features</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classDBoW2_1_1BowVector.html">BowVector</a> &amp;&#160;</td>
+          <td class="paramname"><em>v</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classDBoW2_1_1FeatureVector.html">FeatureVector</a> &amp;&#160;</td>
+          <td class="paramname"><em>fv</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>levelsup</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Transform a set of descriptors into a bow vector and a feature vector </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">features</td><td></td></tr>
+    <tr><td class="paramname">v</td><td>(out) bow vector </td></tr>
+    <tr><td class="paramname">fv</td><td>(out) feature vector of nodes and feature indexes </td></tr>
+    <tr><td class="paramname">levelsup</td><td>levels to go up the vocabulary tree to get the node index </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>在文件 <a class="el" href="TemplatedVocabulary_8h_source.html">TemplatedVocabulary.h</a> 第 <a class="el" href="TemplatedVocabulary_8h_source.html#l01151">1151</a> 行定义.</p>
+
+<p>参考 <a class="el" href="FeatureVector_8cpp_source.html#l00031">DBoW2::FeatureVector::addFeature()</a>, <a class="el" href="BowVector_8cpp_source.html#l00050">DBoW2::BowVector::addIfNotExist()</a>, <a class="el" href="BowVector_8cpp_source.html#l00034">DBoW2::BowVector::addWeight()</a> , 以及 <a class="el" href="BowVector_8cpp_source.html#l00062">DBoW2::BowVector::normalize()</a>.</p>
+
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classDBoW2_1_1TemplatedVocabulary_acae97a5b78d9850a627d45cb05969041_cgraph.png" border="0" usemap="#classDBoW2_1_1TemplatedVocabulary_acae97a5b78d9850a627d45cb05969041_cgraph" alt=""/></div>
+<map name="classDBoW2_1_1TemplatedVocabulary_acae97a5b78d9850a627d45cb05969041_cgraph" id="classDBoW2_1_1TemplatedVocabulary_acae97a5b78d9850a627d45cb05969041_cgraph">
+<area shape="rect" id="node2" href="classDBoW2_1_1FeatureVector.html#ae9554bfcbebc85439616de08f47f2238" title="DBoW2::FeatureVector\l::addFeature" alt="" coords="282,5,441,46"/><area shape="rect" id="node3" href="classDBoW2_1_1BowVector.html#a5ddf10e444d10425e5bd3568dc7ffe5e" title="DBoW2::BowVector::addIfNot\lExist" alt="" coords="262,70,461,111"/><area shape="rect" id="node4" href="classDBoW2_1_1BowVector.html#a3ac92a805b252c93dc6535240d02df47" title="DBoW2::BowVector::addWeight" alt="" coords="256,136,467,163"/><area shape="rect" id="node5" href="classDBoW2_1_1BowVector.html#acd2dd34023e3053a4cc75d70c8b6ac13" title="DBoW2::BowVector::normalize" alt="" coords="259,187,463,213"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a7bdb12ed8de8e2da937dd0c6de96a53a"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class TDescriptor , class F &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespaceDBoW2.html#ab1a0d3283b2d4690a383372ed20bfeb5">WordId</a> <a class="el" href="classDBoW2_1_1TemplatedVocabulary.html">DBoW2::TemplatedVocabulary</a>&lt; TDescriptor, F &gt;::transform </td>
+          <td>(</td>
+          <td class="paramtype">const TDescriptor &amp;&#160;</td>
+          <td class="paramname"><em>feature</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Transforms a single feature into a word (without weight) </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">feature</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>word id </dd></dl>
+
+<p>在文件 <a class="el" href="TemplatedVocabulary_8h_source.html">TemplatedVocabulary.h</a> 第 <a class="el" href="TemplatedVocabulary_8h_source.html#l01075">1075</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a41e77294037788a9b2744f89ac64ecea"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class TDescriptor , class F &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classDBoW2_1_1TemplatedVocabulary.html">DBoW2::TemplatedVocabulary</a>&lt; TDescriptor, F &gt;::transform </td>
+          <td>(</td>
+          <td class="paramtype">const TDescriptor &amp;&#160;</td>
+          <td class="paramname"><em>feature</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespaceDBoW2.html#ab1a0d3283b2d4690a383372ed20bfeb5">WordId</a> &amp;&#160;</td>
+          <td class="paramname"><em>id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespaceDBoW2.html#a55fcd7333e591a38e96b91f41bc182f6">WordValue</a> &amp;&#160;</td>
+          <td class="paramname"><em>weight</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespaceDBoW2.html#a3a0fa9c50c0df508759362d6204566f2">NodeId</a> *&#160;</td>
+          <td class="paramname"><em>nid</em> = <code>NULL</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>levelsup</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Returns the word id associated to a feature </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">feature</td><td></td></tr>
+    <tr><td class="paramname">id</td><td>(out) word id </td></tr>
+    <tr><td class="paramname">weight</td><td>(out) word weight </td></tr>
+    <tr><td class="paramname">nid</td><td>(out) if given, id of the node "levelsup" levels up </td></tr>
+    <tr><td class="paramname">levelsup</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>在文件 <a class="el" href="TemplatedVocabulary_8h_source.html">TemplatedVocabulary.h</a> 第 <a class="el" href="TemplatedVocabulary_8h_source.html#l01242">1242</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a4369ffc35f61467b0987a89fcc5a7224"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class TDescriptor , class F &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classDBoW2_1_1TemplatedVocabulary.html">DBoW2::TemplatedVocabulary</a>&lt; TDescriptor, F &gt;::transform </td>
+          <td>(</td>
+          <td class="paramtype">const TDescriptor &amp;&#160;</td>
+          <td class="paramname"><em>feature</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespaceDBoW2.html#ab1a0d3283b2d4690a383372ed20bfeb5">WordId</a> &amp;&#160;</td>
+          <td class="paramname"><em>id</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Returns the word id associated to a feature </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">feature</td><td></td></tr>
+    <tr><td class="paramname">id</td><td>(out) word id </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>在文件 <a class="el" href="TemplatedVocabulary_8h_source.html">TemplatedVocabulary.h</a> 第 <a class="el" href="TemplatedVocabulary_8h_source.html#l01233">1233</a> 行定义.</p>
+
+</div>
+</div>
+<h2 class="groupheader">类成员变量说明</h2>
+<a class="anchor" id="a1665546b54f954d2d54d59a6982df3ca"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class TDescriptor, class F&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;<a class="el" href="structDBoW2_1_1TemplatedVocabulary_1_1Node.html">Node</a>*&gt; <a class="el" href="classDBoW2_1_1TemplatedVocabulary.html">DBoW2::TemplatedVocabulary</a>&lt; TDescriptor, F &gt;::m_words</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Words of the vocabulary (tree leaves) this condition holds: m_words[wid]-&gt;word_id == wid </p>
+
+<p>在文件 <a class="el" href="TemplatedVocabulary_8h_source.html">TemplatedVocabulary.h</a> 第 <a class="el" href="TemplatedVocabulary_8h_source.html#l00442">442</a> 行定义.</p>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>Thirdparty/DBoW2/DBoW2/<a class="el" href="TemplatedVocabulary_8h_source.html">TemplatedVocabulary.h</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespaceDBoW2.html">DBoW2</a></li><li class="navelem"><a class="el" href="classDBoW2_1_1TemplatedVocabulary.html">TemplatedVocabulary</a></li>
+    <li class="footer">生成于 2017年 七月 18日 星期二 17:13:37 , 为 My Project使用 
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
+  </ul>
+</div>
+</body>
+</html>

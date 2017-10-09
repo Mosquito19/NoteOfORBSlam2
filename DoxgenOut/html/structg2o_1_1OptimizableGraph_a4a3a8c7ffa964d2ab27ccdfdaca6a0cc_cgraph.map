@@ -1,0 +1,5 @@
+<map id="g2o::OptimizableGraph::isSolverSuitable" name="g2o::OptimizableGraph::isSolverSuitable">
+<area shape="rect" id="node2" href="$structg2o_1_1OptimizableGraph.html#a186d6d06a59395488cd15d25bf112ad9" title="g2o::OptimizableGraph\l::dimensions" alt="" coords="208,34,363,75"/>
+<area shape="rect" id="node3" href="$classg2o_1_1OptimizableGraph_1_1Vertex.html#a1037b978fec531eaf860d0037b992079" title="dimension of the estimated state belonging to this node " alt="" coords="421,5,576,46"/>
+<area shape="rect" id="node4" href="$classg2o_1_1HyperGraph.html#a3e713e7ee84eecad3876651737af6cfc" title="g2o::HyperGraph::vertices" alt="" coords="411,71,586,97"/>
+</map>

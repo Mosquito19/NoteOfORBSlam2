@@ -1,0 +1,4 @@
+<map id="g2o::Solver::setLambda" name="g2o::Solver::setLambda">
+<area shape="rect" id="node2" href="$classg2o_1_1OptimizationAlgorithmLevenberg.html#a7140fa989b54eac4e09ba17829dcada0" title="g2o::OptimizationAlgorithm\lLevenberg::solve" alt="" coords="213,5,392,46"/>
+<area shape="rect" id="node3" href="$classg2o_1_1OptimizationAlgorithmDogleg.html#ace62fd809c18655bd7ff104285748610" title="g2o::OptimizationAlgorithm\lDogleg::solve" alt="" coords="213,70,392,111"/>
+</map>

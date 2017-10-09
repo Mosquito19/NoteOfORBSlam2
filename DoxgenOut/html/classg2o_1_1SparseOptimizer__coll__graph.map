@@ -1,0 +1,8 @@
+<map id="g2o::SparseOptimizer" name="g2o::SparseOptimizer">
+<area shape="rect" id="node7" href="$classg2o_1_1OptimizationAlgorithm.html" title="Generic interface for a non&#45;linear solver operating on a graph. " alt="" coords="89,357,268,384"/>
+<area shape="rect" id="node2" href="$structg2o_1_1OptimizableGraph.html" title="g2o::OptimizableGraph" alt="" coords="187,181,340,208"/>
+<area shape="rect" id="node3" href="$classg2o_1_1HyperGraph.html" title="g2o::HyperGraph" alt="" coords="34,83,155,109"/>
+<area shape="rect" id="node4" href="$classg2o_1_1JacobianWorkspace.html" title="provide memory workspace for computing the Jacobians " alt="" coords="179,83,348,109"/>
+<area shape="rect" id="node5" href="$classg2o_1_1ParameterContainer.html" title="map id to parameters " alt="" coords="373,83,539,109"/>
+<area shape="rect" id="node8" href="$classg2o_1_1PropertyMap.html" title="a collection of properties mapping from name to the property itself " alt="" coords="16,267,141,293"/>
+</map>

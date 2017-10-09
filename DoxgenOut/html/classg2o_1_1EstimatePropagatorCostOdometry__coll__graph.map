@@ -1,0 +1,10 @@
+<map id="g2o::EstimatePropagatorCostOdometry" name="g2o::EstimatePropagatorCostOdometry">
+<area shape="rect" id="node2" href="$classg2o_1_1EstimatePropagatorCost.html" title="cost for traversing along active edges in the optimizer " alt="" coords="287,357,481,384"/>
+<area shape="rect" id="node3" href="$classg2o_1_1SparseOptimizer.html" title="g2o::SparseOptimizer" alt="" coords="201,267,348,293"/>
+<area shape="rect" id="node9" href="$classg2o_1_1OptimizationAlgorithm.html" title="Generic interface for a non&#45;linear solver operating on a graph. " alt="" coords="84,357,263,384"/>
+<area shape="rect" id="node4" href="$structg2o_1_1OptimizableGraph.html" title="g2o::OptimizableGraph" alt="" coords="197,181,351,208"/>
+<area shape="rect" id="node5" href="$classg2o_1_1HyperGraph.html" title="g2o::HyperGraph" alt="" coords="45,83,165,109"/>
+<area shape="rect" id="node6" href="$classg2o_1_1JacobianWorkspace.html" title="provide memory workspace for computing the Jacobians " alt="" coords="190,83,359,109"/>
+<area shape="rect" id="node7" href="$classg2o_1_1ParameterContainer.html" title="map id to parameters " alt="" coords="383,83,549,109"/>
+<area shape="rect" id="node10" href="$classg2o_1_1PropertyMap.html" title="a collection of properties mapping from name to the property itself " alt="" coords="16,267,141,293"/>
+</map>

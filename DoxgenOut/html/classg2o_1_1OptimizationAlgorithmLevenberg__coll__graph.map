@@ -1,0 +1,15 @@
+<map id="g2o::OptimizationAlgorithmLevenberg" name="g2o::OptimizationAlgorithmLevenberg">
+<area shape="rect" id="node2" href="$classg2o_1_1OptimizationAlgorithmWithHessian.html" title="Base for solvers operating on the approximated Hessian, e.g., Gauss&#45;Newton, Levenberg. " alt="" coords="476,473,655,514"/>
+<area shape="rect" id="node3" href="$classg2o_1_1OptimizationAlgorithm.html" title="Generic interface for a non&#45;linear solver operating on a graph. " alt="" coords="424,189,603,216"/>
+<area shape="rect" id="node6" href="$classg2o_1_1SparseOptimizer.html" title="g2o::SparseOptimizer" alt="" coords="301,280,448,307"/>
+<area shape="rect" id="node4" href="$classg2o_1_1PropertyMap.html" title="a collection of properties mapping from name to the property itself " alt="" coords="540,99,665,125"/>
+<area shape="rect" id="node12" href="$classg2o_1_1Solver.html" title="Generic interface for a sparse solver operating on a graph which solves one iteration of the lineariz..." alt="" coords="373,371,461,397"/>
+<area shape="rect" id="node7" href="$structg2o_1_1OptimizableGraph.html" title="g2o::OptimizableGraph" alt="" coords="209,189,363,216"/>
+<area shape="rect" id="node8" href="$classg2o_1_1HyperGraph.html" title="g2o::HyperGraph" alt="" coords="5,99,125,125"/>
+<area shape="rect" id="node9" href="$classg2o_1_1JacobianWorkspace.html" title="provide memory workspace for computing the Jacobians " alt="" coords="150,99,319,125"/>
+<area shape="rect" id="node10" href="$classg2o_1_1ParameterContainer.html" title="map id to parameters " alt="" coords="343,99,509,125"/>
+<area shape="rect" id="node13" href="$classg2o_1_1Property.html" title="g2o::Property\&lt; bool \&gt;" alt="" coords="587,371,735,397"/>
+<area shape="rect" id="node14" href="$classg2o_1_1BaseProperty.html" title="g2o::BaseProperty" alt="" coords="708,280,837,307"/>
+<area shape="rect" id="node15" href="$classg2o_1_1Property.html" title="g2o::Property\&lt; int \&gt;" alt="" coords="677,421,816,448"/>
+<area shape="rect" id="node16" href="$classg2o_1_1Property.html" title="g2o::Property\&lt; double \&gt;" alt="" coords="823,421,985,448"/>
+</map>

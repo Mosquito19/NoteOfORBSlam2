@@ -1,0 +1,13 @@
+<map id="g2o::VertexSBAPointXYZ" name="g2o::VertexSBAPointXYZ">
+<area shape="rect" id="node2" href="$classg2o_1_1BaseVertex.html" title="g2o::BaseVertex\&lt; 3,\l Vector3d \&gt;" alt="" coords="1317,170,1459,211"/>
+<area shape="rect" id="node3" href="$classg2o_1_1OptimizableGraph_1_1Vertex.html" title="A general case Vertex for optimization. " alt="" coords="987,126,1141,167"/>
+<area shape="rect" id="node6" href="$classg2o_1_1CacheContainer.html" title="g2o::CacheContainer" alt="" coords="1315,88,1461,115"/>
+<area shape="rect" id="node4" href="$classg2o_1_1HyperGraph_1_1Vertex.html" title="abstract Vertex, your types must derive from that one " alt="" coords="619,5,786,32"/>
+<area shape="rect" id="node5" href="$structg2o_1_1HyperGraph_1_1HyperGraphElement.html" title="g2o::HyperGraph::HyperGraph\lElement" alt="" coords="246,29,445,70"/>
+<area shape="rect" id="node14" href="$classg2o_1_1OptimizableGraph_1_1Data.html" title="data packet for a vertex. Extend this class to store in the vertices the potential additional informa..." alt="" coords="625,95,780,137"/>
+<area shape="rect" id="node8" href="$structg2o_1_1OptimizableGraph.html" title="g2o::OptimizableGraph" alt="" coords="625,161,780,188"/>
+<area shape="rect" id="node9" href="$classg2o_1_1HyperGraph.html" title="g2o::HyperGraph" alt="" coords="285,111,406,137"/>
+<area shape="rect" id="node10" href="$classg2o_1_1JacobianWorkspace.html" title="provide memory workspace for computing the Jacobians " alt="" coords="261,161,430,188"/>
+<area shape="rect" id="node11" href="$classg2o_1_1ParameterContainer.html" title="map id to parameters " alt="" coords="262,212,429,239"/>
+<area shape="rect" id="node13" href="$classg2o_1_1OpenMPMutex.html" title="g2o::OpenMPMutex" alt="" coords="633,212,772,239"/>
+</map>

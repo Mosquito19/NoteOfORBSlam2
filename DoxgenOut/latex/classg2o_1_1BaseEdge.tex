@@ -1,0 +1,150 @@
+\hypertarget{classg2o_1_1BaseEdge}{\section{g2o\-:\-:Base\-Edge$<$ D, E $>$ 模板类 参考}
+\label{classg2o_1_1BaseEdge}\index{g2o\-::\-Base\-Edge$<$ D, E $>$@{g2o\-::\-Base\-Edge$<$ D, E $>$}}
+}
+
+
+类 g2o\-:\-:Base\-Edge$<$ D, E $>$ 继承关系图\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classg2o_1_1BaseEdge__inherit__graph}
+\end{center}
+\end{figure}
+
+
+g2o\-:\-:Base\-Edge$<$ D, E $>$ 的协作图\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classg2o_1_1BaseEdge__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public 类型}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classg2o_1_1BaseEdge_a2c148abba650a20b8c7eed75d3e2211e}{typedef E {\bfseries Measurement}}\label{classg2o_1_1BaseEdge_a2c148abba650a20b8c7eed75d3e2211e}
+
+\item 
+\hypertarget{classg2o_1_1BaseEdge_af5b558dd24e4be2e437563cae4b3550d}{typedef Matrix$<$ double, D, 1 $>$ {\bfseries Error\-Vector}}\label{classg2o_1_1BaseEdge_af5b558dd24e4be2e437563cae4b3550d}
+
+\item 
+\hypertarget{classg2o_1_1BaseEdge_a2e5a33343ac3f189d8a7d5ee4d8b73fc}{typedef Matrix$<$ double, D, D $>$ {\bfseries Information\-Type}}\label{classg2o_1_1BaseEdge_a2e5a33343ac3f189d8a7d5ee4d8b73fc}
+
+\end{DoxyCompactItemize}
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classg2o_1_1BaseEdge_a7ea9406b8cc06b44433569bbd4fcefac}{virtual double \hyperlink{classg2o_1_1BaseEdge_a7ea9406b8cc06b44433569bbd4fcefac}{chi2} () const }\label{classg2o_1_1BaseEdge_a7ea9406b8cc06b44433569bbd4fcefac}
+
+\begin{DoxyCompactList}\small\item\em computes the chi2 based on the cached error value, only valid after compute\-Error has been called. \end{DoxyCompactList}\item 
+\hypertarget{classg2o_1_1BaseEdge_a2483ee84ebe78e35e71db7dce703edae}{virtual const double $\ast$ \hyperlink{classg2o_1_1BaseEdge_a2483ee84ebe78e35e71db7dce703edae}{error\-Data} () const }\label{classg2o_1_1BaseEdge_a2483ee84ebe78e35e71db7dce703edae}
+
+\begin{DoxyCompactList}\small\item\em returns the error vector cached after calling the compute\-Error; \end{DoxyCompactList}\item 
+\hypertarget{classg2o_1_1BaseEdge_ab80452c1134036928a2af6303412a3c4}{virtual double $\ast$ {\bfseries error\-Data} ()}\label{classg2o_1_1BaseEdge_ab80452c1134036928a2af6303412a3c4}
+
+\item 
+\hypertarget{classg2o_1_1BaseEdge_a52fb082b224f30a29248431ea34e9c39}{const Error\-Vector \& {\bfseries error} () const }\label{classg2o_1_1BaseEdge_a52fb082b224f30a29248431ea34e9c39}
+
+\item 
+\hypertarget{classg2o_1_1BaseEdge_ad0a9e3b6d5490c8f4af794c77742faae}{Error\-Vector \& {\bfseries error} ()}\label{classg2o_1_1BaseEdge_ad0a9e3b6d5490c8f4af794c77742faae}
+
+\item 
+\hypertarget{classg2o_1_1BaseEdge_ab682086df7223ce2b039d652416ddc23}{const Information\-Type \& \hyperlink{classg2o_1_1BaseEdge_ab682086df7223ce2b039d652416ddc23}{information} () const }\label{classg2o_1_1BaseEdge_ab682086df7223ce2b039d652416ddc23}
+
+\begin{DoxyCompactList}\small\item\em information matrix of the constraint \end{DoxyCompactList}\item 
+\hypertarget{classg2o_1_1BaseEdge_addff9120320d63504e07bfe17f1d04a7}{Information\-Type \& {\bfseries information} ()}\label{classg2o_1_1BaseEdge_addff9120320d63504e07bfe17f1d04a7}
+
+\item 
+\hypertarget{classg2o_1_1BaseEdge_a9bb871a94d2413ec3113a147417f2dc4}{void {\bfseries set\-Information} (const Information\-Type \&\hyperlink{classg2o_1_1BaseEdge_ab682086df7223ce2b039d652416ddc23}{information})}\label{classg2o_1_1BaseEdge_a9bb871a94d2413ec3113a147417f2dc4}
+
+\item 
+\hypertarget{classg2o_1_1BaseEdge_a49791e1acda790a7819388e60d80ed50}{virtual const double $\ast$ \hyperlink{classg2o_1_1BaseEdge_a49791e1acda790a7819388e60d80ed50}{information\-Data} () const }\label{classg2o_1_1BaseEdge_a49791e1acda790a7819388e60d80ed50}
+
+\begin{DoxyCompactList}\small\item\em returns the memory of the information matrix, usable for example with a Eigen\-::\-Map$<$\-Matrix\-Xd$>$ \end{DoxyCompactList}\item 
+\hypertarget{classg2o_1_1BaseEdge_a72ae9d215d6abc892f735e3d3ab81a88}{virtual double $\ast$ {\bfseries information\-Data} ()}\label{classg2o_1_1BaseEdge_a72ae9d215d6abc892f735e3d3ab81a88}
+
+\item 
+\hypertarget{classg2o_1_1BaseEdge_a8c20e7ffa66bb7a4a02c8cee82e89c8b}{const Measurement \& \hyperlink{classg2o_1_1BaseEdge_a8c20e7ffa66bb7a4a02c8cee82e89c8b}{measurement} () const }\label{classg2o_1_1BaseEdge_a8c20e7ffa66bb7a4a02c8cee82e89c8b}
+
+\begin{DoxyCompactList}\small\item\em accessor functions for the measurement represented by the edge \end{DoxyCompactList}\item 
+\hypertarget{classg2o_1_1BaseEdge_a24aae7b4fc35d311158f104cfdd95aeb}{virtual void {\bfseries set\-Measurement} (const Measurement \&m)}\label{classg2o_1_1BaseEdge_a24aae7b4fc35d311158f104cfdd95aeb}
+
+\item 
+\hypertarget{classg2o_1_1BaseEdge_a56269f26521052cf52de8a61c37e4c29}{virtual int {\bfseries rank} () const }\label{classg2o_1_1BaseEdge_a56269f26521052cf52de8a61c37e4c29}
+
+\item 
+virtual void \hyperlink{classg2o_1_1BaseEdge_a0c3d9763f1dc504627df75e0f381ca70}{initial\-Estimate} (const Optimizable\-Graph\-::\-Vertex\-Set \&, \hyperlink{classg2o_1_1OptimizableGraph_1_1Vertex}{Optimizable\-Graph\-::\-Vertex} $\ast$)
+\end{DoxyCompactItemize}
+\subsection*{静态 Public 属性}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classg2o_1_1BaseEdge_ab4812acb21e0b9de80dc6d676e71cb70}{static const int {\bfseries Dimension} = D}\label{classg2o_1_1BaseEdge_ab4812acb21e0b9de80dc6d676e71cb70}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+Information\-Type \hyperlink{classg2o_1_1BaseEdge_a069937ed6fadf557368cd0fce7ab2f59}{robust\-Information} (const Eigen\-::\-Vector3d \&rho)
+\end{DoxyCompactItemize}
+\subsection*{Protected 属性}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classg2o_1_1BaseEdge_af2a6ab1df6e91601b4cab23e0e99e034}{Measurement {\bfseries \-\_\-measurement}}\label{classg2o_1_1BaseEdge_af2a6ab1df6e91601b4cab23e0e99e034}
+
+\item 
+\hypertarget{classg2o_1_1BaseEdge_a49f11e3d1eaa8e666e1d4d3607279377}{Information\-Type {\bfseries \-\_\-information}}\label{classg2o_1_1BaseEdge_a49f11e3d1eaa8e666e1d4d3607279377}
+
+\item 
+\hypertarget{classg2o_1_1BaseEdge_af31f4b0a67bb12b4de4a32dc42467836}{Error\-Vector {\bfseries \-\_\-error}}\label{classg2o_1_1BaseEdge_af31f4b0a67bb12b4de4a32dc42467836}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{详细描述}
+\subsubsection*{template$<$int D, typename E$>$class g2o\-::\-Base\-Edge$<$ D, E $>$}
+
+
+
+在文件 base\-\_\-edge.\-h 第 42 行定义.
+
+
+
+\subsection{成员函数说明}
+\hypertarget{classg2o_1_1BaseEdge_a0c3d9763f1dc504627df75e0f381ca70}{\index{g2o\-::\-Base\-Edge@{g2o\-::\-Base\-Edge}!initial\-Estimate@{initial\-Estimate}}
+\index{initial\-Estimate@{initial\-Estimate}!g2o::BaseEdge@{g2o\-::\-Base\-Edge}}
+\subsubsection[{initial\-Estimate}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int D, typename E$>$ virtual void {\bf g2o\-::\-Base\-Edge}$<$ D, E $>$\-::initial\-Estimate (
+\begin{DoxyParamCaption}
+\item[{const Optimizable\-Graph\-::\-Vertex\-Set \&}]{from, }
+\item[{{\bf Optimizable\-Graph\-::\-Vertex} $\ast$}]{to}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classg2o_1_1BaseEdge_a0c3d9763f1dc504627df75e0f381ca70}
+set the estimate of the to vertex, based on the estimate of the from vertices in the edge. 
+
+实现了 \hyperlink{classg2o_1_1OptimizableGraph_1_1Edge_a9519f8892e97f03daacb44ea50ac7f4e}{g2o\-::\-Optimizable\-Graph\-::\-Edge}.
+
+
+
+被 \hyperlink{classg2o_1_1EdgeSim3_afac4cc093af6f54adb278c142f33dcca}{g2o\-::\-Edge\-Sim3}, \hyperlink{classg2o_1_1BaseUnaryEdge_a3d3311901116092cf817b094f6a0b44b}{g2o\-::\-Base\-Unary\-Edge$<$ D, E, Vertex\-Xi $>$}, \hyperlink{classg2o_1_1BaseUnaryEdge_a3d3311901116092cf817b094f6a0b44b}{g2o\-::\-Base\-Unary\-Edge$<$ 2, Vector2d, Vertex\-S\-E3\-Expmap $>$} , 以及 \hyperlink{classg2o_1_1BaseUnaryEdge_a3d3311901116092cf817b094f6a0b44b}{g2o\-::\-Base\-Unary\-Edge$<$ 3, Vector3d, Vertex\-S\-E3\-Expmap $>$} 重载.
+
+
+
+在文件 base\-\_\-edge.\-h 第 82 行定义.
+
+\hypertarget{classg2o_1_1BaseEdge_a069937ed6fadf557368cd0fce7ab2f59}{\index{g2o\-::\-Base\-Edge@{g2o\-::\-Base\-Edge}!robust\-Information@{robust\-Information}}
+\index{robust\-Information@{robust\-Information}!g2o::BaseEdge@{g2o\-::\-Base\-Edge}}
+\subsubsection[{robust\-Information}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int D, typename E$>$ Information\-Type {\bf g2o\-::\-Base\-Edge}$<$ D, E $>$\-::robust\-Information (
+\begin{DoxyParamCaption}
+\item[{const Eigen\-::\-Vector3d \&}]{rho}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}}\label{classg2o_1_1BaseEdge_a069937ed6fadf557368cd0fce7ab2f59}
+calculate the robust information matrix by updating the information matrix of the error 
+
+在文件 base\-\_\-edge.\-h 第 96 行定义.
+
+
+
+该类的文档由以下文件生成\-:\begin{DoxyCompactItemize}
+\item 
+Thirdparty/g2o/g2o/core/base\-\_\-edge.\-h\end{DoxyCompactItemize}

@@ -1,0 +1,16 @@
+<map id="g2o::JacobianWorkspace::updateSize" name="g2o::JacobianWorkspace::updateSize">
+<area shape="rect" id="node2" href="$structg2o_1_1OptimizableGraph.html#a6831ed69fce3dba691f53302a2813070" title="g2o::OptimizableGraph\l::addEdge" alt="" coords="232,169,387,210"/>
+<area shape="rect" id="node15" href="$classg2o_1_1JacobianWorkspace.html#ae3d715bd25e196d8db81661ef0fbd09b" title="g2o::JacobianWorkspace\l::updateSize" alt="" coords="225,234,394,275"/>
+<area shape="rect" id="node3" href="$classORB__SLAM2_1_1Optimizer.html#a5e855fe6b54082739b7e7013048e6340" title="bundle adjustment Optimization " alt="" coords="445,5,611,46"/>
+<area shape="rect" id="node4" href="$classORB__SLAM2_1_1Optimizer.html#a7415d78b8a2323b88e108fa1ea3bf2d3" title="Pose Only Optimization. " alt="" coords="445,70,611,111"/>
+<area shape="rect" id="node9" href="$classORB__SLAM2_1_1Optimizer.html#ab70e0b4f366b65a0c1ae8b2def19d339" title="Local Bundle Adjustment. " alt="" coords="445,135,611,177"/>
+<area shape="rect" id="node10" href="$classORB__SLAM2_1_1Optimizer.html#ad36bb1a7167c84f385c3f299bc96f20e" title="闭环检测后，EssentialGraph优化 " alt="" coords="443,201,613,242"/>
+<area shape="rect" id="node12" href="$classORB__SLAM2_1_1Optimizer.html#ad8fe00ad3e6564b859b07ff9e7b2224e" title="形成闭环时进行Sim3优化 " alt="" coords="445,266,611,307"/>
+<area shape="rect" id="node14" href="$structg2o_1_1OptimizableGraph.html#acea1342d9ab0bf717710c8f78b74ff25" title="adds all edges and vertices of the graph g to this graph. " alt="" coords="451,331,605,373"/>
+<area shape="rect" id="node5" href="$classORB__SLAM2_1_1Tracking.html#a737c5409c93844353561a0fe724ed1c2" title="对参考关键帧的MapPoints进行跟踪 " alt="" coords="662,5,845,46"/>
+<area shape="rect" id="node7" href="$classORB__SLAM2_1_1Tracking.html#aca19f1d69b30a6c6e49281d422ac8298" title="根据匀速度模型对上一帧的MapPoints进行跟踪 " alt="" coords="671,70,835,111"/>
+<area shape="rect" id="node8" href="$classORB__SLAM2_1_1Tracking.html#af670c614f4e10d58c9f7aad9865b5c08" title="对Local Map的MapPoints进行跟踪 " alt="" coords="674,135,833,177"/>
+<area shape="rect" id="node6" href="$classORB__SLAM2_1_1Tracking.html#af1f2c9c533642d8c33854540e90d1918" title="Main tracking function. It is independent of the input sensor. " alt="" coords="894,70,1053,111"/>
+<area shape="rect" id="node11" href="$classORB__SLAM2_1_1LoopClosing.html#aa007e0678582ec0de5d71280d23af540" title="闭环 " alt="" coords="663,201,844,242"/>
+<area shape="rect" id="node13" href="$classORB__SLAM2_1_1LoopClosing.html#ab4fcf814eed5b5dd2aec96454561b078" title="计算当前帧与闭环帧的Sim3变换等 " alt="" coords="663,266,844,307"/>
+</map>

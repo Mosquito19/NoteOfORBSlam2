@@ -1,0 +1,631 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.6"/>
+<title>My Project: g2o::BaseMultiEdge&lt; D, E &gt; 模板类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">My Project
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.6 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="pages.html"><span>相关页面</span></a></li>
+      <li><a href="modules.html"><span>模块</span></a></li>
+      <li><a href="namespaces.html"><span>命名空间</span></a></li>
+      <li class="current"><a href="annotated.html"><span>类</span></a></li>
+      <li><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>类列表</span></a></li>
+      <li><a href="classes.html"><span>类索引</span></a></li>
+      <li><a href="inherits.html"><span>类继承关系</span></a></li>
+      <li><a href="functions.html"><span>类成员</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('classg2o_1_1BaseMultiEdge.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>命名空间</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>友元</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>组</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>页</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">类</a> &#124;
+<a href="#pub-types">Public 类型</a> &#124;
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pub-static-attribs">静态 Public 属性</a> &#124;
+<a href="#pro-methods">Protected 成员函数</a> &#124;
+<a href="#pro-attribs">Protected 属性</a> &#124;
+<a href="classg2o_1_1BaseMultiEdge-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">g2o::BaseMultiEdge&lt; D, E &gt; 模板类 参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>base class to represent an edge connecting an arbitrary number of nodes  
+ <a href="classg2o_1_1BaseMultiEdge.html#details">更多...</a></p>
+
+<p><code>#include &lt;<a class="el" href="base__multi__edge_8h_source.html">base_multi_edge.h</a>&gt;</code></p>
+<div class="dynheader">
+类 g2o::BaseMultiEdge&lt; D, E &gt; 继承关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classg2o_1_1BaseMultiEdge__inherit__graph.png" border="0" usemap="#g2o_1_1BaseMultiEdge_3_01D_00_01E_01_4_inherit__map" alt="Inheritance graph"/></div>
+<map name="g2o_1_1BaseMultiEdge_3_01D_00_01E_01_4_inherit__map" id="g2o_1_1BaseMultiEdge_3_01D_00_01E_01_4_inherit__map">
+<area shape="rect" id="node2" href="classg2o_1_1BaseEdge.html" title="g2o::BaseEdge\&lt; D, E \&gt;" alt="" coords="23,261,185,288"/><area shape="rect" id="node3" href="classg2o_1_1OptimizableGraph_1_1Edge.html" title="g2o::OptimizableGraph\l::Edge" alt="" coords="27,171,180,213"/><area shape="rect" id="node4" href="classg2o_1_1HyperGraph_1_1Edge.html" title="g2o::HyperGraph::Edge" alt="" coords="25,96,183,123"/><area shape="rect" id="node5" href="structg2o_1_1HyperGraph_1_1HyperGraphElement.html" title="g2o::HyperGraph::HyperGraph\lElement" alt="" coords="5,6,203,47"/></map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">图例</a>]</span></center></div>
+<div class="dynheader">
+g2o::BaseMultiEdge&lt; D, E &gt; 的协作图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classg2o_1_1BaseMultiEdge__coll__graph.png" border="0" usemap="#g2o_1_1BaseMultiEdge_3_01D_00_01E_01_4_coll__map" alt="Collaboration graph"/></div>
+<map name="g2o_1_1BaseMultiEdge_3_01D_00_01E_01_4_coll__map" id="g2o_1_1BaseMultiEdge_3_01D_00_01E_01_4_coll__map">
+<area shape="rect" id="node2" href="classg2o_1_1BaseEdge.html" title="g2o::BaseEdge\&lt; D, E \&gt;" alt="" coords="239,296,401,323"/><area shape="rect" id="node3" href="classg2o_1_1OptimizableGraph_1_1Edge.html" title="g2o::OptimizableGraph\l::Edge" alt="" coords="153,190,307,231"/><area shape="rect" id="node4" href="classg2o_1_1HyperGraph_1_1Edge.html" title="g2o::HyperGraph::Edge" alt="" coords="25,99,183,125"/><area shape="rect" id="node5" href="structg2o_1_1HyperGraph_1_1HyperGraphElement.html" title="g2o::HyperGraph::HyperGraph\lElement" alt="" coords="5,6,203,47"/><area shape="rect" id="node6" href="classg2o_1_1RobustKernel.html" title="base for all robust cost functions " alt="" coords="208,99,337,125"/></map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">图例</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+类</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structg2o_1_1BaseMultiEdge_1_1HessianHelper.html">HessianHelper</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">helper for mapping the Hessian memory of the upper triangular block  <a href="structg2o_1_1BaseMultiEdge_1_1HessianHelper.html#details">更多...</a><br/></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public 类型</h2></td></tr>
+<tr class="memitem:acbaff4c018fb314db5c7852054ffb89d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="acbaff4c018fb314db5c7852054ffb89d"></a>
+typedef <a class="el" href="classg2o_1_1BaseEdge.html">BaseEdge</a>&lt; D, E &gt;<br class="typebreak"/>
+::Measurement&#160;</td><td class="memItemRight" valign="bottom"><b>Measurement</b></td></tr>
+<tr class="separator:acbaff4c018fb314db5c7852054ffb89d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a43dfdf5b27df296a32ee5a11f0653d55"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a43dfdf5b27df296a32ee5a11f0653d55"></a>
+typedef MatrixXd::MapType&#160;</td><td class="memItemRight" valign="bottom"><b>JacobianType</b></td></tr>
+<tr class="separator:a43dfdf5b27df296a32ee5a11f0653d55"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae17c6b5747bfed295214942207a6eb74"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae17c6b5747bfed295214942207a6eb74"></a>
+typedef <a class="el" href="classg2o_1_1BaseEdge.html">BaseEdge</a>&lt; D, E &gt;<br class="typebreak"/>
+::ErrorVector&#160;</td><td class="memItemRight" valign="bottom"><b>ErrorVector</b></td></tr>
+<tr class="separator:ae17c6b5747bfed295214942207a6eb74"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a368ab136a2cee049549cb479fb4c88fa"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a368ab136a2cee049549cb479fb4c88fa"></a>
+typedef <a class="el" href="classg2o_1_1BaseEdge.html">BaseEdge</a>&lt; D, E &gt;<br class="typebreak"/>
+::InformationType&#160;</td><td class="memItemRight" valign="bottom"><b>InformationType</b></td></tr>
+<tr class="separator:a368ab136a2cee049549cb479fb4c88fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af299cc8f77d917c1ad4a7d8004aec3a1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af299cc8f77d917c1ad4a7d8004aec3a1"></a>
+typedef Eigen::Map&lt; MatrixXd, <br class="typebreak"/>
+MatrixXd::Flags &amp;AlignedBit?Aligned:Unaligned &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>HessianBlockType</b></td></tr>
+<tr class="separator:af299cc8f77d917c1ad4a7d8004aec3a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_types_classg2o_1_1BaseEdge"><td colspan="2" onclick="javascript:toggleInherit('pub_types_classg2o_1_1BaseEdge')"><img src="closed.png" alt="-"/>&#160;Public 类型 继承自 <a class="el" href="classg2o_1_1BaseEdge.html">g2o::BaseEdge&lt; D, E &gt;</a></td></tr>
+<tr class="memitem:a2c148abba650a20b8c7eed75d3e2211e inherit pub_types_classg2o_1_1BaseEdge"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2c148abba650a20b8c7eed75d3e2211e"></a>
+typedef E&#160;</td><td class="memItemRight" valign="bottom"><b>Measurement</b></td></tr>
+<tr class="separator:a2c148abba650a20b8c7eed75d3e2211e inherit pub_types_classg2o_1_1BaseEdge"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af5b558dd24e4be2e437563cae4b3550d inherit pub_types_classg2o_1_1BaseEdge"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af5b558dd24e4be2e437563cae4b3550d"></a>
+typedef Matrix&lt; double, D, 1 &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>ErrorVector</b></td></tr>
+<tr class="separator:af5b558dd24e4be2e437563cae4b3550d inherit pub_types_classg2o_1_1BaseEdge"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2e5a33343ac3f189d8a7d5ee4d8b73fc inherit pub_types_classg2o_1_1BaseEdge"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2e5a33343ac3f189d8a7d5ee4d8b73fc"></a>
+typedef Matrix&lt; double, D, D &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>InformationType</b></td></tr>
+<tr class="separator:a2e5a33343ac3f189d8a7d5ee4d8b73fc inherit pub_types_classg2o_1_1BaseEdge"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:a72176776797987b8ae79ea2e33971e9e"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classg2o_1_1BaseMultiEdge.html#a72176776797987b8ae79ea2e33971e9e">linearizeOplus</a> (<a class="el" href="classg2o_1_1JacobianWorkspace.html">JacobianWorkspace</a> &amp;jacobianWorkspace)</td></tr>
+<tr class="separator:a72176776797987b8ae79ea2e33971e9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6196a4cd1ddc2ef27c1474252bb60e9f"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classg2o_1_1BaseMultiEdge.html#a6196a4cd1ddc2ef27c1474252bb60e9f">linearizeOplus</a> ()</td></tr>
+<tr class="separator:a6196a4cd1ddc2ef27c1474252bb60e9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae07ec9359cd515d0abc2100ee8aae93f"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classg2o_1_1BaseMultiEdge.html#ae07ec9359cd515d0abc2100ee8aae93f">resize</a> (size_t size)</td></tr>
+<tr class="separator:ae07ec9359cd515d0abc2100ee8aae93f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0873441402f991c0cfbe92a6ab718daa"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0873441402f991c0cfbe92a6ab718daa"></a>
+virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>allVerticesFixed</b> () const </td></tr>
+<tr class="separator:a0873441402f991c0cfbe92a6ab718daa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae44ba0385d4dda4bc038d81e50cadd8c"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classg2o_1_1BaseMultiEdge.html#ae44ba0385d4dda4bc038d81e50cadd8c">constructQuadraticForm</a> ()</td></tr>
+<tr class="separator:ae44ba0385d4dda4bc038d81e50cadd8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aecded66022b967fab0deb1c6a2d76445"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classg2o_1_1BaseMultiEdge.html#aecded66022b967fab0deb1c6a2d76445">mapHessianMemory</a> (double *d, int i, int j, bool rowMajor)</td></tr>
+<tr class="separator:aecded66022b967fab0deb1c6a2d76445"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classg2o_1_1BaseEdge"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classg2o_1_1BaseEdge')"><img src="closed.png" alt="-"/>&#160;Public 成员函数 继承自 <a class="el" href="classg2o_1_1BaseEdge.html">g2o::BaseEdge&lt; D, E &gt;</a></td></tr>
+<tr class="memitem:a7ea9406b8cc06b44433569bbd4fcefac inherit pub_methods_classg2o_1_1BaseEdge"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7ea9406b8cc06b44433569bbd4fcefac"></a>
+virtual double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classg2o_1_1BaseEdge.html#a7ea9406b8cc06b44433569bbd4fcefac">chi2</a> () const </td></tr>
+<tr class="memdesc:a7ea9406b8cc06b44433569bbd4fcefac inherit pub_methods_classg2o_1_1BaseEdge"><td class="mdescLeft">&#160;</td><td class="mdescRight">computes the chi2 based on the cached error value, only valid after computeError has been called. <br/></td></tr>
+<tr class="separator:a7ea9406b8cc06b44433569bbd4fcefac inherit pub_methods_classg2o_1_1BaseEdge"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2483ee84ebe78e35e71db7dce703edae inherit pub_methods_classg2o_1_1BaseEdge"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2483ee84ebe78e35e71db7dce703edae"></a>
+virtual const double *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classg2o_1_1BaseEdge.html#a2483ee84ebe78e35e71db7dce703edae">errorData</a> () const </td></tr>
+<tr class="memdesc:a2483ee84ebe78e35e71db7dce703edae inherit pub_methods_classg2o_1_1BaseEdge"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns the error vector cached after calling the computeError; <br/></td></tr>
+<tr class="separator:a2483ee84ebe78e35e71db7dce703edae inherit pub_methods_classg2o_1_1BaseEdge"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab80452c1134036928a2af6303412a3c4 inherit pub_methods_classg2o_1_1BaseEdge"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab80452c1134036928a2af6303412a3c4"></a>
+virtual double *&#160;</td><td class="memItemRight" valign="bottom"><b>errorData</b> ()</td></tr>
+<tr class="separator:ab80452c1134036928a2af6303412a3c4 inherit pub_methods_classg2o_1_1BaseEdge"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a52fb082b224f30a29248431ea34e9c39 inherit pub_methods_classg2o_1_1BaseEdge"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a52fb082b224f30a29248431ea34e9c39"></a>
+const ErrorVector &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>error</b> () const </td></tr>
+<tr class="separator:a52fb082b224f30a29248431ea34e9c39 inherit pub_methods_classg2o_1_1BaseEdge"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad0a9e3b6d5490c8f4af794c77742faae inherit pub_methods_classg2o_1_1BaseEdge"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad0a9e3b6d5490c8f4af794c77742faae"></a>
+ErrorVector &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>error</b> ()</td></tr>
+<tr class="separator:ad0a9e3b6d5490c8f4af794c77742faae inherit pub_methods_classg2o_1_1BaseEdge"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab682086df7223ce2b039d652416ddc23 inherit pub_methods_classg2o_1_1BaseEdge"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab682086df7223ce2b039d652416ddc23"></a>
+const InformationType &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classg2o_1_1BaseEdge.html#ab682086df7223ce2b039d652416ddc23">information</a> () const </td></tr>
+<tr class="memdesc:ab682086df7223ce2b039d652416ddc23 inherit pub_methods_classg2o_1_1BaseEdge"><td class="mdescLeft">&#160;</td><td class="mdescRight">information matrix of the constraint <br/></td></tr>
+<tr class="separator:ab682086df7223ce2b039d652416ddc23 inherit pub_methods_classg2o_1_1BaseEdge"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:addff9120320d63504e07bfe17f1d04a7 inherit pub_methods_classg2o_1_1BaseEdge"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="addff9120320d63504e07bfe17f1d04a7"></a>
+InformationType &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>information</b> ()</td></tr>
+<tr class="separator:addff9120320d63504e07bfe17f1d04a7 inherit pub_methods_classg2o_1_1BaseEdge"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9bb871a94d2413ec3113a147417f2dc4 inherit pub_methods_classg2o_1_1BaseEdge"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9bb871a94d2413ec3113a147417f2dc4"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setInformation</b> (const InformationType &amp;<a class="el" href="classg2o_1_1BaseEdge.html#ab682086df7223ce2b039d652416ddc23">information</a>)</td></tr>
+<tr class="separator:a9bb871a94d2413ec3113a147417f2dc4 inherit pub_methods_classg2o_1_1BaseEdge"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a49791e1acda790a7819388e60d80ed50 inherit pub_methods_classg2o_1_1BaseEdge"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a49791e1acda790a7819388e60d80ed50"></a>
+virtual const double *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classg2o_1_1BaseEdge.html#a49791e1acda790a7819388e60d80ed50">informationData</a> () const </td></tr>
+<tr class="memdesc:a49791e1acda790a7819388e60d80ed50 inherit pub_methods_classg2o_1_1BaseEdge"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns the memory of the information matrix, usable for example with a Eigen::Map&lt;MatrixXd&gt; <br/></td></tr>
+<tr class="separator:a49791e1acda790a7819388e60d80ed50 inherit pub_methods_classg2o_1_1BaseEdge"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a72ae9d215d6abc892f735e3d3ab81a88 inherit pub_methods_classg2o_1_1BaseEdge"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a72ae9d215d6abc892f735e3d3ab81a88"></a>
+virtual double *&#160;</td><td class="memItemRight" valign="bottom"><b>informationData</b> ()</td></tr>
+<tr class="separator:a72ae9d215d6abc892f735e3d3ab81a88 inherit pub_methods_classg2o_1_1BaseEdge"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c20e7ffa66bb7a4a02c8cee82e89c8b inherit pub_methods_classg2o_1_1BaseEdge"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8c20e7ffa66bb7a4a02c8cee82e89c8b"></a>
+const Measurement &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classg2o_1_1BaseEdge.html#a8c20e7ffa66bb7a4a02c8cee82e89c8b">measurement</a> () const </td></tr>
+<tr class="memdesc:a8c20e7ffa66bb7a4a02c8cee82e89c8b inherit pub_methods_classg2o_1_1BaseEdge"><td class="mdescLeft">&#160;</td><td class="mdescRight">accessor functions for the measurement represented by the edge <br/></td></tr>
+<tr class="separator:a8c20e7ffa66bb7a4a02c8cee82e89c8b inherit pub_methods_classg2o_1_1BaseEdge"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a24aae7b4fc35d311158f104cfdd95aeb inherit pub_methods_classg2o_1_1BaseEdge"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a24aae7b4fc35d311158f104cfdd95aeb"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>setMeasurement</b> (const Measurement &amp;m)</td></tr>
+<tr class="separator:a24aae7b4fc35d311158f104cfdd95aeb inherit pub_methods_classg2o_1_1BaseEdge"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a56269f26521052cf52de8a61c37e4c29 inherit pub_methods_classg2o_1_1BaseEdge"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a56269f26521052cf52de8a61c37e4c29"></a>
+virtual int&#160;</td><td class="memItemRight" valign="bottom"><b>rank</b> () const </td></tr>
+<tr class="separator:a56269f26521052cf52de8a61c37e4c29 inherit pub_methods_classg2o_1_1BaseEdge"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0c3d9763f1dc504627df75e0f381ca70 inherit pub_methods_classg2o_1_1BaseEdge"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classg2o_1_1BaseEdge.html#a0c3d9763f1dc504627df75e0f381ca70">initialEstimate</a> (const OptimizableGraph::VertexSet &amp;, <a class="el" href="classg2o_1_1OptimizableGraph_1_1Vertex.html">OptimizableGraph::Vertex</a> *)</td></tr>
+<tr class="separator:a0c3d9763f1dc504627df75e0f381ca70 inherit pub_methods_classg2o_1_1BaseEdge"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classg2o_1_1OptimizableGraph_1_1Edge"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classg2o_1_1OptimizableGraph_1_1Edge')"><img src="closed.png" alt="-"/>&#160;Public 成员函数 继承自 <a class="el" href="classg2o_1_1OptimizableGraph_1_1Edge.html">g2o::OptimizableGraph::Edge</a></td></tr>
+<tr class="memitem:a4f274bac9939144dd6b30578c5424a45 inherit pub_methods_classg2o_1_1OptimizableGraph_1_1Edge"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4f274bac9939144dd6b30578c5424a45"></a>
+virtual <a class="el" href="classg2o_1_1OptimizableGraph_1_1Edge.html">Edge</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>clone</b> () const </td></tr>
+<tr class="separator:a4f274bac9939144dd6b30578c5424a45 inherit pub_methods_classg2o_1_1OptimizableGraph_1_1Edge"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1e6d9f4128866982de5e11e03edd7775 inherit pub_methods_classg2o_1_1OptimizableGraph_1_1Edge"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1e6d9f4128866982de5e11e03edd7775"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>computeError</b> ()=0</td></tr>
+<tr class="separator:a1e6d9f4128866982de5e11e03edd7775 inherit pub_methods_classg2o_1_1OptimizableGraph_1_1Edge"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae8d99a85921057eba87a2346ba9c6e0a inherit pub_methods_classg2o_1_1OptimizableGraph_1_1Edge"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classg2o_1_1OptimizableGraph_1_1Edge.html#ae8d99a85921057eba87a2346ba9c6e0a">setMeasurementData</a> (const double *m)</td></tr>
+<tr class="separator:ae8d99a85921057eba87a2346ba9c6e0a inherit pub_methods_classg2o_1_1OptimizableGraph_1_1Edge"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5f7c64421d33b7deb8fcfd5f4cf172b8 inherit pub_methods_classg2o_1_1OptimizableGraph_1_1Edge"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classg2o_1_1OptimizableGraph_1_1Edge.html#a5f7c64421d33b7deb8fcfd5f4cf172b8">getMeasurementData</a> (double *m) const </td></tr>
+<tr class="separator:a5f7c64421d33b7deb8fcfd5f4cf172b8 inherit pub_methods_classg2o_1_1OptimizableGraph_1_1Edge"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a44bd732330859991d4fbc992129b2e79 inherit pub_methods_classg2o_1_1OptimizableGraph_1_1Edge"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classg2o_1_1OptimizableGraph_1_1Edge.html#a44bd732330859991d4fbc992129b2e79">measurementDimension</a> () const </td></tr>
+<tr class="separator:a44bd732330859991d4fbc992129b2e79 inherit pub_methods_classg2o_1_1OptimizableGraph_1_1Edge"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f0b6465d6cd8b459ebc6494892c44f4 inherit pub_methods_classg2o_1_1OptimizableGraph_1_1Edge"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classg2o_1_1OptimizableGraph_1_1Edge.html#a2f0b6465d6cd8b459ebc6494892c44f4">setMeasurementFromState</a> ()</td></tr>
+<tr class="separator:a2f0b6465d6cd8b459ebc6494892c44f4 inherit pub_methods_classg2o_1_1OptimizableGraph_1_1Edge"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeb6ce9f3bf7b896f58272ea0d3feb8ff inherit pub_methods_classg2o_1_1OptimizableGraph_1_1Edge"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aeb6ce9f3bf7b896f58272ea0d3feb8ff"></a>
+<a class="el" href="classg2o_1_1RobustKernel.html">RobustKernel</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classg2o_1_1OptimizableGraph_1_1Edge.html#aeb6ce9f3bf7b896f58272ea0d3feb8ff">robustKernel</a> () const </td></tr>
+<tr class="memdesc:aeb6ce9f3bf7b896f58272ea0d3feb8ff inherit pub_methods_classg2o_1_1OptimizableGraph_1_1Edge"><td class="mdescLeft">&#160;</td><td class="mdescRight">if NOT NULL, error of this edge will be robustifed with the kernel <br/></td></tr>
+<tr class="separator:aeb6ce9f3bf7b896f58272ea0d3feb8ff inherit pub_methods_classg2o_1_1OptimizableGraph_1_1Edge"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a42955172c19f16e2cfbb30d611d1bd87 inherit pub_methods_classg2o_1_1OptimizableGraph_1_1Edge"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classg2o_1_1OptimizableGraph_1_1Edge.html#a42955172c19f16e2cfbb30d611d1bd87">setRobustKernel</a> (<a class="el" href="classg2o_1_1RobustKernel.html">RobustKernel</a> *ptr)</td></tr>
+<tr class="separator:a42955172c19f16e2cfbb30d611d1bd87 inherit pub_methods_classg2o_1_1OptimizableGraph_1_1Edge"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1cef6ffa0f82f1ad3dd3d7a9f04425ee inherit pub_methods_classg2o_1_1OptimizableGraph_1_1Edge"><td class="memItemLeft" align="right" valign="top">virtual double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classg2o_1_1OptimizableGraph_1_1Edge.html#a1cef6ffa0f82f1ad3dd3d7a9f04425ee">initialEstimatePossible</a> (const OptimizableGraph::VertexSet &amp;from, <a class="el" href="classg2o_1_1OptimizableGraph_1_1Vertex.html">OptimizableGraph::Vertex</a> *to)</td></tr>
+<tr class="separator:a1cef6ffa0f82f1ad3dd3d7a9f04425ee inherit pub_methods_classg2o_1_1OptimizableGraph_1_1Edge"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af92bd1589a99fa9732a5f2964cf38a6c inherit pub_methods_classg2o_1_1OptimizableGraph_1_1Edge"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af92bd1589a99fa9732a5f2964cf38a6c"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classg2o_1_1OptimizableGraph_1_1Edge.html#af92bd1589a99fa9732a5f2964cf38a6c">level</a> () const </td></tr>
+<tr class="memdesc:af92bd1589a99fa9732a5f2964cf38a6c inherit pub_methods_classg2o_1_1OptimizableGraph_1_1Edge"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns the level of the edge <br/></td></tr>
+<tr class="separator:af92bd1589a99fa9732a5f2964cf38a6c inherit pub_methods_classg2o_1_1OptimizableGraph_1_1Edge"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab3e4290bc51d03ba294f36254048b15a inherit pub_methods_classg2o_1_1OptimizableGraph_1_1Edge"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab3e4290bc51d03ba294f36254048b15a"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classg2o_1_1OptimizableGraph_1_1Edge.html#ab3e4290bc51d03ba294f36254048b15a">setLevel</a> (int l)</td></tr>
+<tr class="memdesc:ab3e4290bc51d03ba294f36254048b15a inherit pub_methods_classg2o_1_1OptimizableGraph_1_1Edge"><td class="mdescLeft">&#160;</td><td class="mdescRight">sets the level of the edge <br/></td></tr>
+<tr class="separator:ab3e4290bc51d03ba294f36254048b15a inherit pub_methods_classg2o_1_1OptimizableGraph_1_1Edge"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a90a86891adc47a179a7cd7ef31549916 inherit pub_methods_classg2o_1_1OptimizableGraph_1_1Edge"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a90a86891adc47a179a7cd7ef31549916"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classg2o_1_1OptimizableGraph_1_1Edge.html#a90a86891adc47a179a7cd7ef31549916">dimension</a> () const </td></tr>
+<tr class="memdesc:a90a86891adc47a179a7cd7ef31549916 inherit pub_methods_classg2o_1_1OptimizableGraph_1_1Edge"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns the dimensions of the error function <br/></td></tr>
+<tr class="separator:a90a86891adc47a179a7cd7ef31549916 inherit pub_methods_classg2o_1_1OptimizableGraph_1_1Edge"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd98d7a174df25bcc82cfdacba682fec inherit pub_methods_classg2o_1_1OptimizableGraph_1_1Edge"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abd98d7a174df25bcc82cfdacba682fec"></a>
+virtual <a class="el" href="classg2o_1_1OptimizableGraph_1_1Vertex.html">Vertex</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>createFrom</b> ()</td></tr>
+<tr class="separator:abd98d7a174df25bcc82cfdacba682fec inherit pub_methods_classg2o_1_1OptimizableGraph_1_1Edge"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a39c22b396ab312059ea8fa4c2776be2e inherit pub_methods_classg2o_1_1OptimizableGraph_1_1Edge"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a39c22b396ab312059ea8fa4c2776be2e"></a>
+virtual <a class="el" href="classg2o_1_1OptimizableGraph_1_1Vertex.html">Vertex</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>createTo</b> ()</td></tr>
+<tr class="separator:a39c22b396ab312059ea8fa4c2776be2e inherit pub_methods_classg2o_1_1OptimizableGraph_1_1Edge"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a30cf69b762a06aa35e796d8af71632b0 inherit pub_methods_classg2o_1_1OptimizableGraph_1_1Edge"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a30cf69b762a06aa35e796d8af71632b0"></a>
+virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classg2o_1_1OptimizableGraph_1_1Edge.html#a30cf69b762a06aa35e796d8af71632b0">read</a> (std::istream &amp;is)=0</td></tr>
+<tr class="memdesc:a30cf69b762a06aa35e796d8af71632b0 inherit pub_methods_classg2o_1_1OptimizableGraph_1_1Edge"><td class="mdescLeft">&#160;</td><td class="mdescRight">read the vertex from a stream, i.e., the internal state of the vertex <br/></td></tr>
+<tr class="separator:a30cf69b762a06aa35e796d8af71632b0 inherit pub_methods_classg2o_1_1OptimizableGraph_1_1Edge"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a804b9a2178249b9297c55b8fbbeda56e inherit pub_methods_classg2o_1_1OptimizableGraph_1_1Edge"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a804b9a2178249b9297c55b8fbbeda56e"></a>
+virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classg2o_1_1OptimizableGraph_1_1Edge.html#a804b9a2178249b9297c55b8fbbeda56e">write</a> (std::ostream &amp;os) const =0</td></tr>
+<tr class="memdesc:a804b9a2178249b9297c55b8fbbeda56e inherit pub_methods_classg2o_1_1OptimizableGraph_1_1Edge"><td class="mdescLeft">&#160;</td><td class="mdescRight">write the vertex to a stream <br/></td></tr>
+<tr class="separator:a804b9a2178249b9297c55b8fbbeda56e inherit pub_methods_classg2o_1_1OptimizableGraph_1_1Edge"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac4ab4bc451232a7ff4dca8484181fcad inherit pub_methods_classg2o_1_1OptimizableGraph_1_1Edge"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac4ab4bc451232a7ff4dca8484181fcad"></a>
+long long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classg2o_1_1OptimizableGraph_1_1Edge.html#ac4ab4bc451232a7ff4dca8484181fcad">internalId</a> () const </td></tr>
+<tr class="memdesc:ac4ab4bc451232a7ff4dca8484181fcad inherit pub_methods_classg2o_1_1OptimizableGraph_1_1Edge"><td class="mdescLeft">&#160;</td><td class="mdescRight">the internal ID of the edge <br/></td></tr>
+<tr class="separator:ac4ab4bc451232a7ff4dca8484181fcad inherit pub_methods_classg2o_1_1OptimizableGraph_1_1Edge"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3684190bf8e99f39f58ffadd0dfa6b05 inherit pub_methods_classg2o_1_1OptimizableGraph_1_1Edge"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3684190bf8e99f39f58ffadd0dfa6b05"></a>
+<a class="el" href="structg2o_1_1OptimizableGraph.html">OptimizableGraph</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>graph</b> ()</td></tr>
+<tr class="separator:a3684190bf8e99f39f58ffadd0dfa6b05 inherit pub_methods_classg2o_1_1OptimizableGraph_1_1Edge"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a08d9fca4079441e3aa07cc315cd77470 inherit pub_methods_classg2o_1_1OptimizableGraph_1_1Edge"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a08d9fca4079441e3aa07cc315cd77470"></a>
+const <a class="el" href="structg2o_1_1OptimizableGraph.html">OptimizableGraph</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>graph</b> () const </td></tr>
+<tr class="separator:a08d9fca4079441e3aa07cc315cd77470 inherit pub_methods_classg2o_1_1OptimizableGraph_1_1Edge"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae535735e71365a547fd1a11fae5378f6 inherit pub_methods_classg2o_1_1OptimizableGraph_1_1Edge"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae535735e71365a547fd1a11fae5378f6"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>setParameterId</b> (int argNum, int paramId)</td></tr>
+<tr class="separator:ae535735e71365a547fd1a11fae5378f6 inherit pub_methods_classg2o_1_1OptimizableGraph_1_1Edge"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a78b63b89b3964c30b96a3404b20e2a7f inherit pub_methods_classg2o_1_1OptimizableGraph_1_1Edge"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a78b63b89b3964c30b96a3404b20e2a7f"></a>
+const <a class="el" href="classg2o_1_1Parameter.html">Parameter</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>parameter</b> (int argNo) const </td></tr>
+<tr class="separator:a78b63b89b3964c30b96a3404b20e2a7f inherit pub_methods_classg2o_1_1OptimizableGraph_1_1Edge"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a21c26247bdb33e6836d1f1c8536ad70c inherit pub_methods_classg2o_1_1OptimizableGraph_1_1Edge"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a21c26247bdb33e6836d1f1c8536ad70c"></a>
+size_t&#160;</td><td class="memItemRight" valign="bottom"><b>numParameters</b> () const </td></tr>
+<tr class="separator:a21c26247bdb33e6836d1f1c8536ad70c inherit pub_methods_classg2o_1_1OptimizableGraph_1_1Edge"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac978364c99e36c7fced59ecb383ba171 inherit pub_methods_classg2o_1_1OptimizableGraph_1_1Edge"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac978364c99e36c7fced59ecb383ba171"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>resizeParameters</b> (size_t newSize)</td></tr>
+<tr class="separator:ac978364c99e36c7fced59ecb383ba171 inherit pub_methods_classg2o_1_1OptimizableGraph_1_1Edge"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classg2o_1_1HyperGraph_1_1Edge"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classg2o_1_1HyperGraph_1_1Edge')"><img src="closed.png" alt="-"/>&#160;Public 成员函数 继承自 <a class="el" href="classg2o_1_1HyperGraph_1_1Edge.html">g2o::HyperGraph::Edge</a></td></tr>
+<tr class="memitem:a891618b34652837ef0bee7084db81f2e inherit pub_methods_classg2o_1_1HyperGraph_1_1Edge"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a891618b34652837ef0bee7084db81f2e"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classg2o_1_1HyperGraph_1_1Edge.html#a891618b34652837ef0bee7084db81f2e">Edge</a> (int id=-1)</td></tr>
+<tr class="memdesc:a891618b34652837ef0bee7084db81f2e inherit pub_methods_classg2o_1_1HyperGraph_1_1Edge"><td class="mdescLeft">&#160;</td><td class="mdescRight">creates and empty edge with no vertices <br/></td></tr>
+<tr class="separator:a891618b34652837ef0bee7084db81f2e inherit pub_methods_classg2o_1_1HyperGraph_1_1Edge"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6410bb70a917b5407770ef1f1090b5f5 inherit pub_methods_classg2o_1_1HyperGraph_1_1Edge"><td class="memItemLeft" align="right" valign="top">const VertexContainer &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classg2o_1_1HyperGraph_1_1Edge.html#a6410bb70a917b5407770ef1f1090b5f5">vertices</a> () const </td></tr>
+<tr class="separator:a6410bb70a917b5407770ef1f1090b5f5 inherit pub_methods_classg2o_1_1HyperGraph_1_1Edge"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a67d1c5cb557deab9e9e361c63359fe60 inherit pub_methods_classg2o_1_1HyperGraph_1_1Edge"><td class="memItemLeft" align="right" valign="top">VertexContainer &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classg2o_1_1HyperGraph_1_1Edge.html#a67d1c5cb557deab9e9e361c63359fe60">vertices</a> ()</td></tr>
+<tr class="separator:a67d1c5cb557deab9e9e361c63359fe60 inherit pub_methods_classg2o_1_1HyperGraph_1_1Edge"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaec0b2c92c5496d0f0fea8f1abdc4311 inherit pub_methods_classg2o_1_1HyperGraph_1_1Edge"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classg2o_1_1HyperGraph_1_1Vertex.html">Vertex</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classg2o_1_1HyperGraph_1_1Edge.html#aaec0b2c92c5496d0f0fea8f1abdc4311">vertex</a> (size_t i) const </td></tr>
+<tr class="separator:aaec0b2c92c5496d0f0fea8f1abdc4311 inherit pub_methods_classg2o_1_1HyperGraph_1_1Edge"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af544d5d17d900c5aa2b5c9219d8e716f inherit pub_methods_classg2o_1_1HyperGraph_1_1Edge"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classg2o_1_1HyperGraph_1_1Vertex.html">Vertex</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classg2o_1_1HyperGraph_1_1Edge.html#af544d5d17d900c5aa2b5c9219d8e716f">vertex</a> (size_t i)</td></tr>
+<tr class="separator:af544d5d17d900c5aa2b5c9219d8e716f inherit pub_methods_classg2o_1_1HyperGraph_1_1Edge"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5e957658d6e65c49b81197d052a7f16f inherit pub_methods_classg2o_1_1HyperGraph_1_1Edge"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classg2o_1_1HyperGraph_1_1Edge.html#a5e957658d6e65c49b81197d052a7f16f">setVertex</a> (size_t i, <a class="el" href="classg2o_1_1HyperGraph_1_1Vertex.html">Vertex</a> *v)</td></tr>
+<tr class="separator:a5e957658d6e65c49b81197d052a7f16f inherit pub_methods_classg2o_1_1HyperGraph_1_1Edge"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a397a7fb12379b2c48b5e6bc4c6c71fc0 inherit pub_methods_classg2o_1_1HyperGraph_1_1Edge"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a397a7fb12379b2c48b5e6bc4c6c71fc0"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>id</b> () const </td></tr>
+<tr class="separator:a397a7fb12379b2c48b5e6bc4c6c71fc0 inherit pub_methods_classg2o_1_1HyperGraph_1_1Edge"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1270ed91efa5f7a0fc42229356cc23e1 inherit pub_methods_classg2o_1_1HyperGraph_1_1Edge"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1270ed91efa5f7a0fc42229356cc23e1"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setId</b> (int id)</td></tr>
+<tr class="separator:a1270ed91efa5f7a0fc42229356cc23e1 inherit pub_methods_classg2o_1_1HyperGraph_1_1Edge"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a73df6169b3669d48f86eef90de0fcc26 inherit pub_methods_classg2o_1_1HyperGraph_1_1Edge"><td class="memItemLeft" align="right" valign="top">virtual HyperGraphElementType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classg2o_1_1HyperGraph_1_1Edge.html#a73df6169b3669d48f86eef90de0fcc26">elementType</a> () const </td></tr>
+<tr class="separator:a73df6169b3669d48f86eef90de0fcc26 inherit pub_methods_classg2o_1_1HyperGraph_1_1Edge"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
+静态 Public 属性</h2></td></tr>
+<tr class="memitem:a3c713fe8d1cd161f777625d8e2d5695d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3c713fe8d1cd161f777625d8e2d5695d"></a>
+static const int&#160;</td><td class="memItemRight" valign="bottom"><b>Dimension</b> = <a class="el" href="classg2o_1_1BaseEdge.html">BaseEdge</a>&lt;D,E&gt;::Dimension</td></tr>
+<tr class="separator:a3c713fe8d1cd161f777625d8e2d5695d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_static_attribs_classg2o_1_1BaseEdge"><td colspan="2" onclick="javascript:toggleInherit('pub_static_attribs_classg2o_1_1BaseEdge')"><img src="closed.png" alt="-"/>&#160;静态 Public 属性 继承自 <a class="el" href="classg2o_1_1BaseEdge.html">g2o::BaseEdge&lt; D, E &gt;</a></td></tr>
+<tr class="memitem:ab4812acb21e0b9de80dc6d676e71cb70 inherit pub_static_attribs_classg2o_1_1BaseEdge"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab4812acb21e0b9de80dc6d676e71cb70"></a>
+static const int&#160;</td><td class="memItemRight" valign="bottom"><b>Dimension</b> = D</td></tr>
+<tr class="separator:ab4812acb21e0b9de80dc6d676e71cb70 inherit pub_static_attribs_classg2o_1_1BaseEdge"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected 成员函数</h2></td></tr>
+<tr class="memitem:ac260b65c12f6594165af680f815ac291"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac260b65c12f6594165af680f815ac291"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>computeQuadraticForm</b> (const InformationType &amp;omega, const ErrorVector &amp;weightedError)</td></tr>
+<tr class="separator:ac260b65c12f6594165af680f815ac291"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_methods_classg2o_1_1BaseEdge"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classg2o_1_1BaseEdge')"><img src="closed.png" alt="-"/>&#160;Protected 成员函数 继承自 <a class="el" href="classg2o_1_1BaseEdge.html">g2o::BaseEdge&lt; D, E &gt;</a></td></tr>
+<tr class="memitem:a069937ed6fadf557368cd0fce7ab2f59 inherit pro_methods_classg2o_1_1BaseEdge"><td class="memItemLeft" align="right" valign="top">InformationType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classg2o_1_1BaseEdge.html#a069937ed6fadf557368cd0fce7ab2f59">robustInformation</a> (const Eigen::Vector3d &amp;rho)</td></tr>
+<tr class="separator:a069937ed6fadf557368cd0fce7ab2f59 inherit pro_methods_classg2o_1_1BaseEdge"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_methods_classg2o_1_1OptimizableGraph_1_1Edge"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classg2o_1_1OptimizableGraph_1_1Edge')"><img src="closed.png" alt="-"/>&#160;Protected 成员函数 继承自 <a class="el" href="classg2o_1_1OptimizableGraph_1_1Edge.html">g2o::OptimizableGraph::Edge</a></td></tr>
+<tr class="memitem:a237bea2f2fb7cc6a9cf4ee5ee6fe4d88 inherit pro_methods_classg2o_1_1OptimizableGraph_1_1Edge"><td class="memTemplParams" colspan="2"><a class="anchor" id="a237bea2f2fb7cc6a9cf4ee5ee6fe4d88"></a>
+template&lt;typename ParameterType &gt; </td></tr>
+<tr class="memitem:a237bea2f2fb7cc6a9cf4ee5ee6fe4d88 inherit pro_methods_classg2o_1_1OptimizableGraph_1_1Edge"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><b>installParameter</b> (ParameterType *&amp;p, size_t argNo, int paramId=-1)</td></tr>
+<tr class="separator:a237bea2f2fb7cc6a9cf4ee5ee6fe4d88 inherit pro_methods_classg2o_1_1OptimizableGraph_1_1Edge"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad95f2883af693de56e46a2b272dc1cdc inherit pro_methods_classg2o_1_1OptimizableGraph_1_1Edge"><td class="memTemplParams" colspan="2"><a class="anchor" id="ad95f2883af693de56e46a2b272dc1cdc"></a>
+template&lt;typename CacheType &gt; </td></tr>
+<tr class="memitem:ad95f2883af693de56e46a2b272dc1cdc inherit pro_methods_classg2o_1_1OptimizableGraph_1_1Edge"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>resolveCache</b> (CacheType *&amp;cache, <a class="el" href="classg2o_1_1OptimizableGraph_1_1Vertex.html">OptimizableGraph::Vertex</a> *, const std::string &amp;_type, const ParameterVector &amp;parameters)</td></tr>
+<tr class="separator:ad95f2883af693de56e46a2b272dc1cdc inherit pro_methods_classg2o_1_1OptimizableGraph_1_1Edge"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:addadf494f3a1c8bf467a74454d771d0d inherit pro_methods_classg2o_1_1OptimizableGraph_1_1Edge"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="addadf494f3a1c8bf467a74454d771d0d"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>resolveParameters</b> ()</td></tr>
+<tr class="separator:addadf494f3a1c8bf467a74454d771d0d inherit pro_methods_classg2o_1_1OptimizableGraph_1_1Edge"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa93e3a4f976b467994f4eb7679a04bf3 inherit pro_methods_classg2o_1_1OptimizableGraph_1_1Edge"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa93e3a4f976b467994f4eb7679a04bf3"></a>
+virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>resolveCaches</b> ()</td></tr>
+<tr class="separator:aa93e3a4f976b467994f4eb7679a04bf3 inherit pro_methods_classg2o_1_1OptimizableGraph_1_1Edge"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
+Protected 属性</h2></td></tr>
+<tr class="memitem:af927d6f41bf73fc3b928cae2d6219d9e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af927d6f41bf73fc3b928cae2d6219d9e"></a>
+std::vector&lt; <a class="el" href="structg2o_1_1BaseMultiEdge_1_1HessianHelper.html">HessianHelper</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>_hessian</b></td></tr>
+<tr class="separator:af927d6f41bf73fc3b928cae2d6219d9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a00f8130e287bc945a8436375c4d07a02"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a00f8130e287bc945a8436375c4d07a02"></a>
+std::vector&lt; JacobianType, <br class="typebreak"/>
+aligned_allocator<br class="typebreak"/>
+&lt; JacobianType &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classg2o_1_1BaseMultiEdge.html#a00f8130e287bc945a8436375c4d07a02">_jacobianOplus</a></td></tr>
+<tr class="memdesc:a00f8130e287bc945a8436375c4d07a02"><td class="mdescLeft">&#160;</td><td class="mdescRight">jacobians of the edge (w.r.t. oplus) <br/></td></tr>
+<tr class="separator:a00f8130e287bc945a8436375c4d07a02"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_attribs_classg2o_1_1BaseEdge"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classg2o_1_1BaseEdge')"><img src="closed.png" alt="-"/>&#160;Protected 属性 继承自 <a class="el" href="classg2o_1_1BaseEdge.html">g2o::BaseEdge&lt; D, E &gt;</a></td></tr>
+<tr class="memitem:af2a6ab1df6e91601b4cab23e0e99e034 inherit pro_attribs_classg2o_1_1BaseEdge"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af2a6ab1df6e91601b4cab23e0e99e034"></a>
+Measurement&#160;</td><td class="memItemRight" valign="bottom"><b>_measurement</b></td></tr>
+<tr class="separator:af2a6ab1df6e91601b4cab23e0e99e034 inherit pro_attribs_classg2o_1_1BaseEdge"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a49f11e3d1eaa8e666e1d4d3607279377 inherit pro_attribs_classg2o_1_1BaseEdge"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a49f11e3d1eaa8e666e1d4d3607279377"></a>
+InformationType&#160;</td><td class="memItemRight" valign="bottom"><b>_information</b></td></tr>
+<tr class="separator:a49f11e3d1eaa8e666e1d4d3607279377 inherit pro_attribs_classg2o_1_1BaseEdge"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af31f4b0a67bb12b4de4a32dc42467836 inherit pro_attribs_classg2o_1_1BaseEdge"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af31f4b0a67bb12b4de4a32dc42467836"></a>
+ErrorVector&#160;</td><td class="memItemRight" valign="bottom"><b>_error</b></td></tr>
+<tr class="separator:af31f4b0a67bb12b4de4a32dc42467836 inherit pro_attribs_classg2o_1_1BaseEdge"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_attribs_classg2o_1_1OptimizableGraph_1_1Edge"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classg2o_1_1OptimizableGraph_1_1Edge')"><img src="closed.png" alt="-"/>&#160;Protected 属性 继承自 <a class="el" href="classg2o_1_1OptimizableGraph_1_1Edge.html">g2o::OptimizableGraph::Edge</a></td></tr>
+<tr class="memitem:a4e651628f7657c81d0e4c1b26caaa6aa inherit pro_attribs_classg2o_1_1OptimizableGraph_1_1Edge"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4e651628f7657c81d0e4c1b26caaa6aa"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>_dimension</b></td></tr>
+<tr class="separator:a4e651628f7657c81d0e4c1b26caaa6aa inherit pro_attribs_classg2o_1_1OptimizableGraph_1_1Edge"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a57132078028dd0455aef141e62e07db9 inherit pro_attribs_classg2o_1_1OptimizableGraph_1_1Edge"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a57132078028dd0455aef141e62e07db9"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>_level</b></td></tr>
+<tr class="separator:a57132078028dd0455aef141e62e07db9 inherit pro_attribs_classg2o_1_1OptimizableGraph_1_1Edge"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6b942321f9e4e82051d529efb255af35 inherit pro_attribs_classg2o_1_1OptimizableGraph_1_1Edge"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6b942321f9e4e82051d529efb255af35"></a>
+<a class="el" href="classg2o_1_1RobustKernel.html">RobustKernel</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>_robustKernel</b></td></tr>
+<tr class="separator:a6b942321f9e4e82051d529efb255af35 inherit pro_attribs_classg2o_1_1OptimizableGraph_1_1Edge"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abdfc449ed57479d90d2e57a8bc0bea12 inherit pro_attribs_classg2o_1_1OptimizableGraph_1_1Edge"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abdfc449ed57479d90d2e57a8bc0bea12"></a>
+long long&#160;</td><td class="memItemRight" valign="bottom"><b>_internalId</b></td></tr>
+<tr class="separator:abdfc449ed57479d90d2e57a8bc0bea12 inherit pro_attribs_classg2o_1_1OptimizableGraph_1_1Edge"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a56bddaadd70570dbd96e8deed3d4b34c inherit pro_attribs_classg2o_1_1OptimizableGraph_1_1Edge"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a56bddaadd70570dbd96e8deed3d4b34c"></a>
+std::vector&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>_cacheIds</b></td></tr>
+<tr class="separator:a56bddaadd70570dbd96e8deed3d4b34c inherit pro_attribs_classg2o_1_1OptimizableGraph_1_1Edge"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a08666609850240956c64c95ae5ae0f2c inherit pro_attribs_classg2o_1_1OptimizableGraph_1_1Edge"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a08666609850240956c64c95ae5ae0f2c"></a>
+std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>_parameterTypes</b></td></tr>
+<tr class="separator:a08666609850240956c64c95ae5ae0f2c inherit pro_attribs_classg2o_1_1OptimizableGraph_1_1Edge"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a41c4d6a404d0b057d37fac43edec40ed inherit pro_attribs_classg2o_1_1OptimizableGraph_1_1Edge"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a41c4d6a404d0b057d37fac43edec40ed"></a>
+std::vector&lt; <a class="el" href="classg2o_1_1Parameter.html">Parameter</a> ** &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>_parameters</b></td></tr>
+<tr class="separator:a41c4d6a404d0b057d37fac43edec40ed inherit pro_attribs_classg2o_1_1OptimizableGraph_1_1Edge"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a33a35663ba5b096cb6e6078014bd6f17 inherit pro_attribs_classg2o_1_1OptimizableGraph_1_1Edge"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a33a35663ba5b096cb6e6078014bd6f17"></a>
+std::vector&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>_parameterIds</b></td></tr>
+<tr class="separator:a33a35663ba5b096cb6e6078014bd6f17 inherit pro_attribs_classg2o_1_1OptimizableGraph_1_1Edge"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_attribs_classg2o_1_1HyperGraph_1_1Edge"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classg2o_1_1HyperGraph_1_1Edge')"><img src="closed.png" alt="-"/>&#160;Protected 属性 继承自 <a class="el" href="classg2o_1_1HyperGraph_1_1Edge.html">g2o::HyperGraph::Edge</a></td></tr>
+<tr class="memitem:aabb036d331fc7f2524ec8611b638de92 inherit pro_attribs_classg2o_1_1HyperGraph_1_1Edge"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aabb036d331fc7f2524ec8611b638de92"></a>
+VertexContainer&#160;</td><td class="memItemRight" valign="bottom"><b>_vertices</b></td></tr>
+<tr class="separator:aabb036d331fc7f2524ec8611b638de92 inherit pro_attribs_classg2o_1_1HyperGraph_1_1Edge"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa1b6978624f7c165a4e0461cb5ff18fa inherit pro_attribs_classg2o_1_1HyperGraph_1_1Edge"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa1b6978624f7c165a4e0461cb5ff18fa"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classg2o_1_1HyperGraph_1_1Edge.html#aa1b6978624f7c165a4e0461cb5ff18fa">_id</a></td></tr>
+<tr class="memdesc:aa1b6978624f7c165a4e0461cb5ff18fa inherit pro_attribs_classg2o_1_1HyperGraph_1_1Edge"><td class="mdescLeft">&#160;</td><td class="mdescRight">unique id <br/></td></tr>
+<tr class="separator:aa1b6978624f7c165a4e0461cb5ff18fa inherit pro_attribs_classg2o_1_1HyperGraph_1_1Edge"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><h3>template&lt;int D, typename E&gt;<br/>
+class g2o::BaseMultiEdge&lt; D, E &gt;</h3>
+
+<p>base class to represent an edge connecting an arbitrary number of nodes </p>
+<p>D - Dimension of the measurement E - type to represent the measurement </p>
+
+<p>在文件 <a class="el" href="base__multi__edge_8h_source.html">base_multi_edge.h</a> 第 <a class="el" href="base__multi__edge_8h_source.html#l00051">51</a> 行定义.</p>
+</div><h2 class="groupheader">成员函数说明</h2>
+<a class="anchor" id="ae44ba0385d4dda4bc038d81e50cadd8c"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;int D, typename E &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void BaseMultiEdge::constructQuadraticForm </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Linearizes the constraint in the edge. Makes side effect on the vertices of the graph by changing the parameter vector b and the hessian blocks ii and jj. The off diagoinal block is accesed via _hessian. </p>
+
+<p>实现了 <a class="el" href="classg2o_1_1OptimizableGraph_1_1Edge.html#a56fbf3430ddf591e3c619bdd1b7e4499">g2o::OptimizableGraph::Edge</a>.</p>
+
+<p>在文件 <a class="el" href="base__multi__edge_8h_source.html">base_multi_edge.h</a> 第 <a class="el" href="base__multi__edge_8h_source.html#l00037">37</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a72176776797987b8ae79ea2e33971e9e"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;int D, typename E &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void BaseMultiEdge::linearizeOplus </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classg2o_1_1JacobianWorkspace.html">JacobianWorkspace</a> &amp;&#160;</td>
+          <td class="paramname"><em>jacobianWorkspace</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Linearizes the constraint in the edge in the manifold space, and store the result in the given workspace </p>
+
+<p>实现了 <a class="el" href="classg2o_1_1OptimizableGraph_1_1Edge.html#a0fdad5ebfb4efec9f893b57f67e0fbe1">g2o::OptimizableGraph::Edge</a>.</p>
+
+<p>在文件 <a class="el" href="base__multi__edge_8h_source.html">base_multi_edge.h</a> 第 <a class="el" href="base__multi__edge_8h_source.html#l00053">53</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a6196a4cd1ddc2ef27c1474252bb60e9f"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;int D, typename E &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void BaseMultiEdge::linearizeOplus </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Linearizes the oplus operator in the vertex, and stores the result in temporary variable vector _jacobianOplus </p>
+
+<p>在文件 <a class="el" href="base__multi__edge_8h_source.html">base_multi_edge.h</a> 第 <a class="el" href="base__multi__edge_8h_source.html#l00064">64</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="aecded66022b967fab0deb1c6a2d76445"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;int D, typename E &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void BaseMultiEdge::mapHessianMemory </td>
+          <td>(</td>
+          <td class="paramtype">double *&#160;</td>
+          <td class="paramname"><em>d</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>i</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>j</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>rowMajor</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>maps the internal matrix to some external memory location, you need to provide the memory before calling constructQuadraticForm </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">d</td><td>the memory location to which we map </td></tr>
+    <tr><td class="paramname">i</td><td>index of the vertex i </td></tr>
+    <tr><td class="paramname">j</td><td>index of the vertex j (j &gt; i, upper triangular fashion) </td></tr>
+    <tr><td class="paramname">rowMajor</td><td>if true, will write in rowMajor order to the block. Since EIGEN is columnMajor by default, this results in writing the transposed </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>实现了 <a class="el" href="classg2o_1_1OptimizableGraph_1_1Edge.html#a3bd233fd552daa166039acf47b69a5a7">g2o::OptimizableGraph::Edge</a>.</p>
+
+<p>在文件 <a class="el" href="base__multi__edge_8h_source.html">base_multi_edge.h</a> 第 <a class="el" href="base__multi__edge_8h_source.html#l00130">130</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="ae07ec9359cd515d0abc2100ee8aae93f"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;int D, typename E &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void BaseMultiEdge::resize </td>
+          <td>(</td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>size</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>resizes the number of vertices connected by this edge </p>
+
+<p>重载 <a class="el" href="classg2o_1_1HyperGraph_1_1Edge.html#ad8913f1149a0fd5bb628f0f1c8a91a55">g2o::HyperGraph::Edge</a> .</p>
+
+<p>在文件 <a class="el" href="base__multi__edge_8h_source.html">base_multi_edge.h</a> 第 <a class="el" href="base__multi__edge_8h_source.html#l00150">150</a> 行定义.</p>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>Thirdparty/g2o/g2o/core/<a class="el" href="base__multi__edge_8h_source.html">base_multi_edge.h</a></li>
+<li>Thirdparty/g2o/g2o/core/<a class="el" href="base__multi__edge_8hpp_source.html">base_multi_edge.hpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><b>g2o</b></li><li class="navelem"><a class="el" href="classg2o_1_1BaseMultiEdge.html">BaseMultiEdge</a></li>
+    <li class="footer">生成于 2017年 七月 18日 星期二 17:13:38 , 为 My Project使用 
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
+  </ul>
+</div>
+</body>
+</html>

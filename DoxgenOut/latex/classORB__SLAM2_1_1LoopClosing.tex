@@ -1,0 +1,315 @@
+\hypertarget{classORB__SLAM2_1_1LoopClosing}{\section{O\-R\-B\-\_\-\-S\-L\-A\-M2\-:\-:Loop\-Closing类 参考}
+\label{classORB__SLAM2_1_1LoopClosing}\index{O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Loop\-Closing@{O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Loop\-Closing}}
+}
+
+
+O\-R\-B\-\_\-\-S\-L\-A\-M2\-:\-:Loop\-Closing 的协作图\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classORB__SLAM2_1_1LoopClosing__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public 类型}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classORB__SLAM2_1_1LoopClosing_a8efed418be885643d3c43113ff1d7bb2}{typedef pair$<$ set$<$ \hyperlink{classORB__SLAM2_1_1KeyFrame}{Key\-Frame} $\ast$ $>$\\*
+, int $>$ {\bfseries Consistent\-Group}}\label{classORB__SLAM2_1_1LoopClosing_a8efed418be885643d3c43113ff1d7bb2}
+
+\item 
+\hypertarget{classORB__SLAM2_1_1LoopClosing_ae9ada143a8308ce32990a7c7b5d533ab}{typedef map$<$ \hyperlink{classORB__SLAM2_1_1KeyFrame}{Key\-Frame} \\*
+$\ast$, \hyperlink{structg2o_1_1Sim3}{g2o\-::\-Sim3}, std\-::less\\*
+$<$ \hyperlink{classORB__SLAM2_1_1KeyFrame}{Key\-Frame} $\ast$ $>$\\*
+, Eigen\-::aligned\-\_\-allocator\\*
+$<$ std\-::pair$<$ const \hyperlink{classORB__SLAM2_1_1KeyFrame}{Key\-Frame} \\*
+$\ast$, \hyperlink{structg2o_1_1Sim3}{g2o\-::\-Sim3} $>$ $>$ $>$ {\bfseries Key\-Frame\-And\-Pose}}\label{classORB__SLAM2_1_1LoopClosing_ae9ada143a8308ce32990a7c7b5d533ab}
+
+\end{DoxyCompactItemize}
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classORB__SLAM2_1_1LoopClosing_af5f7b8a43efa8bc771a5227ed2fbf460}{{\bfseries Loop\-Closing} (\hyperlink{classORB__SLAM2_1_1Map}{Map} $\ast$p\-Map, \hyperlink{classORB__SLAM2_1_1KeyFrameDatabase}{Key\-Frame\-Database} $\ast$p\-D\-B, \hyperlink{classDBoW2_1_1TemplatedVocabulary}{O\-R\-B\-Vocabulary} $\ast$p\-Voc, const bool b\-Fix\-Scale)}\label{classORB__SLAM2_1_1LoopClosing_af5f7b8a43efa8bc771a5227ed2fbf460}
+
+\item 
+\hypertarget{classORB__SLAM2_1_1LoopClosing_a20bce54d19c979511043d7c109aa741a}{void {\bfseries Set\-Tracker} (\hyperlink{classORB__SLAM2_1_1Tracking}{Tracking} $\ast$p\-Tracker)}\label{classORB__SLAM2_1_1LoopClosing_a20bce54d19c979511043d7c109aa741a}
+
+\item 
+\hypertarget{classORB__SLAM2_1_1LoopClosing_aa27124f61055c2b5f53497e918195269}{void {\bfseries Set\-Local\-Mapper} (\hyperlink{classORB__SLAM2_1_1LocalMapping}{Local\-Mapping} $\ast$p\-Local\-Mapper)}\label{classORB__SLAM2_1_1LoopClosing_aa27124f61055c2b5f53497e918195269}
+
+\item 
+\hypertarget{classORB__SLAM2_1_1LoopClosing_a520014f22059056d6256476bccb04471}{void {\bfseries Run} ()}\label{classORB__SLAM2_1_1LoopClosing_a520014f22059056d6256476bccb04471}
+
+\item 
+\hypertarget{classORB__SLAM2_1_1LoopClosing_a680d0b255d764754841e622f5af97473}{void {\bfseries Insert\-Key\-Frame} (\hyperlink{classORB__SLAM2_1_1KeyFrame}{Key\-Frame} $\ast$p\-K\-F)}\label{classORB__SLAM2_1_1LoopClosing_a680d0b255d764754841e622f5af97473}
+
+\item 
+\hypertarget{classORB__SLAM2_1_1LoopClosing_a7dc868b9f4b8381a94aae2c85bfec3c5}{void {\bfseries Request\-Reset} ()}\label{classORB__SLAM2_1_1LoopClosing_a7dc868b9f4b8381a94aae2c85bfec3c5}
+
+\item 
+\hypertarget{classORB__SLAM2_1_1LoopClosing_a4b10a9c18541818c9490a62447ef7f18}{void {\bfseries Run\-Global\-Bundle\-Adjustment} (unsigned long n\-Loop\-K\-F)}\label{classORB__SLAM2_1_1LoopClosing_a4b10a9c18541818c9490a62447ef7f18}
+
+\item 
+\hypertarget{classORB__SLAM2_1_1LoopClosing_a4ddc6674aa54db7d38946f73eb9776f2}{bool {\bfseries is\-Running\-G\-B\-A} ()}\label{classORB__SLAM2_1_1LoopClosing_a4ddc6674aa54db7d38946f73eb9776f2}
+
+\item 
+\hypertarget{classORB__SLAM2_1_1LoopClosing_aa8efb239cd4b488b12e7f1223c308a4e}{bool {\bfseries is\-Finished\-G\-B\-A} ()}\label{classORB__SLAM2_1_1LoopClosing_aa8efb239cd4b488b12e7f1223c308a4e}
+
+\item 
+\hypertarget{classORB__SLAM2_1_1LoopClosing_aa271039dcafe7cc053f72ba541bc499b}{void {\bfseries Request\-Finish} ()}\label{classORB__SLAM2_1_1LoopClosing_aa271039dcafe7cc053f72ba541bc499b}
+
+\item 
+\hypertarget{classORB__SLAM2_1_1LoopClosing_ac242214c60ed66e9432e0457e3fc29ad}{bool {\bfseries is\-Finished} ()}\label{classORB__SLAM2_1_1LoopClosing_ac242214c60ed66e9432e0457e3fc29ad}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{classORB__SLAM2_1_1LoopClosing_ac0c81e654509eb9384abe5e769db4f41}{Check\-New\-Key\-Frames} ()
+\item 
+bool \hyperlink{classORB__SLAM2_1_1LoopClosing_aa8110ca79cebaf509e378d30e55f1381}{Detect\-Loop} ()
+\item 
+bool \hyperlink{classORB__SLAM2_1_1LoopClosing_ab4fcf814eed5b5dd2aec96454561b078}{Compute\-Sim3} ()
+\begin{DoxyCompactList}\small\item\em 计算当前帧与闭环帧的\-Sim3变换等 \end{DoxyCompactList}\item 
+\hypertarget{classORB__SLAM2_1_1LoopClosing_aabe9d9b913f36b607c67b0ed0df42a1d}{void {\bfseries Search\-And\-Fuse} (const Key\-Frame\-And\-Pose \&Corrected\-Poses\-Map)}\label{classORB__SLAM2_1_1LoopClosing_aabe9d9b913f36b607c67b0ed0df42a1d}
+
+\item 
+void \hyperlink{classORB__SLAM2_1_1LoopClosing_aa007e0678582ec0de5d71280d23af540}{Correct\-Loop} ()
+\begin{DoxyCompactList}\small\item\em 闭环 \end{DoxyCompactList}\item 
+\hypertarget{classORB__SLAM2_1_1LoopClosing_a288545384b48c758f910a4762c873733}{void {\bfseries Reset\-If\-Requested} ()}\label{classORB__SLAM2_1_1LoopClosing_a288545384b48c758f910a4762c873733}
+
+\item 
+\hypertarget{classORB__SLAM2_1_1LoopClosing_ac13b01270b4daef9be2a098f82e9f64f}{bool {\bfseries Check\-Finish} ()}\label{classORB__SLAM2_1_1LoopClosing_ac13b01270b4daef9be2a098f82e9f64f}
+
+\item 
+\hypertarget{classORB__SLAM2_1_1LoopClosing_aeea102bfacf8538ef605d76e4192a622}{void {\bfseries Set\-Finish} ()}\label{classORB__SLAM2_1_1LoopClosing_aeea102bfacf8538ef605d76e4192a622}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected 属性}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classORB__SLAM2_1_1LoopClosing_ae9bac1131984f7915ab1fdf220912b0b}{bool {\bfseries mb\-Reset\-Requested}}\label{classORB__SLAM2_1_1LoopClosing_ae9bac1131984f7915ab1fdf220912b0b}
+
+\item 
+\hypertarget{classORB__SLAM2_1_1LoopClosing_a979cad182a7f7bb08be165304d93106b}{std\-::mutex {\bfseries m\-Mutex\-Reset}}\label{classORB__SLAM2_1_1LoopClosing_a979cad182a7f7bb08be165304d93106b}
+
+\item 
+\hypertarget{classORB__SLAM2_1_1LoopClosing_a9e3dfbee3d1635fe11e600f94b0f60dc}{bool {\bfseries mb\-Finish\-Requested}}\label{classORB__SLAM2_1_1LoopClosing_a9e3dfbee3d1635fe11e600f94b0f60dc}
+
+\item 
+\hypertarget{classORB__SLAM2_1_1LoopClosing_a6d8de49d49b647c33f3616f4cc95c42c}{bool {\bfseries mb\-Finished}}\label{classORB__SLAM2_1_1LoopClosing_a6d8de49d49b647c33f3616f4cc95c42c}
+
+\item 
+\hypertarget{classORB__SLAM2_1_1LoopClosing_a2bdc72e69885435e1c4f39b759c2ec8d}{std\-::mutex {\bfseries m\-Mutex\-Finish}}\label{classORB__SLAM2_1_1LoopClosing_a2bdc72e69885435e1c4f39b759c2ec8d}
+
+\item 
+\hypertarget{classORB__SLAM2_1_1LoopClosing_a0b1dabf1326afa9d6a28768fd6f498b4}{\hyperlink{classORB__SLAM2_1_1Map}{Map} $\ast$ {\bfseries mp\-Map}}\label{classORB__SLAM2_1_1LoopClosing_a0b1dabf1326afa9d6a28768fd6f498b4}
+
+\item 
+\hypertarget{classORB__SLAM2_1_1LoopClosing_ac3bff69250ab812292fb0a0e59cd3076}{\hyperlink{classORB__SLAM2_1_1Tracking}{Tracking} $\ast$ {\bfseries mp\-Tracker}}\label{classORB__SLAM2_1_1LoopClosing_ac3bff69250ab812292fb0a0e59cd3076}
+
+\item 
+\hypertarget{classORB__SLAM2_1_1LoopClosing_a5bc11ebe6d60187d4d1708932bbb52f6}{\hyperlink{classORB__SLAM2_1_1KeyFrameDatabase}{Key\-Frame\-Database} $\ast$ {\bfseries mp\-Key\-Frame\-D\-B}}\label{classORB__SLAM2_1_1LoopClosing_a5bc11ebe6d60187d4d1708932bbb52f6}
+
+\item 
+\hypertarget{classORB__SLAM2_1_1LoopClosing_ac9d1b37eb70edbc013a431d92a4d86d1}{\hyperlink{classDBoW2_1_1TemplatedVocabulary}{O\-R\-B\-Vocabulary} $\ast$ {\bfseries mp\-O\-R\-B\-Vocabulary}}\label{classORB__SLAM2_1_1LoopClosing_ac9d1b37eb70edbc013a431d92a4d86d1}
+
+\item 
+\hypertarget{classORB__SLAM2_1_1LoopClosing_a5eaa1b6d507d9bd138ab0f10a308e3c9}{\hyperlink{classORB__SLAM2_1_1LocalMapping}{Local\-Mapping} $\ast$ {\bfseries mp\-Local\-Mapper}}\label{classORB__SLAM2_1_1LoopClosing_a5eaa1b6d507d9bd138ab0f10a308e3c9}
+
+\item 
+\hypertarget{classORB__SLAM2_1_1LoopClosing_a4b5b9bb2ba5e3fe79428e4af9a002025}{std\-::list$<$ \hyperlink{classORB__SLAM2_1_1KeyFrame}{Key\-Frame} $\ast$ $>$ {\bfseries mlp\-Loop\-Key\-Frame\-Queue}}\label{classORB__SLAM2_1_1LoopClosing_a4b5b9bb2ba5e3fe79428e4af9a002025}
+
+\item 
+\hypertarget{classORB__SLAM2_1_1LoopClosing_a3c28fbf7b84469cd14b12f511d499533}{std\-::mutex {\bfseries m\-Mutex\-Loop\-Queue}}\label{classORB__SLAM2_1_1LoopClosing_a3c28fbf7b84469cd14b12f511d499533}
+
+\item 
+\hypertarget{classORB__SLAM2_1_1LoopClosing_a78c93c677c23ca7bf62a2a9652c008ff}{float {\bfseries mn\-Covisibility\-Consistency\-Th}}\label{classORB__SLAM2_1_1LoopClosing_a78c93c677c23ca7bf62a2a9652c008ff}
+
+\item 
+\hypertarget{classORB__SLAM2_1_1LoopClosing_a4b6bc1810ef5921462ebdeee32508118}{\hyperlink{classORB__SLAM2_1_1KeyFrame}{Key\-Frame} $\ast$ {\bfseries mp\-Current\-K\-F}}\label{classORB__SLAM2_1_1LoopClosing_a4b6bc1810ef5921462ebdeee32508118}
+
+\item 
+\hypertarget{classORB__SLAM2_1_1LoopClosing_a53d45d3e2f0a8e0c9797079b9ae4ea37}{\hyperlink{classORB__SLAM2_1_1KeyFrame}{Key\-Frame} $\ast$ {\bfseries mp\-Matched\-K\-F}}\label{classORB__SLAM2_1_1LoopClosing_a53d45d3e2f0a8e0c9797079b9ae4ea37}
+
+\item 
+\hypertarget{classORB__SLAM2_1_1LoopClosing_aede54de0cb62136859ccb297e890f573}{std\-::vector$<$ Consistent\-Group $>$ {\bfseries mv\-Consistent\-Groups}}\label{classORB__SLAM2_1_1LoopClosing_aede54de0cb62136859ccb297e890f573}
+
+\item 
+\hypertarget{classORB__SLAM2_1_1LoopClosing_ac545f793bc68348fea584022d1daa609}{std\-::vector$<$ \hyperlink{classORB__SLAM2_1_1KeyFrame}{Key\-Frame} $\ast$ $>$ {\bfseries mvp\-Enough\-Consistent\-Candidates}}\label{classORB__SLAM2_1_1LoopClosing_ac545f793bc68348fea584022d1daa609}
+
+\item 
+\hypertarget{classORB__SLAM2_1_1LoopClosing_ad9595220811b5b814d1413451ecbaa4d}{std\-::vector$<$ \hyperlink{classORB__SLAM2_1_1KeyFrame}{Key\-Frame} $\ast$ $>$ {\bfseries mvp\-Current\-Connected\-K\-Fs}}\label{classORB__SLAM2_1_1LoopClosing_ad9595220811b5b814d1413451ecbaa4d}
+
+\item 
+\hypertarget{classORB__SLAM2_1_1LoopClosing_afd07791eb7a84ea2de2ab9d88e32d4dc}{std\-::vector$<$ \hyperlink{classORB__SLAM2_1_1MapPoint}{Map\-Point} $\ast$ $>$ {\bfseries mvp\-Current\-Matched\-Points}}\label{classORB__SLAM2_1_1LoopClosing_afd07791eb7a84ea2de2ab9d88e32d4dc}
+
+\item 
+\hypertarget{classORB__SLAM2_1_1LoopClosing_a52778b54f944bab5a3580b82233e8c72}{std\-::vector$<$ \hyperlink{classORB__SLAM2_1_1MapPoint}{Map\-Point} $\ast$ $>$ {\bfseries mvp\-Loop\-Map\-Points}}\label{classORB__SLAM2_1_1LoopClosing_a52778b54f944bab5a3580b82233e8c72}
+
+\item 
+\hypertarget{classORB__SLAM2_1_1LoopClosing_abbb5a5f8a46de211d46aaa6129385ac2}{cv\-::\-Mat {\bfseries m\-Scw}}\label{classORB__SLAM2_1_1LoopClosing_abbb5a5f8a46de211d46aaa6129385ac2}
+
+\item 
+\hypertarget{classORB__SLAM2_1_1LoopClosing_a9ea331d48d572c8e269c90d35c0de1e7}{\hyperlink{structg2o_1_1Sim3}{g2o\-::\-Sim3} {\bfseries mg2o\-Scw}}\label{classORB__SLAM2_1_1LoopClosing_a9ea331d48d572c8e269c90d35c0de1e7}
+
+\item 
+\hypertarget{classORB__SLAM2_1_1LoopClosing_a6a6ee027c2c4c45fcd3811819c22953a}{long unsigned int {\bfseries m\-Last\-Loop\-K\-Fid}}\label{classORB__SLAM2_1_1LoopClosing_a6a6ee027c2c4c45fcd3811819c22953a}
+
+\item 
+\hypertarget{classORB__SLAM2_1_1LoopClosing_ad04c8ddd2135b81fabfa45891ab66add}{bool {\bfseries mb\-Running\-G\-B\-A}}\label{classORB__SLAM2_1_1LoopClosing_ad04c8ddd2135b81fabfa45891ab66add}
+
+\item 
+\hypertarget{classORB__SLAM2_1_1LoopClosing_acdfbeff51644bd4c3d2d54c637d95e6c}{bool {\bfseries mb\-Finished\-G\-B\-A}}\label{classORB__SLAM2_1_1LoopClosing_acdfbeff51644bd4c3d2d54c637d95e6c}
+
+\item 
+\hypertarget{classORB__SLAM2_1_1LoopClosing_a7e24710761d1788f395fafc16a1a8e80}{bool {\bfseries mb\-Stop\-G\-B\-A}}\label{classORB__SLAM2_1_1LoopClosing_a7e24710761d1788f395fafc16a1a8e80}
+
+\item 
+\hypertarget{classORB__SLAM2_1_1LoopClosing_a5e6e898fe4e8e5f680f840d746fa5565}{std\-::mutex {\bfseries m\-Mutex\-G\-B\-A}}\label{classORB__SLAM2_1_1LoopClosing_a5e6e898fe4e8e5f680f840d746fa5565}
+
+\item 
+\hypertarget{classORB__SLAM2_1_1LoopClosing_aeb14401ffb2cafdcef9f0a0323db6296}{std\-::thread $\ast$ {\bfseries mp\-Thread\-G\-B\-A}}\label{classORB__SLAM2_1_1LoopClosing_aeb14401ffb2cafdcef9f0a0323db6296}
+
+\item 
+\hypertarget{classORB__SLAM2_1_1LoopClosing_a11865c48bbad102b5177e4350de71bd4}{bool {\bfseries mb\-Fix\-Scale}}\label{classORB__SLAM2_1_1LoopClosing_a11865c48bbad102b5177e4350de71bd4}
+
+\item 
+\hypertarget{classORB__SLAM2_1_1LoopClosing_a52f6cde58a060bee5aa6d4e5b8d53cea}{bool {\bfseries mn\-Full\-B\-A\-Idx}}\label{classORB__SLAM2_1_1LoopClosing_a52f6cde58a060bee5aa6d4e5b8d53cea}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{详细描述}
+
+
+在文件 Loop\-Closing.\-h 第 44 行定义.
+
+
+
+\subsection{成员函数说明}
+\hypertarget{classORB__SLAM2_1_1LoopClosing_ac0c81e654509eb9384abe5e769db4f41}{\index{O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Loop\-Closing@{O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Loop\-Closing}!Check\-New\-Key\-Frames@{Check\-New\-Key\-Frames}}
+\index{Check\-New\-Key\-Frames@{Check\-New\-Key\-Frames}!ORB_SLAM2::LoopClosing@{O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Loop\-Closing}}
+\subsubsection[{Check\-New\-Key\-Frames}]{\setlength{\rightskip}{0pt plus 5cm}bool O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Loop\-Closing\-::\-Check\-New\-Key\-Frames (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classORB__SLAM2_1_1LoopClosing_ac0c81e654509eb9384abe5e769db4f41}
+查看列表中是否有等待被插入的关键帧 \begin{DoxyReturn}{返回}
+如果存在，返回true 
+\end{DoxyReturn}
+
+
+在文件 Loop\-Closing.\-cpp 第 106 行定义.
+
+\hypertarget{classORB__SLAM2_1_1LoopClosing_ab4fcf814eed5b5dd2aec96454561b078}{\index{O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Loop\-Closing@{O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Loop\-Closing}!Compute\-Sim3@{Compute\-Sim3}}
+\index{Compute\-Sim3@{Compute\-Sim3}!ORB_SLAM2::LoopClosing@{O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Loop\-Closing}}
+\subsubsection[{Compute\-Sim3}]{\setlength{\rightskip}{0pt plus 5cm}bool O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Loop\-Closing\-::\-Compute\-Sim3 (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classORB__SLAM2_1_1LoopClosing_ab4fcf814eed5b5dd2aec96454561b078}
+
+
+计算当前帧与闭环帧的\-Sim3变换等 
+
+
+\begin{DoxyEnumerate}
+\item 通过\-Bow加速描述子的匹配，利用\-R\-A\-N\-S\-A\-C粗略地计算出当前帧与闭环帧的\-Sim3（当前帧---闭环帧）
+\item 根据估计的\-Sim3，对3\-D点进行投影找到更多匹配，通过优化的方法计算更精确的\-Sim3（当前帧---闭环帧）
+\item 将闭环帧以及闭环帧相连的关键帧的\-Map\-Points与当前帧的点进行匹配（当前帧---闭环帧+相连关键帧）
+\end{DoxyEnumerate}
+
+注意以上匹配的结果均都存在成员变量mvp\-Current\-Matched\-Points中， 实际的更新步骤见\-Correct\-Loop()步骤3：\-Start Loop Fusion 
+
+在文件 Loop\-Closing.\-cpp 第 283 行定义.
+
+
+
+参考 O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Key\-Frame\-::\-Get\-Map\-Point\-Matches(), O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Key\-Frame\-::\-Get\-Vector\-Covisible\-Key\-Frames(), O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Optimizer\-::\-Optimize\-Sim3(), O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-O\-R\-Bmatcher\-::\-Search\-By\-Bo\-W(), O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-O\-R\-Bmatcher\-::\-Search\-By\-Projection() , 以及 O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-O\-R\-Bmatcher\-::\-Search\-By\-Sim3().
+
+
+
+函数调用图\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classORB__SLAM2_1_1LoopClosing_ab4fcf814eed5b5dd2aec96454561b078_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classORB__SLAM2_1_1LoopClosing_aa007e0678582ec0de5d71280d23af540}{\index{O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Loop\-Closing@{O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Loop\-Closing}!Correct\-Loop@{Correct\-Loop}}
+\index{Correct\-Loop@{Correct\-Loop}!ORB_SLAM2::LoopClosing@{O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Loop\-Closing}}
+\subsubsection[{Correct\-Loop}]{\setlength{\rightskip}{0pt plus 5cm}void O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Loop\-Closing\-::\-Correct\-Loop (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classORB__SLAM2_1_1LoopClosing_aa007e0678582ec0de5d71280d23af540}
+
+
+闭环 
+
+
+\begin{DoxyEnumerate}
+\item 通过求解的\-Sim3以及相对姿态关系，调整与当前帧相连的关键帧位姿以及这些关键帧观测到的\-Map\-Points的位置（相连关键帧---当前帧）
+\item 将闭环帧以及闭环帧相连的关键帧的\-Map\-Points和与当前帧相连的关键帧的点进行匹配（相连关键帧+当前帧---闭环帧+相连关键帧）
+\item 通过\-Map\-Points的匹配关系更新这些帧之间的连接关系，即更新covisibility graph
+\item 对\-Essential Graph（\-Pose Graph）进行优化，\-Map\-Points的位置则根据优化后的位姿做相对应的调整
+\item 创建线程进行全局\-Bundle Adjustment 
+\end{DoxyEnumerate}
+
+在文件 Loop\-Closing.\-cpp 第 505 行定义.
+
+
+
+参考 O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Key\-Frame\-::\-Add\-Map\-Point(), O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Map\-Point\-::\-Add\-Observation(), O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Map\-Point\-::\-Compute\-Distinctive\-Descriptors(), O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Key\-Frame\-::\-Get\-Connected\-Key\-Frames(), O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Key\-Frame\-::\-Get\-Map\-Point\-Matches(), O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Key\-Frame\-::\-Get\-Vector\-Covisible\-Key\-Frames(), O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Optimizer\-::\-Optimize\-Essential\-Graph(), O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Key\-Frame\-::\-Update\-Connections() , 以及 O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Map\-Point\-::\-Update\-Normal\-And\-Depth().
+
+
+
+函数调用图\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classORB__SLAM2_1_1LoopClosing_aa007e0678582ec0de5d71280d23af540_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classORB__SLAM2_1_1LoopClosing_aa8110ca79cebaf509e378d30e55f1381}{\index{O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Loop\-Closing@{O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Loop\-Closing}!Detect\-Loop@{Detect\-Loop}}
+\index{Detect\-Loop@{Detect\-Loop}!ORB_SLAM2::LoopClosing@{O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Loop\-Closing}}
+\subsubsection[{Detect\-Loop}]{\setlength{\rightskip}{0pt plus 5cm}bool O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Loop\-Closing\-::\-Detect\-Loop (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classORB__SLAM2_1_1LoopClosing_aa8110ca79cebaf509e378d30e55f1381}
+始终是要把当前关键帧add到关键帧数据库中。。。
+
+始终是要把当前关键帧add到关键帧数据库中。。。 
+
+在文件 Loop\-Closing.\-cpp 第 112 行定义.
+
+
+
+参考 O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Key\-Frame\-Database\-::add(), O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Key\-Frame\-Database\-::\-Detect\-Loop\-Candidates(), O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Key\-Frame\-::\-Get\-Connected\-Key\-Frames(), O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Key\-Frame\-::\-Get\-Vector\-Covisible\-Key\-Frames(), O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Key\-Frame\-::m\-Bow\-Vec , 以及 D\-Bo\-W2\-::\-Templated\-Vocabulary$<$ T\-Descriptor, F $>$\-::score().
+
+
+
+函数调用图\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classORB__SLAM2_1_1LoopClosing_aa8110ca79cebaf509e378d30e55f1381_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+该类的文档由以下文件生成\-:\begin{DoxyCompactItemize}
+\item 
+include/Loop\-Closing.\-h\item 
+src/Loop\-Closing.\-cpp\end{DoxyCompactItemize}

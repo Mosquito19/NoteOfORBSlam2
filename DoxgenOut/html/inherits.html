@@ -1,0 +1,503 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.6"/>
+<title>My Project: 类继承关系</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">My Project
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.6 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="pages.html"><span>相关页面</span></a></li>
+      <li><a href="modules.html"><span>模块</span></a></li>
+      <li><a href="namespaces.html"><span>命名空间</span></a></li>
+      <li class="current"><a href="annotated.html"><span>类</span></a></li>
+      <li><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>类列表</span></a></li>
+      <li><a href="classes.html"><span>类索引</span></a></li>
+      <li class="current"><a href="inherits.html"><span>类继承关系</span></a></li>
+      <li><a href="functions.html"><span>类成员</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('hierarchy.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>命名空间</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>友元</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>组</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>页</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">类继承关系</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock">
+<p><a href="hierarchy.html">浏览类继承关系表</a></p>
+</div><table border="0" cellspacing="10" cellpadding="0">
+<tr><td><img src="inherit_graph_0.png" border="0" alt="" usemap="#DBoW2_1_1FClass"/>
+<map name="DBoW2_1_1FClass" id="DBoW2_1_1FClass">
+<area shape="rect" id="node1" href="classDBoW2_1_1FClass.html" title="Generic class to encapsulate functions to manage descriptors. " alt="" coords="6,5,125,32"/><area shape="rect" id="node2" href="classDBoW2_1_1FORB.html" title="Functions to manipulate ORB descriptors. " alt="" coords="174,5,287,32"/></map>
+</td></tr>
+<tr><td><img src="inherit_graph_1.png" border="0" alt="" usemap="#DBoW2_1_1GeneralScoring"/>
+<map name="DBoW2_1_1GeneralScoring" id="DBoW2_1_1GeneralScoring">
+<area shape="rect" id="node1" href="classDBoW2_1_1GeneralScoring.html" title="Base class of scoring functions. " alt="" coords="5,5,171,32"/></map>
+</td></tr>
+<tr><td><img src="inherit_graph_2.png" border="0" alt="" usemap="#DBoW2_1_1TemplatedVocabulary_3_01TDescriptor_00_01F_01_4"/>
+<map name="DBoW2_1_1TemplatedVocabulary_3_01TDescriptor_00_01F_01_4" id="DBoW2_1_1TemplatedVocabulary_3_01TDescriptor_00_01F_01_4">
+<area shape="rect" id="node1" href="classDBoW2_1_1TemplatedVocabulary.html" title="Generic Vocabulary. " alt="" coords="5,5,208,46"/></map>
+</td></tr>
+<tr><td><img src="inherit_graph_3.png" border="0" alt="" usemap="#DBoW2_1_1TemplatedVocabulary_3_01TDescriptor_00_01F_01_4_1_1Node"/>
+<map name="DBoW2_1_1TemplatedVocabulary_3_01TDescriptor_00_01F_01_4_1_1Node" id="DBoW2_1_1TemplatedVocabulary_3_01TDescriptor_00_01F_01_4_1_1Node">
+<area shape="rect" id="node1" href="structDBoW2_1_1TemplatedVocabulary_1_1Node.html" title="Tree node. " alt="" coords="5,5,208,46"/></map>
+</td></tr>
+<tr><td><img src="inherit_graph_4.png" border="0" alt="" usemap="#DUtils_1_1Random"/>
+<map name="DUtils_1_1Random" id="DUtils_1_1Random">
+<area shape="rect" id="node1" href="classDUtils_1_1Random.html" title="Functions to generate pseudo&#45;random numbers. " alt="" coords="6,5,122,32"/></map>
+</td></tr>
+<tr><td><img src="inherit_graph_5.png" border="0" alt="" usemap="#DUtils_1_1Random_1_1UnrepeatedRandomizer"/>
+<map name="DUtils_1_1Random_1_1UnrepeatedRandomizer" id="DUtils_1_1Random_1_1UnrepeatedRandomizer">
+<area shape="rect" id="node1" href="classDUtils_1_1Random_1_1UnrepeatedRandomizer.html" title="Provides pseudo&#45;random numbers with no repetitions. " alt="" coords="6,5,197,46"/></map>
+</td></tr>
+<tr><td><img src="inherit_graph_6.png" border="0" alt="" usemap="#DUtils_1_1Timestamp"/>
+<map name="DUtils_1_1Timestamp" id="DUtils_1_1Timestamp">
+<area shape="rect" id="node1" href="classDUtils_1_1Timestamp.html" title="Timestamp. " alt="" coords="6,5,138,32"/></map>
+</td></tr>
+<tr><td><img src="inherit_graph_7.png" border="0" alt="" usemap="#g2o_1_1AbstractHyperGraphElementCreator"/>
+<map name="g2o_1_1AbstractHyperGraphElementCreator" id="g2o_1_1AbstractHyperGraphElementCreator">
+<area shape="rect" id="node1" href="classg2o_1_1AbstractHyperGraphElementCreator.html" title="Abstract interface for allocating HyperGraphElement. " alt="" coords="5,5,224,46"/><area shape="rect" id="node2" href="classg2o_1_1HyperGraphElementCreator.html" title="templatized creator class which creates graph elements " alt="" coords="273,12,517,39"/></map>
+</td></tr>
+<tr><td><img src="inherit_graph_8.png" border="0" alt="" usemap="#g2o_1_1AbstractOptimizationAlgorithmCreator"/>
+<map name="g2o_1_1AbstractOptimizationAlgorithmCreator" id="g2o_1_1AbstractOptimizationAlgorithmCreator">
+<area shape="rect" id="node1" href="classg2o_1_1AbstractOptimizationAlgorithmCreator.html" title="base for allocating an optimization algorithm " alt="" coords="5,5,179,46"/></map>
+</td></tr>
+<tr><td><img src="inherit_graph_9.png" border="0" alt="" usemap="#g2o_1_1AbstractRobustKernelCreator"/>
+<map name="g2o_1_1AbstractRobustKernelCreator" id="g2o_1_1AbstractRobustKernelCreator">
+<area shape="rect" id="node1" href="classg2o_1_1AbstractRobustKernelCreator.html" title="Abstract interface for allocating a robust kernel. " alt="" coords="5,5,184,46"/><area shape="rect" id="node2" href="classg2o_1_1RobustKernelCreator.html" title="templatized creator class which creates graph elements " alt="" coords="232,12,437,39"/></map>
+</td></tr>
+<tr><td><img src="inherit_graph_10.png" border="0" alt="" usemap="#g2o_1_1BaseMultiEdge_3_01D_00_01E_01_4_1_1HessianHelper"/>
+<map name="g2o_1_1BaseMultiEdge_3_01D_00_01E_01_4_1_1HessianHelper" id="g2o_1_1BaseMultiEdge_3_01D_00_01E_01_4_1_1HessianHelper">
+<area shape="rect" id="node1" href="structg2o_1_1BaseMultiEdge_1_1HessianHelper.html" title="helper for mapping the Hessian memory of the upper triangular block " alt="" coords="6,5,173,46"/></map>
+</td></tr>
+<tr><td><img src="inherit_graph_11.png" border="0" alt="" usemap="#g2o_1_1BaseProperty"/>
+<map name="g2o_1_1BaseProperty" id="g2o_1_1BaseProperty">
+<area shape="rect" id="node1" href="classg2o_1_1BaseProperty.html" title="g2o::BaseProperty" alt="" coords="5,81,136,108"/><area shape="rect" id="node2" href="classg2o_1_1Property.html" title="g2o::Property\&lt; T \&gt;" alt="" coords="199,5,331,32"/><area shape="rect" id="node3" href="classg2o_1_1Property.html" title="g2o::Property\&lt; bool \&gt;" alt="" coords="191,56,339,83"/><area shape="rect" id="node4" href="classg2o_1_1Property.html" title="g2o::Property\&lt; double \&gt;" alt="" coords="184,107,347,133"/><area shape="rect" id="node5" href="classg2o_1_1Property.html" title="g2o::Property\&lt; int \&gt;" alt="" coords="196,157,335,184"/></map>
+</td></tr>
+<tr><td><img src="inherit_graph_12.png" border="0" alt="" usemap="#g2o_1_1BlockSolverTraits_3_01__PoseDim_00_01__LandmarkDim_01_4"/>
+<map name="g2o_1_1BlockSolverTraits_3_01__PoseDim_00_01__LandmarkDim_01_4" id="g2o_1_1BlockSolverTraits_3_01__PoseDim_00_01__LandmarkDim_01_4">
+<area shape="rect" id="node1" href="structg2o_1_1BlockSolverTraits.html" title="traits to summarize the properties of the fixed size optimization problem " alt="" coords="5,5,208,46"/></map>
+</td></tr>
+<tr><td><img src="inherit_graph_13.png" border="0" alt="" usemap="#g2o_1_1BlockSolverTraits_3_01Eigen_1_1Dynamic_00_01Eigen_1_1Dynamic_01_4"/>
+<map name="g2o_1_1BlockSolverTraits_3_01Eigen_1_1Dynamic_00_01Eigen_1_1Dynamic_01_4" id="g2o_1_1BlockSolverTraits_3_01Eigen_1_1Dynamic_00_01Eigen_1_1Dynamic_01_4">
+<area shape="rect" id="node1" href="structg2o_1_1BlockSolverTraits_3_01Eigen_1_1Dynamic_00_01Eigen_1_1Dynamic_01_4.html" title="traits to summarize the properties of the dynamic size optimization problem " alt="" coords="5,4,173,60"/></map>
+</td></tr>
+<tr><td><img src="inherit_graph_14.png" border="0" alt="" usemap="#g2o_1_1Cache_1_1CacheKey"/>
+<map name="g2o_1_1Cache_1_1CacheKey" id="g2o_1_1Cache_1_1CacheKey">
+<area shape="rect" id="node1" href="classg2o_1_1Cache_1_1CacheKey.html" title="g2o::Cache::CacheKey" alt="" coords="6,5,165,32"/></map>
+</td></tr>
+<tr><td><img src="inherit_graph_15.png" border="0" alt="" usemap="#g2o_1_1ColSort"/>
+<map name="g2o_1_1ColSort" id="g2o_1_1ColSort">
+<area shape="rect" id="node1" href="structg2o_1_1ColSort.html" title="g2o::ColSort" alt="" coords="6,5,101,32"/></map>
+</td></tr>
+<tr><td><img src="inherit_graph_16.png" border="0" alt="" usemap="#g2o_1_1EstimatePropagator"/>
+<map name="g2o_1_1EstimatePropagator" id="g2o_1_1EstimatePropagator">
+<area shape="rect" id="node1" href="classg2o_1_1EstimatePropagator.html" title="propagation of an initial guess " alt="" coords="6,5,173,32"/></map>
+</td></tr>
+<tr><td><img src="inherit_graph_17.png" border="0" alt="" usemap="#g2o_1_1EstimatePropagator_1_1AdjacencyMapEntry"/>
+<map name="g2o_1_1EstimatePropagator_1_1AdjacencyMapEntry" id="g2o_1_1EstimatePropagator_1_1AdjacencyMapEntry">
+<area shape="rect" id="node1" href="classg2o_1_1EstimatePropagator_1_1AdjacencyMapEntry.html" title="data structure for loopuk during Dijkstra " alt="" coords="6,5,173,46"/></map>
+</td></tr>
+<tr><td><img src="inherit_graph_18.png" border="0" alt="" usemap="#g2o_1_1EstimatePropagator_1_1PriorityQueue"/>
+<map name="g2o_1_1EstimatePropagator_1_1PriorityQueue" id="g2o_1_1EstimatePropagator_1_1PriorityQueue">
+<area shape="rect" id="node2" href="classg2o_1_1EstimatePropagator_1_1PriorityQueue.html" title="priority queue for AdjacencyMapEntry " alt="" coords="129,5,295,46"/></map>
+</td></tr>
+<tr><td><img src="inherit_graph_19.png" border="0" alt="" usemap="#g2o_1_1EstimatePropagator_1_1PropagateAction"/>
+<map name="g2o_1_1EstimatePropagator_1_1PropagateAction" id="g2o_1_1EstimatePropagator_1_1PropagateAction">
+<area shape="rect" id="node1" href="structg2o_1_1EstimatePropagator_1_1PropagateAction.html" title="Applying the action for propagating. " alt="" coords="6,5,173,46"/></map>
+</td></tr>
+<tr><td><img src="inherit_graph_20.png" border="0" alt="" usemap="#g2o_1_1EstimatePropagator_1_1VertexIDHashFunction"/>
+<map name="g2o_1_1EstimatePropagator_1_1VertexIDHashFunction" id="g2o_1_1EstimatePropagator_1_1VertexIDHashFunction">
+<area shape="rect" id="node1" href="classg2o_1_1EstimatePropagator_1_1VertexIDHashFunction.html" title="hash function for a vertex " alt="" coords="6,5,173,46"/></map>
+</td></tr>
+<tr><td><img src="inherit_graph_21.png" border="0" alt="" usemap="#g2o_1_1EstimatePropagatorCost"/>
+<map name="g2o_1_1EstimatePropagatorCost" id="g2o_1_1EstimatePropagatorCost">
+<area shape="rect" id="node1" href="classg2o_1_1EstimatePropagatorCost.html" title="cost for traversing along active edges in the optimizer " alt="" coords="5,12,200,39"/><area shape="rect" id="node2" href="classg2o_1_1EstimatePropagatorCostOdometry.html" title="cost for traversing only odometry edges. " alt="" coords="248,5,443,46"/></map>
+</td></tr>
+<tr><td><img src="inherit_graph_22.png" border="0" alt="" usemap="#g2o_1_1Factory"/>
+<map name="g2o_1_1Factory" id="g2o_1_1Factory">
+<area shape="rect" id="node1" href="classg2o_1_1Factory.html" title="create vertices and edges based on TAGs in, for example, a file " alt="" coords="6,5,101,32"/></map>
+</td></tr>
+<tr><td><img src="inherit_graph_23.png" border="0" alt="" usemap="#g2o_1_1Factory_1_1CreatorInformation"/>
+<map name="g2o_1_1Factory_1_1CreatorInformation" id="g2o_1_1Factory_1_1CreatorInformation">
+<area shape="rect" id="node1" href="classg2o_1_1Factory_1_1CreatorInformation.html" title="g2o::Factory::CreatorInformation" alt="" coords="5,5,216,32"/></map>
+</td></tr>
+<tr><td><img src="inherit_graph_24.png" border="0" alt="" usemap="#g2o_1_1ForceLinker"/>
+<map name="g2o_1_1ForceLinker" id="g2o_1_1ForceLinker">
+<area shape="rect" id="node1" href="structg2o_1_1ForceLinker.html" title="g2o::ForceLinker" alt="" coords="6,5,125,32"/></map>
+</td></tr>
+<tr><td><img src="inherit_graph_25.png" border="0" alt="" usemap="#g2o_1_1G2OBatchStatistics"/>
+<map name="g2o_1_1G2OBatchStatistics" id="g2o_1_1G2OBatchStatistics">
+<area shape="rect" id="node1" href="structg2o_1_1G2OBatchStatistics.html" title="statistics about the optimization " alt="" coords="6,5,173,32"/></map>
+</td></tr>
+<tr><td><img src="inherit_graph_26.png" border="0" alt="" usemap="#g2o_1_1HyperDijkstra"/>
+<map name="g2o_1_1HyperDijkstra" id="g2o_1_1HyperDijkstra">
+<area shape="rect" id="node1" href="structg2o_1_1HyperDijkstra.html" title="g2o::HyperDijkstra" alt="" coords="5,5,136,32"/></map>
+</td></tr>
+<tr><td><img src="inherit_graph_27.png" border="0" alt="" usemap="#g2o_1_1HyperDijkstra_1_1AdjacencyMapEntry"/>
+<map name="g2o_1_1HyperDijkstra_1_1AdjacencyMapEntry" id="g2o_1_1HyperDijkstra_1_1AdjacencyMapEntry">
+<area shape="rect" id="node1" href="structg2o_1_1HyperDijkstra_1_1AdjacencyMapEntry.html" title="g2o::HyperDijkstra\l::AdjacencyMapEntry" alt="" coords="5,5,152,46"/></map>
+</td></tr>
+<tr><td><img src="inherit_graph_28.png" border="0" alt="" usemap="#g2o_1_1HyperDijkstra_1_1CostFunction"/>
+<map name="g2o_1_1HyperDijkstra_1_1CostFunction" id="g2o_1_1HyperDijkstra_1_1CostFunction">
+<area shape="rect" id="node1" href="structg2o_1_1HyperDijkstra_1_1CostFunction.html" title="g2o::HyperDijkstra\l::CostFunction" alt="" coords="5,5,136,46"/><area shape="rect" id="node2" href="structg2o_1_1UniformCostFunction.html" title="g2o::UniformCostFunction" alt="" coords="185,12,359,39"/></map>
+</td></tr>
+<tr><td><img src="inherit_graph_29.png" border="0" alt="" usemap="#g2o_1_1HyperDijkstra_1_1TreeAction"/>
+<map name="g2o_1_1HyperDijkstra_1_1TreeAction" id="g2o_1_1HyperDijkstra_1_1TreeAction">
+<area shape="rect" id="node1" href="structg2o_1_1HyperDijkstra_1_1TreeAction.html" title="g2o::HyperDijkstra\l::TreeAction" alt="" coords="5,5,136,46"/></map>
+</td></tr>
+<tr><td><img src="inherit_graph_30.png" border="0" alt="" usemap="#g2o_1_1HyperGraph"/>
+<map name="g2o_1_1HyperGraph" id="g2o_1_1HyperGraph">
+<area shape="rect" id="node1" href="classg2o_1_1HyperGraph.html" title="g2o::HyperGraph" alt="" coords="6,5,127,32"/><area shape="rect" id="node2" href="structg2o_1_1OptimizableGraph.html" title="g2o::OptimizableGraph" alt="" coords="176,5,331,32"/><area shape="rect" id="node3" href="classg2o_1_1SparseOptimizer.html" title="g2o::SparseOptimizer" alt="" coords="379,5,527,32"/></map>
+</td></tr>
+<tr><td><img src="inherit_graph_31.png" border="0" alt="" usemap="#g2o_1_1HyperGraph_1_1HyperGraphElement"/>
+<map name="g2o_1_1HyperGraph_1_1HyperGraphElement" id="g2o_1_1HyperGraph_1_1HyperGraphElement">
+<area shape="rect" id="node1" href="structg2o_1_1HyperGraph_1_1HyperGraphElement.html" title="g2o::HyperGraph::HyperGraph\lElement" alt="" coords="6,534,205,575"/><area shape="rect" id="node2" href="classg2o_1_1Cache.html" title="g2o::Cache" alt="" coords="293,440,382,467"/><area shape="rect" id="node3" href="classg2o_1_1HyperGraph_1_1Edge.html" title="g2o::HyperGraph::Edge" alt="" coords="258,491,417,517"/><area shape="rect" id="node25" href="classg2o_1_1HyperGraph_1_1Vertex.html" title="abstract Vertex, your types must derive from that one " alt="" coords="254,541,421,568"/><area shape="rect" id="node34" href="classg2o_1_1OptimizableGraph_1_1Data.html" title="data packet for a vertex. Extend this class to store in the vertices the potential additional informa..." alt="" coords="260,593,415,634"/><area shape="rect" id="node35" href="classg2o_1_1Parameter.html" title="g2o::Parameter" alt="" coords="282,659,393,685"/><area shape="rect" id="node4" href="classg2o_1_1OptimizableGraph_1_1Edge.html" title="g2o::OptimizableGraph\l::Edge" alt="" coords="469,353,624,394"/><area shape="rect" id="node5" href="classg2o_1_1BaseEdge.html" title="g2o::BaseEdge\&lt; D, Sim3 \&gt;" alt="" coords="683,111,866,137"/><area shape="rect" id="node8" href="classg2o_1_1BaseEdge.html" title="g2o::BaseEdge\&lt; D, Vector2d \&gt;" alt="" coords="672,216,877,243"/><area shape="rect" id="node16" href="classg2o_1_1BaseEdge.html" title="g2o::BaseEdge\&lt; D, Vector3d \&gt;" alt="" coords="672,360,877,387"/><area shape="rect" id="node21" href="classg2o_1_1BaseEdge.html" title="g2o::BaseEdge\&lt; D, E \&gt;" alt="" coords="693,493,856,520"/><area shape="rect" id="node6" href="classg2o_1_1BaseBinaryEdge.html" title="g2o::BaseBinaryEdge\l\&lt; 7, Sim3, VertexSim3Expmap,\l VertexSim3Expmap \&gt;" alt="" coords="938,5,1145,61"/><area shape="rect" id="node7" href="classg2o_1_1EdgeSim3.html" title="7D edge between two Vertex7 " alt="" coords="1266,20,1377,47"/><area shape="rect" id="node9" href="classg2o_1_1BaseBinaryEdge.html" title="g2o::BaseBinaryEdge\l\&lt; 2, Vector2d, VertexSBAPoint\lXYZ, VertexSE3Expmap \&gt;" alt="" coords="939,85,1143,141"/><area shape="rect" id="node11" href="classg2o_1_1BaseBinaryEdge.html" title="g2o::BaseBinaryEdge\l\&lt; 2, Vector2d, VertexSBAPoint\lXYZ, VertexSim3Expmap \&gt;" alt="" coords="939,165,1143,221"/><area shape="rect" id="node14" href="classg2o_1_1BaseUnaryEdge.html" title="g2o::BaseUnaryEdge\l\&lt; 2, Vector2d, VertexSE3Expmap \&gt;" alt="" coords="925,245,1157,286"/><area shape="rect" id="node10" href="classg2o_1_1EdgeSE3ProjectXYZ.html" title="NOTE uesd in Optimizer::BundleAdjustment(), Optimizer::LocalBundleAdjustment() " alt="" coords="1235,100,1408,127"/><area shape="rect" id="node12" href="classg2o_1_1EdgeInverseSim3ProjectXYZ.html" title="g2o::EdgeInverseSim3ProjectXYZ" alt="" coords="1211,151,1432,177"/><area shape="rect" id="node13" href="classg2o_1_1EdgeSim3ProjectXYZ.html" title="g2o::EdgeSim3ProjectXYZ" alt="" coords="1232,201,1411,228"/><area shape="rect" id="node15" href="classg2o_1_1EdgeSE3ProjectXYZOnlyPose.html" title="NOTE uesd in Optimizer::PoseOptimization() " alt="" coords="1206,252,1437,279"/><area shape="rect" id="node17" href="classg2o_1_1BaseBinaryEdge.html" title="g2o::BaseBinaryEdge\l\&lt; 3, Vector3d, VertexSBAPoint\lXYZ, VertexSE3Expmap \&gt;" alt="" coords="939,309,1143,365"/><area shape="rect" id="node19" href="classg2o_1_1BaseUnaryEdge.html" title="g2o::BaseUnaryEdge\l\&lt; 3, Vector3d, VertexSE3Expmap \&gt;" alt="" coords="925,389,1157,430"/><area shape="rect" id="node18" href="classg2o_1_1EdgeStereoSE3ProjectXYZ.html" title="NOTE uesd in Optimizer::BundleAdjustment(), Optimizer::LocalBundleAdjustment() " alt="" coords="1216,324,1427,351"/><area shape="rect" id="node20" href="classg2o_1_1EdgeStereoSE3ProjectXYZOnlyPose.html" title="NOTE uesd in Optimizer::PoseOptimization() " alt="" coords="1229,389,1414,430"/><area shape="rect" id="node22" href="classg2o_1_1BaseBinaryEdge.html" title="g2o::BaseBinaryEdge\l\&lt; D, E, VertexXi, VertexXj \&gt;" alt="" coords="947,454,1136,495"/><area shape="rect" id="node23" href="classg2o_1_1BaseMultiEdge.html" title="base class to represent an edge connecting an arbitrary number of nodes " alt="" coords="972,519,1111,561"/><area shape="rect" id="node24" href="classg2o_1_1BaseUnaryEdge.html" title="g2o::BaseUnaryEdge\l\&lt; D, E, VertexXi \&gt;" alt="" coords="968,585,1115,626"/><area shape="rect" id="node26" href="classg2o_1_1OptimizableGraph_1_1Vertex.html" title="A general case Vertex for optimization. " alt="" coords="469,701,624,742"/><area shape="rect" id="node27" href="classg2o_1_1BaseVertex.html" title="g2o::BaseVertex\&lt; 3,\l Vector3d \&gt;" alt="" coords="703,635,846,677"/><area shape="rect" id="node29" href="classg2o_1_1BaseVertex.html" title="g2o::BaseVertex\&lt; 6,\l SE3Quat \&gt;" alt="" coords="703,701,846,742"/><area shape="rect" id="node31" href="classg2o_1_1BaseVertex.html" title="g2o::BaseVertex\&lt; 7,\l Sim3 \&gt;" alt="" coords="703,766,846,807"/><area shape="rect" id="node33" href="classg2o_1_1BaseVertex.html" title="Templatized BaseVertex. " alt="" coords="690,832,859,859"/><area shape="rect" id="node28" href="classg2o_1_1VertexSBAPointXYZ.html" title="Point vertex, XYZ. " alt="" coords="955,651,1127,677"/><area shape="rect" id="node30" href="classg2o_1_1VertexSE3Expmap.html" title="SE3 Vertex parameterized internally with a transformation matrix and externally with its exponential ..." alt="" coords="960,708,1123,735"/><area shape="rect" id="node32" href="classg2o_1_1VertexSim3Expmap.html" title="Sim3 Vertex, (x,y,z,qw,qx,qy,qz) the parameterization for the increments constructed is a 7d vector (..." alt="" coords="958,773,1125,800"/></map>
+</td></tr>
+<tr><td><img src="inherit_graph_32.png" border="0" alt="" usemap="#g2o_1_1HyperGraphAction"/>
+<map name="g2o_1_1HyperGraphAction" id="g2o_1_1HyperGraphAction">
+<area shape="rect" id="node1" href="classg2o_1_1HyperGraphAction.html" title="Abstract action that operates on an entire graph. " alt="" coords="6,5,165,32"/></map>
+</td></tr>
+<tr><td><img src="inherit_graph_33.png" border="0" alt="" usemap="#g2o_1_1HyperGraphAction_1_1Parameters"/>
+<map name="g2o_1_1HyperGraphAction_1_1Parameters" id="g2o_1_1HyperGraphAction_1_1Parameters">
+<area shape="rect" id="node1" href="classg2o_1_1HyperGraphAction_1_1Parameters.html" title="g2o::HyperGraphAction\l::Parameters" alt="" coords="6,5,165,46"/><area shape="rect" id="node2" href="classg2o_1_1HyperGraphAction_1_1ParametersIteration.html" title="g2o::HyperGraphAction\l::ParametersIteration" alt="" coords="214,5,373,46"/></map>
+</td></tr>
+<tr><td><img src="inherit_graph_34.png" border="0" alt="" usemap="#g2o_1_1HyperGraphActionLibrary"/>
+<map name="g2o_1_1HyperGraphActionLibrary" id="g2o_1_1HyperGraphActionLibrary">
+<area shape="rect" id="node1" href="classg2o_1_1HyperGraphActionLibrary.html" title="library of actions, indexed by the action name; " alt="" coords="5,5,203,32"/></map>
+</td></tr>
+<tr><td><img src="inherit_graph_35.png" border="0" alt="" usemap="#g2o_1_1HyperGraphElementAction"/>
+<map name="g2o_1_1HyperGraphElementAction" id="g2o_1_1HyperGraphElementAction">
+<area shape="rect" id="node1" href="classg2o_1_1HyperGraphElementAction.html" title="Abstract action that operates on a graph entity. " alt="" coords="6,64,213,91"/><area shape="rect" id="node2" href="classg2o_1_1DrawAction.html" title="draw actions " alt="" coords="306,5,425,32"/><area shape="rect" id="node3" href="classg2o_1_1HyperGraphElementActionCollection.html" title="collection of actions " alt="" coords="262,57,469,98"/><area shape="rect" id="node4" href="classg2o_1_1WriteGnuplotAction.html" title="g2o::WriteGnuplotAction" alt="" coords="283,123,447,149"/></map>
+</td></tr>
+<tr><td><img src="inherit_graph_36.png" border="0" alt="" usemap="#g2o_1_1HyperGraphElementAction_1_1Parameters"/>
+<map name="g2o_1_1HyperGraphElementAction_1_1Parameters" id="g2o_1_1HyperGraphElementAction_1_1Parameters">
+<area shape="rect" id="node2" href="classDBoW2_1_1BowVector.html" title="DBoW2::BowVector" alt="" coords="135,5,275,32"/><area shape="rect" id="node3" href="classDBoW2_1_1FeatureVector.html" title="Vector of nodes with indexes of local features。正索引，node，对应的特征的标号 " alt="" coords="126,56,285,83"/><area shape="rect" id="node4" href="classg2o_1_1CacheContainer.html" title="g2o::CacheContainer" alt="" coords="133,107,278,133"/><area shape="rect" id="node5" href="classg2o_1_1ParameterContainer.html" title="map id to parameters " alt="" coords="122,157,289,184"/><area shape="rect" id="node6" href="classg2o_1_1PropertyMap.html" title="a collection of properties mapping from name to the property itself " alt="" coords="143,208,268,235"/><area shape="rect" id="node7" href="classg2o_1_1DrawAction_1_1Parameters.html" title="g2o::DrawAction::Parameters" alt="" coords="357,208,552,235"/><area shape="rect" id="node8" href="structg2o_1_1HyperGraphElementAction_1_1Parameters.html" title="g2o::HyperGraphElementAction\l::Parameters" alt="" coords="102,259,309,301"/><area shape="rect" id="node9" href="structg2o_1_1WriteGnuplotAction_1_1Parameters.html" title="g2o::WriteGnuplotAction\l::Parameters" alt="" coords="373,259,537,301"/></map>
+</td></tr>
+<tr><td><img src="inherit_graph_37.png" border="0" alt="" usemap="#g2o_1_1JacobianWorkspace"/>
+<map name="g2o_1_1JacobianWorkspace" id="g2o_1_1JacobianWorkspace">
+<area shape="rect" id="node1" href="classg2o_1_1JacobianWorkspace.html" title="provide memory workspace for computing the Jacobians " alt="" coords="6,5,175,32"/></map>
+</td></tr>
+<tr><td><img src="inherit_graph_38.png" border="0" alt="" usemap="#g2o_1_1LinearSolver_3_01MatrixType_01_4"/>
+<map name="g2o_1_1LinearSolver_3_01MatrixType_01_4" id="g2o_1_1LinearSolver_3_01MatrixType_01_4">
+<area shape="rect" id="node1" href="classg2o_1_1LinearSolver.html" title="basic solver for Ax = b " alt="" coords="5,70,136,111"/><area shape="rect" id="node2" href="classg2o_1_1LinearSolverCCS.html" title="Solver with faster iterating structure for the linear matrix. " alt="" coords="189,5,341,46"/><area shape="rect" id="node3" href="classg2o_1_1LinearSolverDense.html" title="linear solver using dense cholesky decomposition " alt="" coords="185,70,346,111"/><area shape="rect" id="node4" href="classg2o_1_1LinearSolverEigen.html" title="linear solver which uses the sparse Cholesky solver from Eigen " alt="" coords="187,135,343,177"/></map>
+</td></tr>
+<tr><td><img src="inherit_graph_39.png" border="0" alt="" usemap="#g2o_1_1LinearSolver_3_01PoseMatrixType_01_4"/>
+<map name="g2o_1_1LinearSolver_3_01PoseMatrixType_01_4" id="g2o_1_1LinearSolver_3_01PoseMatrixType_01_4">
+<area shape="rect" id="node1" href="classg2o_1_1LinearSolver.html" title="g2o::LinearSolver\&lt;\l PoseMatrixType \&gt;" alt="" coords="5,5,139,46"/></map>
+</td></tr>
+<tr><td><img src="inherit_graph_40.png" border="0" alt="" usemap="#g2o_1_1LinearSolverEigen_3_01MatrixType_01_4_1_1CholeskyDecomposition"/>
+<map name="g2o_1_1LinearSolverEigen_3_01MatrixType_01_4_1_1CholeskyDecomposition" id="g2o_1_1LinearSolverEigen_3_01MatrixType_01_4_1_1CholeskyDecomposition">
+<area shape="rect" id="node2" href="classg2o_1_1LinearSolverEigen_1_1CholeskyDecomposition.html" title="Sub&#45;classing Eigen&#39;s SimplicialLDLT to perform ordering with a given ordering. " alt="" coords="165,5,427,46"/></map>
+</td></tr>
+<tr><td><img src="inherit_graph_41.png" border="0" alt="" usemap="#g2o_1_1MarginalCovarianceCholesky"/>
+<map name="g2o_1_1MarginalCovarianceCholesky" id="g2o_1_1MarginalCovarianceCholesky">
+<area shape="rect" id="node1" href="classg2o_1_1MarginalCovarianceCholesky.html" title="computing the marginal covariance given a cholesky factor (lower triangle of the factor) ..." alt="" coords="5,5,227,32"/></map>
+</td></tr>
+<tr><td><img src="inherit_graph_42.png" border="0" alt="" usemap="#g2o_1_1MatrixElem"/>
+<map name="g2o_1_1MatrixElem" id="g2o_1_1MatrixElem">
+<area shape="rect" id="node1" href="structg2o_1_1MatrixElem.html" title="g2o::MatrixElem" alt="" coords="5,5,123,32"/></map>
+</td></tr>
+<tr><td><img src="inherit_graph_43.png" border="0" alt="" usemap="#g2o_1_1MatrixStructure"/>
+<map name="g2o_1_1MatrixStructure" id="g2o_1_1MatrixStructure">
+<area shape="rect" id="node1" href="classg2o_1_1MatrixStructure.html" title="representing the structure of a matrix in column compressed structure (only the upper triangular part..." alt="" coords="6,5,146,32"/></map>
+</td></tr>
+<tr><td><img src="inherit_graph_44.png" border="0" alt="" usemap="#g2o_1_1OpenMPMutex"/>
+<map name="g2o_1_1OpenMPMutex" id="g2o_1_1OpenMPMutex">
+<area shape="rect" id="node1" href="classg2o_1_1OpenMPMutex.html" title="g2o::OpenMPMutex" alt="" coords="5,5,144,32"/></map>
+</td></tr>
+<tr><td><img src="inherit_graph_45.png" border="0" alt="" usemap="#g2o_1_1OptimizableGraph_1_1EdgeIDCompare"/>
+<map name="g2o_1_1OptimizableGraph_1_1EdgeIDCompare" id="g2o_1_1OptimizableGraph_1_1EdgeIDCompare">
+<area shape="rect" id="node1" href="structg2o_1_1OptimizableGraph_1_1EdgeIDCompare.html" title="order edges based on the internal ID, which is assigned to the edge in addEdge() " alt="" coords="5,5,160,46"/></map>
+</td></tr>
+<tr><td><img src="inherit_graph_46.png" border="0" alt="" usemap="#g2o_1_1OptimizableGraph_1_1VertexIDCompare"/>
+<map name="g2o_1_1OptimizableGraph_1_1VertexIDCompare" id="g2o_1_1OptimizableGraph_1_1VertexIDCompare">
+<area shape="rect" id="node1" href="structg2o_1_1OptimizableGraph_1_1VertexIDCompare.html" title="order vertices based on their ID " alt="" coords="5,5,160,46"/></map>
+</td></tr>
+<tr><td><img src="inherit_graph_47.png" border="0" alt="" usemap="#g2o_1_1OptimizationAlgorithm"/>
+<map name="g2o_1_1OptimizationAlgorithm" id="g2o_1_1OptimizationAlgorithm">
+<area shape="rect" id="node1" href="classg2o_1_1OptimizationAlgorithm.html" title="Generic interface for a non&#45;linear solver operating on a graph. " alt="" coords="5,77,184,104"/><area shape="rect" id="node2" href="classg2o_1_1OptimizationAlgorithmWithHessian.html" title="Base for solvers operating on the approximated Hessian, e.g., Gauss&#45;Newton, Levenberg. " alt="" coords="232,70,411,111"/><area shape="rect" id="node3" href="classg2o_1_1OptimizationAlgorithmDogleg.html" title="Implementation of Powell&#39;s Dogleg Algorithm. " alt="" coords="459,5,637,46"/><area shape="rect" id="node4" href="classg2o_1_1OptimizationAlgorithmGaussNewton.html" title="Implementation of the Gauss Newton Algorithm. " alt="" coords="459,70,637,111"/><area shape="rect" id="node5" href="classg2o_1_1OptimizationAlgorithmLevenberg.html" title="Implementation of the Levenberg Algorithm. " alt="" coords="459,135,637,177"/></map>
+</td></tr>
+<tr><td><img src="inherit_graph_48.png" border="0" alt="" usemap="#g2o_1_1OptimizationAlgorithmFactory"/>
+<map name="g2o_1_1OptimizationAlgorithmFactory" id="g2o_1_1OptimizationAlgorithmFactory">
+<area shape="rect" id="node1" href="classg2o_1_1OptimizationAlgorithmFactory.html" title="create solvers based on their short name " alt="" coords="5,5,184,46"/></map>
+</td></tr>
+<tr><td><img src="inherit_graph_49.png" border="0" alt="" usemap="#g2o_1_1OptimizationAlgorithmProperty"/>
+<map name="g2o_1_1OptimizationAlgorithmProperty" id="g2o_1_1OptimizationAlgorithmProperty">
+<area shape="rect" id="node1" href="structg2o_1_1OptimizationAlgorithmProperty.html" title="describe the properties of a solver " alt="" coords="5,5,184,46"/></map>
+</td></tr>
+<tr><td><img src="inherit_graph_50.png" border="0" alt="" usemap="#g2o_1_1RegisterActionProxy_3_01T_01_4"/>
+<map name="g2o_1_1RegisterActionProxy_3_01T_01_4" id="g2o_1_1RegisterActionProxy_3_01T_01_4">
+<area shape="rect" id="node1" href="classg2o_1_1RegisterActionProxy.html" title="g2o::RegisterActionProxy\&lt; T \&gt;" alt="" coords="5,5,208,32"/></map>
+</td></tr>
+<tr><td><img src="inherit_graph_51.png" border="0" alt="" usemap="#g2o_1_1RegisterOptimizationAlgorithmProxy"/>
+<map name="g2o_1_1RegisterOptimizationAlgorithmProxy" id="g2o_1_1RegisterOptimizationAlgorithmProxy">
+<area shape="rect" id="node1" href="classg2o_1_1RegisterOptimizationAlgorithmProxy.html" title="g2o::RegisterOptimization\lAlgorithmProxy" alt="" coords="5,5,179,46"/></map>
+</td></tr>
+<tr><td><img src="inherit_graph_52.png" border="0" alt="" usemap="#g2o_1_1RegisterRobustKernelProxy_3_01T_01_4"/>
+<map name="g2o_1_1RegisterRobustKernelProxy_3_01T_01_4" id="g2o_1_1RegisterRobustKernelProxy_3_01T_01_4">
+<area shape="rect" id="node1" href="classg2o_1_1RegisterRobustKernelProxy.html" title="g2o::RegisterRobustKernel\lProxy\&lt; T \&gt;" alt="" coords="5,5,184,46"/></map>
+</td></tr>
+<tr><td><img src="inherit_graph_53.png" border="0" alt="" usemap="#g2o_1_1RegisterTypeProxy_3_01T_01_4"/>
+<map name="g2o_1_1RegisterTypeProxy_3_01T_01_4" id="g2o_1_1RegisterTypeProxy_3_01T_01_4">
+<area shape="rect" id="node1" href="classg2o_1_1RegisterTypeProxy.html" title="g2o::RegisterTypeProxy\&lt; T \&gt;" alt="" coords="5,5,200,32"/></map>
+</td></tr>
+<tr><td><img src="inherit_graph_54.png" border="0" alt="" usemap="#g2o_1_1RobustKernel"/>
+<map name="g2o_1_1RobustKernel" id="g2o_1_1RobustKernel">
+<area shape="rect" id="node1" href="classg2o_1_1RobustKernel.html" title="base for all robust cost functions " alt="" coords="5,157,136,184"/><area shape="rect" id="node2" href="classg2o_1_1RobustKernelCauchy.html" title="Cauchy cost function. " alt="" coords="202,5,377,32"/><area shape="rect" id="node3" href="classg2o_1_1RobustKernelDCS.html" title="Dynamic covariance scaling &#45; DCS. " alt="" coords="210,56,369,83"/><area shape="rect" id="node4" href="classg2o_1_1RobustKernelHuber.html" title="Huber Cost Function. " alt="" coords="207,107,372,133"/><area shape="rect" id="node5" href="classg2o_1_1RobustKernelPseudoHuber.html" title="Pseudo Huber Cost Function. " alt="" coords="185,157,394,184"/><area shape="rect" id="node6" href="classg2o_1_1RobustKernelSaturated.html" title="Saturated cost function. " alt="" coords="196,208,383,235"/><area shape="rect" id="node7" href="classg2o_1_1RobustKernelScaleDelta.html" title="scale a robust kernel to another delta (window size) " alt="" coords="192,259,387,285"/><area shape="rect" id="node8" href="classg2o_1_1RobustKernelTukey.html" title="Tukey Cost Function. " alt="" coords="206,309,373,336"/></map>
+</td></tr>
+<tr><td><img src="inherit_graph_55.png" border="0" alt="" usemap="#g2o_1_1RobustKernelFactory"/>
+<map name="g2o_1_1RobustKernelFactory" id="g2o_1_1RobustKernelFactory">
+<area shape="rect" id="node1" href="classg2o_1_1RobustKernelFactory.html" title="create robust kernels based on their human readable name " alt="" coords="6,5,181,32"/></map>
+</td></tr>
+<tr><td><img src="inherit_graph_56.png" border="0" alt="" usemap="#g2o_1_1ScopedOpenMPMutex"/>
+<map name="g2o_1_1ScopedOpenMPMutex" id="g2o_1_1ScopedOpenMPMutex">
+<area shape="rect" id="node1" href="classg2o_1_1ScopedOpenMPMutex.html" title="lock a mutex within a scope " alt="" coords="6,5,189,32"/></map>
+</td></tr>
+<tr><td><img src="inherit_graph_57.png" border="0" alt="" usemap="#g2o_1_1ScopeTime"/>
+<map name="g2o_1_1ScopeTime" id="g2o_1_1ScopeTime">
+<area shape="rect" id="node1" href="classg2o_1_1ScopeTime.html" title="Class to measure the time spent in a scope. " alt="" coords="5,5,123,32"/></map>
+</td></tr>
+<tr><td><img src="inherit_graph_58.png" border="0" alt="" usemap="#g2o_1_1SE3Quat"/>
+<map name="g2o_1_1SE3Quat" id="g2o_1_1SE3Quat">
+<area shape="rect" id="node1" href="classg2o_1_1SE3Quat.html" title="g2o::SE3Quat" alt="" coords="5,5,109,32"/></map>
+</td></tr>
+<tr><td><img src="inherit_graph_59.png" border="0" alt="" usemap="#g2o_1_1Sim3"/>
+<map name="g2o_1_1Sim3" id="g2o_1_1Sim3">
+<area shape="rect" id="node1" href="structg2o_1_1Sim3.html" title="g2o::Sim3" alt="" coords="6,5,87,32"/></map>
+</td></tr>
+<tr><td><img src="inherit_graph_60.png" border="0" alt="" usemap="#g2o_1_1Solver"/>
+<map name="g2o_1_1Solver" id="g2o_1_1Solver">
+<area shape="rect" id="node1" href="classg2o_1_1Solver.html" title="Generic interface for a sparse solver operating on a graph which solves one iteration of the lineariz..." alt="" coords="5,5,93,32"/><area shape="rect" id="node2" href="classg2o_1_1BlockSolverBase.html" title="base for the block solvers with some basic function interfaces " alt="" coords="142,5,293,32"/><area shape="rect" id="node3" href="classg2o_1_1BlockSolver.html" title="Implementation of a solver operating on the blocks of the Hessian. " alt="" coords="341,5,520,32"/></map>
+</td></tr>
+<tr><td><img src="inherit_graph_61.png" border="0" alt="" usemap="#g2o_1_1SparseBlockMatrix_3_01LandmarkMatrixType_01_4"/>
+<map name="g2o_1_1SparseBlockMatrix_3_01LandmarkMatrixType_01_4" id="g2o_1_1SparseBlockMatrix_3_01LandmarkMatrixType_01_4">
+<area shape="rect" id="node1" href="classg2o_1_1SparseBlockMatrix.html" title="g2o::SparseBlockMatrix\l\&lt; LandmarkMatrixType \&gt;" alt="" coords="5,5,173,46"/></map>
+</td></tr>
+<tr><td><img src="inherit_graph_62.png" border="0" alt="" usemap="#g2o_1_1SparseBlockMatrix_3_01MatrixType_01_4"/>
+<map name="g2o_1_1SparseBlockMatrix_3_01MatrixType_01_4" id="g2o_1_1SparseBlockMatrix_3_01MatrixType_01_4">
+<area shape="rect" id="node1" href="classg2o_1_1SparseBlockMatrix.html" title="Sparse matrix which uses blocks. " alt="" coords="6,5,167,46"/></map>
+</td></tr>
+<tr><td><img src="inherit_graph_63.png" border="0" alt="" usemap="#g2o_1_1SparseBlockMatrix_3_01PoseLandmarkMatrixType_01_4"/>
+<map name="g2o_1_1SparseBlockMatrix_3_01PoseLandmarkMatrixType_01_4" id="g2o_1_1SparseBlockMatrix_3_01PoseLandmarkMatrixType_01_4">
+<area shape="rect" id="node1" href="classg2o_1_1SparseBlockMatrix.html" title="g2o::SparseBlockMatrix\l\&lt; PoseLandmarkMatrixType \&gt;" alt="" coords="6,5,205,46"/></map>
+</td></tr>
+<tr><td><img src="inherit_graph_64.png" border="0" alt="" usemap="#g2o_1_1SparseBlockMatrix_3_01PoseMatrixType_01_4"/>
+<map name="g2o_1_1SparseBlockMatrix_3_01PoseMatrixType_01_4" id="g2o_1_1SparseBlockMatrix_3_01PoseMatrixType_01_4">
+<area shape="rect" id="node1" href="classg2o_1_1SparseBlockMatrix.html" title="g2o::SparseBlockMatrix\l\&lt; PoseMatrixType \&gt;" alt="" coords="6,5,167,46"/></map>
+</td></tr>
+<tr><td><img src="inherit_graph_65.png" border="0" alt="" usemap="#g2o_1_1SparseBlockMatrixCCS_3_01MatrixType_01_4"/>
+<map name="g2o_1_1SparseBlockMatrixCCS_3_01MatrixType_01_4" id="g2o_1_1SparseBlockMatrixCCS_3_01MatrixType_01_4">
+<area shape="rect" id="node1" href="classg2o_1_1SparseBlockMatrixCCS.html" title="Sparse matrix which uses blocks. " alt="" coords="6,5,197,46"/></map>
+</td></tr>
+<tr><td><img src="inherit_graph_66.png" border="0" alt="" usemap="#g2o_1_1SparseBlockMatrixCCS_3_01MatrixType_01_4_1_1RowBlock"/>
+<map name="g2o_1_1SparseBlockMatrixCCS_3_01MatrixType_01_4_1_1RowBlock" id="g2o_1_1SparseBlockMatrixCCS_3_01MatrixType_01_4_1_1RowBlock">
+<area shape="rect" id="node1" href="structg2o_1_1SparseBlockMatrixCCS_1_1RowBlock.html" title="A block within a column. " alt="" coords="6,5,197,46"/></map>
+</td></tr>
+<tr><td><img src="inherit_graph_67.png" border="0" alt="" usemap="#g2o_1_1SparseBlockMatrixCCS_3_01PoseLandmarkMatrixType_01_4"/>
+<map name="g2o_1_1SparseBlockMatrixCCS_3_01PoseLandmarkMatrixType_01_4" id="g2o_1_1SparseBlockMatrixCCS_3_01PoseLandmarkMatrixType_01_4">
+<area shape="rect" id="node1" href="classg2o_1_1SparseBlockMatrixCCS.html" title="g2o::SparseBlockMatrixCCS\l\&lt; PoseLandmarkMatrixType \&gt;" alt="" coords="6,5,205,46"/></map>
+</td></tr>
+<tr><td><img src="inherit_graph_68.png" border="0" alt="" usemap="#g2o_1_1SparseBlockMatrixCCS_3_01PoseMatrixType_01_4"/>
+<map name="g2o_1_1SparseBlockMatrixCCS_3_01PoseMatrixType_01_4" id="g2o_1_1SparseBlockMatrixCCS_3_01PoseMatrixType_01_4">
+<area shape="rect" id="node1" href="classg2o_1_1SparseBlockMatrixCCS.html" title="g2o::SparseBlockMatrixCCS\l\&lt; PoseMatrixType \&gt;" alt="" coords="6,5,197,46"/></map>
+</td></tr>
+<tr><td><img src="inherit_graph_69.png" border="0" alt="" usemap="#g2o_1_1SparseBlockMatrixDiagonal_3_01LandmarkMatrixType_01_4"/>
+<map name="g2o_1_1SparseBlockMatrixDiagonal_3_01LandmarkMatrixType_01_4" id="g2o_1_1SparseBlockMatrixDiagonal_3_01LandmarkMatrixType_01_4">
+<area shape="rect" id="node1" href="classg2o_1_1SparseBlockMatrixDiagonal.html" title="g2o::SparseBlockMatrixDiagonal\l\&lt; LandmarkMatrixType \&gt;" alt="" coords="6,5,218,46"/></map>
+</td></tr>
+<tr><td><img src="inherit_graph_70.png" border="0" alt="" usemap="#g2o_1_1SparseBlockMatrixDiagonal_3_01MatrixType_01_4"/>
+<map name="g2o_1_1SparseBlockMatrixDiagonal_3_01MatrixType_01_4" id="g2o_1_1SparseBlockMatrixDiagonal_3_01MatrixType_01_4">
+<area shape="rect" id="node1" href="classg2o_1_1SparseBlockMatrixDiagonal.html" title="Sparse matrix which uses blocks on the diagonal. " alt="" coords="6,5,218,46"/></map>
+</td></tr>
+<tr><td><img src="inherit_graph_71.png" border="0" alt="" usemap="#g2o_1_1SparseBlockMatrixHashMap_3_01MatrixType_01_4"/>
+<map name="g2o_1_1SparseBlockMatrixHashMap_3_01MatrixType_01_4" id="g2o_1_1SparseBlockMatrixHashMap_3_01MatrixType_01_4">
+<area shape="rect" id="node1" href="classg2o_1_1SparseBlockMatrixHashMap.html" title="Sparse matrix which uses blocks based on hash structures. " alt="" coords="5,5,197,46"/></map>
+</td></tr>
+<tr><td><img src="inherit_graph_72.png" border="0" alt="" usemap="#ImageGrabber"/>
+<map name="ImageGrabber" id="ImageGrabber">
+<area shape="rect" id="node1" href="classImageGrabber.html" title="ImageGrabber" alt="" coords="5,5,109,32"/></map>
+</td></tr>
+<tr><td><img src="inherit_graph_73.png" border="0" alt="" usemap="#ORB__SLAM2_1_1Converter"/>
+<map name="ORB__SLAM2_1_1Converter" id="ORB__SLAM2_1_1Converter">
+<area shape="rect" id="node1" href="classORB__SLAM2_1_1Converter.html" title="提供了一些常见的转换 " alt="" coords="6,5,173,32"/></map>
+</td></tr>
+<tr><td><img src="inherit_graph_74.png" border="0" alt="" usemap="#ORB__SLAM2_1_1ExtractorNode"/>
+<map name="ORB__SLAM2_1_1ExtractorNode" id="ORB__SLAM2_1_1ExtractorNode">
+<area shape="rect" id="node1" href="classORB__SLAM2_1_1ExtractorNode.html" title="ORB_SLAM2::ExtractorNode" alt="" coords="6,5,199,32"/></map>
+</td></tr>
+<tr><td><img src="inherit_graph_75.png" border="0" alt="" usemap="#ORB__SLAM2_1_1Frame"/>
+<map name="ORB__SLAM2_1_1Frame" id="ORB__SLAM2_1_1Frame">
+<area shape="rect" id="node1" href="classORB__SLAM2_1_1Frame.html" title="ORB_SLAM2::Frame" alt="" coords="5,5,152,32"/></map>
+</td></tr>
+<tr><td><img src="inherit_graph_76.png" border="0" alt="" usemap="#ORB__SLAM2_1_1FrameDrawer"/>
+<map name="ORB__SLAM2_1_1FrameDrawer" id="ORB__SLAM2_1_1FrameDrawer">
+<area shape="rect" id="node1" href="classORB__SLAM2_1_1FrameDrawer.html" title="ORB_SLAM2::FrameDrawer" alt="" coords="6,5,194,32"/></map>
+</td></tr>
+<tr><td><img src="inherit_graph_77.png" border="0" alt="" usemap="#ORB__SLAM2_1_1Initializer"/>
+<map name="ORB__SLAM2_1_1Initializer" id="ORB__SLAM2_1_1Initializer">
+<area shape="rect" id="node1" href="classORB__SLAM2_1_1Initializer.html" title="单目SLAM初始化相关，双目和RGBD不会使用这个类 " alt="" coords="6,5,167,32"/></map>
+</td></tr>
+<tr><td><img src="inherit_graph_78.png" border="0" alt="" usemap="#ORB__SLAM2_1_1KeyFrame"/>
+<map name="ORB__SLAM2_1_1KeyFrame" id="ORB__SLAM2_1_1KeyFrame">
+<area shape="rect" id="node1" href="classORB__SLAM2_1_1KeyFrame.html" title="ORB_SLAM2::KeyFrame" alt="" coords="6,5,175,32"/></map>
+</td></tr>
+<tr><td><img src="inherit_graph_79.png" border="0" alt="" usemap="#ORB__SLAM2_1_1KeyFrameDatabase"/>
+<map name="ORB__SLAM2_1_1KeyFrameDatabase" id="ORB__SLAM2_1_1KeyFrameDatabase">
+<area shape="rect" id="node1" href="classORB__SLAM2_1_1KeyFrameDatabase.html" title="ORB_SLAM2::KeyFrameDatabase" alt="" coords="6,5,231,32"/></map>
+</td></tr>
+<tr><td><img src="inherit_graph_80.png" border="0" alt="" usemap="#ORB__SLAM2_1_1LocalMapping"/>
+<map name="ORB__SLAM2_1_1LocalMapping" id="ORB__SLAM2_1_1LocalMapping">
+<area shape="rect" id="node1" href="classORB__SLAM2_1_1LocalMapping.html" title="ORB_SLAM2::LocalMapping" alt="" coords="5,5,195,32"/></map>
+</td></tr>
+<tr><td><img src="inherit_graph_81.png" border="0" alt="" usemap="#ORB__SLAM2_1_1LoopClosing"/>
+<map name="ORB__SLAM2_1_1LoopClosing" id="ORB__SLAM2_1_1LoopClosing">
+<area shape="rect" id="node1" href="classORB__SLAM2_1_1LoopClosing.html" title="ORB_SLAM2::LoopClosing" alt="" coords="5,5,187,32"/></map>
+</td></tr>
+<tr><td><img src="inherit_graph_82.png" border="0" alt="" usemap="#ORB__SLAM2_1_1Map"/>
+<map name="ORB__SLAM2_1_1Map" id="ORB__SLAM2_1_1Map">
+<area shape="rect" id="node1" href="classORB__SLAM2_1_1Map.html" title="ORB_SLAM2::Map" alt="" coords="6,5,141,32"/></map>
+</td></tr>
+<tr><td><img src="inherit_graph_83.png" border="0" alt="" usemap="#ORB__SLAM2_1_1MapDrawer"/>
+<map name="ORB__SLAM2_1_1MapDrawer" id="ORB__SLAM2_1_1MapDrawer">
+<area shape="rect" id="node1" href="classORB__SLAM2_1_1MapDrawer.html" title="ORB_SLAM2::MapDrawer" alt="" coords="5,5,181,32"/></map>
+</td></tr>
+<tr><td><img src="inherit_graph_84.png" border="0" alt="" usemap="#ORB__SLAM2_1_1MapPoint"/>
+<map name="ORB__SLAM2_1_1MapPoint" id="ORB__SLAM2_1_1MapPoint">
+<area shape="rect" id="node1" href="classORB__SLAM2_1_1MapPoint.html" title="MapPoint是一个地图点 " alt="" coords="6,5,170,32"/></map>
+</td></tr>
+<tr><td><img src="inherit_graph_85.png" border="0" alt="" usemap="#ORB__SLAM2_1_1Optimizer"/>
+<map name="ORB__SLAM2_1_1Optimizer" id="ORB__SLAM2_1_1Optimizer">
+<area shape="rect" id="node1" href="classORB__SLAM2_1_1Optimizer.html" title="ORB_SLAM2::Optimizer" alt="" coords="5,5,171,32"/></map>
+</td></tr>
+<tr><td><img src="inherit_graph_86.png" border="0" alt="" usemap="#ORB__SLAM2_1_1ORBextractor"/>
+<map name="ORB__SLAM2_1_1ORBextractor" id="ORB__SLAM2_1_1ORBextractor">
+<area shape="rect" id="node1" href="classORB__SLAM2_1_1ORBextractor.html" title="ORB_SLAM2::ORBextractor" alt="" coords="5,5,195,32"/></map>
+</td></tr>
+<tr><td><img src="inherit_graph_87.png" border="0" alt="" usemap="#ORB__SLAM2_1_1ORBmatcher"/>
+<map name="ORB__SLAM2_1_1ORBmatcher" id="ORB__SLAM2_1_1ORBmatcher">
+<area shape="rect" id="node1" href="classORB__SLAM2_1_1ORBmatcher.html" title="ORB_SLAM2::ORBmatcher" alt="" coords="6,5,191,32"/></map>
+</td></tr>
+<tr><td><img src="inherit_graph_88.png" border="0" alt="" usemap="#ORB__SLAM2_1_1PnPsolver"/>
+<map name="ORB__SLAM2_1_1PnPsolver" id="ORB__SLAM2_1_1PnPsolver">
+<area shape="rect" id="node1" href="classORB__SLAM2_1_1PnPsolver.html" title="ORB_SLAM2::PnPsolver" alt="" coords="6,5,175,32"/></map>
+</td></tr>
+<tr><td><img src="inherit_graph_89.png" border="0" alt="" usemap="#ORB__SLAM2_1_1Sim3Solver"/>
+<map name="ORB__SLAM2_1_1Sim3Solver" id="ORB__SLAM2_1_1Sim3Solver">
+<area shape="rect" id="node1" href="classORB__SLAM2_1_1Sim3Solver.html" title="ORB_SLAM2::Sim3Solver" alt="" coords="5,5,181,32"/></map>
+</td></tr>
+<tr><td><img src="inherit_graph_90.png" border="0" alt="" usemap="#ORB__SLAM2_1_1System"/>
+<map name="ORB__SLAM2_1_1System" id="ORB__SLAM2_1_1System">
+<area shape="rect" id="node1" href="classORB__SLAM2_1_1System.html" title="ORB_SLAM2::System" alt="" coords="5,5,160,32"/></map>
+</td></tr>
+<tr><td><img src="inherit_graph_91.png" border="0" alt="" usemap="#ORB__SLAM2_1_1Tracking"/>
+<map name="ORB__SLAM2_1_1Tracking" id="ORB__SLAM2_1_1Tracking">
+<area shape="rect" id="node1" href="classORB__SLAM2_1_1Tracking.html" title="ORB_SLAM2::Tracking" alt="" coords="6,5,165,32"/></map>
+</td></tr>
+<tr><td><img src="inherit_graph_92.png" border="0" alt="" usemap="#ORB__SLAM2_1_1Viewer"/>
+<map name="ORB__SLAM2_1_1Viewer" id="ORB__SLAM2_1_1Viewer">
+<area shape="rect" id="node1" href="classORB__SLAM2_1_1Viewer.html" title="ORB_SLAM2::Viewer" alt="" coords="5,5,155,32"/></map>
+</td></tr>
+<tr><td><img src="inherit_graph_93.png" border="0" alt="" usemap="#Rectify"/>
+<map name="Rectify" id="Rectify">
+<area shape="rect" id="node1" href="classRectify.html" title="Rectify" alt="" coords="5,5,69,32"/></map>
+</td></tr>
+</table>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">生成于 2017年 七月 18日 星期二 17:13:40 , 为 My Project使用 
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
+  </ul>
+</div>
+</body>
+</html>

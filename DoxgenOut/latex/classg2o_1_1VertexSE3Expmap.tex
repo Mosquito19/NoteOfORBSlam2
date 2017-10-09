@@ -1,0 +1,90 @@
+\hypertarget{classg2o_1_1VertexSE3Expmap}{\section{g2o\-:\-:Vertex\-S\-E3\-Expmap类 参考}
+\label{classg2o_1_1VertexSE3Expmap}\index{g2o\-::\-Vertex\-S\-E3\-Expmap@{g2o\-::\-Vertex\-S\-E3\-Expmap}}
+}
+
+
+S\-E3 Vertex parameterized internally with a transformation matrix and externally with its exponential map.  
+
+
+
+
+{\ttfamily \#include $<$types\-\_\-six\-\_\-dof\-\_\-expmap.\-h$>$}
+
+
+
+类 g2o\-:\-:Vertex\-S\-E3\-Expmap 继承关系图\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=228pt]{classg2o_1_1VertexSE3Expmap__inherit__graph}
+\end{center}
+\end{figure}
+
+
+g2o\-:\-:Vertex\-S\-E3\-Expmap 的协作图\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classg2o_1_1VertexSE3Expmap__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classg2o_1_1VertexSE3Expmap_a4f5913373d24ea5963fffc6830406a52}{bool \hyperlink{classg2o_1_1VertexSE3Expmap_a4f5913373d24ea5963fffc6830406a52}{read} (std\-::istream \&is)}\label{classg2o_1_1VertexSE3Expmap_a4f5913373d24ea5963fffc6830406a52}
+
+\begin{DoxyCompactList}\small\item\em read the vertex from a stream, i.\-e., the internal state of the vertex \end{DoxyCompactList}\item 
+\hypertarget{classg2o_1_1VertexSE3Expmap_a0a4a06afd69669c50cf5f66c5a013e83}{bool \hyperlink{classg2o_1_1VertexSE3Expmap_a0a4a06afd69669c50cf5f66c5a013e83}{write} (std\-::ostream \&os) const }\label{classg2o_1_1VertexSE3Expmap_a0a4a06afd69669c50cf5f66c5a013e83}
+
+\begin{DoxyCompactList}\small\item\em write the vertex to a stream \end{DoxyCompactList}\item 
+\hypertarget{classg2o_1_1VertexSE3Expmap_a0d12948c1fb058698bc58177db3806b1}{virtual void \hyperlink{classg2o_1_1VertexSE3Expmap_a0d12948c1fb058698bc58177db3806b1}{set\-To\-Origin\-Impl} ()}\label{classg2o_1_1VertexSE3Expmap_a0d12948c1fb058698bc58177db3806b1}
+
+\begin{DoxyCompactList}\small\item\em sets the node to the origin (used in the multilevel stuff) \end{DoxyCompactList}\item 
+virtual void \hyperlink{classg2o_1_1VertexSE3Expmap_a52592993e7ab5de6fe4bb0f9e00c4d39}{oplus\-Impl} (const double $\ast$update\-\_\-)
+\end{DoxyCompactItemize}
+\subsection*{额外继承的成员函数}
+
+
+\subsection{详细描述}
+S\-E3 Vertex parameterized internally with a transformation matrix and externally with its exponential map. 
+
+在文件 types\-\_\-six\-\_\-dof\-\_\-expmap.\-h 第 61 行定义.
+
+
+
+\subsection{成员函数说明}
+\hypertarget{classg2o_1_1VertexSE3Expmap_a52592993e7ab5de6fe4bb0f9e00c4d39}{\index{g2o\-::\-Vertex\-S\-E3\-Expmap@{g2o\-::\-Vertex\-S\-E3\-Expmap}!oplus\-Impl@{oplus\-Impl}}
+\index{oplus\-Impl@{oplus\-Impl}!g2o::VertexSE3Expmap@{g2o\-::\-Vertex\-S\-E3\-Expmap}}
+\subsubsection[{oplus\-Impl}]{\setlength{\rightskip}{0pt plus 5cm}virtual void g2o\-::\-Vertex\-S\-E3\-Expmap\-::oplus\-Impl (
+\begin{DoxyParamCaption}
+\item[{const double $\ast$}]{update\-\_\-}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classg2o_1_1VertexSE3Expmap_a52592993e7ab5de6fe4bb0f9e00c4d39}
+$ T \leftarrow exp(\hat{\xi})T $ 
+\begin{DoxyParams}{参数}
+{\em update\-\_\-} & $ \xi $ = \mbox{[}w1 w2 w3 v1 v2 v3\mbox{]} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{注解}
+这里增量乘在左边 
+\end{DoxyNote}
+\begin{DoxySeeAlso}{参见}
+jlblanco2010geometry3d\-\_\-techrep.\-pdf 10.\-2 \par
+ 左乘右乘只是每次更新得到的增量的符号是不一样的,最终结果相同 
+\end{DoxySeeAlso}
+
+
+实现了 \hyperlink{classg2o_1_1OptimizableGraph_1_1Vertex_a4537a46afb8d12c3f18c88ba9601c625}{g2o\-::\-Optimizable\-Graph\-::\-Vertex}.
+
+
+
+在文件 types\-\_\-six\-\_\-dof\-\_\-expmap.\-h 第 82 行定义.
+
+
+
+该类的文档由以下文件生成\-:\begin{DoxyCompactItemize}
+\item 
+Thirdparty/g2o/g2o/types/types\-\_\-six\-\_\-dof\-\_\-expmap.\-h\item 
+Thirdparty/g2o/g2o/types/types\-\_\-six\-\_\-dof\-\_\-expmap.\-cpp\end{DoxyCompactItemize}

@@ -1,0 +1,7 @@
+<map id="ORB_SLAM2::Frame::ComputeBoW" name="ORB_SLAM2::Frame::ComputeBoW">
+<area shape="rect" id="node2" href="$classORB__SLAM2_1_1Converter.html#abef47701eefdbc74c2c1625c140963fd" title="一个描述子矩阵到一串单行的描述子向量 " alt="" coords="309,5,475,46"/>
+<area shape="rect" id="node3" href="$classDBoW2_1_1TemplatedVocabulary.html#af9fc1935403dcaf1fd8c44d96ae3328d" title="DBoW2::TemplatedVocabulary\l::transform" alt="" coords="291,70,493,111"/>
+<area shape="rect" id="node4" href="$classDBoW2_1_1BowVector.html#a5ddf10e444d10425e5bd3568dc7ffe5e" title="DBoW2::BowVector::addIfNot\lExist" alt="" coords="547,11,746,53"/>
+<area shape="rect" id="node5" href="$classDBoW2_1_1BowVector.html#a3ac92a805b252c93dc6535240d02df47" title="DBoW2::BowVector::addWeight" alt="" coords="541,77,752,104"/>
+<area shape="rect" id="node6" href="$classDBoW2_1_1BowVector.html#acd2dd34023e3053a4cc75d70c8b6ac13" title="DBoW2::BowVector::normalize" alt="" coords="545,128,749,155"/>
+</map>

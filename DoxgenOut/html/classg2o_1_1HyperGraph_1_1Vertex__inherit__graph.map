@@ -1,0 +1,11 @@
+<map id="g2o::HyperGraph::Vertex" name="g2o::HyperGraph::Vertex">
+<area shape="rect" id="node3" href="$classg2o_1_1OptimizableGraph_1_1Vertex.html" title="A general case Vertex for optimization. " alt="" coords="469,105,624,146"/>
+<area shape="rect" id="node2" href="$structg2o_1_1HyperGraph_1_1HyperGraphElement.html" title="g2o::HyperGraph::HyperGraph\lElement" alt="" coords="6,105,205,146"/>
+<area shape="rect" id="node4" href="$classg2o_1_1BaseVertex.html" title="g2o::BaseVertex\&lt; 3,\l Vector3d \&gt;" alt="" coords="686,6,829,47"/>
+<area shape="rect" id="node6" href="$classg2o_1_1BaseVertex.html" title="g2o::BaseVertex\&lt; 6,\l SE3Quat \&gt;" alt="" coords="686,71,829,113"/>
+<area shape="rect" id="node8" href="$classg2o_1_1BaseVertex.html" title="g2o::BaseVertex\&lt; 7,\l Sim3 \&gt;" alt="" coords="686,137,829,178"/>
+<area shape="rect" id="node10" href="$classg2o_1_1BaseVertex.html" title="Templatized BaseVertex. " alt="" coords="673,203,842,229"/>
+<area shape="rect" id="node5" href="$classg2o_1_1VertexSBAPointXYZ.html" title="Point vertex, XYZ. " alt="" coords="891,13,1063,40"/>
+<area shape="rect" id="node7" href="$classg2o_1_1VertexSE3Expmap.html" title="SE3 Vertex parameterized internally with a transformation matrix and externally with its exponential ..." alt="" coords="896,79,1059,105"/>
+<area shape="rect" id="node9" href="$classg2o_1_1VertexSim3Expmap.html" title="Sim3 Vertex, (x,y,z,qw,qx,qy,qz) the parameterization for the increments constructed is a 7d vector (..." alt="" coords="894,144,1061,171"/>
+</map>

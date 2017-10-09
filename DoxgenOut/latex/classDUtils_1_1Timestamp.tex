@@ -1,0 +1,606 @@
+\hypertarget{classDUtils_1_1Timestamp}{\section{D\-Utils\-:\-:Timestamp类 参考}
+\label{classDUtils_1_1Timestamp}\index{D\-Utils\-::\-Timestamp@{D\-Utils\-::\-Timestamp}}
+}
+
+
+\hyperlink{classDUtils_1_1Timestamp}{Timestamp}.  
+
+
+
+
+{\ttfamily \#include $<$Timestamp.\-h$>$}
+
+\subsection*{Public 类型}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{classDUtils_1_1Timestamp_a5a8a3cb7f9e0f73bf11fce42688b06c8}{t\-Options} \{ {\bfseries N\-O\-N\-E} = 0, 
+{\bfseries C\-U\-R\-R\-E\-N\-T\-\_\-\-T\-I\-M\-E} = 0x1, 
+{\bfseries Z\-E\-R\-O} = 0x2
+ \}
+\begin{DoxyCompactList}\small\item\em Options to initiate a timestamp. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classDUtils_1_1Timestamp_a7edd67789d60b27acbee7f591ed3e2da}{Timestamp} (\hyperlink{classDUtils_1_1Timestamp_a5a8a3cb7f9e0f73bf11fce42688b06c8}{Timestamp\-::t\-Options} option=N\-O\-N\-E)
+\item 
+virtual \hyperlink{classDUtils_1_1Timestamp_a06ea20fe67d9e7177818ba219ea3137f}{$\sim$\-Timestamp} (void)
+\item 
+bool \hyperlink{classDUtils_1_1Timestamp_a9d088f9c5750c4f4cd688ab74a93aba9}{empty} () const 
+\item 
+void \hyperlink{classDUtils_1_1Timestamp_ae27c920f3833c104096213c6fb17f4d8}{set\-To\-Current\-Time} ()
+\item 
+void \hyperlink{classDUtils_1_1Timestamp_a439bcff577f3ae30e8918897ecb33e76}{set\-Time} (unsigned long secs, unsigned long usecs)
+\item 
+void \hyperlink{classDUtils_1_1Timestamp_af28ca416f5960805b7a517c11df7d3c6}{get\-Time} (unsigned long \&secs, unsigned long \&usecs) const 
+\item 
+void \hyperlink{classDUtils_1_1Timestamp_ac35ad9d35e9ce5ff6fea159e9b060bf0}{set\-Time} (const string \&stime)
+\item 
+void \hyperlink{classDUtils_1_1Timestamp_a797856da2823ee26814151ea97aea5e1}{set\-Time} (double s)
+\item 
+double \hyperlink{classDUtils_1_1Timestamp_a6830126c3f35278345791148a80a5b86}{get\-Float\-Time} () const 
+\item 
+string \hyperlink{classDUtils_1_1Timestamp_a220061d59c9a09c6b2932988e4fd6a71}{get\-String\-Time} () const 
+\item 
+double \hyperlink{classDUtils_1_1Timestamp_a8348340ebdcfeb920fba33dda391443f}{operator-\/} (const \hyperlink{classDUtils_1_1Timestamp}{Timestamp} \&t) const 
+\item 
+\hyperlink{classDUtils_1_1Timestamp}{Timestamp} \hyperlink{classDUtils_1_1Timestamp_a2d0c2b2ce65c0562db26ad37a304f2c5}{plus} (unsigned long s, unsigned long us) const 
+\item 
+\hyperlink{classDUtils_1_1Timestamp}{Timestamp} \hyperlink{classDUtils_1_1Timestamp_a53062c2f168d6f584541981b8db3051f}{minus} (unsigned long s, unsigned long us) const 
+\item 
+\hyperlink{classDUtils_1_1Timestamp}{Timestamp} \& \hyperlink{classDUtils_1_1Timestamp_a609bb289c3833fd6c26c9ee831074a11}{operator+=} (double s)
+\item 
+\hyperlink{classDUtils_1_1Timestamp}{Timestamp} \& \hyperlink{classDUtils_1_1Timestamp_a775ece4a7fab156430da57da985a8965}{operator-\/=} (double s)
+\item 
+\hyperlink{classDUtils_1_1Timestamp}{Timestamp} \hyperlink{classDUtils_1_1Timestamp_adf1cd902ca81aedd5ef955b476f82680}{operator+} (double s) const 
+\item 
+\hyperlink{classDUtils_1_1Timestamp}{Timestamp} \hyperlink{classDUtils_1_1Timestamp_a81b79de4057df40d4d6a2a86131ab6f5}{operator-\/} (double s) const 
+\item 
+bool \hyperlink{classDUtils_1_1Timestamp_a121756e11835f28fbc5e796e46e7b7d2}{operator$>$} (const \hyperlink{classDUtils_1_1Timestamp}{Timestamp} \&t) const 
+\item 
+bool \hyperlink{classDUtils_1_1Timestamp_a3f2ba4c752f7b966a31af1b97cabf544}{operator$>$=} (const \hyperlink{classDUtils_1_1Timestamp}{Timestamp} \&t) const 
+\item 
+bool \hyperlink{classDUtils_1_1Timestamp_a921d279e4c61f1d00d2d278b0060acc0}{operator==} (const \hyperlink{classDUtils_1_1Timestamp}{Timestamp} \&t) const 
+\item 
+bool \hyperlink{classDUtils_1_1Timestamp_ace722f049a59fc1baf067a03659692d4}{operator$<$} (const \hyperlink{classDUtils_1_1Timestamp}{Timestamp} \&t) const 
+\item 
+bool \hyperlink{classDUtils_1_1Timestamp_aa0b04c8c29808b7f4f31eb123a5678f1}{operator$<$=} (const \hyperlink{classDUtils_1_1Timestamp}{Timestamp} \&t) const 
+\item 
+string \hyperlink{classDUtils_1_1Timestamp_a38cdda9c05d592f7794a1111ac3da618}{Format} (bool machine\-\_\-friendly=false) const 
+\end{DoxyCompactItemize}
+\subsection*{静态 Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+static string \hyperlink{classDUtils_1_1Timestamp_abd63d0a2abc2209f9300296ee3e85265}{Format} (double s)
+\end{DoxyCompactItemize}
+\subsection*{Protected 属性}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classDUtils_1_1Timestamp_a88b8dff916bb011ef4142ca5cc655425}{unsigned long \hyperlink{classDUtils_1_1Timestamp_a88b8dff916bb011ef4142ca5cc655425}{m\-\_\-secs}}\label{classDUtils_1_1Timestamp_a88b8dff916bb011ef4142ca5cc655425}
+
+\begin{DoxyCompactList}\small\item\em Seconds. \end{DoxyCompactList}\item 
+\hypertarget{classDUtils_1_1Timestamp_afb8947a2cf3b04919f782f4490ca0935}{unsigned long \hyperlink{classDUtils_1_1Timestamp_afb8947a2cf3b04919f782f4490ca0935}{m\-\_\-usecs}}\label{classDUtils_1_1Timestamp_afb8947a2cf3b04919f782f4490ca0935}
+
+\begin{DoxyCompactList}\small\item\em Microseconds. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{详细描述}
+\hyperlink{classDUtils_1_1Timestamp}{Timestamp}. 
+
+在文件 Timestamp.\-h 第 22 行定义.
+
+
+
+\subsection{构造及析构函数说明}
+\hypertarget{classDUtils_1_1Timestamp_a7edd67789d60b27acbee7f591ed3e2da}{\index{D\-Utils\-::\-Timestamp@{D\-Utils\-::\-Timestamp}!Timestamp@{Timestamp}}
+\index{Timestamp@{Timestamp}!DUtils::Timestamp@{D\-Utils\-::\-Timestamp}}
+\subsubsection[{Timestamp}]{\setlength{\rightskip}{0pt plus 5cm}Timestamp\-::\-Timestamp (
+\begin{DoxyParamCaption}
+\item[{{\bf Timestamp\-::t\-Options}}]{option = {\ttfamily NONE}}
+\end{DoxyParamCaption}
+)}}\label{classDUtils_1_1Timestamp_a7edd67789d60b27acbee7f591ed3e2da}
+Creates a timestamp 
+\begin{DoxyParams}{参数}
+{\em option} & option to set the initial time stamp \\
+\hline
+\end{DoxyParams}
+
+
+在文件 Timestamp.\-cpp 第 39 行定义.
+
+\hypertarget{classDUtils_1_1Timestamp_a06ea20fe67d9e7177818ba219ea3137f}{\index{D\-Utils\-::\-Timestamp@{D\-Utils\-::\-Timestamp}!$\sim$\-Timestamp@{$\sim$\-Timestamp}}
+\index{$\sim$\-Timestamp@{$\sim$\-Timestamp}!DUtils::Timestamp@{D\-Utils\-::\-Timestamp}}
+\subsubsection[{$\sim$\-Timestamp}]{\setlength{\rightskip}{0pt plus 5cm}Timestamp\-::$\sim$\-Timestamp (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classDUtils_1_1Timestamp_a06ea20fe67d9e7177818ba219ea3137f}
+Destructor 
+
+在文件 Timestamp.\-cpp 第 47 行定义.
+
+
+
+\subsection{成员函数说明}
+\hypertarget{classDUtils_1_1Timestamp_a9d088f9c5750c4f4cd688ab74a93aba9}{\index{D\-Utils\-::\-Timestamp@{D\-Utils\-::\-Timestamp}!empty@{empty}}
+\index{empty@{empty}!DUtils::Timestamp@{D\-Utils\-::\-Timestamp}}
+\subsubsection[{empty}]{\setlength{\rightskip}{0pt plus 5cm}bool Timestamp\-::empty (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classDUtils_1_1Timestamp_a9d088f9c5750c4f4cd688ab74a93aba9}
+Says if the timestamp is \char`\"{}empty\char`\"{}\-: seconds and usecs are both 0, as when initiated with the Z\-E\-R\-O flag \begin{DoxyReturn}{返回}
+true iif secs == usecs == 0 
+\end{DoxyReturn}
+
+
+在文件 Timestamp.\-cpp 第 51 行定义.
+
+\hypertarget{classDUtils_1_1Timestamp_a38cdda9c05d592f7794a1111ac3da618}{\index{D\-Utils\-::\-Timestamp@{D\-Utils\-::\-Timestamp}!Format@{Format}}
+\index{Format@{Format}!DUtils::Timestamp@{D\-Utils\-::\-Timestamp}}
+\subsubsection[{Format}]{\setlength{\rightskip}{0pt plus 5cm}string Timestamp\-::\-Format (
+\begin{DoxyParamCaption}
+\item[{bool}]{machine\-\_\-friendly = {\ttfamily false}}
+\end{DoxyParamCaption}
+) const}}\label{classDUtils_1_1Timestamp_a38cdda9c05d592f7794a1111ac3da618}
+Returns the timestamp in a human-\/readable string 
+\begin{DoxyParams}{参数}
+{\em machine\-\_\-friendly} & if true, the returned string is formatted to yyyymmdd\-\_\-hhmmss, without weekday or spaces \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{注解}
+This has not been tested under Windows 
+
+The timestamp is truncated to seconds 
+\end{DoxyNote}
+
+
+在文件 Timestamp.\-cpp 第 197 行定义.
+
+\hypertarget{classDUtils_1_1Timestamp_abd63d0a2abc2209f9300296ee3e85265}{\index{D\-Utils\-::\-Timestamp@{D\-Utils\-::\-Timestamp}!Format@{Format}}
+\index{Format@{Format}!DUtils::Timestamp@{D\-Utils\-::\-Timestamp}}
+\subsubsection[{Format}]{\setlength{\rightskip}{0pt plus 5cm}string Timestamp\-::\-Format (
+\begin{DoxyParamCaption}
+\item[{double}]{s}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classDUtils_1_1Timestamp_abd63d0a2abc2209f9300296ee3e85265}
+Returns a string version of the elapsed time in seconds, with the format xd hh\-:mm\-:ss, hh\-:mm\-:ss, mm\-:ss or s.\-us 
+\begin{DoxyParams}{参数}
+{\em s} & elapsed seconds (given by get\-Float\-Time) to format \\
+\hline
+\end{DoxyParams}
+
+
+在文件 Timestamp.\-cpp 第 223 行定义.
+
+\hypertarget{classDUtils_1_1Timestamp_a6830126c3f35278345791148a80a5b86}{\index{D\-Utils\-::\-Timestamp@{D\-Utils\-::\-Timestamp}!get\-Float\-Time@{get\-Float\-Time}}
+\index{get\-Float\-Time@{get\-Float\-Time}!DUtils::Timestamp@{D\-Utils\-::\-Timestamp}}
+\subsubsection[{get\-Float\-Time}]{\setlength{\rightskip}{0pt plus 5cm}double Timestamp\-::get\-Float\-Time (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classDUtils_1_1Timestamp_a6830126c3f35278345791148a80a5b86}
+Returns this timestamp as the number of seconds in (long) float format 
+
+在文件 Timestamp.\-cpp 第 93 行定义.
+
+
+
+参考自 operator-\/() , 以及 D\-Utils\-::\-Random\-::\-Seed\-Rand().
+
+
+
+这是这个函数的调用关系图\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classDUtils_1_1Timestamp_a6830126c3f35278345791148a80a5b86_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classDUtils_1_1Timestamp_a220061d59c9a09c6b2932988e4fd6a71}{\index{D\-Utils\-::\-Timestamp@{D\-Utils\-::\-Timestamp}!get\-String\-Time@{get\-String\-Time}}
+\index{get\-String\-Time@{get\-String\-Time}!DUtils::Timestamp@{D\-Utils\-::\-Timestamp}}
+\subsubsection[{get\-String\-Time}]{\setlength{\rightskip}{0pt plus 5cm}string Timestamp\-::get\-String\-Time (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classDUtils_1_1Timestamp_a220061d59c9a09c6b2932988e4fd6a71}
+Returns this timestamp as the number of seconds in fixed length string format 
+
+在文件 Timestamp.\-cpp 第 97 行定义.
+
+\hypertarget{classDUtils_1_1Timestamp_af28ca416f5960805b7a517c11df7d3c6}{\index{D\-Utils\-::\-Timestamp@{D\-Utils\-::\-Timestamp}!get\-Time@{get\-Time}}
+\index{get\-Time@{get\-Time}!DUtils::Timestamp@{D\-Utils\-::\-Timestamp}}
+\subsubsection[{get\-Time}]{\setlength{\rightskip}{0pt plus 5cm}void D\-Utils\-::\-Timestamp\-::get\-Time (
+\begin{DoxyParamCaption}
+\item[{unsigned long \&}]{secs, }
+\item[{unsigned long \&}]{usecs}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classDUtils_1_1Timestamp_af28ca416f5960805b7a517c11df7d3c6}
+Returns the timestamp in seconds and microseconds 
+\begin{DoxyParams}{参数}
+{\em secs} & seconds \\
+\hline
+{\em usecs} & microseconds \\
+\hline
+\end{DoxyParams}
+
+
+在文件 Timestamp.\-h 第 74 行定义.
+
+\hypertarget{classDUtils_1_1Timestamp_a53062c2f168d6f584541981b8db3051f}{\index{D\-Utils\-::\-Timestamp@{D\-Utils\-::\-Timestamp}!minus@{minus}}
+\index{minus@{minus}!DUtils::Timestamp@{D\-Utils\-::\-Timestamp}}
+\subsubsection[{minus}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Timestamp} Timestamp\-::minus (
+\begin{DoxyParamCaption}
+\item[{unsigned long}]{s, }
+\item[{unsigned long}]{us}
+\end{DoxyParamCaption}
+) const}}\label{classDUtils_1_1Timestamp_a53062c2f168d6f584541981b8db3051f}
+Returns a copy of this timestamp -\/ s seconds -\/ us microseconds 
+\begin{DoxyParams}{参数}
+{\em s} & seconds \\
+\hline
+{\em us} & microseconds \\
+\hline
+\end{DoxyParams}
+
+
+在文件 Timestamp.\-cpp 第 149 行定义.
+
+
+
+参考 set\-Time().
+
+
+
+函数调用图\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=328pt]{classDUtils_1_1Timestamp_a53062c2f168d6f584541981b8db3051f_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classDUtils_1_1Timestamp_adf1cd902ca81aedd5ef955b476f82680}{\index{D\-Utils\-::\-Timestamp@{D\-Utils\-::\-Timestamp}!operator+@{operator+}}
+\index{operator+@{operator+}!DUtils::Timestamp@{D\-Utils\-::\-Timestamp}}
+\subsubsection[{operator+}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Timestamp} Timestamp\-::operator+ (
+\begin{DoxyParamCaption}
+\item[{double}]{s}
+\end{DoxyParamCaption}
+) const}}\label{classDUtils_1_1Timestamp_adf1cd902ca81aedd5ef955b476f82680}
+Returns a copy of this timestamp + s seconds 
+\begin{DoxyParams}{参数}
+{\em s} & seconds \\
+\hline
+\end{DoxyParams}
+
+
+在文件 Timestamp.\-cpp 第 119 行定义.
+
+\hypertarget{classDUtils_1_1Timestamp_a609bb289c3833fd6c26c9ee831074a11}{\index{D\-Utils\-::\-Timestamp@{D\-Utils\-::\-Timestamp}!operator+=@{operator+=}}
+\index{operator+=@{operator+=}!DUtils::Timestamp@{D\-Utils\-::\-Timestamp}}
+\subsubsection[{operator+=}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Timestamp} \& Timestamp\-::operator+= (
+\begin{DoxyParamCaption}
+\item[{double}]{s}
+\end{DoxyParamCaption}
+)}}\label{classDUtils_1_1Timestamp_a609bb289c3833fd6c26c9ee831074a11}
+Adds s seconds to this timestamp and returns a reference to itself 
+\begin{DoxyParams}{参数}
+{\em s} & seconds \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+reference to this timestamp 
+\end{DoxyReturn}
+
+
+在文件 Timestamp.\-cpp 第 107 行定义.
+
+\hypertarget{classDUtils_1_1Timestamp_a8348340ebdcfeb920fba33dda391443f}{\index{D\-Utils\-::\-Timestamp@{D\-Utils\-::\-Timestamp}!operator-\/@{operator-\/}}
+\index{operator-\/@{operator-\/}!DUtils::Timestamp@{D\-Utils\-::\-Timestamp}}
+\subsubsection[{operator-\/}]{\setlength{\rightskip}{0pt plus 5cm}double Timestamp\-::operator-\/ (
+\begin{DoxyParamCaption}
+\item[{const {\bf Timestamp} \&}]{t}
+\end{DoxyParamCaption}
+) const}}\label{classDUtils_1_1Timestamp_a8348340ebdcfeb920fba33dda391443f}
+Returns the difference in seconds between this timestamp (greater) and t (smaller) If the order is swapped, a negative number is returned 
+\begin{DoxyParams}{参数}
+{\em t} & timestamp to subtract from this timestamp \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+difference in seconds 
+\end{DoxyReturn}
+
+
+在文件 Timestamp.\-cpp 第 103 行定义.
+
+
+
+参考 get\-Float\-Time().
+
+
+
+函数调用图\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=328pt]{classDUtils_1_1Timestamp_a8348340ebdcfeb920fba33dda391443f_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classDUtils_1_1Timestamp_a81b79de4057df40d4d6a2a86131ab6f5}{\index{D\-Utils\-::\-Timestamp@{D\-Utils\-::\-Timestamp}!operator-\/@{operator-\/}}
+\index{operator-\/@{operator-\/}!DUtils::Timestamp@{D\-Utils\-::\-Timestamp}}
+\subsubsection[{operator-\/}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Timestamp} Timestamp\-::operator-\/ (
+\begin{DoxyParamCaption}
+\item[{double}]{s}
+\end{DoxyParamCaption}
+) const}}\label{classDUtils_1_1Timestamp_a81b79de4057df40d4d6a2a86131ab6f5}
+Returns a copy of this timestamp -\/ s seconds 
+\begin{DoxyParams}{参数}
+{\em s} & seconds \\
+\hline
+\end{DoxyParams}
+
+
+在文件 Timestamp.\-cpp 第 141 行定义.
+
+\hypertarget{classDUtils_1_1Timestamp_a775ece4a7fab156430da57da985a8965}{\index{D\-Utils\-::\-Timestamp@{D\-Utils\-::\-Timestamp}!operator-\/=@{operator-\/=}}
+\index{operator-\/=@{operator-\/=}!DUtils::Timestamp@{D\-Utils\-::\-Timestamp}}
+\subsubsection[{operator-\/=}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Timestamp} \& Timestamp\-::operator-\/= (
+\begin{DoxyParamCaption}
+\item[{double}]{s}
+\end{DoxyParamCaption}
+)}}\label{classDUtils_1_1Timestamp_a775ece4a7fab156430da57da985a8965}
+Substracts s seconds to this timestamp and returns a reference to itself 
+\begin{DoxyParams}{参数}
+{\em s} & seconds \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+reference to this timestamp 
+\end{DoxyReturn}
+
+
+在文件 Timestamp.\-cpp 第 113 行定义.
+
+\hypertarget{classDUtils_1_1Timestamp_ace722f049a59fc1baf067a03659692d4}{\index{D\-Utils\-::\-Timestamp@{D\-Utils\-::\-Timestamp}!operator$<$@{operator$<$}}
+\index{operator$<$@{operator$<$}!DUtils::Timestamp@{D\-Utils\-::\-Timestamp}}
+\subsubsection[{operator$<$}]{\setlength{\rightskip}{0pt plus 5cm}bool Timestamp\-::operator$<$ (
+\begin{DoxyParamCaption}
+\item[{const {\bf Timestamp} \&}]{t}
+\end{DoxyParamCaption}
+) const}}\label{classDUtils_1_1Timestamp_ace722f049a59fc1baf067a03659692d4}
+Returns whether this timestamp is at the past of t 
+\begin{DoxyParams}{参数}
+{\em t} & \\
+\hline
+\end{DoxyParams}
+
+
+在文件 Timestamp.\-cpp 第 177 行定义.
+
+
+
+参考 m\-\_\-secs , 以及 m\-\_\-usecs.
+
+\hypertarget{classDUtils_1_1Timestamp_aa0b04c8c29808b7f4f31eb123a5678f1}{\index{D\-Utils\-::\-Timestamp@{D\-Utils\-::\-Timestamp}!operator$<$=@{operator$<$=}}
+\index{operator$<$=@{operator$<$=}!DUtils::Timestamp@{D\-Utils\-::\-Timestamp}}
+\subsubsection[{operator$<$=}]{\setlength{\rightskip}{0pt plus 5cm}bool Timestamp\-::operator$<$= (
+\begin{DoxyParamCaption}
+\item[{const {\bf Timestamp} \&}]{t}
+\end{DoxyParamCaption}
+) const}}\label{classDUtils_1_1Timestamp_aa0b04c8c29808b7f4f31eb123a5678f1}
+Returns whether this timestamp is at the past of (or is the same as) t 
+\begin{DoxyParams}{参数}
+{\em t} & \\
+\hline
+\end{DoxyParams}
+
+
+在文件 Timestamp.\-cpp 第 184 行定义.
+
+
+
+参考 m\-\_\-secs , 以及 m\-\_\-usecs.
+
+\hypertarget{classDUtils_1_1Timestamp_a921d279e4c61f1d00d2d278b0060acc0}{\index{D\-Utils\-::\-Timestamp@{D\-Utils\-::\-Timestamp}!operator==@{operator==}}
+\index{operator==@{operator==}!DUtils::Timestamp@{D\-Utils\-::\-Timestamp}}
+\subsubsection[{operator==}]{\setlength{\rightskip}{0pt plus 5cm}bool Timestamp\-::operator== (
+\begin{DoxyParamCaption}
+\item[{const {\bf Timestamp} \&}]{t}
+\end{DoxyParamCaption}
+) const}}\label{classDUtils_1_1Timestamp_a921d279e4c61f1d00d2d278b0060acc0}
+Returns whether this timestamp and t represent the same instant 
+\begin{DoxyParams}{参数}
+{\em t} & \\
+\hline
+\end{DoxyParams}
+
+
+在文件 Timestamp.\-cpp 第 191 行定义.
+
+
+
+参考 m\-\_\-secs , 以及 m\-\_\-usecs.
+
+\hypertarget{classDUtils_1_1Timestamp_a121756e11835f28fbc5e796e46e7b7d2}{\index{D\-Utils\-::\-Timestamp@{D\-Utils\-::\-Timestamp}!operator$>$@{operator$>$}}
+\index{operator$>$@{operator$>$}!DUtils::Timestamp@{D\-Utils\-::\-Timestamp}}
+\subsubsection[{operator$>$}]{\setlength{\rightskip}{0pt plus 5cm}bool Timestamp\-::operator$>$ (
+\begin{DoxyParamCaption}
+\item[{const {\bf Timestamp} \&}]{t}
+\end{DoxyParamCaption}
+) const}}\label{classDUtils_1_1Timestamp_a121756e11835f28fbc5e796e46e7b7d2}
+Returns whether this timestamp is at the future of t 
+\begin{DoxyParams}{参数}
+{\em t} & \\
+\hline
+\end{DoxyParams}
+
+
+在文件 Timestamp.\-cpp 第 163 行定义.
+
+
+
+参考 m\-\_\-secs , 以及 m\-\_\-usecs.
+
+\hypertarget{classDUtils_1_1Timestamp_a3f2ba4c752f7b966a31af1b97cabf544}{\index{D\-Utils\-::\-Timestamp@{D\-Utils\-::\-Timestamp}!operator$>$=@{operator$>$=}}
+\index{operator$>$=@{operator$>$=}!DUtils::Timestamp@{D\-Utils\-::\-Timestamp}}
+\subsubsection[{operator$>$=}]{\setlength{\rightskip}{0pt plus 5cm}bool Timestamp\-::operator$>$= (
+\begin{DoxyParamCaption}
+\item[{const {\bf Timestamp} \&}]{t}
+\end{DoxyParamCaption}
+) const}}\label{classDUtils_1_1Timestamp_a3f2ba4c752f7b966a31af1b97cabf544}
+Returns whether this timestamp is at the future of (or is the same as) t 
+\begin{DoxyParams}{参数}
+{\em t} & \\
+\hline
+\end{DoxyParams}
+
+
+在文件 Timestamp.\-cpp 第 170 行定义.
+
+
+
+参考 m\-\_\-secs , 以及 m\-\_\-usecs.
+
+\hypertarget{classDUtils_1_1Timestamp_a2d0c2b2ce65c0562db26ad37a304f2c5}{\index{D\-Utils\-::\-Timestamp@{D\-Utils\-::\-Timestamp}!plus@{plus}}
+\index{plus@{plus}!DUtils::Timestamp@{D\-Utils\-::\-Timestamp}}
+\subsubsection[{plus}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Timestamp} Timestamp\-::plus (
+\begin{DoxyParamCaption}
+\item[{unsigned long}]{s, }
+\item[{unsigned long}]{us}
+\end{DoxyParamCaption}
+) const}}\label{classDUtils_1_1Timestamp_a2d0c2b2ce65c0562db26ad37a304f2c5}
+Returns a copy of this timestamp + s seconds + us microseconds 
+\begin{DoxyParams}{参数}
+{\em s} & seconds \\
+\hline
+{\em us} & microseconds \\
+\hline
+\end{DoxyParams}
+
+
+在文件 Timestamp.\-cpp 第 127 行定义.
+
+
+
+参考 set\-Time().
+
+
+
+函数调用图\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=346pt]{classDUtils_1_1Timestamp_a2d0c2b2ce65c0562db26ad37a304f2c5_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classDUtils_1_1Timestamp_a439bcff577f3ae30e8918897ecb33e76}{\index{D\-Utils\-::\-Timestamp@{D\-Utils\-::\-Timestamp}!set\-Time@{set\-Time}}
+\index{set\-Time@{set\-Time}!DUtils::Timestamp@{D\-Utils\-::\-Timestamp}}
+\subsubsection[{set\-Time}]{\setlength{\rightskip}{0pt plus 5cm}void D\-Utils\-::\-Timestamp\-::set\-Time (
+\begin{DoxyParamCaption}
+\item[{unsigned long}]{secs, }
+\item[{unsigned long}]{usecs}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classDUtils_1_1Timestamp_a439bcff577f3ae30e8918897ecb33e76}
+Sets the timestamp from seconds and microseconds 
+\begin{DoxyParams}{参数}
+{\em secs} & seconds \\
+\hline
+{\em usecs} & microseconds \\
+\hline
+\end{DoxyParams}
+
+
+在文件 Timestamp.\-h 第 64 行定义.
+
+
+
+参考自 minus() , 以及 plus().
+
+
+
+这是这个函数的调用关系图\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=346pt]{classDUtils_1_1Timestamp_a439bcff577f3ae30e8918897ecb33e76_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classDUtils_1_1Timestamp_ac35ad9d35e9ce5ff6fea159e9b060bf0}{\index{D\-Utils\-::\-Timestamp@{D\-Utils\-::\-Timestamp}!set\-Time@{set\-Time}}
+\index{set\-Time@{set\-Time}!DUtils::Timestamp@{D\-Utils\-::\-Timestamp}}
+\subsubsection[{set\-Time}]{\setlength{\rightskip}{0pt plus 5cm}void Timestamp\-::set\-Time (
+\begin{DoxyParamCaption}
+\item[{const string \&}]{stime}
+\end{DoxyParamCaption}
+)}}\label{classDUtils_1_1Timestamp_ac35ad9d35e9ce5ff6fea159e9b060bf0}
+Sets the timestamp from a string with the time in seconds 
+\begin{DoxyParams}{参数}
+{\em stime} & string such as \char`\"{}1235603336.\-036609\char`\"{} \\
+\hline
+\end{DoxyParams}
+
+
+在文件 Timestamp.\-cpp 第 73 行定义.
+
+\hypertarget{classDUtils_1_1Timestamp_a797856da2823ee26814151ea97aea5e1}{\index{D\-Utils\-::\-Timestamp@{D\-Utils\-::\-Timestamp}!set\-Time@{set\-Time}}
+\index{set\-Time@{set\-Time}!DUtils::Timestamp@{D\-Utils\-::\-Timestamp}}
+\subsubsection[{set\-Time}]{\setlength{\rightskip}{0pt plus 5cm}void Timestamp\-::set\-Time (
+\begin{DoxyParamCaption}
+\item[{double}]{s}
+\end{DoxyParamCaption}
+)}}\label{classDUtils_1_1Timestamp_a797856da2823ee26814151ea97aea5e1}
+Sets the timestamp from a number of seconds from the epoch 
+\begin{DoxyParams}{参数}
+{\em s} & seconds from the epoch \\
+\hline
+\end{DoxyParams}
+
+
+在文件 Timestamp.\-cpp 第 87 行定义.
+
+\hypertarget{classDUtils_1_1Timestamp_ae27c920f3833c104096213c6fb17f4d8}{\index{D\-Utils\-::\-Timestamp@{D\-Utils\-::\-Timestamp}!set\-To\-Current\-Time@{set\-To\-Current\-Time}}
+\index{set\-To\-Current\-Time@{set\-To\-Current\-Time}!DUtils::Timestamp@{D\-Utils\-::\-Timestamp}}
+\subsubsection[{set\-To\-Current\-Time}]{\setlength{\rightskip}{0pt plus 5cm}void Timestamp\-::set\-To\-Current\-Time (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classDUtils_1_1Timestamp_ae27c920f3833c104096213c6fb17f4d8}
+Sets this instance to the current time 
+
+在文件 Timestamp.\-cpp 第 56 行定义.
+
+
+
+参考自 D\-Utils\-::\-Random\-::\-Seed\-Rand().
+
+
+
+这是这个函数的调用关系图\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classDUtils_1_1Timestamp_ae27c920f3833c104096213c6fb17f4d8_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+该类的文档由以下文件生成\-:\begin{DoxyCompactItemize}
+\item 
+Thirdparty/\-D\-Bo\-W2/\-D\-Utils/Timestamp.\-h\item 
+Thirdparty/\-D\-Bo\-W2/\-D\-Utils/Timestamp.\-cpp\end{DoxyCompactItemize}

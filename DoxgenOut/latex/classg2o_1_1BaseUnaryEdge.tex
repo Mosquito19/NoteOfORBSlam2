@@ -1,0 +1,219 @@
+\hypertarget{classg2o_1_1BaseUnaryEdge}{\section{g2o\-:\-:Base\-Unary\-Edge$<$ D, E, Vertex\-Xi $>$ 模板类 参考}
+\label{classg2o_1_1BaseUnaryEdge}\index{g2o\-::\-Base\-Unary\-Edge$<$ D, E, Vertex\-Xi $>$@{g2o\-::\-Base\-Unary\-Edge$<$ D, E, Vertex\-Xi $>$}}
+}
+
+
+类 g2o\-:\-:Base\-Unary\-Edge$<$ D, E, Vertex\-Xi $>$ 继承关系图\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=228pt]{classg2o_1_1BaseUnaryEdge__inherit__graph}
+\end{center}
+\end{figure}
+
+
+g2o\-:\-:Base\-Unary\-Edge$<$ D, E, Vertex\-Xi $>$ 的协作图\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classg2o_1_1BaseUnaryEdge__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public 类型}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classg2o_1_1BaseUnaryEdge_ab953b076b4c35fcf99de02bd0bfcc1ae}{typedef \hyperlink{classg2o_1_1BaseEdge}{Base\-Edge}$<$ D, E $>$\\*
+\-::Measurement {\bfseries Measurement}}\label{classg2o_1_1BaseUnaryEdge_ab953b076b4c35fcf99de02bd0bfcc1ae}
+
+\item 
+\hypertarget{classg2o_1_1BaseUnaryEdge_a503e62e74775172c008135650850d511}{typedef Vertex\-Xi {\bfseries Vertex\-Xi\-Type}}\label{classg2o_1_1BaseUnaryEdge_a503e62e74775172c008135650850d511}
+
+\item 
+\hypertarget{classg2o_1_1BaseUnaryEdge_a24bcabd661223e15b7337f2835310f5e}{typedef Matrix$<$ double, D, \\*
+Vertex\-Xi\-Type\-::\-Dimension $>$\\*
+\-::Aligned\-Map\-Type {\bfseries Jacobian\-Xi\-Oplus\-Type}}\label{classg2o_1_1BaseUnaryEdge_a24bcabd661223e15b7337f2835310f5e}
+
+\item 
+\hypertarget{classg2o_1_1BaseUnaryEdge_abc04cfacb65fc72825156f1b3346dd48}{typedef \hyperlink{classg2o_1_1BaseEdge}{Base\-Edge}$<$ D, E $>$\\*
+\-::Error\-Vector {\bfseries Error\-Vector}}\label{classg2o_1_1BaseUnaryEdge_abc04cfacb65fc72825156f1b3346dd48}
+
+\item 
+\hypertarget{classg2o_1_1BaseUnaryEdge_a6753caa95c30fa5bb3887e2a30892ff3}{typedef \hyperlink{classg2o_1_1BaseEdge}{Base\-Edge}$<$ D, E $>$\\*
+\-::Information\-Type {\bfseries Information\-Type}}\label{classg2o_1_1BaseUnaryEdge_a6753caa95c30fa5bb3887e2a30892ff3}
+
+\end{DoxyCompactItemize}
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \hyperlink{classg2o_1_1BaseUnaryEdge_a01fcdfd2d3ed0325655bb99db95c0b10}{resize} (size\-\_\-t size)
+\item 
+\hypertarget{classg2o_1_1BaseUnaryEdge_ae3db6c719eac18fce051b40a8c8b86dd}{virtual bool {\bfseries all\-Vertices\-Fixed} () const }\label{classg2o_1_1BaseUnaryEdge_ae3db6c719eac18fce051b40a8c8b86dd}
+
+\item 
+virtual void \hyperlink{classg2o_1_1BaseUnaryEdge_a8b396647b5b438d30a04758023baa595}{linearize\-Oplus} (\hyperlink{classg2o_1_1JacobianWorkspace}{Jacobian\-Workspace} \&jacobian\-Workspace)
+\item 
+virtual void \hyperlink{classg2o_1_1BaseUnaryEdge_a367f19b903938faf6e89dd1b0e4e722b}{linearize\-Oplus} ()
+\item 
+\hypertarget{classg2o_1_1BaseUnaryEdge_a39a254035af4f53fc3a6b5a77cd5a0ca}{const Jacobian\-Xi\-Oplus\-Type \& \hyperlink{classg2o_1_1BaseUnaryEdge_a39a254035af4f53fc3a6b5a77cd5a0ca}{jacobian\-Oplus\-Xi} () const }\label{classg2o_1_1BaseUnaryEdge_a39a254035af4f53fc3a6b5a77cd5a0ca}
+
+\begin{DoxyCompactList}\small\item\em returns the result of the linearization in the manifold space for the node xi \end{DoxyCompactList}\item 
+virtual void \hyperlink{classg2o_1_1BaseUnaryEdge_ad7e6dc44c571be159f066bdb961ade2b}{construct\-Quadratic\-Form} ()
+\item 
+virtual void \hyperlink{classg2o_1_1BaseUnaryEdge_a3d3311901116092cf817b094f6a0b44b}{initial\-Estimate} (const Optimizable\-Graph\-::\-Vertex\-Set \&from, \hyperlink{classg2o_1_1OptimizableGraph_1_1Vertex}{Optimizable\-Graph\-::\-Vertex} $\ast$to)
+\item 
+virtual void \hyperlink{classg2o_1_1BaseUnaryEdge_a919dcb89130f6e7082e807530facdd78}{map\-Hessian\-Memory} (double $\ast$, int, int, bool)
+\end{DoxyCompactItemize}
+\subsection*{静态 Public 属性}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classg2o_1_1BaseUnaryEdge_a4e584cf552998a34948d8d5b484f7fd3}{static const int {\bfseries Dimension} = \hyperlink{classg2o_1_1BaseEdge}{Base\-Edge}$<$D, E$>$\-::Dimension}\label{classg2o_1_1BaseUnaryEdge_a4e584cf552998a34948d8d5b484f7fd3}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected 属性}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classg2o_1_1BaseUnaryEdge_af7d022a6c6c9c29dfd9147fce0dc13d8}{Jacobian\-Xi\-Oplus\-Type {\bfseries \-\_\-jacobian\-Oplus\-Xi}}\label{classg2o_1_1BaseUnaryEdge_af7d022a6c6c9c29dfd9147fce0dc13d8}
+
+\end{DoxyCompactItemize}
+\subsection*{额外继承的成员函数}
+
+
+\subsection{详细描述}
+\subsubsection*{template$<$int D, typename E, typename Vertex\-Xi$>$class g2o\-::\-Base\-Unary\-Edge$<$ D, E, Vertex\-Xi $>$}
+
+
+
+在文件 base\-\_\-unary\-\_\-edge.\-h 第 43 行定义.
+
+
+
+\subsection{成员函数说明}
+\hypertarget{classg2o_1_1BaseUnaryEdge_ad7e6dc44c571be159f066bdb961ade2b}{\index{g2o\-::\-Base\-Unary\-Edge@{g2o\-::\-Base\-Unary\-Edge}!construct\-Quadratic\-Form@{construct\-Quadratic\-Form}}
+\index{construct\-Quadratic\-Form@{construct\-Quadratic\-Form}!g2o::BaseUnaryEdge@{g2o\-::\-Base\-Unary\-Edge}}
+\subsubsection[{construct\-Quadratic\-Form}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int D, typename E , typename Vertex\-Xi\-Type $>$ void Base\-Unary\-Edge\-::construct\-Quadratic\-Form (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classg2o_1_1BaseUnaryEdge_ad7e6dc44c571be159f066bdb961ade2b}
+Linearizes the constraint in the edge. Makes side effect on the vertices of the graph by changing the parameter vector b and the hessian blocks ii and jj. The off diagoinal block is accesed via \-\_\-hessian. 
+
+实现了 \hyperlink{classg2o_1_1OptimizableGraph_1_1Edge_a56fbf3430ddf591e3c619bdd1b7e4499}{g2o\-::\-Optimizable\-Graph\-::\-Edge}.
+
+
+
+在文件 base\-\_\-unary\-\_\-edge.\-h 第 44 行定义.
+
+
+
+参考 g2o\-::\-Hyper\-Graph\-::\-Edge\-::resize().
+
+
+
+函数调用图\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classg2o_1_1BaseUnaryEdge_ad7e6dc44c571be159f066bdb961ade2b_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classg2o_1_1BaseUnaryEdge_a3d3311901116092cf817b094f6a0b44b}{\index{g2o\-::\-Base\-Unary\-Edge@{g2o\-::\-Base\-Unary\-Edge}!initial\-Estimate@{initial\-Estimate}}
+\index{initial\-Estimate@{initial\-Estimate}!g2o::BaseUnaryEdge@{g2o\-::\-Base\-Unary\-Edge}}
+\subsubsection[{initial\-Estimate}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int D, typename E , typename Vertex\-Xi\-Type $>$ void Base\-Unary\-Edge\-::initial\-Estimate (
+\begin{DoxyParamCaption}
+\item[{const Optimizable\-Graph\-::\-Vertex\-Set \&}]{from, }
+\item[{{\bf Optimizable\-Graph\-::\-Vertex} $\ast$}]{to}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classg2o_1_1BaseUnaryEdge_a3d3311901116092cf817b094f6a0b44b}
+set the estimate of the to vertex, based on the estimate of the from vertices in the edge. 
+
+重载 \hyperlink{classg2o_1_1BaseEdge_a0c3d9763f1dc504627df75e0f381ca70}{g2o\-::\-Base\-Edge$<$ D, E $>$} .
+
+
+
+在文件 base\-\_\-unary\-\_\-edge.\-h 第 127 行定义.
+
+\hypertarget{classg2o_1_1BaseUnaryEdge_a8b396647b5b438d30a04758023baa595}{\index{g2o\-::\-Base\-Unary\-Edge@{g2o\-::\-Base\-Unary\-Edge}!linearize\-Oplus@{linearize\-Oplus}}
+\index{linearize\-Oplus@{linearize\-Oplus}!g2o::BaseUnaryEdge@{g2o\-::\-Base\-Unary\-Edge}}
+\subsubsection[{linearize\-Oplus}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int D, typename E , typename Vertex\-Xi\-Type $>$ void Base\-Unary\-Edge\-::linearize\-Oplus (
+\begin{DoxyParamCaption}
+\item[{{\bf Jacobian\-Workspace} \&}]{jacobian\-Workspace}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classg2o_1_1BaseUnaryEdge_a8b396647b5b438d30a04758023baa595}
+Linearizes the constraint in the edge in the manifold space, and store the result in the given workspace 
+
+实现了 \hyperlink{classg2o_1_1OptimizableGraph_1_1Edge_a0fdad5ebfb4efec9f893b57f67e0fbe1}{g2o\-::\-Optimizable\-Graph\-::\-Edge}.
+
+
+
+在文件 base\-\_\-unary\-\_\-edge.\-h 第 76 行定义.
+
+\hypertarget{classg2o_1_1BaseUnaryEdge_a367f19b903938faf6e89dd1b0e4e722b}{\index{g2o\-::\-Base\-Unary\-Edge@{g2o\-::\-Base\-Unary\-Edge}!linearize\-Oplus@{linearize\-Oplus}}
+\index{linearize\-Oplus@{linearize\-Oplus}!g2o::BaseUnaryEdge@{g2o\-::\-Base\-Unary\-Edge}}
+\subsubsection[{linearize\-Oplus}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int D, typename E , typename Vertex\-Xi\-Type $>$ void Base\-Unary\-Edge\-::linearize\-Oplus (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classg2o_1_1BaseUnaryEdge_a367f19b903938faf6e89dd1b0e4e722b}
+Linearizes the oplus operator in the vertex, and stores the result in temporary variables \-\_\-jacobian\-Oplus\-Xi and \-\_\-jacobian\-Oplus\-Xj 
+
+被 \hyperlink{classg2o_1_1EdgeStereoSE3ProjectXYZOnlyPose_a0b2b815e8ae331276f33be374dcc1897}{g2o\-::\-Edge\-Stereo\-S\-E3\-Project\-X\-Y\-Z\-Only\-Pose} , 以及 \hyperlink{classg2o_1_1EdgeSE3ProjectXYZOnlyPose_abe6d775aade1277786274c328aa2c38b}{g2o\-::\-Edge\-S\-E3\-Project\-X\-Y\-Z\-Only\-Pose} 重载.
+
+
+
+在文件 base\-\_\-unary\-\_\-edge.\-h 第 83 行定义.
+
+\hypertarget{classg2o_1_1BaseUnaryEdge_a919dcb89130f6e7082e807530facdd78}{\index{g2o\-::\-Base\-Unary\-Edge@{g2o\-::\-Base\-Unary\-Edge}!map\-Hessian\-Memory@{map\-Hessian\-Memory}}
+\index{map\-Hessian\-Memory@{map\-Hessian\-Memory}!g2o::BaseUnaryEdge@{g2o\-::\-Base\-Unary\-Edge}}
+\subsubsection[{map\-Hessian\-Memory}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int D, typename E, typename Vertex\-Xi$>$ virtual void {\bf g2o\-::\-Base\-Unary\-Edge}$<$ D, E, Vertex\-Xi $>$\-::map\-Hessian\-Memory (
+\begin{DoxyParamCaption}
+\item[{double $\ast$}]{d, }
+\item[{int}]{i, }
+\item[{int}]{j, }
+\item[{bool}]{row\-Major}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classg2o_1_1BaseUnaryEdge_a919dcb89130f6e7082e807530facdd78}
+maps the internal matrix to some external memory location, you need to provide the memory before calling construct\-Quadratic\-Form 
+\begin{DoxyParams}{参数}
+{\em d} & the memory location to which we map \\
+\hline
+{\em i} & index of the vertex i \\
+\hline
+{\em j} & index of the vertex j (j $>$ i, upper triangular fashion) \\
+\hline
+{\em row\-Major} & if true, will write in row\-Major order to the block. Since E\-I\-G\-E\-N is column\-Major by default, this results in writing the transposed \\
+\hline
+\end{DoxyParams}
+
+
+实现了 \hyperlink{classg2o_1_1OptimizableGraph_1_1Edge_a3bd233fd552daa166039acf47b69a5a7}{g2o\-::\-Optimizable\-Graph\-::\-Edge}.
+
+
+
+在文件 base\-\_\-unary\-\_\-edge.\-h 第 78 行定义.
+
+\hypertarget{classg2o_1_1BaseUnaryEdge_a01fcdfd2d3ed0325655bb99db95c0b10}{\index{g2o\-::\-Base\-Unary\-Edge@{g2o\-::\-Base\-Unary\-Edge}!resize@{resize}}
+\index{resize@{resize}!g2o::BaseUnaryEdge@{g2o\-::\-Base\-Unary\-Edge}}
+\subsubsection[{resize}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int D, typename E , typename Vertex\-Xi\-Type $>$ void Base\-Unary\-Edge\-::resize (
+\begin{DoxyParamCaption}
+\item[{size\-\_\-t}]{size}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classg2o_1_1BaseUnaryEdge_a01fcdfd2d3ed0325655bb99db95c0b10}
+resizes the number of vertices connected by this edge 
+
+重载 \hyperlink{classg2o_1_1HyperGraph_1_1Edge_ad8913f1149a0fd5bb628f0f1c8a91a55}{g2o\-::\-Hyper\-Graph\-::\-Edge} .
+
+
+
+在文件 base\-\_\-unary\-\_\-edge.\-h 第 29 行定义.
+
+
+
+该类的文档由以下文件生成\-:\begin{DoxyCompactItemize}
+\item 
+Thirdparty/g2o/g2o/core/base\-\_\-unary\-\_\-edge.\-h\item 
+Thirdparty/g2o/g2o/core/base\-\_\-unary\-\_\-edge.\-hpp\end{DoxyCompactItemize}

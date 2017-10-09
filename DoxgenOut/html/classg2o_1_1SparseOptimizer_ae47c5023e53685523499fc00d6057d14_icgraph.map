@@ -1,0 +1,4 @@
+<map id="g2o::SparseOptimizer::activeRobustChi2" name="g2o::SparseOptimizer::activeRobustChi2">
+<area shape="rect" id="node2" href="$classg2o_1_1OptimizationAlgorithmLevenberg.html#a7140fa989b54eac4e09ba17829dcada0" title="g2o::OptimizationAlgorithm\lLevenberg::solve" alt="" coords="203,5,381,46"/>
+<area shape="rect" id="node3" href="$classg2o_1_1OptimizationAlgorithmDogleg.html#ace62fd809c18655bd7ff104285748610" title="g2o::OptimizationAlgorithm\lDogleg::solve" alt="" coords="203,70,381,111"/>
+</map>

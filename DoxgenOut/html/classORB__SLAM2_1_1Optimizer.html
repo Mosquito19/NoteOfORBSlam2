@@ -1,0 +1,647 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.6"/>
+<title>My Project: ORB_SLAM2::Optimizer类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">My Project
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.6 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="pages.html"><span>相关页面</span></a></li>
+      <li><a href="modules.html"><span>模块</span></a></li>
+      <li><a href="namespaces.html"><span>命名空间</span></a></li>
+      <li class="current"><a href="annotated.html"><span>类</span></a></li>
+      <li><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>类列表</span></a></li>
+      <li><a href="classes.html"><span>类索引</span></a></li>
+      <li><a href="inherits.html"><span>类继承关系</span></a></li>
+      <li><a href="functions.html"><span>类成员</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('classORB__SLAM2_1_1Optimizer.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>命名空间</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>友元</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>组</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>页</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-static-methods">静态 Public 成员函数</a> &#124;
+<a href="classORB__SLAM2_1_1Optimizer-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">ORB_SLAM2::Optimizer类 参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+静态 Public 成员函数</h2></td></tr>
+<tr class="memitem:a5e855fe6b54082739b7e7013048e6340"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classORB__SLAM2_1_1Optimizer.html#a5e855fe6b54082739b7e7013048e6340">BundleAdjustment</a> (const std::vector&lt; <a class="el" href="classORB__SLAM2_1_1KeyFrame.html">KeyFrame</a> * &gt; &amp;vpKF, const std::vector&lt; <a class="el" href="classORB__SLAM2_1_1MapPoint.html">MapPoint</a> * &gt; &amp;vpMP, int nIterations=5, bool *pbStopFlag=NULL, const unsigned long nLoopKF=0, const bool bRobust=true)</td></tr>
+<tr class="memdesc:a5e855fe6b54082739b7e7013048e6340"><td class="mdescLeft">&#160;</td><td class="mdescRight">bundle adjustment Optimization  <a href="#a5e855fe6b54082739b7e7013048e6340">更多...</a><br/></td></tr>
+<tr class="separator:a5e855fe6b54082739b7e7013048e6340"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaa9b8a4c16296bf2981b0aaf4ee3189c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aaa9b8a4c16296bf2981b0aaf4ee3189c"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>GlobalBundleAdjustemnt</b> (<a class="el" href="classORB__SLAM2_1_1Map.html">Map</a> *pMap, int nIterations=5, bool *pbStopFlag=NULL, const unsigned long nLoopKF=0, const bool bRobust=true)</td></tr>
+<tr class="separator:aaa9b8a4c16296bf2981b0aaf4ee3189c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab70e0b4f366b65a0c1ae8b2def19d339"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classORB__SLAM2_1_1Optimizer.html#ab70e0b4f366b65a0c1ae8b2def19d339">LocalBundleAdjustment</a> (<a class="el" href="classORB__SLAM2_1_1KeyFrame.html">KeyFrame</a> *pKF, bool *pbStopFlag, <a class="el" href="classORB__SLAM2_1_1Map.html">Map</a> *pMap)</td></tr>
+<tr class="memdesc:ab70e0b4f366b65a0c1ae8b2def19d339"><td class="mdescLeft">&#160;</td><td class="mdescRight">Local Bundle Adjustment.  <a href="#ab70e0b4f366b65a0c1ae8b2def19d339">更多...</a><br/></td></tr>
+<tr class="separator:ab70e0b4f366b65a0c1ae8b2def19d339"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7415d78b8a2323b88e108fa1ea3bf2d3"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classORB__SLAM2_1_1Optimizer.html#a7415d78b8a2323b88e108fa1ea3bf2d3">PoseOptimization</a> (<a class="el" href="classORB__SLAM2_1_1Frame.html">Frame</a> *pFrame)</td></tr>
+<tr class="memdesc:a7415d78b8a2323b88e108fa1ea3bf2d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pose Only Optimization.  <a href="#a7415d78b8a2323b88e108fa1ea3bf2d3">更多...</a><br/></td></tr>
+<tr class="separator:a7415d78b8a2323b88e108fa1ea3bf2d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad36bb1a7167c84f385c3f299bc96f20e"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classORB__SLAM2_1_1Optimizer.html#ad36bb1a7167c84f385c3f299bc96f20e">OptimizeEssentialGraph</a> (<a class="el" href="classORB__SLAM2_1_1Map.html">Map</a> *pMap, <a class="el" href="classORB__SLAM2_1_1KeyFrame.html">KeyFrame</a> *pLoopKF, <a class="el" href="classORB__SLAM2_1_1KeyFrame.html">KeyFrame</a> *pCurKF, const LoopClosing::KeyFrameAndPose &amp;NonCorrectedSim3, const LoopClosing::KeyFrameAndPose &amp;CorrectedSim3, const map&lt; <a class="el" href="classORB__SLAM2_1_1KeyFrame.html">KeyFrame</a> *, set&lt; <a class="el" href="classORB__SLAM2_1_1KeyFrame.html">KeyFrame</a> * &gt; &gt; &amp;LoopConnections, const bool &amp;bFixScale)</td></tr>
+<tr class="memdesc:ad36bb1a7167c84f385c3f299bc96f20e"><td class="mdescLeft">&#160;</td><td class="mdescRight">闭环检测后，EssentialGraph优化  <a href="#ad36bb1a7167c84f385c3f299bc96f20e">更多...</a><br/></td></tr>
+<tr class="separator:ad36bb1a7167c84f385c3f299bc96f20e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad8fe00ad3e6564b859b07ff9e7b2224e"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classORB__SLAM2_1_1Optimizer.html#ad8fe00ad3e6564b859b07ff9e7b2224e">OptimizeSim3</a> (<a class="el" href="classORB__SLAM2_1_1KeyFrame.html">KeyFrame</a> *pKF1, <a class="el" href="classORB__SLAM2_1_1KeyFrame.html">KeyFrame</a> *pKF2, std::vector&lt; <a class="el" href="classORB__SLAM2_1_1MapPoint.html">MapPoint</a> * &gt; &amp;vpMatches1, <a class="el" href="structg2o_1_1Sim3.html">g2o::Sim3</a> &amp;g2oS12, const float th2, const bool bFixScale)</td></tr>
+<tr class="memdesc:ad8fe00ad3e6564b859b07ff9e7b2224e"><td class="mdescLeft">&#160;</td><td class="mdescRight">形成闭环时进行Sim3优化  <a href="#ad8fe00ad3e6564b859b07ff9e7b2224e">更多...</a><br/></td></tr>
+<tr class="separator:ad8fe00ad3e6564b859b07ff9e7b2224e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock">
+<p>在文件 <a class="el" href="Optimizer_8h_source.html">Optimizer.h</a> 第 <a class="el" href="Optimizer_8h_source.html#l00037">37</a> 行定义.</p>
+</div><h2 class="groupheader">成员函数说明</h2>
+<a class="anchor" id="a5e855fe6b54082739b7e7013048e6340"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ORB_SLAM2::Optimizer::BundleAdjustment </td>
+          <td>(</td>
+          <td class="paramtype">const std::vector&lt; <a class="el" href="classORB__SLAM2_1_1KeyFrame.html">KeyFrame</a> * &gt; &amp;&#160;</td>
+          <td class="paramname"><em>vpKF</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; <a class="el" href="classORB__SLAM2_1_1MapPoint.html">MapPoint</a> * &gt; &amp;&#160;</td>
+          <td class="paramname"><em>vpMP</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>nIterations</em> = <code>5</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool *&#160;</td>
+          <td class="paramname"><em>pbStopFlag</em> = <code>NULL</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const unsigned long&#160;</td>
+          <td class="paramname"><em>nLoopKF</em> = <code>0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const bool&#160;</td>
+          <td class="paramname"><em>bRobust</em> = <code>true</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>bundle adjustment Optimization </p>
+<p>3D-2D 最小化重投影误差 e = (u,v) - project(Tcw*Pw) <br/>
+</p>
+<ol type="1">
+<li>Vertex: <a class="el" href="classg2o_1_1VertexSE3Expmap.html" title="SE3 Vertex parameterized internally with a transformation matrix and externally with its exponential ...">g2o::VertexSE3Expmap()</a>，即当前帧的Tcw <a class="el" href="classg2o_1_1VertexSBAPointXYZ.html" title="Point vertex, XYZ. ">g2o::VertexSBAPointXYZ()</a>，MapPoint的mWorldPos</li>
+<li>Edge:<ul>
+<li><a class="el" href="classg2o_1_1EdgeSE3ProjectXYZ.html" title="NOTE uesd in Optimizer::BundleAdjustment(), Optimizer::LocalBundleAdjustment() ">g2o::EdgeSE3ProjectXYZ()</a>，BaseBinaryEdge<ul>
+<li>Vertex：待优化当前帧的Tcw</li>
+<li>Vertex：待优化MapPoint的mWorldPos</li>
+<li>measurement：MapPoint在当前帧中的二维位置(u,v)</li>
+<li>InfoMatrix: invSigma2(与特征点所在的尺度有关)</li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">vpKFs</td><td>关键帧 vpMP MapPoints nIterations 迭代次数（20次） pbStopFlag 是否强制暂停 nLoopKF 关键帧的个数 bRobust 是否使用核函数 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>在文件 <a class="el" href="Optimizer_8cpp_source.html">Optimizer.cpp</a> 第 <a class="el" href="Optimizer_8cpp_source.html#l00072">72</a> 行定义.</p>
+
+<p>参考 <a class="el" href="optimizable__graph_8cpp_source.html#l00264">g2o::OptimizableGraph::addEdge()</a>, <a class="el" href="optimizable__graph_8cpp_source.html#l00243">g2o::OptimizableGraph::addVertex()</a>, <a class="el" href="types__six__dof__expmap_8h_source.html#l00199">g2o::EdgeStereoSE3ProjectXYZ::bf</a>, <a class="el" href="base__vertex_8h_source.html#l00102">g2o::BaseVertex&lt; D, T &gt;::estimate()</a>, <a class="el" href="sparse__optimizer_8cpp_source.html#l00269">g2o::SparseOptimizer::initializeOptimization()</a>, <a class="el" href="MapPoint_8h_source.html#l00087">ORB_SLAM2::MapPoint::mnId</a>, <a class="el" href="sparse__optimizer_8cpp_source.html#l00354">g2o::SparseOptimizer::optimize()</a>, <a class="el" href="sparse__optimizer_8cpp_source.html#l00579">g2o::SparseOptimizer::removeVertex()</a>, <a class="el" href="robust__kernel__impl_8cpp_source.html#l00065">g2o::RobustKernelHuber::setDelta()</a>, <a class="el" href="base__vertex_8h_source.html#l00104">g2o::BaseVertex&lt; D, T &gt;::setEstimate()</a>, <a class="el" href="optimizable__graph_8h_source.html#l00308">g2o::OptimizableGraph::Vertex::setFixed()</a>, <a class="el" href="sparse__optimizer_8cpp_source.html#l00574">g2o::SparseOptimizer::setForceStopFlag()</a>, <a class="el" href="optimizable__graph_8h_source.html#l00319">g2o::OptimizableGraph::Vertex::setId()</a>, <a class="el" href="optimizable__graph_8h_source.html#l00313">g2o::OptimizableGraph::Vertex::setMarginalized()</a>, <a class="el" href="optimizable__graph_8cpp_source.html#l00193">g2o::OptimizableGraph::Edge::setRobustKernel()</a>, <a class="el" href="hyper__graph_8h_source.html#l00153">g2o::HyperGraph::Edge::setVertex()</a>, <a class="el" href="Converter_8cpp_source.html#l00037">ORB_SLAM2::Converter::toSE3Quat()</a>, <a class="el" href="MapPoint_8cpp_source.html#l00414">ORB_SLAM2::MapPoint::UpdateNormalAndDepth()</a> , 以及 <a class="el" href="optimizable__graph_8h_source.html#l00529">g2o::OptimizableGraph::vertex()</a>.</p>
+
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classORB__SLAM2_1_1Optimizer_a5e855fe6b54082739b7e7013048e6340_cgraph.png" border="0" usemap="#classORB__SLAM2_1_1Optimizer_a5e855fe6b54082739b7e7013048e6340_cgraph" alt=""/></div>
+<map name="classORB__SLAM2_1_1Optimizer_a5e855fe6b54082739b7e7013048e6340_cgraph" id="classORB__SLAM2_1_1Optimizer_a5e855fe6b54082739b7e7013048e6340_cgraph">
+<area shape="rect" id="node2" href="structg2o_1_1OptimizableGraph.html#a6831ed69fce3dba691f53302a2813070" title="g2o::OptimizableGraph\l::addEdge" alt="" coords="240,259,395,301"/><area shape="rect" id="node10" href="structg2o_1_1OptimizableGraph.html#ae0b93774ce1dfa0dfd501c86ad4f773e" title="g2o::OptimizableGraph\l::addVertex" alt="" coords="240,342,395,383"/><area shape="rect" id="node14" href="structg2o_1_1OptimizableGraph.html#a19e014e8ec2e9a6e894da8c3a8f8e50d" title="returns the vertex number id appropriately casted " alt="" coords="481,419,636,461"/><area shape="rect" id="node15" href="classg2o_1_1BaseVertex.html#abb9caa0d2d00af70e95963a11ee9660a" title="return the current estimate of the vertex " alt="" coords="229,459,406,485"/><area shape="rect" id="node16" href="classg2o_1_1SparseOptimizer.html#a56c0c13954ac7204cfb031c141ece9ae" title="g2o::SparseOptimizer\l::initializeOptimization" alt="" coords="483,201,634,242"/><area shape="rect" id="node17" href="classg2o_1_1SparseOptimizer.html#a098257ee6f13dbb79be07075244d9930" title="g2o::SparseOptimizer\l::optimize" alt="" coords="243,510,391,551"/><area shape="rect" id="node18" href="classg2o_1_1SparseOptimizer.html#a0fb2a5e2b250bf2530a600f6dcaad03f" title="g2o::SparseOptimizer\l::removeVertex" alt="" coords="243,575,391,617"/><area shape="rect" id="node20" href="classg2o_1_1RobustKernelHuber.html#a7e9ee4bbc9483dcd3d10a4c1f506a4d2" title="g2o::RobustKernelHuber\l::setDelta" alt="" coords="235,641,400,682"/><area shape="rect" id="node21" href="classg2o_1_1BaseVertex.html#acb6e8e8f39caa04f62dd93a3dd400e06" title="set the estimate for the vertex also calls updateCache() " alt="" coords="219,707,416,733"/><area shape="rect" id="node22" href="classg2o_1_1OptimizableGraph_1_1Vertex.html#af92ef49e1bcd6a8166afa151d367b905" title="true =&gt; this node should be considered fixed during the optimization " alt="" coords="240,758,395,799"/><area shape="rect" id="node23" href="classg2o_1_1SparseOptimizer.html#a32afd0ab949f170297b4a59f0d9eab81" title="g2o::SparseOptimizer\l::setForceStopFlag" alt="" coords="243,823,391,865"/><area shape="rect" id="node24" href="classg2o_1_1OptimizableGraph_1_1Vertex.html#ac57651173d6ce4bb4eebf8cb1d917551" title="sets the id of the node in the graph be sure that the graph keeps consistent after changing the id ..." alt="" coords="240,889,395,930"/><area shape="rect" id="node25" href="classg2o_1_1OptimizableGraph_1_1Vertex.html#afabf1782886c78bf7b312bb1f2c90524" title="true =&gt; this node should be marginalized out during the optimization " alt="" coords="234,954,401,995"/><area shape="rect" id="node26" href="classg2o_1_1OptimizableGraph_1_1Edge.html#a42955172c19f16e2cfbb30d611d1bd87" title="g2o::OptimizableGraph\l::Edge::setRobustKernel" alt="" coords="235,1019,400,1061"/><area shape="rect" id="node27" href="classg2o_1_1HyperGraph_1_1Edge.html#a5e957658d6e65c49b81197d052a7f16f" title="g2o::HyperGraph::Edge\l::setVertex" alt="" coords="238,1085,397,1126"/><area shape="rect" id="node28" href="classORB__SLAM2_1_1Converter.html#a0b73791a3e2d90b4de41aed0ece2d0a2" title="ORB_SLAM2::Converter\l::toSE3Quat" alt="" coords="234,1150,401,1191"/><area shape="rect" id="node29" href="classORB__SLAM2_1_1MapPoint.html#ac5b8e4ec6a7737860af57058bdd16124" title="更新平均观测方向以及观测距离范围 " alt="" coords="231,1215,403,1257"/><area shape="rect" id="node3" href="classg2o_1_1HyperGraph.html#a0f1d35009a2879b238c8148c33485c89" title="g2o::HyperGraph::addEdge" alt="" coords="469,267,649,293"/><area shape="rect" id="node6" href="classg2o_1_1JacobianWorkspace.html#a2d16ad6db1a51aa93c806cc9c06e223f" title="g2o::JacobianWorkspace\l::updateSize" alt="" coords="474,135,643,177"/><area shape="rect" id="node4" href="classg2o_1_1HyperGraph_1_1Vertex.html#a0805a5575511327262c89585f1953b8e" title="returns the set of hyper&#45;edges that are leaving/entering in this vertex " alt="" coords="711,266,878,307"/><area shape="rect" id="node5" href="classg2o_1_1HyperGraph_1_1Edge.html#a6410bb70a917b5407770ef1f1090b5f5" title="g2o::HyperGraph::Edge\l::vertices" alt="" coords="715,201,874,242"/><area shape="rect" id="node7" href="classg2o_1_1OptimizableGraph_1_1Vertex.html#a1037b978fec531eaf860d0037b992079" title="dimension of the estimated state belonging to this node " alt="" coords="717,135,872,177"/><area shape="rect" id="node8" href="classg2o_1_1OptimizableGraph_1_1Edge.html#a90a86891adc47a179a7cd7ef31549916" title="returns the dimensions of the error function " alt="" coords="717,5,872,46"/><area shape="rect" id="node9" href="classg2o_1_1HyperGraph_1_1Edge.html#aaec0b2c92c5496d0f0fea8f1abdc4311" title="g2o::HyperGraph::Edge\l::vertex" alt="" coords="715,70,874,111"/><area shape="rect" id="node11" href="classg2o_1_1HyperGraph.html#a7ef87ba3479827b24c6fc29c5fc3aa21" title="g2o::HyperGraph::addVertex" alt="" coords="465,368,653,395"/><area shape="rect" id="node12" href="classg2o_1_1HyperGraph_1_1Vertex.html#ad76b71c368b71971ac5affb5d57183d3" title="returns the id " alt="" coords="702,351,887,377"/><area shape="rect" id="node13" href="classg2o_1_1HyperGraph.html#ab07fe8bd9982a66ba34e83dff8317ea2" title="returns a vertex id in the hyper&#45;graph, or 0 if the vertex id is not present " alt="" coords="712,405,877,432"/><area shape="rect" id="node19" href="classg2o_1_1OptimizableGraph_1_1Vertex.html#a33009d06f2d3682a3c774182c807c48a" title="temporary index of this node in the parameter vector obtained from linearization " alt="" coords="481,575,636,617"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="ab70e0b4f366b65a0c1ae8b2def19d339"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ORB_SLAM2::Optimizer::LocalBundleAdjustment </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classORB__SLAM2_1_1KeyFrame.html">KeyFrame</a> *&#160;</td>
+          <td class="paramname"><em>pKF</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool *&#160;</td>
+          <td class="paramname"><em>pbStopFlag</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classORB__SLAM2_1_1Map.html">Map</a> *&#160;</td>
+          <td class="paramname"><em>pMap</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Local Bundle Adjustment. </p>
+<ol type="1">
+<li>Vertex:<ul>
+<li><a class="el" href="classg2o_1_1VertexSE3Expmap.html" title="SE3 Vertex parameterized internally with a transformation matrix and externally with its exponential ...">g2o::VertexSE3Expmap()</a>，LocalKeyFrames，即当前关键帧的位姿、与当前关键帧相连的关键帧的位姿</li>
+<li><a class="el" href="classg2o_1_1VertexSE3Expmap.html" title="SE3 Vertex parameterized internally with a transformation matrix and externally with its exponential ...">g2o::VertexSE3Expmap()</a>，FixedCameras，即能观测到LocalMapPoints的关键帧（并且不属于LocalKeyFrames）的位姿，在优化中这些关键帧的位姿不变</li>
+<li><a class="el" href="classg2o_1_1VertexSBAPointXYZ.html" title="Point vertex, XYZ. ">g2o::VertexSBAPointXYZ()</a>，LocalMapPoints，即LocalKeyFrames能观测到的所有MapPoints的位置</li>
+</ul>
+</li>
+<li>Edge:<ul>
+<li><a class="el" href="classg2o_1_1EdgeSE3ProjectXYZ.html" title="NOTE uesd in Optimizer::BundleAdjustment(), Optimizer::LocalBundleAdjustment() ">g2o::EdgeSE3ProjectXYZ()</a>，BaseBinaryEdge<ul>
+<li>Vertex：关键帧的Tcw，MapPoint的Pw</li>
+<li>measurement：MapPoint在关键帧中的二维位置(u,v)</li>
+<li>InfoMatrix: invSigma2(与特征点所在的尺度有关)</li>
+</ul>
+</li>
+<li><a class="el" href="classg2o_1_1EdgeStereoSE3ProjectXYZ.html" title="NOTE uesd in Optimizer::BundleAdjustment(), Optimizer::LocalBundleAdjustment() ">g2o::EdgeStereoSE3ProjectXYZ()</a>，BaseBinaryEdge<ul>
+<li>Vertex：关键帧的Tcw，MapPoint的Pw</li>
+<li>measurement：MapPoint在关键帧中的二维位置(ul,v,ur)</li>
+<li>InfoMatrix: invSigma2(与特征点所在的尺度有关)</li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pKF</td><td><a class="el" href="classORB__SLAM2_1_1KeyFrame.html">KeyFrame</a> </td></tr>
+    <tr><td class="paramname">pbStopFlag</td><td>是否停止优化的标志 </td></tr>
+    <tr><td class="paramname">pMap</td><td>在优化后，更新状态时需要用到Map的互斥量mMutexMapUpdate </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>在文件 <a class="el" href="Optimizer_8cpp_source.html">Optimizer.cpp</a> 第 <a class="el" href="Optimizer_8cpp_source.html#l00536">536</a> 行定义.</p>
+
+<p>参考 <a class="el" href="optimizable__graph_8cpp_source.html#l00264">g2o::OptimizableGraph::addEdge()</a>, <a class="el" href="optimizable__graph_8cpp_source.html#l00243">g2o::OptimizableGraph::addVertex()</a>, <a class="el" href="types__six__dof__expmap_8h_source.html#l00199">g2o::EdgeStereoSE3ProjectXYZ::bf</a>, <a class="el" href="base__edge_8h_source.html#l00058">g2o::BaseEdge&lt; D, E &gt;::chi2()</a>, <a class="el" href="base__vertex_8h_source.html#l00102">g2o::BaseVertex&lt; D, T &gt;::estimate()</a>, <a class="el" href="KeyFrame_8cpp_source.html#l00203">ORB_SLAM2::KeyFrame::GetVectorCovisibleKeyFrames()</a>, <a class="el" href="sparse__optimizer_8cpp_source.html#l00269">g2o::SparseOptimizer::initializeOptimization()</a>, <a class="el" href="types__six__dof__expmap_8h_source.html#l00115">g2o::EdgeSE3ProjectXYZ::isDepthPositive()</a>, <a class="el" href="types__six__dof__expmap_8h_source.html#l00171">g2o::EdgeStereoSE3ProjectXYZ::isDepthPositive()</a>, <a class="el" href="MapPoint_8h_source.html#l00087">ORB_SLAM2::MapPoint::mnId</a>, <a class="el" href="sparse__optimizer_8cpp_source.html#l00354">g2o::SparseOptimizer::optimize()</a>, <a class="el" href="robust__kernel__impl_8cpp_source.html#l00065">g2o::RobustKernelHuber::setDelta()</a>, <a class="el" href="base__vertex_8h_source.html#l00104">g2o::BaseVertex&lt; D, T &gt;::setEstimate()</a>, <a class="el" href="optimizable__graph_8h_source.html#l00308">g2o::OptimizableGraph::Vertex::setFixed()</a>, <a class="el" href="sparse__optimizer_8cpp_source.html#l00574">g2o::SparseOptimizer::setForceStopFlag()</a>, <a class="el" href="optimizable__graph_8h_source.html#l00319">g2o::OptimizableGraph::Vertex::setId()</a>, <a class="el" href="optimizable__graph_8h_source.html#l00470">g2o::OptimizableGraph::Edge::setLevel()</a>, <a class="el" href="optimizable__graph_8h_source.html#l00313">g2o::OptimizableGraph::Vertex::setMarginalized()</a>, <a class="el" href="optimizable__graph_8cpp_source.html#l00193">g2o::OptimizableGraph::Edge::setRobustKernel()</a>, <a class="el" href="hyper__graph_8h_source.html#l00153">g2o::HyperGraph::Edge::setVertex()</a>, <a class="el" href="Converter_8cpp_source.html#l00037">ORB_SLAM2::Converter::toSE3Quat()</a>, <a class="el" href="MapPoint_8cpp_source.html#l00414">ORB_SLAM2::MapPoint::UpdateNormalAndDepth()</a> , 以及 <a class="el" href="optimizable__graph_8h_source.html#l00529">g2o::OptimizableGraph::vertex()</a>.</p>
+
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classORB__SLAM2_1_1Optimizer_ab70e0b4f366b65a0c1ae8b2def19d339_cgraph.png" border="0" usemap="#classORB__SLAM2_1_1Optimizer_ab70e0b4f366b65a0c1ae8b2def19d339_cgraph" alt=""/></div>
+<map name="classORB__SLAM2_1_1Optimizer_ab70e0b4f366b65a0c1ae8b2def19d339_cgraph" id="classORB__SLAM2_1_1Optimizer_ab70e0b4f366b65a0c1ae8b2def19d339_cgraph">
+<area shape="rect" id="node2" href="structg2o_1_1OptimizableGraph.html#a6831ed69fce3dba691f53302a2813070" title="g2o::OptimizableGraph\l::addEdge" alt="" coords="249,259,404,301"/><area shape="rect" id="node10" href="structg2o_1_1OptimizableGraph.html#ae0b93774ce1dfa0dfd501c86ad4f773e" title="g2o::OptimizableGraph\l::addVertex" alt="" coords="249,342,404,383"/><area shape="rect" id="node14" href="structg2o_1_1OptimizableGraph.html#a19e014e8ec2e9a6e894da8c3a8f8e50d" title="returns the vertex number id appropriately casted " alt="" coords="497,419,652,461"/><area shape="rect" id="node15" href="classg2o_1_1BaseEdge.html#a7ea9406b8cc06b44433569bbd4fcefac" title="computes the chi2 based on the cached error value, only valid after computeError has been called..." alt="" coords="255,459,398,485"/><area shape="rect" id="node16" href="classg2o_1_1BaseVertex.html#abb9caa0d2d00af70e95963a11ee9660a" title="return the current estimate of the vertex " alt="" coords="486,568,663,595"/><area shape="rect" id="node17" href="classORB__SLAM2_1_1KeyFrame.html#a9315d396634f6637f70f716336777b8d" title="得到与该关键帧连接的关键帧(已按权值排序) " alt="" coords="221,691,432,733"/><area shape="rect" id="node18" href="classg2o_1_1SparseOptimizer.html#a56c0c13954ac7204cfb031c141ece9ae" title="g2o::SparseOptimizer\l::initializeOptimization" alt="" coords="499,201,650,242"/><area shape="rect" id="node19" href="classg2o_1_1EdgeSE3ProjectXYZ.html#a603cc0018b5b05fd193e84e032a66d07" title="g2o::EdgeSE3ProjectXYZ\l::isDepthPositive" alt="" coords="240,561,413,602"/><area shape="rect" id="node20" href="classg2o_1_1EdgeStereoSE3ProjectXYZ.html#ac176aff8aa08a73f52d7a0f5c3080d4d" title="g2o::EdgeStereoSE3Project\lXYZ::isDepthPositive" alt="" coords="234,626,419,667"/><area shape="rect" id="node21" href="classg2o_1_1SparseOptimizer.html#a098257ee6f13dbb79be07075244d9930" title="g2o::SparseOptimizer\l::optimize" alt="" coords="253,757,401,798"/><area shape="rect" id="node22" href="classg2o_1_1RobustKernelHuber.html#a7e9ee4bbc9483dcd3d10a4c1f506a4d2" title="g2o::RobustKernelHuber\l::setDelta" alt="" coords="244,822,409,863"/><area shape="rect" id="node23" href="classg2o_1_1BaseVertex.html#acb6e8e8f39caa04f62dd93a3dd400e06" title="set the estimate for the vertex also calls updateCache() " alt="" coords="228,888,425,915"/><area shape="rect" id="node24" href="classg2o_1_1OptimizableGraph_1_1Vertex.html#af92ef49e1bcd6a8166afa151d367b905" title="true =&gt; this node should be considered fixed during the optimization " alt="" coords="249,939,404,981"/><area shape="rect" id="node25" href="classg2o_1_1SparseOptimizer.html#a32afd0ab949f170297b4a59f0d9eab81" title="g2o::SparseOptimizer\l::setForceStopFlag" alt="" coords="253,1005,401,1046"/><area shape="rect" id="node26" href="classg2o_1_1OptimizableGraph_1_1Vertex.html#ac57651173d6ce4bb4eebf8cb1d917551" title="sets the id of the node in the graph be sure that the graph keeps consistent after changing the id ..." alt="" coords="249,1070,404,1111"/><area shape="rect" id="node27" href="classg2o_1_1OptimizableGraph_1_1Edge.html#ab3e4290bc51d03ba294f36254048b15a" title="sets the level of the edge " alt="" coords="249,1135,404,1177"/><area shape="rect" id="node28" href="classg2o_1_1OptimizableGraph_1_1Vertex.html#afabf1782886c78bf7b312bb1f2c90524" title="true =&gt; this node should be marginalized out during the optimization " alt="" coords="243,1201,410,1242"/><area shape="rect" id="node29" href="classg2o_1_1OptimizableGraph_1_1Edge.html#a42955172c19f16e2cfbb30d611d1bd87" title="g2o::OptimizableGraph\l::Edge::setRobustKernel" alt="" coords="244,1266,409,1307"/><area shape="rect" id="node30" href="classg2o_1_1HyperGraph_1_1Edge.html#a5e957658d6e65c49b81197d052a7f16f" title="g2o::HyperGraph::Edge\l::setVertex" alt="" coords="247,1331,406,1373"/><area shape="rect" id="node31" href="classORB__SLAM2_1_1Converter.html#a0b73791a3e2d90b4de41aed0ece2d0a2" title="ORB_SLAM2::Converter\l::toSE3Quat" alt="" coords="243,1397,410,1438"/><area shape="rect" id="node32" href="classORB__SLAM2_1_1MapPoint.html#ac5b8e4ec6a7737860af57058bdd16124" title="更新平均观测方向以及观测距离范围 " alt="" coords="241,1462,413,1503"/><area shape="rect" id="node3" href="classg2o_1_1HyperGraph.html#a0f1d35009a2879b238c8148c33485c89" title="g2o::HyperGraph::addEdge" alt="" coords="485,267,665,293"/><area shape="rect" id="node6" href="classg2o_1_1JacobianWorkspace.html#a2d16ad6db1a51aa93c806cc9c06e223f" title="g2o::JacobianWorkspace\l::updateSize" alt="" coords="490,135,659,177"/><area shape="rect" id="node4" href="classg2o_1_1HyperGraph_1_1Vertex.html#a0805a5575511327262c89585f1953b8e" title="returns the set of hyper&#45;edges that are leaving/entering in this vertex " alt="" coords="727,266,894,307"/><area shape="rect" id="node5" href="classg2o_1_1HyperGraph_1_1Edge.html#a6410bb70a917b5407770ef1f1090b5f5" title="g2o::HyperGraph::Edge\l::vertices" alt="" coords="731,201,890,242"/><area shape="rect" id="node7" href="classg2o_1_1OptimizableGraph_1_1Vertex.html#a1037b978fec531eaf860d0037b992079" title="dimension of the estimated state belonging to this node " alt="" coords="733,135,888,177"/><area shape="rect" id="node8" href="classg2o_1_1OptimizableGraph_1_1Edge.html#a90a86891adc47a179a7cd7ef31549916" title="returns the dimensions of the error function " alt="" coords="733,5,888,46"/><area shape="rect" id="node9" href="classg2o_1_1HyperGraph_1_1Edge.html#aaec0b2c92c5496d0f0fea8f1abdc4311" title="g2o::HyperGraph::Edge\l::vertex" alt="" coords="731,70,890,111"/><area shape="rect" id="node11" href="classg2o_1_1HyperGraph.html#a7ef87ba3479827b24c6fc29c5fc3aa21" title="g2o::HyperGraph::addVertex" alt="" coords="481,368,669,395"/><area shape="rect" id="node12" href="classg2o_1_1HyperGraph_1_1Vertex.html#ad76b71c368b71971ac5affb5d57183d3" title="returns the id " alt="" coords="718,351,903,377"/><area shape="rect" id="node13" href="classg2o_1_1HyperGraph.html#ab07fe8bd9982a66ba34e83dff8317ea2" title="returns a vertex id in the hyper&#45;graph, or 0 if the vertex id is not present " alt="" coords="728,405,893,432"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="ad36bb1a7167c84f385c3f299bc96f20e"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ORB_SLAM2::Optimizer::OptimizeEssentialGraph </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classORB__SLAM2_1_1Map.html">Map</a> *&#160;</td>
+          <td class="paramname"><em>pMap</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classORB__SLAM2_1_1KeyFrame.html">KeyFrame</a> *&#160;</td>
+          <td class="paramname"><em>pLoopKF</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classORB__SLAM2_1_1KeyFrame.html">KeyFrame</a> *&#160;</td>
+          <td class="paramname"><em>pCurKF</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const LoopClosing::KeyFrameAndPose &amp;&#160;</td>
+          <td class="paramname"><em>NonCorrectedSim3</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const LoopClosing::KeyFrameAndPose &amp;&#160;</td>
+          <td class="paramname"><em>CorrectedSim3</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const map&lt; <a class="el" href="classORB__SLAM2_1_1KeyFrame.html">KeyFrame</a> *, set&lt; <a class="el" href="classORB__SLAM2_1_1KeyFrame.html">KeyFrame</a> * &gt; &gt; &amp;&#160;</td>
+          <td class="paramname"><em>LoopConnections</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const bool &amp;&#160;</td>
+          <td class="paramname"><em>bFixScale</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>闭环检测后，EssentialGraph优化 </p>
+<ol type="1">
+<li>Vertex:<ul>
+<li>g2o::VertexSim3Expmap，Essential graph中关键帧的位姿</li>
+</ul>
+</li>
+<li>Edge:<ul>
+<li><a class="el" href="classg2o_1_1EdgeSim3.html" title="7D edge between two Vertex7 ">g2o::EdgeSim3()</a>，BaseBinaryEdge<ul>
+<li>Vertex：关键帧的Tcw，MapPoint的Pw</li>
+<li>measurement：经过CorrectLoop函数步骤2，Sim3传播校正后的位姿</li>
+<li>InfoMatrix: 单位矩阵</li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pMap</td><td>全局地图 </td></tr>
+    <tr><td class="paramname">pLoopKF</td><td>闭环匹配上的关键帧 </td></tr>
+    <tr><td class="paramname">pCurKF</td><td>当前关键帧 </td></tr>
+    <tr><td class="paramname">NonCorrectedSim3</td><td>未经过Sim3传播调整过的关键帧位姿 </td></tr>
+    <tr><td class="paramname">CorrectedSim3</td><td>经过Sim3传播调整过的关键帧位姿 </td></tr>
+    <tr><td class="paramname">LoopConnections</td><td>因闭环时MapPoints调整而新生成的边 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>在文件 <a class="el" href="Optimizer_8cpp_source.html">Optimizer.cpp</a> 第 <a class="el" href="Optimizer_8cpp_source.html#l00905">905</a> 行定义.</p>
+
+<p>参考 <a class="el" href="optimizable__graph_8cpp_source.html#l00264">g2o::OptimizableGraph::addEdge()</a>, <a class="el" href="optimizable__graph_8cpp_source.html#l00243">g2o::OptimizableGraph::addVertex()</a>, <a class="el" href="base__vertex_8h_source.html#l00102">g2o::BaseVertex&lt; D, T &gt;::estimate()</a>, <a class="el" href="KeyFrame_8cpp_source.html#l00230">ORB_SLAM2::KeyFrame::GetCovisiblesByWeight()</a>, <a class="el" href="KeyFrame_8cpp_source.html#l00255">ORB_SLAM2::KeyFrame::GetWeight()</a>, <a class="el" href="base__edge_8h_source.html#l00069">g2o::BaseEdge&lt; D, E &gt;::information()</a>, <a class="el" href="sparse__optimizer_8cpp_source.html#l00269">g2o::SparseOptimizer::initializeOptimization()</a>, <a class="el" href="sparse__optimizer_8cpp_source.html#l00354">g2o::SparseOptimizer::optimize()</a>, <a class="el" href="base__vertex_8h_source.html#l00104">g2o::BaseVertex&lt; D, T &gt;::setEstimate()</a>, <a class="el" href="optimizable__graph_8h_source.html#l00308">g2o::OptimizableGraph::Vertex::setFixed()</a>, <a class="el" href="optimizable__graph_8h_source.html#l00319">g2o::OptimizableGraph::Vertex::setId()</a>, <a class="el" href="optimizable__graph_8h_source.html#l00313">g2o::OptimizableGraph::Vertex::setMarginalized()</a>, <a class="el" href="optimization__algorithm__levenberg_8cpp_source.html#l00196">g2o::OptimizationAlgorithmLevenberg::setUserLambdaInit()</a>, <a class="el" href="hyper__graph_8h_source.html#l00153">g2o::HyperGraph::Edge::setVertex()</a>, <a class="el" href="MapPoint_8cpp_source.html#l00414">ORB_SLAM2::MapPoint::UpdateNormalAndDepth()</a> , 以及 <a class="el" href="optimizable__graph_8h_source.html#l00529">g2o::OptimizableGraph::vertex()</a>.</p>
+
+<p>参考自 <a class="el" href="LoopClosing_8cpp_source.html#l00505">ORB_SLAM2::LoopClosing::CorrectLoop()</a>.</p>
+
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classORB__SLAM2_1_1Optimizer_ad36bb1a7167c84f385c3f299bc96f20e_cgraph.png" border="0" usemap="#classORB__SLAM2_1_1Optimizer_ad36bb1a7167c84f385c3f299bc96f20e_cgraph" alt=""/></div>
+<map name="classORB__SLAM2_1_1Optimizer_ad36bb1a7167c84f385c3f299bc96f20e_cgraph" id="classORB__SLAM2_1_1Optimizer_ad36bb1a7167c84f385c3f299bc96f20e_cgraph">
+<area shape="rect" id="node2" href="structg2o_1_1OptimizableGraph.html#a6831ed69fce3dba691f53302a2813070" title="g2o::OptimizableGraph\l::addEdge" alt="" coords="247,169,401,210"/><area shape="rect" id="node10" href="structg2o_1_1OptimizableGraph.html#ae0b93774ce1dfa0dfd501c86ad4f773e" title="g2o::OptimizableGraph\l::addVertex" alt="" coords="247,297,401,338"/><area shape="rect" id="node14" href="structg2o_1_1OptimizableGraph.html#a19e014e8ec2e9a6e894da8c3a8f8e50d" title="returns the vertex number id appropriately casted " alt="" coords="489,381,644,422"/><area shape="rect" id="node15" href="classg2o_1_1BaseVertex.html#abb9caa0d2d00af70e95963a11ee9660a" title="return the current estimate of the vertex " alt="" coords="235,413,413,440"/><area shape="rect" id="node16" href="classORB__SLAM2_1_1KeyFrame.html#a7047bffbf130b00dd0270df99874f8a1" title="得到与该关键帧连接的权重大于等于w的关键帧 " alt="" coords="239,465,409,506"/><area shape="rect" id="node17" href="classORB__SLAM2_1_1KeyFrame.html#ab10fd3aab6431face352a930961ff713" title="得到该关键帧与pKF的权重 " alt="" coords="239,530,409,571"/><area shape="rect" id="node18" href="classg2o_1_1BaseEdge.html#ab682086df7223ce2b039d652416ddc23" title="information matrix of the constraint " alt="" coords="233,596,415,623"/><area shape="rect" id="node19" href="classg2o_1_1SparseOptimizer.html#a56c0c13954ac7204cfb031c141ece9ae" title="g2o::SparseOptimizer\l::initializeOptimization" alt="" coords="491,9,642,50"/><area shape="rect" id="node20" href="classg2o_1_1SparseOptimizer.html#a098257ee6f13dbb79be07075244d9930" title="g2o::SparseOptimizer\l::optimize" alt="" coords="250,647,398,689"/><area shape="rect" id="node21" href="classg2o_1_1BaseVertex.html#acb6e8e8f39caa04f62dd93a3dd400e06" title="set the estimate for the vertex also calls updateCache() " alt="" coords="225,713,423,740"/><area shape="rect" id="node22" href="classg2o_1_1OptimizableGraph_1_1Vertex.html#af92ef49e1bcd6a8166afa151d367b905" title="true =&gt; this node should be considered fixed during the optimization " alt="" coords="247,765,401,806"/><area shape="rect" id="node23" href="classg2o_1_1OptimizableGraph_1_1Vertex.html#ac57651173d6ce4bb4eebf8cb1d917551" title="sets the id of the node in the graph be sure that the graph keeps consistent after changing the id ..." alt="" coords="247,830,401,871"/><area shape="rect" id="node24" href="classg2o_1_1OptimizableGraph_1_1Vertex.html#afabf1782886c78bf7b312bb1f2c90524" title="true =&gt; this node should be marginalized out during the optimization " alt="" coords="241,895,407,937"/><area shape="rect" id="node25" href="classg2o_1_1OptimizationAlgorithmLevenberg.html#a9388e5e7800b18acb0db0a9a7be031a6" title="specify the initial lambda used for the first iteraion, if not given the SparseOptimizer tries to com..." alt="" coords="224,961,424,1002"/><area shape="rect" id="node26" href="classg2o_1_1HyperGraph_1_1Edge.html#a5e957658d6e65c49b81197d052a7f16f" title="g2o::HyperGraph::Edge\l::setVertex" alt="" coords="245,1026,403,1067"/><area shape="rect" id="node27" href="classORB__SLAM2_1_1MapPoint.html#ac5b8e4ec6a7737860af57058bdd16124" title="更新平均观测方向以及观测距离范围 " alt="" coords="238,1091,410,1133"/><area shape="rect" id="node3" href="classg2o_1_1HyperGraph.html#a0f1d35009a2879b238c8148c33485c89" title="g2o::HyperGraph::addEdge" alt="" coords="477,77,657,104"/><area shape="rect" id="node6" href="classg2o_1_1JacobianWorkspace.html#a2d16ad6db1a51aa93c806cc9c06e223f" title="g2o::JacobianWorkspace\l::updateSize" alt="" coords="482,169,651,210"/><area shape="rect" id="node4" href="classg2o_1_1HyperGraph_1_1Vertex.html#a0805a5575511327262c89585f1953b8e" title="returns the set of hyper&#45;edges that are leaving/entering in this vertex " alt="" coords="719,70,886,111"/><area shape="rect" id="node5" href="classg2o_1_1HyperGraph_1_1Edge.html#a6410bb70a917b5407770ef1f1090b5f5" title="g2o::HyperGraph::Edge\l::vertices" alt="" coords="723,5,882,46"/><area shape="rect" id="node7" href="classg2o_1_1OptimizableGraph_1_1Vertex.html#a1037b978fec531eaf860d0037b992079" title="dimension of the estimated state belonging to this node " alt="" coords="725,201,880,242"/><area shape="rect" id="node8" href="classg2o_1_1OptimizableGraph_1_1Edge.html#a90a86891adc47a179a7cd7ef31549916" title="returns the dimensions of the error function " alt="" coords="725,266,880,307"/><area shape="rect" id="node9" href="classg2o_1_1HyperGraph_1_1Edge.html#aaec0b2c92c5496d0f0fea8f1abdc4311" title="g2o::HyperGraph::Edge\l::vertex" alt="" coords="723,135,882,177"/><area shape="rect" id="node11" href="classg2o_1_1HyperGraph.html#a7ef87ba3479827b24c6fc29c5fc3aa21" title="g2o::HyperGraph::addVertex" alt="" coords="473,329,661,356"/><area shape="rect" id="node12" href="classg2o_1_1HyperGraph_1_1Vertex.html#ad76b71c368b71971ac5affb5d57183d3" title="returns the id " alt="" coords="710,332,895,359"/><area shape="rect" id="node13" href="classg2o_1_1HyperGraph.html#ab07fe8bd9982a66ba34e83dff8317ea2" title="returns a vertex id in the hyper&#45;graph, or 0 if the vertex id is not present " alt="" coords="720,384,885,411"/></map>
+</div>
+</p>
+
+<p><div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classORB__SLAM2_1_1Optimizer_ad36bb1a7167c84f385c3f299bc96f20e_icgraph.png" border="0" usemap="#classORB__SLAM2_1_1Optimizer_ad36bb1a7167c84f385c3f299bc96f20e_icgraph" alt=""/></div>
+<map name="classORB__SLAM2_1_1Optimizer_ad36bb1a7167c84f385c3f299bc96f20e_icgraph" id="classORB__SLAM2_1_1Optimizer_ad36bb1a7167c84f385c3f299bc96f20e_icgraph">
+<area shape="rect" id="node2" href="classORB__SLAM2_1_1LoopClosing.html#aa007e0678582ec0de5d71280d23af540" title="闭环 " alt="" coords="224,5,405,46"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="ad8fe00ad3e6564b859b07ff9e7b2224e"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ORB_SLAM2::Optimizer::OptimizeSim3 </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classORB__SLAM2_1_1KeyFrame.html">KeyFrame</a> *&#160;</td>
+          <td class="paramname"><em>pKF1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classORB__SLAM2_1_1KeyFrame.html">KeyFrame</a> *&#160;</td>
+          <td class="paramname"><em>pKF2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::vector&lt; <a class="el" href="classORB__SLAM2_1_1MapPoint.html">MapPoint</a> * &gt; &amp;&#160;</td>
+          <td class="paramname"><em>vpMatches1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structg2o_1_1Sim3.html">g2o::Sim3</a> &amp;&#160;</td>
+          <td class="paramname"><em>g2oS12</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const float&#160;</td>
+          <td class="paramname"><em>th2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const bool&#160;</td>
+          <td class="paramname"><em>bFixScale</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>形成闭环时进行Sim3优化 </p>
+<ol type="1">
+<li>Vertex:<ul>
+<li><a class="el" href="classg2o_1_1VertexSim3Expmap.html" title="Sim3 Vertex, (x,y,z,qw,qx,qy,qz) the parameterization for the increments constructed is a 7d vector (...">g2o::VertexSim3Expmap()</a>，两个关键帧的位姿</li>
+<li><a class="el" href="classg2o_1_1VertexSBAPointXYZ.html" title="Point vertex, XYZ. ">g2o::VertexSBAPointXYZ()</a>，两个关键帧共有的MapPoints</li>
+</ul>
+</li>
+<li>Edge:<ul>
+<li><a class="el" href="classg2o_1_1EdgeSim3ProjectXYZ.html">g2o::EdgeSim3ProjectXYZ()</a>，BaseBinaryEdge<ul>
+<li>Vertex：关键帧的Sim3，MapPoint的Pw</li>
+<li>measurement：MapPoint在关键帧中的二维位置(u,v)</li>
+<li>InfoMatrix: invSigma2(与特征点所在的尺度有关)</li>
+</ul>
+</li>
+<li><a class="el" href="classg2o_1_1EdgeInverseSim3ProjectXYZ.html">g2o::EdgeInverseSim3ProjectXYZ()</a>，BaseBinaryEdge<ul>
+<li>Vertex：关键帧的Sim3，MapPoint的Pw</li>
+<li>measurement：MapPoint在关键帧中的二维位置(u,v)</li>
+<li>InfoMatrix: invSigma2(与特征点所在的尺度有关)</li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pKF1</td><td><a class="el" href="classORB__SLAM2_1_1KeyFrame.html">KeyFrame</a> </td></tr>
+    <tr><td class="paramname">pKF2</td><td><a class="el" href="classORB__SLAM2_1_1KeyFrame.html">KeyFrame</a> </td></tr>
+    <tr><td class="paramname">vpMatches1</td><td>两个关键帧的匹配关系 </td></tr>
+    <tr><td class="paramname">g2oS12</td><td>两个关键帧间的Sim3变换 </td></tr>
+    <tr><td class="paramname">th2</td><td>核函数阈值 </td></tr>
+    <tr><td class="paramname">bFixScale</td><td>是否优化尺度，弹目进行尺度优化，双目不进行尺度优化 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>在文件 <a class="el" href="Optimizer_8cpp_source.html">Optimizer.cpp</a> 第 <a class="el" href="Optimizer_8cpp_source.html#l01225">1225</a> 行定义.</p>
+
+<p>参考 <a class="el" href="optimizable__graph_8cpp_source.html#l00264">g2o::OptimizableGraph::addEdge()</a>, <a class="el" href="optimizable__graph_8cpp_source.html#l00243">g2o::OptimizableGraph::addVertex()</a>, <a class="el" href="base__edge_8h_source.html#l00058">g2o::BaseEdge&lt; D, E &gt;::chi2()</a>, <a class="el" href="base__vertex_8h_source.html#l00102">g2o::BaseVertex&lt; D, T &gt;::estimate()</a>, <a class="el" href="KeyFrame_8cpp_source.html#l00348">ORB_SLAM2::KeyFrame::GetMapPointMatches()</a>, <a class="el" href="sparse__optimizer_8cpp_source.html#l00269">g2o::SparseOptimizer::initializeOptimization()</a>, <a class="el" href="sparse__optimizer_8cpp_source.html#l00354">g2o::SparseOptimizer::optimize()</a>, <a class="el" href="hyper__graph_8cpp_source.html#l00129">g2o::HyperGraph::removeEdge()</a>, <a class="el" href="robust__kernel__impl_8cpp_source.html#l00065">g2o::RobustKernelHuber::setDelta()</a>, <a class="el" href="base__vertex_8h_source.html#l00104">g2o::BaseVertex&lt; D, T &gt;::setEstimate()</a>, <a class="el" href="optimizable__graph_8h_source.html#l00308">g2o::OptimizableGraph::Vertex::setFixed()</a>, <a class="el" href="optimizable__graph_8h_source.html#l00319">g2o::OptimizableGraph::Vertex::setId()</a>, <a class="el" href="optimizable__graph_8cpp_source.html#l00193">g2o::OptimizableGraph::Edge::setRobustKernel()</a>, <a class="el" href="hyper__graph_8h_source.html#l00153">g2o::HyperGraph::Edge::setVertex()</a> , 以及 <a class="el" href="optimizable__graph_8h_source.html#l00529">g2o::OptimizableGraph::vertex()</a>.</p>
+
+<p>参考自 <a class="el" href="LoopClosing_8cpp_source.html#l00283">ORB_SLAM2::LoopClosing::ComputeSim3()</a>.</p>
+
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classORB__SLAM2_1_1Optimizer_ad8fe00ad3e6564b859b07ff9e7b2224e_cgraph.png" border="0" usemap="#classORB__SLAM2_1_1Optimizer_ad8fe00ad3e6564b859b07ff9e7b2224e_cgraph" alt=""/></div>
+<map name="classORB__SLAM2_1_1Optimizer_ad8fe00ad3e6564b859b07ff9e7b2224e_cgraph" id="classORB__SLAM2_1_1Optimizer_ad8fe00ad3e6564b859b07ff9e7b2224e_cgraph">
+<area shape="rect" id="node2" href="structg2o_1_1OptimizableGraph.html#a6831ed69fce3dba691f53302a2813070" title="g2o::OptimizableGraph\l::addEdge" alt="" coords="240,358,395,399"/><area shape="rect" id="node10" href="structg2o_1_1OptimizableGraph.html#ae0b93774ce1dfa0dfd501c86ad4f773e" title="g2o::OptimizableGraph\l::addVertex" alt="" coords="240,23,395,65"/><area shape="rect" id="node14" href="structg2o_1_1OptimizableGraph.html#a19e014e8ec2e9a6e894da8c3a8f8e50d" title="returns the vertex number id appropriately casted " alt="" coords="488,82,643,123"/><area shape="rect" id="node15" href="classg2o_1_1BaseEdge.html#a7ea9406b8cc06b44433569bbd4fcefac" title="computes the chi2 based on the cached error value, only valid after computeError has been called..." alt="" coords="246,191,389,217"/><area shape="rect" id="node16" href="classg2o_1_1BaseVertex.html#abb9caa0d2d00af70e95963a11ee9660a" title="return the current estimate of the vertex " alt="" coords="229,241,406,268"/><area shape="rect" id="node17" href="classORB__SLAM2_1_1KeyFrame.html#aabc5f6491c32999d9f546669737547bf" title="Get MapPoint Matches. " alt="" coords="233,293,402,334"/><area shape="rect" id="node18" href="classg2o_1_1SparseOptimizer.html#a56c0c13954ac7204cfb031c141ece9ae" title="g2o::SparseOptimizer\l::initializeOptimization" alt="" coords="490,333,641,374"/><area shape="rect" id="node19" href="classg2o_1_1SparseOptimizer.html#a098257ee6f13dbb79be07075244d9930" title="g2o::SparseOptimizer\l::optimize" alt="" coords="243,423,391,465"/><area shape="rect" id="node20" href="classg2o_1_1HyperGraph.html#a33e5a60705ce673d647aa1613da9d99b" title="removes a vertex from the graph. Returns true on success (edge was present) " alt="" coords="464,456,667,483"/><area shape="rect" id="node21" href="classg2o_1_1RobustKernelHuber.html#a7e9ee4bbc9483dcd3d10a4c1f506a4d2" title="g2o::RobustKernelHuber\l::setDelta" alt="" coords="235,541,400,582"/><area shape="rect" id="node22" href="classg2o_1_1BaseVertex.html#acb6e8e8f39caa04f62dd93a3dd400e06" title="set the estimate for the vertex also calls updateCache() " alt="" coords="219,607,416,633"/><area shape="rect" id="node23" href="classg2o_1_1OptimizableGraph_1_1Vertex.html#af92ef49e1bcd6a8166afa151d367b905" title="true =&gt; this node should be considered fixed during the optimization " alt="" coords="240,658,395,699"/><area shape="rect" id="node24" href="classg2o_1_1OptimizableGraph_1_1Vertex.html#ac57651173d6ce4bb4eebf8cb1d917551" title="sets the id of the node in the graph be sure that the graph keeps consistent after changing the id ..." alt="" coords="240,723,395,765"/><area shape="rect" id="node25" href="classg2o_1_1OptimizableGraph_1_1Edge.html#a42955172c19f16e2cfbb30d611d1bd87" title="g2o::OptimizableGraph\l::Edge::setRobustKernel" alt="" coords="235,789,400,830"/><area shape="rect" id="node26" href="classg2o_1_1HyperGraph_1_1Edge.html#a5e957658d6e65c49b81197d052a7f16f" title="g2o::HyperGraph::Edge\l::setVertex" alt="" coords="238,854,397,895"/><area shape="rect" id="node3" href="classg2o_1_1HyperGraph.html#a0f1d35009a2879b238c8148c33485c89" title="g2o::HyperGraph::addEdge" alt="" coords="475,399,655,425"/><area shape="rect" id="node6" href="classg2o_1_1JacobianWorkspace.html#a2d16ad6db1a51aa93c806cc9c06e223f" title="g2o::JacobianWorkspace\l::updateSize" alt="" coords="481,267,650,309"/><area shape="rect" id="node4" href="classg2o_1_1HyperGraph_1_1Vertex.html#a0805a5575511327262c89585f1953b8e" title="returns the set of hyper&#45;edges that are leaving/entering in this vertex " alt="" coords="725,449,891,490"/><area shape="rect" id="node5" href="classg2o_1_1HyperGraph_1_1Edge.html#a6410bb70a917b5407770ef1f1090b5f5" title="g2o::HyperGraph::Edge\l::vertices" alt="" coords="729,383,887,425"/><area shape="rect" id="node7" href="classg2o_1_1OptimizableGraph_1_1Vertex.html#a1037b978fec531eaf860d0037b992079" title="dimension of the estimated state belonging to this node " alt="" coords="731,187,885,229"/><area shape="rect" id="node8" href="classg2o_1_1OptimizableGraph_1_1Edge.html#a90a86891adc47a179a7cd7ef31549916" title="returns the dimensions of the error function " alt="" coords="731,253,885,294"/><area shape="rect" id="node9" href="classg2o_1_1HyperGraph_1_1Edge.html#aaec0b2c92c5496d0f0fea8f1abdc4311" title="g2o::HyperGraph::Edge\l::vertex" alt="" coords="729,318,887,359"/><area shape="rect" id="node11" href="classg2o_1_1HyperGraph.html#a7ef87ba3479827b24c6fc29c5fc3aa21" title="g2o::HyperGraph::addVertex" alt="" coords="471,31,659,57"/><area shape="rect" id="node12" href="classg2o_1_1HyperGraph_1_1Vertex.html#ad76b71c368b71971ac5affb5d57183d3" title="returns the id " alt="" coords="715,5,901,32"/><area shape="rect" id="node13" href="classg2o_1_1HyperGraph.html#ab07fe8bd9982a66ba34e83dff8317ea2" title="returns a vertex id in the hyper&#45;graph, or 0 if the vertex id is not present " alt="" coords="725,72,891,99"/></map>
+</div>
+</p>
+
+<p><div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classORB__SLAM2_1_1Optimizer_ad8fe00ad3e6564b859b07ff9e7b2224e_icgraph.png" border="0" usemap="#classORB__SLAM2_1_1Optimizer_ad8fe00ad3e6564b859b07ff9e7b2224e_icgraph" alt=""/></div>
+<map name="classORB__SLAM2_1_1Optimizer_ad8fe00ad3e6564b859b07ff9e7b2224e_icgraph" id="classORB__SLAM2_1_1Optimizer_ad8fe00ad3e6564b859b07ff9e7b2224e_icgraph">
+<area shape="rect" id="node2" href="classORB__SLAM2_1_1LoopClosing.html#ab4fcf814eed5b5dd2aec96454561b078" title="计算当前帧与闭环帧的Sim3变换等 " alt="" coords="219,5,400,46"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a7415d78b8a2323b88e108fa1ea3bf2d3"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ORB_SLAM2::Optimizer::PoseOptimization </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classORB__SLAM2_1_1Frame.html">Frame</a> *&#160;</td>
+          <td class="paramname"><em>pFrame</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Pose Only Optimization. </p>
+<p>3D-2D 最小化重投影误差 e = (u,v) - project(Tcw*Pw) <br/>
+只优化Frame的Tcw!!!!!!!!不优化MapPoints的坐标!!!!!!!!!!!!!!!!</p>
+<ol type="1">
+<li>Vertex: <a class="el" href="classg2o_1_1VertexSE3Expmap.html" title="SE3 Vertex parameterized internally with a transformation matrix and externally with its exponential ...">g2o::VertexSE3Expmap()</a>，即当前帧的Tcw</li>
+<li>Edge:<ul>
+<li><a class="el" href="classg2o_1_1EdgeSE3ProjectXYZOnlyPose.html" title="NOTE uesd in Optimizer::PoseOptimization() ">g2o::EdgeSE3ProjectXYZOnlyPose()</a>，BaseUnaryEdge<ul>
+<li>Vertex：待优化当前帧的Tcw</li>
+<li>measurement：MapPoint在当前帧中的二维位置(u,v)!!!!</li>
+<li>InfoMatrix: invSigma2(与特征点所在的尺度有关)</li>
+</ul>
+</li>
+<li><a class="el" href="classg2o_1_1EdgeStereoSE3ProjectXYZOnlyPose.html" title="NOTE uesd in Optimizer::PoseOptimization() ">g2o::EdgeStereoSE3ProjectXYZOnlyPose()</a>，BaseUnaryEdge<ul>
+<li>Vertex：待优化当前帧的Tcw</li>
+<li>measurement：MapPoint在当前帧中的二维位置(ul,v,ur)</li>
+<li>InfoMatrix: invSigma2(与特征点所在的尺度有关)</li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pFrame</td><td><a class="el" href="classORB__SLAM2_1_1Frame.html">Frame</a> </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>inliers数量 </dd></dl>
+
+<p>在文件 <a class="el" href="Optimizer_8cpp_source.html">Optimizer.cpp</a> 第 <a class="el" href="Optimizer_8cpp_source.html#l00291">291</a> 行定义.</p>
+
+<p>参考 <a class="el" href="optimizable__graph_8cpp_source.html#l00264">g2o::OptimizableGraph::addEdge()</a>, <a class="el" href="optimizable__graph_8cpp_source.html#l00243">g2o::OptimizableGraph::addVertex()</a>, <a class="el" href="types__six__dof__expmap_8h_source.html#l00318">g2o::EdgeStereoSE3ProjectXYZOnlyPose::bf</a>, <a class="el" href="base__edge_8h_source.html#l00058">g2o::BaseEdge&lt; D, E &gt;::chi2()</a>, <a class="el" href="types__six__dof__expmap_8h_source.html#l00223">g2o::EdgeSE3ProjectXYZOnlyPose::computeError()</a>, <a class="el" href="types__six__dof__expmap_8h_source.html#l00282">g2o::EdgeStereoSE3ProjectXYZOnlyPose::computeError()</a>, <a class="el" href="types__six__dof__expmap_8h_source.html#l00258">g2o::EdgeSE3ProjectXYZOnlyPose::cy</a>, <a class="el" href="hyper__graph_8h_source.html#l00187">g2o::HyperGraph::edges()</a>, <a class="el" href="base__vertex_8h_source.html#l00102">g2o::BaseVertex&lt; D, T &gt;::estimate()</a>, <a class="el" href="sparse__optimizer_8cpp_source.html#l00269">g2o::SparseOptimizer::initializeOptimization()</a>, <a class="el" href="Frame_8h_source.html#l00184">ORB_SLAM2::Frame::mTcw</a>, <a class="el" href="Frame_8h_source.html#l00139">ORB_SLAM2::Frame::N</a>, <a class="el" href="sparse__optimizer_8cpp_source.html#l00354">g2o::SparseOptimizer::optimize()</a>, <a class="el" href="robust__kernel__impl_8cpp_source.html#l00065">g2o::RobustKernelHuber::setDelta()</a>, <a class="el" href="base__vertex_8h_source.html#l00104">g2o::BaseVertex&lt; D, T &gt;::setEstimate()</a>, <a class="el" href="optimizable__graph_8h_source.html#l00308">g2o::OptimizableGraph::Vertex::setFixed()</a>, <a class="el" href="optimizable__graph_8h_source.html#l00319">g2o::OptimizableGraph::Vertex::setId()</a>, <a class="el" href="optimizable__graph_8h_source.html#l00470">g2o::OptimizableGraph::Edge::setLevel()</a>, <a class="el" href="Frame_8cpp_source.html#l00275">ORB_SLAM2::Frame::SetPose()</a>, <a class="el" href="optimizable__graph_8cpp_source.html#l00193">g2o::OptimizableGraph::Edge::setRobustKernel()</a>, <a class="el" href="hyper__graph_8h_source.html#l00153">g2o::HyperGraph::Edge::setVertex()</a>, <a class="el" href="Converter_8cpp_source.html#l00037">ORB_SLAM2::Converter::toSE3Quat()</a>, <a class="el" href="optimizable__graph_8h_source.html#l00529">g2o::OptimizableGraph::vertex()</a>, <a class="el" href="types__six__dof__expmap_8h_source.html#l00257">g2o::EdgeSE3ProjectXYZOnlyPose::Xw</a> , 以及 <a class="el" href="types__six__dof__expmap_8h_source.html#l00317">g2o::EdgeStereoSE3ProjectXYZOnlyPose::Xw</a>.</p>
+
+<p>参考自 <a class="el" href="Tracking_8cpp_source.html#l01215">ORB_SLAM2::Tracking::TrackLocalMap()</a>, <a class="el" href="Tracking_8cpp_source.html#l00982">ORB_SLAM2::Tracking::TrackReferenceKeyFrame()</a> , 以及 <a class="el" href="Tracking_8cpp_source.html#l01131">ORB_SLAM2::Tracking::TrackWithMotionModel()</a>.</p>
+
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classORB__SLAM2_1_1Optimizer_a7415d78b8a2323b88e108fa1ea3bf2d3_cgraph.png" border="0" usemap="#classORB__SLAM2_1_1Optimizer_a7415d78b8a2323b88e108fa1ea3bf2d3_cgraph" alt=""/></div>
+<map name="classORB__SLAM2_1_1Optimizer_a7415d78b8a2323b88e108fa1ea3bf2d3_cgraph" id="classORB__SLAM2_1_1Optimizer_a7415d78b8a2323b88e108fa1ea3bf2d3_cgraph">
+<area shape="rect" id="node2" href="structg2o_1_1OptimizableGraph.html#a6831ed69fce3dba691f53302a2813070" title="g2o::OptimizableGraph\l::addEdge" alt="" coords="244,194,399,235"/><area shape="rect" id="node10" href="structg2o_1_1OptimizableGraph.html#ae0b93774ce1dfa0dfd501c86ad4f773e" title="g2o::OptimizableGraph\l::addVertex" alt="" coords="244,315,399,357"/><area shape="rect" id="node14" href="structg2o_1_1OptimizableGraph.html#a19e014e8ec2e9a6e894da8c3a8f8e50d" title="returns the vertex number id appropriately casted " alt="" coords="493,381,648,422"/><area shape="rect" id="node15" href="classg2o_1_1BaseEdge.html#a7ea9406b8cc06b44433569bbd4fcefac" title="computes the chi2 based on the cached error value, only valid after computeError has been called..." alt="" coords="250,432,393,459"/><area shape="rect" id="node16" href="classg2o_1_1EdgeSE3ProjectXYZOnlyPose.html#a6752098d3322d30e43a6a3a668a3b009" title="g2o::EdgeSE3ProjectXYZOnly\lPose::computeError" alt="" coords="221,534,421,575"/><area shape="rect" id="node17" href="classg2o_1_1BaseVertex.html#abb9caa0d2d00af70e95963a11ee9660a" title="return the current estimate of the vertex " alt="" coords="482,541,659,568"/><area shape="rect" id="node18" href="classg2o_1_1EdgeStereoSE3ProjectXYZOnlyPose.html#af6fd2fdbdc9b4a6bcf21303ff3b8ea83" title="g2o::EdgeStereoSE3Project\lXYZOnlyPose::computeError" alt="" coords="226,599,417,641"/><area shape="rect" id="node19" href="classg2o_1_1HyperGraph.html#acb3391945ed7c3f09243101d9ef0aaf0" title="g2o::HyperGraph::edges" alt="" coords="239,665,403,692"/><area shape="rect" id="node20" href="classg2o_1_1SparseOptimizer.html#a56c0c13954ac7204cfb031c141ece9ae" title="g2o::SparseOptimizer\l::initializeOptimization" alt="" coords="495,129,646,170"/><area shape="rect" id="node21" href="classg2o_1_1SparseOptimizer.html#a098257ee6f13dbb79be07075244d9930" title="g2o::SparseOptimizer\l::optimize" alt="" coords="247,717,395,758"/><area shape="rect" id="node22" href="classg2o_1_1RobustKernelHuber.html#a7e9ee4bbc9483dcd3d10a4c1f506a4d2" title="g2o::RobustKernelHuber\l::setDelta" alt="" coords="239,782,404,823"/><area shape="rect" id="node23" href="classg2o_1_1BaseVertex.html#acb6e8e8f39caa04f62dd93a3dd400e06" title="set the estimate for the vertex also calls updateCache() " alt="" coords="223,848,420,875"/><area shape="rect" id="node24" href="classg2o_1_1OptimizableGraph_1_1Vertex.html#af92ef49e1bcd6a8166afa151d367b905" title="true =&gt; this node should be considered fixed during the optimization " alt="" coords="244,899,399,941"/><area shape="rect" id="node25" href="classg2o_1_1OptimizableGraph_1_1Vertex.html#ac57651173d6ce4bb4eebf8cb1d917551" title="sets the id of the node in the graph be sure that the graph keeps consistent after changing the id ..." alt="" coords="244,965,399,1006"/><area shape="rect" id="node26" href="classg2o_1_1OptimizableGraph_1_1Edge.html#ab3e4290bc51d03ba294f36254048b15a" title="sets the level of the edge " alt="" coords="244,1030,399,1071"/><area shape="rect" id="node27" href="classORB__SLAM2_1_1Frame.html#a95cf2ea68735ef3e8c2d820eada11bf4" title="Set the camera pose. " alt="" coords="219,1096,423,1123"/><area shape="rect" id="node29" href="classg2o_1_1OptimizableGraph_1_1Edge.html#a42955172c19f16e2cfbb30d611d1bd87" title="g2o::OptimizableGraph\l::Edge::setRobustKernel" alt="" coords="239,1147,404,1189"/><area shape="rect" id="node30" href="classg2o_1_1HyperGraph_1_1Edge.html#a5e957658d6e65c49b81197d052a7f16f" title="g2o::HyperGraph::Edge\l::setVertex" alt="" coords="242,1213,401,1254"/><area shape="rect" id="node31" href="classORB__SLAM2_1_1Converter.html#a0b73791a3e2d90b4de41aed0ece2d0a2" title="ORB_SLAM2::Converter\l::toSE3Quat" alt="" coords="238,1278,405,1319"/><area shape="rect" id="node3" href="classg2o_1_1HyperGraph.html#a0f1d35009a2879b238c8148c33485c89" title="g2o::HyperGraph::addEdge" alt="" coords="481,77,661,104"/><area shape="rect" id="node6" href="classg2o_1_1JacobianWorkspace.html#a2d16ad6db1a51aa93c806cc9c06e223f" title="g2o::JacobianWorkspace\l::updateSize" alt="" coords="486,194,655,235"/><area shape="rect" id="node4" href="classg2o_1_1HyperGraph_1_1Vertex.html#a0805a5575511327262c89585f1953b8e" title="returns the set of hyper&#45;edges that are leaving/entering in this vertex " alt="" coords="727,5,894,46"/><area shape="rect" id="node5" href="classg2o_1_1HyperGraph_1_1Edge.html#a6410bb70a917b5407770ef1f1090b5f5" title="g2o::HyperGraph::Edge\l::vertices" alt="" coords="731,70,890,111"/><area shape="rect" id="node7" href="classg2o_1_1OptimizableGraph_1_1Vertex.html#a1037b978fec531eaf860d0037b992079" title="dimension of the estimated state belonging to this node " alt="" coords="733,266,888,307"/><area shape="rect" id="node8" href="classg2o_1_1OptimizableGraph_1_1Edge.html#a90a86891adc47a179a7cd7ef31549916" title="returns the dimensions of the error function " alt="" coords="733,135,888,177"/><area shape="rect" id="node9" href="classg2o_1_1HyperGraph_1_1Edge.html#aaec0b2c92c5496d0f0fea8f1abdc4311" title="g2o::HyperGraph::Edge\l::vertex" alt="" coords="731,201,890,242"/><area shape="rect" id="node11" href="classg2o_1_1HyperGraph.html#a7ef87ba3479827b24c6fc29c5fc3aa21" title="g2o::HyperGraph::addVertex" alt="" coords="477,329,665,356"/><area shape="rect" id="node12" href="classg2o_1_1HyperGraph_1_1Vertex.html#ad76b71c368b71971ac5affb5d57183d3" title="returns the id " alt="" coords="718,332,903,359"/><area shape="rect" id="node13" href="classg2o_1_1HyperGraph.html#ab07fe8bd9982a66ba34e83dff8317ea2" title="returns a vertex id in the hyper&#45;graph, or 0 if the vertex id is not present " alt="" coords="728,384,893,411"/><area shape="rect" id="node28" href="classORB__SLAM2_1_1Frame.html#a0a18d3024a23f6fa2cab9c7d987598c2" title="Computes rotation, translation and camera center matrices from the camera pose. " alt="" coords="473,1089,669,1130"/></map>
+</div>
+</p>
+
+<p><div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classORB__SLAM2_1_1Optimizer_a7415d78b8a2323b88e108fa1ea3bf2d3_icgraph.png" border="0" usemap="#classORB__SLAM2_1_1Optimizer_a7415d78b8a2323b88e108fa1ea3bf2d3_icgraph" alt=""/></div>
+<map name="classORB__SLAM2_1_1Optimizer_a7415d78b8a2323b88e108fa1ea3bf2d3_icgraph" id="classORB__SLAM2_1_1Optimizer_a7415d78b8a2323b88e108fa1ea3bf2d3_icgraph">
+<area shape="rect" id="node2" href="classORB__SLAM2_1_1Tracking.html#af670c614f4e10d58c9f7aad9865b5c08" title="对Local Map的MapPoints进行跟踪 " alt="" coords="231,5,390,46"/><area shape="rect" id="node4" href="classORB__SLAM2_1_1Tracking.html#a737c5409c93844353561a0fe724ed1c2" title="对参考关键帧的MapPoints进行跟踪 " alt="" coords="219,70,402,111"/><area shape="rect" id="node5" href="classORB__SLAM2_1_1Tracking.html#aca19f1d69b30a6c6e49281d422ac8298" title="根据匀速度模型对上一帧的MapPoints进行跟踪 " alt="" coords="229,135,393,177"/><area shape="rect" id="node3" href="classORB__SLAM2_1_1Tracking.html#af1f2c9c533642d8c33854540e90d1918" title="Main tracking function. It is independent of the input sensor. " alt="" coords="451,70,610,111"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>include/<a class="el" href="Optimizer_8h_source.html">Optimizer.h</a></li>
+<li>src/<a class="el" href="Optimizer_8cpp_source.html">Optimizer.cpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespaceORB__SLAM2.html">ORB_SLAM2</a></li><li class="navelem"><a class="el" href="classORB__SLAM2_1_1Optimizer.html">Optimizer</a></li>
+    <li class="footer">生成于 2017年 七月 18日 星期二 17:13:40 , 为 My Project使用 
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
+  </ul>
+</div>
+</body>
+</html>

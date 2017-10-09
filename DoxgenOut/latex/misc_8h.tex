@@ -1,0 +1,76 @@
+\hypertarget{misc_8h}{\section{Thirdparty/g2o/g2o/stuff/misc.h 文件参考}
+\label{misc_8h}\index{Thirdparty/g2o/g2o/stuff/misc.\-h@{Thirdparty/g2o/g2o/stuff/misc.\-h}}
+}
+
+
+some general case utility functions  
+
+
+{\ttfamily \#include \char`\"{}macros.\-h\char`\"{}}\\*
+{\ttfamily \#include $<$cmath$>$}\\*
+misc.\-h 的引用(Include)关系图\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=199pt]{misc_8h__incl}
+\end{center}
+\end{figure}
+此图展示该文件直接或间接的被哪些文件引用了\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{misc_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{类}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structg2o_1_1ForceLinker}{g2o\-::\-Force\-Linker}
+\end{DoxyCompactItemize}
+\subsection*{宏定义}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{misc_8h_ae71449b1cc6e6250b91f539153a7a0d3}{\#define {\bfseries M\-\_\-\-P\-I}~3.\-14159265358979323846}\label{misc_8h_ae71449b1cc6e6250b91f539153a7a0d3}
+
+\end{DoxyCompactItemize}
+\subsection*{类型定义}
+\begin{DoxyCompactItemize}
+\item 
+typedef void($\ast$ {\bfseries g2o\-::\-Force\-Link\-Function} )(void)
+\end{DoxyCompactItemize}
+\subsection*{函数}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename T $>$ }\\T {\bfseries g2o\-::square} (T x)
+\item 
+{\footnotesize template$<$typename T $>$ }\\T {\bfseries g2o\-::hypot} (T x, T y)
+\item 
+{\footnotesize template$<$typename T $>$ }\\T {\bfseries g2o\-::hypot\-\_\-sqr} (T x, T y)
+\item 
+double {\bfseries g2o\-::deg2rad} (double degree)
+\item 
+double {\bfseries g2o\-::rad2deg} (double rad)
+\item 
+double {\bfseries g2o\-::normalize\-\_\-theta} (double theta)
+\item 
+double {\bfseries g2o\-::inverse\-\_\-theta} (double th)
+\item 
+double {\bfseries g2o\-::average\-\_\-angle} (double theta1, double theta2)
+\item 
+{\footnotesize template$<$typename T $>$ }\\int {\bfseries g2o\-::sign} (T x)
+\item 
+{\footnotesize template$<$typename T $>$ }\\T {\bfseries g2o\-::clamp} (T l, T x, T u)
+\item 
+{\footnotesize template$<$typename T $>$ }\\T {\bfseries g2o\-::wrap} (T l, T x, T u)
+\item 
+bool {\bfseries g2o\-::array\-Has\-Na\-N} (const double $\ast$array, int size, int $\ast$nan\-Index=0)
+\end{DoxyCompactItemize}
+
+
+\subsection{详细描述}
+some general case utility functions This file specifies some general case utility functions 
+
+在文件 \hyperlink{misc_8h_source}{misc.\-h} 中定义.
+

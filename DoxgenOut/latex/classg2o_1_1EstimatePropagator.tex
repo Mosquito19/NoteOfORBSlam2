@@ -1,0 +1,161 @@
+\hypertarget{classg2o_1_1EstimatePropagator}{\section{g2o\-:\-:Estimate\-Propagator类 参考}
+\label{classg2o_1_1EstimatePropagator}\index{g2o\-::\-Estimate\-Propagator@{g2o\-::\-Estimate\-Propagator}}
+}
+
+
+propagation of an initial guess  
+
+
+
+
+{\ttfamily \#include $<$estimate\-\_\-propagator.\-h$>$}
+
+
+
+g2o\-:\-:Estimate\-Propagator 的协作图\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classg2o_1_1EstimatePropagator__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{类}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classg2o_1_1EstimatePropagator_1_1AdjacencyMapEntry}{Adjacency\-Map\-Entry}
+\begin{DoxyCompactList}\small\item\em data structure for loopuk during Dijkstra \end{DoxyCompactList}\item 
+class \hyperlink{classg2o_1_1EstimatePropagator_1_1PriorityQueue}{Priority\-Queue}
+\begin{DoxyCompactList}\small\item\em priority queue for \hyperlink{classg2o_1_1EstimatePropagator_1_1AdjacencyMapEntry}{Adjacency\-Map\-Entry} \end{DoxyCompactList}\item 
+struct \hyperlink{structg2o_1_1EstimatePropagator_1_1PropagateAction}{Propagate\-Action}
+\begin{DoxyCompactList}\small\item\em Applying the action for propagating. \end{DoxyCompactList}\item 
+class \hyperlink{classg2o_1_1EstimatePropagator_1_1VertexIDHashFunction}{Vertex\-I\-D\-Hash\-Function}
+\begin{DoxyCompactList}\small\item\em hash function for a vertex \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public 类型}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classg2o_1_1EstimatePropagator_a67a42f9c6d5f92562ac4ea12f81c8d9c}{typedef \hyperlink{classg2o_1_1EstimatePropagatorCost}{Estimate\-Propagator\-Cost} {\bfseries Propagate\-Cost}}\label{classg2o_1_1EstimatePropagator_a67a42f9c6d5f92562ac4ea12f81c8d9c}
+
+\item 
+\hypertarget{classg2o_1_1EstimatePropagator_aa450038ec206c089ecf023cb88cb2847}{typedef \\*
+std\-::tr1\-::unordered\-\_\-map\\*
+$<$ \hyperlink{classg2o_1_1OptimizableGraph_1_1Vertex}{Optimizable\-Graph\-::\-Vertex} \\*
+$\ast$, \hyperlink{classg2o_1_1EstimatePropagator_1_1AdjacencyMapEntry}{Adjacency\-Map\-Entry}, \\*
+\hyperlink{classg2o_1_1EstimatePropagator_1_1VertexIDHashFunction}{Vertex\-I\-D\-Hash\-Function} $>$ {\bfseries Adjacency\-Map}}\label{classg2o_1_1EstimatePropagator_aa450038ec206c089ecf023cb88cb2847}
+
+\end{DoxyCompactItemize}
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classg2o_1_1EstimatePropagator_af245037ba41bfb02d531c11f5de4f7e8}{{\bfseries Estimate\-Propagator} (\hyperlink{structg2o_1_1OptimizableGraph}{Optimizable\-Graph} $\ast$g)}\label{classg2o_1_1EstimatePropagator_af245037ba41bfb02d531c11f5de4f7e8}
+
+\item 
+\hypertarget{classg2o_1_1EstimatePropagator_a2d346a2411d969caa81817c15052cd58}{Optimizable\-Graph\-::\-Vertex\-Set \& {\bfseries visited} ()}\label{classg2o_1_1EstimatePropagator_a2d346a2411d969caa81817c15052cd58}
+
+\item 
+\hypertarget{classg2o_1_1EstimatePropagator_ad6dc3d18c4057915af4cc4986b568855}{Adjacency\-Map \& {\bfseries adjacency\-Map} ()}\label{classg2o_1_1EstimatePropagator_ad6dc3d18c4057915af4cc4986b568855}
+
+\item 
+\hypertarget{classg2o_1_1EstimatePropagator_a97064a86789b496b590f4848fdb59bc8}{\hyperlink{structg2o_1_1OptimizableGraph}{Optimizable\-Graph} $\ast$ {\bfseries graph} ()}\label{classg2o_1_1EstimatePropagator_a97064a86789b496b590f4848fdb59bc8}
+
+\item 
+void \hyperlink{classg2o_1_1EstimatePropagator_a3b1df65f9b89d81dff33cb140d4f75d4}{propagate} (\hyperlink{classg2o_1_1OptimizableGraph_1_1Vertex}{Optimizable\-Graph\-::\-Vertex} $\ast$v, const \hyperlink{classg2o_1_1EstimatePropagatorCost}{Estimate\-Propagator\-::\-Propagate\-Cost} \&cost, const \hyperlink{structg2o_1_1EstimatePropagator_1_1PropagateAction}{Estimate\-Propagator\-::\-Propagate\-Action} \&action=\hyperlink{structg2o_1_1EstimatePropagator_1_1PropagateAction}{Propagate\-Action}(), double max\-Distance=std\-::numeric\-\_\-limits$<$ double $>$\-::max(), double max\-Edge\-Cost=std\-::numeric\-\_\-limits$<$ double $>$\-::max())
+\item 
+void \hyperlink{classg2o_1_1EstimatePropagator_ae24b104ec3e8162bc75a70db9941f342}{propagate} (Optimizable\-Graph\-::\-Vertex\-Set \&vset, const \hyperlink{classg2o_1_1EstimatePropagatorCost}{Estimate\-Propagator\-::\-Propagate\-Cost} \&cost, const \hyperlink{structg2o_1_1EstimatePropagator_1_1PropagateAction}{Estimate\-Propagator\-::\-Propagate\-Action} \&action=\hyperlink{structg2o_1_1EstimatePropagator_1_1PropagateAction}{Propagate\-Action}(), double max\-Distance=std\-::numeric\-\_\-limits$<$ double $>$\-::max(), double max\-Edge\-Cost=std\-::numeric\-\_\-limits$<$ double $>$\-::max())
+\end{DoxyCompactItemize}
+\subsection*{Protected 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classg2o_1_1EstimatePropagator_a8319099eda0552b9ef62a0bb40bb0785}{void {\bfseries reset} ()}\label{classg2o_1_1EstimatePropagator_a8319099eda0552b9ef62a0bb40bb0785}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected 属性}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classg2o_1_1EstimatePropagator_ac3f6429938db62696444fd7ee765439a}{Adjacency\-Map {\bfseries \-\_\-adjacency\-Map}}\label{classg2o_1_1EstimatePropagator_ac3f6429938db62696444fd7ee765439a}
+
+\item 
+\hypertarget{classg2o_1_1EstimatePropagator_a1256927d6d1832ee300daa53d1c845a2}{Optimizable\-Graph\-::\-Vertex\-Set {\bfseries \-\_\-visited}}\label{classg2o_1_1EstimatePropagator_a1256927d6d1832ee300daa53d1c845a2}
+
+\item 
+\hypertarget{classg2o_1_1EstimatePropagator_ac2dcd3169696692ce3f0679235933e8a}{\hyperlink{structg2o_1_1OptimizableGraph}{Optimizable\-Graph} $\ast$ {\bfseries \-\_\-graph}}\label{classg2o_1_1EstimatePropagator_ac2dcd3169696692ce3f0679235933e8a}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{详细描述}
+propagation of an initial guess 
+
+在文件 estimate\-\_\-propagator.\-h 第 78 行定义.
+
+
+
+\subsection{成员函数说明}
+\hypertarget{classg2o_1_1EstimatePropagator_a3b1df65f9b89d81dff33cb140d4f75d4}{\index{g2o\-::\-Estimate\-Propagator@{g2o\-::\-Estimate\-Propagator}!propagate@{propagate}}
+\index{propagate@{propagate}!g2o::EstimatePropagator@{g2o\-::\-Estimate\-Propagator}}
+\subsubsection[{propagate}]{\setlength{\rightskip}{0pt plus 5cm}void g2o\-::\-Estimate\-Propagator\-::propagate (
+\begin{DoxyParamCaption}
+\item[{{\bf Optimizable\-Graph\-::\-Vertex} $\ast$}]{v, }
+\item[{const {\bf Estimate\-Propagator\-::\-Propagate\-Cost} \&}]{cost, }
+\item[{const {\bf Estimate\-Propagator\-::\-Propagate\-Action} \&}]{action = {\ttfamily {\bf Propagate\-Action}()}, }
+\item[{double}]{max\-Distance = {\ttfamily std\-:\-:numeric\-\_\-limits$<$double$>$\-:\-:max()}, }
+\item[{double}]{max\-Edge\-Cost = {\ttfamily std\-:\-:numeric\-\_\-limits$<$double$>$\-:\-:max()}}
+\end{DoxyParamCaption}
+)}}\label{classg2o_1_1EstimatePropagator_a3b1df65f9b89d81dff33cb140d4f75d4}
+propagate an initial guess starting from v. The function computes a spanning tree whereas the cost for each edge is determined by calling cost() and the action applied to each vertex is action(). 
+
+在文件 estimate\-\_\-propagator.\-cpp 第 86 行定义.
+
+
+
+参考自 g2o\-::\-Sparse\-Optimizer\-::compute\-Initial\-Guess().
+
+
+
+这是这个函数的调用关系图\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classg2o_1_1EstimatePropagator_a3b1df65f9b89d81dff33cb140d4f75d4_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classg2o_1_1EstimatePropagator_ae24b104ec3e8162bc75a70db9941f342}{\index{g2o\-::\-Estimate\-Propagator@{g2o\-::\-Estimate\-Propagator}!propagate@{propagate}}
+\index{propagate@{propagate}!g2o::EstimatePropagator@{g2o\-::\-Estimate\-Propagator}}
+\subsubsection[{propagate}]{\setlength{\rightskip}{0pt plus 5cm}void g2o\-::\-Estimate\-Propagator\-::propagate (
+\begin{DoxyParamCaption}
+\item[{Optimizable\-Graph\-::\-Vertex\-Set \&}]{vset, }
+\item[{const {\bf Estimate\-Propagator\-::\-Propagate\-Cost} \&}]{cost, }
+\item[{const {\bf Estimate\-Propagator\-::\-Propagate\-Action} \&}]{action = {\ttfamily {\bf Propagate\-Action}()}, }
+\item[{double}]{max\-Distance = {\ttfamily std\-:\-:numeric\-\_\-limits$<$double$>$\-:\-:max()}, }
+\item[{double}]{max\-Edge\-Cost = {\ttfamily std\-:\-:numeric\-\_\-limits$<$double$>$\-:\-:max()}}
+\end{DoxyParamCaption}
+)}}\label{classg2o_1_1EstimatePropagator_ae24b104ec3e8162bc75a70db9941f342}
+same as above but starting to propagate from a set of vertices instead of just a single one. 
+
+在文件 estimate\-\_\-propagator.\-cpp 第 97 行定义.
+
+
+
+参考 g2o\-::\-Hyper\-Graph\-::\-Vertex\-::edges(), g2o\-::\-Hyper\-Graph\-::\-Vertex\-::id(), g2o\-::\-Hyper\-Graph\-::\-Edge\-::vertex() , 以及 g2o\-::\-Hyper\-Graph\-::\-Edge\-::vertices().
+
+
+
+函数调用图\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classg2o_1_1EstimatePropagator_ae24b104ec3e8162bc75a70db9941f342_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+该类的文档由以下文件生成\-:\begin{DoxyCompactItemize}
+\item 
+Thirdparty/g2o/g2o/core/estimate\-\_\-propagator.\-h\item 
+Thirdparty/g2o/g2o/core/estimate\-\_\-propagator.\-cpp\end{DoxyCompactItemize}

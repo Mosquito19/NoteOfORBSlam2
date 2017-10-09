@@ -1,0 +1,6 @@
+<map id="DBoW2::TemplatedVocabulary::Node::isLeaf" name="DBoW2::TemplatedVocabulary::Node::isLeaf">
+<area shape="rect" id="node2" href="$classDBoW2_1_1TemplatedVocabulary.html#a916015cc8e6cd6f53c6e067c7b829f75" title="DBoW2::TemplatedVocabulary\l::getWordsFromNode" alt="" coords="256,5,459,46"/>
+<area shape="rect" id="node3" href="$classDBoW2_1_1TemplatedVocabulary.html#a19159c3993fce7b4573a6de208b4a973" title="DBoW2::TemplatedVocabulary\l::save" alt="" coords="256,70,459,111"/>
+<area shape="rect" id="node4" href="$classDBoW2_1_1TemplatedVocabulary.html#a54f4d76e7ebe4a3a5ead07dabe9c6688" title="DBoW2::TemplatedVocabulary\l::saveToBinaryFile" alt="" coords="256,135,459,177"/>
+<area shape="rect" id="node5" href="$classDBoW2_1_1TemplatedVocabulary.html#a8856121ae0d46ed08db95e51ba74e6eb" title="DBoW2::TemplatedVocabulary\l::saveToTextFile" alt="" coords="256,201,459,242"/>
+</map>

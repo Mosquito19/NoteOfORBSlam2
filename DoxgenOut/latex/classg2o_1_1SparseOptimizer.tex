@@ -1,0 +1,805 @@
+\hypertarget{classg2o_1_1SparseOptimizer}{\section{g2o\-:\-:Sparse\-Optimizer类 参考}
+\label{classg2o_1_1SparseOptimizer}\index{g2o\-::\-Sparse\-Optimizer@{g2o\-::\-Sparse\-Optimizer}}
+}
+
+
+类 g2o\-:\-:Sparse\-Optimizer 继承关系图\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=194pt]{classg2o_1_1SparseOptimizer__inherit__graph}
+\end{center}
+\end{figure}
+
+
+g2o\-:\-:Sparse\-Optimizer 的协作图\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classg2o_1_1SparseOptimizer__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public 类型}
+\begin{DoxyCompactItemize}
+\item 
+enum \{ {\bfseries A\-T\-\_\-\-C\-O\-M\-P\-U\-T\-E\-A\-C\-T\-I\-V\-E\-R\-R\-O\-R} = Optimizable\-Graph\-:\-:A\-T\-\_\-\-N\-U\-M\-\_\-\-E\-L\-E\-M\-E\-N\-T\-S, 
+{\bfseries A\-T\-\_\-\-N\-U\-M\-\_\-\-E\-L\-E\-M\-E\-N\-T\-S}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+virtual bool \hyperlink{classg2o_1_1SparseOptimizer_a56c0c13954ac7204cfb031c141ece9ae}{initialize\-Optimization} (Hyper\-Graph\-::\-Edge\-Set \&eset)
+\item 
+virtual bool \hyperlink{classg2o_1_1SparseOptimizer_ab16dd36e32577ba5856239ce721ec70b}{initialize\-Optimization} (Hyper\-Graph\-::\-Vertex\-Set \&vset, int level=0)
+\item 
+virtual bool \hyperlink{classg2o_1_1SparseOptimizer_ace3994bf5f403c7fa0305635aa598473}{initialize\-Optimization} (int level=0)
+\item 
+virtual bool \hyperlink{classg2o_1_1SparseOptimizer_ae971d068585055973798f93ac2363d94}{update\-Initialization} (Hyper\-Graph\-::\-Vertex\-Set \&vset, Hyper\-Graph\-::\-Edge\-Set \&eset)
+\item 
+virtual void \hyperlink{classg2o_1_1SparseOptimizer_a59db9f16934d3b9f7a52511f0be1bb07}{compute\-Initial\-Guess} ()
+\item 
+virtual void \hyperlink{classg2o_1_1SparseOptimizer_a2fba11c8572fce4a8c1bcca4fa3e43fb}{compute\-Initial\-Guess} (\hyperlink{classg2o_1_1EstimatePropagatorCost}{Estimate\-Propagator\-Cost} \&propagator)
+\item 
+virtual void \hyperlink{classg2o_1_1SparseOptimizer_ab8af902464774ec3d3910a3674791714}{set\-To\-Origin} ()
+\item 
+int \hyperlink{classg2o_1_1SparseOptimizer_a098257ee6f13dbb79be07075244d9930}{optimize} (int iterations, bool online=false)
+\item 
+bool \hyperlink{classg2o_1_1SparseOptimizer_a656be8b8244a48dc1207f29eec77af5a}{compute\-Marginals} (\hyperlink{classg2o_1_1SparseBlockMatrix}{Sparse\-Block\-Matrix}$<$ Matrix\-Xd $>$ \&spinv, const std\-::vector$<$ std\-::pair$<$ int, int $>$ $>$ \&block\-Indices)
+\item 
+bool \hyperlink{classg2o_1_1SparseOptimizer_ad9f7ba03f7f37114f757f34f67dd48e5}{compute\-Marginals} (\hyperlink{classg2o_1_1SparseBlockMatrix}{Sparse\-Block\-Matrix}$<$ Matrix\-Xd $>$ \&spinv, const \hyperlink{classg2o_1_1HyperGraph_1_1Vertex}{Vertex} $\ast$\hyperlink{structg2o_1_1OptimizableGraph_a19e014e8ec2e9a6e894da8c3a8f8e50d}{vertex})
+\item 
+bool \hyperlink{classg2o_1_1SparseOptimizer_a06bd3e9f1576dafeae317d2697c6f532}{compute\-Marginals} (\hyperlink{classg2o_1_1SparseBlockMatrix}{Sparse\-Block\-Matrix}$<$ Matrix\-Xd $>$ \&spinv, const \hyperlink{structg2o_1_1OptimizableGraph_a54f01b9b6071e65e6abeebe4afb29dec}{Vertex\-Container} \&\hyperlink{classg2o_1_1HyperGraph_a3e713e7ee84eecad3876651737af6cfc}{vertices})
+\item 
+\hypertarget{classg2o_1_1SparseOptimizer_aad77b73bf7d192fcebf1daf9ae103036}{virtual \hyperlink{classg2o_1_1HyperGraph_1_1Vertex}{Vertex} $\ast$ \hyperlink{classg2o_1_1SparseOptimizer_aad77b73bf7d192fcebf1daf9ae103036}{find\-Gauge} ()}\label{classg2o_1_1SparseOptimizer_aad77b73bf7d192fcebf1daf9ae103036}
+
+\begin{DoxyCompactList}\small\item\em finds a gauge in the graph to remove the undefined dof. \end{DoxyCompactList}\item 
+\hypertarget{classg2o_1_1SparseOptimizer_ac99e785f4822dd540b389ea179ce4f06}{bool {\bfseries gauge\-Freedom} ()}\label{classg2o_1_1SparseOptimizer_ac99e785f4822dd540b389ea179ce4f06}
+
+\item 
+double \hyperlink{classg2o_1_1SparseOptimizer_add4d83073e22dbb48b66b953d0185ffa}{active\-Chi2} () const 
+\item 
+double \hyperlink{classg2o_1_1SparseOptimizer_ae47c5023e53685523499fc00d6057d14}{active\-Robust\-Chi2} () const 
+\item 
+\hypertarget{classg2o_1_1SparseOptimizer_a99851ba4f2a507e724de43d7fe92f903}{bool \hyperlink{classg2o_1_1SparseOptimizer_a99851ba4f2a507e724de43d7fe92f903}{verbose} () const }\label{classg2o_1_1SparseOptimizer_a99851ba4f2a507e724de43d7fe92f903}
+
+\begin{DoxyCompactList}\small\item\em verbose information during optimization \end{DoxyCompactList}\item 
+\hypertarget{classg2o_1_1SparseOptimizer_a422f4c5c78a0c475f4998e24ee173cc7}{void {\bfseries set\-Verbose} (bool \hyperlink{classg2o_1_1SparseOptimizer_a99851ba4f2a507e724de43d7fe92f903}{verbose})}\label{classg2o_1_1SparseOptimizer_a422f4c5c78a0c475f4998e24ee173cc7}
+
+\item 
+void \hyperlink{classg2o_1_1SparseOptimizer_a32afd0ab949f170297b4a59f0d9eab81}{set\-Force\-Stop\-Flag} (bool $\ast$flag)
+\item 
+\hypertarget{classg2o_1_1SparseOptimizer_a13b3b195dd3169303c2c8e0f6edb1bb7}{bool $\ast$ {\bfseries force\-Stop\-Flag} () const }\label{classg2o_1_1SparseOptimizer_a13b3b195dd3169303c2c8e0f6edb1bb7}
+
+\item 
+\hypertarget{classg2o_1_1SparseOptimizer_ae592f525151d0cfb5bde3e7213f7ab11}{bool \hyperlink{classg2o_1_1SparseOptimizer_ae592f525151d0cfb5bde3e7213f7ab11}{terminate} ()}\label{classg2o_1_1SparseOptimizer_ae592f525151d0cfb5bde3e7213f7ab11}
+
+\begin{DoxyCompactList}\small\item\em if external stop flag is given, return its state. False otherwise \end{DoxyCompactList}\item 
+\hypertarget{classg2o_1_1SparseOptimizer_a5e98a5f879f04c013b20f9c39a9057da}{const \hyperlink{structg2o_1_1OptimizableGraph_a54f01b9b6071e65e6abeebe4afb29dec}{Vertex\-Container} \& \hyperlink{classg2o_1_1SparseOptimizer_a5e98a5f879f04c013b20f9c39a9057da}{index\-Mapping} () const }\label{classg2o_1_1SparseOptimizer_a5e98a5f879f04c013b20f9c39a9057da}
+
+\begin{DoxyCompactList}\small\item\em the index mapping of the vertices \end{DoxyCompactList}\item 
+\hypertarget{classg2o_1_1SparseOptimizer_a5715f0bab2cb9c1e8a330b2c3c217859}{const \hyperlink{structg2o_1_1OptimizableGraph_a54f01b9b6071e65e6abeebe4afb29dec}{Vertex\-Container} \& \hyperlink{classg2o_1_1SparseOptimizer_a5715f0bab2cb9c1e8a330b2c3c217859}{active\-Vertices} () const }\label{classg2o_1_1SparseOptimizer_a5715f0bab2cb9c1e8a330b2c3c217859}
+
+\begin{DoxyCompactList}\small\item\em the vertices active in the current optimization \end{DoxyCompactList}\item 
+\hypertarget{classg2o_1_1SparseOptimizer_aef20b7dd401862d572a851349d1bc124}{const \hyperlink{structg2o_1_1OptimizableGraph_a2b43e807ae6d61ef8749ca1ef7c25f62}{Edge\-Container} \& \hyperlink{classg2o_1_1SparseOptimizer_aef20b7dd401862d572a851349d1bc124}{active\-Edges} () const }\label{classg2o_1_1SparseOptimizer_aef20b7dd401862d572a851349d1bc124}
+
+\begin{DoxyCompactList}\small\item\em the edges active in the current optimization \end{DoxyCompactList}\item 
+virtual bool \hyperlink{classg2o_1_1SparseOptimizer_a0fb2a5e2b250bf2530a600f6dcaad03f}{remove\-Vertex} (\hyperlink{classg2o_1_1HyperGraph_1_1Vertex}{Hyper\-Graph\-::\-Vertex} $\ast$v)
+\item 
+Vertex\-Container\-::const\-\_\-iterator \hyperlink{classg2o_1_1SparseOptimizer_a89ae01e9d070110a775d8a266717d719}{find\-Active\-Vertex} (const \hyperlink{classg2o_1_1OptimizableGraph_1_1Vertex}{Optimizable\-Graph\-::\-Vertex} $\ast$v) const 
+\item 
+Edge\-Container\-::const\-\_\-iterator \hyperlink{classg2o_1_1SparseOptimizer_a68b59bf6d56a390717b82b3ae009ccf0}{find\-Active\-Edge} (const \hyperlink{classg2o_1_1OptimizableGraph_1_1Edge}{Optimizable\-Graph\-::\-Edge} $\ast$e) const 
+\item 
+\hypertarget{classg2o_1_1SparseOptimizer_a7dad5beea6a44d92b1cc47c0e526a676}{const \hyperlink{classg2o_1_1OptimizationAlgorithm}{Optimization\-Algorithm} $\ast$ \hyperlink{classg2o_1_1SparseOptimizer_a7dad5beea6a44d92b1cc47c0e526a676}{algorithm} () const }\label{classg2o_1_1SparseOptimizer_a7dad5beea6a44d92b1cc47c0e526a676}
+
+\begin{DoxyCompactList}\small\item\em the solver used by the optimizer \end{DoxyCompactList}\item 
+\hypertarget{classg2o_1_1SparseOptimizer_aaa505e19f70caa4f0a8fe8eccdbcd768}{\hyperlink{classg2o_1_1OptimizationAlgorithm}{Optimization\-Algorithm} $\ast$ {\bfseries solver} ()}\label{classg2o_1_1SparseOptimizer_aaa505e19f70caa4f0a8fe8eccdbcd768}
+
+\item 
+\hypertarget{classg2o_1_1SparseOptimizer_a5ed7404ef361b479c75a0baf34e0a2bd}{void {\bfseries set\-Algorithm} (\hyperlink{classg2o_1_1OptimizationAlgorithm}{Optimization\-Algorithm} $\ast$\hyperlink{classg2o_1_1SparseOptimizer_a7dad5beea6a44d92b1cc47c0e526a676}{algorithm})}\label{classg2o_1_1SparseOptimizer_a5ed7404ef361b479c75a0baf34e0a2bd}
+
+\item 
+\hypertarget{classg2o_1_1SparseOptimizer_a08833d6f9ae487f5608f6113f3635b6b}{void \hyperlink{classg2o_1_1SparseOptimizer_a08833d6f9ae487f5608f6113f3635b6b}{push} (\hyperlink{structg2o_1_1OptimizableGraph_a54f01b9b6071e65e6abeebe4afb29dec}{Sparse\-Optimizer\-::\-Vertex\-Container} \&vlist)}\label{classg2o_1_1SparseOptimizer_a08833d6f9ae487f5608f6113f3635b6b}
+
+\begin{DoxyCompactList}\small\item\em push the estimate of a subset of the variables onto a stack \end{DoxyCompactList}\item 
+\hypertarget{classg2o_1_1SparseOptimizer_ac9a5fd64764e61d99e8a90734118a8bf}{void \hyperlink{classg2o_1_1SparseOptimizer_ac9a5fd64764e61d99e8a90734118a8bf}{push} (Hyper\-Graph\-::\-Vertex\-Set \&vlist)}\label{classg2o_1_1SparseOptimizer_ac9a5fd64764e61d99e8a90734118a8bf}
+
+\begin{DoxyCompactList}\small\item\em push the estimate of a subset of the variables onto a stack \end{DoxyCompactList}\item 
+\hypertarget{classg2o_1_1SparseOptimizer_a4c121d69052291775860d06507aba698}{void \hyperlink{classg2o_1_1SparseOptimizer_a4c121d69052291775860d06507aba698}{push} ()}\label{classg2o_1_1SparseOptimizer_a4c121d69052291775860d06507aba698}
+
+\begin{DoxyCompactList}\small\item\em push all the active vertices onto a stack \end{DoxyCompactList}\item 
+\hypertarget{classg2o_1_1SparseOptimizer_a57dbbb584122c6cfa292bb79d8fcd7ad}{void \hyperlink{classg2o_1_1SparseOptimizer_a57dbbb584122c6cfa292bb79d8fcd7ad}{pop} (\hyperlink{structg2o_1_1OptimizableGraph_a54f01b9b6071e65e6abeebe4afb29dec}{Sparse\-Optimizer\-::\-Vertex\-Container} \&vlist)}\label{classg2o_1_1SparseOptimizer_a57dbbb584122c6cfa292bb79d8fcd7ad}
+
+\begin{DoxyCompactList}\small\item\em pop (restore) the estimate a subset of the variables from the stack \end{DoxyCompactList}\item 
+\hypertarget{classg2o_1_1SparseOptimizer_aa6688f8636bf89ef919d72947692d59c}{void \hyperlink{classg2o_1_1SparseOptimizer_aa6688f8636bf89ef919d72947692d59c}{pop} (Hyper\-Graph\-::\-Vertex\-Set \&vlist)}\label{classg2o_1_1SparseOptimizer_aa6688f8636bf89ef919d72947692d59c}
+
+\begin{DoxyCompactList}\small\item\em pop (restore) the estimate a subset of the variables from the stack \end{DoxyCompactList}\item 
+\hypertarget{classg2o_1_1SparseOptimizer_ad2f7f62ebe17b40e050f0525db64355b}{void \hyperlink{classg2o_1_1SparseOptimizer_ad2f7f62ebe17b40e050f0525db64355b}{pop} ()}\label{classg2o_1_1SparseOptimizer_ad2f7f62ebe17b40e050f0525db64355b}
+
+\begin{DoxyCompactList}\small\item\em pop (restore) the estimate of the active vertices from the stack \end{DoxyCompactList}\item 
+\hypertarget{classg2o_1_1SparseOptimizer_ac6344493dc9f66d5443759ff9f2abf6c}{void \hyperlink{classg2o_1_1SparseOptimizer_ac6344493dc9f66d5443759ff9f2abf6c}{discard\-Top} (\hyperlink{structg2o_1_1OptimizableGraph_a54f01b9b6071e65e6abeebe4afb29dec}{Sparse\-Optimizer\-::\-Vertex\-Container} \&vlist)}\label{classg2o_1_1SparseOptimizer_ac6344493dc9f66d5443759ff9f2abf6c}
+
+\begin{DoxyCompactList}\small\item\em ignore the latest stored element on the stack, remove it from the stack but do not restore the estimate \end{DoxyCompactList}\item 
+\hypertarget{classg2o_1_1SparseOptimizer_a20ed9e9f1201bfb874456a8d30f169fb}{void \hyperlink{classg2o_1_1SparseOptimizer_a20ed9e9f1201bfb874456a8d30f169fb}{discard\-Top} ()}\label{classg2o_1_1SparseOptimizer_a20ed9e9f1201bfb874456a8d30f169fb}
+
+\begin{DoxyCompactList}\small\item\em same as above, but for the active vertices \end{DoxyCompactList}\item 
+virtual void \hyperlink{classg2o_1_1SparseOptimizer_a4881e4ac9ba9a58d4e249dc03ef9683d}{clear} ()
+\item 
+void \hyperlink{classg2o_1_1SparseOptimizer_a09572668aa85b75a5bebf7b66401ce8f}{compute\-Active\-Errors} ()
+\item 
+const Batch\-Statistics\-Container \& \hyperlink{classg2o_1_1SparseOptimizer_ac0b9e0f3c9d05f600882b9c9b8a5c7c1}{batch\-Statistics} () const 
+\item 
+Batch\-Statistics\-Container \& \hyperlink{classg2o_1_1SparseOptimizer_aa93ecf8d3b99e2eef3709a5c70cc8632}{batch\-Statistics} ()
+\item 
+\hypertarget{classg2o_1_1SparseOptimizer_a775fe12d7df941acbbd86bcf838f0f3c}{void {\bfseries set\-Compute\-Batch\-Statistics} (bool compute\-Batch\-Statistics)}\label{classg2o_1_1SparseOptimizer_a775fe12d7df941acbbd86bcf838f0f3c}
+
+\item 
+\hypertarget{classg2o_1_1SparseOptimizer_a4a4261f1008f1b0f660381b9c46b78f7}{bool {\bfseries compute\-Batch\-Statistics} () const }\label{classg2o_1_1SparseOptimizer_a4a4261f1008f1b0f660381b9c46b78f7}
+
+\item 
+\hypertarget{classg2o_1_1SparseOptimizer_a43517d9f9f23ba6041061c57dddd916d}{bool \hyperlink{classg2o_1_1SparseOptimizer_a43517d9f9f23ba6041061c57dddd916d}{add\-Compute\-Error\-Action} (\hyperlink{classg2o_1_1HyperGraphAction}{Hyper\-Graph\-Action} $\ast$action)}\label{classg2o_1_1SparseOptimizer_a43517d9f9f23ba6041061c57dddd916d}
+
+\begin{DoxyCompactList}\small\item\em add an action to be executed before the error vectors are computed \end{DoxyCompactList}\item 
+\hypertarget{classg2o_1_1SparseOptimizer_aaeb1bffea0c80d98b6650cbf51be2b80}{bool \hyperlink{classg2o_1_1SparseOptimizer_aaeb1bffea0c80d98b6650cbf51be2b80}{remove\-Compute\-Error\-Action} (\hyperlink{classg2o_1_1HyperGraphAction}{Hyper\-Graph\-Action} $\ast$action)}\label{classg2o_1_1SparseOptimizer_aaeb1bffea0c80d98b6650cbf51be2b80}
+
+\begin{DoxyCompactList}\small\item\em remove an action that should no longer be execured before computing the error vectors \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classg2o_1_1SparseOptimizer_a8a8c6f08bc9b8a4e520aa73198268991}{void {\bfseries sort\-Vector\-Containers} ()}\label{classg2o_1_1SparseOptimizer_a8a8c6f08bc9b8a4e520aa73198268991}
+
+\item 
+bool \hyperlink{classg2o_1_1SparseOptimizer_a8c6af9785e85153ade1490beacad73ce}{build\-Index\-Mapping} (\hyperlink{structg2o_1_1OptimizableGraph_a54f01b9b6071e65e6abeebe4afb29dec}{Sparse\-Optimizer\-::\-Vertex\-Container} \&vlist)
+\item 
+\hypertarget{classg2o_1_1SparseOptimizer_ab6f1f4ad2b1fd50b8019c6abb89ac6a8}{void {\bfseries clear\-Index\-Mapping} ()}\label{classg2o_1_1SparseOptimizer_ab6f1f4ad2b1fd50b8019c6abb89ac6a8}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected 属性}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classg2o_1_1SparseOptimizer_aac4a9f9b7d875ee40cae55f98d3437ab}{bool $\ast$ {\bfseries \-\_\-force\-Stop\-Flag}}\label{classg2o_1_1SparseOptimizer_aac4a9f9b7d875ee40cae55f98d3437ab}
+
+\item 
+\hypertarget{classg2o_1_1SparseOptimizer_a41b3803182a4db6c0ff8c8d4352dd149}{bool {\bfseries \-\_\-verbose}}\label{classg2o_1_1SparseOptimizer_a41b3803182a4db6c0ff8c8d4352dd149}
+
+\item 
+\hypertarget{classg2o_1_1SparseOptimizer_a488b95a90a61454c787e9c13458e510b}{\hyperlink{structg2o_1_1OptimizableGraph_a54f01b9b6071e65e6abeebe4afb29dec}{Vertex\-Container} {\bfseries \-\_\-iv\-Map}}\label{classg2o_1_1SparseOptimizer_a488b95a90a61454c787e9c13458e510b}
+
+\item 
+\hypertarget{classg2o_1_1SparseOptimizer_a805e1db97802980fa4dfef95cfa5e63e}{\hyperlink{structg2o_1_1OptimizableGraph_a54f01b9b6071e65e6abeebe4afb29dec}{Vertex\-Container} \hyperlink{classg2o_1_1SparseOptimizer_a805e1db97802980fa4dfef95cfa5e63e}{\-\_\-active\-Vertices}}\label{classg2o_1_1SparseOptimizer_a805e1db97802980fa4dfef95cfa5e63e}
+
+\begin{DoxyCompactList}\small\item\em sorted according to Vertex\-I\-D\-Compare \end{DoxyCompactList}\item 
+\hypertarget{classg2o_1_1SparseOptimizer_a3207df163943bc1672fc7872964a6d6c}{\hyperlink{structg2o_1_1OptimizableGraph_a2b43e807ae6d61ef8749ca1ef7c25f62}{Edge\-Container} \hyperlink{classg2o_1_1SparseOptimizer_a3207df163943bc1672fc7872964a6d6c}{\-\_\-active\-Edges}}\label{classg2o_1_1SparseOptimizer_a3207df163943bc1672fc7872964a6d6c}
+
+\begin{DoxyCompactList}\small\item\em sorted according to Edge\-I\-D\-Compare \end{DoxyCompactList}\item 
+\hypertarget{classg2o_1_1SparseOptimizer_a665d4ba54db76a1174bfc85a6dbc5127}{\hyperlink{classg2o_1_1OptimizationAlgorithm}{Optimization\-Algorithm} $\ast$ {\bfseries \-\_\-algorithm}}\label{classg2o_1_1SparseOptimizer_a665d4ba54db76a1174bfc85a6dbc5127}
+
+\item 
+\hypertarget{classg2o_1_1SparseOptimizer_a21215378d9e8de28aee8d55b4d25ff89}{Batch\-Statistics\-Container \hyperlink{classg2o_1_1SparseOptimizer_a21215378d9e8de28aee8d55b4d25ff89}{\-\_\-batch\-Statistics}}\label{classg2o_1_1SparseOptimizer_a21215378d9e8de28aee8d55b4d25ff89}
+
+\begin{DoxyCompactList}\small\item\em global statistics of the optimizer, e.\-g., timing, num-\/non-\/zeros \end{DoxyCompactList}\item 
+\hypertarget{classg2o_1_1SparseOptimizer_a3bd44c498c4d983c092f23673de14d5d}{bool {\bfseries \-\_\-compute\-Batch\-Statistics}}\label{classg2o_1_1SparseOptimizer_a3bd44c498c4d983c092f23673de14d5d}
+
+\end{DoxyCompactItemize}
+\subsection*{友元}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classg2o_1_1SparseOptimizer_af974cb94744550cc732d61f7fd7d63ed}{class {\bfseries Active\-Path\-Cost\-Function}}\label{classg2o_1_1SparseOptimizer_af974cb94744550cc732d61f7fd7d63ed}
+
+\end{DoxyCompactItemize}
+\subsection*{额外继承的成员函数}
+
+
+\subsection{详细描述}
+
+
+在文件 sparse\-\_\-optimizer.\-h 第 46 行定义.
+
+
+
+\subsection{成员函数说明}
+\hypertarget{classg2o_1_1SparseOptimizer_add4d83073e22dbb48b66b953d0185ffa}{\index{g2o\-::\-Sparse\-Optimizer@{g2o\-::\-Sparse\-Optimizer}!active\-Chi2@{active\-Chi2}}
+\index{active\-Chi2@{active\-Chi2}!g2o::SparseOptimizer@{g2o\-::\-Sparse\-Optimizer}}
+\subsubsection[{active\-Chi2}]{\setlength{\rightskip}{0pt plus 5cm}double g2o\-::\-Sparse\-Optimizer\-::active\-Chi2 (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classg2o_1_1SparseOptimizer_add4d83073e22dbb48b66b953d0185ffa}
+returns the cached chi2 of the active portion of the graph 
+
+在文件 sparse\-\_\-optimizer.\-cpp 第 90 行定义.
+
+
+
+参考 g2o\-::\-Optimizable\-Graph\-::\-Edge\-::chi2().
+
+
+
+函数调用图\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=344pt]{classg2o_1_1SparseOptimizer_add4d83073e22dbb48b66b953d0185ffa_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classg2o_1_1SparseOptimizer_ae47c5023e53685523499fc00d6057d14}{\index{g2o\-::\-Sparse\-Optimizer@{g2o\-::\-Sparse\-Optimizer}!active\-Robust\-Chi2@{active\-Robust\-Chi2}}
+\index{active\-Robust\-Chi2@{active\-Robust\-Chi2}!g2o::SparseOptimizer@{g2o\-::\-Sparse\-Optimizer}}
+\subsubsection[{active\-Robust\-Chi2}]{\setlength{\rightskip}{0pt plus 5cm}double g2o\-::\-Sparse\-Optimizer\-::active\-Robust\-Chi2 (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classg2o_1_1SparseOptimizer_ae47c5023e53685523499fc00d6057d14}
+returns the cached chi2 of the active portion of the graph. In contrast to \hyperlink{classg2o_1_1SparseOptimizer_add4d83073e22dbb48b66b953d0185ffa}{active\-Chi2()} this functions considers the weighting of the error according to the robustification of the error functions. 
+
+在文件 sparse\-\_\-optimizer.\-cpp 第 100 行定义.
+
+
+
+参考 g2o\-::\-Optimizable\-Graph\-::\-Edge\-::chi2(), g2o\-::\-Robust\-Kernel\-::robustify() , 以及 g2o\-::\-Optimizable\-Graph\-::\-Edge\-::robust\-Kernel().
+
+
+
+参考自 g2o\-::\-Optimization\-Algorithm\-Levenberg\-::solve() , 以及 g2o\-::\-Optimization\-Algorithm\-Dogleg\-::solve().
+
+
+
+函数调用图\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=344pt]{classg2o_1_1SparseOptimizer_ae47c5023e53685523499fc00d6057d14_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+这是这个函数的调用关系图\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classg2o_1_1SparseOptimizer_ae47c5023e53685523499fc00d6057d14_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classg2o_1_1SparseOptimizer_ac0b9e0f3c9d05f600882b9c9b8a5c7c1}{\index{g2o\-::\-Sparse\-Optimizer@{g2o\-::\-Sparse\-Optimizer}!batch\-Statistics@{batch\-Statistics}}
+\index{batch\-Statistics@{batch\-Statistics}!g2o::SparseOptimizer@{g2o\-::\-Sparse\-Optimizer}}
+\subsubsection[{batch\-Statistics}]{\setlength{\rightskip}{0pt plus 5cm}const Batch\-Statistics\-Container\& g2o\-::\-Sparse\-Optimizer\-::batch\-Statistics (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classg2o_1_1SparseOptimizer_ac0b9e0f3c9d05f600882b9c9b8a5c7c1}
+Linearizes the system by computing the Jacobians for the nodes and edges in the graph returns the set of batch statistics about the optimisation 
+
+在文件 sparse\-\_\-optimizer.\-h 第 272 行定义.
+
+\hypertarget{classg2o_1_1SparseOptimizer_aa93ecf8d3b99e2eef3709a5c70cc8632}{\index{g2o\-::\-Sparse\-Optimizer@{g2o\-::\-Sparse\-Optimizer}!batch\-Statistics@{batch\-Statistics}}
+\index{batch\-Statistics@{batch\-Statistics}!g2o::SparseOptimizer@{g2o\-::\-Sparse\-Optimizer}}
+\subsubsection[{batch\-Statistics}]{\setlength{\rightskip}{0pt plus 5cm}Batch\-Statistics\-Container\& g2o\-::\-Sparse\-Optimizer\-::batch\-Statistics (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classg2o_1_1SparseOptimizer_aa93ecf8d3b99e2eef3709a5c70cc8632}
+returns the set of batch statistics about the optimisation 
+
+在文件 sparse\-\_\-optimizer.\-h 第 276 行定义.
+
+\hypertarget{classg2o_1_1SparseOptimizer_a8c6af9785e85153ade1490beacad73ce}{\index{g2o\-::\-Sparse\-Optimizer@{g2o\-::\-Sparse\-Optimizer}!build\-Index\-Mapping@{build\-Index\-Mapping}}
+\index{build\-Index\-Mapping@{build\-Index\-Mapping}!g2o::SparseOptimizer@{g2o\-::\-Sparse\-Optimizer}}
+\subsubsection[{build\-Index\-Mapping}]{\setlength{\rightskip}{0pt plus 5cm}bool g2o\-::\-Sparse\-Optimizer\-::build\-Index\-Mapping (
+\begin{DoxyParamCaption}
+\item[{{\bf Sparse\-Optimizer\-::\-Vertex\-Container} \&}]{vlist}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classg2o_1_1SparseOptimizer_a8c6af9785e85153ade1490beacad73ce}
+builds the mapping of the active vertices to the (block) row / column in the Hessian 
+
+在文件 sparse\-\_\-optimizer.\-cpp 第 166 行定义.
+
+
+
+参考 g2o\-::\-Optimizable\-Graph\-::\-Vertex\-::fixed(), g2o\-::\-Optimizable\-Graph\-::\-Vertex\-::marginalized() , 以及 g2o\-::\-Optimizable\-Graph\-::\-Vertex\-::set\-Hessian\-Index().
+
+
+
+函数调用图\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classg2o_1_1SparseOptimizer_a8c6af9785e85153ade1490beacad73ce_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classg2o_1_1SparseOptimizer_a4881e4ac9ba9a58d4e249dc03ef9683d}{\index{g2o\-::\-Sparse\-Optimizer@{g2o\-::\-Sparse\-Optimizer}!clear@{clear}}
+\index{clear@{clear}!g2o::SparseOptimizer@{g2o\-::\-Sparse\-Optimizer}}
+\subsubsection[{clear}]{\setlength{\rightskip}{0pt plus 5cm}void g2o\-::\-Sparse\-Optimizer\-::clear (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classg2o_1_1SparseOptimizer_a4881e4ac9ba9a58d4e249dc03ef9683d}
+clears the graph, and polishes some intermediate structures Note that this only removes nodes / edges. Parameters can be removed with \hyperlink{structg2o_1_1OptimizableGraph_a15171b6d335115858e2e86dcf576ba78}{clear\-Parameters()}. 
+
+重载 \hyperlink{classg2o_1_1HyperGraph_a6b629dff2928dbd704ca81f24858e72f}{g2o\-::\-Hyper\-Graph} .
+
+
+
+在文件 sparse\-\_\-optimizer.\-cpp 第 489 行定义.
+
+
+
+参考自 g2o\-::\-Block\-Solver$<$ Traits $>$\-::init().
+
+
+
+这是这个函数的调用关系图\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=338pt]{classg2o_1_1SparseOptimizer_a4881e4ac9ba9a58d4e249dc03ef9683d_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classg2o_1_1SparseOptimizer_a09572668aa85b75a5bebf7b66401ce8f}{\index{g2o\-::\-Sparse\-Optimizer@{g2o\-::\-Sparse\-Optimizer}!compute\-Active\-Errors@{compute\-Active\-Errors}}
+\index{compute\-Active\-Errors@{compute\-Active\-Errors}!g2o::SparseOptimizer@{g2o\-::\-Sparse\-Optimizer}}
+\subsubsection[{compute\-Active\-Errors}]{\setlength{\rightskip}{0pt plus 5cm}void g2o\-::\-Sparse\-Optimizer\-::compute\-Active\-Errors (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classg2o_1_1SparseOptimizer_a09572668aa85b75a5bebf7b66401ce8f}
+computes the error vectors of all edges in the active\-Set, and caches them 
+
+在文件 sparse\-\_\-optimizer.\-cpp 第 61 行定义.
+
+
+
+参考 g2o\-::\-Optimizable\-Graph\-::\-Edge\-::dimension() , 以及 g2o\-::\-Optimizable\-Graph\-::\-Edge\-::error\-Data().
+
+
+
+参考自 g2o\-::\-Optimization\-Algorithm\-Gauss\-Newton\-::solve(), g2o\-::\-Optimization\-Algorithm\-Levenberg\-::solve() , 以及 g2o\-::\-Optimization\-Algorithm\-Dogleg\-::solve().
+
+
+
+函数调用图\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=346pt]{classg2o_1_1SparseOptimizer_a09572668aa85b75a5bebf7b66401ce8f_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+这是这个函数的调用关系图\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classg2o_1_1SparseOptimizer_a09572668aa85b75a5bebf7b66401ce8f_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classg2o_1_1SparseOptimizer_a59db9f16934d3b9f7a52511f0be1bb07}{\index{g2o\-::\-Sparse\-Optimizer@{g2o\-::\-Sparse\-Optimizer}!compute\-Initial\-Guess@{compute\-Initial\-Guess}}
+\index{compute\-Initial\-Guess@{compute\-Initial\-Guess}!g2o::SparseOptimizer@{g2o\-::\-Sparse\-Optimizer}}
+\subsubsection[{compute\-Initial\-Guess}]{\setlength{\rightskip}{0pt plus 5cm}void g2o\-::\-Sparse\-Optimizer\-::compute\-Initial\-Guess (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classg2o_1_1SparseOptimizer_a59db9f16934d3b9f7a52511f0be1bb07}
+Propagates an initial guess from the vertex specified as origin. It should be called after initialize\-Optimization(...), as it relies on the \-\_\-active\-Vertices/\-\_\-edges structures. It constructs a set of trees starting from the nodes in the graph which are fixed and eligible for preforming optimization. The trees are constructed by utlizing a cost-\/function specified. 
+\begin{DoxyParams}{参数}
+{\em cost\-Function} & the cost function used  max\-Distance\-: the distance where to stop the search \\
+\hline
+\end{DoxyParams}
+
+
+在文件 sparse\-\_\-optimizer.\-cpp 第 300 行定义.
+
+\hypertarget{classg2o_1_1SparseOptimizer_a2fba11c8572fce4a8c1bcca4fa3e43fb}{\index{g2o\-::\-Sparse\-Optimizer@{g2o\-::\-Sparse\-Optimizer}!compute\-Initial\-Guess@{compute\-Initial\-Guess}}
+\index{compute\-Initial\-Guess@{compute\-Initial\-Guess}!g2o::SparseOptimizer@{g2o\-::\-Sparse\-Optimizer}}
+\subsubsection[{compute\-Initial\-Guess}]{\setlength{\rightskip}{0pt plus 5cm}void g2o\-::\-Sparse\-Optimizer\-::compute\-Initial\-Guess (
+\begin{DoxyParamCaption}
+\item[{{\bf Estimate\-Propagator\-Cost} \&}]{propagator}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classg2o_1_1SparseOptimizer_a2fba11c8572fce4a8c1bcca4fa3e43fb}
+Same as above but using a specific propagator 
+
+在文件 sparse\-\_\-optimizer.\-cpp 第 306 行定义.
+
+
+
+参考 g2o\-::\-Hyper\-Graph\-::\-Vertex\-::edges(), g2o\-::\-Optimizable\-Graph\-::\-Vertex\-::fixed(), g2o\-::\-Optimizable\-Graph\-::\-Vertex\-::hessian\-Index(), g2o\-::\-Optimizable\-Graph\-::\-Edge\-::initial\-Estimate(), g2o\-::\-Optimizable\-Graph\-::\-Edge\-::initial\-Estimate\-Possible(), g2o\-::\-Estimate\-Propagator\-::propagate(), g2o\-::\-Optimizable\-Graph\-::\-Vertex\-::push(), g2o\-::\-Hyper\-Graph\-::\-Edge\-::vertex() , 以及 g2o\-::\-Hyper\-Graph\-::\-Edge\-::vertices().
+
+
+
+函数调用图\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classg2o_1_1SparseOptimizer_a2fba11c8572fce4a8c1bcca4fa3e43fb_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classg2o_1_1SparseOptimizer_a656be8b8244a48dc1207f29eec77af5a}{\index{g2o\-::\-Sparse\-Optimizer@{g2o\-::\-Sparse\-Optimizer}!compute\-Marginals@{compute\-Marginals}}
+\index{compute\-Marginals@{compute\-Marginals}!g2o::SparseOptimizer@{g2o\-::\-Sparse\-Optimizer}}
+\subsubsection[{compute\-Marginals}]{\setlength{\rightskip}{0pt plus 5cm}bool g2o\-::\-Sparse\-Optimizer\-::compute\-Marginals (
+\begin{DoxyParamCaption}
+\item[{{\bf Sparse\-Block\-Matrix}$<$ Matrix\-Xd $>$ \&}]{spinv, }
+\item[{const std\-::vector$<$ std\-::pair$<$ int, int $>$ $>$ \&}]{block\-Indices}
+\end{DoxyParamCaption}
+)}}\label{classg2o_1_1SparseOptimizer_a656be8b8244a48dc1207f29eec77af5a}
+computes the blocks of the inverse of the specified pattern. the pattern is given via pairs $<$row, col$>$ of the blocks in the hessian 
+\begin{DoxyParams}{参数}
+{\em block\-Indices} & the pattern \\
+\hline
+{\em spinv} & the sparse block matrix with the result \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+false if the operation is not supported by the solver 
+\end{DoxyReturn}
+
+
+在文件 sparse\-\_\-optimizer.\-cpp 第 570 行定义.
+
+\hypertarget{classg2o_1_1SparseOptimizer_ad9f7ba03f7f37114f757f34f67dd48e5}{\index{g2o\-::\-Sparse\-Optimizer@{g2o\-::\-Sparse\-Optimizer}!compute\-Marginals@{compute\-Marginals}}
+\index{compute\-Marginals@{compute\-Marginals}!g2o::SparseOptimizer@{g2o\-::\-Sparse\-Optimizer}}
+\subsubsection[{compute\-Marginals}]{\setlength{\rightskip}{0pt plus 5cm}bool g2o\-::\-Sparse\-Optimizer\-::compute\-Marginals (
+\begin{DoxyParamCaption}
+\item[{{\bf Sparse\-Block\-Matrix}$<$ Matrix\-Xd $>$ \&}]{spinv, }
+\item[{const {\bf Vertex} $\ast$}]{vertex}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classg2o_1_1SparseOptimizer_ad9f7ba03f7f37114f757f34f67dd48e5}
+computes the inverse of the specified vertex. 
+\begin{DoxyParams}{参数}
+{\em vertex} & the vertex whose state is to be marginalised \\
+\hline
+{\em spinv} & the sparse block matrix with the result \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+false if the operation is not supported by the solver 
+\end{DoxyReturn}
+
+
+在文件 sparse\-\_\-optimizer.\-h 第 139 行定义.
+
+\hypertarget{classg2o_1_1SparseOptimizer_a06bd3e9f1576dafeae317d2697c6f532}{\index{g2o\-::\-Sparse\-Optimizer@{g2o\-::\-Sparse\-Optimizer}!compute\-Marginals@{compute\-Marginals}}
+\index{compute\-Marginals@{compute\-Marginals}!g2o::SparseOptimizer@{g2o\-::\-Sparse\-Optimizer}}
+\subsubsection[{compute\-Marginals}]{\setlength{\rightskip}{0pt plus 5cm}bool g2o\-::\-Sparse\-Optimizer\-::compute\-Marginals (
+\begin{DoxyParamCaption}
+\item[{{\bf Sparse\-Block\-Matrix}$<$ Matrix\-Xd $>$ \&}]{spinv, }
+\item[{const {\bf Vertex\-Container} \&}]{vertices}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classg2o_1_1SparseOptimizer_a06bd3e9f1576dafeae317d2697c6f532}
+computes the inverse of the set specified vertices, assembled into a single covariance matrix. 
+\begin{DoxyParams}{参数}
+{\em vertex} & the pattern \\
+\hline
+{\em spinv} & the sparse block matrix with the result \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+false if the operation is not supported by the solver 
+\end{DoxyReturn}
+
+
+在文件 sparse\-\_\-optimizer.\-h 第 154 行定义.
+
+\hypertarget{classg2o_1_1SparseOptimizer_a68b59bf6d56a390717b82b3ae009ccf0}{\index{g2o\-::\-Sparse\-Optimizer@{g2o\-::\-Sparse\-Optimizer}!find\-Active\-Edge@{find\-Active\-Edge}}
+\index{find\-Active\-Edge@{find\-Active\-Edge}!g2o::SparseOptimizer@{g2o\-::\-Sparse\-Optimizer}}
+\subsubsection[{find\-Active\-Edge}]{\setlength{\rightskip}{0pt plus 5cm}Sparse\-Optimizer\-::\-Edge\-Container\-::const\-\_\-iterator g2o\-::\-Sparse\-Optimizer\-::find\-Active\-Edge (
+\begin{DoxyParamCaption}
+\item[{const {\bf Optimizable\-Graph\-::\-Edge} $\ast$}]{e}
+\end{DoxyParamCaption}
+) const}}\label{classg2o_1_1SparseOptimizer_a68b59bf6d56a390717b82b3ae009ccf0}
+search for an edge in \-\_\-active\-Edges and return the iterator pointing to it get\-Active\-Edges().end() if not found 
+
+在文件 sparse\-\_\-optimizer.\-cpp 第 506 行定义.
+
+\hypertarget{classg2o_1_1SparseOptimizer_a89ae01e9d070110a775d8a266717d719}{\index{g2o\-::\-Sparse\-Optimizer@{g2o\-::\-Sparse\-Optimizer}!find\-Active\-Vertex@{find\-Active\-Vertex}}
+\index{find\-Active\-Vertex@{find\-Active\-Vertex}!g2o::SparseOptimizer@{g2o\-::\-Sparse\-Optimizer}}
+\subsubsection[{find\-Active\-Vertex}]{\setlength{\rightskip}{0pt plus 5cm}Sparse\-Optimizer\-::\-Vertex\-Container\-::const\-\_\-iterator g2o\-::\-Sparse\-Optimizer\-::find\-Active\-Vertex (
+\begin{DoxyParamCaption}
+\item[{const {\bf Optimizable\-Graph\-::\-Vertex} $\ast$}]{v}
+\end{DoxyParamCaption}
+) const}}\label{classg2o_1_1SparseOptimizer_a89ae01e9d070110a775d8a266717d719}
+search for an edge in \-\_\-active\-Vertices and return the iterator pointing to it get\-Active\-Vertices().end() if not found 
+
+在文件 sparse\-\_\-optimizer.\-cpp 第 496 行定义.
+
+\hypertarget{classg2o_1_1SparseOptimizer_a56c0c13954ac7204cfb031c141ece9ae}{\index{g2o\-::\-Sparse\-Optimizer@{g2o\-::\-Sparse\-Optimizer}!initialize\-Optimization@{initialize\-Optimization}}
+\index{initialize\-Optimization@{initialize\-Optimization}!g2o::SparseOptimizer@{g2o\-::\-Sparse\-Optimizer}}
+\subsubsection[{initialize\-Optimization}]{\setlength{\rightskip}{0pt plus 5cm}bool g2o\-::\-Sparse\-Optimizer\-::initialize\-Optimization (
+\begin{DoxyParamCaption}
+\item[{Hyper\-Graph\-::\-Edge\-Set \&}]{eset}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classg2o_1_1SparseOptimizer_a56c0c13954ac7204cfb031c141ece9ae}
+Initializes the structures for optimizing a portion of the graph specified by a subset of edges. Before calling it be sure to invoke marginalized() and fixed() to the vertices you want to include in the schur complement or to set as fixed during the optimization. 
+\begin{DoxyParams}{参数}
+{\em eset} & the subgraph to be optimized. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+false if somethings goes wrong 
+\end{DoxyReturn}
+
+
+在文件 sparse\-\_\-optimizer.\-cpp 第 269 行定义.
+
+
+
+参考 g2o\-::\-Hyper\-Graph\-::\-Edge\-::vertices().
+
+
+
+参考自 O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Optimizer\-::\-Bundle\-Adjustment(), O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Optimizer\-::\-Local\-Bundle\-Adjustment(), O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Optimizer\-::\-Optimize\-Essential\-Graph(), O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Optimizer\-::\-Optimize\-Sim3() , 以及 O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Optimizer\-::\-Pose\-Optimization().
+
+
+
+函数调用图\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classg2o_1_1SparseOptimizer_a56c0c13954ac7204cfb031c141ece9ae_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+这是这个函数的调用关系图\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classg2o_1_1SparseOptimizer_a56c0c13954ac7204cfb031c141ece9ae_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classg2o_1_1SparseOptimizer_ab16dd36e32577ba5856239ce721ec70b}{\index{g2o\-::\-Sparse\-Optimizer@{g2o\-::\-Sparse\-Optimizer}!initialize\-Optimization@{initialize\-Optimization}}
+\index{initialize\-Optimization@{initialize\-Optimization}!g2o::SparseOptimizer@{g2o\-::\-Sparse\-Optimizer}}
+\subsubsection[{initialize\-Optimization}]{\setlength{\rightskip}{0pt plus 5cm}bool g2o\-::\-Sparse\-Optimizer\-::initialize\-Optimization (
+\begin{DoxyParamCaption}
+\item[{Hyper\-Graph\-::\-Vertex\-Set \&}]{vset, }
+\item[{int}]{level = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classg2o_1_1SparseOptimizer_ab16dd36e32577ba5856239ce721ec70b}
+Initializes the structures for optimizing a portion of the graph specified by a subset of vertices. Before calling it be sure to invoke marginalized() and fixed() to the vertices you want to include in the schur complement or to set as fixed during the optimization. 
+\begin{DoxyParams}{参数}
+{\em vset} & the subgraph to be optimized. \\
+\hline
+{\em level} & is the level (in multilevel optimization) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+false if somethings goes wrong 
+\end{DoxyReturn}
+
+
+在文件 sparse\-\_\-optimizer.\-cpp 第 206 行定义.
+
+
+
+参考 g2o\-::\-Hyper\-Graph\-::\-Vertex\-::edges(), g2o\-::\-Optimizable\-Graph\-::\-Vertex\-::estimate\-Dimension(), g2o\-::\-Optimizable\-Graph\-::\-Vertex\-::get\-Estimate\-Data(), g2o\-::\-Hyper\-Graph\-::\-Vertex\-::id() , 以及 g2o\-::\-Hyper\-Graph\-::\-Edge\-::vertices().
+
+
+
+函数调用图\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classg2o_1_1SparseOptimizer_ab16dd36e32577ba5856239ce721ec70b_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classg2o_1_1SparseOptimizer_ace3994bf5f403c7fa0305635aa598473}{\index{g2o\-::\-Sparse\-Optimizer@{g2o\-::\-Sparse\-Optimizer}!initialize\-Optimization@{initialize\-Optimization}}
+\index{initialize\-Optimization@{initialize\-Optimization}!g2o::SparseOptimizer@{g2o\-::\-Sparse\-Optimizer}}
+\subsubsection[{initialize\-Optimization}]{\setlength{\rightskip}{0pt plus 5cm}bool g2o\-::\-Sparse\-Optimizer\-::initialize\-Optimization (
+\begin{DoxyParamCaption}
+\item[{int}]{level = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classg2o_1_1SparseOptimizer_ace3994bf5f403c7fa0305635aa598473}
+Initializes the structures for optimizing the whole graph. Before calling it be sure to invoke marginalized() and fixed() to the vertices you want to include in the schur complement or to set as fixed during the optimization. 
+\begin{DoxyParams}{参数}
+{\em level} & is the level (in multilevel optimization) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+false if somethings goes wrong 
+\end{DoxyReturn}
+
+
+在文件 sparse\-\_\-optimizer.\-cpp 第 199 行定义.
+
+\hypertarget{classg2o_1_1SparseOptimizer_a098257ee6f13dbb79be07075244d9930}{\index{g2o\-::\-Sparse\-Optimizer@{g2o\-::\-Sparse\-Optimizer}!optimize@{optimize}}
+\index{optimize@{optimize}!g2o::SparseOptimizer@{g2o\-::\-Sparse\-Optimizer}}
+\subsubsection[{optimize}]{\setlength{\rightskip}{0pt plus 5cm}int g2o\-::\-Sparse\-Optimizer\-::optimize (
+\begin{DoxyParamCaption}
+\item[{int}]{iterations, }
+\item[{bool}]{online = {\ttfamily false}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classg2o_1_1SparseOptimizer_a098257ee6f13dbb79be07075244d9930}
+starts one optimization run given the current configuration of the graph, and the current settings stored in the class instance. It can be called only after initialize\-Optimization 
+
+重载 \hyperlink{structg2o_1_1OptimizableGraph_ac1b2e36c05680dd3e60ed6f90dddf5d8}{g2o\-::\-Optimizable\-Graph} .
+
+
+
+在文件 sparse\-\_\-optimizer.\-cpp 第 354 行定义.
+
+
+
+参考 g2o\-::\-G2\-O\-Batch\-Statistics\-::iteration, g2o\-::\-G2\-O\-Batch\-Statistics\-::num\-Edges , 以及 g2o\-::\-G2\-O\-Batch\-Statistics\-::num\-Vertices.
+
+
+
+参考自 O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Optimizer\-::\-Bundle\-Adjustment(), O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Optimizer\-::\-Local\-Bundle\-Adjustment(), O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Optimizer\-::\-Optimize\-Essential\-Graph(), O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Optimizer\-::\-Optimize\-Sim3() , 以及 O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Optimizer\-::\-Pose\-Optimization().
+
+
+
+这是这个函数的调用关系图\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classg2o_1_1SparseOptimizer_a098257ee6f13dbb79be07075244d9930_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classg2o_1_1SparseOptimizer_a0fb2a5e2b250bf2530a600f6dcaad03f}{\index{g2o\-::\-Sparse\-Optimizer@{g2o\-::\-Sparse\-Optimizer}!remove\-Vertex@{remove\-Vertex}}
+\index{remove\-Vertex@{remove\-Vertex}!g2o::SparseOptimizer@{g2o\-::\-Sparse\-Optimizer}}
+\subsubsection[{remove\-Vertex}]{\setlength{\rightskip}{0pt plus 5cm}bool g2o\-::\-Sparse\-Optimizer\-::remove\-Vertex (
+\begin{DoxyParamCaption}
+\item[{{\bf Hyper\-Graph\-::\-Vertex} $\ast$}]{v}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classg2o_1_1SparseOptimizer_a0fb2a5e2b250bf2530a600f6dcaad03f}
+Remove a vertex. If the vertex is contained in the currently active set of vertices, then the internal temporary structures are cleaned, e.\-g., the index mapping is erased. In case you need the index mapping for manipulating the graph, you have to store it in your own copy. 
+
+重载 \hyperlink{classg2o_1_1HyperGraph_a97ab8302aa027d513253387bba9e0dd5}{g2o\-::\-Hyper\-Graph} .
+
+
+
+在文件 sparse\-\_\-optimizer.\-cpp 第 579 行定义.
+
+
+
+参考 g2o\-::\-Optimizable\-Graph\-::\-Vertex\-::hessian\-Index().
+
+
+
+参考自 O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Optimizer\-::\-Bundle\-Adjustment().
+
+
+
+函数调用图\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=344pt]{classg2o_1_1SparseOptimizer_a0fb2a5e2b250bf2530a600f6dcaad03f_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+这是这个函数的调用关系图\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classg2o_1_1SparseOptimizer_a0fb2a5e2b250bf2530a600f6dcaad03f_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classg2o_1_1SparseOptimizer_a32afd0ab949f170297b4a59f0d9eab81}{\index{g2o\-::\-Sparse\-Optimizer@{g2o\-::\-Sparse\-Optimizer}!set\-Force\-Stop\-Flag@{set\-Force\-Stop\-Flag}}
+\index{set\-Force\-Stop\-Flag@{set\-Force\-Stop\-Flag}!g2o::SparseOptimizer@{g2o\-::\-Sparse\-Optimizer}}
+\subsubsection[{set\-Force\-Stop\-Flag}]{\setlength{\rightskip}{0pt plus 5cm}void g2o\-::\-Sparse\-Optimizer\-::set\-Force\-Stop\-Flag (
+\begin{DoxyParamCaption}
+\item[{bool $\ast$}]{flag}
+\end{DoxyParamCaption}
+)}}\label{classg2o_1_1SparseOptimizer_a32afd0ab949f170297b4a59f0d9eab81}
+sets a variable checked at every iteration to force a user stop. The iteration exits when the variable is true; 
+
+在文件 sparse\-\_\-optimizer.\-cpp 第 574 行定义.
+
+
+
+参考自 O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Optimizer\-::\-Bundle\-Adjustment() , 以及 O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Optimizer\-::\-Local\-Bundle\-Adjustment().
+
+
+
+这是这个函数的调用关系图\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classg2o_1_1SparseOptimizer_a32afd0ab949f170297b4a59f0d9eab81_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classg2o_1_1SparseOptimizer_ab8af902464774ec3d3910a3674791714}{\index{g2o\-::\-Sparse\-Optimizer@{g2o\-::\-Sparse\-Optimizer}!set\-To\-Origin@{set\-To\-Origin}}
+\index{set\-To\-Origin@{set\-To\-Origin}!g2o::SparseOptimizer@{g2o\-::\-Sparse\-Optimizer}}
+\subsubsection[{set\-To\-Origin}]{\setlength{\rightskip}{0pt plus 5cm}void g2o\-::\-Sparse\-Optimizer\-::set\-To\-Origin (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classg2o_1_1SparseOptimizer_ab8af902464774ec3d3910a3674791714}
+sets all vertices to their origin. 
+
+在文件 sparse\-\_\-optimizer.\-cpp 第 293 行定义.
+
+
+
+参考 g2o\-::\-Optimizable\-Graph\-::\-Vertex\-::set\-To\-Origin().
+
+
+
+函数调用图\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=344pt]{classg2o_1_1SparseOptimizer_ab8af902464774ec3d3910a3674791714_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classg2o_1_1SparseOptimizer_ae971d068585055973798f93ac2363d94}{\index{g2o\-::\-Sparse\-Optimizer@{g2o\-::\-Sparse\-Optimizer}!update\-Initialization@{update\-Initialization}}
+\index{update\-Initialization@{update\-Initialization}!g2o::SparseOptimizer@{g2o\-::\-Sparse\-Optimizer}}
+\subsubsection[{update\-Initialization}]{\setlength{\rightskip}{0pt plus 5cm}bool g2o\-::\-Sparse\-Optimizer\-::update\-Initialization (
+\begin{DoxyParamCaption}
+\item[{Hyper\-Graph\-::\-Vertex\-Set \&}]{vset, }
+\item[{Hyper\-Graph\-::\-Edge\-Set \&}]{eset}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classg2o_1_1SparseOptimizer_ae971d068585055973798f93ac2363d94}
+H\-A\-C\-K updating the internal structures for online processing 
+
+在文件 sparse\-\_\-optimizer.\-cpp 第 446 行定义.
+
+
+
+参考 g2o\-::\-Optimizable\-Graph\-::\-Vertex\-::fixed(), g2o\-::\-Optimizable\-Graph\-::\-Vertex\-::marginalized() , 以及 g2o\-::\-Optimizable\-Graph\-::\-Vertex\-::set\-Hessian\-Index().
+
+
+
+函数调用图\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classg2o_1_1SparseOptimizer_ae971d068585055973798f93ac2363d94_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+该类的文档由以下文件生成\-:\begin{DoxyCompactItemize}
+\item 
+Thirdparty/g2o/g2o/core/sparse\-\_\-optimizer.\-h\item 
+Thirdparty/g2o/g2o/core/sparse\-\_\-optimizer.\-cpp\end{DoxyCompactItemize}

@@ -1,0 +1,522 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.6"/>
+<title>My Project: DUtils::Random类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">My Project
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.6 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="pages.html"><span>相关页面</span></a></li>
+      <li><a href="modules.html"><span>模块</span></a></li>
+      <li><a href="namespaces.html"><span>命名空间</span></a></li>
+      <li class="current"><a href="annotated.html"><span>类</span></a></li>
+      <li><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>类列表</span></a></li>
+      <li><a href="classes.html"><span>类索引</span></a></li>
+      <li><a href="inherits.html"><span>类继承关系</span></a></li>
+      <li><a href="functions.html"><span>类成员</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('classDUtils_1_1Random.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>命名空间</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>友元</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>组</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>页</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">类</a> &#124;
+<a href="#pub-static-methods">静态 Public 成员函数</a> &#124;
+<a href="classDUtils_1_1Random-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">DUtils::Random类 参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Functions to generate pseudo-random numbers.  
+ <a href="classDUtils_1_1Random.html#details">更多...</a></p>
+
+<p><code>#include &lt;<a class="el" href="Random_8h_source.html">Random.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+类</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDUtils_1_1Random_1_1UnrepeatedRandomizer.html">UnrepeatedRandomizer</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provides pseudo-random numbers with no repetitions.  <a href="classDUtils_1_1Random_1_1UnrepeatedRandomizer.html#details">更多...</a><br/></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+静态 Public 成员函数</h2></td></tr>
+<tr class="memitem:a719a6489316343a771e062f0be58050f"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDUtils_1_1Random.html#a719a6489316343a771e062f0be58050f">SeedRand</a> ()</td></tr>
+<tr class="separator:a719a6489316343a771e062f0be58050f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a168e77d82ce1e66c6759e97ef27adbbc"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDUtils_1_1Random.html#a168e77d82ce1e66c6759e97ef27adbbc">SeedRandOnce</a> ()</td></tr>
+<tr class="separator:a168e77d82ce1e66c6759e97ef27adbbc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aec19d58856a0cf0b48d783119a497233"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDUtils_1_1Random.html#aec19d58856a0cf0b48d783119a497233">SeedRand</a> (int seed)</td></tr>
+<tr class="separator:aec19d58856a0cf0b48d783119a497233"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad3652f5d105ca4f6f22696b64f2a4a5d"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDUtils_1_1Random.html#ad3652f5d105ca4f6f22696b64f2a4a5d">SeedRandOnce</a> (int seed)</td></tr>
+<tr class="separator:ad3652f5d105ca4f6f22696b64f2a4a5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac5d2e4d977afdec30071c531a7a96d88"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
+<tr class="memitem:ac5d2e4d977afdec30071c531a7a96d88"><td class="memTemplItemLeft" align="right" valign="top">static T&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classDUtils_1_1Random.html#ac5d2e4d977afdec30071c531a7a96d88">RandomValue</a> ()</td></tr>
+<tr class="separator:ac5d2e4d977afdec30071c531a7a96d88"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a13760f5d6d4b866fbcc350dbb0d39d02"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
+<tr class="memitem:a13760f5d6d4b866fbcc350dbb0d39d02"><td class="memTemplItemLeft" align="right" valign="top">static T&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classDUtils_1_1Random.html#a13760f5d6d4b866fbcc350dbb0d39d02">RandomValue</a> (T min, T max)</td></tr>
+<tr class="separator:a13760f5d6d4b866fbcc350dbb0d39d02"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa25012101ecbca54025d5430bcf93d86"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDUtils_1_1Random.html#aa25012101ecbca54025d5430bcf93d86">RandomInt</a> (int min, int max)</td></tr>
+<tr class="separator:aa25012101ecbca54025d5430bcf93d86"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2c769bcd60a08fc3eba3ef4abf9761d5"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
+<tr class="memitem:a2c769bcd60a08fc3eba3ef4abf9761d5"><td class="memTemplItemLeft" align="right" valign="top">static T&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classDUtils_1_1Random.html#a2c769bcd60a08fc3eba3ef4abf9761d5">RandomGaussianValue</a> (T mean, T sigma)</td></tr>
+<tr class="separator:a2c769bcd60a08fc3eba3ef4abf9761d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>Functions to generate pseudo-random numbers. </p>
+
+<p>在文件 <a class="el" href="Random_8h_source.html">Random.h</a> 第 <a class="el" href="Random_8h_source.html#l00023">23</a> 行定义.</p>
+</div><h2 class="groupheader">成员函数说明</h2>
+<a class="anchor" id="a2c769bcd60a08fc3eba3ef4abf9761d5"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static T DUtils::Random::RandomGaussianValue </td>
+          <td>(</td>
+          <td class="paramtype">T&#160;</td>
+          <td class="paramname"><em>mean</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">T&#160;</td>
+          <td class="paramname"><em>sigma</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Returns a random number from a gaussian distribution </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">mean</td><td></td></tr>
+    <tr><td class="paramname">sigma</td><td>standard deviation </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>在文件 <a class="el" href="Random_8h_source.html">Random.h</a> 第 <a class="el" href="Random_8h_source.html#l00087">87</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="aa25012101ecbca54025d5430bcf93d86"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int DUtils::Random::RandomInt </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>min</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>max</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Returns a random int in the range [min..max] </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">min</td><td></td></tr>
+    <tr><td class="paramname">max</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>random int in [min..max] </dd></dl>
+
+<p>在文件 <a class="el" href="Random_8cpp_source.html">Random.cpp</a> 第 <a class="el" href="Random_8cpp_source.html#l00047">47</a> 行定义.</p>
+
+<p>参考自 <a class="el" href="Random_8cpp_source.html#l00081">DUtils::Random::UnrepeatedRandomizer::get()</a>, <a class="el" href="Initializer_8cpp_source.html#l00055">ORB_SLAM2::Initializer::Initialize()</a> , 以及 <a class="el" href="TemplatedVocabulary_8h_source.html#l00849">DBoW2::TemplatedVocabulary&lt; TDescriptor, F &gt;::initiateClustersKMpp()</a>.</p>
+
+<p><div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classDUtils_1_1Random_aa25012101ecbca54025d5430bcf93d86_icgraph.png" border="0" usemap="#classDUtils_1_1Random_aa25012101ecbca54025d5430bcf93d86_icgraph" alt=""/></div>
+<map name="classDUtils_1_1Random_aa25012101ecbca54025d5430bcf93d86_icgraph" id="classDUtils_1_1Random_aa25012101ecbca54025d5430bcf93d86_icgraph">
+<area shape="rect" id="node2" href="classDUtils_1_1Random_1_1UnrepeatedRandomizer.html#ae1bf6a140e322962f65b2c98dc07a3ac" title="DUtils::Random::Unrepeated\lRandomizer::get" alt="" coords="249,5,439,46"/><area shape="rect" id="node3" href="classORB__SLAM2_1_1Initializer.html#a40d41840e2bdb7199ab024871d028c2c" title="并行地计算基础矩阵和单应性矩阵，选取其中一个模型，恢复出最开始两帧之间的相对姿态以及点云 " alt="" coords="263,70,425,111"/><area shape="rect" id="node6" href="classDBoW2_1_1TemplatedVocabulary.html#ab6a5aedb8c5645d2597a8ca8a3994efe" title="DBoW2::TemplatedVocabulary\l::initiateClustersKMpp" alt="" coords="243,135,445,177"/><area shape="rect" id="node4" href="classORB__SLAM2_1_1Tracking.html#a7e81c68bb6ced27fcbfa2edec38ef6e0" title="单目的地图初始化 " alt="" coords="494,70,653,111"/><area shape="rect" id="node5" href="classORB__SLAM2_1_1Tracking.html#af1f2c9c533642d8c33854540e90d1918" title="Main tracking function. It is independent of the input sensor. " alt="" coords="702,70,861,111"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="ac5d2e4d977afdec30071c531a7a96d88"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static T DUtils::Random::RandomValue </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Returns a random number in the range [0..1] </p>
+<dl class="section return"><dt>返回</dt><dd>random T number in [0..1] </dd></dl>
+
+<p>在文件 <a class="el" href="Random_8h_source.html">Random.h</a> 第 <a class="el" href="Random_8h_source.html#l00058">58</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a13760f5d6d4b866fbcc350dbb0d39d02"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static T DUtils::Random::RandomValue </td>
+          <td>(</td>
+          <td class="paramtype">T&#160;</td>
+          <td class="paramname"><em>min</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">T&#160;</td>
+          <td class="paramname"><em>max</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Returns a random number in the range [min..max] </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">min</td><td></td></tr>
+    <tr><td class="paramname">max</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>random T number in [min..max] </dd></dl>
+
+<p>在文件 <a class="el" href="Random_8h_source.html">Random.h</a> 第 <a class="el" href="Random_8h_source.html#l00069">69</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a719a6489316343a771e062f0be58050f"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DUtils::Random::SeedRand </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Sets the random number seed to the current time </p>
+
+<p>在文件 <a class="el" href="Random_8cpp_source.html">Random.cpp</a> 第 <a class="el" href="Random_8cpp_source.html#l00018">18</a> 行定义.</p>
+
+<p>参考 <a class="el" href="Timestamp_8cpp_source.html#l00093">DUtils::Timestamp::getFloatTime()</a> , 以及 <a class="el" href="Timestamp_8cpp_source.html#l00056">DUtils::Timestamp::setToCurrentTime()</a>.</p>
+
+<p>参考自 <a class="el" href="Random_8cpp_source.html#l00024">SeedRandOnce()</a>.</p>
+
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classDUtils_1_1Random_a719a6489316343a771e062f0be58050f_cgraph.png" border="0" usemap="#classDUtils_1_1Random_a719a6489316343a771e062f0be58050f_cgraph" alt=""/></div>
+<map name="classDUtils_1_1Random_a719a6489316343a771e062f0be58050f_cgraph" id="classDUtils_1_1Random_a719a6489316343a771e062f0be58050f_cgraph">
+<area shape="rect" id="node2" href="classDUtils_1_1Timestamp.html#a6830126c3f35278345791148a80a5b86" title="DUtils::Timestamp::\lgetFloatTime" alt="" coords="241,5,381,46"/><area shape="rect" id="node3" href="classDUtils_1_1Timestamp.html#ae27c920f3833c104096213c6fb17f4d8" title="DUtils::Timestamp::\lsetToCurrentTime" alt="" coords="241,70,381,111"/></map>
+</div>
+</p>
+
+<p><div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classDUtils_1_1Random_a719a6489316343a771e062f0be58050f_icgraph.png" border="0" usemap="#classDUtils_1_1Random_a719a6489316343a771e062f0be58050f_icgraph" alt=""/></div>
+<map name="classDUtils_1_1Random_a719a6489316343a771e062f0be58050f_icgraph" id="classDUtils_1_1Random_a719a6489316343a771e062f0be58050f_icgraph">
+<area shape="rect" id="node2" href="classDUtils_1_1Random.html#a168e77d82ce1e66c6759e97ef27adbbc" title="DUtils::Random::SeedRandOnce" alt="" coords="240,77,456,104"/><area shape="rect" id="node3" href="classORB__SLAM2_1_1Initializer.html#a40d41840e2bdb7199ab024871d028c2c" title="并行地计算基础矩阵和单应性矩阵，选取其中一个模型，恢复出最开始两帧之间的相对姿态以及点云 " alt="" coords="525,5,686,46"/><area shape="rect" id="node6" href="classDBoW2_1_1TemplatedVocabulary.html#ab6a5aedb8c5645d2597a8ca8a3994efe" title="DBoW2::TemplatedVocabulary\l::initiateClustersKMpp" alt="" coords="504,70,707,111"/><area shape="rect" id="node7" href="classDUtils_1_1Random_1_1UnrepeatedRandomizer.html#ae1bf6a140e322962f65b2c98dc07a3ac" title="DUtils::Random::Unrepeated\lRandomizer::get" alt="" coords="510,135,701,177"/><area shape="rect" id="node4" href="classORB__SLAM2_1_1Tracking.html#a7e81c68bb6ced27fcbfa2edec38ef6e0" title="单目的地图初始化 " alt="" coords="755,5,914,46"/><area shape="rect" id="node5" href="classORB__SLAM2_1_1Tracking.html#af1f2c9c533642d8c33854540e90d1918" title="Main tracking function. It is independent of the input sensor. " alt="" coords="963,5,1122,46"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="aec19d58856a0cf0b48d783119a497233"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DUtils::Random::SeedRand </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>seed</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Sets the given random number seed </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">seed</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>在文件 <a class="el" href="Random_8cpp_source.html">Random.cpp</a> 第 <a class="el" href="Random_8cpp_source.html#l00033">33</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a168e77d82ce1e66c6759e97ef27adbbc"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DUtils::Random::SeedRandOnce </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Sets the random number seed to the current time only the first time this function is called </p>
+
+<p>在文件 <a class="el" href="Random_8cpp_source.html">Random.cpp</a> 第 <a class="el" href="Random_8cpp_source.html#l00024">24</a> 行定义.</p>
+
+<p>参考 <a class="el" href="Random_8cpp_source.html#l00018">SeedRand()</a>.</p>
+
+<p>参考自 <a class="el" href="Random_8cpp_source.html#l00081">DUtils::Random::UnrepeatedRandomizer::get()</a>, <a class="el" href="Initializer_8cpp_source.html#l00055">ORB_SLAM2::Initializer::Initialize()</a> , 以及 <a class="el" href="TemplatedVocabulary_8h_source.html#l00849">DBoW2::TemplatedVocabulary&lt; TDescriptor, F &gt;::initiateClustersKMpp()</a>.</p>
+
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classDUtils_1_1Random_a168e77d82ce1e66c6759e97ef27adbbc_cgraph.png" border="0" usemap="#classDUtils_1_1Random_a168e77d82ce1e66c6759e97ef27adbbc_cgraph" alt=""/></div>
+<map name="classDUtils_1_1Random_a168e77d82ce1e66c6759e97ef27adbbc_cgraph" id="classDUtils_1_1Random_a168e77d82ce1e66c6759e97ef27adbbc_cgraph">
+<area shape="rect" id="node2" href="classDUtils_1_1Random.html#a719a6489316343a771e062f0be58050f" title="DUtils::Random::SeedRand" alt="" coords="270,45,455,72"/><area shape="rect" id="node3" href="classDUtils_1_1Timestamp.html#a6830126c3f35278345791148a80a5b86" title="DUtils::Timestamp::\lgetFloatTime" alt="" coords="505,5,645,46"/><area shape="rect" id="node4" href="classDUtils_1_1Timestamp.html#ae27c920f3833c104096213c6fb17f4d8" title="DUtils::Timestamp::\lsetToCurrentTime" alt="" coords="505,70,645,111"/></map>
+</div>
+</p>
+
+<p><div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classDUtils_1_1Random_a168e77d82ce1e66c6759e97ef27adbbc_icgraph.png" border="0" usemap="#classDUtils_1_1Random_a168e77d82ce1e66c6759e97ef27adbbc_icgraph" alt=""/></div>
+<map name="classDUtils_1_1Random_a168e77d82ce1e66c6759e97ef27adbbc_icgraph" id="classDUtils_1_1Random_a168e77d82ce1e66c6759e97ef27adbbc_icgraph">
+<area shape="rect" id="node2" href="classDUtils_1_1Random_1_1UnrepeatedRandomizer.html#ae1bf6a140e322962f65b2c98dc07a3ac" title="DUtils::Random::Unrepeated\lRandomizer::get" alt="" coords="275,5,466,46"/><area shape="rect" id="node3" href="classORB__SLAM2_1_1Initializer.html#a40d41840e2bdb7199ab024871d028c2c" title="并行地计算基础矩阵和单应性矩阵，选取其中一个模型，恢复出最开始两帧之间的相对姿态以及点云 " alt="" coords="290,70,451,111"/><area shape="rect" id="node6" href="classDBoW2_1_1TemplatedVocabulary.html#ab6a5aedb8c5645d2597a8ca8a3994efe" title="DBoW2::TemplatedVocabulary\l::initiateClustersKMpp" alt="" coords="269,135,472,177"/><area shape="rect" id="node4" href="classORB__SLAM2_1_1Tracking.html#a7e81c68bb6ced27fcbfa2edec38ef6e0" title="单目的地图初始化 " alt="" coords="521,70,679,111"/><area shape="rect" id="node5" href="classORB__SLAM2_1_1Tracking.html#af1f2c9c533642d8c33854540e90d1918" title="Main tracking function. It is independent of the input sensor. " alt="" coords="729,70,887,111"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="ad3652f5d105ca4f6f22696b64f2a4a5d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DUtils::Random::SeedRandOnce </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>seed</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Sets the given random number seed only the first time this function is called </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">seed</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>在文件 <a class="el" href="Random_8cpp_source.html">Random.cpp</a> 第 <a class="el" href="Random_8cpp_source.html#l00038">38</a> 行定义.</p>
+
+<p>参考 <a class="el" href="Random_8cpp_source.html#l00018">SeedRand()</a>.</p>
+
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classDUtils_1_1Random_ad3652f5d105ca4f6f22696b64f2a4a5d_cgraph.png" border="0" usemap="#classDUtils_1_1Random_ad3652f5d105ca4f6f22696b64f2a4a5d_cgraph" alt=""/></div>
+<map name="classDUtils_1_1Random_ad3652f5d105ca4f6f22696b64f2a4a5d_cgraph" id="classDUtils_1_1Random_ad3652f5d105ca4f6f22696b64f2a4a5d_cgraph">
+<area shape="rect" id="node2" href="classDUtils_1_1Random.html#a719a6489316343a771e062f0be58050f" title="DUtils::Random::SeedRand" alt="" coords="270,45,455,72"/><area shape="rect" id="node3" href="classDUtils_1_1Timestamp.html#a6830126c3f35278345791148a80a5b86" title="DUtils::Timestamp::\lgetFloatTime" alt="" coords="505,5,645,46"/><area shape="rect" id="node4" href="classDUtils_1_1Timestamp.html#ae27c920f3833c104096213c6fb17f4d8" title="DUtils::Timestamp::\lsetToCurrentTime" alt="" coords="505,70,645,111"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>Thirdparty/DBoW2/DUtils/<a class="el" href="Random_8h_source.html">Random.h</a></li>
+<li>Thirdparty/DBoW2/DUtils/<a class="el" href="Random_8cpp_source.html">Random.cpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><b>DUtils</b></li><li class="navelem"><a class="el" href="classDUtils_1_1Random.html">Random</a></li>
+    <li class="footer">生成于 2017年 七月 18日 星期二 17:13:37 , 为 My Project使用 
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
+  </ul>
+</div>
+</body>
+</html>

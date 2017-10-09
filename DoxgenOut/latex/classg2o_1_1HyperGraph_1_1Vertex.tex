@@ -1,0 +1,92 @@
+\hypertarget{classg2o_1_1HyperGraph_1_1Vertex}{\section{g2o\-:\-:Hyper\-Graph\-:\-:Vertex类 参考}
+\label{classg2o_1_1HyperGraph_1_1Vertex}\index{g2o\-::\-Hyper\-Graph\-::\-Vertex@{g2o\-::\-Hyper\-Graph\-::\-Vertex}}
+}
+
+
+abstract \hyperlink{classg2o_1_1HyperGraph_1_1Vertex}{Vertex}, your types must derive from that one  
+
+
+
+
+{\ttfamily \#include $<$hyper\-\_\-graph.\-h$>$}
+
+
+
+类 g2o\-:\-:Hyper\-Graph\-:\-:Vertex 继承关系图\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classg2o_1_1HyperGraph_1_1Vertex__inherit__graph}
+\end{center}
+\end{figure}
+
+
+g2o\-:\-:Hyper\-Graph\-:\-:Vertex 的协作图\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=228pt]{classg2o_1_1HyperGraph_1_1Vertex__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classg2o_1_1HyperGraph_1_1Vertex_a7f2e986815608e5ac4a44671ed9794ae}{\hyperlink{classg2o_1_1HyperGraph_1_1Vertex_a7f2e986815608e5ac4a44671ed9794ae}{Vertex} (int \hyperlink{classg2o_1_1HyperGraph_1_1Vertex_ad76b71c368b71971ac5affb5d57183d3}{id}=-\/1)}\label{classg2o_1_1HyperGraph_1_1Vertex_a7f2e986815608e5ac4a44671ed9794ae}
+
+\begin{DoxyCompactList}\small\item\em creates a vertex having an I\-D specified by the argument \end{DoxyCompactList}\item 
+\hypertarget{classg2o_1_1HyperGraph_1_1Vertex_ad76b71c368b71971ac5affb5d57183d3}{int \hyperlink{classg2o_1_1HyperGraph_1_1Vertex_ad76b71c368b71971ac5affb5d57183d3}{id} () const }\label{classg2o_1_1HyperGraph_1_1Vertex_ad76b71c368b71971ac5affb5d57183d3}
+
+\begin{DoxyCompactList}\small\item\em returns the id \end{DoxyCompactList}\item 
+\hypertarget{classg2o_1_1HyperGraph_1_1Vertex_ac861d25447d8ff167d23c45458f7382f}{virtual void {\bfseries set\-Id} (int new\-Id)}\label{classg2o_1_1HyperGraph_1_1Vertex_ac861d25447d8ff167d23c45458f7382f}
+
+\item 
+\hypertarget{classg2o_1_1HyperGraph_1_1Vertex_a0805a5575511327262c89585f1953b8e}{const Edge\-Set \& \hyperlink{classg2o_1_1HyperGraph_1_1Vertex_a0805a5575511327262c89585f1953b8e}{edges} () const }\label{classg2o_1_1HyperGraph_1_1Vertex_a0805a5575511327262c89585f1953b8e}
+
+\begin{DoxyCompactList}\small\item\em returns the set of hyper-\/edges that are leaving/entering in this vertex \end{DoxyCompactList}\item 
+\hypertarget{classg2o_1_1HyperGraph_1_1Vertex_a35cbf4ea796797bb5d9c35a41454e8fb}{Edge\-Set \& \hyperlink{classg2o_1_1HyperGraph_1_1Vertex_a35cbf4ea796797bb5d9c35a41454e8fb}{edges} ()}\label{classg2o_1_1HyperGraph_1_1Vertex_a35cbf4ea796797bb5d9c35a41454e8fb}
+
+\begin{DoxyCompactList}\small\item\em returns the set of hyper-\/edges that are leaving/entering in this vertex \end{DoxyCompactList}\item 
+virtual Hyper\-Graph\-Element\-Type \hyperlink{classg2o_1_1HyperGraph_1_1Vertex_a0f7f29e5924b61b68b8e19ed142b68d0}{element\-Type} () const 
+\end{DoxyCompactItemize}
+\subsection*{Protected 属性}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classg2o_1_1HyperGraph_1_1Vertex_ac643fa36a6d666d64925281b11de9b92}{int {\bfseries \-\_\-id}}\label{classg2o_1_1HyperGraph_1_1Vertex_ac643fa36a6d666d64925281b11de9b92}
+
+\item 
+\hypertarget{classg2o_1_1HyperGraph_1_1Vertex_a8d732ebb72a545332a5bdc478b558430}{Edge\-Set {\bfseries \-\_\-edges}}\label{classg2o_1_1HyperGraph_1_1Vertex_a8d732ebb72a545332a5bdc478b558430}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{详细描述}
+abstract \hyperlink{classg2o_1_1HyperGraph_1_1Vertex}{Vertex}, your types must derive from that one 
+
+在文件 hyper\-\_\-graph.\-h 第 102 行定义.
+
+
+
+\subsection{成员函数说明}
+\hypertarget{classg2o_1_1HyperGraph_1_1Vertex_a0f7f29e5924b61b68b8e19ed142b68d0}{\index{g2o\-::\-Hyper\-Graph\-::\-Vertex@{g2o\-::\-Hyper\-Graph\-::\-Vertex}!element\-Type@{element\-Type}}
+\index{element\-Type@{element\-Type}!g2o::HyperGraph::Vertex@{g2o\-::\-Hyper\-Graph\-::\-Vertex}}
+\subsubsection[{element\-Type}]{\setlength{\rightskip}{0pt plus 5cm}virtual Hyper\-Graph\-Element\-Type g2o\-::\-Hyper\-Graph\-::\-Vertex\-::element\-Type (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classg2o_1_1HyperGraph_1_1Vertex_a0f7f29e5924b61b68b8e19ed142b68d0}
+returns the type of the graph element, see Hyper\-Graph\-Element\-Type 
+
+实现了 \hyperlink{structg2o_1_1HyperGraph_1_1HyperGraphElement_a1a9d7b748698c09d202373e06e413ef2}{g2o\-::\-Hyper\-Graph\-::\-Hyper\-Graph\-Element}.
+
+
+
+在文件 hyper\-\_\-graph.\-h 第 114 行定义.
+
+
+
+该类的文档由以下文件生成\-:\begin{DoxyCompactItemize}
+\item 
+Thirdparty/g2o/g2o/core/hyper\-\_\-graph.\-h\item 
+Thirdparty/g2o/g2o/core/hyper\-\_\-graph.\-cpp\end{DoxyCompactItemize}

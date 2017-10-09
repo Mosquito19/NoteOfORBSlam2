@@ -1,0 +1,945 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.6"/>
+<title>My Project: DUtils::Timestamp类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">My Project
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.6 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="pages.html"><span>相关页面</span></a></li>
+      <li><a href="modules.html"><span>模块</span></a></li>
+      <li><a href="namespaces.html"><span>命名空间</span></a></li>
+      <li class="current"><a href="annotated.html"><span>类</span></a></li>
+      <li><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>类列表</span></a></li>
+      <li><a href="classes.html"><span>类索引</span></a></li>
+      <li><a href="inherits.html"><span>类继承关系</span></a></li>
+      <li><a href="functions.html"><span>类成员</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('classDUtils_1_1Timestamp.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>命名空间</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>友元</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>组</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>页</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-types">Public 类型</a> &#124;
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pub-static-methods">静态 Public 成员函数</a> &#124;
+<a href="#pro-attribs">Protected 属性</a> &#124;
+<a href="classDUtils_1_1Timestamp-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">DUtils::Timestamp类 参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p><a class="el" href="classDUtils_1_1Timestamp.html" title="Timestamp. ">Timestamp</a>.  
+ <a href="classDUtils_1_1Timestamp.html#details">更多...</a></p>
+
+<p><code>#include &lt;<a class="el" href="Timestamp_8h_source.html">Timestamp.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public 类型</h2></td></tr>
+<tr class="memitem:a5a8a3cb7f9e0f73bf11fce42688b06c8"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDUtils_1_1Timestamp.html#a5a8a3cb7f9e0f73bf11fce42688b06c8">tOptions</a> { <b>NONE</b> = 0, 
+<b>CURRENT_TIME</b> = 0x1, 
+<b>ZERO</b> = 0x2
+ }</td></tr>
+<tr class="memdesc:a5a8a3cb7f9e0f73bf11fce42688b06c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Options to initiate a timestamp. <br/></td></tr>
+<tr class="separator:a5a8a3cb7f9e0f73bf11fce42688b06c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:a7edd67789d60b27acbee7f591ed3e2da"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDUtils_1_1Timestamp.html#a7edd67789d60b27acbee7f591ed3e2da">Timestamp</a> (<a class="el" href="classDUtils_1_1Timestamp.html#a5a8a3cb7f9e0f73bf11fce42688b06c8">Timestamp::tOptions</a> option=NONE)</td></tr>
+<tr class="separator:a7edd67789d60b27acbee7f591ed3e2da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a06ea20fe67d9e7177818ba219ea3137f"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDUtils_1_1Timestamp.html#a06ea20fe67d9e7177818ba219ea3137f">~Timestamp</a> (void)</td></tr>
+<tr class="separator:a06ea20fe67d9e7177818ba219ea3137f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9d088f9c5750c4f4cd688ab74a93aba9"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDUtils_1_1Timestamp.html#a9d088f9c5750c4f4cd688ab74a93aba9">empty</a> () const </td></tr>
+<tr class="separator:a9d088f9c5750c4f4cd688ab74a93aba9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae27c920f3833c104096213c6fb17f4d8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDUtils_1_1Timestamp.html#ae27c920f3833c104096213c6fb17f4d8">setToCurrentTime</a> ()</td></tr>
+<tr class="separator:ae27c920f3833c104096213c6fb17f4d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a439bcff577f3ae30e8918897ecb33e76"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDUtils_1_1Timestamp.html#a439bcff577f3ae30e8918897ecb33e76">setTime</a> (unsigned long secs, unsigned long usecs)</td></tr>
+<tr class="separator:a439bcff577f3ae30e8918897ecb33e76"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af28ca416f5960805b7a517c11df7d3c6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDUtils_1_1Timestamp.html#af28ca416f5960805b7a517c11df7d3c6">getTime</a> (unsigned long &amp;secs, unsigned long &amp;usecs) const </td></tr>
+<tr class="separator:af28ca416f5960805b7a517c11df7d3c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac35ad9d35e9ce5ff6fea159e9b060bf0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDUtils_1_1Timestamp.html#ac35ad9d35e9ce5ff6fea159e9b060bf0">setTime</a> (const string &amp;stime)</td></tr>
+<tr class="separator:ac35ad9d35e9ce5ff6fea159e9b060bf0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a797856da2823ee26814151ea97aea5e1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDUtils_1_1Timestamp.html#a797856da2823ee26814151ea97aea5e1">setTime</a> (double s)</td></tr>
+<tr class="separator:a797856da2823ee26814151ea97aea5e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6830126c3f35278345791148a80a5b86"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDUtils_1_1Timestamp.html#a6830126c3f35278345791148a80a5b86">getFloatTime</a> () const </td></tr>
+<tr class="separator:a6830126c3f35278345791148a80a5b86"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a220061d59c9a09c6b2932988e4fd6a71"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDUtils_1_1Timestamp.html#a220061d59c9a09c6b2932988e4fd6a71">getStringTime</a> () const </td></tr>
+<tr class="separator:a220061d59c9a09c6b2932988e4fd6a71"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8348340ebdcfeb920fba33dda391443f"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDUtils_1_1Timestamp.html#a8348340ebdcfeb920fba33dda391443f">operator-</a> (const <a class="el" href="classDUtils_1_1Timestamp.html">Timestamp</a> &amp;t) const </td></tr>
+<tr class="separator:a8348340ebdcfeb920fba33dda391443f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d0c2b2ce65c0562db26ad37a304f2c5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDUtils_1_1Timestamp.html">Timestamp</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDUtils_1_1Timestamp.html#a2d0c2b2ce65c0562db26ad37a304f2c5">plus</a> (unsigned long s, unsigned long us) const </td></tr>
+<tr class="separator:a2d0c2b2ce65c0562db26ad37a304f2c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a53062c2f168d6f584541981b8db3051f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDUtils_1_1Timestamp.html">Timestamp</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDUtils_1_1Timestamp.html#a53062c2f168d6f584541981b8db3051f">minus</a> (unsigned long s, unsigned long us) const </td></tr>
+<tr class="separator:a53062c2f168d6f584541981b8db3051f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a609bb289c3833fd6c26c9ee831074a11"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDUtils_1_1Timestamp.html">Timestamp</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDUtils_1_1Timestamp.html#a609bb289c3833fd6c26c9ee831074a11">operator+=</a> (double s)</td></tr>
+<tr class="separator:a609bb289c3833fd6c26c9ee831074a11"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a775ece4a7fab156430da57da985a8965"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDUtils_1_1Timestamp.html">Timestamp</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDUtils_1_1Timestamp.html#a775ece4a7fab156430da57da985a8965">operator-=</a> (double s)</td></tr>
+<tr class="separator:a775ece4a7fab156430da57da985a8965"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adf1cd902ca81aedd5ef955b476f82680"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDUtils_1_1Timestamp.html">Timestamp</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDUtils_1_1Timestamp.html#adf1cd902ca81aedd5ef955b476f82680">operator+</a> (double s) const </td></tr>
+<tr class="separator:adf1cd902ca81aedd5ef955b476f82680"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a81b79de4057df40d4d6a2a86131ab6f5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDUtils_1_1Timestamp.html">Timestamp</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDUtils_1_1Timestamp.html#a81b79de4057df40d4d6a2a86131ab6f5">operator-</a> (double s) const </td></tr>
+<tr class="separator:a81b79de4057df40d4d6a2a86131ab6f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a121756e11835f28fbc5e796e46e7b7d2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDUtils_1_1Timestamp.html#a121756e11835f28fbc5e796e46e7b7d2">operator&gt;</a> (const <a class="el" href="classDUtils_1_1Timestamp.html">Timestamp</a> &amp;t) const </td></tr>
+<tr class="separator:a121756e11835f28fbc5e796e46e7b7d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3f2ba4c752f7b966a31af1b97cabf544"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDUtils_1_1Timestamp.html#a3f2ba4c752f7b966a31af1b97cabf544">operator&gt;=</a> (const <a class="el" href="classDUtils_1_1Timestamp.html">Timestamp</a> &amp;t) const </td></tr>
+<tr class="separator:a3f2ba4c752f7b966a31af1b97cabf544"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a921d279e4c61f1d00d2d278b0060acc0"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDUtils_1_1Timestamp.html#a921d279e4c61f1d00d2d278b0060acc0">operator==</a> (const <a class="el" href="classDUtils_1_1Timestamp.html">Timestamp</a> &amp;t) const </td></tr>
+<tr class="separator:a921d279e4c61f1d00d2d278b0060acc0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ace722f049a59fc1baf067a03659692d4"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDUtils_1_1Timestamp.html#ace722f049a59fc1baf067a03659692d4">operator&lt;</a> (const <a class="el" href="classDUtils_1_1Timestamp.html">Timestamp</a> &amp;t) const </td></tr>
+<tr class="separator:ace722f049a59fc1baf067a03659692d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa0b04c8c29808b7f4f31eb123a5678f1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDUtils_1_1Timestamp.html#aa0b04c8c29808b7f4f31eb123a5678f1">operator&lt;=</a> (const <a class="el" href="classDUtils_1_1Timestamp.html">Timestamp</a> &amp;t) const </td></tr>
+<tr class="separator:aa0b04c8c29808b7f4f31eb123a5678f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a38cdda9c05d592f7794a1111ac3da618"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDUtils_1_1Timestamp.html#a38cdda9c05d592f7794a1111ac3da618">Format</a> (bool machine_friendly=false) const </td></tr>
+<tr class="separator:a38cdda9c05d592f7794a1111ac3da618"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+静态 Public 成员函数</h2></td></tr>
+<tr class="memitem:abd63d0a2abc2209f9300296ee3e85265"><td class="memItemLeft" align="right" valign="top">static string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDUtils_1_1Timestamp.html#abd63d0a2abc2209f9300296ee3e85265">Format</a> (double s)</td></tr>
+<tr class="separator:abd63d0a2abc2209f9300296ee3e85265"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
+Protected 属性</h2></td></tr>
+<tr class="memitem:a88b8dff916bb011ef4142ca5cc655425"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a88b8dff916bb011ef4142ca5cc655425"></a>
+unsigned long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDUtils_1_1Timestamp.html#a88b8dff916bb011ef4142ca5cc655425">m_secs</a></td></tr>
+<tr class="memdesc:a88b8dff916bb011ef4142ca5cc655425"><td class="mdescLeft">&#160;</td><td class="mdescRight">Seconds. <br/></td></tr>
+<tr class="separator:a88b8dff916bb011ef4142ca5cc655425"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afb8947a2cf3b04919f782f4490ca0935"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afb8947a2cf3b04919f782f4490ca0935"></a>
+unsigned long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDUtils_1_1Timestamp.html#afb8947a2cf3b04919f782f4490ca0935">m_usecs</a></td></tr>
+<tr class="memdesc:afb8947a2cf3b04919f782f4490ca0935"><td class="mdescLeft">&#160;</td><td class="mdescRight">Microseconds. <br/></td></tr>
+<tr class="separator:afb8947a2cf3b04919f782f4490ca0935"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p><a class="el" href="classDUtils_1_1Timestamp.html" title="Timestamp. ">Timestamp</a>. </p>
+
+<p>在文件 <a class="el" href="Timestamp_8h_source.html">Timestamp.h</a> 第 <a class="el" href="Timestamp_8h_source.html#l00022">22</a> 行定义.</p>
+</div><h2 class="groupheader">构造及析构函数说明</h2>
+<a class="anchor" id="a7edd67789d60b27acbee7f591ed3e2da"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Timestamp::Timestamp </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classDUtils_1_1Timestamp.html#a5a8a3cb7f9e0f73bf11fce42688b06c8">Timestamp::tOptions</a>&#160;</td>
+          <td class="paramname"><em>option</em> = <code>NONE</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Creates a timestamp </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">option</td><td>option to set the initial time stamp </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>在文件 <a class="el" href="Timestamp_8cpp_source.html">Timestamp.cpp</a> 第 <a class="el" href="Timestamp_8cpp_source.html#l00039">39</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a06ea20fe67d9e7177818ba219ea3137f"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Timestamp::~Timestamp </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Destructor </p>
+
+<p>在文件 <a class="el" href="Timestamp_8cpp_source.html">Timestamp.cpp</a> 第 <a class="el" href="Timestamp_8cpp_source.html#l00047">47</a> 行定义.</p>
+
+</div>
+</div>
+<h2 class="groupheader">成员函数说明</h2>
+<a class="anchor" id="a9d088f9c5750c4f4cd688ab74a93aba9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Timestamp::empty </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Says if the timestamp is "empty": seconds and usecs are both 0, as when initiated with the ZERO flag </p>
+<dl class="section return"><dt>返回</dt><dd>true iif secs == usecs == 0 </dd></dl>
+
+<p>在文件 <a class="el" href="Timestamp_8cpp_source.html">Timestamp.cpp</a> 第 <a class="el" href="Timestamp_8cpp_source.html#l00051">51</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a38cdda9c05d592f7794a1111ac3da618"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">string Timestamp::Format </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>machine_friendly</em> = <code>false</code></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Returns the timestamp in a human-readable string </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">machine_friendly</td><td>if true, the returned string is formatted to yyyymmdd_hhmmss, without weekday or spaces </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>注解</dt><dd>This has not been tested under Windows </dd>
+<dd>
+The timestamp is truncated to seconds </dd></dl>
+
+<p>在文件 <a class="el" href="Timestamp_8cpp_source.html">Timestamp.cpp</a> 第 <a class="el" href="Timestamp_8cpp_source.html#l00197">197</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="abd63d0a2abc2209f9300296ee3e85265"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string Timestamp::Format </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>s</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Returns a string version of the elapsed time in seconds, with the format xd hh:mm:ss, hh:mm:ss, mm:ss or s.us </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">s</td><td>elapsed seconds (given by getFloatTime) to format </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>在文件 <a class="el" href="Timestamp_8cpp_source.html">Timestamp.cpp</a> 第 <a class="el" href="Timestamp_8cpp_source.html#l00223">223</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a6830126c3f35278345791148a80a5b86"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double Timestamp::getFloatTime </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Returns this timestamp as the number of seconds in (long) float format </p>
+
+<p>在文件 <a class="el" href="Timestamp_8cpp_source.html">Timestamp.cpp</a> 第 <a class="el" href="Timestamp_8cpp_source.html#l00093">93</a> 行定义.</p>
+
+<p>参考自 <a class="el" href="Timestamp_8cpp_source.html#l00103">operator-()</a> , 以及 <a class="el" href="Random_8cpp_source.html#l00018">DUtils::Random::SeedRand()</a>.</p>
+
+<p><div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classDUtils_1_1Timestamp_a6830126c3f35278345791148a80a5b86_icgraph.png" border="0" usemap="#classDUtils_1_1Timestamp_a6830126c3f35278345791148a80a5b86_icgraph" alt=""/></div>
+<map name="classDUtils_1_1Timestamp_a6830126c3f35278345791148a80a5b86_icgraph" id="classDUtils_1_1Timestamp_a6830126c3f35278345791148a80a5b86_icgraph">
+<area shape="rect" id="node2" href="classDUtils_1_1Timestamp.html#a8348340ebdcfeb920fba33dda391443f" title="DUtils::Timestamp::\loperator&#45;" alt="" coords="218,11,358,53"/><area shape="rect" id="node3" href="classDUtils_1_1Random.html#a719a6489316343a771e062f0be58050f" title="DUtils::Random::SeedRand" alt="" coords="195,77,381,104"/><area shape="rect" id="node4" href="classDUtils_1_1Random.html#a168e77d82ce1e66c6759e97ef27adbbc" title="DUtils::Random::SeedRandOnce" alt="" coords="429,77,645,104"/><area shape="rect" id="node5" href="classDUtils_1_1Random_1_1UnrepeatedRandomizer.html#ae1bf6a140e322962f65b2c98dc07a3ac" title="DUtils::Random::Unrepeated\lRandomizer::get" alt="" coords="699,5,890,46"/><area shape="rect" id="node6" href="classORB__SLAM2_1_1Initializer.html#a40d41840e2bdb7199ab024871d028c2c" title="并行地计算基础矩阵和单应性矩阵，选取其中一个模型，恢复出最开始两帧之间的相对姿态以及点云 " alt="" coords="714,70,875,111"/><area shape="rect" id="node9" href="classDBoW2_1_1TemplatedVocabulary.html#ab6a5aedb8c5645d2597a8ca8a3994efe" title="DBoW2::TemplatedVocabulary\l::initiateClustersKMpp" alt="" coords="693,135,896,177"/><area shape="rect" id="node7" href="classORB__SLAM2_1_1Tracking.html#a7e81c68bb6ced27fcbfa2edec38ef6e0" title="单目的地图初始化 " alt="" coords="945,70,1103,111"/><area shape="rect" id="node8" href="classORB__SLAM2_1_1Tracking.html#af1f2c9c533642d8c33854540e90d1918" title="Main tracking function. It is independent of the input sensor. " alt="" coords="1153,70,1311,111"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a220061d59c9a09c6b2932988e4fd6a71"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">string Timestamp::getStringTime </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Returns this timestamp as the number of seconds in fixed length string format </p>
+
+<p>在文件 <a class="el" href="Timestamp_8cpp_source.html">Timestamp.cpp</a> 第 <a class="el" href="Timestamp_8cpp_source.html#l00097">97</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="af28ca416f5960805b7a517c11df7d3c6"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DUtils::Timestamp::getTime </td>
+          <td>(</td>
+          <td class="paramtype">unsigned long &amp;&#160;</td>
+          <td class="paramname"><em>secs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned long &amp;&#160;</td>
+          <td class="paramname"><em>usecs</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Returns the timestamp in seconds and microseconds </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">secs</td><td>seconds </td></tr>
+    <tr><td class="paramname">usecs</td><td>microseconds </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>在文件 <a class="el" href="Timestamp_8h_source.html">Timestamp.h</a> 第 <a class="el" href="Timestamp_8h_source.html#l00074">74</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a53062c2f168d6f584541981b8db3051f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classDUtils_1_1Timestamp.html">Timestamp</a> Timestamp::minus </td>
+          <td>(</td>
+          <td class="paramtype">unsigned long&#160;</td>
+          <td class="paramname"><em>s</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned long&#160;</td>
+          <td class="paramname"><em>us</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Returns a copy of this timestamp - s seconds - us microseconds </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">s</td><td>seconds </td></tr>
+    <tr><td class="paramname">us</td><td>microseconds </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>在文件 <a class="el" href="Timestamp_8cpp_source.html">Timestamp.cpp</a> 第 <a class="el" href="Timestamp_8cpp_source.html#l00149">149</a> 行定义.</p>
+
+<p>参考 <a class="el" href="Timestamp_8h_source.html#l00064">setTime()</a>.</p>
+
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classDUtils_1_1Timestamp_a53062c2f168d6f584541981b8db3051f_cgraph.png" border="0" usemap="#classDUtils_1_1Timestamp_a53062c2f168d6f584541981b8db3051f_cgraph" alt=""/></div>
+<map name="classDUtils_1_1Timestamp_a53062c2f168d6f584541981b8db3051f_cgraph" id="classDUtils_1_1Timestamp_a53062c2f168d6f584541981b8db3051f_cgraph">
+<area shape="rect" id="node2" href="classDUtils_1_1Timestamp.html#a439bcff577f3ae30e8918897ecb33e76" title="DUtils::Timestamp::\lsetTime" alt="" coords="195,5,335,46"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="adf1cd902ca81aedd5ef955b476f82680"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classDUtils_1_1Timestamp.html">Timestamp</a> Timestamp::operator+ </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>s</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Returns a copy of this timestamp + s seconds </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">s</td><td>seconds </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>在文件 <a class="el" href="Timestamp_8cpp_source.html">Timestamp.cpp</a> 第 <a class="el" href="Timestamp_8cpp_source.html#l00119">119</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a609bb289c3833fd6c26c9ee831074a11"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classDUtils_1_1Timestamp.html">Timestamp</a> &amp; Timestamp::operator+= </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>s</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Adds s seconds to this timestamp and returns a reference to itself </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">s</td><td>seconds </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>reference to this timestamp </dd></dl>
+
+<p>在文件 <a class="el" href="Timestamp_8cpp_source.html">Timestamp.cpp</a> 第 <a class="el" href="Timestamp_8cpp_source.html#l00107">107</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a8348340ebdcfeb920fba33dda391443f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double Timestamp::operator- </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classDUtils_1_1Timestamp.html">Timestamp</a> &amp;&#160;</td>
+          <td class="paramname"><em>t</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Returns the difference in seconds between this timestamp (greater) and t (smaller) If the order is swapped, a negative number is returned </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">t</td><td>timestamp to subtract from this timestamp </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>difference in seconds </dd></dl>
+
+<p>在文件 <a class="el" href="Timestamp_8cpp_source.html">Timestamp.cpp</a> 第 <a class="el" href="Timestamp_8cpp_source.html#l00103">103</a> 行定义.</p>
+
+<p>参考 <a class="el" href="Timestamp_8cpp_source.html#l00093">getFloatTime()</a>.</p>
+
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classDUtils_1_1Timestamp_a8348340ebdcfeb920fba33dda391443f_cgraph.png" border="0" usemap="#classDUtils_1_1Timestamp_a8348340ebdcfeb920fba33dda391443f_cgraph" alt=""/></div>
+<map name="classDUtils_1_1Timestamp_a8348340ebdcfeb920fba33dda391443f_cgraph" id="classDUtils_1_1Timestamp_a8348340ebdcfeb920fba33dda391443f_cgraph">
+<area shape="rect" id="node2" href="classDUtils_1_1Timestamp.html#a6830126c3f35278345791148a80a5b86" title="DUtils::Timestamp::\lgetFloatTime" alt="" coords="195,5,335,46"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a81b79de4057df40d4d6a2a86131ab6f5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classDUtils_1_1Timestamp.html">Timestamp</a> Timestamp::operator- </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>s</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Returns a copy of this timestamp - s seconds </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">s</td><td>seconds </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>在文件 <a class="el" href="Timestamp_8cpp_source.html">Timestamp.cpp</a> 第 <a class="el" href="Timestamp_8cpp_source.html#l00141">141</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a775ece4a7fab156430da57da985a8965"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classDUtils_1_1Timestamp.html">Timestamp</a> &amp; Timestamp::operator-= </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>s</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Substracts s seconds to this timestamp and returns a reference to itself </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">s</td><td>seconds </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>reference to this timestamp </dd></dl>
+
+<p>在文件 <a class="el" href="Timestamp_8cpp_source.html">Timestamp.cpp</a> 第 <a class="el" href="Timestamp_8cpp_source.html#l00113">113</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="ace722f049a59fc1baf067a03659692d4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Timestamp::operator&lt; </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classDUtils_1_1Timestamp.html">Timestamp</a> &amp;&#160;</td>
+          <td class="paramname"><em>t</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Returns whether this timestamp is at the past of t </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">t</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>在文件 <a class="el" href="Timestamp_8cpp_source.html">Timestamp.cpp</a> 第 <a class="el" href="Timestamp_8cpp_source.html#l00177">177</a> 行定义.</p>
+
+<p>参考 <a class="el" href="Timestamp_8h_source.html#l00199">m_secs</a> , 以及 <a class="el" href="Timestamp_8h_source.html#l00201">m_usecs</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aa0b04c8c29808b7f4f31eb123a5678f1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Timestamp::operator&lt;= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classDUtils_1_1Timestamp.html">Timestamp</a> &amp;&#160;</td>
+          <td class="paramname"><em>t</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Returns whether this timestamp is at the past of (or is the same as) t </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">t</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>在文件 <a class="el" href="Timestamp_8cpp_source.html">Timestamp.cpp</a> 第 <a class="el" href="Timestamp_8cpp_source.html#l00184">184</a> 行定义.</p>
+
+<p>参考 <a class="el" href="Timestamp_8h_source.html#l00199">m_secs</a> , 以及 <a class="el" href="Timestamp_8h_source.html#l00201">m_usecs</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a921d279e4c61f1d00d2d278b0060acc0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Timestamp::operator== </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classDUtils_1_1Timestamp.html">Timestamp</a> &amp;&#160;</td>
+          <td class="paramname"><em>t</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Returns whether this timestamp and t represent the same instant </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">t</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>在文件 <a class="el" href="Timestamp_8cpp_source.html">Timestamp.cpp</a> 第 <a class="el" href="Timestamp_8cpp_source.html#l00191">191</a> 行定义.</p>
+
+<p>参考 <a class="el" href="Timestamp_8h_source.html#l00199">m_secs</a> , 以及 <a class="el" href="Timestamp_8h_source.html#l00201">m_usecs</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a121756e11835f28fbc5e796e46e7b7d2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Timestamp::operator&gt; </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classDUtils_1_1Timestamp.html">Timestamp</a> &amp;&#160;</td>
+          <td class="paramname"><em>t</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Returns whether this timestamp is at the future of t </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">t</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>在文件 <a class="el" href="Timestamp_8cpp_source.html">Timestamp.cpp</a> 第 <a class="el" href="Timestamp_8cpp_source.html#l00163">163</a> 行定义.</p>
+
+<p>参考 <a class="el" href="Timestamp_8h_source.html#l00199">m_secs</a> , 以及 <a class="el" href="Timestamp_8h_source.html#l00201">m_usecs</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a3f2ba4c752f7b966a31af1b97cabf544"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Timestamp::operator&gt;= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classDUtils_1_1Timestamp.html">Timestamp</a> &amp;&#160;</td>
+          <td class="paramname"><em>t</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Returns whether this timestamp is at the future of (or is the same as) t </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">t</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>在文件 <a class="el" href="Timestamp_8cpp_source.html">Timestamp.cpp</a> 第 <a class="el" href="Timestamp_8cpp_source.html#l00170">170</a> 行定义.</p>
+
+<p>参考 <a class="el" href="Timestamp_8h_source.html#l00199">m_secs</a> , 以及 <a class="el" href="Timestamp_8h_source.html#l00201">m_usecs</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a2d0c2b2ce65c0562db26ad37a304f2c5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classDUtils_1_1Timestamp.html">Timestamp</a> Timestamp::plus </td>
+          <td>(</td>
+          <td class="paramtype">unsigned long&#160;</td>
+          <td class="paramname"><em>s</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned long&#160;</td>
+          <td class="paramname"><em>us</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Returns a copy of this timestamp + s seconds + us microseconds </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">s</td><td>seconds </td></tr>
+    <tr><td class="paramname">us</td><td>microseconds </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>在文件 <a class="el" href="Timestamp_8cpp_source.html">Timestamp.cpp</a> 第 <a class="el" href="Timestamp_8cpp_source.html#l00127">127</a> 行定义.</p>
+
+<p>参考 <a class="el" href="Timestamp_8h_source.html#l00064">setTime()</a>.</p>
+
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classDUtils_1_1Timestamp_a2d0c2b2ce65c0562db26ad37a304f2c5_cgraph.png" border="0" usemap="#classDUtils_1_1Timestamp_a2d0c2b2ce65c0562db26ad37a304f2c5_cgraph" alt=""/></div>
+<map name="classDUtils_1_1Timestamp_a2d0c2b2ce65c0562db26ad37a304f2c5_cgraph" id="classDUtils_1_1Timestamp_a2d0c2b2ce65c0562db26ad37a304f2c5_cgraph">
+<area shape="rect" id="node2" href="classDUtils_1_1Timestamp.html#a439bcff577f3ae30e8918897ecb33e76" title="DUtils::Timestamp::\lsetTime" alt="" coords="219,5,359,46"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a439bcff577f3ae30e8918897ecb33e76"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DUtils::Timestamp::setTime </td>
+          <td>(</td>
+          <td class="paramtype">unsigned long&#160;</td>
+          <td class="paramname"><em>secs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned long&#160;</td>
+          <td class="paramname"><em>usecs</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Sets the timestamp from seconds and microseconds </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">secs</td><td>seconds </td></tr>
+    <tr><td class="paramname">usecs</td><td>microseconds </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>在文件 <a class="el" href="Timestamp_8h_source.html">Timestamp.h</a> 第 <a class="el" href="Timestamp_8h_source.html#l00064">64</a> 行定义.</p>
+
+<p>参考自 <a class="el" href="Timestamp_8cpp_source.html#l00149">minus()</a> , 以及 <a class="el" href="Timestamp_8cpp_source.html#l00127">plus()</a>.</p>
+
+<p><div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classDUtils_1_1Timestamp_a439bcff577f3ae30e8918897ecb33e76_icgraph.png" border="0" usemap="#classDUtils_1_1Timestamp_a439bcff577f3ae30e8918897ecb33e76_icgraph" alt=""/></div>
+<map name="classDUtils_1_1Timestamp_a439bcff577f3ae30e8918897ecb33e76_icgraph" id="classDUtils_1_1Timestamp_a439bcff577f3ae30e8918897ecb33e76_icgraph">
+<area shape="rect" id="node2" href="classDUtils_1_1Timestamp.html#a53062c2f168d6f584541981b8db3051f" title="DUtils::Timestamp::\lminus" alt="" coords="207,5,347,46"/><area shape="rect" id="node3" href="classDUtils_1_1Timestamp.html#a2d0c2b2ce65c0562db26ad37a304f2c5" title="DUtils::Timestamp::plus" alt="" coords="195,71,359,97"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="ac35ad9d35e9ce5ff6fea159e9b060bf0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Timestamp::setTime </td>
+          <td>(</td>
+          <td class="paramtype">const string &amp;&#160;</td>
+          <td class="paramname"><em>stime</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Sets the timestamp from a string with the time in seconds </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">stime</td><td>string such as "1235603336.036609" </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>在文件 <a class="el" href="Timestamp_8cpp_source.html">Timestamp.cpp</a> 第 <a class="el" href="Timestamp_8cpp_source.html#l00073">73</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a797856da2823ee26814151ea97aea5e1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Timestamp::setTime </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>s</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Sets the timestamp from a number of seconds from the epoch </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">s</td><td>seconds from the epoch </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>在文件 <a class="el" href="Timestamp_8cpp_source.html">Timestamp.cpp</a> 第 <a class="el" href="Timestamp_8cpp_source.html#l00087">87</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="ae27c920f3833c104096213c6fb17f4d8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Timestamp::setToCurrentTime </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Sets this instance to the current time </p>
+
+<p>在文件 <a class="el" href="Timestamp_8cpp_source.html">Timestamp.cpp</a> 第 <a class="el" href="Timestamp_8cpp_source.html#l00056">56</a> 行定义.</p>
+
+<p>参考自 <a class="el" href="Random_8cpp_source.html#l00018">DUtils::Random::SeedRand()</a>.</p>
+
+<p><div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classDUtils_1_1Timestamp_ae27c920f3833c104096213c6fb17f4d8_icgraph.png" border="0" usemap="#classDUtils_1_1Timestamp_ae27c920f3833c104096213c6fb17f4d8_icgraph" alt=""/></div>
+<map name="classDUtils_1_1Timestamp_ae27c920f3833c104096213c6fb17f4d8_icgraph" id="classDUtils_1_1Timestamp_ae27c920f3833c104096213c6fb17f4d8_icgraph">
+<area shape="rect" id="node2" href="classDUtils_1_1Random.html#a719a6489316343a771e062f0be58050f" title="DUtils::Random::SeedRand" alt="" coords="195,77,381,104"/><area shape="rect" id="node3" href="classDUtils_1_1Random.html#a168e77d82ce1e66c6759e97ef27adbbc" title="DUtils::Random::SeedRandOnce" alt="" coords="429,77,645,104"/><area shape="rect" id="node4" href="classDUtils_1_1Random_1_1UnrepeatedRandomizer.html#ae1bf6a140e322962f65b2c98dc07a3ac" title="DUtils::Random::Unrepeated\lRandomizer::get" alt="" coords="699,5,890,46"/><area shape="rect" id="node5" href="classORB__SLAM2_1_1Initializer.html#a40d41840e2bdb7199ab024871d028c2c" title="并行地计算基础矩阵和单应性矩阵，选取其中一个模型，恢复出最开始两帧之间的相对姿态以及点云 " alt="" coords="714,70,875,111"/><area shape="rect" id="node8" href="classDBoW2_1_1TemplatedVocabulary.html#ab6a5aedb8c5645d2597a8ca8a3994efe" title="DBoW2::TemplatedVocabulary\l::initiateClustersKMpp" alt="" coords="693,135,896,177"/><area shape="rect" id="node6" href="classORB__SLAM2_1_1Tracking.html#a7e81c68bb6ced27fcbfa2edec38ef6e0" title="单目的地图初始化 " alt="" coords="945,70,1103,111"/><area shape="rect" id="node7" href="classORB__SLAM2_1_1Tracking.html#af1f2c9c533642d8c33854540e90d1918" title="Main tracking function. It is independent of the input sensor. " alt="" coords="1153,70,1311,111"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>Thirdparty/DBoW2/DUtils/<a class="el" href="Timestamp_8h_source.html">Timestamp.h</a></li>
+<li>Thirdparty/DBoW2/DUtils/<a class="el" href="Timestamp_8cpp_source.html">Timestamp.cpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><b>DUtils</b></li><li class="navelem"><a class="el" href="classDUtils_1_1Timestamp.html">Timestamp</a></li>
+    <li class="footer">生成于 2017年 七月 18日 星期二 17:13:38 , 为 My Project使用 
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
+  </ul>
+</div>
+</body>
+</html>

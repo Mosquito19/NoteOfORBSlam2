@@ -1,0 +1,247 @@
+\hypertarget{classORB__SLAM2_1_1Map}{\section{O\-R\-B\-\_\-\-S\-L\-A\-M2\-:\-:Map类 参考}
+\label{classORB__SLAM2_1_1Map}\index{O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Map@{O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Map}}
+}
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classORB__SLAM2_1_1Map_a688de3b072e0176bb288bb70d36cd0e9}{Add\-Key\-Frame} (\hyperlink{classORB__SLAM2_1_1KeyFrame}{Key\-Frame} $\ast$p\-K\-F)
+\begin{DoxyCompactList}\small\item\em Insert \hyperlink{classORB__SLAM2_1_1KeyFrame}{Key\-Frame} in the map. \end{DoxyCompactList}\item 
+void \hyperlink{classORB__SLAM2_1_1Map_a2d8e1b4376778dfe32df90ec00b599e3}{Add\-Map\-Point} (\hyperlink{classORB__SLAM2_1_1MapPoint}{Map\-Point} $\ast$p\-M\-P)
+\begin{DoxyCompactList}\small\item\em Insert \hyperlink{classORB__SLAM2_1_1MapPoint}{Map\-Point} in the map. \end{DoxyCompactList}\item 
+void \hyperlink{classORB__SLAM2_1_1Map_af3c82d5e66815fe66cbfb736784f15b5}{Erase\-Map\-Point} (\hyperlink{classORB__SLAM2_1_1MapPoint}{Map\-Point} $\ast$p\-M\-P)
+\begin{DoxyCompactList}\small\item\em Erase \hyperlink{classORB__SLAM2_1_1MapPoint}{Map\-Point} from the map. \end{DoxyCompactList}\item 
+void \hyperlink{classORB__SLAM2_1_1Map_a082d4a5ec57a48a7591d6769e4778a80}{Erase\-Key\-Frame} (\hyperlink{classORB__SLAM2_1_1KeyFrame}{Key\-Frame} $\ast$p\-K\-F)
+\begin{DoxyCompactList}\small\item\em Erase \hyperlink{classORB__SLAM2_1_1KeyFrame}{Key\-Frame} from the map. \end{DoxyCompactList}\item 
+void \hyperlink{classORB__SLAM2_1_1Map_a90aeb2ade0c536688bd42728457e9483}{Set\-Reference\-Map\-Points} (const std\-::vector$<$ \hyperlink{classORB__SLAM2_1_1MapPoint}{Map\-Point} $\ast$ $>$ \&vp\-M\-Ps)
+\begin{DoxyCompactList}\small\item\em 设置参考\-Map\-Points，将用于\-Draw\-Map\-Points函数画图 \end{DoxyCompactList}\item 
+\hypertarget{classORB__SLAM2_1_1Map_a8cde12cda887a0eb1e24975f4e734592}{std\-::vector$<$ \hyperlink{classORB__SLAM2_1_1KeyFrame}{Key\-Frame} $\ast$ $>$ {\bfseries Get\-All\-Key\-Frames} ()}\label{classORB__SLAM2_1_1Map_a8cde12cda887a0eb1e24975f4e734592}
+
+\item 
+\hypertarget{classORB__SLAM2_1_1Map_a09f346e647d3d36ec644f96d878b0c9b}{std\-::vector$<$ \hyperlink{classORB__SLAM2_1_1MapPoint}{Map\-Point} $\ast$ $>$ {\bfseries Get\-All\-Map\-Points} ()}\label{classORB__SLAM2_1_1Map_a09f346e647d3d36ec644f96d878b0c9b}
+
+\item 
+\hypertarget{classORB__SLAM2_1_1Map_a56e1d96a4e1d669609e2c2a493f133c2}{std\-::vector$<$ \hyperlink{classORB__SLAM2_1_1MapPoint}{Map\-Point} $\ast$ $>$ {\bfseries Get\-Reference\-Map\-Points} ()}\label{classORB__SLAM2_1_1Map_a56e1d96a4e1d669609e2c2a493f133c2}
+
+\item 
+\hypertarget{classORB__SLAM2_1_1Map_ad2d7846734c8cb0421d67ff3907649ad}{long unsigned int {\bfseries Map\-Points\-In\-Map} ()}\label{classORB__SLAM2_1_1Map_ad2d7846734c8cb0421d67ff3907649ad}
+
+\item 
+\hypertarget{classORB__SLAM2_1_1Map_a3440f5e9e93ca7231bde3c5138ab5f5c}{long unsigned {\bfseries Key\-Frames\-In\-Map} ()}\label{classORB__SLAM2_1_1Map_a3440f5e9e93ca7231bde3c5138ab5f5c}
+
+\item 
+\hypertarget{classORB__SLAM2_1_1Map_a1c93202df313c1245056e01dbb070dca}{long unsigned int {\bfseries Get\-Max\-K\-Fid} ()}\label{classORB__SLAM2_1_1Map_a1c93202df313c1245056e01dbb070dca}
+
+\item 
+\hypertarget{classORB__SLAM2_1_1Map_abf0d75e6e234d89b06f568c4600d0436}{void {\bfseries clear} ()}\label{classORB__SLAM2_1_1Map_abf0d75e6e234d89b06f568c4600d0436}
+
+\end{DoxyCompactItemize}
+\subsection*{Public 属性}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classORB__SLAM2_1_1Map_a9617fdf1c8349a1bf88bb13c20acf160}{vector$<$ \hyperlink{classORB__SLAM2_1_1KeyFrame}{Key\-Frame} $\ast$ $>$ {\bfseries mvp\-Key\-Frame\-Origins}}\label{classORB__SLAM2_1_1Map_a9617fdf1c8349a1bf88bb13c20acf160}
+
+\item 
+\hypertarget{classORB__SLAM2_1_1Map_a05544c09b3227d31163f10609b90b913}{std\-::mutex {\bfseries m\-Mutex\-Map\-Update}}\label{classORB__SLAM2_1_1Map_a05544c09b3227d31163f10609b90b913}
+
+\item 
+\hypertarget{classORB__SLAM2_1_1Map_a968356226057387d8207054d56e5d35c}{std\-::mutex {\bfseries m\-Mutex\-Point\-Creation}}\label{classORB__SLAM2_1_1Map_a968356226057387d8207054d56e5d35c}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected 属性}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classORB__SLAM2_1_1Map_a2864c4d90418f02768c85d0255d1eca7}{std\-::set$<$ \hyperlink{classORB__SLAM2_1_1MapPoint}{Map\-Point} $\ast$ $>$ \hyperlink{classORB__SLAM2_1_1Map_a2864c4d90418f02768c85d0255d1eca7}{msp\-Map\-Points}}\label{classORB__SLAM2_1_1Map_a2864c4d90418f02768c85d0255d1eca7}
+
+\begin{DoxyCompactList}\small\item\em Map\-Points. \end{DoxyCompactList}\item 
+\hypertarget{classORB__SLAM2_1_1Map_abf1d31c2cb4df61d232bb7fbd7cfb61d}{std\-::set$<$ \hyperlink{classORB__SLAM2_1_1KeyFrame}{Key\-Frame} $\ast$ $>$ \hyperlink{classORB__SLAM2_1_1Map_abf1d31c2cb4df61d232bb7fbd7cfb61d}{msp\-Key\-Frames}}\label{classORB__SLAM2_1_1Map_abf1d31c2cb4df61d232bb7fbd7cfb61d}
+
+\begin{DoxyCompactList}\small\item\em Keyframs. \end{DoxyCompactList}\item 
+\hypertarget{classORB__SLAM2_1_1Map_ad1d98a7e8207b995494afa7c098a7aaf}{std\-::vector$<$ \hyperlink{classORB__SLAM2_1_1MapPoint}{Map\-Point} $\ast$ $>$ {\bfseries mvp\-Reference\-Map\-Points}}\label{classORB__SLAM2_1_1Map_ad1d98a7e8207b995494afa7c098a7aaf}
+
+\item 
+\hypertarget{classORB__SLAM2_1_1Map_abfafaf7ca3821cb069cb95fb88c91dfc}{long unsigned int {\bfseries mn\-Max\-K\-Fid}}\label{classORB__SLAM2_1_1Map_abfafaf7ca3821cb069cb95fb88c91dfc}
+
+\item 
+\hypertarget{classORB__SLAM2_1_1Map_a86b9fb9d5c601fb6fd88c46444bd553c}{std\-::mutex {\bfseries m\-Mutex\-Map}}\label{classORB__SLAM2_1_1Map_a86b9fb9d5c601fb6fd88c46444bd553c}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{详细描述}
+
+
+在文件 Map.\-h 第 38 行定义.
+
+
+
+\subsection{成员函数说明}
+\hypertarget{classORB__SLAM2_1_1Map_a688de3b072e0176bb288bb70d36cd0e9}{\index{O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Map@{O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Map}!Add\-Key\-Frame@{Add\-Key\-Frame}}
+\index{Add\-Key\-Frame@{Add\-Key\-Frame}!ORB_SLAM2::Map@{O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Map}}
+\subsubsection[{Add\-Key\-Frame}]{\setlength{\rightskip}{0pt plus 5cm}void O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Map\-::\-Add\-Key\-Frame (
+\begin{DoxyParamCaption}
+\item[{{\bf Key\-Frame} $\ast$}]{p\-K\-F}
+\end{DoxyParamCaption}
+)}}\label{classORB__SLAM2_1_1Map_a688de3b072e0176bb288bb70d36cd0e9}
+
+
+Insert \hyperlink{classORB__SLAM2_1_1KeyFrame}{Key\-Frame} in the map. 
+
+
+\begin{DoxyParams}{参数}
+{\em p\-K\-F} & \hyperlink{classORB__SLAM2_1_1KeyFrame}{Key\-Frame} \\
+\hline
+\end{DoxyParams}
+
+
+在文件 Map.\-cpp 第 36 行定义.
+
+
+
+参考 msp\-Key\-Frames.
+
+
+
+参考自 O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Tracking\-::\-Create\-Initial\-Map\-Monocular(), O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Local\-Mapping\-::\-Process\-New\-Key\-Frame() , 以及 O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Tracking\-::\-Stereo\-Initialization().
+
+
+
+这是这个函数的调用关系图\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classORB__SLAM2_1_1Map_a688de3b072e0176bb288bb70d36cd0e9_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classORB__SLAM2_1_1Map_a2d8e1b4376778dfe32df90ec00b599e3}{\index{O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Map@{O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Map}!Add\-Map\-Point@{Add\-Map\-Point}}
+\index{Add\-Map\-Point@{Add\-Map\-Point}!ORB_SLAM2::Map@{O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Map}}
+\subsubsection[{Add\-Map\-Point}]{\setlength{\rightskip}{0pt plus 5cm}void O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Map\-::\-Add\-Map\-Point (
+\begin{DoxyParamCaption}
+\item[{{\bf Map\-Point} $\ast$}]{p\-M\-P}
+\end{DoxyParamCaption}
+)}}\label{classORB__SLAM2_1_1Map_a2d8e1b4376778dfe32df90ec00b599e3}
+
+
+Insert \hyperlink{classORB__SLAM2_1_1MapPoint}{Map\-Point} in the map. 
+
+
+\begin{DoxyParams}{参数}
+{\em p\-M\-P} & \hyperlink{classORB__SLAM2_1_1MapPoint}{Map\-Point} \\
+\hline
+\end{DoxyParams}
+
+
+在文件 Map.\-cpp 第 48 行定义.
+
+
+
+参考 msp\-Map\-Points.
+
+
+
+参考自 O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Tracking\-::\-Create\-Initial\-Map\-Monocular(), O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Tracking\-::\-Create\-New\-Key\-Frame(), O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Local\-Mapping\-::\-Create\-New\-Map\-Points() , 以及 O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Tracking\-::\-Stereo\-Initialization().
+
+
+
+这是这个函数的调用关系图\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classORB__SLAM2_1_1Map_a2d8e1b4376778dfe32df90ec00b599e3_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classORB__SLAM2_1_1Map_a082d4a5ec57a48a7591d6769e4778a80}{\index{O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Map@{O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Map}!Erase\-Key\-Frame@{Erase\-Key\-Frame}}
+\index{Erase\-Key\-Frame@{Erase\-Key\-Frame}!ORB_SLAM2::Map@{O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Map}}
+\subsubsection[{Erase\-Key\-Frame}]{\setlength{\rightskip}{0pt plus 5cm}void O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Map\-::\-Erase\-Key\-Frame (
+\begin{DoxyParamCaption}
+\item[{{\bf Key\-Frame} $\ast$}]{p\-K\-F}
+\end{DoxyParamCaption}
+)}}\label{classORB__SLAM2_1_1Map_a082d4a5ec57a48a7591d6769e4778a80}
+
+
+Erase \hyperlink{classORB__SLAM2_1_1KeyFrame}{Key\-Frame} from the map. 
+
+
+\begin{DoxyParams}{参数}
+{\em p\-K\-F} & \hyperlink{classORB__SLAM2_1_1KeyFrame}{Key\-Frame} \\
+\hline
+\end{DoxyParams}
+
+
+在文件 Map.\-cpp 第 71 行定义.
+
+
+
+参考 msp\-Key\-Frames.
+
+\hypertarget{classORB__SLAM2_1_1Map_af3c82d5e66815fe66cbfb736784f15b5}{\index{O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Map@{O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Map}!Erase\-Map\-Point@{Erase\-Map\-Point}}
+\index{Erase\-Map\-Point@{Erase\-Map\-Point}!ORB_SLAM2::Map@{O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Map}}
+\subsubsection[{Erase\-Map\-Point}]{\setlength{\rightskip}{0pt plus 5cm}void O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Map\-::\-Erase\-Map\-Point (
+\begin{DoxyParamCaption}
+\item[{{\bf Map\-Point} $\ast$}]{p\-M\-P}
+\end{DoxyParamCaption}
+)}}\label{classORB__SLAM2_1_1Map_af3c82d5e66815fe66cbfb736784f15b5}
+
+
+Erase \hyperlink{classORB__SLAM2_1_1MapPoint}{Map\-Point} from the map. 
+
+
+\begin{DoxyParams}{参数}
+{\em p\-M\-P} & \hyperlink{classORB__SLAM2_1_1MapPoint}{Map\-Point} \\
+\hline
+\end{DoxyParams}
+
+
+在文件 Map.\-cpp 第 58 行定义.
+
+
+
+参考 msp\-Map\-Points.
+
+\hypertarget{classORB__SLAM2_1_1Map_a90aeb2ade0c536688bd42728457e9483}{\index{O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Map@{O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Map}!Set\-Reference\-Map\-Points@{Set\-Reference\-Map\-Points}}
+\index{Set\-Reference\-Map\-Points@{Set\-Reference\-Map\-Points}!ORB_SLAM2::Map@{O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Map}}
+\subsubsection[{Set\-Reference\-Map\-Points}]{\setlength{\rightskip}{0pt plus 5cm}void O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Map\-::\-Set\-Reference\-Map\-Points (
+\begin{DoxyParamCaption}
+\item[{const std\-::vector$<$ {\bf Map\-Point} $\ast$ $>$ \&}]{vp\-M\-Ps}
+\end{DoxyParamCaption}
+)}}\label{classORB__SLAM2_1_1Map_a90aeb2ade0c536688bd42728457e9483}
+
+
+设置参考\-Map\-Points，将用于\-Draw\-Map\-Points函数画图 
+
+
+\begin{DoxyParams}{参数}
+{\em vp\-M\-Ps} & Local Map\-Points \\
+\hline
+\end{DoxyParams}
+
+
+在文件 Map.\-cpp 第 84 行定义.
+
+
+
+参考自 O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Tracking\-::\-Create\-Initial\-Map\-Monocular(), O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Tracking\-::\-Stereo\-Initialization() , 以及 O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Tracking\-::\-Update\-Local\-Map().
+
+
+
+这是这个函数的调用关系图\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classORB__SLAM2_1_1Map_a90aeb2ade0c536688bd42728457e9483_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+该类的文档由以下文件生成\-:\begin{DoxyCompactItemize}
+\item 
+include/Map.\-h\item 
+src/Map.\-cpp\end{DoxyCompactItemize}

@@ -1,0 +1,4 @@
+<map id="g2o::HyperGraphElementActionCollection::registerAction" name="g2o::HyperGraphElementActionCollection::registerAction">
+<area shape="rect" id="node2" href="$classg2o_1_1HyperGraphElementAction.html#ad585ae95767ee74789a18c758f750cfb" title="returns the name of an action, e.g &quot;draw&quot; " alt="" coords="262,5,469,46"/>
+<area shape="rect" id="node3" href="$classg2o_1_1HyperGraphElementAction.html#a0bc89d3bf6b1114dfb0e7df874b087d2" title="returns the typeid name of the action " alt="" coords="262,70,469,111"/>
+</map>

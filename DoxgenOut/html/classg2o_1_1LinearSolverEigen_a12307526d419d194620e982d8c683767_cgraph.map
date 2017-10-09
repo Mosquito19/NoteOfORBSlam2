@@ -1,0 +1,7 @@
+<map id="g2o::LinearSolverEigen::computeSymbolicDecomposition" name="g2o::LinearSolverEigen::computeSymbolicDecomposition">
+<area shape="rect" id="node2" href="$classg2o_1_1SparseBlockMatrix.html#a8e53797223fff106487d0b0080a3e36e" title="the block matrices per block&#45;column " alt="" coords="275,5,437,46"/>
+<area shape="rect" id="node3" href="$classg2o_1_1SparseBlockMatrix.html#adf282a20d7c77c5949a0d93ca2651271" title="where does the col at block&#45;col r starts? " alt="" coords="275,70,437,111"/>
+<area shape="rect" id="node4" href="$classg2o_1_1SparseBlockMatrix.html#ab854ca59f370d93229852e32a7b49d3e" title="columns of the matrix " alt="" coords="275,135,437,177"/>
+<area shape="rect" id="node5" href="$classg2o_1_1SparseBlockMatrix.html#adb88ef292aedf1468f57cf5dc751a8e2" title="how many cols does the block at block&#45;col c has? " alt="" coords="275,201,437,242"/>
+<area shape="rect" id="node6" href="$classg2o_1_1SparseBlockMatrix.html#adf18fb267e545b9036314cf9f8f10473" title="rows of the matrix " alt="" coords="275,266,437,307"/>
+</map>

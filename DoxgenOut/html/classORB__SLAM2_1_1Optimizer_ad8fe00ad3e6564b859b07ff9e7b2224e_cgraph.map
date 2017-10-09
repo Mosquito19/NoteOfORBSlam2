@@ -1,0 +1,27 @@
+<map id="ORB_SLAM2::Optimizer::OptimizeSim3" name="ORB_SLAM2::Optimizer::OptimizeSim3">
+<area shape="rect" id="node2" href="$structg2o_1_1OptimizableGraph.html#a6831ed69fce3dba691f53302a2813070" title="g2o::OptimizableGraph\l::addEdge" alt="" coords="240,358,395,399"/>
+<area shape="rect" id="node10" href="$structg2o_1_1OptimizableGraph.html#ae0b93774ce1dfa0dfd501c86ad4f773e" title="g2o::OptimizableGraph\l::addVertex" alt="" coords="240,23,395,65"/>
+<area shape="rect" id="node14" href="$structg2o_1_1OptimizableGraph.html#a19e014e8ec2e9a6e894da8c3a8f8e50d" title="returns the vertex number id appropriately casted " alt="" coords="488,82,643,123"/>
+<area shape="rect" id="node15" href="$classg2o_1_1BaseEdge.html#a7ea9406b8cc06b44433569bbd4fcefac" title="computes the chi2 based on the cached error value, only valid after computeError has been called..." alt="" coords="246,191,389,217"/>
+<area shape="rect" id="node16" href="$classg2o_1_1BaseVertex.html#abb9caa0d2d00af70e95963a11ee9660a" title="return the current estimate of the vertex " alt="" coords="229,241,406,268"/>
+<area shape="rect" id="node17" href="$classORB__SLAM2_1_1KeyFrame.html#aabc5f6491c32999d9f546669737547bf" title="Get MapPoint Matches. " alt="" coords="233,293,402,334"/>
+<area shape="rect" id="node18" href="$classg2o_1_1SparseOptimizer.html#a56c0c13954ac7204cfb031c141ece9ae" title="g2o::SparseOptimizer\l::initializeOptimization" alt="" coords="490,333,641,374"/>
+<area shape="rect" id="node19" href="$classg2o_1_1SparseOptimizer.html#a098257ee6f13dbb79be07075244d9930" title="g2o::SparseOptimizer\l::optimize" alt="" coords="243,423,391,465"/>
+<area shape="rect" id="node20" href="$classg2o_1_1HyperGraph.html#a33e5a60705ce673d647aa1613da9d99b" title="removes a vertex from the graph. Returns true on success (edge was present) " alt="" coords="464,456,667,483"/>
+<area shape="rect" id="node21" href="$classg2o_1_1RobustKernelHuber.html#a7e9ee4bbc9483dcd3d10a4c1f506a4d2" title="g2o::RobustKernelHuber\l::setDelta" alt="" coords="235,541,400,582"/>
+<area shape="rect" id="node22" href="$classg2o_1_1BaseVertex.html#acb6e8e8f39caa04f62dd93a3dd400e06" title="set the estimate for the vertex also calls updateCache() " alt="" coords="219,607,416,633"/>
+<area shape="rect" id="node23" href="$classg2o_1_1OptimizableGraph_1_1Vertex.html#af92ef49e1bcd6a8166afa151d367b905" title="true =&gt; this node should be considered fixed during the optimization " alt="" coords="240,658,395,699"/>
+<area shape="rect" id="node24" href="$classg2o_1_1OptimizableGraph_1_1Vertex.html#ac57651173d6ce4bb4eebf8cb1d917551" title="sets the id of the node in the graph be sure that the graph keeps consistent after changing the id ..." alt="" coords="240,723,395,765"/>
+<area shape="rect" id="node25" href="$classg2o_1_1OptimizableGraph_1_1Edge.html#a42955172c19f16e2cfbb30d611d1bd87" title="g2o::OptimizableGraph\l::Edge::setRobustKernel" alt="" coords="235,789,400,830"/>
+<area shape="rect" id="node26" href="$classg2o_1_1HyperGraph_1_1Edge.html#a5e957658d6e65c49b81197d052a7f16f" title="g2o::HyperGraph::Edge\l::setVertex" alt="" coords="238,854,397,895"/>
+<area shape="rect" id="node3" href="$classg2o_1_1HyperGraph.html#a0f1d35009a2879b238c8148c33485c89" title="g2o::HyperGraph::addEdge" alt="" coords="475,399,655,425"/>
+<area shape="rect" id="node6" href="$classg2o_1_1JacobianWorkspace.html#a2d16ad6db1a51aa93c806cc9c06e223f" title="g2o::JacobianWorkspace\l::updateSize" alt="" coords="481,267,650,309"/>
+<area shape="rect" id="node4" href="$classg2o_1_1HyperGraph_1_1Vertex.html#a0805a5575511327262c89585f1953b8e" title="returns the set of hyper&#45;edges that are leaving/entering in this vertex " alt="" coords="725,449,891,490"/>
+<area shape="rect" id="node5" href="$classg2o_1_1HyperGraph_1_1Edge.html#a6410bb70a917b5407770ef1f1090b5f5" title="g2o::HyperGraph::Edge\l::vertices" alt="" coords="729,383,887,425"/>
+<area shape="rect" id="node7" href="$classg2o_1_1OptimizableGraph_1_1Vertex.html#a1037b978fec531eaf860d0037b992079" title="dimension of the estimated state belonging to this node " alt="" coords="731,187,885,229"/>
+<area shape="rect" id="node8" href="$classg2o_1_1OptimizableGraph_1_1Edge.html#a90a86891adc47a179a7cd7ef31549916" title="returns the dimensions of the error function " alt="" coords="731,253,885,294"/>
+<area shape="rect" id="node9" href="$classg2o_1_1HyperGraph_1_1Edge.html#aaec0b2c92c5496d0f0fea8f1abdc4311" title="g2o::HyperGraph::Edge\l::vertex" alt="" coords="729,318,887,359"/>
+<area shape="rect" id="node11" href="$classg2o_1_1HyperGraph.html#a7ef87ba3479827b24c6fc29c5fc3aa21" title="g2o::HyperGraph::addVertex" alt="" coords="471,31,659,57"/>
+<area shape="rect" id="node12" href="$classg2o_1_1HyperGraph_1_1Vertex.html#ad76b71c368b71971ac5affb5d57183d3" title="returns the id " alt="" coords="715,5,901,32"/>
+<area shape="rect" id="node13" href="$classg2o_1_1HyperGraph.html#ab07fe8bd9982a66ba34e83dff8317ea2" title="returns a vertex id in the hyper&#45;graph, or 0 if the vertex id is not present " alt="" coords="725,72,891,99"/>
+</map>

@@ -1,0 +1,420 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.6"/>
+<title>My Project: g2o::MarginalCovarianceCholesky类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">My Project
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.6 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="pages.html"><span>相关页面</span></a></li>
+      <li><a href="modules.html"><span>模块</span></a></li>
+      <li><a href="namespaces.html"><span>命名空间</span></a></li>
+      <li class="current"><a href="annotated.html"><span>类</span></a></li>
+      <li><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>类列表</span></a></li>
+      <li><a href="classes.html"><span>类索引</span></a></li>
+      <li><a href="inherits.html"><span>类继承关系</span></a></li>
+      <li><a href="functions.html"><span>类成员</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('classg2o_1_1MarginalCovarianceCholesky.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>命名空间</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>友元</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>组</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>页</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pro-types">Protected 类型</a> &#124;
+<a href="#pro-methods">Protected 成员函数</a> &#124;
+<a href="#pro-attribs">Protected 属性</a> &#124;
+<a href="classg2o_1_1MarginalCovarianceCholesky-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">g2o::MarginalCovarianceCholesky类 参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>computing the marginal covariance given a cholesky factor (lower triangle of the factor)  
+ <a href="classg2o_1_1MarginalCovarianceCholesky.html#details">更多...</a></p>
+
+<p><code>#include &lt;<a class="el" href="marginal__covariance__cholesky_8h_source.html">marginal_covariance_cholesky.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:a0ea50dbda0558ca98faacafc8c9f48c9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classg2o_1_1MarginalCovarianceCholesky.html#a0ea50dbda0558ca98faacafc8c9f48c9">computeCovariance</a> (double **covBlocks, const std::vector&lt; int &gt; &amp;blockIndices)</td></tr>
+<tr class="separator:a0ea50dbda0558ca98faacafc8c9f48c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a77e7396fb18b334b4d707f41e5e05399"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classg2o_1_1MarginalCovarianceCholesky.html#a77e7396fb18b334b4d707f41e5e05399">computeCovariance</a> (<a class="el" href="classg2o_1_1SparseBlockMatrix.html">SparseBlockMatrix</a>&lt; MatrixXd &gt; &amp;spinv, const std::vector&lt; int &gt; &amp;rowBlockIndices, const std::vector&lt; std::pair&lt; int, int &gt; &gt; &amp;blockIndices)</td></tr>
+<tr class="separator:a77e7396fb18b334b4d707f41e5e05399"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a53bda8bc29bee2a7fb871c25a58ab191"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classg2o_1_1MarginalCovarianceCholesky.html#a53bda8bc29bee2a7fb871c25a58ab191">setCholeskyFactor</a> (int n, int *Lp, int *Li, double *Lx, int *permInv)</td></tr>
+<tr class="separator:a53bda8bc29bee2a7fb871c25a58ab191"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-types"></a>
+Protected 类型</h2></td></tr>
+<tr class="memitem:a9925dd2e45479a7feb783ff71d93fdbc"><td class="memItemLeft" align="right" valign="top">typedef <br class="typebreak"/>
+std::tr1::unordered_map&lt; int, <br class="typebreak"/>
+double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classg2o_1_1MarginalCovarianceCholesky.html#a9925dd2e45479a7feb783ff71d93fdbc">LookupMap</a></td></tr>
+<tr class="separator:a9925dd2e45479a7feb783ff71d93fdbc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected 成员函数</h2></td></tr>
+<tr class="memitem:a51578d6676018d54d74dfe8ce70a9d4b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a51578d6676018d54d74dfe8ce70a9d4b"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classg2o_1_1MarginalCovarianceCholesky.html#a51578d6676018d54d74dfe8ce70a9d4b">computeIndex</a> (int r, int c) const </td></tr>
+<tr class="memdesc:a51578d6676018d54d74dfe8ce70a9d4b"><td class="mdescLeft">&#160;</td><td class="mdescRight">compute the index used for hashing <br/></td></tr>
+<tr class="separator:a51578d6676018d54d74dfe8ce70a9d4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a556f8da80f0873b74b57c82b587b4f97"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classg2o_1_1MarginalCovarianceCholesky.html#a556f8da80f0873b74b57c82b587b4f97">computeEntry</a> (int r, int c)</td></tr>
+<tr class="separator:a556f8da80f0873b74b57c82b587b4f97"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
+Protected 属性</h2></td></tr>
+<tr class="memitem:a086c541bde9958af88146788a9ac2611"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a086c541bde9958af88146788a9ac2611"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classg2o_1_1MarginalCovarianceCholesky.html#a086c541bde9958af88146788a9ac2611">_n</a></td></tr>
+<tr class="memdesc:a086c541bde9958af88146788a9ac2611"><td class="mdescLeft">&#160;</td><td class="mdescRight">L is an n X n matrix. <br/></td></tr>
+<tr class="separator:a086c541bde9958af88146788a9ac2611"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5998463e23c716bb1abb02e9b3e40e0b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5998463e23c716bb1abb02e9b3e40e0b"></a>
+int *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classg2o_1_1MarginalCovarianceCholesky.html#a5998463e23c716bb1abb02e9b3e40e0b">_Ap</a></td></tr>
+<tr class="memdesc:a5998463e23c716bb1abb02e9b3e40e0b"><td class="mdescLeft">&#160;</td><td class="mdescRight">column pointer of the CCS storage <br/></td></tr>
+<tr class="separator:a5998463e23c716bb1abb02e9b3e40e0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a516fa45fe98edfa0cc68fc2b0e0d5de4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a516fa45fe98edfa0cc68fc2b0e0d5de4"></a>
+int *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classg2o_1_1MarginalCovarianceCholesky.html#a516fa45fe98edfa0cc68fc2b0e0d5de4">_Ai</a></td></tr>
+<tr class="memdesc:a516fa45fe98edfa0cc68fc2b0e0d5de4"><td class="mdescLeft">&#160;</td><td class="mdescRight">row indices of the CCS storage <br/></td></tr>
+<tr class="separator:a516fa45fe98edfa0cc68fc2b0e0d5de4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ac05a8c32b6a2e0cdb0b6a071a7552d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2ac05a8c32b6a2e0cdb0b6a071a7552d"></a>
+double *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classg2o_1_1MarginalCovarianceCholesky.html#a2ac05a8c32b6a2e0cdb0b6a071a7552d">_Ax</a></td></tr>
+<tr class="memdesc:a2ac05a8c32b6a2e0cdb0b6a071a7552d"><td class="mdescLeft">&#160;</td><td class="mdescRight">values of the cholesky factor <br/></td></tr>
+<tr class="separator:a2ac05a8c32b6a2e0cdb0b6a071a7552d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a404f5d0ce82c2877324bafb8997b96aa"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a404f5d0ce82c2877324bafb8997b96aa"></a>
+int *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classg2o_1_1MarginalCovarianceCholesky.html#a404f5d0ce82c2877324bafb8997b96aa">_perm</a></td></tr>
+<tr class="memdesc:a404f5d0ce82c2877324bafb8997b96aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">permutation of the cholesky factor. Variable re-ordering for better fill-in <br/></td></tr>
+<tr class="separator:a404f5d0ce82c2877324bafb8997b96aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7a9d21e9ee6654b9e6d69a62e87c201a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7a9d21e9ee6654b9e6d69a62e87c201a"></a>
+<a class="el" href="classg2o_1_1MarginalCovarianceCholesky.html#a9925dd2e45479a7feb783ff71d93fdbc">LookupMap</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classg2o_1_1MarginalCovarianceCholesky.html#a7a9d21e9ee6654b9e6d69a62e87c201a">_map</a></td></tr>
+<tr class="memdesc:a7a9d21e9ee6654b9e6d69a62e87c201a"><td class="mdescLeft">&#160;</td><td class="mdescRight">hash look up table for the already computed entries <br/></td></tr>
+<tr class="separator:a7a9d21e9ee6654b9e6d69a62e87c201a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6ceee33e0cde1d9a4888abab8b6ad712"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6ceee33e0cde1d9a4888abab8b6ad712"></a>
+std::vector&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classg2o_1_1MarginalCovarianceCholesky.html#a6ceee33e0cde1d9a4888abab8b6ad712">_diag</a></td></tr>
+<tr class="memdesc:a6ceee33e0cde1d9a4888abab8b6ad712"><td class="mdescLeft">&#160;</td><td class="mdescRight">cache 1 / H_ii to avoid recalculations <br/></td></tr>
+<tr class="separator:a6ceee33e0cde1d9a4888abab8b6ad712"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>computing the marginal covariance given a cholesky factor (lower triangle of the factor) </p>
+
+<p>在文件 <a class="el" href="marginal__covariance__cholesky_8h_source.html">marginal_covariance_cholesky.h</a> 第 <a class="el" href="marginal__covariance__cholesky_8h_source.html#l00052">52</a> 行定义.</p>
+</div><h2 class="groupheader">成员类型定义说明</h2>
+<a class="anchor" id="a9925dd2e45479a7feb783ff71d93fdbc"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef std::tr1::unordered_map&lt;int, double&gt; <a class="el" href="classg2o_1_1MarginalCovarianceCholesky.html#a9925dd2e45479a7feb783ff71d93fdbc">g2o::MarginalCovarianceCholesky::LookupMap</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>hash struct for storing the matrix elements needed to compute the covariance </p>
+
+<p>在文件 <a class="el" href="marginal__covariance__cholesky_8h_source.html">marginal_covariance_cholesky.h</a> 第 <a class="el" href="marginal__covariance__cholesky_8h_source.html#l00057">57</a> 行定义.</p>
+
+</div>
+</div>
+<h2 class="groupheader">成员函数说明</h2>
+<a class="anchor" id="a0ea50dbda0558ca98faacafc8c9f48c9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void g2o::MarginalCovarianceCholesky::computeCovariance </td>
+          <td>(</td>
+          <td class="paramtype">double **&#160;</td>
+          <td class="paramname"><em>covBlocks</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; int &gt; &amp;&#160;</td>
+          <td class="paramname"><em>blockIndices</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>compute the marginal cov for the given block indices, write the result to the covBlocks memory (which has to be provided by the caller). </p>
+
+<p>在文件 <a class="el" href="marginal__covariance__cholesky_8cpp_source.html">marginal_covariance_cholesky.cpp</a> 第 <a class="el" href="marginal__covariance__cholesky_8cpp_source.html#l00102">102</a> 行定义.</p>
+
+<p>参考 <a class="el" href="marginal__covariance__cholesky_8h_source.html#l00093">_map</a>, <a class="el" href="marginal__covariance__cholesky_8h_source.html#l00091">_perm</a>, <a class="el" href="marginal__covariance__cholesky_8cpp_source.html#l00071">computeEntry()</a> , 以及 <a class="el" href="marginal__covariance__cholesky_8h_source.html#l00097">computeIndex()</a>.</p>
+
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classg2o_1_1MarginalCovarianceCholesky_a0ea50dbda0558ca98faacafc8c9f48c9_cgraph.png" border="0" usemap="#classg2o_1_1MarginalCovarianceCholesky_a0ea50dbda0558ca98faacafc8c9f48c9_cgraph" alt=""/></div>
+<map name="classg2o_1_1MarginalCovarianceCholesky_a0ea50dbda0558ca98faacafc8c9f48c9_cgraph" id="classg2o_1_1MarginalCovarianceCholesky_a0ea50dbda0558ca98faacafc8c9f48c9_cgraph">
+<area shape="rect" id="node2" href="classg2o_1_1MarginalCovarianceCholesky.html#a556f8da80f0873b74b57c82b587b4f97" title="g2o::MarginalCovarianceCholesky\l::computeEntry" alt="" coords="275,5,496,46"/><area shape="rect" id="node3" href="classg2o_1_1MarginalCovarianceCholesky.html#a51578d6676018d54d74dfe8ce70a9d4b" title="compute the index used for hashing " alt="" coords="544,34,765,75"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a77e7396fb18b334b4d707f41e5e05399"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void g2o::MarginalCovarianceCholesky::computeCovariance </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classg2o_1_1SparseBlockMatrix.html">SparseBlockMatrix</a>&lt; MatrixXd &gt; &amp;&#160;</td>
+          <td class="paramname"><em>spinv</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; int &gt; &amp;&#160;</td>
+          <td class="paramname"><em>rowBlockIndices</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; std::pair&lt; int, int &gt; &gt; &amp;&#160;</td>
+          <td class="paramname"><em>blockIndices</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>compute the marginal cov for the given block indices, write the result in spinv). </p>
+
+<p>在文件 <a class="el" href="marginal__covariance__cholesky_8cpp_source.html">marginal_covariance_cholesky.cpp</a> 第 <a class="el" href="marginal__covariance__cholesky_8cpp_source.html#l00154">154</a> 行定义.</p>
+
+<p>参考 <a class="el" href="marginal__covariance__cholesky_8h_source.html#l00093">_map</a>, <a class="el" href="marginal__covariance__cholesky_8h_source.html#l00091">_perm</a>, <a class="el" href="sparse__block__matrix_8hpp_source.html#l00092">g2o::SparseBlockMatrix&lt; MatrixType &gt;::block()</a>, <a class="el" href="sparse__block__matrix_8h_source.html#l00111">g2o::SparseBlockMatrix&lt; MatrixType &gt;::colBaseOfBlock()</a>, <a class="el" href="marginal__covariance__cholesky_8cpp_source.html#l00071">computeEntry()</a>, <a class="el" href="marginal__covariance__cholesky_8h_source.html#l00097">computeIndex()</a> , 以及 <a class="el" href="sparse__block__matrix_8h_source.html#l00108">g2o::SparseBlockMatrix&lt; MatrixType &gt;::rowBaseOfBlock()</a>.</p>
+
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classg2o_1_1MarginalCovarianceCholesky_a77e7396fb18b334b4d707f41e5e05399_cgraph.png" border="0" usemap="#classg2o_1_1MarginalCovarianceCholesky_a77e7396fb18b334b4d707f41e5e05399_cgraph" alt=""/></div>
+<map name="classg2o_1_1MarginalCovarianceCholesky_a77e7396fb18b334b4d707f41e5e05399_cgraph" id="classg2o_1_1MarginalCovarianceCholesky_a77e7396fb18b334b4d707f41e5e05399_cgraph">
+<area shape="rect" id="node2" href="classg2o_1_1SparseBlockMatrix.html#aaca7b38d2e9a18eebf9e6f5957af0cf7" title="returns the block at location r,c. if alloc=true he block is created if it does not exist ..." alt="" coords="305,5,466,46"/><area shape="rect" id="node3" href="classg2o_1_1SparseBlockMatrix.html#adf282a20d7c77c5949a0d93ca2651271" title="where does the col at block&#45;col r starts? " alt="" coords="305,70,466,111"/><area shape="rect" id="node4" href="classg2o_1_1MarginalCovarianceCholesky.html#a556f8da80f0873b74b57c82b587b4f97" title="g2o::MarginalCovarianceCholesky\l::computeEntry" alt="" coords="275,135,496,177"/><area shape="rect" id="node5" href="classg2o_1_1MarginalCovarianceCholesky.html#a51578d6676018d54d74dfe8ce70a9d4b" title="compute the index used for hashing " alt="" coords="544,165,765,206"/><area shape="rect" id="node6" href="classg2o_1_1SparseBlockMatrix.html#a176a2dbe00711e248ea25dc1995c6b4c" title="where does the row at block&#45;row r starts? " alt="" coords="305,253,466,294"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a556f8da80f0873b74b57c82b587b4f97"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double g2o::MarginalCovarianceCholesky::computeEntry </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>r</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>c</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>compute one entry in the covariance, r and c are values after applying the permutation, and upper triangular. May issue recursive calls to itself to compute the missing values. </p>
+
+<p>在文件 <a class="el" href="marginal__covariance__cholesky_8cpp_source.html">marginal_covariance_cholesky.cpp</a> 第 <a class="el" href="marginal__covariance__cholesky_8cpp_source.html#l00071">71</a> 行定义.</p>
+
+<p>参考 <a class="el" href="marginal__covariance__cholesky_8h_source.html#l00089">_Ai</a>, <a class="el" href="marginal__covariance__cholesky_8h_source.html#l00088">_Ap</a>, <a class="el" href="marginal__covariance__cholesky_8h_source.html#l00090">_Ax</a>, <a class="el" href="marginal__covariance__cholesky_8h_source.html#l00094">_diag</a>, <a class="el" href="marginal__covariance__cholesky_8h_source.html#l00093">_map</a> , 以及 <a class="el" href="marginal__covariance__cholesky_8h_source.html#l00097">computeIndex()</a>.</p>
+
+<p>参考自 <a class="el" href="marginal__covariance__cholesky_8cpp_source.html#l00102">computeCovariance()</a>.</p>
+
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classg2o_1_1MarginalCovarianceCholesky_a556f8da80f0873b74b57c82b587b4f97_cgraph.png" border="0" usemap="#classg2o_1_1MarginalCovarianceCholesky_a556f8da80f0873b74b57c82b587b4f97_cgraph" alt=""/></div>
+<map name="classg2o_1_1MarginalCovarianceCholesky_a556f8da80f0873b74b57c82b587b4f97_cgraph" id="classg2o_1_1MarginalCovarianceCholesky_a556f8da80f0873b74b57c82b587b4f97_cgraph">
+<area shape="rect" id="node2" href="classg2o_1_1MarginalCovarianceCholesky.html#a51578d6676018d54d74dfe8ce70a9d4b" title="compute the index used for hashing " alt="" coords="275,5,496,46"/></map>
+</div>
+</p>
+
+<p><div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classg2o_1_1MarginalCovarianceCholesky_a556f8da80f0873b74b57c82b587b4f97_icgraph.png" border="0" usemap="#classg2o_1_1MarginalCovarianceCholesky_a556f8da80f0873b74b57c82b587b4f97_icgraph" alt=""/></div>
+<map name="classg2o_1_1MarginalCovarianceCholesky_a556f8da80f0873b74b57c82b587b4f97_icgraph" id="classg2o_1_1MarginalCovarianceCholesky_a556f8da80f0873b74b57c82b587b4f97_icgraph">
+<area shape="rect" id="node2" href="classg2o_1_1MarginalCovarianceCholesky.html#a0ea50dbda0558ca98faacafc8c9f48c9" title="g2o::MarginalCovarianceCholesky\l::computeCovariance" alt="" coords="275,5,496,46"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a53bda8bc29bee2a7fb871c25a58ab191"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void g2o::MarginalCovarianceCholesky::setCholeskyFactor </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>n</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>Lp</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>Li</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double *&#160;</td>
+          <td class="paramname"><em>Lx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>permInv</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>set the CCS representation of the cholesky factor along with the inverse permutation used to reduce the fill-in. permInv might be 0, will then not permute the entries.</p>
+<p>The pointers provided by the user need to be still valid when calling <a class="el" href="classg2o_1_1MarginalCovarianceCholesky.html#a0ea50dbda0558ca98faacafc8c9f48c9">computeCovariance()</a>. The pointers are owned by the caller, <a class="el" href="classg2o_1_1MarginalCovarianceCholesky.html" title="computing the marginal covariance given a cholesky factor (lower triangle of the factor) ...">MarginalCovarianceCholesky</a> does not free the pointers. </p>
+
+<p>在文件 <a class="el" href="marginal__covariance__cholesky_8cpp_source.html">marginal_covariance_cholesky.cpp</a> 第 <a class="el" href="marginal__covariance__cholesky_8cpp_source.html#l00054">54</a> 行定义.</p>
+
+<p>参考 <a class="el" href="marginal__covariance__cholesky_8h_source.html#l00089">_Ai</a>, <a class="el" href="marginal__covariance__cholesky_8h_source.html#l00088">_Ap</a>, <a class="el" href="marginal__covariance__cholesky_8h_source.html#l00090">_Ax</a>, <a class="el" href="marginal__covariance__cholesky_8h_source.html#l00094">_diag</a>, <a class="el" href="marginal__covariance__cholesky_8h_source.html#l00087">_n</a> , 以及 <a class="el" href="marginal__covariance__cholesky_8h_source.html#l00091">_perm</a>.</p>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>Thirdparty/g2o/g2o/core/<a class="el" href="marginal__covariance__cholesky_8h_source.html">marginal_covariance_cholesky.h</a></li>
+<li>Thirdparty/g2o/g2o/core/<a class="el" href="marginal__covariance__cholesky_8cpp_source.html">marginal_covariance_cholesky.cpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><b>g2o</b></li><li class="navelem"><a class="el" href="classg2o_1_1MarginalCovarianceCholesky.html">MarginalCovarianceCholesky</a></li>
+    <li class="footer">生成于 2017年 七月 18日 星期二 17:13:38 , 为 My Project使用 
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
+  </ul>
+</div>
+</body>
+</html>

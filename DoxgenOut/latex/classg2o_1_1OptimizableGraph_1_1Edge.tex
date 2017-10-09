@@ -1,0 +1,412 @@
+\hypertarget{classg2o_1_1OptimizableGraph_1_1Edge}{\section{g2o\-:\-:Optimizable\-Graph\-:\-:Edge类 参考}
+\label{classg2o_1_1OptimizableGraph_1_1Edge}\index{g2o\-::\-Optimizable\-Graph\-::\-Edge@{g2o\-::\-Optimizable\-Graph\-::\-Edge}}
+}
+
+
+类 g2o\-:\-:Optimizable\-Graph\-:\-:Edge 继承关系图\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classg2o_1_1OptimizableGraph_1_1Edge__inherit__graph}
+\end{center}
+\end{figure}
+
+
+g2o\-:\-:Optimizable\-Graph\-:\-:Edge 的协作图\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=333pt]{classg2o_1_1OptimizableGraph_1_1Edge__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classg2o_1_1OptimizableGraph_1_1Edge_a4f274bac9939144dd6b30578c5424a45}{virtual \hyperlink{classg2o_1_1OptimizableGraph_1_1Edge}{Edge} $\ast$ {\bfseries clone} () const }\label{classg2o_1_1OptimizableGraph_1_1Edge_a4f274bac9939144dd6b30578c5424a45}
+
+\item 
+\hypertarget{classg2o_1_1OptimizableGraph_1_1Edge_a414c69ca1617a4d3b620e39f2ffbcea7}{virtual bool {\bfseries all\-Vertices\-Fixed} () const =0}\label{classg2o_1_1OptimizableGraph_1_1Edge_a414c69ca1617a4d3b620e39f2ffbcea7}
+
+\item 
+\hypertarget{classg2o_1_1OptimizableGraph_1_1Edge_a1e6d9f4128866982de5e11e03edd7775}{virtual void {\bfseries compute\-Error} ()=0}\label{classg2o_1_1OptimizableGraph_1_1Edge_a1e6d9f4128866982de5e11e03edd7775}
+
+\item 
+virtual bool \hyperlink{classg2o_1_1OptimizableGraph_1_1Edge_ae8d99a85921057eba87a2346ba9c6e0a}{set\-Measurement\-Data} (const double $\ast$m)
+\item 
+virtual bool \hyperlink{classg2o_1_1OptimizableGraph_1_1Edge_a5f7c64421d33b7deb8fcfd5f4cf172b8}{get\-Measurement\-Data} (double $\ast$m) const 
+\item 
+virtual int \hyperlink{classg2o_1_1OptimizableGraph_1_1Edge_a44bd732330859991d4fbc992129b2e79}{measurement\-Dimension} () const 
+\item 
+virtual bool \hyperlink{classg2o_1_1OptimizableGraph_1_1Edge_a2f0b6465d6cd8b459ebc6494892c44f4}{set\-Measurement\-From\-State} ()
+\item 
+\hypertarget{classg2o_1_1OptimizableGraph_1_1Edge_aeb6ce9f3bf7b896f58272ea0d3feb8ff}{\hyperlink{classg2o_1_1RobustKernel}{Robust\-Kernel} $\ast$ \hyperlink{classg2o_1_1OptimizableGraph_1_1Edge_aeb6ce9f3bf7b896f58272ea0d3feb8ff}{robust\-Kernel} () const }\label{classg2o_1_1OptimizableGraph_1_1Edge_aeb6ce9f3bf7b896f58272ea0d3feb8ff}
+
+\begin{DoxyCompactList}\small\item\em if N\-O\-T N\-U\-L\-L, error of this edge will be robustifed with the kernel \end{DoxyCompactList}\item 
+void \hyperlink{classg2o_1_1OptimizableGraph_1_1Edge_a42955172c19f16e2cfbb30d611d1bd87}{set\-Robust\-Kernel} (\hyperlink{classg2o_1_1RobustKernel}{Robust\-Kernel} $\ast$ptr)
+\item 
+\hypertarget{classg2o_1_1OptimizableGraph_1_1Edge_a5f2a4b6efa2d0ae600f94a28a6ba58cf}{virtual const double $\ast$ \hyperlink{classg2o_1_1OptimizableGraph_1_1Edge_a5f2a4b6efa2d0ae600f94a28a6ba58cf}{error\-Data} () const =0}\label{classg2o_1_1OptimizableGraph_1_1Edge_a5f2a4b6efa2d0ae600f94a28a6ba58cf}
+
+\begin{DoxyCompactList}\small\item\em returns the error vector cached after calling the compute\-Error; \end{DoxyCompactList}\item 
+\hypertarget{classg2o_1_1OptimizableGraph_1_1Edge_a460a0cb0256b0a91edb131e25181f57b}{virtual double $\ast$ {\bfseries error\-Data} ()=0}\label{classg2o_1_1OptimizableGraph_1_1Edge_a460a0cb0256b0a91edb131e25181f57b}
+
+\item 
+\hypertarget{classg2o_1_1OptimizableGraph_1_1Edge_ab5b315b3e0a6c4e29074b2c924460417}{virtual const double $\ast$ \hyperlink{classg2o_1_1OptimizableGraph_1_1Edge_ab5b315b3e0a6c4e29074b2c924460417}{information\-Data} () const =0}\label{classg2o_1_1OptimizableGraph_1_1Edge_ab5b315b3e0a6c4e29074b2c924460417}
+
+\begin{DoxyCompactList}\small\item\em returns the memory of the information matrix, usable for example with a Eigen\-::\-Map$<$\-Matrix\-Xd$>$ \end{DoxyCompactList}\item 
+\hypertarget{classg2o_1_1OptimizableGraph_1_1Edge_a99de4bbb57e3c5e7321f150a45d1cb12}{virtual double $\ast$ {\bfseries information\-Data} ()=0}\label{classg2o_1_1OptimizableGraph_1_1Edge_a99de4bbb57e3c5e7321f150a45d1cb12}
+
+\item 
+\hypertarget{classg2o_1_1OptimizableGraph_1_1Edge_a182bd2c109d50283c638d9b295f2f3d7}{virtual double \hyperlink{classg2o_1_1OptimizableGraph_1_1Edge_a182bd2c109d50283c638d9b295f2f3d7}{chi2} () const =0}\label{classg2o_1_1OptimizableGraph_1_1Edge_a182bd2c109d50283c638d9b295f2f3d7}
+
+\begin{DoxyCompactList}\small\item\em computes the chi2 based on the cached error value, only valid after compute\-Error has been called. \end{DoxyCompactList}\item 
+virtual void \hyperlink{classg2o_1_1OptimizableGraph_1_1Edge_a56fbf3430ddf591e3c619bdd1b7e4499}{construct\-Quadratic\-Form} ()=0
+\item 
+virtual void \hyperlink{classg2o_1_1OptimizableGraph_1_1Edge_a3bd233fd552daa166039acf47b69a5a7}{map\-Hessian\-Memory} (double $\ast$d, int i, int j, bool row\-Major)=0
+\item 
+virtual void \hyperlink{classg2o_1_1OptimizableGraph_1_1Edge_a0fdad5ebfb4efec9f893b57f67e0fbe1}{linearize\-Oplus} (\hyperlink{classg2o_1_1JacobianWorkspace}{Jacobian\-Workspace} \&\hyperlink{structg2o_1_1OptimizableGraph_aa669dbd1d6e34e49fecda711ff1b78c6}{jacobian\-Workspace})=0
+\item 
+virtual void \hyperlink{classg2o_1_1OptimizableGraph_1_1Edge_a9519f8892e97f03daacb44ea50ac7f4e}{initial\-Estimate} (const Optimizable\-Graph\-::\-Vertex\-Set \&from, \hyperlink{classg2o_1_1OptimizableGraph_1_1Vertex}{Optimizable\-Graph\-::\-Vertex} $\ast$to)=0
+\item 
+virtual double \hyperlink{classg2o_1_1OptimizableGraph_1_1Edge_a1cef6ffa0f82f1ad3dd3d7a9f04425ee}{initial\-Estimate\-Possible} (const Optimizable\-Graph\-::\-Vertex\-Set \&from, \hyperlink{classg2o_1_1OptimizableGraph_1_1Vertex}{Optimizable\-Graph\-::\-Vertex} $\ast$to)
+\item 
+\hypertarget{classg2o_1_1OptimizableGraph_1_1Edge_af92bd1589a99fa9732a5f2964cf38a6c}{int \hyperlink{classg2o_1_1OptimizableGraph_1_1Edge_af92bd1589a99fa9732a5f2964cf38a6c}{level} () const }\label{classg2o_1_1OptimizableGraph_1_1Edge_af92bd1589a99fa9732a5f2964cf38a6c}
+
+\begin{DoxyCompactList}\small\item\em returns the level of the edge \end{DoxyCompactList}\item 
+\hypertarget{classg2o_1_1OptimizableGraph_1_1Edge_ab3e4290bc51d03ba294f36254048b15a}{void \hyperlink{classg2o_1_1OptimizableGraph_1_1Edge_ab3e4290bc51d03ba294f36254048b15a}{set\-Level} (int l)}\label{classg2o_1_1OptimizableGraph_1_1Edge_ab3e4290bc51d03ba294f36254048b15a}
+
+\begin{DoxyCompactList}\small\item\em sets the level of the edge \end{DoxyCompactList}\item 
+\hypertarget{classg2o_1_1OptimizableGraph_1_1Edge_a90a86891adc47a179a7cd7ef31549916}{int \hyperlink{classg2o_1_1OptimizableGraph_1_1Edge_a90a86891adc47a179a7cd7ef31549916}{dimension} () const }\label{classg2o_1_1OptimizableGraph_1_1Edge_a90a86891adc47a179a7cd7ef31549916}
+
+\begin{DoxyCompactList}\small\item\em returns the dimensions of the error function \end{DoxyCompactList}\item 
+\hypertarget{classg2o_1_1OptimizableGraph_1_1Edge_abd98d7a174df25bcc82cfdacba682fec}{virtual \hyperlink{classg2o_1_1OptimizableGraph_1_1Vertex}{Vertex} $\ast$ {\bfseries create\-From} ()}\label{classg2o_1_1OptimizableGraph_1_1Edge_abd98d7a174df25bcc82cfdacba682fec}
+
+\item 
+\hypertarget{classg2o_1_1OptimizableGraph_1_1Edge_a39c22b396ab312059ea8fa4c2776be2e}{virtual \hyperlink{classg2o_1_1OptimizableGraph_1_1Vertex}{Vertex} $\ast$ {\bfseries create\-To} ()}\label{classg2o_1_1OptimizableGraph_1_1Edge_a39c22b396ab312059ea8fa4c2776be2e}
+
+\item 
+\hypertarget{classg2o_1_1OptimizableGraph_1_1Edge_a30cf69b762a06aa35e796d8af71632b0}{virtual bool \hyperlink{classg2o_1_1OptimizableGraph_1_1Edge_a30cf69b762a06aa35e796d8af71632b0}{read} (std\-::istream \&is)=0}\label{classg2o_1_1OptimizableGraph_1_1Edge_a30cf69b762a06aa35e796d8af71632b0}
+
+\begin{DoxyCompactList}\small\item\em read the vertex from a stream, i.\-e., the internal state of the vertex \end{DoxyCompactList}\item 
+\hypertarget{classg2o_1_1OptimizableGraph_1_1Edge_a804b9a2178249b9297c55b8fbbeda56e}{virtual bool \hyperlink{classg2o_1_1OptimizableGraph_1_1Edge_a804b9a2178249b9297c55b8fbbeda56e}{write} (std\-::ostream \&os) const =0}\label{classg2o_1_1OptimizableGraph_1_1Edge_a804b9a2178249b9297c55b8fbbeda56e}
+
+\begin{DoxyCompactList}\small\item\em write the vertex to a stream \end{DoxyCompactList}\item 
+\hypertarget{classg2o_1_1OptimizableGraph_1_1Edge_ac4ab4bc451232a7ff4dca8484181fcad}{long long \hyperlink{classg2o_1_1OptimizableGraph_1_1Edge_ac4ab4bc451232a7ff4dca8484181fcad}{internal\-Id} () const }\label{classg2o_1_1OptimizableGraph_1_1Edge_ac4ab4bc451232a7ff4dca8484181fcad}
+
+\begin{DoxyCompactList}\small\item\em the internal I\-D of the edge \end{DoxyCompactList}\item 
+\hypertarget{classg2o_1_1OptimizableGraph_1_1Edge_a3684190bf8e99f39f58ffadd0dfa6b05}{\hyperlink{structg2o_1_1OptimizableGraph}{Optimizable\-Graph} $\ast$ {\bfseries graph} ()}\label{classg2o_1_1OptimizableGraph_1_1Edge_a3684190bf8e99f39f58ffadd0dfa6b05}
+
+\item 
+\hypertarget{classg2o_1_1OptimizableGraph_1_1Edge_a08d9fca4079441e3aa07cc315cd77470}{const \hyperlink{structg2o_1_1OptimizableGraph}{Optimizable\-Graph} $\ast$ {\bfseries graph} () const }\label{classg2o_1_1OptimizableGraph_1_1Edge_a08d9fca4079441e3aa07cc315cd77470}
+
+\item 
+\hypertarget{classg2o_1_1OptimizableGraph_1_1Edge_ae535735e71365a547fd1a11fae5378f6}{bool {\bfseries set\-Parameter\-Id} (int arg\-Num, int param\-Id)}\label{classg2o_1_1OptimizableGraph_1_1Edge_ae535735e71365a547fd1a11fae5378f6}
+
+\item 
+\hypertarget{classg2o_1_1OptimizableGraph_1_1Edge_a78b63b89b3964c30b96a3404b20e2a7f}{const \hyperlink{classg2o_1_1Parameter}{Parameter} $\ast$ {\bfseries parameter} (int arg\-No) const }\label{classg2o_1_1OptimizableGraph_1_1Edge_a78b63b89b3964c30b96a3404b20e2a7f}
+
+\item 
+\hypertarget{classg2o_1_1OptimizableGraph_1_1Edge_a21c26247bdb33e6836d1f1c8536ad70c}{size\-\_\-t {\bfseries num\-Parameters} () const }\label{classg2o_1_1OptimizableGraph_1_1Edge_a21c26247bdb33e6836d1f1c8536ad70c}
+
+\item 
+\hypertarget{classg2o_1_1OptimizableGraph_1_1Edge_ac978364c99e36c7fced59ecb383ba171}{void {\bfseries resize\-Parameters} (size\-\_\-t new\-Size)}\label{classg2o_1_1OptimizableGraph_1_1Edge_ac978364c99e36c7fced59ecb383ba171}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classg2o_1_1OptimizableGraph_1_1Edge_a237bea2f2fb7cc6a9cf4ee5ee6fe4d88}{{\footnotesize template$<$typename Parameter\-Type $>$ }\\bool {\bfseries install\-Parameter} (Parameter\-Type $\ast$\&p, size\-\_\-t arg\-No, int param\-Id=-\/1)}\label{classg2o_1_1OptimizableGraph_1_1Edge_a237bea2f2fb7cc6a9cf4ee5ee6fe4d88}
+
+\item 
+\hypertarget{classg2o_1_1OptimizableGraph_1_1Edge_ad95f2883af693de56e46a2b272dc1cdc}{{\footnotesize template$<$typename Cache\-Type $>$ }\\void {\bfseries resolve\-Cache} (Cache\-Type $\ast$\&cache, \hyperlink{classg2o_1_1OptimizableGraph_1_1Vertex}{Optimizable\-Graph\-::\-Vertex} $\ast$, const std\-::string \&\-\_\-type, const Parameter\-Vector \&parameters)}\label{classg2o_1_1OptimizableGraph_1_1Edge_ad95f2883af693de56e46a2b272dc1cdc}
+
+\item 
+\hypertarget{classg2o_1_1OptimizableGraph_1_1Edge_addadf494f3a1c8bf467a74454d771d0d}{bool {\bfseries resolve\-Parameters} ()}\label{classg2o_1_1OptimizableGraph_1_1Edge_addadf494f3a1c8bf467a74454d771d0d}
+
+\item 
+\hypertarget{classg2o_1_1OptimizableGraph_1_1Edge_aa93e3a4f976b467994f4eb7679a04bf3}{virtual bool {\bfseries resolve\-Caches} ()}\label{classg2o_1_1OptimizableGraph_1_1Edge_aa93e3a4f976b467994f4eb7679a04bf3}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected 属性}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classg2o_1_1OptimizableGraph_1_1Edge_a4e651628f7657c81d0e4c1b26caaa6aa}{int {\bfseries \-\_\-dimension}}\label{classg2o_1_1OptimizableGraph_1_1Edge_a4e651628f7657c81d0e4c1b26caaa6aa}
+
+\item 
+\hypertarget{classg2o_1_1OptimizableGraph_1_1Edge_a57132078028dd0455aef141e62e07db9}{int {\bfseries \-\_\-level}}\label{classg2o_1_1OptimizableGraph_1_1Edge_a57132078028dd0455aef141e62e07db9}
+
+\item 
+\hypertarget{classg2o_1_1OptimizableGraph_1_1Edge_a6b942321f9e4e82051d529efb255af35}{\hyperlink{classg2o_1_1RobustKernel}{Robust\-Kernel} $\ast$ {\bfseries \-\_\-robust\-Kernel}}\label{classg2o_1_1OptimizableGraph_1_1Edge_a6b942321f9e4e82051d529efb255af35}
+
+\item 
+\hypertarget{classg2o_1_1OptimizableGraph_1_1Edge_abdfc449ed57479d90d2e57a8bc0bea12}{long long {\bfseries \-\_\-internal\-Id}}\label{classg2o_1_1OptimizableGraph_1_1Edge_abdfc449ed57479d90d2e57a8bc0bea12}
+
+\item 
+\hypertarget{classg2o_1_1OptimizableGraph_1_1Edge_a56bddaadd70570dbd96e8deed3d4b34c}{std\-::vector$<$ int $>$ {\bfseries \-\_\-cache\-Ids}}\label{classg2o_1_1OptimizableGraph_1_1Edge_a56bddaadd70570dbd96e8deed3d4b34c}
+
+\item 
+\hypertarget{classg2o_1_1OptimizableGraph_1_1Edge_a08666609850240956c64c95ae5ae0f2c}{std\-::vector$<$ std\-::string $>$ {\bfseries \-\_\-parameter\-Types}}\label{classg2o_1_1OptimizableGraph_1_1Edge_a08666609850240956c64c95ae5ae0f2c}
+
+\item 
+\hypertarget{classg2o_1_1OptimizableGraph_1_1Edge_a41c4d6a404d0b057d37fac43edec40ed}{std\-::vector$<$ \hyperlink{classg2o_1_1Parameter}{Parameter} $\ast$$\ast$ $>$ {\bfseries \-\_\-parameters}}\label{classg2o_1_1OptimizableGraph_1_1Edge_a41c4d6a404d0b057d37fac43edec40ed}
+
+\item 
+\hypertarget{classg2o_1_1OptimizableGraph_1_1Edge_a33a35663ba5b096cb6e6078014bd6f17}{std\-::vector$<$ int $>$ {\bfseries \-\_\-parameter\-Ids}}\label{classg2o_1_1OptimizableGraph_1_1Edge_a33a35663ba5b096cb6e6078014bd6f17}
+
+\end{DoxyCompactItemize}
+\subsection*{友元}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classg2o_1_1OptimizableGraph_1_1Edge_a45d35331ee3deca38c26d1efb6b961ae}{struct {\bfseries Optimizable\-Graph}}\label{classg2o_1_1OptimizableGraph_1_1Edge_a45d35331ee3deca38c26d1efb6b961ae}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{详细描述}
+
+
+在文件 optimizable\-\_\-graph.\-h 第 383 行定义.
+
+
+
+\subsection{成员函数说明}
+\hypertarget{classg2o_1_1OptimizableGraph_1_1Edge_a56fbf3430ddf591e3c619bdd1b7e4499}{\index{g2o\-::\-Optimizable\-Graph\-::\-Edge@{g2o\-::\-Optimizable\-Graph\-::\-Edge}!construct\-Quadratic\-Form@{construct\-Quadratic\-Form}}
+\index{construct\-Quadratic\-Form@{construct\-Quadratic\-Form}!g2o::OptimizableGraph::Edge@{g2o\-::\-Optimizable\-Graph\-::\-Edge}}
+\subsubsection[{construct\-Quadratic\-Form}]{\setlength{\rightskip}{0pt plus 5cm}virtual void g2o\-::\-Optimizable\-Graph\-::\-Edge\-::construct\-Quadratic\-Form (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classg2o_1_1OptimizableGraph_1_1Edge_a56fbf3430ddf591e3c619bdd1b7e4499}
+Linearizes the constraint in the edge. Makes side effect on the vertices of the graph by changing the parameter vector b and the hessian blocks ii and jj. The off diagoinal block is accesed via \-\_\-hessian. 
+
+在 \hyperlink{classg2o_1_1BaseBinaryEdge_a06a18745d95017c6d3c841f838a65364}{g2o\-::\-Base\-Binary\-Edge$<$ D, E, Vertex\-Xi, Vertex\-Xj $>$}, \hyperlink{classg2o_1_1BaseBinaryEdge_a06a18745d95017c6d3c841f838a65364}{g2o\-::\-Base\-Binary\-Edge$<$ 2, Vector2d, Vertex\-S\-B\-A\-Point\-X\-Y\-Z, Vertex\-Sim3\-Expmap $>$}, \hyperlink{classg2o_1_1BaseBinaryEdge_a06a18745d95017c6d3c841f838a65364}{g2o\-::\-Base\-Binary\-Edge$<$ 7, Sim3, Vertex\-Sim3\-Expmap, Vertex\-Sim3\-Expmap $>$}, \hyperlink{classg2o_1_1BaseBinaryEdge_a06a18745d95017c6d3c841f838a65364}{g2o\-::\-Base\-Binary\-Edge$<$ 2, Vector2d, Vertex\-S\-B\-A\-Point\-X\-Y\-Z, Vertex\-S\-E3\-Expmap $>$}, \hyperlink{classg2o_1_1BaseBinaryEdge_a06a18745d95017c6d3c841f838a65364}{g2o\-::\-Base\-Binary\-Edge$<$ 3, Vector3d, Vertex\-S\-B\-A\-Point\-X\-Y\-Z, Vertex\-S\-E3\-Expmap $>$}, \hyperlink{classg2o_1_1BaseMultiEdge_ae44ba0385d4dda4bc038d81e50cadd8c}{g2o\-::\-Base\-Multi\-Edge$<$ D, E $>$}, \hyperlink{classg2o_1_1BaseUnaryEdge_ad7e6dc44c571be159f066bdb961ade2b}{g2o\-::\-Base\-Unary\-Edge$<$ D, E, Vertex\-Xi $>$}, \hyperlink{classg2o_1_1BaseUnaryEdge_ad7e6dc44c571be159f066bdb961ade2b}{g2o\-::\-Base\-Unary\-Edge$<$ 2, Vector2d, Vertex\-S\-E3\-Expmap $>$} , 以及 \hyperlink{classg2o_1_1BaseUnaryEdge_ad7e6dc44c571be159f066bdb961ade2b}{g2o\-::\-Base\-Unary\-Edge$<$ 3, Vector3d, Vertex\-S\-E3\-Expmap $>$} 内被实现.
+
+
+
+参考自 g2o\-::\-Block\-Solver$<$ Traits $>$\-::build\-System().
+
+
+
+这是这个函数的调用关系图\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classg2o_1_1OptimizableGraph_1_1Edge_a56fbf3430ddf591e3c619bdd1b7e4499_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classg2o_1_1OptimizableGraph_1_1Edge_a5f7c64421d33b7deb8fcfd5f4cf172b8}{\index{g2o\-::\-Optimizable\-Graph\-::\-Edge@{g2o\-::\-Optimizable\-Graph\-::\-Edge}!get\-Measurement\-Data@{get\-Measurement\-Data}}
+\index{get\-Measurement\-Data@{get\-Measurement\-Data}!g2o::OptimizableGraph::Edge@{g2o\-::\-Optimizable\-Graph\-::\-Edge}}
+\subsubsection[{get\-Measurement\-Data}]{\setlength{\rightskip}{0pt plus 5cm}bool g2o\-::\-Optimizable\-Graph\-::\-Edge\-::get\-Measurement\-Data (
+\begin{DoxyParamCaption}
+\item[{double $\ast$}]{m}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classg2o_1_1OptimizableGraph_1_1Edge_a5f7c64421d33b7deb8fcfd5f4cf172b8}
+writes the measurement to an array of double \begin{DoxyReturn}{返回}
+true on success 
+\end{DoxyReturn}
+
+
+在文件 optimizable\-\_\-graph.\-cpp 第 209 行定义.
+
+\hypertarget{classg2o_1_1OptimizableGraph_1_1Edge_a9519f8892e97f03daacb44ea50ac7f4e}{\index{g2o\-::\-Optimizable\-Graph\-::\-Edge@{g2o\-::\-Optimizable\-Graph\-::\-Edge}!initial\-Estimate@{initial\-Estimate}}
+\index{initial\-Estimate@{initial\-Estimate}!g2o::OptimizableGraph::Edge@{g2o\-::\-Optimizable\-Graph\-::\-Edge}}
+\subsubsection[{initial\-Estimate}]{\setlength{\rightskip}{0pt plus 5cm}virtual void g2o\-::\-Optimizable\-Graph\-::\-Edge\-::initial\-Estimate (
+\begin{DoxyParamCaption}
+\item[{const Optimizable\-Graph\-::\-Vertex\-Set \&}]{from, }
+\item[{{\bf Optimizable\-Graph\-::\-Vertex} $\ast$}]{to}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classg2o_1_1OptimizableGraph_1_1Edge_a9519f8892e97f03daacb44ea50ac7f4e}
+set the estimate of the to vertex, based on the estimate of the from vertices in the edge. 
+
+在 \hyperlink{classg2o_1_1EdgeSim3_afac4cc093af6f54adb278c142f33dcca}{g2o\-::\-Edge\-Sim3}, \hyperlink{classg2o_1_1BaseEdge_a0c3d9763f1dc504627df75e0f381ca70}{g2o\-::\-Base\-Edge$<$ D, E $>$}, \hyperlink{classg2o_1_1BaseEdge_a0c3d9763f1dc504627df75e0f381ca70}{g2o\-::\-Base\-Edge$<$ D, Vector2d $>$}, \hyperlink{classg2o_1_1BaseEdge_a0c3d9763f1dc504627df75e0f381ca70}{g2o\-::\-Base\-Edge$<$ D, Vector3d $>$}, \hyperlink{classg2o_1_1BaseEdge_a0c3d9763f1dc504627df75e0f381ca70}{g2o\-::\-Base\-Edge$<$ D, Sim3 $>$}, \hyperlink{classg2o_1_1BaseUnaryEdge_a3d3311901116092cf817b094f6a0b44b}{g2o\-::\-Base\-Unary\-Edge$<$ D, E, Vertex\-Xi $>$}, \hyperlink{classg2o_1_1BaseUnaryEdge_a3d3311901116092cf817b094f6a0b44b}{g2o\-::\-Base\-Unary\-Edge$<$ 2, Vector2d, Vertex\-S\-E3\-Expmap $>$} , 以及 \hyperlink{classg2o_1_1BaseUnaryEdge_a3d3311901116092cf817b094f6a0b44b}{g2o\-::\-Base\-Unary\-Edge$<$ 3, Vector3d, Vertex\-S\-E3\-Expmap $>$} 内被实现.
+
+
+
+参考自 g2o\-::\-Sparse\-Optimizer\-::compute\-Initial\-Guess().
+
+
+
+这是这个函数的调用关系图\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=344pt]{classg2o_1_1OptimizableGraph_1_1Edge_a9519f8892e97f03daacb44ea50ac7f4e_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classg2o_1_1OptimizableGraph_1_1Edge_a1cef6ffa0f82f1ad3dd3d7a9f04425ee}{\index{g2o\-::\-Optimizable\-Graph\-::\-Edge@{g2o\-::\-Optimizable\-Graph\-::\-Edge}!initial\-Estimate\-Possible@{initial\-Estimate\-Possible}}
+\index{initial\-Estimate\-Possible@{initial\-Estimate\-Possible}!g2o::OptimizableGraph::Edge@{g2o\-::\-Optimizable\-Graph\-::\-Edge}}
+\subsubsection[{initial\-Estimate\-Possible}]{\setlength{\rightskip}{0pt plus 5cm}virtual double g2o\-::\-Optimizable\-Graph\-::\-Edge\-::initial\-Estimate\-Possible (
+\begin{DoxyParamCaption}
+\item[{const Optimizable\-Graph\-::\-Vertex\-Set \&}]{from, }
+\item[{{\bf Optimizable\-Graph\-::\-Vertex} $\ast$}]{to}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classg2o_1_1OptimizableGraph_1_1Edge_a1cef6ffa0f82f1ad3dd3d7a9f04425ee}
+override in your class if it's possible to initialize the vertices in certain combinations. The return value may correspond to the cost for initiliaizng the vertex but should be positive if the initialization is possible and negative if not possible. 
+
+被 \hyperlink{classg2o_1_1EdgeSim3_a0fd73623327838b46abdf292582da6ae}{g2o\-::\-Edge\-Sim3} 重载.
+
+
+
+在文件 optimizable\-\_\-graph.\-h 第 465 行定义.
+
+
+
+参考自 g2o\-::\-Sparse\-Optimizer\-::compute\-Initial\-Guess().
+
+
+
+这是这个函数的调用关系图\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classg2o_1_1OptimizableGraph_1_1Edge_a1cef6ffa0f82f1ad3dd3d7a9f04425ee_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classg2o_1_1OptimizableGraph_1_1Edge_a0fdad5ebfb4efec9f893b57f67e0fbe1}{\index{g2o\-::\-Optimizable\-Graph\-::\-Edge@{g2o\-::\-Optimizable\-Graph\-::\-Edge}!linearize\-Oplus@{linearize\-Oplus}}
+\index{linearize\-Oplus@{linearize\-Oplus}!g2o::OptimizableGraph::Edge@{g2o\-::\-Optimizable\-Graph\-::\-Edge}}
+\subsubsection[{linearize\-Oplus}]{\setlength{\rightskip}{0pt plus 5cm}virtual void g2o\-::\-Optimizable\-Graph\-::\-Edge\-::linearize\-Oplus (
+\begin{DoxyParamCaption}
+\item[{{\bf Jacobian\-Workspace} \&}]{jacobian\-Workspace}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classg2o_1_1OptimizableGraph_1_1Edge_a0fdad5ebfb4efec9f893b57f67e0fbe1}
+Linearizes the constraint in the edge in the manifold space, and store the result in the given workspace 
+
+在 \hyperlink{classg2o_1_1BaseBinaryEdge_afc3b6470e7679f027c2614484b394925}{g2o\-::\-Base\-Binary\-Edge$<$ D, E, Vertex\-Xi, Vertex\-Xj $>$}, \hyperlink{classg2o_1_1BaseBinaryEdge_afc3b6470e7679f027c2614484b394925}{g2o\-::\-Base\-Binary\-Edge$<$ 2, Vector2d, Vertex\-S\-B\-A\-Point\-X\-Y\-Z, Vertex\-Sim3\-Expmap $>$}, \hyperlink{classg2o_1_1BaseBinaryEdge_afc3b6470e7679f027c2614484b394925}{g2o\-::\-Base\-Binary\-Edge$<$ 7, Sim3, Vertex\-Sim3\-Expmap, Vertex\-Sim3\-Expmap $>$}, \hyperlink{classg2o_1_1BaseBinaryEdge_afc3b6470e7679f027c2614484b394925}{g2o\-::\-Base\-Binary\-Edge$<$ 2, Vector2d, Vertex\-S\-B\-A\-Point\-X\-Y\-Z, Vertex\-S\-E3\-Expmap $>$}, \hyperlink{classg2o_1_1BaseBinaryEdge_afc3b6470e7679f027c2614484b394925}{g2o\-::\-Base\-Binary\-Edge$<$ 3, Vector3d, Vertex\-S\-B\-A\-Point\-X\-Y\-Z, Vertex\-S\-E3\-Expmap $>$}, \hyperlink{classg2o_1_1BaseMultiEdge_a72176776797987b8ae79ea2e33971e9e}{g2o\-::\-Base\-Multi\-Edge$<$ D, E $>$}, \hyperlink{classg2o_1_1BaseUnaryEdge_a8b396647b5b438d30a04758023baa595}{g2o\-::\-Base\-Unary\-Edge$<$ D, E, Vertex\-Xi $>$}, \hyperlink{classg2o_1_1BaseUnaryEdge_a8b396647b5b438d30a04758023baa595}{g2o\-::\-Base\-Unary\-Edge$<$ 2, Vector2d, Vertex\-S\-E3\-Expmap $>$} , 以及 \hyperlink{classg2o_1_1BaseUnaryEdge_a8b396647b5b438d30a04758023baa595}{g2o\-::\-Base\-Unary\-Edge$<$ 3, Vector3d, Vertex\-S\-E3\-Expmap $>$} 内被实现.
+
+
+
+参考自 g2o\-::\-Block\-Solver$<$ Traits $>$\-::build\-System().
+
+
+
+这是这个函数的调用关系图\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classg2o_1_1OptimizableGraph_1_1Edge_a0fdad5ebfb4efec9f893b57f67e0fbe1_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classg2o_1_1OptimizableGraph_1_1Edge_a3bd233fd552daa166039acf47b69a5a7}{\index{g2o\-::\-Optimizable\-Graph\-::\-Edge@{g2o\-::\-Optimizable\-Graph\-::\-Edge}!map\-Hessian\-Memory@{map\-Hessian\-Memory}}
+\index{map\-Hessian\-Memory@{map\-Hessian\-Memory}!g2o::OptimizableGraph::Edge@{g2o\-::\-Optimizable\-Graph\-::\-Edge}}
+\subsubsection[{map\-Hessian\-Memory}]{\setlength{\rightskip}{0pt plus 5cm}virtual void g2o\-::\-Optimizable\-Graph\-::\-Edge\-::map\-Hessian\-Memory (
+\begin{DoxyParamCaption}
+\item[{double $\ast$}]{d, }
+\item[{int}]{i, }
+\item[{int}]{j, }
+\item[{bool}]{row\-Major}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classg2o_1_1OptimizableGraph_1_1Edge_a3bd233fd552daa166039acf47b69a5a7}
+maps the internal matrix to some external memory location, you need to provide the memory before calling construct\-Quadratic\-Form 
+\begin{DoxyParams}{参数}
+{\em d} & the memory location to which we map \\
+\hline
+{\em i} & index of the vertex i \\
+\hline
+{\em j} & index of the vertex j (j $>$ i, upper triangular fashion) \\
+\hline
+{\em row\-Major} & if true, will write in row\-Major order to the block. Since E\-I\-G\-E\-N is column\-Major by default, this results in writing the transposed \\
+\hline
+\end{DoxyParams}
+
+
+在 \hyperlink{classg2o_1_1BaseBinaryEdge_ada358930854d386a4e8c32f64078e052}{g2o\-::\-Base\-Binary\-Edge$<$ D, E, Vertex\-Xi, Vertex\-Xj $>$}, \hyperlink{classg2o_1_1BaseBinaryEdge_ada358930854d386a4e8c32f64078e052}{g2o\-::\-Base\-Binary\-Edge$<$ 2, Vector2d, Vertex\-S\-B\-A\-Point\-X\-Y\-Z, Vertex\-Sim3\-Expmap $>$}, \hyperlink{classg2o_1_1BaseBinaryEdge_ada358930854d386a4e8c32f64078e052}{g2o\-::\-Base\-Binary\-Edge$<$ 7, Sim3, Vertex\-Sim3\-Expmap, Vertex\-Sim3\-Expmap $>$}, \hyperlink{classg2o_1_1BaseBinaryEdge_ada358930854d386a4e8c32f64078e052}{g2o\-::\-Base\-Binary\-Edge$<$ 2, Vector2d, Vertex\-S\-B\-A\-Point\-X\-Y\-Z, Vertex\-S\-E3\-Expmap $>$}, \hyperlink{classg2o_1_1BaseBinaryEdge_ada358930854d386a4e8c32f64078e052}{g2o\-::\-Base\-Binary\-Edge$<$ 3, Vector3d, Vertex\-S\-B\-A\-Point\-X\-Y\-Z, Vertex\-S\-E3\-Expmap $>$}, \hyperlink{classg2o_1_1BaseMultiEdge_aecded66022b967fab0deb1c6a2d76445}{g2o\-::\-Base\-Multi\-Edge$<$ D, E $>$}, \hyperlink{classg2o_1_1BaseUnaryEdge_a919dcb89130f6e7082e807530facdd78}{g2o\-::\-Base\-Unary\-Edge$<$ D, E, Vertex\-Xi $>$}, \hyperlink{classg2o_1_1BaseUnaryEdge_a919dcb89130f6e7082e807530facdd78}{g2o\-::\-Base\-Unary\-Edge$<$ 2, Vector2d, Vertex\-S\-E3\-Expmap $>$} , 以及 \hyperlink{classg2o_1_1BaseUnaryEdge_a919dcb89130f6e7082e807530facdd78}{g2o\-::\-Base\-Unary\-Edge$<$ 3, Vector3d, Vertex\-S\-E3\-Expmap $>$} 内被实现.
+
+
+
+参考自 g2o\-::\-Block\-Solver$<$ Traits $>$\-::build\-Structure() , 以及 g2o\-::\-Block\-Solver$<$ Traits $>$\-::update\-Structure().
+
+
+
+这是这个函数的调用关系图\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classg2o_1_1OptimizableGraph_1_1Edge_a3bd233fd552daa166039acf47b69a5a7_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classg2o_1_1OptimizableGraph_1_1Edge_a44bd732330859991d4fbc992129b2e79}{\index{g2o\-::\-Optimizable\-Graph\-::\-Edge@{g2o\-::\-Optimizable\-Graph\-::\-Edge}!measurement\-Dimension@{measurement\-Dimension}}
+\index{measurement\-Dimension@{measurement\-Dimension}!g2o::OptimizableGraph::Edge@{g2o\-::\-Optimizable\-Graph\-::\-Edge}}
+\subsubsection[{measurement\-Dimension}]{\setlength{\rightskip}{0pt plus 5cm}int g2o\-::\-Optimizable\-Graph\-::\-Edge\-::measurement\-Dimension (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classg2o_1_1OptimizableGraph_1_1Edge_a44bd732330859991d4fbc992129b2e79}
+returns the dimension of the measurement in the extended representation which is used by get/set\-Measurement; 
+
+在文件 optimizable\-\_\-graph.\-cpp 第 214 行定义.
+
+\hypertarget{classg2o_1_1OptimizableGraph_1_1Edge_ae8d99a85921057eba87a2346ba9c6e0a}{\index{g2o\-::\-Optimizable\-Graph\-::\-Edge@{g2o\-::\-Optimizable\-Graph\-::\-Edge}!set\-Measurement\-Data@{set\-Measurement\-Data}}
+\index{set\-Measurement\-Data@{set\-Measurement\-Data}!g2o::OptimizableGraph::Edge@{g2o\-::\-Optimizable\-Graph\-::\-Edge}}
+\subsubsection[{set\-Measurement\-Data}]{\setlength{\rightskip}{0pt plus 5cm}bool g2o\-::\-Optimizable\-Graph\-::\-Edge\-::set\-Measurement\-Data (
+\begin{DoxyParamCaption}
+\item[{const double $\ast$}]{m}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classg2o_1_1OptimizableGraph_1_1Edge_ae8d99a85921057eba87a2346ba9c6e0a}
+sets the measurement from an array of double \begin{DoxyReturn}{返回}
+true on success 
+\end{DoxyReturn}
+
+
+在文件 optimizable\-\_\-graph.\-cpp 第 204 行定义.
+
+\hypertarget{classg2o_1_1OptimizableGraph_1_1Edge_a2f0b6465d6cd8b459ebc6494892c44f4}{\index{g2o\-::\-Optimizable\-Graph\-::\-Edge@{g2o\-::\-Optimizable\-Graph\-::\-Edge}!set\-Measurement\-From\-State@{set\-Measurement\-From\-State}}
+\index{set\-Measurement\-From\-State@{set\-Measurement\-From\-State}!g2o::OptimizableGraph::Edge@{g2o\-::\-Optimizable\-Graph\-::\-Edge}}
+\subsubsection[{set\-Measurement\-From\-State}]{\setlength{\rightskip}{0pt plus 5cm}bool g2o\-::\-Optimizable\-Graph\-::\-Edge\-::set\-Measurement\-From\-State (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classg2o_1_1OptimizableGraph_1_1Edge_a2f0b6465d6cd8b459ebc6494892c44f4}
+sets the estimate to have a zero error, based on the current value of the state variables returns false if not supported. 
+
+在文件 optimizable\-\_\-graph.\-cpp 第 219 行定义.
+
+\hypertarget{classg2o_1_1OptimizableGraph_1_1Edge_a42955172c19f16e2cfbb30d611d1bd87}{\index{g2o\-::\-Optimizable\-Graph\-::\-Edge@{g2o\-::\-Optimizable\-Graph\-::\-Edge}!set\-Robust\-Kernel@{set\-Robust\-Kernel}}
+\index{set\-Robust\-Kernel@{set\-Robust\-Kernel}!g2o::OptimizableGraph::Edge@{g2o\-::\-Optimizable\-Graph\-::\-Edge}}
+\subsubsection[{set\-Robust\-Kernel}]{\setlength{\rightskip}{0pt plus 5cm}void g2o\-::\-Optimizable\-Graph\-::\-Edge\-::set\-Robust\-Kernel (
+\begin{DoxyParamCaption}
+\item[{{\bf Robust\-Kernel} $\ast$}]{ptr}
+\end{DoxyParamCaption}
+)}}\label{classg2o_1_1OptimizableGraph_1_1Edge_a42955172c19f16e2cfbb30d611d1bd87}
+specify the robust kernel to be used in this edge 
+
+在文件 optimizable\-\_\-graph.\-cpp 第 193 行定义.
+
+
+
+参考自 O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Optimizer\-::\-Bundle\-Adjustment(), O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Optimizer\-::\-Local\-Bundle\-Adjustment(), O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Optimizer\-::\-Optimize\-Sim3() , 以及 O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Optimizer\-::\-Pose\-Optimization().
+
+
+
+这是这个函数的调用关系图\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classg2o_1_1OptimizableGraph_1_1Edge_a42955172c19f16e2cfbb30d611d1bd87_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+该类的文档由以下文件生成\-:\begin{DoxyCompactItemize}
+\item 
+Thirdparty/g2o/g2o/core/optimizable\-\_\-graph.\-h\item 
+Thirdparty/g2o/g2o/core/cache.\-h\item 
+Thirdparty/g2o/g2o/core/optimizable\-\_\-graph.\-cpp\end{DoxyCompactItemize}

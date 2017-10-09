@@ -1,0 +1,177 @@
+\hypertarget{classDBoW2_1_1FORB}{\section{D\-Bo\-W2\-:\-:F\-O\-R\-B类 参考}
+\label{classDBoW2_1_1FORB}\index{D\-Bo\-W2\-::\-F\-O\-R\-B@{D\-Bo\-W2\-::\-F\-O\-R\-B}}
+}
+
+
+Functions to manipulate O\-R\-B descriptors.  
+
+
+
+
+{\ttfamily \#include $<$F\-O\-R\-B.\-h$>$}
+
+
+
+类 D\-Bo\-W2\-:\-:F\-O\-R\-B 继承关系图\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=168pt]{classDBoW2_1_1FORB__inherit__graph}
+\end{center}
+\end{figure}
+
+
+D\-Bo\-W2\-:\-:F\-O\-R\-B 的协作图\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=168pt]{classDBoW2_1_1FORB__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public 类型}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classDBoW2_1_1FORB_aef9b966d0293836fab9f55f1799ce0ed}{typedef cv\-::\-Mat \hyperlink{classDBoW2_1_1FORB_aef9b966d0293836fab9f55f1799ce0ed}{T\-Descriptor}}\label{classDBoW2_1_1FORB_aef9b966d0293836fab9f55f1799ce0ed}
+
+\begin{DoxyCompactList}\small\item\em Descriptor type. \end{DoxyCompactList}\item 
+\hypertarget{classDBoW2_1_1FORB_ab52a6568044027cf30c8ac1514fed1a6}{typedef const \hyperlink{classDBoW2_1_1FORB_aef9b966d0293836fab9f55f1799ce0ed}{T\-Descriptor} $\ast$ \hyperlink{classDBoW2_1_1FORB_ab52a6568044027cf30c8ac1514fed1a6}{p\-Descriptor}}\label{classDBoW2_1_1FORB_ab52a6568044027cf30c8ac1514fed1a6}
+
+\begin{DoxyCompactList}\small\item\em Pointer to a single descriptor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{静态 Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+static void \hyperlink{classDBoW2_1_1FORB_a9d78adf3c5c6fe8f2e8668e247acf5cc}{mean\-Value} (const std\-::vector$<$ \hyperlink{classDBoW2_1_1FORB_ab52a6568044027cf30c8ac1514fed1a6}{p\-Descriptor} $>$ \&descriptors, \hyperlink{classDBoW2_1_1FORB_aef9b966d0293836fab9f55f1799ce0ed}{T\-Descriptor} \&mean)
+\item 
+static int \hyperlink{classDBoW2_1_1FORB_ac166ab6808abc7c385dbaabfacfed38c}{distance} (const \hyperlink{classDBoW2_1_1FORB_aef9b966d0293836fab9f55f1799ce0ed}{T\-Descriptor} \&a, const \hyperlink{classDBoW2_1_1FORB_aef9b966d0293836fab9f55f1799ce0ed}{T\-Descriptor} \&b)
+\item 
+static std\-::string \hyperlink{classDBoW2_1_1FORB_a3c0ce0fd04ecd52b25b97d253fb922ea}{to\-String} (const \hyperlink{classDBoW2_1_1FORB_aef9b966d0293836fab9f55f1799ce0ed}{T\-Descriptor} \&a)
+\item 
+static void \hyperlink{classDBoW2_1_1FORB_a4023e7775d0691b44f6708f865b6b8d7}{from\-String} (\hyperlink{classDBoW2_1_1FORB_aef9b966d0293836fab9f55f1799ce0ed}{T\-Descriptor} \&a, const std\-::string \&s)
+\item 
+static void \hyperlink{classDBoW2_1_1FORB_a67b90eaed01dd54e380237c78886635f}{to\-Mat32\-F} (const std\-::vector$<$ \hyperlink{classDBoW2_1_1FORB_aef9b966d0293836fab9f55f1799ce0ed}{T\-Descriptor} $>$ \&descriptors, cv\-::\-Mat \&mat)
+\item 
+\hypertarget{classDBoW2_1_1FORB_af0a9e2ea44336f2975a7f3324777330c}{static void {\bfseries to\-Mat8\-U} (const std\-::vector$<$ \hyperlink{classDBoW2_1_1FORB_aef9b966d0293836fab9f55f1799ce0ed}{T\-Descriptor} $>$ \&descriptors, cv\-::\-Mat \&mat)}\label{classDBoW2_1_1FORB_af0a9e2ea44336f2975a7f3324777330c}
+
+\end{DoxyCompactItemize}
+\subsection*{静态 Public 属性}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classDBoW2_1_1FORB_ad6ed07af4e042effc3c0b169aa5bdd1a}{static const int \hyperlink{classDBoW2_1_1FORB_ad6ed07af4e042effc3c0b169aa5bdd1a}{L} = 32}\label{classDBoW2_1_1FORB_ad6ed07af4e042effc3c0b169aa5bdd1a}
+
+\begin{DoxyCompactList}\small\item\em Descriptor length (in bytes) \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{详细描述}
+Functions to manipulate O\-R\-B descriptors. 
+
+在文件 F\-O\-R\-B.\-h 第 24 行定义.
+
+
+
+\subsection{成员函数说明}
+\hypertarget{classDBoW2_1_1FORB_ac166ab6808abc7c385dbaabfacfed38c}{\index{D\-Bo\-W2\-::\-F\-O\-R\-B@{D\-Bo\-W2\-::\-F\-O\-R\-B}!distance@{distance}}
+\index{distance@{distance}!DBoW2::FORB@{D\-Bo\-W2\-::\-F\-O\-R\-B}}
+\subsubsection[{distance}]{\setlength{\rightskip}{0pt plus 5cm}int D\-Bo\-W2\-::\-F\-O\-R\-B\-::distance (
+\begin{DoxyParamCaption}
+\item[{const {\bf T\-Descriptor} \&}]{a, }
+\item[{const {\bf T\-Descriptor} \&}]{b}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classDBoW2_1_1FORB_ac166ab6808abc7c385dbaabfacfed38c}
+Calculates the distance between two descriptors 
+\begin{DoxyParams}{参数}
+{\em a} & \\
+\hline
+{\em b} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+distance 
+\end{DoxyReturn}
+
+
+在文件 F\-O\-R\-B.\-cpp 第 82 行定义.
+
+\hypertarget{classDBoW2_1_1FORB_a4023e7775d0691b44f6708f865b6b8d7}{\index{D\-Bo\-W2\-::\-F\-O\-R\-B@{D\-Bo\-W2\-::\-F\-O\-R\-B}!from\-String@{from\-String}}
+\index{from\-String@{from\-String}!DBoW2::FORB@{D\-Bo\-W2\-::\-F\-O\-R\-B}}
+\subsubsection[{from\-String}]{\setlength{\rightskip}{0pt plus 5cm}void D\-Bo\-W2\-::\-F\-O\-R\-B\-::from\-String (
+\begin{DoxyParamCaption}
+\item[{{\bf F\-O\-R\-B\-::\-T\-Descriptor} \&}]{a, }
+\item[{const std\-::string \&}]{s}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classDBoW2_1_1FORB_a4023e7775d0691b44f6708f865b6b8d7}
+Returns a descriptor from a string 
+\begin{DoxyParams}{参数}
+{\em a} & descriptor \\
+\hline
+{\em s} & string version \\
+\hline
+\end{DoxyParams}
+
+
+在文件 F\-O\-R\-B.\-cpp 第 121 行定义.
+
+\hypertarget{classDBoW2_1_1FORB_a9d78adf3c5c6fe8f2e8668e247acf5cc}{\index{D\-Bo\-W2\-::\-F\-O\-R\-B@{D\-Bo\-W2\-::\-F\-O\-R\-B}!mean\-Value@{mean\-Value}}
+\index{mean\-Value@{mean\-Value}!DBoW2::FORB@{D\-Bo\-W2\-::\-F\-O\-R\-B}}
+\subsubsection[{mean\-Value}]{\setlength{\rightskip}{0pt plus 5cm}void D\-Bo\-W2\-::\-F\-O\-R\-B\-::mean\-Value (
+\begin{DoxyParamCaption}
+\item[{const std\-::vector$<$ {\bf p\-Descriptor} $>$ \&}]{descriptors, }
+\item[{{\bf T\-Descriptor} \&}]{mean}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classDBoW2_1_1FORB_a9d78adf3c5c6fe8f2e8668e247acf5cc}
+Calculates the mean value of a set of descriptors 
+\begin{DoxyParams}{参数}
+{\em descriptors} & \\
+\hline
+{\em mean} & mean descriptor \\
+\hline
+\end{DoxyParams}
+
+
+在文件 F\-O\-R\-B.\-cpp 第 29 行定义.
+
+\hypertarget{classDBoW2_1_1FORB_a67b90eaed01dd54e380237c78886635f}{\index{D\-Bo\-W2\-::\-F\-O\-R\-B@{D\-Bo\-W2\-::\-F\-O\-R\-B}!to\-Mat32\-F@{to\-Mat32\-F}}
+\index{to\-Mat32\-F@{to\-Mat32\-F}!DBoW2::FORB@{D\-Bo\-W2\-::\-F\-O\-R\-B}}
+\subsubsection[{to\-Mat32\-F}]{\setlength{\rightskip}{0pt plus 5cm}void D\-Bo\-W2\-::\-F\-O\-R\-B\-::to\-Mat32\-F (
+\begin{DoxyParamCaption}
+\item[{const std\-::vector$<$ {\bf T\-Descriptor} $>$ \&}]{descriptors, }
+\item[{cv\-::\-Mat \&}]{mat}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classDBoW2_1_1FORB_a67b90eaed01dd54e380237c78886635f}
+Returns a mat with the descriptors in float format 
+\begin{DoxyParams}{参数}
+{\em descriptors} & \\
+\hline
+{\em mat} & (out) Nx\-L 32\-F matrix \\
+\hline
+\end{DoxyParams}
+
+
+在文件 F\-O\-R\-B.\-cpp 第 140 行定义.
+
+\hypertarget{classDBoW2_1_1FORB_a3c0ce0fd04ecd52b25b97d253fb922ea}{\index{D\-Bo\-W2\-::\-F\-O\-R\-B@{D\-Bo\-W2\-::\-F\-O\-R\-B}!to\-String@{to\-String}}
+\index{to\-String@{to\-String}!DBoW2::FORB@{D\-Bo\-W2\-::\-F\-O\-R\-B}}
+\subsubsection[{to\-String}]{\setlength{\rightskip}{0pt plus 5cm}std\-::string D\-Bo\-W2\-::\-F\-O\-R\-B\-::to\-String (
+\begin{DoxyParamCaption}
+\item[{const {\bf T\-Descriptor} \&}]{a}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classDBoW2_1_1FORB_a3c0ce0fd04ecd52b25b97d253fb922ea}
+Returns a string version of the descriptor 
+\begin{DoxyParams}{参数}
+{\em a} & descriptor \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+string version 
+\end{DoxyReturn}
+
+
+在文件 F\-O\-R\-B.\-cpp 第 106 行定义.
+
+
+
+该类的文档由以下文件生成\-:\begin{DoxyCompactItemize}
+\item 
+Thirdparty/\-D\-Bo\-W2/\-D\-Bo\-W2/F\-O\-R\-B.\-h\item 
+Thirdparty/\-D\-Bo\-W2/\-D\-Bo\-W2/F\-O\-R\-B.\-cpp\end{DoxyCompactItemize}

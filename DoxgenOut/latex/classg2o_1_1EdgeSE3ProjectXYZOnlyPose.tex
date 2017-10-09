@@ -1,0 +1,234 @@
+\hypertarget{classg2o_1_1EdgeSE3ProjectXYZOnlyPose}{\section{g2o\-:\-:Edge\-S\-E3\-Project\-X\-Y\-Z\-Only\-Pose类 参考}
+\label{classg2o_1_1EdgeSE3ProjectXYZOnlyPose}\index{g2o\-::\-Edge\-S\-E3\-Project\-X\-Y\-Z\-Only\-Pose@{g2o\-::\-Edge\-S\-E3\-Project\-X\-Y\-Z\-Only\-Pose}}
+}
+
+
+N\-O\-T\-E uesd in Optimizer\-::\-Pose\-Optimization()  
+
+
+
+
+{\ttfamily \#include $<$types\-\_\-six\-\_\-dof\-\_\-expmap.\-h$>$}
+
+
+
+类 g2o\-:\-:Edge\-S\-E3\-Project\-X\-Y\-Z\-Only\-Pose 继承关系图\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=254pt]{classg2o_1_1EdgeSE3ProjectXYZOnlyPose__inherit__graph}
+\end{center}
+\end{figure}
+
+
+g2o\-:\-:Edge\-S\-E3\-Project\-X\-Y\-Z\-Only\-Pose 的协作图\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=336pt]{classg2o_1_1EdgeSE3ProjectXYZOnlyPose__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classg2o_1_1EdgeSE3ProjectXYZOnlyPose_a28994ddf2cab7b61566ce55ad4b43388}{bool \hyperlink{classg2o_1_1EdgeSE3ProjectXYZOnlyPose_a28994ddf2cab7b61566ce55ad4b43388}{read} (std\-::istream \&is)}\label{classg2o_1_1EdgeSE3ProjectXYZOnlyPose_a28994ddf2cab7b61566ce55ad4b43388}
+
+\begin{DoxyCompactList}\small\item\em read the vertex from a stream, i.\-e., the internal state of the vertex \end{DoxyCompactList}\item 
+\hypertarget{classg2o_1_1EdgeSE3ProjectXYZOnlyPose_a5bf685170d6b17908b2a70ccc7e40904}{bool \hyperlink{classg2o_1_1EdgeSE3ProjectXYZOnlyPose_a5bf685170d6b17908b2a70ccc7e40904}{write} (std\-::ostream \&os) const }\label{classg2o_1_1EdgeSE3ProjectXYZOnlyPose_a5bf685170d6b17908b2a70ccc7e40904}
+
+\begin{DoxyCompactList}\small\item\em write the vertex to a stream \end{DoxyCompactList}\item 
+void \hyperlink{classg2o_1_1EdgeSE3ProjectXYZOnlyPose_a6752098d3322d30e43a6a3a668a3b009}{compute\-Error} ()
+\item 
+bool \hyperlink{classg2o_1_1EdgeSE3ProjectXYZOnlyPose_abd6f619de5af8855c8ee21fcfad51c9e}{is\-Depth\-Positive} ()
+\item 
+virtual void \hyperlink{classg2o_1_1EdgeSE3ProjectXYZOnlyPose_abe6d775aade1277786274c328aa2c38b}{linearize\-Oplus} ()
+\begin{DoxyCompactList}\small\item\em Linearization. \end{DoxyCompactList}\item 
+Vector2d \hyperlink{classg2o_1_1EdgeSE3ProjectXYZOnlyPose_a28af528a4bf0f76988896fc320ba6a64}{cam\-\_\-project} (const Vector3d \&trans\-\_\-xyz) const 
+\end{DoxyCompactItemize}
+\subsection*{Public 属性}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classg2o_1_1EdgeSE3ProjectXYZOnlyPose_a66318605e8e9c2276b100cf73e718ea8}{Vector3d \hyperlink{classg2o_1_1EdgeSE3ProjectXYZOnlyPose_a66318605e8e9c2276b100cf73e718ea8}{Xw}}\label{classg2o_1_1EdgeSE3ProjectXYZOnlyPose_a66318605e8e9c2276b100cf73e718ea8}
+
+\begin{DoxyCompactList}\small\item\em Map\-Point在世界坐标系的位置 \end{DoxyCompactList}\item 
+\hypertarget{classg2o_1_1EdgeSE3ProjectXYZOnlyPose_a413ca1179697e29d5476f582d2b29ff6}{double {\bfseries fx}}\label{classg2o_1_1EdgeSE3ProjectXYZOnlyPose_a413ca1179697e29d5476f582d2b29ff6}
+
+\item 
+\hypertarget{classg2o_1_1EdgeSE3ProjectXYZOnlyPose_a2f645f770962dc9d8c4862c0c6dbb497}{double {\bfseries fy}}\label{classg2o_1_1EdgeSE3ProjectXYZOnlyPose_a2f645f770962dc9d8c4862c0c6dbb497}
+
+\item 
+\hypertarget{classg2o_1_1EdgeSE3ProjectXYZOnlyPose_ab4d7078a2d9a628afd6022c983843904}{double {\bfseries cx}}\label{classg2o_1_1EdgeSE3ProjectXYZOnlyPose_ab4d7078a2d9a628afd6022c983843904}
+
+\item 
+\hypertarget{classg2o_1_1EdgeSE3ProjectXYZOnlyPose_aa6f6f24382d0f9b03d6ae47747e6d95d}{double \hyperlink{classg2o_1_1EdgeSE3ProjectXYZOnlyPose_aa6f6f24382d0f9b03d6ae47747e6d95d}{cy}}\label{classg2o_1_1EdgeSE3ProjectXYZOnlyPose_aa6f6f24382d0f9b03d6ae47747e6d95d}
+
+\begin{DoxyCompactList}\small\item\em 内参数 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{额外继承的成员函数}
+
+
+\subsection{详细描述}
+N\-O\-T\-E uesd in Optimizer\-::\-Pose\-Optimization() 
+
+在文件 types\-\_\-six\-\_\-dof\-\_\-expmap.\-h 第 210 行定义.
+
+
+
+\subsection{成员函数说明}
+\hypertarget{classg2o_1_1EdgeSE3ProjectXYZOnlyPose_a28af528a4bf0f76988896fc320ba6a64}{\index{g2o\-::\-Edge\-S\-E3\-Project\-X\-Y\-Z\-Only\-Pose@{g2o\-::\-Edge\-S\-E3\-Project\-X\-Y\-Z\-Only\-Pose}!cam\-\_\-project@{cam\-\_\-project}}
+\index{cam\-\_\-project@{cam\-\_\-project}!g2o::EdgeSE3ProjectXYZOnlyPose@{g2o\-::\-Edge\-S\-E3\-Project\-X\-Y\-Z\-Only\-Pose}}
+\subsubsection[{cam\-\_\-project}]{\setlength{\rightskip}{0pt plus 5cm}Vector2d g2o\-::\-Edge\-S\-E3\-Project\-X\-Y\-Z\-Only\-Pose\-::cam\-\_\-project (
+\begin{DoxyParamCaption}
+\item[{const Vector3d \&}]{trans\-\_\-xyz}
+\end{DoxyParamCaption}
+) const}}\label{classg2o_1_1EdgeSE3ProjectXYZOnlyPose_a28af528a4bf0f76988896fc320ba6a64}
+将\-Xw投影到cam的图像坐标系 \par
+ $ u = \frac{f_x X}{Z} + c_x $ \par
+ $ v = \frac{f_y Y}{Z} + c_v $ \par
+
+\begin{DoxyParams}{参数}
+{\em trans\-\_\-xyz} & \mbox{[}X Y Z\mbox{]} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+\mbox{[}u v\mbox{]} 
+\end{DoxyReturn}
+
+
+在文件 types\-\_\-six\-\_\-dof\-\_\-expmap.\-cpp 第 310 行定义.
+
+
+
+参考 cy.
+
+\hypertarget{classg2o_1_1EdgeSE3ProjectXYZOnlyPose_a6752098d3322d30e43a6a3a668a3b009}{\index{g2o\-::\-Edge\-S\-E3\-Project\-X\-Y\-Z\-Only\-Pose@{g2o\-::\-Edge\-S\-E3\-Project\-X\-Y\-Z\-Only\-Pose}!compute\-Error@{compute\-Error}}
+\index{compute\-Error@{compute\-Error}!g2o::EdgeSE3ProjectXYZOnlyPose@{g2o\-::\-Edge\-S\-E3\-Project\-X\-Y\-Z\-Only\-Pose}}
+\subsubsection[{compute\-Error}]{\setlength{\rightskip}{0pt plus 5cm}void g2o\-::\-Edge\-S\-E3\-Project\-X\-Y\-Z\-Only\-Pose\-::compute\-Error (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classg2o_1_1EdgeSE3ProjectXYZOnlyPose_a6752098d3322d30e43a6a3a668a3b009}
+重投影误差 
+
+实现了 \hyperlink{classg2o_1_1OptimizableGraph_1_1Edge}{g2o\-::\-Optimizable\-Graph\-::\-Edge}.
+
+
+
+在文件 types\-\_\-six\-\_\-dof\-\_\-expmap.\-h 第 223 行定义.
+
+
+
+参考 g2o\-::\-Base\-Vertex$<$ D, T $>$\-::estimate().
+
+
+
+参考自 O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Optimizer\-::\-Pose\-Optimization().
+
+
+
+函数调用图\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classg2o_1_1EdgeSE3ProjectXYZOnlyPose_a6752098d3322d30e43a6a3a668a3b009_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+这是这个函数的调用关系图\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classg2o_1_1EdgeSE3ProjectXYZOnlyPose_a6752098d3322d30e43a6a3a668a3b009_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classg2o_1_1EdgeSE3ProjectXYZOnlyPose_abd6f619de5af8855c8ee21fcfad51c9e}{\index{g2o\-::\-Edge\-S\-E3\-Project\-X\-Y\-Z\-Only\-Pose@{g2o\-::\-Edge\-S\-E3\-Project\-X\-Y\-Z\-Only\-Pose}!is\-Depth\-Positive@{is\-Depth\-Positive}}
+\index{is\-Depth\-Positive@{is\-Depth\-Positive}!g2o::EdgeSE3ProjectXYZOnlyPose@{g2o\-::\-Edge\-S\-E3\-Project\-X\-Y\-Z\-Only\-Pose}}
+\subsubsection[{is\-Depth\-Positive}]{\setlength{\rightskip}{0pt plus 5cm}bool g2o\-::\-Edge\-S\-E3\-Project\-X\-Y\-Z\-Only\-Pose\-::is\-Depth\-Positive (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classg2o_1_1EdgeSE3ProjectXYZOnlyPose_abd6f619de5af8855c8ee21fcfad51c9e}
+检验 $ TX_w $的\-Z是否大于0 \begin{DoxyReturn}{返回}
+true if the depth is Positive 
+\end{DoxyReturn}
+
+
+在文件 types\-\_\-six\-\_\-dof\-\_\-expmap.\-h 第 233 行定义.
+
+
+
+参考 g2o\-::\-Base\-Vertex$<$ D, T $>$\-::estimate().
+
+
+
+函数调用图\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classg2o_1_1EdgeSE3ProjectXYZOnlyPose_abd6f619de5af8855c8ee21fcfad51c9e_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classg2o_1_1EdgeSE3ProjectXYZOnlyPose_abe6d775aade1277786274c328aa2c38b}{\index{g2o\-::\-Edge\-S\-E3\-Project\-X\-Y\-Z\-Only\-Pose@{g2o\-::\-Edge\-S\-E3\-Project\-X\-Y\-Z\-Only\-Pose}!linearize\-Oplus@{linearize\-Oplus}}
+\index{linearize\-Oplus@{linearize\-Oplus}!g2o::EdgeSE3ProjectXYZOnlyPose@{g2o\-::\-Edge\-S\-E3\-Project\-X\-Y\-Z\-Only\-Pose}}
+\subsubsection[{linearize\-Oplus}]{\setlength{\rightskip}{0pt plus 5cm}void g2o\-::\-Edge\-S\-E3\-Project\-X\-Y\-Z\-Only\-Pose\-::linearize\-Oplus (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classg2o_1_1EdgeSE3ProjectXYZOnlyPose_abe6d775aade1277786274c328aa2c38b}
+
+
+Linearization. 
+
+误差函数对增量\mbox{[}w1 w2 w3 v1 v2 v3\mbox{]}求雅克比矩阵 $J_{2\times6}$ $ = \frac{\partial [obs - \Pi(exp(\hat{\xi}) T X_w)]}{\partial \xi} $ \begin{DoxyNote}{注解}
+\-\_\-jacobian\-Oplus\-Xi，雅可比矩阵的正负号没有关系 
+\end{DoxyNote}
+\begin{DoxySeeAlso}{参见}
+采用链式法则求解, 参考(注意以下参考的增量定义为\mbox{[}v1 v2 v3 w1 w2 w3\mbox{]})
+\begin{DoxyItemize}
+\item jlblanco2010geometry3d\-\_\-techrep.\-pdf p56 (A.\-2) 推荐
+\item strasdat\-\_\-thesis\-\_\-2012.\-pdf p194 (B.\-4)
+\end{DoxyItemize}
+\end{DoxySeeAlso}
+线性化, 只对位姿vi求导
+
+\-\_\-jacobian\-Oplus\-Xi是重投影误差关于位姿vj的导数 xyz\-\_\-trans是路标在新一帧相机坐标系下的估计位置(3\-D),优化时用逆深度. 
+
+重载 \hyperlink{classg2o_1_1BaseUnaryEdge_a367f19b903938faf6e89dd1b0e4e722b}{g2o\-::\-Base\-Unary\-Edge$<$ 2, Vector2d, Vertex\-S\-E3\-Expmap $>$} .
+
+
+
+在文件 types\-\_\-six\-\_\-dof\-\_\-expmap.\-cpp 第 285 行定义.
+
+
+
+参考 g2o\-::\-Base\-Vertex$<$ D, T $>$\-::estimate() , 以及 Xw.
+
+
+
+函数调用图\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classg2o_1_1EdgeSE3ProjectXYZOnlyPose_abe6d775aade1277786274c328aa2c38b_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+该类的文档由以下文件生成\-:\begin{DoxyCompactItemize}
+\item 
+Thirdparty/g2o/g2o/types/types\-\_\-six\-\_\-dof\-\_\-expmap.\-h\item 
+Thirdparty/g2o/g2o/types/types\-\_\-six\-\_\-dof\-\_\-expmap.\-cpp\end{DoxyCompactItemize}

@@ -1,0 +1,139 @@
+\hypertarget{classg2o_1_1SparseBlockMatrixCCS}{\section{g2o\-:\-:Sparse\-Block\-Matrix\-C\-C\-S$<$ Matrix\-Type $>$ 模板类 参考}
+\label{classg2o_1_1SparseBlockMatrixCCS}\index{g2o\-::\-Sparse\-Block\-Matrix\-C\-C\-S$<$ Matrix\-Type $>$@{g2o\-::\-Sparse\-Block\-Matrix\-C\-C\-S$<$ Matrix\-Type $>$}}
+}
+
+
+Sparse matrix which uses blocks.  
+
+
+
+
+{\ttfamily \#include $<$sparse\-\_\-block\-\_\-matrix\-\_\-ccs.\-h$>$}
+
+\subsection*{类}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structg2o_1_1SparseBlockMatrixCCS_1_1RowBlock}{Row\-Block}
+\begin{DoxyCompactList}\small\item\em A block within a column. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public 类型}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classg2o_1_1SparseBlockMatrixCCS_a41ea1c8c9d94a25544903ae8345c0354}{typedef Matrix\-Type \hyperlink{classg2o_1_1SparseBlockMatrixCCS_a41ea1c8c9d94a25544903ae8345c0354}{Sparse\-Matrix\-Block}}\label{classg2o_1_1SparseBlockMatrixCCS_a41ea1c8c9d94a25544903ae8345c0354}
+
+\begin{DoxyCompactList}\small\item\em this is the type of the elementary block, it is an Eigen\-::\-Matrix. \end{DoxyCompactList}\item 
+\hypertarget{classg2o_1_1SparseBlockMatrixCCS_a4fc5dfe0a9ff9bd62065ca4b17f25bc1}{typedef std\-::vector$<$ \hyperlink{structg2o_1_1SparseBlockMatrixCCS_1_1RowBlock}{Row\-Block} $>$ {\bfseries Sparse\-Column}}\label{classg2o_1_1SparseBlockMatrixCCS_a4fc5dfe0a9ff9bd62065ca4b17f25bc1}
+
+\end{DoxyCompactItemize}
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classg2o_1_1SparseBlockMatrixCCS_a4f04707008af38a3c368eed74ad0bffc}{int \hyperlink{classg2o_1_1SparseBlockMatrixCCS_a4f04707008af38a3c368eed74ad0bffc}{cols} () const }\label{classg2o_1_1SparseBlockMatrixCCS_a4f04707008af38a3c368eed74ad0bffc}
+
+\begin{DoxyCompactList}\small\item\em columns of the matrix \end{DoxyCompactList}\item 
+\hypertarget{classg2o_1_1SparseBlockMatrixCCS_ac40b53774ff036f56faaa0bfb87837c0}{int \hyperlink{classg2o_1_1SparseBlockMatrixCCS_ac40b53774ff036f56faaa0bfb87837c0}{rows} () const }\label{classg2o_1_1SparseBlockMatrixCCS_ac40b53774ff036f56faaa0bfb87837c0}
+
+\begin{DoxyCompactList}\small\item\em rows of the matrix \end{DoxyCompactList}\item 
+\hypertarget{classg2o_1_1SparseBlockMatrixCCS_abaeeb7ad0ba28f37dba85601882806f1}{{\bfseries Sparse\-Block\-Matrix\-C\-C\-S} (const std\-::vector$<$ int $>$ \&row\-Indices, const std\-::vector$<$ int $>$ \&col\-Indices)}\label{classg2o_1_1SparseBlockMatrixCCS_abaeeb7ad0ba28f37dba85601882806f1}
+
+\item 
+\hypertarget{classg2o_1_1SparseBlockMatrixCCS_a5152d431cdd268586dcde5cf79a5f202}{int \hyperlink{classg2o_1_1SparseBlockMatrixCCS_a5152d431cdd268586dcde5cf79a5f202}{rows\-Of\-Block} (int r) const }\label{classg2o_1_1SparseBlockMatrixCCS_a5152d431cdd268586dcde5cf79a5f202}
+
+\begin{DoxyCompactList}\small\item\em how many rows does the block at block-\/row r has? \end{DoxyCompactList}\item 
+\hypertarget{classg2o_1_1SparseBlockMatrixCCS_a268101f9f1e179fdac973f9c565c168d}{int \hyperlink{classg2o_1_1SparseBlockMatrixCCS_a268101f9f1e179fdac973f9c565c168d}{cols\-Of\-Block} (int c) const }\label{classg2o_1_1SparseBlockMatrixCCS_a268101f9f1e179fdac973f9c565c168d}
+
+\begin{DoxyCompactList}\small\item\em how many cols does the block at block-\/col c has? \end{DoxyCompactList}\item 
+\hypertarget{classg2o_1_1SparseBlockMatrixCCS_a8b35a98d3343554699811f682042a647}{int \hyperlink{classg2o_1_1SparseBlockMatrixCCS_a8b35a98d3343554699811f682042a647}{row\-Base\-Of\-Block} (int r) const }\label{classg2o_1_1SparseBlockMatrixCCS_a8b35a98d3343554699811f682042a647}
+
+\begin{DoxyCompactList}\small\item\em where does the row at block-\/row r start? \end{DoxyCompactList}\item 
+\hypertarget{classg2o_1_1SparseBlockMatrixCCS_a3a2820367f643881ebd0a45f2cd0c9be}{int \hyperlink{classg2o_1_1SparseBlockMatrixCCS_a3a2820367f643881ebd0a45f2cd0c9be}{col\-Base\-Of\-Block} (int c) const }\label{classg2o_1_1SparseBlockMatrixCCS_a3a2820367f643881ebd0a45f2cd0c9be}
+
+\begin{DoxyCompactList}\small\item\em where does the col at block-\/col r start? \end{DoxyCompactList}\item 
+\hypertarget{classg2o_1_1SparseBlockMatrixCCS_ae43c6599984015bdc3d481266e1555ea}{const std\-::vector$<$ Sparse\-Column $>$ \& \hyperlink{classg2o_1_1SparseBlockMatrixCCS_ae43c6599984015bdc3d481266e1555ea}{block\-Cols} () const }\label{classg2o_1_1SparseBlockMatrixCCS_ae43c6599984015bdc3d481266e1555ea}
+
+\begin{DoxyCompactList}\small\item\em the block matrices per block-\/column \end{DoxyCompactList}\item 
+\hypertarget{classg2o_1_1SparseBlockMatrixCCS_a5a9ef3cd8399a335edec8b7e934192b8}{std\-::vector$<$ Sparse\-Column $>$ \& {\bfseries block\-Cols} ()}\label{classg2o_1_1SparseBlockMatrixCCS_a5a9ef3cd8399a335edec8b7e934192b8}
+
+\item 
+\hypertarget{classg2o_1_1SparseBlockMatrixCCS_ad64c68168586e5088e767ca74ca8ba46}{const std\-::vector$<$ int $>$ \& \hyperlink{classg2o_1_1SparseBlockMatrixCCS_ad64c68168586e5088e767ca74ca8ba46}{row\-Block\-Indices} () const }\label{classg2o_1_1SparseBlockMatrixCCS_ad64c68168586e5088e767ca74ca8ba46}
+
+\begin{DoxyCompactList}\small\item\em indices of the row blocks \end{DoxyCompactList}\item 
+\hypertarget{classg2o_1_1SparseBlockMatrixCCS_af36057337dbc4376e44f74baaf18992a}{const std\-::vector$<$ int $>$ \& \hyperlink{classg2o_1_1SparseBlockMatrixCCS_af36057337dbc4376e44f74baaf18992a}{col\-Block\-Indices} () const }\label{classg2o_1_1SparseBlockMatrixCCS_af36057337dbc4376e44f74baaf18992a}
+
+\begin{DoxyCompactList}\small\item\em indices of the column blocks \end{DoxyCompactList}\item 
+\hypertarget{classg2o_1_1SparseBlockMatrixCCS_a6d9393fa3950a7cefc7f9ca58ccede64}{void {\bfseries right\-Multiply} (double $\ast$\&dest, const double $\ast$src) const }\label{classg2o_1_1SparseBlockMatrixCCS_a6d9393fa3950a7cefc7f9ca58ccede64}
+
+\item 
+void \hyperlink{classg2o_1_1SparseBlockMatrixCCS_a6500e67cc29b3fe51bc40930d97d0ac5}{sort\-Columns} ()
+\item 
+int \hyperlink{classg2o_1_1SparseBlockMatrixCCS_a6dfde3d314a5334c850ab825df8de77a}{fill\-C\-C\-S} (int $\ast$Cp, int $\ast$Ci, double $\ast$Cx, bool upper\-Triangle=false) const 
+\item 
+int \hyperlink{classg2o_1_1SparseBlockMatrixCCS_adab44f6a330393be5f593659a5e7c7bd}{fill\-C\-C\-S} (double $\ast$Cx, bool upper\-Triangle=false) const 
+\end{DoxyCompactItemize}
+\subsection*{Protected 属性}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classg2o_1_1SparseBlockMatrixCCS_afabda9a2efe5ea9efb5a1e5312f6e307}{const std\-::vector$<$ int $>$ \& \hyperlink{classg2o_1_1SparseBlockMatrixCCS_afabda9a2efe5ea9efb5a1e5312f6e307}{\-\_\-row\-Block\-Indices}}\label{classg2o_1_1SparseBlockMatrixCCS_afabda9a2efe5ea9efb5a1e5312f6e307}
+
+\begin{DoxyCompactList}\small\item\em vector of the indices of the blocks along the rows. \end{DoxyCompactList}\item 
+\hypertarget{classg2o_1_1SparseBlockMatrixCCS_ae31426bfb6b31bd0fd72de2e18dd5a35}{const std\-::vector$<$ int $>$ \& \hyperlink{classg2o_1_1SparseBlockMatrixCCS_ae31426bfb6b31bd0fd72de2e18dd5a35}{\-\_\-col\-Block\-Indices}}\label{classg2o_1_1SparseBlockMatrixCCS_ae31426bfb6b31bd0fd72de2e18dd5a35}
+
+\begin{DoxyCompactList}\small\item\em vector of the indices of the blocks along the cols \end{DoxyCompactList}\item 
+\hypertarget{classg2o_1_1SparseBlockMatrixCCS_ab6b173607380a367cc1cd67442c1c3e2}{std\-::vector$<$ Sparse\-Column $>$ \hyperlink{classg2o_1_1SparseBlockMatrixCCS_ab6b173607380a367cc1cd67442c1c3e2}{\-\_\-block\-Cols}}\label{classg2o_1_1SparseBlockMatrixCCS_ab6b173607380a367cc1cd67442c1c3e2}
+
+\begin{DoxyCompactList}\small\item\em the matrices stored in C\-C\-S order \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{详细描述}
+\subsubsection*{template$<$class Matrix\-Type$>$class g2o\-::\-Sparse\-Block\-Matrix\-C\-C\-S$<$ Matrix\-Type $>$}
+
+Sparse matrix which uses blocks. 
+
+This class is used as a const view on a \hyperlink{classg2o_1_1SparseBlockMatrix}{Sparse\-Block\-Matrix} which allows a faster iteration over the elements of the matrix. 
+
+在文件 sparse\-\_\-block\-\_\-matrix\-\_\-ccs.\-h 第 55 行定义.
+
+
+
+\subsection{成员函数说明}
+\hypertarget{classg2o_1_1SparseBlockMatrixCCS_a6dfde3d314a5334c850ab825df8de77a}{\index{g2o\-::\-Sparse\-Block\-Matrix\-C\-C\-S@{g2o\-::\-Sparse\-Block\-Matrix\-C\-C\-S}!fill\-C\-C\-S@{fill\-C\-C\-S}}
+\index{fill\-C\-C\-S@{fill\-C\-C\-S}!g2o::SparseBlockMatrixCCS@{g2o\-::\-Sparse\-Block\-Matrix\-C\-C\-S}}
+\subsubsection[{fill\-C\-C\-S}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Matrix\-Type$>$ int {\bf g2o\-::\-Sparse\-Block\-Matrix\-C\-C\-S}$<$ Matrix\-Type $>$\-::fill\-C\-C\-S (
+\begin{DoxyParamCaption}
+\item[{int $\ast$}]{Cp, }
+\item[{int $\ast$}]{Ci, }
+\item[{double $\ast$}]{Cx, }
+\item[{bool}]{upper\-Triangle = {\ttfamily false}}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classg2o_1_1SparseBlockMatrixCCS_a6dfde3d314a5334c850ab825df8de77a}
+fill the C\-C\-S arrays of a matrix, arrays have to be allocated beforehand 
+
+在文件 sparse\-\_\-block\-\_\-matrix\-\_\-ccs.\-h 第 146 行定义.
+
+\hypertarget{classg2o_1_1SparseBlockMatrixCCS_adab44f6a330393be5f593659a5e7c7bd}{\index{g2o\-::\-Sparse\-Block\-Matrix\-C\-C\-S@{g2o\-::\-Sparse\-Block\-Matrix\-C\-C\-S}!fill\-C\-C\-S@{fill\-C\-C\-S}}
+\index{fill\-C\-C\-S@{fill\-C\-C\-S}!g2o::SparseBlockMatrixCCS@{g2o\-::\-Sparse\-Block\-Matrix\-C\-C\-S}}
+\subsubsection[{fill\-C\-C\-S}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Matrix\-Type$>$ int {\bf g2o\-::\-Sparse\-Block\-Matrix\-C\-C\-S}$<$ Matrix\-Type $>$\-::fill\-C\-C\-S (
+\begin{DoxyParamCaption}
+\item[{double $\ast$}]{Cx, }
+\item[{bool}]{upper\-Triangle = {\ttfamily false}}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classg2o_1_1SparseBlockMatrixCCS_adab44f6a330393be5f593659a5e7c7bd}
+fill the C\-C\-S arrays of a matrix, arrays have to be allocated beforehand. This function only writes the values and assumes that column and row structures have already been written. 
+
+在文件 sparse\-\_\-block\-\_\-matrix\-\_\-ccs.\-h 第 179 行定义.
+
+\hypertarget{classg2o_1_1SparseBlockMatrixCCS_a6500e67cc29b3fe51bc40930d97d0ac5}{\index{g2o\-::\-Sparse\-Block\-Matrix\-C\-C\-S@{g2o\-::\-Sparse\-Block\-Matrix\-C\-C\-S}!sort\-Columns@{sort\-Columns}}
+\index{sort\-Columns@{sort\-Columns}!g2o::SparseBlockMatrixCCS@{g2o\-::\-Sparse\-Block\-Matrix\-C\-C\-S}}
+\subsubsection[{sort\-Columns}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Matrix\-Type$>$ void {\bf g2o\-::\-Sparse\-Block\-Matrix\-C\-C\-S}$<$ Matrix\-Type $>$\-::sort\-Columns (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classg2o_1_1SparseBlockMatrixCCS_a6500e67cc29b3fe51bc40930d97d0ac5}
+sort the blocks in each column 
+
+在文件 sparse\-\_\-block\-\_\-matrix\-\_\-ccs.\-h 第 136 行定义.
+
+
+
+该类的文档由以下文件生成\-:\begin{DoxyCompactItemize}
+\item 
+Thirdparty/g2o/g2o/core/sparse\-\_\-block\-\_\-matrix\-\_\-ccs.\-h\end{DoxyCompactItemize}

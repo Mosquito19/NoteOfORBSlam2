@@ -1,0 +1,15 @@
+<map id="g2o::EstimatePropagator::AdjacencyMapEntry" name="g2o::EstimatePropagator::AdjacencyMapEntry">
+<area shape="rect" id="node2" href="$classg2o_1_1OptimizableGraph_1_1Vertex.html" title="A general case Vertex for optimization. " alt="" coords="987,146,1141,187"/>
+<area shape="rect" id="node5" href="$classg2o_1_1CacheContainer.html" title="g2o::CacheContainer" alt="" coords="1326,116,1471,143"/>
+<area shape="rect" id="node3" href="$classg2o_1_1HyperGraph_1_1Vertex.html" title="abstract Vertex, your types must derive from that one " alt="" coords="619,212,786,239"/>
+<area shape="rect" id="node4" href="$structg2o_1_1HyperGraph_1_1HyperGraphElement.html" title="g2o::HyperGraph::HyperGraph\lElement" alt="" coords="246,205,445,246"/>
+<area shape="rect" id="node13" href="$classg2o_1_1OptimizableGraph_1_1Data.html" title="data packet for a vertex. Extend this class to store in the vertices the potential additional informa..." alt="" coords="625,146,780,187"/>
+<area shape="rect" id="node15" href="$classg2o_1_1HyperGraph_1_1Edge.html" title="g2o::HyperGraph::Edge" alt="" coords="623,313,782,340"/>
+<area shape="rect" id="node7" href="$structg2o_1_1OptimizableGraph.html" title="g2o::OptimizableGraph" alt="" coords="625,56,780,83"/>
+<area shape="rect" id="node8" href="$classg2o_1_1HyperGraph.html" title="g2o::HyperGraph" alt="" coords="285,107,406,133"/>
+<area shape="rect" id="node9" href="$classg2o_1_1JacobianWorkspace.html" title="provide memory workspace for computing the Jacobians " alt="" coords="261,5,430,32"/>
+<area shape="rect" id="node10" href="$classg2o_1_1ParameterContainer.html" title="map id to parameters " alt="" coords="262,56,429,83"/>
+<area shape="rect" id="node12" href="$classg2o_1_1OpenMPMutex.html" title="g2o::OpenMPMutex" alt="" coords="633,5,772,32"/>
+<area shape="rect" id="node14" href="$classg2o_1_1OptimizableGraph_1_1Edge.html" title="g2o::OptimizableGraph\l::Edge" alt="" coords="987,255,1141,297"/>
+<area shape="rect" id="node16" href="$classg2o_1_1RobustKernel.html" title="base for all robust cost functions " alt="" coords="637,263,768,289"/>
+</map>

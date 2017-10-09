@@ -1,0 +1,424 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.6"/>
+<title>My Project: DBoW2::BowVector类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">My Project
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.6 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="pages.html"><span>相关页面</span></a></li>
+      <li><a href="modules.html"><span>模块</span></a></li>
+      <li><a href="namespaces.html"><span>命名空间</span></a></li>
+      <li class="current"><a href="annotated.html"><span>类</span></a></li>
+      <li><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>类列表</span></a></li>
+      <li><a href="classes.html"><span>类索引</span></a></li>
+      <li><a href="inherits.html"><span>类继承关系</span></a></li>
+      <li><a href="functions.html"><span>类成员</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('classDBoW2_1_1BowVector.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>命名空间</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>友元</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>组</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>页</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#friends">友元</a> &#124;
+<a href="classDBoW2_1_1BowVector-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">DBoW2::BowVector类 参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="BowVector_8h_source.html">BowVector.h</a>&gt;</code></p>
+<div class="dynheader">
+类 DBoW2::BowVector 继承关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classDBoW2_1_1BowVector__inherit__graph.png" border="0" usemap="#DBoW2_1_1BowVector_inherit__map" alt="Inheritance graph"/></div>
+<map name="DBoW2_1_1BowVector_inherit__map" id="DBoW2_1_1BowVector_inherit__map">
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">图例</a>]</span></center></div>
+<div class="dynheader">
+DBoW2::BowVector 的协作图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classDBoW2_1_1BowVector__coll__graph.png" border="0" usemap="#DBoW2_1_1BowVector_coll__map" alt="Collaboration graph"/></div>
+<map name="DBoW2_1_1BowVector_coll__map" id="DBoW2_1_1BowVector_coll__map">
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">图例</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:ac4da23e700adc4ee083d66b23ce86e90"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDBoW2_1_1BowVector.html#ac4da23e700adc4ee083d66b23ce86e90">BowVector</a> (void)</td></tr>
+<tr class="separator:ac4da23e700adc4ee083d66b23ce86e90"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7210cac6ce006c7232f4d097faa338d0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDBoW2_1_1BowVector.html#a7210cac6ce006c7232f4d097faa338d0">~BowVector</a> (void)</td></tr>
+<tr class="separator:a7210cac6ce006c7232f4d097faa338d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3ac92a805b252c93dc6535240d02df47"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDBoW2_1_1BowVector.html#a3ac92a805b252c93dc6535240d02df47">addWeight</a> (<a class="el" href="namespaceDBoW2.html#ab1a0d3283b2d4690a383372ed20bfeb5">WordId</a> id, <a class="el" href="namespaceDBoW2.html#a55fcd7333e591a38e96b91f41bc182f6">WordValue</a> v)</td></tr>
+<tr class="separator:a3ac92a805b252c93dc6535240d02df47"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ddf10e444d10425e5bd3568dc7ffe5e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDBoW2_1_1BowVector.html#a5ddf10e444d10425e5bd3568dc7ffe5e">addIfNotExist</a> (<a class="el" href="namespaceDBoW2.html#ab1a0d3283b2d4690a383372ed20bfeb5">WordId</a> id, <a class="el" href="namespaceDBoW2.html#a55fcd7333e591a38e96b91f41bc182f6">WordValue</a> v)</td></tr>
+<tr class="separator:a5ddf10e444d10425e5bd3568dc7ffe5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acd2dd34023e3053a4cc75d70c8b6ac13"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDBoW2_1_1BowVector.html#acd2dd34023e3053a4cc75d70c8b6ac13">normalize</a> (<a class="el" href="namespaceDBoW2.html#a53e9e0bcfc25c861815e413a7cf3fa51">LNorm</a> norm_type)</td></tr>
+<tr class="separator:acd2dd34023e3053a4cc75d70c8b6ac13"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af15c4fde81b89e0f76a00337883b6b4a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDBoW2_1_1BowVector.html#af15c4fde81b89e0f76a00337883b6b4a">saveM</a> (const std::string &amp;filename, size_t W) const </td></tr>
+<tr class="separator:af15c4fde81b89e0f76a00337883b6b4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
+友元</h2></td></tr>
+<tr class="memitem:a1a7d9ac0f9128538859adfea38453ae1"><td class="memItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDBoW2_1_1BowVector.html#a1a7d9ac0f9128538859adfea38453ae1">operator&lt;&lt;</a> (std::ostream &amp;out, const <a class="el" href="classDBoW2_1_1BowVector.html">BowVector</a> &amp;v)</td></tr>
+<tr class="separator:a1a7d9ac0f9128538859adfea38453ae1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>Vector of words to represent images stl的map结构，key为wordId，value为tfidf中的tf </p>
+
+<p>在文件 <a class="el" href="BowVector_8h_source.html">BowVector.h</a> 第 <a class="el" href="BowVector_8h_source.html#l00059">59</a> 行定义.</p>
+</div><h2 class="groupheader">构造及析构函数说明</h2>
+<a class="anchor" id="ac4da23e700adc4ee083d66b23ce86e90"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">DBoW2::BowVector::BowVector </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Constructor </p>
+
+<p>在文件 <a class="el" href="BowVector_8cpp_source.html">BowVector.cpp</a> 第 <a class="el" href="BowVector_8cpp_source.html#l00022">22</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a7210cac6ce006c7232f4d097faa338d0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">DBoW2::BowVector::~BowVector </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Destructor </p>
+
+<p>在文件 <a class="el" href="BowVector_8cpp_source.html">BowVector.cpp</a> 第 <a class="el" href="BowVector_8cpp_source.html#l00028">28</a> 行定义.</p>
+
+</div>
+</div>
+<h2 class="groupheader">成员函数说明</h2>
+<a class="anchor" id="a5ddf10e444d10425e5bd3568dc7ffe5e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DBoW2::BowVector::addIfNotExist </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespaceDBoW2.html#ab1a0d3283b2d4690a383372ed20bfeb5">WordId</a>&#160;</td>
+          <td class="paramname"><em>id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespaceDBoW2.html#a55fcd7333e591a38e96b91f41bc182f6">WordValue</a>&#160;</td>
+          <td class="paramname"><em>v</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Adds a word with a value to the vector only if this does not exist yet </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">id</td><td>word id to look for </td></tr>
+    <tr><td class="paramname">v</td><td>value to give to the word if this does not exist </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>在文件 <a class="el" href="BowVector_8cpp_source.html">BowVector.cpp</a> 第 <a class="el" href="BowVector_8cpp_source.html#l00050">50</a> 行定义.</p>
+
+<p>参考自 <a class="el" href="TemplatedVocabulary_8h_source.html#l01090">DBoW2::TemplatedVocabulary&lt; TDescriptor, F &gt;::transform()</a>.</p>
+
+<p><div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classDBoW2_1_1BowVector_a5ddf10e444d10425e5bd3568dc7ffe5e_icgraph.png" border="0" usemap="#classDBoW2_1_1BowVector_a5ddf10e444d10425e5bd3568dc7ffe5e_icgraph" alt=""/></div>
+<map name="classDBoW2_1_1BowVector_a5ddf10e444d10425e5bd3568dc7ffe5e_icgraph" id="classDBoW2_1_1BowVector_a5ddf10e444d10425e5bd3568dc7ffe5e_icgraph">
+<area shape="rect" id="node2" href="classDBoW2_1_1TemplatedVocabulary.html#af9fc1935403dcaf1fd8c44d96ae3328d" title="DBoW2::TemplatedVocabulary\l::transform" alt="" coords="253,27,456,69"/><area shape="rect" id="node3" href="classORB__SLAM2_1_1Frame.html#ac748d2318f9a409406dba4910ff5ef8e" title="Bag of Words Representation. " alt="" coords="505,5,741,32"/><area shape="rect" id="node6" href="classORB__SLAM2_1_1KeyFrame.html#ac376017c23823c05a6bb851ffb2fdd8f" title="Bag of Words Representation. " alt="" coords="538,57,707,98"/><area shape="rect" id="node4" href="classORB__SLAM2_1_1Tracking.html#a737c5409c93844353561a0fe724ed1c2" title="对参考关键帧的MapPoints进行跟踪 " alt="" coords="1027,13,1210,54"/><area shape="rect" id="node5" href="classORB__SLAM2_1_1Tracking.html#af1f2c9c533642d8c33854540e90d1918" title="Main tracking function. It is independent of the input sensor. " alt="" coords="1259,53,1418,94"/><area shape="rect" id="node7" href="classORB__SLAM2_1_1LocalMapping.html#a84eea8f268cce9d919a4906ae634dd22" title="处理列表中的关键帧 " alt="" coords="789,57,979,98"/><area shape="rect" id="node8" href="classORB__SLAM2_1_1Tracking.html#afeb077c81cd700d779348b80698086e8" title="CreateInitialMapMonocular. " alt="" coords="791,122,977,163"/><area shape="rect" id="node9" href="classORB__SLAM2_1_1Tracking.html#a7e81c68bb6ced27fcbfa2edec38ef6e0" title="单目的地图初始化 " alt="" coords="1039,93,1198,134"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a3ac92a805b252c93dc6535240d02df47"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DBoW2::BowVector::addWeight </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespaceDBoW2.html#ab1a0d3283b2d4690a383372ed20bfeb5">WordId</a>&#160;</td>
+          <td class="paramname"><em>id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespaceDBoW2.html#a55fcd7333e591a38e96b91f41bc182f6">WordValue</a>&#160;</td>
+          <td class="paramname"><em>v</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Adds a value to a word value existing in the vector, or creates a new word with the given value </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">id</td><td>word id to look for </td></tr>
+    <tr><td class="paramname">v</td><td>value to create the word with, or to add to existing word </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>在文件 <a class="el" href="BowVector_8cpp_source.html">BowVector.cpp</a> 第 <a class="el" href="BowVector_8cpp_source.html#l00034">34</a> 行定义.</p>
+
+<p>参考自 <a class="el" href="TemplatedVocabulary_8h_source.html#l01090">DBoW2::TemplatedVocabulary&lt; TDescriptor, F &gt;::transform()</a>.</p>
+
+<p><div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classDBoW2_1_1BowVector_a3ac92a805b252c93dc6535240d02df47_icgraph.png" border="0" usemap="#classDBoW2_1_1BowVector_a3ac92a805b252c93dc6535240d02df47_icgraph" alt=""/></div>
+<map name="classDBoW2_1_1BowVector_a3ac92a805b252c93dc6535240d02df47_icgraph" id="classDBoW2_1_1BowVector_a3ac92a805b252c93dc6535240d02df47_icgraph">
+<area shape="rect" id="node2" href="classDBoW2_1_1TemplatedVocabulary.html#af9fc1935403dcaf1fd8c44d96ae3328d" title="DBoW2::TemplatedVocabulary\l::transform" alt="" coords="264,27,467,69"/><area shape="rect" id="node3" href="classORB__SLAM2_1_1Frame.html#ac748d2318f9a409406dba4910ff5ef8e" title="Bag of Words Representation. " alt="" coords="515,5,751,32"/><area shape="rect" id="node6" href="classORB__SLAM2_1_1KeyFrame.html#ac376017c23823c05a6bb851ffb2fdd8f" title="Bag of Words Representation. " alt="" coords="549,57,718,98"/><area shape="rect" id="node4" href="classORB__SLAM2_1_1Tracking.html#a737c5409c93844353561a0fe724ed1c2" title="对参考关键帧的MapPoints进行跟踪 " alt="" coords="1038,13,1221,54"/><area shape="rect" id="node5" href="classORB__SLAM2_1_1Tracking.html#af1f2c9c533642d8c33854540e90d1918" title="Main tracking function. It is independent of the input sensor. " alt="" coords="1270,53,1429,94"/><area shape="rect" id="node7" href="classORB__SLAM2_1_1LocalMapping.html#a84eea8f268cce9d919a4906ae634dd22" title="处理列表中的关键帧 " alt="" coords="800,57,989,98"/><area shape="rect" id="node8" href="classORB__SLAM2_1_1Tracking.html#afeb077c81cd700d779348b80698086e8" title="CreateInitialMapMonocular. " alt="" coords="802,122,987,163"/><area shape="rect" id="node9" href="classORB__SLAM2_1_1Tracking.html#a7e81c68bb6ced27fcbfa2edec38ef6e0" title="单目的地图初始化 " alt="" coords="1050,93,1209,134"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="acd2dd34023e3053a4cc75d70c8b6ac13"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DBoW2::BowVector::normalize </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespaceDBoW2.html#a53e9e0bcfc25c861815e413a7cf3fa51">LNorm</a>&#160;</td>
+          <td class="paramname"><em>norm_type</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>L1-Normalizes the values in the vector </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">norm_type</td><td>norm used </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>在文件 <a class="el" href="BowVector_8cpp_source.html">BowVector.cpp</a> 第 <a class="el" href="BowVector_8cpp_source.html#l00062">62</a> 行定义.</p>
+
+<p>参考自 <a class="el" href="TemplatedVocabulary_8h_source.html#l01090">DBoW2::TemplatedVocabulary&lt; TDescriptor, F &gt;::transform()</a>.</p>
+
+<p><div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classDBoW2_1_1BowVector_acd2dd34023e3053a4cc75d70c8b6ac13_icgraph.png" border="0" usemap="#classDBoW2_1_1BowVector_acd2dd34023e3053a4cc75d70c8b6ac13_icgraph" alt=""/></div>
+<map name="classDBoW2_1_1BowVector_acd2dd34023e3053a4cc75d70c8b6ac13_icgraph" id="classDBoW2_1_1BowVector_acd2dd34023e3053a4cc75d70c8b6ac13_icgraph">
+<area shape="rect" id="node2" href="classDBoW2_1_1TemplatedVocabulary.html#af9fc1935403dcaf1fd8c44d96ae3328d" title="DBoW2::TemplatedVocabulary\l::transform" alt="" coords="259,27,461,69"/><area shape="rect" id="node3" href="classORB__SLAM2_1_1Frame.html#ac748d2318f9a409406dba4910ff5ef8e" title="Bag of Words Representation. " alt="" coords="510,5,746,32"/><area shape="rect" id="node6" href="classORB__SLAM2_1_1KeyFrame.html#ac376017c23823c05a6bb851ffb2fdd8f" title="Bag of Words Representation. " alt="" coords="543,57,713,98"/><area shape="rect" id="node4" href="classORB__SLAM2_1_1Tracking.html#a737c5409c93844353561a0fe724ed1c2" title="对参考关键帧的MapPoints进行跟踪 " alt="" coords="1033,13,1215,54"/><area shape="rect" id="node5" href="classORB__SLAM2_1_1Tracking.html#af1f2c9c533642d8c33854540e90d1918" title="Main tracking function. It is independent of the input sensor. " alt="" coords="1265,53,1423,94"/><area shape="rect" id="node7" href="classORB__SLAM2_1_1LocalMapping.html#a84eea8f268cce9d919a4906ae634dd22" title="处理列表中的关键帧 " alt="" coords="795,57,984,98"/><area shape="rect" id="node8" href="classORB__SLAM2_1_1Tracking.html#afeb077c81cd700d779348b80698086e8" title="CreateInitialMapMonocular. " alt="" coords="797,122,982,163"/><area shape="rect" id="node9" href="classORB__SLAM2_1_1Tracking.html#a7e81c68bb6ced27fcbfa2edec38ef6e0" title="单目的地图初始化 " alt="" coords="1045,93,1203,134"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="af15c4fde81b89e0f76a00337883b6b4a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DBoW2::BowVector::saveM </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>filename</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>W</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Saves the bow vector as a vector in a matlab file </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">filename</td><td></td></tr>
+    <tr><td class="paramname">W</td><td>number of words in the vocabulary </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>在文件 <a class="el" href="BowVector_8cpp_source.html">BowVector.cpp</a> 第 <a class="el" href="BowVector_8cpp_source.html#l00105">105</a> 行定义.</p>
+
+</div>
+</div>
+<h2 class="groupheader">友元及相关函数文档</h2>
+<a class="anchor" id="a1a7d9ac0f9128538859adfea38453ae1"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::ostream&amp; operator&lt;&lt; </td>
+          <td>(</td>
+          <td class="paramtype">std::ostream &amp;&#160;</td>
+          <td class="paramname"><em>out</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classDBoW2_1_1BowVector.html">BowVector</a> &amp;&#160;</td>
+          <td class="paramname"><em>v</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Prints the content of the bow vector </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">out</td><td>stream </td></tr>
+    <tr><td class="paramname">v</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>在文件 <a class="el" href="BowVector_8cpp_source.html">BowVector.cpp</a> 第 <a class="el" href="BowVector_8cpp_source.html#l00088">88</a> 行定义.</p>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>Thirdparty/DBoW2/DBoW2/<a class="el" href="BowVector_8h_source.html">BowVector.h</a></li>
+<li>Thirdparty/DBoW2/DBoW2/<a class="el" href="BowVector_8cpp_source.html">BowVector.cpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespaceDBoW2.html">DBoW2</a></li><li class="navelem"><a class="el" href="classDBoW2_1_1BowVector.html">BowVector</a></li>
+    <li class="footer">生成于 2017年 七月 18日 星期二 17:13:37 , 为 My Project使用 
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
+  </ul>
+</div>
+</body>
+</html>

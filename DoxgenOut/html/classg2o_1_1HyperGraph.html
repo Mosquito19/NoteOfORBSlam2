@@ -1,0 +1,521 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.6"/>
+<title>My Project: g2o::HyperGraph类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">My Project
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.6 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="pages.html"><span>相关页面</span></a></li>
+      <li><a href="modules.html"><span>模块</span></a></li>
+      <li><a href="namespaces.html"><span>命名空间</span></a></li>
+      <li class="current"><a href="annotated.html"><span>类</span></a></li>
+      <li><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>类列表</span></a></li>
+      <li><a href="classes.html"><span>类索引</span></a></li>
+      <li><a href="inherits.html"><span>类继承关系</span></a></li>
+      <li><a href="functions.html"><span>类成员</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('classg2o_1_1HyperGraph.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>命名空间</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>友元</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>组</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>页</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">类</a> &#124;
+<a href="#pub-types">Public 类型</a> &#124;
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pub-attribs">Public 属性</a> &#124;
+<a href="#pro-attribs">Protected 属性</a> &#124;
+<a href="classg2o_1_1HyperGraph-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">g2o::HyperGraph类 参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="hyper__graph_8h_source.html">hyper_graph.h</a>&gt;</code></p>
+<div class="dynheader">
+类 g2o::HyperGraph 继承关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classg2o_1_1HyperGraph__inherit__graph.png" border="0" usemap="#g2o_1_1HyperGraph_inherit__map" alt="Inheritance graph"/></div>
+<map name="g2o_1_1HyperGraph_inherit__map" id="g2o_1_1HyperGraph_inherit__map">
+<area shape="rect" id="node2" href="structg2o_1_1OptimizableGraph.html" title="g2o::OptimizableGraph" alt="" coords="4,80,157,107"/><area shape="rect" id="node3" href="classg2o_1_1SparseOptimizer.html" title="g2o::SparseOptimizer" alt="" coords="7,155,155,181"/></map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">图例</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+类</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classg2o_1_1HyperGraph_1_1Edge.html">Edge</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structg2o_1_1HyperGraph_1_1HyperGraphElement.html">HyperGraphElement</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classg2o_1_1HyperGraph_1_1Vertex.html">Vertex</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">abstract <a class="el" href="classg2o_1_1HyperGraph_1_1Vertex.html" title="abstract Vertex, your types must derive from that one ">Vertex</a>, your types must derive from that one  <a href="classg2o_1_1HyperGraph_1_1Vertex.html#details">更多...</a><br/></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public 类型</h2></td></tr>
+<tr class="memitem:a7b8fda20e1b03e92aeceeac6e8218b73"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7b8fda20e1b03e92aeceeac6e8218b73"></a>
+typedef std::bitset<br class="typebreak"/>
+&lt; HyperGraph::HGET_NUM_ELEMS &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>GraphElemBitset</b></td></tr>
+<tr class="separator:a7b8fda20e1b03e92aeceeac6e8218b73"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5e2970e236c0dcb4eff7c205d7b6b4ae"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5e2970e236c0dcb4eff7c205d7b6b4ae"></a>
+typedef std::set&lt; <a class="el" href="classg2o_1_1HyperGraph_1_1Edge.html">Edge</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>EdgeSet</b></td></tr>
+<tr class="separator:a5e2970e236c0dcb4eff7c205d7b6b4ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a703938cdb4bb636860eed55a2489d70c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a703938cdb4bb636860eed55a2489d70c"></a>
+typedef std::set&lt; <a class="el" href="classg2o_1_1HyperGraph_1_1Vertex.html">Vertex</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>VertexSet</b></td></tr>
+<tr class="separator:a703938cdb4bb636860eed55a2489d70c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a97307eac064ebf4b3e2cfbf0718035b5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a97307eac064ebf4b3e2cfbf0718035b5"></a>
+typedef <br class="typebreak"/>
+std::tr1::unordered_map&lt; int, <br class="typebreak"/>
+<a class="el" href="classg2o_1_1HyperGraph_1_1Vertex.html">Vertex</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>VertexIDMap</b></td></tr>
+<tr class="separator:a97307eac064ebf4b3e2cfbf0718035b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9339534c99300a0ddac87ba976ef188c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9339534c99300a0ddac87ba976ef188c"></a>
+typedef std::vector&lt; <a class="el" href="classg2o_1_1HyperGraph_1_1Vertex.html">Vertex</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>VertexContainer</b></td></tr>
+<tr class="separator:a9339534c99300a0ddac87ba976ef188c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:a833632b111cfc7cf08b842ae3cb43d41"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a833632b111cfc7cf08b842ae3cb43d41"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classg2o_1_1HyperGraph.html#a833632b111cfc7cf08b842ae3cb43d41">HyperGraph</a> ()</td></tr>
+<tr class="memdesc:a833632b111cfc7cf08b842ae3cb43d41"><td class="mdescLeft">&#160;</td><td class="mdescRight">constructs an empty hyper graph <br/></td></tr>
+<tr class="separator:a833632b111cfc7cf08b842ae3cb43d41"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0ef6e1d65e0f9171a518bce3fc559693"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0ef6e1d65e0f9171a518bce3fc559693"></a>
+virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classg2o_1_1HyperGraph.html#a0ef6e1d65e0f9171a518bce3fc559693">~HyperGraph</a> ()</td></tr>
+<tr class="memdesc:a0ef6e1d65e0f9171a518bce3fc559693"><td class="mdescLeft">&#160;</td><td class="mdescRight">destroys the hyper-graph and all the vertices of the graph <br/></td></tr>
+<tr class="separator:a0ef6e1d65e0f9171a518bce3fc559693"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab07fe8bd9982a66ba34e83dff8317ea2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab07fe8bd9982a66ba34e83dff8317ea2"></a>
+<a class="el" href="classg2o_1_1HyperGraph_1_1Vertex.html">Vertex</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classg2o_1_1HyperGraph.html#ab07fe8bd9982a66ba34e83dff8317ea2">vertex</a> (int id)</td></tr>
+<tr class="memdesc:ab07fe8bd9982a66ba34e83dff8317ea2"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns a vertex <em>id</em> in the hyper-graph, or 0 if the vertex id is not present <br/></td></tr>
+<tr class="separator:ab07fe8bd9982a66ba34e83dff8317ea2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a685a30debc0c540cc10c1bfc669ad2f1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a685a30debc0c540cc10c1bfc669ad2f1"></a>
+const <a class="el" href="classg2o_1_1HyperGraph_1_1Vertex.html">Vertex</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classg2o_1_1HyperGraph.html#a685a30debc0c540cc10c1bfc669ad2f1">vertex</a> (int id) const </td></tr>
+<tr class="memdesc:a685a30debc0c540cc10c1bfc669ad2f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns a vertex <em>id</em> in the hyper-graph, or 0 if the vertex id is not present <br/></td></tr>
+<tr class="separator:a685a30debc0c540cc10c1bfc669ad2f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a97ab8302aa027d513253387bba9e0dd5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a97ab8302aa027d513253387bba9e0dd5"></a>
+virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classg2o_1_1HyperGraph.html#a97ab8302aa027d513253387bba9e0dd5">removeVertex</a> (<a class="el" href="classg2o_1_1HyperGraph_1_1Vertex.html">Vertex</a> *v)</td></tr>
+<tr class="memdesc:a97ab8302aa027d513253387bba9e0dd5"><td class="mdescLeft">&#160;</td><td class="mdescRight">removes a vertex from the graph. Returns true on success (vertex was present) <br/></td></tr>
+<tr class="separator:a97ab8302aa027d513253387bba9e0dd5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a33e5a60705ce673d647aa1613da9d99b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a33e5a60705ce673d647aa1613da9d99b"></a>
+virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classg2o_1_1HyperGraph.html#a33e5a60705ce673d647aa1613da9d99b">removeEdge</a> (<a class="el" href="classg2o_1_1HyperGraph_1_1Edge.html">Edge</a> *e)</td></tr>
+<tr class="memdesc:a33e5a60705ce673d647aa1613da9d99b"><td class="mdescLeft">&#160;</td><td class="mdescRight">removes a vertex from the graph. Returns true on success (edge was present) <br/></td></tr>
+<tr class="separator:a33e5a60705ce673d647aa1613da9d99b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6b629dff2928dbd704ca81f24858e72f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6b629dff2928dbd704ca81f24858e72f"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classg2o_1_1HyperGraph.html#a6b629dff2928dbd704ca81f24858e72f">clear</a> ()</td></tr>
+<tr class="memdesc:a6b629dff2928dbd704ca81f24858e72f"><td class="mdescLeft">&#160;</td><td class="mdescRight">clears the graph and empties all structures. <br/></td></tr>
+<tr class="separator:a6b629dff2928dbd704ca81f24858e72f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3e713e7ee84eecad3876651737af6cfc"><td class="memItemLeft" align="right" valign="top">const VertexIDMap &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classg2o_1_1HyperGraph.html#a3e713e7ee84eecad3876651737af6cfc">vertices</a> () const </td></tr>
+<tr class="separator:a3e713e7ee84eecad3876651737af6cfc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a650107c875ef6f43d438d7d3e2ddf797"><td class="memItemLeft" align="right" valign="top">VertexIDMap &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classg2o_1_1HyperGraph.html#a650107c875ef6f43d438d7d3e2ddf797">vertices</a> ()</td></tr>
+<tr class="separator:a650107c875ef6f43d438d7d3e2ddf797"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acb3391945ed7c3f09243101d9ef0aaf0"><td class="memItemLeft" align="right" valign="top">const EdgeSet &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classg2o_1_1HyperGraph.html#acb3391945ed7c3f09243101d9ef0aaf0">edges</a> () const </td></tr>
+<tr class="separator:acb3391945ed7c3f09243101d9ef0aaf0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f9f023fe2fb491ef9af873b9e683006"><td class="memItemLeft" align="right" valign="top">EdgeSet &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classg2o_1_1HyperGraph.html#a2f9f023fe2fb491ef9af873b9e683006">edges</a> ()</td></tr>
+<tr class="separator:a2f9f023fe2fb491ef9af873b9e683006"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7ef87ba3479827b24c6fc29c5fc3aa21"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classg2o_1_1HyperGraph.html#a7ef87ba3479827b24c6fc29c5fc3aa21">addVertex</a> (<a class="el" href="classg2o_1_1HyperGraph_1_1Vertex.html">Vertex</a> *v)</td></tr>
+<tr class="separator:a7ef87ba3479827b24c6fc29c5fc3aa21"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0f1d35009a2879b238c8148c33485c89"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classg2o_1_1HyperGraph.html#a0f1d35009a2879b238c8148c33485c89">addEdge</a> (<a class="el" href="classg2o_1_1HyperGraph_1_1Edge.html">Edge</a> *e)</td></tr>
+<tr class="separator:a0f1d35009a2879b238c8148c33485c89"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a74f0d7392e67762a85799db72a58a94c"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classg2o_1_1HyperGraph.html#a74f0d7392e67762a85799db72a58a94c">changeId</a> (<a class="el" href="classg2o_1_1HyperGraph_1_1Vertex.html">Vertex</a> *v, int newId)</td></tr>
+<tr class="separator:a74f0d7392e67762a85799db72a58a94c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Public 属性</h2></td></tr>
+<tr class="memitem:a2aca385a3acb87b4f4365765afd10093"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2aca385a3acb87b4f4365765afd10093"></a>
+class G2O_CORE_API&#160;</td><td class="memItemRight" valign="bottom"><b>Vertex</b></td></tr>
+<tr class="separator:a2aca385a3acb87b4f4365765afd10093"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a59ab1fe84b0728a65a0ba15fce9b9cf7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a59ab1fe84b0728a65a0ba15fce9b9cf7"></a>
+class G2O_CORE_API&#160;</td><td class="memItemRight" valign="bottom"><b>Edge</b></td></tr>
+<tr class="separator:a59ab1fe84b0728a65a0ba15fce9b9cf7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
+Protected 属性</h2></td></tr>
+<tr class="memitem:a83132c77c8d0896581d168cbc72f673a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a83132c77c8d0896581d168cbc72f673a"></a>
+VertexIDMap&#160;</td><td class="memItemRight" valign="bottom"><b>_vertices</b></td></tr>
+<tr class="separator:a83132c77c8d0896581d168cbc72f673a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afe4ae6e9ef05c8bded2b1b30e1886b36"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afe4ae6e9ef05c8bded2b1b30e1886b36"></a>
+EdgeSet&#160;</td><td class="memItemRight" valign="bottom"><b>_edges</b></td></tr>
+<tr class="separator:afe4ae6e9ef05c8bded2b1b30e1886b36"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>Class that models a directed Hyper-Graph. An hyper graph is a graph where an edge can connect one or more nodes. Both Vertices and Edges of an hyoper graph derive from the same class <a class="el" href="structg2o_1_1HyperGraph_1_1HyperGraphElement.html">HyperGraphElement</a>, thus one can implement generic algorithms that operate transparently on edges or vertices (see <a class="el" href="classg2o_1_1HyperGraphAction.html" title="Abstract action that operates on an entire graph. ">HyperGraphAction</a>).</p>
+<p>The vertices are uniquely identified by an int id, while the edges are identfied by their pointers. </p>
+
+<p>在文件 <a class="el" href="hyper__graph_8h_source.html">hyper_graph.h</a> 第 <a class="el" href="hyper__graph_8h_source.html#l00063">63</a> 行定义.</p>
+</div><h2 class="groupheader">成员函数说明</h2>
+<a class="anchor" id="a0f1d35009a2879b238c8148c33485c89"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool g2o::HyperGraph::addEdge </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classg2o_1_1HyperGraph_1_1Edge.html">Edge</a> *&#160;</td>
+          <td class="paramname"><em>e</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Adds an edge to the graph. If the edge is already in the graph, it does nothing and returns false. Otherwise it returns true. </p>
+
+<p>被 <a class="el" href="structg2o_1_1OptimizableGraph.html#a6831ed69fce3dba691f53302a2813070">g2o::OptimizableGraph</a> 重载.</p>
+
+<p>在文件 <a class="el" href="hyper__graph_8cpp_source.html">hyper_graph.cpp</a> 第 <a class="el" href="hyper__graph_8cpp_source.html#l00099">99</a> 行定义.</p>
+
+<p>参考 <a class="el" href="hyper__graph_8h_source.html#l00111">g2o::HyperGraph::Vertex::edges()</a> , 以及 <a class="el" href="hyper__graph_8h_source.html#l00137">g2o::HyperGraph::Edge::vertices()</a>.</p>
+
+<p>参考自 <a class="el" href="optimizable__graph_8cpp_source.html#l00264">g2o::OptimizableGraph::addEdge()</a>.</p>
+
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classg2o_1_1HyperGraph_a0f1d35009a2879b238c8148c33485c89_cgraph.png" border="0" usemap="#classg2o_1_1HyperGraph_a0f1d35009a2879b238c8148c33485c89_cgraph" alt=""/></div>
+<map name="classg2o_1_1HyperGraph_a0f1d35009a2879b238c8148c33485c89_cgraph" id="classg2o_1_1HyperGraph_a0f1d35009a2879b238c8148c33485c89_cgraph">
+<area shape="rect" id="node2" href="classg2o_1_1HyperGraph_1_1Vertex.html#a0805a5575511327262c89585f1953b8e" title="returns the set of hyper&#45;edges that are leaving/entering in this vertex " alt="" coords="235,5,402,46"/><area shape="rect" id="node3" href="classg2o_1_1HyperGraph_1_1Edge.html#a6410bb70a917b5407770ef1f1090b5f5" title="g2o::HyperGraph::Edge\l::vertices" alt="" coords="239,70,398,111"/></map>
+</div>
+</p>
+
+<p><div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classg2o_1_1HyperGraph_a0f1d35009a2879b238c8148c33485c89_icgraph.png" border="0" usemap="#classg2o_1_1HyperGraph_a0f1d35009a2879b238c8148c33485c89_icgraph" alt=""/></div>
+<map name="classg2o_1_1HyperGraph_a0f1d35009a2879b238c8148c33485c89_icgraph" id="classg2o_1_1HyperGraph_a0f1d35009a2879b238c8148c33485c89_icgraph">
+<area shape="rect" id="node2" href="structg2o_1_1OptimizableGraph.html#a6831ed69fce3dba691f53302a2813070" title="g2o::OptimizableGraph\l::addEdge" alt="" coords="235,169,389,210"/><area shape="rect" id="node3" href="classORB__SLAM2_1_1Optimizer.html#a5e855fe6b54082739b7e7013048e6340" title="bundle adjustment Optimization " alt="" coords="440,5,605,46"/><area shape="rect" id="node4" href="classORB__SLAM2_1_1Optimizer.html#a7415d78b8a2323b88e108fa1ea3bf2d3" title="Pose Only Optimization. " alt="" coords="440,70,605,111"/><area shape="rect" id="node9" href="classORB__SLAM2_1_1Optimizer.html#ab70e0b4f366b65a0c1ae8b2def19d339" title="Local Bundle Adjustment. " alt="" coords="439,135,606,177"/><area shape="rect" id="node10" href="classORB__SLAM2_1_1Optimizer.html#ad36bb1a7167c84f385c3f299bc96f20e" title="闭环检测后，EssentialGraph优化 " alt="" coords="437,201,608,242"/><area shape="rect" id="node12" href="classORB__SLAM2_1_1Optimizer.html#ad8fe00ad3e6564b859b07ff9e7b2224e" title="形成闭环时进行Sim3优化 " alt="" coords="440,266,605,307"/><area shape="rect" id="node14" href="structg2o_1_1OptimizableGraph.html#acea1342d9ab0bf717710c8f78b74ff25" title="adds all edges and vertices of the graph g to this graph. " alt="" coords="445,331,600,373"/><area shape="rect" id="node5" href="classORB__SLAM2_1_1Tracking.html#a737c5409c93844353561a0fe724ed1c2" title="对参考关键帧的MapPoints进行跟踪 " alt="" coords="657,5,839,46"/><area shape="rect" id="node7" href="classORB__SLAM2_1_1Tracking.html#aca19f1d69b30a6c6e49281d422ac8298" title="根据匀速度模型对上一帧的MapPoints进行跟踪 " alt="" coords="666,70,830,111"/><area shape="rect" id="node8" href="classORB__SLAM2_1_1Tracking.html#af670c614f4e10d58c9f7aad9865b5c08" title="对Local Map的MapPoints进行跟踪 " alt="" coords="669,135,827,177"/><area shape="rect" id="node6" href="classORB__SLAM2_1_1Tracking.html#af1f2c9c533642d8c33854540e90d1918" title="Main tracking function. It is independent of the input sensor. " alt="" coords="889,70,1047,111"/><area shape="rect" id="node11" href="classORB__SLAM2_1_1LoopClosing.html#aa007e0678582ec0de5d71280d23af540" title="闭环 " alt="" coords="657,201,839,242"/><area shape="rect" id="node13" href="classORB__SLAM2_1_1LoopClosing.html#ab4fcf814eed5b5dd2aec96454561b078" title="计算当前帧与闭环帧的Sim3变换等 " alt="" coords="657,266,839,307"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a7ef87ba3479827b24c6fc29c5fc3aa21"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool g2o::HyperGraph::addVertex </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classg2o_1_1HyperGraph_1_1Vertex.html">Vertex</a> *&#160;</td>
+          <td class="paramname"><em>v</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>adds a vertex to the graph. The id of the vertex should be set before invoking this function. the function fails if another vertex with the same id is already in the graph. returns true, on success, or false on failure. </p>
+
+<p>被 <a class="el" href="structg2o_1_1OptimizableGraph.html#ac6f41f49fe6148fbe17133d10bf29b4c">g2o::OptimizableGraph</a> 重载.</p>
+
+<p>在文件 <a class="el" href="hyper__graph_8cpp_source.html">hyper_graph.cpp</a> 第 <a class="el" href="hyper__graph_8cpp_source.html#l00076">76</a> 行定义.</p>
+
+<p>参考 <a class="el" href="hyper__graph_8h_source.html#l00108">g2o::HyperGraph::Vertex::id()</a> , 以及 <a class="el" href="hyper__graph_8cpp_source.html#l00060">vertex()</a>.</p>
+
+<p>参考自 <a class="el" href="optimizable__graph_8cpp_source.html#l00243">g2o::OptimizableGraph::addVertex()</a>.</p>
+
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classg2o_1_1HyperGraph_a7ef87ba3479827b24c6fc29c5fc3aa21_cgraph.png" border="0" usemap="#classg2o_1_1HyperGraph_a7ef87ba3479827b24c6fc29c5fc3aa21_cgraph" alt=""/></div>
+<map name="classg2o_1_1HyperGraph_a7ef87ba3479827b24c6fc29c5fc3aa21_cgraph" id="classg2o_1_1HyperGraph_a7ef87ba3479827b24c6fc29c5fc3aa21_cgraph">
+<area shape="rect" id="node2" href="classg2o_1_1HyperGraph_1_1Vertex.html#ad76b71c368b71971ac5affb5d57183d3" title="returns the id " alt="" coords="243,5,429,32"/><area shape="rect" id="node3" href="classg2o_1_1HyperGraph.html#ab07fe8bd9982a66ba34e83dff8317ea2" title="returns a vertex id in the hyper&#45;graph, or 0 if the vertex id is not present " alt="" coords="253,56,419,83"/></map>
+</div>
+</p>
+
+<p><div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classg2o_1_1HyperGraph_a7ef87ba3479827b24c6fc29c5fc3aa21_icgraph.png" border="0" usemap="#classg2o_1_1HyperGraph_a7ef87ba3479827b24c6fc29c5fc3aa21_icgraph" alt=""/></div>
+<map name="classg2o_1_1HyperGraph_a7ef87ba3479827b24c6fc29c5fc3aa21_icgraph" id="classg2o_1_1HyperGraph_a7ef87ba3479827b24c6fc29c5fc3aa21_icgraph">
+<area shape="rect" id="node2" href="structg2o_1_1OptimizableGraph.html#ae0b93774ce1dfa0dfd501c86ad4f773e" title="g2o::OptimizableGraph\l::addVertex" alt="" coords="243,169,397,210"/><area shape="rect" id="node3" href="classORB__SLAM2_1_1Optimizer.html#a5e855fe6b54082739b7e7013048e6340" title="bundle adjustment Optimization " alt="" coords="448,5,613,46"/><area shape="rect" id="node4" href="classORB__SLAM2_1_1Optimizer.html#a7415d78b8a2323b88e108fa1ea3bf2d3" title="Pose Only Optimization. " alt="" coords="448,70,613,111"/><area shape="rect" id="node9" href="classORB__SLAM2_1_1Optimizer.html#ab70e0b4f366b65a0c1ae8b2def19d339" title="Local Bundle Adjustment. " alt="" coords="447,135,614,177"/><area shape="rect" id="node10" href="classORB__SLAM2_1_1Optimizer.html#ad36bb1a7167c84f385c3f299bc96f20e" title="闭环检测后，EssentialGraph优化 " alt="" coords="445,201,616,242"/><area shape="rect" id="node12" href="classORB__SLAM2_1_1Optimizer.html#ad8fe00ad3e6564b859b07ff9e7b2224e" title="形成闭环时进行Sim3优化 " alt="" coords="448,266,613,307"/><area shape="rect" id="node14" href="structg2o_1_1OptimizableGraph.html#acea1342d9ab0bf717710c8f78b74ff25" title="adds all edges and vertices of the graph g to this graph. " alt="" coords="453,331,608,373"/><area shape="rect" id="node5" href="classORB__SLAM2_1_1Tracking.html#a737c5409c93844353561a0fe724ed1c2" title="对参考关键帧的MapPoints进行跟踪 " alt="" coords="665,5,847,46"/><area shape="rect" id="node7" href="classORB__SLAM2_1_1Tracking.html#aca19f1d69b30a6c6e49281d422ac8298" title="根据匀速度模型对上一帧的MapPoints进行跟踪 " alt="" coords="674,70,838,111"/><area shape="rect" id="node8" href="classORB__SLAM2_1_1Tracking.html#af670c614f4e10d58c9f7aad9865b5c08" title="对Local Map的MapPoints进行跟踪 " alt="" coords="677,135,835,177"/><area shape="rect" id="node6" href="classORB__SLAM2_1_1Tracking.html#af1f2c9c533642d8c33854540e90d1918" title="Main tracking function. It is independent of the input sensor. " alt="" coords="897,70,1055,111"/><area shape="rect" id="node11" href="classORB__SLAM2_1_1LoopClosing.html#aa007e0678582ec0de5d71280d23af540" title="闭环 " alt="" coords="665,201,847,242"/><area shape="rect" id="node13" href="classORB__SLAM2_1_1LoopClosing.html#ab4fcf814eed5b5dd2aec96454561b078" title="计算当前帧与闭环帧的Sim3变换等 " alt="" coords="665,266,847,307"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a74f0d7392e67762a85799db72a58a94c"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool g2o::HyperGraph::changeId </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classg2o_1_1HyperGraph_1_1Vertex.html">Vertex</a> *&#160;</td>
+          <td class="paramname"><em>v</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>newId</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>changes the id of a vertex already in the graph, and updates the bookkeeping @ returns false if the vertex is not in the graph; </p>
+
+<p>在文件 <a class="el" href="hyper__graph_8cpp_source.html">hyper_graph.cpp</a> 第 <a class="el" href="hyper__graph_8cpp_source.html#l00089">89</a> 行定义.</p>
+
+<p>参考 <a class="el" href="hyper__graph_8h_source.html#l00108">g2o::HyperGraph::Vertex::id()</a> , 以及 <a class="el" href="hyper__graph_8cpp_source.html#l00060">vertex()</a>.</p>
+
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classg2o_1_1HyperGraph_a74f0d7392e67762a85799db72a58a94c_cgraph.png" border="0" usemap="#classg2o_1_1HyperGraph_a74f0d7392e67762a85799db72a58a94c_cgraph" alt=""/></div>
+<map name="classg2o_1_1HyperGraph_a74f0d7392e67762a85799db72a58a94c_cgraph" id="classg2o_1_1HyperGraph_a74f0d7392e67762a85799db72a58a94c_cgraph">
+<area shape="rect" id="node2" href="classg2o_1_1HyperGraph_1_1Vertex.html#ad76b71c368b71971ac5affb5d57183d3" title="returns the id " alt="" coords="238,5,423,32"/><area shape="rect" id="node3" href="classg2o_1_1HyperGraph.html#ab07fe8bd9982a66ba34e83dff8317ea2" title="returns a vertex id in the hyper&#45;graph, or 0 if the vertex id is not present " alt="" coords="248,56,413,83"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="acb3391945ed7c3f09243101d9ef0aaf0"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const EdgeSet&amp; g2o::HyperGraph::edges </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section return"><dt>返回</dt><dd>the set of edges of the hyper graph </dd></dl>
+
+<p>在文件 <a class="el" href="hyper__graph_8h_source.html">hyper_graph.h</a> 第 <a class="el" href="hyper__graph_8h_source.html#l00187">187</a> 行定义.</p>
+
+<p>参考自 <a class="el" href="optimizable__graph_8cpp_source.html#l00681">g2o::OptimizableGraph::addGraph()</a>, <a class="el" href="optimizable__graph_8cpp_source.html#l00289">g2o::OptimizableGraph::chi2()</a>, <a class="el" href="Optimizer_8cpp_source.html#l00291">ORB_SLAM2::Optimizer::PoseOptimization()</a>, <a class="el" href="jacobian__workspace_8cpp_source.html#l00075">g2o::JacobianWorkspace::updateSize()</a> , 以及 <a class="el" href="optimizable__graph_8cpp_source.html#l00867">g2o::OptimizableGraph::verifyInformationMatrices()</a>.</p>
+
+<p><div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classg2o_1_1HyperGraph_acb3391945ed7c3f09243101d9ef0aaf0_icgraph.png" border="0" usemap="#classg2o_1_1HyperGraph_acb3391945ed7c3f09243101d9ef0aaf0_icgraph" alt=""/></div>
+<map name="classg2o_1_1HyperGraph_acb3391945ed7c3f09243101d9ef0aaf0_icgraph" id="classg2o_1_1HyperGraph_acb3391945ed7c3f09243101d9ef0aaf0_icgraph">
+<area shape="rect" id="node2" href="structg2o_1_1OptimizableGraph.html#acea1342d9ab0bf717710c8f78b74ff25" title="adds all edges and vertices of the graph g to this graph. " alt="" coords="231,5,385,46"/><area shape="rect" id="node3" href="structg2o_1_1OptimizableGraph.html#afa9378225b271351f4425bd266f76d3a" title="returns the chi2 of the current configuration " alt="" coords="231,70,385,111"/><area shape="rect" id="node4" href="classORB__SLAM2_1_1Optimizer.html#a7415d78b8a2323b88e108fa1ea3bf2d3" title="Pose Only Optimization. " alt="" coords="225,135,391,177"/><area shape="rect" id="node9" href="classg2o_1_1JacobianWorkspace.html#ae3d715bd25e196d8db81661ef0fbd09b" title="g2o::JacobianWorkspace\l::updateSize" alt="" coords="223,201,393,242"/><area shape="rect" id="node10" href="structg2o_1_1OptimizableGraph.html#aae5f20da3c13042a9bc1f491f2150d59" title="g2o::OptimizableGraph\l::verifyInformationMatrices" alt="" coords="219,266,397,307"/><area shape="rect" id="node5" href="classORB__SLAM2_1_1Tracking.html#a737c5409c93844353561a0fe724ed1c2" title="对参考关键帧的MapPoints进行跟踪 " alt="" coords="446,70,629,111"/><area shape="rect" id="node7" href="classORB__SLAM2_1_1Tracking.html#aca19f1d69b30a6c6e49281d422ac8298" title="根据匀速度模型对上一帧的MapPoints进行跟踪 " alt="" coords="455,135,619,177"/><area shape="rect" id="node8" href="classORB__SLAM2_1_1Tracking.html#af670c614f4e10d58c9f7aad9865b5c08" title="对Local Map的MapPoints进行跟踪 " alt="" coords="458,201,617,242"/><area shape="rect" id="node6" href="classORB__SLAM2_1_1Tracking.html#af1f2c9c533642d8c33854540e90d1918" title="Main tracking function. It is independent of the input sensor. " alt="" coords="678,135,837,177"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a2f9f023fe2fb491ef9af873b9e683006"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">EdgeSet&amp; g2o::HyperGraph::edges </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section return"><dt>返回</dt><dd>the set of edges of the hyper graph </dd></dl>
+
+<p>在文件 <a class="el" href="hyper__graph_8h_source.html">hyper_graph.h</a> 第 <a class="el" href="hyper__graph_8h_source.html#l00189">189</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a3e713e7ee84eecad3876651737af6cfc"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const VertexIDMap&amp; g2o::HyperGraph::vertices </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section return"><dt>返回</dt><dd>the map <em>id -&gt; vertex</em> where the vertices are stored </dd></dl>
+
+<p>在文件 <a class="el" href="hyper__graph_8h_source.html">hyper_graph.h</a> 第 <a class="el" href="hyper__graph_8h_source.html#l00182">182</a> 行定义.</p>
+
+<p>参考自 <a class="el" href="optimizable__graph_8cpp_source.html#l00681">g2o::OptimizableGraph::addGraph()</a>, <a class="el" href="optimizable__graph_8cpp_source.html#l00763">g2o::OptimizableGraph::dimensions()</a> , 以及 <a class="el" href="optimizable__graph_8cpp_source.html#l00705">g2o::OptimizableGraph::maxDimension()</a>.</p>
+
+<p><div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classg2o_1_1HyperGraph_a3e713e7ee84eecad3876651737af6cfc_icgraph.png" border="0" usemap="#classg2o_1_1HyperGraph_a3e713e7ee84eecad3876651737af6cfc_icgraph" alt=""/></div>
+<map name="classg2o_1_1HyperGraph_a3e713e7ee84eecad3876651737af6cfc_icgraph" id="classg2o_1_1HyperGraph_a3e713e7ee84eecad3876651737af6cfc_icgraph">
+<area shape="rect" id="node2" href="structg2o_1_1OptimizableGraph.html#acea1342d9ab0bf717710c8f78b74ff25" title="adds all edges and vertices of the graph g to this graph. " alt="" coords="229,5,384,46"/><area shape="rect" id="node3" href="structg2o_1_1OptimizableGraph.html#a186d6d06a59395488cd15d25bf112ad9" title="g2o::OptimizableGraph\l::dimensions" alt="" coords="229,70,384,111"/><area shape="rect" id="node5" href="structg2o_1_1OptimizableGraph.html#abb25500d3f73dae8f2325ae11991c46f" title="return the maximum dimension of all vertices in the graph " alt="" coords="229,135,384,177"/><area shape="rect" id="node4" href="structg2o_1_1OptimizableGraph.html#a4a3a8c7ffa964d2ab27ccdfdaca6a0cc" title="g2o::OptimizableGraph\l::isSolverSuitable" alt="" coords="432,70,587,111"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a650107c875ef6f43d438d7d3e2ddf797"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">VertexIDMap&amp; g2o::HyperGraph::vertices </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section return"><dt>返回</dt><dd>the map <em>id -&gt; vertex</em> where the vertices are stored </dd></dl>
+
+<p>在文件 <a class="el" href="hyper__graph_8h_source.html">hyper_graph.h</a> 第 <a class="el" href="hyper__graph_8h_source.html#l00184">184</a> 行定义.</p>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>Thirdparty/g2o/g2o/core/<a class="el" href="hyper__graph_8h_source.html">hyper_graph.h</a></li>
+<li>Thirdparty/g2o/g2o/core/<a class="el" href="hyper__graph_8cpp_source.html">hyper_graph.cpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><b>g2o</b></li><li class="navelem"><a class="el" href="classg2o_1_1HyperGraph.html">HyperGraph</a></li>
+    <li class="footer">生成于 2017年 七月 18日 星期二 17:13:38 , 为 My Project使用 
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
+  </ul>
+</div>
+</body>
+</html>

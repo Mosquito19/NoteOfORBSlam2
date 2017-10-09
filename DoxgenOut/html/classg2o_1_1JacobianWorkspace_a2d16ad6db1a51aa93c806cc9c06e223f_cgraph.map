@@ -1,0 +1,6 @@
+<map id="g2o::JacobianWorkspace::updateSize" name="g2o::JacobianWorkspace::updateSize">
+<area shape="rect" id="node2" href="$classg2o_1_1OptimizableGraph_1_1Vertex.html#a1037b978fec531eaf860d0037b992079" title="dimension of the estimated state belonging to this node " alt="" coords="227,5,381,46"/>
+<area shape="rect" id="node3" href="$classg2o_1_1OptimizableGraph_1_1Edge.html#a90a86891adc47a179a7cd7ef31549916" title="returns the dimensions of the error function " alt="" coords="227,70,381,111"/>
+<area shape="rect" id="node4" href="$classg2o_1_1HyperGraph_1_1Edge.html#aaec0b2c92c5496d0f0fea8f1abdc4311" title="g2o::HyperGraph::Edge\l::vertex" alt="" coords="225,135,383,177"/>
+<area shape="rect" id="node5" href="$classg2o_1_1HyperGraph_1_1Edge.html#a6410bb70a917b5407770ef1f1090b5f5" title="g2o::HyperGraph::Edge\l::vertices" alt="" coords="225,201,383,242"/>
+</map>

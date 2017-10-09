@@ -1,0 +1,122 @@
+\hypertarget{classg2o_1_1HyperGraphElementActionCollection}{\section{g2o\-:\-:Hyper\-Graph\-Element\-Action\-Collection类 参考}
+\label{classg2o_1_1HyperGraphElementActionCollection}\index{g2o\-::\-Hyper\-Graph\-Element\-Action\-Collection@{g2o\-::\-Hyper\-Graph\-Element\-Action\-Collection}}
+}
+
+
+collection of actions  
+
+
+
+
+{\ttfamily \#include $<$hyper\-\_\-graph\-\_\-action.\-h$>$}
+
+
+
+类 g2o\-:\-:Hyper\-Graph\-Element\-Action\-Collection 继承关系图\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=234pt]{classg2o_1_1HyperGraphElementActionCollection__inherit__graph}
+\end{center}
+\end{figure}
+
+
+g2o\-:\-:Hyper\-Graph\-Element\-Action\-Collection 的协作图\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=234pt]{classg2o_1_1HyperGraphElementActionCollection__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classg2o_1_1HyperGraphElementActionCollection_a6af1ca2dfcdc0894eb594c68135dd614}{\hyperlink{classg2o_1_1HyperGraphElementActionCollection_a6af1ca2dfcdc0894eb594c68135dd614}{Hyper\-Graph\-Element\-Action\-Collection} (const std\-::string \&name\-\_\-)}\label{classg2o_1_1HyperGraphElementActionCollection_a6af1ca2dfcdc0894eb594c68135dd614}
+
+\begin{DoxyCompactList}\small\item\em constructor. name\-\_\- is the name of the action e.\-g.\-draw). \end{DoxyCompactList}\item 
+\hypertarget{classg2o_1_1HyperGraphElementActionCollection_ad55fc899922f91c1446d9d69f343c7ab}{virtual \hyperlink{classg2o_1_1HyperGraphElementActionCollection_ad55fc899922f91c1446d9d69f343c7ab}{$\sim$\-Hyper\-Graph\-Element\-Action\-Collection} ()}\label{classg2o_1_1HyperGraphElementActionCollection_ad55fc899922f91c1446d9d69f343c7ab}
+
+\begin{DoxyCompactList}\small\item\em destructor\-: it deletes all actions in the pool. \end{DoxyCompactList}\item 
+virtual \hyperlink{classg2o_1_1HyperGraphElementAction}{Hyper\-Graph\-Element\-Action} $\ast$ \hyperlink{classg2o_1_1HyperGraphElementActionCollection_a1388f0d6629501c1b80035f80c56efbe}{operator()} (\hyperlink{structg2o_1_1HyperGraph_1_1HyperGraphElement}{Hyper\-Graph\-::\-Hyper\-Graph\-Element} $\ast$element, \hyperlink{structg2o_1_1HyperGraphElementAction_1_1Parameters}{Parameters} $\ast$parameters)
+\item 
+\hypertarget{classg2o_1_1HyperGraphElementActionCollection_a4cb9b20a8b1aac8eb018ef6fc4ec0dfc}{virtual \hyperlink{classg2o_1_1HyperGraphElementAction}{Hyper\-Graph\-Element\-Action} $\ast$ \hyperlink{classg2o_1_1HyperGraphElementActionCollection_a4cb9b20a8b1aac8eb018ef6fc4ec0dfc}{operator()} (const \hyperlink{structg2o_1_1HyperGraph_1_1HyperGraphElement}{Hyper\-Graph\-::\-Hyper\-Graph\-Element} $\ast$element, \hyperlink{structg2o_1_1HyperGraphElementAction_1_1Parameters}{Parameters} $\ast$parameters)}\label{classg2o_1_1HyperGraphElementActionCollection_a4cb9b20a8b1aac8eb018ef6fc4ec0dfc}
+
+\begin{DoxyCompactList}\small\item\em redefine this to do the action stuff. If successful, the action returns a pointer to itself \end{DoxyCompactList}\item 
+\hypertarget{classg2o_1_1HyperGraphElementActionCollection_a26d57ddd0079ed7181fbb322c9a8106c}{Action\-Map \& {\bfseries action\-Map} ()}\label{classg2o_1_1HyperGraphElementActionCollection_a26d57ddd0079ed7181fbb322c9a8106c}
+
+\item 
+bool \hyperlink{classg2o_1_1HyperGraphElementActionCollection_a9eb641e9c9bb22f3540dc98c2c750ea9}{register\-Action} (\hyperlink{classg2o_1_1HyperGraphElementAction}{Hyper\-Graph\-Element\-Action} $\ast$action)
+\item 
+\hypertarget{classg2o_1_1HyperGraphElementActionCollection_a6dc646c0dd8fbf9b54fb8161348af5e6}{bool {\bfseries unregister\-Action} (\hyperlink{classg2o_1_1HyperGraphElementAction}{Hyper\-Graph\-Element\-Action} $\ast$action)}\label{classg2o_1_1HyperGraphElementActionCollection_a6dc646c0dd8fbf9b54fb8161348af5e6}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected 属性}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classg2o_1_1HyperGraphElementActionCollection_a637c13fca95eacab38ee82eedd3669e4}{Action\-Map {\bfseries \-\_\-action\-Map}}\label{classg2o_1_1HyperGraphElementActionCollection_a637c13fca95eacab38ee82eedd3669e4}
+
+\end{DoxyCompactItemize}
+\subsection*{额外继承的成员函数}
+
+
+\subsection{详细描述}
+collection of actions 
+
+collection of actions calls contains homogeneous actions operating on different types all collected actions have the same name and should have the same functionality 
+
+在文件 hyper\-\_\-graph\-\_\-action.\-h 第 112 行定义.
+
+
+
+\subsection{成员函数说明}
+\hypertarget{classg2o_1_1HyperGraphElementActionCollection_a1388f0d6629501c1b80035f80c56efbe}{\index{g2o\-::\-Hyper\-Graph\-Element\-Action\-Collection@{g2o\-::\-Hyper\-Graph\-Element\-Action\-Collection}!operator()@{operator()}}
+\index{operator()@{operator()}!g2o::HyperGraphElementActionCollection@{g2o\-::\-Hyper\-Graph\-Element\-Action\-Collection}}
+\subsubsection[{operator()}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Hyper\-Graph\-Element\-Action} $\ast$ g2o\-::\-Hyper\-Graph\-Element\-Action\-Collection\-::operator() (
+\begin{DoxyParamCaption}
+\item[{{\bf Hyper\-Graph\-::\-Hyper\-Graph\-Element} $\ast$}]{element, }
+\item[{{\bf Hyper\-Graph\-Element\-Action\-::\-Parameters} $\ast$}]{params}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classg2o_1_1HyperGraphElementActionCollection_a1388f0d6629501c1b80035f80c56efbe}
+calling functions, they return a pointer to the instance of action in action\-Map that was active on element 
+
+重载 \hyperlink{classg2o_1_1HyperGraphElementAction_a2faab4a1cdaf5fc010cb9c8627b7d361}{g2o\-::\-Hyper\-Graph\-Element\-Action} .
+
+
+
+在文件 hyper\-\_\-graph\-\_\-action.\-cpp 第 99 行定义.
+
+\hypertarget{classg2o_1_1HyperGraphElementActionCollection_a9eb641e9c9bb22f3540dc98c2c750ea9}{\index{g2o\-::\-Hyper\-Graph\-Element\-Action\-Collection@{g2o\-::\-Hyper\-Graph\-Element\-Action\-Collection}!register\-Action@{register\-Action}}
+\index{register\-Action@{register\-Action}!g2o::HyperGraphElementActionCollection@{g2o\-::\-Hyper\-Graph\-Element\-Action\-Collection}}
+\subsubsection[{register\-Action}]{\setlength{\rightskip}{0pt plus 5cm}bool g2o\-::\-Hyper\-Graph\-Element\-Action\-Collection\-::register\-Action (
+\begin{DoxyParamCaption}
+\item[{{\bf Hyper\-Graph\-Element\-Action} $\ast$}]{action}
+\end{DoxyParamCaption}
+)}}\label{classg2o_1_1HyperGraphElementActionCollection_a9eb641e9c9bb22f3540dc98c2c750ea9}
+inserts an action in the pool. The action should have the same name of the container. returns false on failure (the container has a different name than the action); 
+
+在文件 hyper\-\_\-graph\-\_\-action.\-cpp 第 118 行定义.
+
+
+
+参考 g2o\-::\-Hyper\-Graph\-Element\-Action\-::name() , 以及 g2o\-::\-Hyper\-Graph\-Element\-Action\-::type\-Name().
+
+
+
+函数调用图\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classg2o_1_1HyperGraphElementActionCollection_a9eb641e9c9bb22f3540dc98c2c750ea9_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+该类的文档由以下文件生成\-:\begin{DoxyCompactItemize}
+\item 
+Thirdparty/g2o/g2o/core/hyper\-\_\-graph\-\_\-action.\-h\item 
+Thirdparty/g2o/g2o/core/hyper\-\_\-graph\-\_\-action.\-cpp\end{DoxyCompactItemize}

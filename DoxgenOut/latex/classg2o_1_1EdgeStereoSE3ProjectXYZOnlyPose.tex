@@ -1,0 +1,232 @@
+\hypertarget{classg2o_1_1EdgeStereoSE3ProjectXYZOnlyPose}{\section{g2o\-:\-:Edge\-Stereo\-S\-E3\-Project\-X\-Y\-Z\-Only\-Pose类 参考}
+\label{classg2o_1_1EdgeStereoSE3ProjectXYZOnlyPose}\index{g2o\-::\-Edge\-Stereo\-S\-E3\-Project\-X\-Y\-Z\-Only\-Pose@{g2o\-::\-Edge\-Stereo\-S\-E3\-Project\-X\-Y\-Z\-Only\-Pose}}
+}
+
+
+N\-O\-T\-E uesd in Optimizer\-::\-Pose\-Optimization()  
+
+
+
+
+{\ttfamily \#include $<$types\-\_\-six\-\_\-dof\-\_\-expmap.\-h$>$}
+
+
+
+类 g2o\-:\-:Edge\-Stereo\-S\-E3\-Project\-X\-Y\-Z\-Only\-Pose 继承关系图\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=254pt]{classg2o_1_1EdgeStereoSE3ProjectXYZOnlyPose__inherit__graph}
+\end{center}
+\end{figure}
+
+
+g2o\-:\-:Edge\-Stereo\-S\-E3\-Project\-X\-Y\-Z\-Only\-Pose 的协作图\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=336pt]{classg2o_1_1EdgeStereoSE3ProjectXYZOnlyPose__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classg2o_1_1EdgeStereoSE3ProjectXYZOnlyPose_ae199c5428259a7d50e9897029ae9fd70}{bool \hyperlink{classg2o_1_1EdgeStereoSE3ProjectXYZOnlyPose_ae199c5428259a7d50e9897029ae9fd70}{read} (std\-::istream \&is)}\label{classg2o_1_1EdgeStereoSE3ProjectXYZOnlyPose_ae199c5428259a7d50e9897029ae9fd70}
+
+\begin{DoxyCompactList}\small\item\em read the vertex from a stream, i.\-e., the internal state of the vertex \end{DoxyCompactList}\item 
+\hypertarget{classg2o_1_1EdgeStereoSE3ProjectXYZOnlyPose_aa31f6c66016ec7f362ab3028a53e8cc6}{bool \hyperlink{classg2o_1_1EdgeStereoSE3ProjectXYZOnlyPose_aa31f6c66016ec7f362ab3028a53e8cc6}{write} (std\-::ostream \&os) const }\label{classg2o_1_1EdgeStereoSE3ProjectXYZOnlyPose_aa31f6c66016ec7f362ab3028a53e8cc6}
+
+\begin{DoxyCompactList}\small\item\em write the vertex to a stream \end{DoxyCompactList}\item 
+void \hyperlink{classg2o_1_1EdgeStereoSE3ProjectXYZOnlyPose_af6fd2fdbdc9b4a6bcf21303ff3b8ea83}{compute\-Error} ()
+\item 
+bool \hyperlink{classg2o_1_1EdgeStereoSE3ProjectXYZOnlyPose_a5155075418c27ce8a1387d739ccbdf26}{is\-Depth\-Positive} ()
+\item 
+virtual void \hyperlink{classg2o_1_1EdgeStereoSE3ProjectXYZOnlyPose_a0b2b815e8ae331276f33be374dcc1897}{linearize\-Oplus} ()
+\item 
+Vector3d \hyperlink{classg2o_1_1EdgeStereoSE3ProjectXYZOnlyPose_acea8d0b81ed369bb63cd2f318512406f}{cam\-\_\-project} (const Vector3d \&trans\-\_\-xyz) const 
+\end{DoxyCompactItemize}
+\subsection*{Public 属性}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classg2o_1_1EdgeStereoSE3ProjectXYZOnlyPose_aa7c861f93edd02d3ef763c0e706cf496}{Vector3d \hyperlink{classg2o_1_1EdgeStereoSE3ProjectXYZOnlyPose_aa7c861f93edd02d3ef763c0e706cf496}{Xw}}\label{classg2o_1_1EdgeStereoSE3ProjectXYZOnlyPose_aa7c861f93edd02d3ef763c0e706cf496}
+
+\begin{DoxyCompactList}\small\item\em Map\-Point在世界坐标系的位置 \end{DoxyCompactList}\item 
+\hypertarget{classg2o_1_1EdgeStereoSE3ProjectXYZOnlyPose_aebf839be304521edf2f3cb445b3bf618}{double {\bfseries fx}}\label{classg2o_1_1EdgeStereoSE3ProjectXYZOnlyPose_aebf839be304521edf2f3cb445b3bf618}
+
+\item 
+\hypertarget{classg2o_1_1EdgeStereoSE3ProjectXYZOnlyPose_a7f779153148f1eb403ab6f2984b47eec}{double {\bfseries fy}}\label{classg2o_1_1EdgeStereoSE3ProjectXYZOnlyPose_a7f779153148f1eb403ab6f2984b47eec}
+
+\item 
+\hypertarget{classg2o_1_1EdgeStereoSE3ProjectXYZOnlyPose_a7b0f52c3f2931706838373ca7d4513a7}{double {\bfseries cx}}\label{classg2o_1_1EdgeStereoSE3ProjectXYZOnlyPose_a7b0f52c3f2931706838373ca7d4513a7}
+
+\item 
+\hypertarget{classg2o_1_1EdgeStereoSE3ProjectXYZOnlyPose_a95e79aa1ef43455cd6de7ccced2fc1e8}{double {\bfseries cy}}\label{classg2o_1_1EdgeStereoSE3ProjectXYZOnlyPose_a95e79aa1ef43455cd6de7ccced2fc1e8}
+
+\item 
+\hypertarget{classg2o_1_1EdgeStereoSE3ProjectXYZOnlyPose_a831d3e73bf61102622a7ac6af0475e7b}{double \hyperlink{classg2o_1_1EdgeStereoSE3ProjectXYZOnlyPose_a831d3e73bf61102622a7ac6af0475e7b}{bf}}\label{classg2o_1_1EdgeStereoSE3ProjectXYZOnlyPose_a831d3e73bf61102622a7ac6af0475e7b}
+
+\begin{DoxyCompactList}\small\item\em 内参数，bf = b$\ast$f \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{额外继承的成员函数}
+
+
+\subsection{详细描述}
+N\-O\-T\-E uesd in Optimizer\-::\-Pose\-Optimization() 
+
+在文件 types\-\_\-six\-\_\-dof\-\_\-expmap.\-h 第 269 行定义.
+
+
+
+\subsection{成员函数说明}
+\hypertarget{classg2o_1_1EdgeStereoSE3ProjectXYZOnlyPose_acea8d0b81ed369bb63cd2f318512406f}{\index{g2o\-::\-Edge\-Stereo\-S\-E3\-Project\-X\-Y\-Z\-Only\-Pose@{g2o\-::\-Edge\-Stereo\-S\-E3\-Project\-X\-Y\-Z\-Only\-Pose}!cam\-\_\-project@{cam\-\_\-project}}
+\index{cam\-\_\-project@{cam\-\_\-project}!g2o::EdgeStereoSE3ProjectXYZOnlyPose@{g2o\-::\-Edge\-Stereo\-S\-E3\-Project\-X\-Y\-Z\-Only\-Pose}}
+\subsubsection[{cam\-\_\-project}]{\setlength{\rightskip}{0pt plus 5cm}Vector3d g2o\-::\-Edge\-Stereo\-S\-E3\-Project\-X\-Y\-Z\-Only\-Pose\-::cam\-\_\-project (
+\begin{DoxyParamCaption}
+\item[{const Vector3d \&}]{trans\-\_\-xyz}
+\end{DoxyParamCaption}
+) const}}\label{classg2o_1_1EdgeStereoSE3ProjectXYZOnlyPose_acea8d0b81ed369bb63cd2f318512406f}
+将\-Xw投影到cam的图像坐标系 \par
+ $ ul = \frac{f_x X}{Z} + c_x $ \par
+ $ vl = \frac{f_y Y}{Z} + c_v $ \par
+ $ ur = \frac{f_x (X-b)}{Z} + c_x $ \par
+
+\begin{DoxyParams}{参数}
+{\em trans\-\_\-xyz} & \mbox{[}X Y Z\mbox{]} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+\mbox{[}ul vl ur\mbox{]} 
+\end{DoxyReturn}
+
+
+在文件 types\-\_\-six\-\_\-dof\-\_\-expmap.\-cpp 第 319 行定义.
+
+
+
+参考 bf.
+
+\hypertarget{classg2o_1_1EdgeStereoSE3ProjectXYZOnlyPose_af6fd2fdbdc9b4a6bcf21303ff3b8ea83}{\index{g2o\-::\-Edge\-Stereo\-S\-E3\-Project\-X\-Y\-Z\-Only\-Pose@{g2o\-::\-Edge\-Stereo\-S\-E3\-Project\-X\-Y\-Z\-Only\-Pose}!compute\-Error@{compute\-Error}}
+\index{compute\-Error@{compute\-Error}!g2o::EdgeStereoSE3ProjectXYZOnlyPose@{g2o\-::\-Edge\-Stereo\-S\-E3\-Project\-X\-Y\-Z\-Only\-Pose}}
+\subsubsection[{compute\-Error}]{\setlength{\rightskip}{0pt plus 5cm}void g2o\-::\-Edge\-Stereo\-S\-E3\-Project\-X\-Y\-Z\-Only\-Pose\-::compute\-Error (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classg2o_1_1EdgeStereoSE3ProjectXYZOnlyPose_af6fd2fdbdc9b4a6bcf21303ff3b8ea83}
+重投影误差 
+
+实现了 \hyperlink{classg2o_1_1OptimizableGraph_1_1Edge}{g2o\-::\-Optimizable\-Graph\-::\-Edge}.
+
+
+
+在文件 types\-\_\-six\-\_\-dof\-\_\-expmap.\-h 第 282 行定义.
+
+
+
+参考 g2o\-::\-Base\-Vertex$<$ D, T $>$\-::estimate().
+
+
+
+参考自 O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Optimizer\-::\-Pose\-Optimization().
+
+
+
+函数调用图\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classg2o_1_1EdgeStereoSE3ProjectXYZOnlyPose_af6fd2fdbdc9b4a6bcf21303ff3b8ea83_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+这是这个函数的调用关系图\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classg2o_1_1EdgeStereoSE3ProjectXYZOnlyPose_af6fd2fdbdc9b4a6bcf21303ff3b8ea83_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classg2o_1_1EdgeStereoSE3ProjectXYZOnlyPose_a5155075418c27ce8a1387d739ccbdf26}{\index{g2o\-::\-Edge\-Stereo\-S\-E3\-Project\-X\-Y\-Z\-Only\-Pose@{g2o\-::\-Edge\-Stereo\-S\-E3\-Project\-X\-Y\-Z\-Only\-Pose}!is\-Depth\-Positive@{is\-Depth\-Positive}}
+\index{is\-Depth\-Positive@{is\-Depth\-Positive}!g2o::EdgeStereoSE3ProjectXYZOnlyPose@{g2o\-::\-Edge\-Stereo\-S\-E3\-Project\-X\-Y\-Z\-Only\-Pose}}
+\subsubsection[{is\-Depth\-Positive}]{\setlength{\rightskip}{0pt plus 5cm}bool g2o\-::\-Edge\-Stereo\-S\-E3\-Project\-X\-Y\-Z\-Only\-Pose\-::is\-Depth\-Positive (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classg2o_1_1EdgeStereoSE3ProjectXYZOnlyPose_a5155075418c27ce8a1387d739ccbdf26}
+检验 $ TX_w $的\-Z是否大于0 \begin{DoxyReturn}{返回}
+true if the depth is Positive 
+\end{DoxyReturn}
+
+
+在文件 types\-\_\-six\-\_\-dof\-\_\-expmap.\-h 第 292 行定义.
+
+
+
+参考 g2o\-::\-Base\-Vertex$<$ D, T $>$\-::estimate().
+
+
+
+函数调用图\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classg2o_1_1EdgeStereoSE3ProjectXYZOnlyPose_a5155075418c27ce8a1387d739ccbdf26_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classg2o_1_1EdgeStereoSE3ProjectXYZOnlyPose_a0b2b815e8ae331276f33be374dcc1897}{\index{g2o\-::\-Edge\-Stereo\-S\-E3\-Project\-X\-Y\-Z\-Only\-Pose@{g2o\-::\-Edge\-Stereo\-S\-E3\-Project\-X\-Y\-Z\-Only\-Pose}!linearize\-Oplus@{linearize\-Oplus}}
+\index{linearize\-Oplus@{linearize\-Oplus}!g2o::EdgeStereoSE3ProjectXYZOnlyPose@{g2o\-::\-Edge\-Stereo\-S\-E3\-Project\-X\-Y\-Z\-Only\-Pose}}
+\subsubsection[{linearize\-Oplus}]{\setlength{\rightskip}{0pt plus 5cm}void g2o\-::\-Edge\-Stereo\-S\-E3\-Project\-X\-Y\-Z\-Only\-Pose\-::linearize\-Oplus (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classg2o_1_1EdgeStereoSE3ProjectXYZOnlyPose_a0b2b815e8ae331276f33be374dcc1897}
+误差函数对增量\mbox{[}w1 w2 w3 v1 v2 v3\mbox{]}求雅克比矩阵 $J_{3\times6}$ $ = \frac{\partial [obs - \Pi(exp(\hat{\xi}) T X_w)]}{\partial \xi} $ \begin{DoxyNote}{注解}
+\-\_\-jacobian\-Oplus\-Xi，雅可比矩阵的正负号没有关系 
+\end{DoxyNote}
+\begin{DoxySeeAlso}{参见}
+采用链式法则求解, 参考(注意以下参考的增量定义为\mbox{[}v1 v2 v3 w1 w2 w3\mbox{]})
+\begin{DoxyItemize}
+\item jlblanco2010geometry3d\-\_\-techrep.\-pdf p56 (A.\-2) 推荐
+\item strasdat\-\_\-thesis\-\_\-2012.\-pdf p194 (B.\-4) 
+\end{DoxyItemize}
+\end{DoxySeeAlso}
+
+
+重载 \hyperlink{classg2o_1_1BaseUnaryEdge_a367f19b903938faf6e89dd1b0e4e722b}{g2o\-::\-Base\-Unary\-Edge$<$ 3, Vector3d, Vertex\-S\-E3\-Expmap $>$} .
+
+
+
+在文件 types\-\_\-six\-\_\-dof\-\_\-expmap.\-cpp 第 355 行定义.
+
+
+
+参考 bf, g2o\-::\-Base\-Vertex$<$ D, T $>$\-::estimate() , 以及 Xw.
+
+
+
+函数调用图\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classg2o_1_1EdgeStereoSE3ProjectXYZOnlyPose_a0b2b815e8ae331276f33be374dcc1897_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+该类的文档由以下文件生成\-:\begin{DoxyCompactItemize}
+\item 
+Thirdparty/g2o/g2o/types/types\-\_\-six\-\_\-dof\-\_\-expmap.\-h\item 
+Thirdparty/g2o/g2o/types/types\-\_\-six\-\_\-dof\-\_\-expmap.\-cpp\end{DoxyCompactItemize}

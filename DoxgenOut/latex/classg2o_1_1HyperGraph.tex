@@ -1,0 +1,331 @@
+\hypertarget{classg2o_1_1HyperGraph}{\section{g2o\-:\-:Hyper\-Graph类 参考}
+\label{classg2o_1_1HyperGraph}\index{g2o\-::\-Hyper\-Graph@{g2o\-::\-Hyper\-Graph}}
+}
+
+
+{\ttfamily \#include $<$hyper\-\_\-graph.\-h$>$}
+
+
+
+类 g2o\-:\-:Hyper\-Graph 继承关系图\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=194pt]{classg2o_1_1HyperGraph__inherit__graph}
+\end{center}
+\end{figure}
+\subsection*{类}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classg2o_1_1HyperGraph_1_1Edge}{Edge}
+\item 
+struct \hyperlink{structg2o_1_1HyperGraph_1_1HyperGraphElement}{Hyper\-Graph\-Element}
+\item 
+class \hyperlink{classg2o_1_1HyperGraph_1_1Vertex}{Vertex}
+\begin{DoxyCompactList}\small\item\em abstract \hyperlink{classg2o_1_1HyperGraph_1_1Vertex}{Vertex}, your types must derive from that one \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public 类型}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classg2o_1_1HyperGraph_a7b8fda20e1b03e92aeceeac6e8218b73}{typedef std\-::bitset\\*
+$<$ Hyper\-Graph\-::\-H\-G\-E\-T\-\_\-\-N\-U\-M\-\_\-\-E\-L\-E\-M\-S $>$ {\bfseries Graph\-Elem\-Bitset}}\label{classg2o_1_1HyperGraph_a7b8fda20e1b03e92aeceeac6e8218b73}
+
+\item 
+\hypertarget{classg2o_1_1HyperGraph_a5e2970e236c0dcb4eff7c205d7b6b4ae}{typedef std\-::set$<$ \hyperlink{classg2o_1_1HyperGraph_1_1Edge}{Edge} $\ast$ $>$ {\bfseries Edge\-Set}}\label{classg2o_1_1HyperGraph_a5e2970e236c0dcb4eff7c205d7b6b4ae}
+
+\item 
+\hypertarget{classg2o_1_1HyperGraph_a703938cdb4bb636860eed55a2489d70c}{typedef std\-::set$<$ \hyperlink{classg2o_1_1HyperGraph_1_1Vertex}{Vertex} $\ast$ $>$ {\bfseries Vertex\-Set}}\label{classg2o_1_1HyperGraph_a703938cdb4bb636860eed55a2489d70c}
+
+\item 
+\hypertarget{classg2o_1_1HyperGraph_a97307eac064ebf4b3e2cfbf0718035b5}{typedef \\*
+std\-::tr1\-::unordered\-\_\-map$<$ int, \\*
+\hyperlink{classg2o_1_1HyperGraph_1_1Vertex}{Vertex} $\ast$ $>$ {\bfseries Vertex\-I\-D\-Map}}\label{classg2o_1_1HyperGraph_a97307eac064ebf4b3e2cfbf0718035b5}
+
+\item 
+\hypertarget{classg2o_1_1HyperGraph_a9339534c99300a0ddac87ba976ef188c}{typedef std\-::vector$<$ \hyperlink{classg2o_1_1HyperGraph_1_1Vertex}{Vertex} $\ast$ $>$ {\bfseries Vertex\-Container}}\label{classg2o_1_1HyperGraph_a9339534c99300a0ddac87ba976ef188c}
+
+\end{DoxyCompactItemize}
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classg2o_1_1HyperGraph_a833632b111cfc7cf08b842ae3cb43d41}{\hyperlink{classg2o_1_1HyperGraph_a833632b111cfc7cf08b842ae3cb43d41}{Hyper\-Graph} ()}\label{classg2o_1_1HyperGraph_a833632b111cfc7cf08b842ae3cb43d41}
+
+\begin{DoxyCompactList}\small\item\em constructs an empty hyper graph \end{DoxyCompactList}\item 
+\hypertarget{classg2o_1_1HyperGraph_a0ef6e1d65e0f9171a518bce3fc559693}{virtual \hyperlink{classg2o_1_1HyperGraph_a0ef6e1d65e0f9171a518bce3fc559693}{$\sim$\-Hyper\-Graph} ()}\label{classg2o_1_1HyperGraph_a0ef6e1d65e0f9171a518bce3fc559693}
+
+\begin{DoxyCompactList}\small\item\em destroys the hyper-\/graph and all the vertices of the graph \end{DoxyCompactList}\item 
+\hypertarget{classg2o_1_1HyperGraph_ab07fe8bd9982a66ba34e83dff8317ea2}{\hyperlink{classg2o_1_1HyperGraph_1_1Vertex}{Vertex} $\ast$ \hyperlink{classg2o_1_1HyperGraph_ab07fe8bd9982a66ba34e83dff8317ea2}{vertex} (int id)}\label{classg2o_1_1HyperGraph_ab07fe8bd9982a66ba34e83dff8317ea2}
+
+\begin{DoxyCompactList}\small\item\em returns a vertex {\itshape id} in the hyper-\/graph, or 0 if the vertex id is not present \end{DoxyCompactList}\item 
+\hypertarget{classg2o_1_1HyperGraph_a685a30debc0c540cc10c1bfc669ad2f1}{const \hyperlink{classg2o_1_1HyperGraph_1_1Vertex}{Vertex} $\ast$ \hyperlink{classg2o_1_1HyperGraph_a685a30debc0c540cc10c1bfc669ad2f1}{vertex} (int id) const }\label{classg2o_1_1HyperGraph_a685a30debc0c540cc10c1bfc669ad2f1}
+
+\begin{DoxyCompactList}\small\item\em returns a vertex {\itshape id} in the hyper-\/graph, or 0 if the vertex id is not present \end{DoxyCompactList}\item 
+\hypertarget{classg2o_1_1HyperGraph_a97ab8302aa027d513253387bba9e0dd5}{virtual bool \hyperlink{classg2o_1_1HyperGraph_a97ab8302aa027d513253387bba9e0dd5}{remove\-Vertex} (\hyperlink{classg2o_1_1HyperGraph_1_1Vertex}{Vertex} $\ast$v)}\label{classg2o_1_1HyperGraph_a97ab8302aa027d513253387bba9e0dd5}
+
+\begin{DoxyCompactList}\small\item\em removes a vertex from the graph. Returns true on success (vertex was present) \end{DoxyCompactList}\item 
+\hypertarget{classg2o_1_1HyperGraph_a33e5a60705ce673d647aa1613da9d99b}{virtual bool \hyperlink{classg2o_1_1HyperGraph_a33e5a60705ce673d647aa1613da9d99b}{remove\-Edge} (\hyperlink{classg2o_1_1HyperGraph_1_1Edge}{Edge} $\ast$e)}\label{classg2o_1_1HyperGraph_a33e5a60705ce673d647aa1613da9d99b}
+
+\begin{DoxyCompactList}\small\item\em removes a vertex from the graph. Returns true on success (edge was present) \end{DoxyCompactList}\item 
+\hypertarget{classg2o_1_1HyperGraph_a6b629dff2928dbd704ca81f24858e72f}{virtual void \hyperlink{classg2o_1_1HyperGraph_a6b629dff2928dbd704ca81f24858e72f}{clear} ()}\label{classg2o_1_1HyperGraph_a6b629dff2928dbd704ca81f24858e72f}
+
+\begin{DoxyCompactList}\small\item\em clears the graph and empties all structures. \end{DoxyCompactList}\item 
+const Vertex\-I\-D\-Map \& \hyperlink{classg2o_1_1HyperGraph_a3e713e7ee84eecad3876651737af6cfc}{vertices} () const 
+\item 
+Vertex\-I\-D\-Map \& \hyperlink{classg2o_1_1HyperGraph_a650107c875ef6f43d438d7d3e2ddf797}{vertices} ()
+\item 
+const Edge\-Set \& \hyperlink{classg2o_1_1HyperGraph_acb3391945ed7c3f09243101d9ef0aaf0}{edges} () const 
+\item 
+Edge\-Set \& \hyperlink{classg2o_1_1HyperGraph_a2f9f023fe2fb491ef9af873b9e683006}{edges} ()
+\item 
+virtual bool \hyperlink{classg2o_1_1HyperGraph_a7ef87ba3479827b24c6fc29c5fc3aa21}{add\-Vertex} (\hyperlink{classg2o_1_1HyperGraph_1_1Vertex}{Vertex} $\ast$v)
+\item 
+virtual bool \hyperlink{classg2o_1_1HyperGraph_a0f1d35009a2879b238c8148c33485c89}{add\-Edge} (\hyperlink{classg2o_1_1HyperGraph_1_1Edge}{Edge} $\ast$e)
+\item 
+virtual bool \hyperlink{classg2o_1_1HyperGraph_a74f0d7392e67762a85799db72a58a94c}{change\-Id} (\hyperlink{classg2o_1_1HyperGraph_1_1Vertex}{Vertex} $\ast$v, int new\-Id)
+\end{DoxyCompactItemize}
+\subsection*{Public 属性}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classg2o_1_1HyperGraph_a2aca385a3acb87b4f4365765afd10093}{class G2\-O\-\_\-\-C\-O\-R\-E\-\_\-\-A\-P\-I {\bfseries Vertex}}\label{classg2o_1_1HyperGraph_a2aca385a3acb87b4f4365765afd10093}
+
+\item 
+\hypertarget{classg2o_1_1HyperGraph_a59ab1fe84b0728a65a0ba15fce9b9cf7}{class G2\-O\-\_\-\-C\-O\-R\-E\-\_\-\-A\-P\-I {\bfseries Edge}}\label{classg2o_1_1HyperGraph_a59ab1fe84b0728a65a0ba15fce9b9cf7}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected 属性}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classg2o_1_1HyperGraph_a83132c77c8d0896581d168cbc72f673a}{Vertex\-I\-D\-Map {\bfseries \-\_\-vertices}}\label{classg2o_1_1HyperGraph_a83132c77c8d0896581d168cbc72f673a}
+
+\item 
+\hypertarget{classg2o_1_1HyperGraph_afe4ae6e9ef05c8bded2b1b30e1886b36}{Edge\-Set {\bfseries \-\_\-edges}}\label{classg2o_1_1HyperGraph_afe4ae6e9ef05c8bded2b1b30e1886b36}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{详细描述}
+Class that models a directed Hyper-\/\-Graph. An hyper graph is a graph where an edge can connect one or more nodes. Both Vertices and Edges of an hyoper graph derive from the same class \hyperlink{structg2o_1_1HyperGraph_1_1HyperGraphElement}{Hyper\-Graph\-Element}, thus one can implement generic algorithms that operate transparently on edges or vertices (see \hyperlink{classg2o_1_1HyperGraphAction}{Hyper\-Graph\-Action}).
+
+The vertices are uniquely identified by an int id, while the edges are identfied by their pointers. 
+
+在文件 hyper\-\_\-graph.\-h 第 63 行定义.
+
+
+
+\subsection{成员函数说明}
+\hypertarget{classg2o_1_1HyperGraph_a0f1d35009a2879b238c8148c33485c89}{\index{g2o\-::\-Hyper\-Graph@{g2o\-::\-Hyper\-Graph}!add\-Edge@{add\-Edge}}
+\index{add\-Edge@{add\-Edge}!g2o::HyperGraph@{g2o\-::\-Hyper\-Graph}}
+\subsubsection[{add\-Edge}]{\setlength{\rightskip}{0pt plus 5cm}bool g2o\-::\-Hyper\-Graph\-::add\-Edge (
+\begin{DoxyParamCaption}
+\item[{{\bf Edge} $\ast$}]{e}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classg2o_1_1HyperGraph_a0f1d35009a2879b238c8148c33485c89}
+Adds an edge to the graph. If the edge is already in the graph, it does nothing and returns false. Otherwise it returns true. 
+
+被 \hyperlink{structg2o_1_1OptimizableGraph_a6831ed69fce3dba691f53302a2813070}{g2o\-::\-Optimizable\-Graph} 重载.
+
+
+
+在文件 hyper\-\_\-graph.\-cpp 第 99 行定义.
+
+
+
+参考 g2o\-::\-Hyper\-Graph\-::\-Vertex\-::edges() , 以及 g2o\-::\-Hyper\-Graph\-::\-Edge\-::vertices().
+
+
+
+参考自 g2o\-::\-Optimizable\-Graph\-::add\-Edge().
+
+
+
+函数调用图\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classg2o_1_1HyperGraph_a0f1d35009a2879b238c8148c33485c89_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+这是这个函数的调用关系图\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classg2o_1_1HyperGraph_a0f1d35009a2879b238c8148c33485c89_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classg2o_1_1HyperGraph_a7ef87ba3479827b24c6fc29c5fc3aa21}{\index{g2o\-::\-Hyper\-Graph@{g2o\-::\-Hyper\-Graph}!add\-Vertex@{add\-Vertex}}
+\index{add\-Vertex@{add\-Vertex}!g2o::HyperGraph@{g2o\-::\-Hyper\-Graph}}
+\subsubsection[{add\-Vertex}]{\setlength{\rightskip}{0pt plus 5cm}bool g2o\-::\-Hyper\-Graph\-::add\-Vertex (
+\begin{DoxyParamCaption}
+\item[{{\bf Vertex} $\ast$}]{v}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classg2o_1_1HyperGraph_a7ef87ba3479827b24c6fc29c5fc3aa21}
+adds a vertex to the graph. The id of the vertex should be set before invoking this function. the function fails if another vertex with the same id is already in the graph. returns true, on success, or false on failure. 
+
+被 \hyperlink{structg2o_1_1OptimizableGraph_ac6f41f49fe6148fbe17133d10bf29b4c}{g2o\-::\-Optimizable\-Graph} 重载.
+
+
+
+在文件 hyper\-\_\-graph.\-cpp 第 76 行定义.
+
+
+
+参考 g2o\-::\-Hyper\-Graph\-::\-Vertex\-::id() , 以及 vertex().
+
+
+
+参考自 g2o\-::\-Optimizable\-Graph\-::add\-Vertex().
+
+
+
+函数调用图\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classg2o_1_1HyperGraph_a7ef87ba3479827b24c6fc29c5fc3aa21_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+这是这个函数的调用关系图\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classg2o_1_1HyperGraph_a7ef87ba3479827b24c6fc29c5fc3aa21_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classg2o_1_1HyperGraph_a74f0d7392e67762a85799db72a58a94c}{\index{g2o\-::\-Hyper\-Graph@{g2o\-::\-Hyper\-Graph}!change\-Id@{change\-Id}}
+\index{change\-Id@{change\-Id}!g2o::HyperGraph@{g2o\-::\-Hyper\-Graph}}
+\subsubsection[{change\-Id}]{\setlength{\rightskip}{0pt plus 5cm}bool g2o\-::\-Hyper\-Graph\-::change\-Id (
+\begin{DoxyParamCaption}
+\item[{{\bf Vertex} $\ast$}]{v, }
+\item[{int}]{new\-Id}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classg2o_1_1HyperGraph_a74f0d7392e67762a85799db72a58a94c}
+changes the id of a vertex already in the graph, and updates the bookkeeping @ returns false if the vertex is not in the graph; 
+
+在文件 hyper\-\_\-graph.\-cpp 第 89 行定义.
+
+
+
+参考 g2o\-::\-Hyper\-Graph\-::\-Vertex\-::id() , 以及 vertex().
+
+
+
+函数调用图\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classg2o_1_1HyperGraph_a74f0d7392e67762a85799db72a58a94c_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classg2o_1_1HyperGraph_acb3391945ed7c3f09243101d9ef0aaf0}{\index{g2o\-::\-Hyper\-Graph@{g2o\-::\-Hyper\-Graph}!edges@{edges}}
+\index{edges@{edges}!g2o::HyperGraph@{g2o\-::\-Hyper\-Graph}}
+\subsubsection[{edges}]{\setlength{\rightskip}{0pt plus 5cm}const Edge\-Set\& g2o\-::\-Hyper\-Graph\-::edges (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classg2o_1_1HyperGraph_acb3391945ed7c3f09243101d9ef0aaf0}
+\begin{DoxyReturn}{返回}
+the set of edges of the hyper graph 
+\end{DoxyReturn}
+
+
+在文件 hyper\-\_\-graph.\-h 第 187 行定义.
+
+
+
+参考自 g2o\-::\-Optimizable\-Graph\-::add\-Graph(), g2o\-::\-Optimizable\-Graph\-::chi2(), O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Optimizer\-::\-Pose\-Optimization(), g2o\-::\-Jacobian\-Workspace\-::update\-Size() , 以及 g2o\-::\-Optimizable\-Graph\-::verify\-Information\-Matrices().
+
+
+
+这是这个函数的调用关系图\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classg2o_1_1HyperGraph_acb3391945ed7c3f09243101d9ef0aaf0_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classg2o_1_1HyperGraph_a2f9f023fe2fb491ef9af873b9e683006}{\index{g2o\-::\-Hyper\-Graph@{g2o\-::\-Hyper\-Graph}!edges@{edges}}
+\index{edges@{edges}!g2o::HyperGraph@{g2o\-::\-Hyper\-Graph}}
+\subsubsection[{edges}]{\setlength{\rightskip}{0pt plus 5cm}Edge\-Set\& g2o\-::\-Hyper\-Graph\-::edges (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classg2o_1_1HyperGraph_a2f9f023fe2fb491ef9af873b9e683006}
+\begin{DoxyReturn}{返回}
+the set of edges of the hyper graph 
+\end{DoxyReturn}
+
+
+在文件 hyper\-\_\-graph.\-h 第 189 行定义.
+
+\hypertarget{classg2o_1_1HyperGraph_a3e713e7ee84eecad3876651737af6cfc}{\index{g2o\-::\-Hyper\-Graph@{g2o\-::\-Hyper\-Graph}!vertices@{vertices}}
+\index{vertices@{vertices}!g2o::HyperGraph@{g2o\-::\-Hyper\-Graph}}
+\subsubsection[{vertices}]{\setlength{\rightskip}{0pt plus 5cm}const Vertex\-I\-D\-Map\& g2o\-::\-Hyper\-Graph\-::vertices (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classg2o_1_1HyperGraph_a3e713e7ee84eecad3876651737af6cfc}
+\begin{DoxyReturn}{返回}
+the map {\itshape id -\/$>$ vertex} where the vertices are stored 
+\end{DoxyReturn}
+
+
+在文件 hyper\-\_\-graph.\-h 第 182 行定义.
+
+
+
+参考自 g2o\-::\-Optimizable\-Graph\-::add\-Graph(), g2o\-::\-Optimizable\-Graph\-::dimensions() , 以及 g2o\-::\-Optimizable\-Graph\-::max\-Dimension().
+
+
+
+这是这个函数的调用关系图\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classg2o_1_1HyperGraph_a3e713e7ee84eecad3876651737af6cfc_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classg2o_1_1HyperGraph_a650107c875ef6f43d438d7d3e2ddf797}{\index{g2o\-::\-Hyper\-Graph@{g2o\-::\-Hyper\-Graph}!vertices@{vertices}}
+\index{vertices@{vertices}!g2o::HyperGraph@{g2o\-::\-Hyper\-Graph}}
+\subsubsection[{vertices}]{\setlength{\rightskip}{0pt plus 5cm}Vertex\-I\-D\-Map\& g2o\-::\-Hyper\-Graph\-::vertices (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classg2o_1_1HyperGraph_a650107c875ef6f43d438d7d3e2ddf797}
+\begin{DoxyReturn}{返回}
+the map {\itshape id -\/$>$ vertex} where the vertices are stored 
+\end{DoxyReturn}
+
+
+在文件 hyper\-\_\-graph.\-h 第 184 行定义.
+
+
+
+该类的文档由以下文件生成\-:\begin{DoxyCompactItemize}
+\item 
+Thirdparty/g2o/g2o/core/hyper\-\_\-graph.\-h\item 
+Thirdparty/g2o/g2o/core/hyper\-\_\-graph.\-cpp\end{DoxyCompactItemize}

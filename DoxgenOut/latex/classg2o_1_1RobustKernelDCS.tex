@@ -1,0 +1,74 @@
+\hypertarget{classg2o_1_1RobustKernelDCS}{\section{g2o\-:\-:Robust\-Kernel\-D\-C\-S类 参考}
+\label{classg2o_1_1RobustKernelDCS}\index{g2o\-::\-Robust\-Kernel\-D\-C\-S@{g2o\-::\-Robust\-Kernel\-D\-C\-S}}
+}
+
+
+Dynamic covariance scaling -\/ D\-C\-S.  
+
+
+
+
+{\ttfamily \#include $<$robust\-\_\-kernel\-\_\-impl.\-h$>$}
+
+
+
+类 g2o\-:\-:Robust\-Kernel\-D\-C\-S 继承关系图\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=198pt]{classg2o_1_1RobustKernelDCS__inherit__graph}
+\end{center}
+\end{figure}
+
+
+g2o\-:\-:Robust\-Kernel\-D\-C\-S 的协作图\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=198pt]{classg2o_1_1RobustKernelDCS__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \hyperlink{classg2o_1_1RobustKernelDCS_a4b9b1d991bf3b86093dd4759a032cd78}{robustify} (double e2, Eigen\-::\-Vector3d \&rho) const 
+\end{DoxyCompactItemize}
+\subsection*{额外继承的成员函数}
+
+
+\subsection{详细描述}
+Dynamic covariance scaling -\/ D\-C\-S. 
+
+See paper Robust Map Optimization from Agarwal et al. I\-C\-R\-A 2013
+
+delta is used as \$phi\$ 
+
+在文件 robust\-\_\-kernel\-\_\-impl.\-h 第 160 行定义.
+
+
+
+\subsection{成员函数说明}
+\hypertarget{classg2o_1_1RobustKernelDCS_a4b9b1d991bf3b86093dd4759a032cd78}{\index{g2o\-::\-Robust\-Kernel\-D\-C\-S@{g2o\-::\-Robust\-Kernel\-D\-C\-S}!robustify@{robustify}}
+\index{robustify@{robustify}!g2o::RobustKernelDCS@{g2o\-::\-Robust\-Kernel\-D\-C\-S}}
+\subsubsection[{robustify}]{\setlength{\rightskip}{0pt plus 5cm}void g2o\-::\-Robust\-Kernel\-D\-C\-S\-::robustify (
+\begin{DoxyParamCaption}
+\item[{double}]{squared\-Error, }
+\item[{Eigen\-::\-Vector3d \&}]{rho}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classg2o_1_1RobustKernelDCS_a4b9b1d991bf3b86093dd4759a032cd78}
+compute the scaling factor for a error\-: The error is e$^\wedge$\-T Omega e The output rho is rho\mbox{[}0\mbox{]}\-: The actual scaled error value rho\mbox{[}1\mbox{]}\-: First derivative of the scaling function rho\mbox{[}2\mbox{]}\-: Second derivative of the scaling function 
+
+实现了 \hyperlink{classg2o_1_1RobustKernel_ab47b071a0cfe466be063f0104bc41d0f}{g2o\-::\-Robust\-Kernel}.
+
+
+
+在文件 robust\-\_\-kernel\-\_\-impl.\-cpp 第 152 行定义.
+
+
+
+该类的文档由以下文件生成\-:\begin{DoxyCompactItemize}
+\item 
+Thirdparty/g2o/g2o/core/robust\-\_\-kernel\-\_\-impl.\-h\item 
+Thirdparty/g2o/g2o/core/robust\-\_\-kernel\-\_\-impl.\-cpp\end{DoxyCompactItemize}

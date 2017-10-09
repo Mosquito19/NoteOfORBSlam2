@@ -1,0 +1,116 @@
+\hypertarget{classg2o_1_1LinearSolverDense}{\section{g2o\-:\-:Linear\-Solver\-Dense$<$ Matrix\-Type $>$ 模板类 参考}
+\label{classg2o_1_1LinearSolverDense}\index{g2o\-::\-Linear\-Solver\-Dense$<$ Matrix\-Type $>$@{g2o\-::\-Linear\-Solver\-Dense$<$ Matrix\-Type $>$}}
+}
+
+
+linear solver using dense cholesky decomposition  
+
+
+
+
+{\ttfamily \#include $<$linear\-\_\-solver\-\_\-dense.\-h$>$}
+
+
+
+类 g2o\-:\-:Linear\-Solver\-Dense$<$ Matrix\-Type $>$ 继承关系图\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=200pt]{classg2o_1_1LinearSolverDense__inherit__graph}
+\end{center}
+\end{figure}
+
+
+g2o\-:\-:Linear\-Solver\-Dense$<$ Matrix\-Type $>$ 的协作图\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=200pt]{classg2o_1_1LinearSolverDense__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+virtual bool \hyperlink{classg2o_1_1LinearSolverDense_a24f68ecd4b022269dbfc4d990eb5c57b}{init} ()
+\item 
+bool \hyperlink{classg2o_1_1LinearSolverDense_a8b6eafa6e53b9f705a4e8eb436eeb403}{solve} (const \hyperlink{classg2o_1_1SparseBlockMatrix}{Sparse\-Block\-Matrix}$<$ Matrix\-Type $>$ \&A, double $\ast$x, double $\ast$b)
+\end{DoxyCompactItemize}
+\subsection*{Protected 属性}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classg2o_1_1LinearSolverDense_a2d82ac52c9c24501cccee3ef3cb575fe}{bool {\bfseries \-\_\-reset}}\label{classg2o_1_1LinearSolverDense_a2d82ac52c9c24501cccee3ef3cb575fe}
+
+\item 
+\hypertarget{classg2o_1_1LinearSolverDense_a5ca6a1f2358ce0620dbdbae3fdc9fc99}{Eigen\-::\-Matrix\-Xd {\bfseries \-\_\-\-H}}\label{classg2o_1_1LinearSolverDense_a5ca6a1f2358ce0620dbdbae3fdc9fc99}
+
+\item 
+\hypertarget{classg2o_1_1LinearSolverDense_a20fc35e2f25107a6e36211861034aae0}{Eigen\-::\-L\-D\-L\-T$<$ Eigen\-::\-Matrix\-Xd $>$ {\bfseries \-\_\-cholesky}}\label{classg2o_1_1LinearSolverDense_a20fc35e2f25107a6e36211861034aae0}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{详细描述}
+\subsubsection*{template$<$typename Matrix\-Type$>$class g2o\-::\-Linear\-Solver\-Dense$<$ Matrix\-Type $>$}
+
+linear solver using dense cholesky decomposition 
+
+在文件 linear\-\_\-solver\-\_\-dense.\-h 第 46 行定义.
+
+
+
+\subsection{成员函数说明}
+\hypertarget{classg2o_1_1LinearSolverDense_a24f68ecd4b022269dbfc4d990eb5c57b}{\index{g2o\-::\-Linear\-Solver\-Dense@{g2o\-::\-Linear\-Solver\-Dense}!init@{init}}
+\index{init@{init}!g2o::LinearSolverDense@{g2o\-::\-Linear\-Solver\-Dense}}
+\subsubsection[{init}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Matrix\-Type$>$ virtual bool {\bf g2o\-::\-Linear\-Solver\-Dense}$<$ Matrix\-Type $>$\-::init (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classg2o_1_1LinearSolverDense_a24f68ecd4b022269dbfc4d990eb5c57b}
+init for operating on matrices with a different non-\/zero pattern like before 
+
+实现了 \hyperlink{classg2o_1_1LinearSolver_aebd961a94ef6de1bc66d2ca41dd2b17b}{g2o\-::\-Linear\-Solver$<$ Matrix\-Type $>$}.
+
+
+
+在文件 linear\-\_\-solver\-\_\-dense.\-h 第 59 行定义.
+
+\hypertarget{classg2o_1_1LinearSolverDense_a8b6eafa6e53b9f705a4e8eb436eeb403}{\index{g2o\-::\-Linear\-Solver\-Dense@{g2o\-::\-Linear\-Solver\-Dense}!solve@{solve}}
+\index{solve@{solve}!g2o::LinearSolverDense@{g2o\-::\-Linear\-Solver\-Dense}}
+\subsubsection[{solve}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Matrix\-Type$>$ bool {\bf g2o\-::\-Linear\-Solver\-Dense}$<$ Matrix\-Type $>$\-::solve (
+\begin{DoxyParamCaption}
+\item[{const {\bf Sparse\-Block\-Matrix}$<$ Matrix\-Type $>$ \&}]{A, }
+\item[{double $\ast$}]{x, }
+\item[{double $\ast$}]{b}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classg2o_1_1LinearSolverDense_a8b6eafa6e53b9f705a4e8eb436eeb403}
+Assumes that A is the same matrix for several calls. Among other assumptions, the non-\/zero pattern does not change! If the matrix changes call \hyperlink{classg2o_1_1LinearSolverDense_a24f68ecd4b022269dbfc4d990eb5c57b}{init()} before. solve system Ax = b, x and b have to allocated beforehand!! 
+
+实现了 \hyperlink{classg2o_1_1LinearSolver_aa44b40826d50203c8ce2ff258c34e030}{g2o\-::\-Linear\-Solver$<$ Matrix\-Type $>$}.
+
+
+
+在文件 linear\-\_\-solver\-\_\-dense.\-h 第 65 行定义.
+
+
+
+参考 g2o\-::\-Sparse\-Block\-Matrix$<$ Matrix\-Type $>$\-::block\-Cols(), g2o\-::\-Sparse\-Block\-Matrix$<$ Matrix\-Type $>$\-::col\-Base\-Of\-Block(), g2o\-::\-Sparse\-Block\-Matrix$<$ Matrix\-Type $>$\-::cols(), g2o\-::\-Sparse\-Block\-Matrix$<$ Matrix\-Type $>$\-::cols\-Of\-Block(), g2o\-::\-Sparse\-Block\-Matrix$<$ Matrix\-Type $>$\-::row\-Base\-Of\-Block(), g2o\-::\-Sparse\-Block\-Matrix$<$ Matrix\-Type $>$\-::rows\-Of\-Block() , 以及 g2o\-::\-Sparse\-Block\-Matrix$<$ Matrix\-Type $>$\-::transpose().
+
+
+
+函数调用图\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classg2o_1_1LinearSolverDense_a8b6eafa6e53b9f705a4e8eb436eeb403_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+该类的文档由以下文件生成\-:\begin{DoxyCompactItemize}
+\item 
+Thirdparty/g2o/g2o/solvers/linear\-\_\-solver\-\_\-dense.\-h\end{DoxyCompactItemize}

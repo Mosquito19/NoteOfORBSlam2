@@ -1,0 +1,143 @@
+\hypertarget{classg2o_1_1OptimizationAlgorithmFactory}{\section{g2o\-:\-:Optimization\-Algorithm\-Factory类 参考}
+\label{classg2o_1_1OptimizationAlgorithmFactory}\index{g2o\-::\-Optimization\-Algorithm\-Factory@{g2o\-::\-Optimization\-Algorithm\-Factory}}
+}
+
+
+create solvers based on their short name  
+
+
+
+
+{\ttfamily \#include $<$optimization\-\_\-algorithm\-\_\-factory.\-h$>$}
+
+\subsection*{Public 类型}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classg2o_1_1OptimizationAlgorithmFactory_a3ed210b94bf09b47e30d07da3766b4ec}{typedef std\-::list\\*
+$<$ \hyperlink{classg2o_1_1AbstractOptimizationAlgorithmCreator}{Abstract\-Optimization\-Algorithm\-Creator} $\ast$ $>$ {\bfseries Creator\-List}}\label{classg2o_1_1OptimizationAlgorithmFactory_a3ed210b94bf09b47e30d07da3766b4ec}
+
+\end{DoxyCompactItemize}
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classg2o_1_1OptimizationAlgorithmFactory_a7726ae90dc3d5baf62fa364517e0fed7}{register\-Solver} (\hyperlink{classg2o_1_1AbstractOptimizationAlgorithmCreator}{Abstract\-Optimization\-Algorithm\-Creator} $\ast$c)
+\item 
+void \hyperlink{classg2o_1_1OptimizationAlgorithmFactory_adf79430f6176c9e9309a703ba2dbd14b}{unregister\-Solver} (\hyperlink{classg2o_1_1AbstractOptimizationAlgorithmCreator}{Abstract\-Optimization\-Algorithm\-Creator} $\ast$c)
+\item 
+\hyperlink{classg2o_1_1OptimizationAlgorithm}{Optimization\-Algorithm} $\ast$ \hyperlink{classg2o_1_1OptimizationAlgorithmFactory_aa386e02f78023241e557aa9135ba42d2}{construct} (const std\-::string \&tag, \hyperlink{structg2o_1_1OptimizationAlgorithmProperty}{Optimization\-Algorithm\-Property} \&solver\-Property) const 
+\item 
+\hypertarget{classg2o_1_1OptimizationAlgorithmFactory_a71e42179f0138bd00de1a4aa02c7f83a}{void \hyperlink{classg2o_1_1OptimizationAlgorithmFactory_a71e42179f0138bd00de1a4aa02c7f83a}{list\-Solvers} (std\-::ostream \&os) const }\label{classg2o_1_1OptimizationAlgorithmFactory_a71e42179f0138bd00de1a4aa02c7f83a}
+
+\begin{DoxyCompactList}\small\item\em list the known solvers into a stream \end{DoxyCompactList}\item 
+\hypertarget{classg2o_1_1OptimizationAlgorithmFactory_a0f86ea4b415f6ac6854324be09eea8fa}{const Creator\-List \& \hyperlink{classg2o_1_1OptimizationAlgorithmFactory_a0f86ea4b415f6ac6854324be09eea8fa}{creator\-List} () const }\label{classg2o_1_1OptimizationAlgorithmFactory_a0f86ea4b415f6ac6854324be09eea8fa}
+
+\begin{DoxyCompactList}\small\item\em return the underlying list of creators \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{静态 Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classg2o_1_1OptimizationAlgorithmFactory_a4fe827a82f01c74ef124e7a9a9c98707}{static \\*
+\hyperlink{classg2o_1_1OptimizationAlgorithmFactory}{Optimization\-Algorithm\-Factory} $\ast$ \hyperlink{classg2o_1_1OptimizationAlgorithmFactory_a4fe827a82f01c74ef124e7a9a9c98707}{instance} ()}\label{classg2o_1_1OptimizationAlgorithmFactory_a4fe827a82f01c74ef124e7a9a9c98707}
+
+\begin{DoxyCompactList}\small\item\em return the instance \end{DoxyCompactList}\item 
+\hypertarget{classg2o_1_1OptimizationAlgorithmFactory_a80b6a74ac262e6192064ec264f965bd7}{static void \hyperlink{classg2o_1_1OptimizationAlgorithmFactory_a80b6a74ac262e6192064ec264f965bd7}{destroy} ()}\label{classg2o_1_1OptimizationAlgorithmFactory_a80b6a74ac262e6192064ec264f965bd7}
+
+\begin{DoxyCompactList}\small\item\em free the instance \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classg2o_1_1OptimizationAlgorithmFactory_a8e37aaa37f66f7f5e3bdd8a3c8bf58c6}{Creator\-List\-::const\-\_\-iterator {\bfseries find\-Solver} (const std\-::string \&name) const }\label{classg2o_1_1OptimizationAlgorithmFactory_a8e37aaa37f66f7f5e3bdd8a3c8bf58c6}
+
+\item 
+\hypertarget{classg2o_1_1OptimizationAlgorithmFactory_a75857fd4977318d51412f4ebae20157d}{Creator\-List\-::iterator {\bfseries find\-Solver} (const std\-::string \&name)}\label{classg2o_1_1OptimizationAlgorithmFactory_a75857fd4977318d51412f4ebae20157d}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected 属性}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classg2o_1_1OptimizationAlgorithmFactory_a1d7f67d60df0d0b26a7694dcea4879db}{Creator\-List {\bfseries \-\_\-creator}}\label{classg2o_1_1OptimizationAlgorithmFactory_a1d7f67d60df0d0b26a7694dcea4879db}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{详细描述}
+create solvers based on their short name 
+
+\hyperlink{classg2o_1_1Factory}{Factory} to allocate solvers based on their short name. The \hyperlink{classg2o_1_1Factory}{Factory} is implemented as a sigleton and the single instance can be accessed via the \hyperlink{classg2o_1_1OptimizationAlgorithmFactory_a4fe827a82f01c74ef124e7a9a9c98707}{instance()} function. 
+
+在文件 optimization\-\_\-algorithm\-\_\-factory.\-h 第 74 行定义.
+
+
+
+\subsection{成员函数说明}
+\hypertarget{classg2o_1_1OptimizationAlgorithmFactory_aa386e02f78023241e557aa9135ba42d2}{\index{g2o\-::\-Optimization\-Algorithm\-Factory@{g2o\-::\-Optimization\-Algorithm\-Factory}!construct@{construct}}
+\index{construct@{construct}!g2o::OptimizationAlgorithmFactory@{g2o\-::\-Optimization\-Algorithm\-Factory}}
+\subsubsection[{construct}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Optimization\-Algorithm} $\ast$ g2o\-::\-Optimization\-Algorithm\-Factory\-::construct (
+\begin{DoxyParamCaption}
+\item[{const std\-::string \&}]{tag, }
+\item[{{\bf Optimization\-Algorithm\-Property} \&}]{solver\-Property}
+\end{DoxyParamCaption}
+) const}}\label{classg2o_1_1OptimizationAlgorithmFactory_aa386e02f78023241e557aa9135ba42d2}
+construct a solver based on its name, e.\-g., var, fix3\-\_\-2\-\_\-cholmod 
+
+在文件 optimization\-\_\-algorithm\-\_\-factory.\-cpp 第 86 行定义.
+
+\hypertarget{classg2o_1_1OptimizationAlgorithmFactory_a7726ae90dc3d5baf62fa364517e0fed7}{\index{g2o\-::\-Optimization\-Algorithm\-Factory@{g2o\-::\-Optimization\-Algorithm\-Factory}!register\-Solver@{register\-Solver}}
+\index{register\-Solver@{register\-Solver}!g2o::OptimizationAlgorithmFactory@{g2o\-::\-Optimization\-Algorithm\-Factory}}
+\subsubsection[{register\-Solver}]{\setlength{\rightskip}{0pt plus 5cm}void g2o\-::\-Optimization\-Algorithm\-Factory\-::register\-Solver (
+\begin{DoxyParamCaption}
+\item[{{\bf Abstract\-Optimization\-Algorithm\-Creator} $\ast$}]{c}
+\end{DoxyParamCaption}
+)}}\label{classg2o_1_1OptimizationAlgorithmFactory_a7726ae90dc3d5baf62fa364517e0fed7}
+register a specific creator for allocating a solver 
+
+在文件 optimization\-\_\-algorithm\-\_\-factory.\-cpp 第 64 行定义.
+
+
+
+参考 g2o\-::\-Optimization\-Algorithm\-Property\-::name , 以及 g2o\-::\-Abstract\-Optimization\-Algorithm\-Creator\-::property().
+
+
+
+函数调用图\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classg2o_1_1OptimizationAlgorithmFactory_a7726ae90dc3d5baf62fa364517e0fed7_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classg2o_1_1OptimizationAlgorithmFactory_adf79430f6176c9e9309a703ba2dbd14b}{\index{g2o\-::\-Optimization\-Algorithm\-Factory@{g2o\-::\-Optimization\-Algorithm\-Factory}!unregister\-Solver@{unregister\-Solver}}
+\index{unregister\-Solver@{unregister\-Solver}!g2o::OptimizationAlgorithmFactory@{g2o\-::\-Optimization\-Algorithm\-Factory}}
+\subsubsection[{unregister\-Solver}]{\setlength{\rightskip}{0pt plus 5cm}void g2o\-::\-Optimization\-Algorithm\-Factory\-::unregister\-Solver (
+\begin{DoxyParamCaption}
+\item[{{\bf Abstract\-Optimization\-Algorithm\-Creator} $\ast$}]{c}
+\end{DoxyParamCaption}
+)}}\label{classg2o_1_1OptimizationAlgorithmFactory_adf79430f6176c9e9309a703ba2dbd14b}
+unregister a specific creator for allocating a solver 
+
+在文件 optimization\-\_\-algorithm\-\_\-factory.\-cpp 第 76 行定义.
+
+
+
+参考 g2o\-::\-Optimization\-Algorithm\-Property\-::name , 以及 g2o\-::\-Abstract\-Optimization\-Algorithm\-Creator\-::property().
+
+
+
+函数调用图\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classg2o_1_1OptimizationAlgorithmFactory_adf79430f6176c9e9309a703ba2dbd14b_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+该类的文档由以下文件生成\-:\begin{DoxyCompactItemize}
+\item 
+Thirdparty/g2o/g2o/core/optimization\-\_\-algorithm\-\_\-factory.\-h\item 
+Thirdparty/g2o/g2o/core/optimization\-\_\-algorithm\-\_\-factory.\-cpp\end{DoxyCompactItemize}

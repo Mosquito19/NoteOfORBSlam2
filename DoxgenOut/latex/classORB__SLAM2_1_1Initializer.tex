@@ -1,0 +1,116 @@
+\hypertarget{classORB__SLAM2_1_1Initializer}{\section{O\-R\-B\-\_\-\-S\-L\-A\-M2\-:\-:Initializer类 参考}
+\label{classORB__SLAM2_1_1Initializer}\index{O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Initializer@{O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Initializer}}
+}
+
+
+单目\-S\-L\-A\-M初始化相关，双目和\-R\-G\-B\-D不会使用这个类  
+
+
+
+
+{\ttfamily \#include $<$Initializer.\-h$>$}
+
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classORB__SLAM2_1_1Initializer_ac492345a970665cd8a1b1d8cf41d44af}{Initializer} (const \hyperlink{classORB__SLAM2_1_1Frame}{Frame} \&Reference\-Frame, float sigma=1.\-0, int iterations=200)
+\begin{DoxyCompactList}\small\item\em 给定参考帧构造\-Initializer \end{DoxyCompactList}\item 
+bool \hyperlink{classORB__SLAM2_1_1Initializer_a40d41840e2bdb7199ab024871d028c2c}{Initialize} (const \hyperlink{classORB__SLAM2_1_1Frame}{Frame} \&Current\-Frame, const vector$<$ int $>$ \&v\-Matches12, cv\-::\-Mat \&R21, cv\-::\-Mat \&t21, vector$<$ cv\-::\-Point3f $>$ \&v\-P3\-D, vector$<$ bool $>$ \&vb\-Triangulated)
+\begin{DoxyCompactList}\small\item\em 并行地计算基础矩阵和单应性矩阵，选取其中一个模型，恢复出最开始两帧之间的相对姿态以及点云 \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{详细描述}
+单目\-S\-L\-A\-M初始化相关，双目和\-R\-G\-B\-D不会使用这个类 
+
+在文件 Initializer.\-h 第 34 行定义.
+
+
+
+\subsection{构造及析构函数说明}
+\hypertarget{classORB__SLAM2_1_1Initializer_ac492345a970665cd8a1b1d8cf41d44af}{\index{O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Initializer@{O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Initializer}!Initializer@{Initializer}}
+\index{Initializer@{Initializer}!ORB_SLAM2::Initializer@{O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Initializer}}
+\subsubsection[{Initializer}]{\setlength{\rightskip}{0pt plus 5cm}O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Initializer\-::\-Initializer (
+\begin{DoxyParamCaption}
+\item[{const {\bf Frame} \&}]{Reference\-Frame, }
+\item[{float}]{sigma = {\ttfamily 1.0}, }
+\item[{int}]{iterations = {\ttfamily 200}}
+\end{DoxyParamCaption}
+)}}\label{classORB__SLAM2_1_1Initializer_ac492345a970665cd8a1b1d8cf41d44af}
+
+
+给定参考帧构造\-Initializer 
+
+用reference frame来初始化，这个reference frame就是\-S\-L\-A\-M正式开始的第一帧 
+\begin{DoxyParams}{参数}
+{\em Reference\-Frame} & 参考帧 \\
+\hline
+{\em sigma} & 测量误差 \\
+\hline
+{\em iterations} & R\-A\-N\-S\-A\-C迭代次数 \\
+\hline
+\end{DoxyParams}
+
+
+在文件 Initializer.\-cpp 第 41 行定义.
+
+
+
+\subsection{成员函数说明}
+\hypertarget{classORB__SLAM2_1_1Initializer_a40d41840e2bdb7199ab024871d028c2c}{\index{O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Initializer@{O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Initializer}!Initialize@{Initialize}}
+\index{Initialize@{Initialize}!ORB_SLAM2::Initializer@{O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Initializer}}
+\subsubsection[{Initialize}]{\setlength{\rightskip}{0pt plus 5cm}bool O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Initializer\-::\-Initialize (
+\begin{DoxyParamCaption}
+\item[{const {\bf Frame} \&}]{Current\-Frame, }
+\item[{const vector$<$ int $>$ \&}]{v\-Matches12, }
+\item[{cv\-::\-Mat \&}]{R21, }
+\item[{cv\-::\-Mat \&}]{t21, }
+\item[{vector$<$ cv\-::\-Point3f $>$ \&}]{v\-P3\-D, }
+\item[{vector$<$ bool $>$ \&}]{vb\-Triangulated}
+\end{DoxyParamCaption}
+)}}\label{classORB__SLAM2_1_1Initializer_a40d41840e2bdb7199ab024871d028c2c}
+
+
+并行地计算基础矩阵和单应性矩阵，选取其中一个模型，恢复出最开始两帧之间的相对姿态以及点云 
+
+Sh 600多，sf1000多 
+
+在文件 Initializer.\-cpp 第 55 行定义.
+
+
+
+参考 D\-Utils\-::\-Random\-::\-Random\-Int() , 以及 D\-Utils\-::\-Random\-::\-Seed\-Rand\-Once().
+
+
+
+参考自 O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Tracking\-::\-Monocular\-Initialization().
+
+
+
+函数调用图\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classORB__SLAM2_1_1Initializer_a40d41840e2bdb7199ab024871d028c2c_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+这是这个函数的调用关系图\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classORB__SLAM2_1_1Initializer_a40d41840e2bdb7199ab024871d028c2c_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+该类的文档由以下文件生成\-:\begin{DoxyCompactItemize}
+\item 
+include/Initializer.\-h\item 
+src/Initializer.\-cpp\end{DoxyCompactItemize}

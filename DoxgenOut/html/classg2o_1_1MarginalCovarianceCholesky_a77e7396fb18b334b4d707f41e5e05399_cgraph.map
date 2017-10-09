@@ -1,0 +1,7 @@
+<map id="g2o::MarginalCovarianceCholesky::computeCovariance" name="g2o::MarginalCovarianceCholesky::computeCovariance">
+<area shape="rect" id="node2" href="$classg2o_1_1SparseBlockMatrix.html#aaca7b38d2e9a18eebf9e6f5957af0cf7" title="returns the block at location r,c. if alloc=true he block is created if it does not exist ..." alt="" coords="305,5,466,46"/>
+<area shape="rect" id="node3" href="$classg2o_1_1SparseBlockMatrix.html#adf282a20d7c77c5949a0d93ca2651271" title="where does the col at block&#45;col r starts? " alt="" coords="305,70,466,111"/>
+<area shape="rect" id="node4" href="$classg2o_1_1MarginalCovarianceCholesky.html#a556f8da80f0873b74b57c82b587b4f97" title="g2o::MarginalCovarianceCholesky\l::computeEntry" alt="" coords="275,135,496,177"/>
+<area shape="rect" id="node5" href="$classg2o_1_1MarginalCovarianceCholesky.html#a51578d6676018d54d74dfe8ce70a9d4b" title="compute the index used for hashing " alt="" coords="544,165,765,206"/>
+<area shape="rect" id="node6" href="$classg2o_1_1SparseBlockMatrix.html#a176a2dbe00711e248ea25dc1995c6b4c" title="where does the row at block&#45;row r starts? " alt="" coords="305,253,466,294"/>
+</map>

@@ -1,0 +1,7 @@
+<map id="g2o::EdgeStereoSE3ProjectXYZ" name="g2o::EdgeStereoSE3ProjectXYZ">
+<area shape="rect" id="node2" href="$classg2o_1_1BaseBinaryEdge.html" title="g2o::BaseBinaryEdge\l\&lt; 3, Vector3d, VertexSBAPoint\lXYZ, VertexSE3Expmap \&gt;" alt="" coords="7,336,211,392"/>
+<area shape="rect" id="node3" href="$classg2o_1_1BaseEdge.html" title="g2o::BaseEdge\&lt; D, Vector3d \&gt;" alt="" coords="7,261,212,288"/>
+<area shape="rect" id="node4" href="$classg2o_1_1OptimizableGraph_1_1Edge.html" title="g2o::OptimizableGraph\l::Edge" alt="" coords="32,171,185,213"/>
+<area shape="rect" id="node5" href="$classg2o_1_1HyperGraph_1_1Edge.html" title="g2o::HyperGraph::Edge" alt="" coords="30,96,188,123"/>
+<area shape="rect" id="node6" href="$structg2o_1_1HyperGraph_1_1HyperGraphElement.html" title="g2o::HyperGraph::HyperGraph\lElement" alt="" coords="10,6,208,47"/>
+</map>

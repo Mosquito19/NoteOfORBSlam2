@@ -1,0 +1,798 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.6"/>
+<title>My Project: g2o::SparseBlockMatrix&lt; MatrixType &gt; 模板类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">My Project
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.6 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="pages.html"><span>相关页面</span></a></li>
+      <li><a href="modules.html"><span>模块</span></a></li>
+      <li><a href="namespaces.html"><span>命名空间</span></a></li>
+      <li class="current"><a href="annotated.html"><span>类</span></a></li>
+      <li><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>类列表</span></a></li>
+      <li><a href="classes.html"><span>类索引</span></a></li>
+      <li><a href="inherits.html"><span>类继承关系</span></a></li>
+      <li><a href="functions.html"><span>类成员</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('classg2o_1_1SparseBlockMatrix.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>命名空间</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>友元</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>组</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>页</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-types">Public 类型</a> &#124;
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pro-attribs">Protected 属性</a> &#124;
+<a href="classg2o_1_1SparseBlockMatrix-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">g2o::SparseBlockMatrix&lt; MatrixType &gt; 模板类 参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Sparse matrix which uses blocks.  
+ <a href="classg2o_1_1SparseBlockMatrix.html#details">更多...</a></p>
+
+<p><code>#include &lt;<a class="el" href="sparse__block__matrix_8h_source.html">sparse_block_matrix.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public 类型</h2></td></tr>
+<tr class="memitem:ab2f7376cbf055803fda6527dcc43e3be"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab2f7376cbf055803fda6527dcc43e3be"></a>
+typedef MatrixType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classg2o_1_1SparseBlockMatrix.html#ab2f7376cbf055803fda6527dcc43e3be">SparseMatrixBlock</a></td></tr>
+<tr class="memdesc:ab2f7376cbf055803fda6527dcc43e3be"><td class="mdescLeft">&#160;</td><td class="mdescRight">this is the type of the elementary block, it is an Eigen::Matrix. <br/></td></tr>
+<tr class="separator:ab2f7376cbf055803fda6527dcc43e3be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaa6ca1ae454ed70f62992b6401645f4e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aaa6ca1ae454ed70f62992b6401645f4e"></a>
+typedef std::map&lt; int, <br class="typebreak"/>
+<a class="el" href="classg2o_1_1SparseBlockMatrix.html#ab2f7376cbf055803fda6527dcc43e3be">SparseMatrixBlock</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>IntBlockMap</b></td></tr>
+<tr class="separator:aaa6ca1ae454ed70f62992b6401645f4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:ab854ca59f370d93229852e32a7b49d3e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab854ca59f370d93229852e32a7b49d3e"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classg2o_1_1SparseBlockMatrix.html#ab854ca59f370d93229852e32a7b49d3e">cols</a> () const </td></tr>
+<tr class="memdesc:ab854ca59f370d93229852e32a7b49d3e"><td class="mdescLeft">&#160;</td><td class="mdescRight">columns of the matrix <br/></td></tr>
+<tr class="separator:ab854ca59f370d93229852e32a7b49d3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adf18fb267e545b9036314cf9f8f10473"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="adf18fb267e545b9036314cf9f8f10473"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classg2o_1_1SparseBlockMatrix.html#adf18fb267e545b9036314cf9f8f10473">rows</a> () const </td></tr>
+<tr class="memdesc:adf18fb267e545b9036314cf9f8f10473"><td class="mdescLeft">&#160;</td><td class="mdescRight">rows of the matrix <br/></td></tr>
+<tr class="separator:adf18fb267e545b9036314cf9f8f10473"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0407f26837522322d7b7fd7a5259ee3c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classg2o_1_1SparseBlockMatrix.html#a0407f26837522322d7b7fd7a5259ee3c">SparseBlockMatrix</a> (const int *rbi, const int *cbi, int rb, int cb, bool hasStorage=true)</td></tr>
+<tr class="separator:a0407f26837522322d7b7fd7a5259ee3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af14b7aaa588b339f2c06793fcc0d4e09"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af14b7aaa588b339f2c06793fcc0d4e09"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classg2o_1_1SparseBlockMatrix.html#af14b7aaa588b339f2c06793fcc0d4e09">clear</a> (bool dealloc=false)</td></tr>
+<tr class="memdesc:af14b7aaa588b339f2c06793fcc0d4e09"><td class="mdescLeft">&#160;</td><td class="mdescRight">this zeroes all the blocks. If dealloc=true the blocks are removed from memory <br/></td></tr>
+<tr class="separator:af14b7aaa588b339f2c06793fcc0d4e09"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaca7b38d2e9a18eebf9e6f5957af0cf7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aaca7b38d2e9a18eebf9e6f5957af0cf7"></a>
+<a class="el" href="classg2o_1_1SparseBlockMatrix.html#ab2f7376cbf055803fda6527dcc43e3be">SparseMatrixBlock</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classg2o_1_1SparseBlockMatrix.html#aaca7b38d2e9a18eebf9e6f5957af0cf7">block</a> (int r, int c, bool alloc=false)</td></tr>
+<tr class="memdesc:aaca7b38d2e9a18eebf9e6f5957af0cf7"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns the block at location r,c. if alloc=true he block is created if it does not exist <br/></td></tr>
+<tr class="separator:aaca7b38d2e9a18eebf9e6f5957af0cf7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1dd47246358ea852f8ff3db76aa6a287"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1dd47246358ea852f8ff3db76aa6a287"></a>
+const <a class="el" href="classg2o_1_1SparseBlockMatrix.html#ab2f7376cbf055803fda6527dcc43e3be">SparseMatrixBlock</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classg2o_1_1SparseBlockMatrix.html#a1dd47246358ea852f8ff3db76aa6a287">block</a> (int r, int c) const </td></tr>
+<tr class="memdesc:a1dd47246358ea852f8ff3db76aa6a287"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns the block at location r,c <br/></td></tr>
+<tr class="separator:a1dd47246358ea852f8ff3db76aa6a287"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f1eceae58978d7ee263a80961006d22"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2f1eceae58978d7ee263a80961006d22"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classg2o_1_1SparseBlockMatrix.html#a2f1eceae58978d7ee263a80961006d22">rowsOfBlock</a> (int r) const </td></tr>
+<tr class="memdesc:a2f1eceae58978d7ee263a80961006d22"><td class="mdescLeft">&#160;</td><td class="mdescRight">how many rows does the block at block-row r has? <br/></td></tr>
+<tr class="separator:a2f1eceae58978d7ee263a80961006d22"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb88ef292aedf1468f57cf5dc751a8e2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="adb88ef292aedf1468f57cf5dc751a8e2"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classg2o_1_1SparseBlockMatrix.html#adb88ef292aedf1468f57cf5dc751a8e2">colsOfBlock</a> (int c) const </td></tr>
+<tr class="memdesc:adb88ef292aedf1468f57cf5dc751a8e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">how many cols does the block at block-col c has? <br/></td></tr>
+<tr class="separator:adb88ef292aedf1468f57cf5dc751a8e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a176a2dbe00711e248ea25dc1995c6b4c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a176a2dbe00711e248ea25dc1995c6b4c"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classg2o_1_1SparseBlockMatrix.html#a176a2dbe00711e248ea25dc1995c6b4c">rowBaseOfBlock</a> (int r) const </td></tr>
+<tr class="memdesc:a176a2dbe00711e248ea25dc1995c6b4c"><td class="mdescLeft">&#160;</td><td class="mdescRight">where does the row at block-row r starts? <br/></td></tr>
+<tr class="separator:a176a2dbe00711e248ea25dc1995c6b4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adf282a20d7c77c5949a0d93ca2651271"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="adf282a20d7c77c5949a0d93ca2651271"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classg2o_1_1SparseBlockMatrix.html#adf282a20d7c77c5949a0d93ca2651271">colBaseOfBlock</a> (int c) const </td></tr>
+<tr class="memdesc:adf282a20d7c77c5949a0d93ca2651271"><td class="mdescLeft">&#160;</td><td class="mdescRight">where does the col at block-col r starts? <br/></td></tr>
+<tr class="separator:adf282a20d7c77c5949a0d93ca2651271"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a52c11b08907dbb80ac44ad5459bc70fe"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a52c11b08907dbb80ac44ad5459bc70fe"></a>
+size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classg2o_1_1SparseBlockMatrix.html#a52c11b08907dbb80ac44ad5459bc70fe">nonZeros</a> () const </td></tr>
+<tr class="memdesc:a52c11b08907dbb80ac44ad5459bc70fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">number of non-zero elements <br/></td></tr>
+<tr class="separator:a52c11b08907dbb80ac44ad5459bc70fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4e2ecdfdec3b47b2f9373c56aecc7d15"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4e2ecdfdec3b47b2f9373c56aecc7d15"></a>
+size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classg2o_1_1SparseBlockMatrix.html#a4e2ecdfdec3b47b2f9373c56aecc7d15">nonZeroBlocks</a> () const </td></tr>
+<tr class="memdesc:a4e2ecdfdec3b47b2f9373c56aecc7d15"><td class="mdescLeft">&#160;</td><td class="mdescRight">number of allocated blocks <br/></td></tr>
+<tr class="separator:a4e2ecdfdec3b47b2f9373c56aecc7d15"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac2946d6216dd2adfbd257b495a589d13"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac2946d6216dd2adfbd257b495a589d13"></a>
+<a class="el" href="classg2o_1_1SparseBlockMatrix.html">SparseBlockMatrix</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classg2o_1_1SparseBlockMatrix.html#ac2946d6216dd2adfbd257b495a589d13">clone</a> () const </td></tr>
+<tr class="memdesc:ac2946d6216dd2adfbd257b495a589d13"><td class="mdescLeft">&#160;</td><td class="mdescRight">deep copy of a sparse-block-matrix; <br/></td></tr>
+<tr class="separator:ac2946d6216dd2adfbd257b495a589d13"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abc8836f73757f69b97965459944043a5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classg2o_1_1SparseBlockMatrix.html">SparseBlockMatrix</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classg2o_1_1SparseBlockMatrix.html#abc8836f73757f69b97965459944043a5">slice</a> (int rmin, int rmax, int cmin, int cmax, bool alloc=true) const </td></tr>
+<tr class="separator:abc8836f73757f69b97965459944043a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a85d0915bc613dac1a46d372fc1cacde7"><td class="memTemplParams" colspan="2"><a class="anchor" id="a85d0915bc613dac1a46d372fc1cacde7"></a>
+template&lt;class MatrixTransposedType &gt; </td></tr>
+<tr class="memitem:a85d0915bc613dac1a46d372fc1cacde7"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classg2o_1_1SparseBlockMatrix.html#a85d0915bc613dac1a46d372fc1cacde7">transpose</a> (<a class="el" href="classg2o_1_1SparseBlockMatrix.html">SparseBlockMatrix</a>&lt; MatrixTransposedType &gt; *&amp;dest) const </td></tr>
+<tr class="memdesc:a85d0915bc613dac1a46d372fc1cacde7"><td class="mdescLeft">&#160;</td><td class="mdescRight">transposes a block matrix, The transposed type should match the argument false on failure <br/></td></tr>
+<tr class="separator:a85d0915bc613dac1a46d372fc1cacde7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a47d026462af0a744cdba6cbf9caa0b3b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a47d026462af0a744cdba6cbf9caa0b3b"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classg2o_1_1SparseBlockMatrix.html#a47d026462af0a744cdba6cbf9caa0b3b">add</a> (<a class="el" href="classg2o_1_1SparseBlockMatrix.html">SparseBlockMatrix</a>&lt; MatrixType &gt; *&amp;dest) const </td></tr>
+<tr class="memdesc:a47d026462af0a744cdba6cbf9caa0b3b"><td class="mdescLeft">&#160;</td><td class="mdescRight">adds the current matrix to the destination <br/></td></tr>
+<tr class="separator:a47d026462af0a744cdba6cbf9caa0b3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7e37bb74f265c78174fbb5ac9f4df131"><td class="memTemplParams" colspan="2"><a class="anchor" id="a7e37bb74f265c78174fbb5ac9f4df131"></a>
+template&lt;class MatrixResultType , class MatrixFactorType &gt; </td></tr>
+<tr class="memitem:a7e37bb74f265c78174fbb5ac9f4df131"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classg2o_1_1SparseBlockMatrix.html#a7e37bb74f265c78174fbb5ac9f4df131">multiply</a> (<a class="el" href="classg2o_1_1SparseBlockMatrix.html">SparseBlockMatrix</a>&lt; MatrixResultType &gt; *&amp;dest, const <a class="el" href="classg2o_1_1SparseBlockMatrix.html">SparseBlockMatrix</a>&lt; MatrixFactorType &gt; *M) const </td></tr>
+<tr class="memdesc:a7e37bb74f265c78174fbb5ac9f4df131"><td class="mdescLeft">&#160;</td><td class="mdescRight">dest = (*this) * M <br/></td></tr>
+<tr class="separator:a7e37bb74f265c78174fbb5ac9f4df131"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa0718ac7391b2d88861bc2c9f1b93ab2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa0718ac7391b2d88861bc2c9f1b93ab2"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classg2o_1_1SparseBlockMatrix.html#aa0718ac7391b2d88861bc2c9f1b93ab2">multiply</a> (double *&amp;dest, const double *src) const </td></tr>
+<tr class="memdesc:aa0718ac7391b2d88861bc2c9f1b93ab2"><td class="mdescLeft">&#160;</td><td class="mdescRight">dest = (*this) * src <br/></td></tr>
+<tr class="separator:aa0718ac7391b2d88861bc2c9f1b93ab2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab162724d457b342e675c535dd78165cd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classg2o_1_1SparseBlockMatrix.html#ab162724d457b342e675c535dd78165cd">multiplySymmetricUpperTriangle</a> (double *&amp;dest, const double *src) const </td></tr>
+<tr class="separator:ab162724d457b342e675c535dd78165cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd3d832d520ccbcdd4cfed817cd55e81"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abd3d832d520ccbcdd4cfed817cd55e81"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classg2o_1_1SparseBlockMatrix.html#abd3d832d520ccbcdd4cfed817cd55e81">rightMultiply</a> (double *&amp;dest, const double *src) const </td></tr>
+<tr class="memdesc:abd3d832d520ccbcdd4cfed817cd55e81"><td class="mdescLeft">&#160;</td><td class="mdescRight">dest = M * (*this) <br/></td></tr>
+<tr class="separator:abd3d832d520ccbcdd4cfed817cd55e81"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afbccb3c0404beeba566e21429089e288"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afbccb3c0404beeba566e21429089e288"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classg2o_1_1SparseBlockMatrix.html#afbccb3c0404beeba566e21429089e288">scale</a> (double a)</td></tr>
+<tr class="memdesc:afbccb3c0404beeba566e21429089e288"><td class="mdescLeft">&#160;</td><td class="mdescRight">*this *= a <br/></td></tr>
+<tr class="separator:afbccb3c0404beeba566e21429089e288"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a19b0010ec521b275bc88fda5c66b1b48"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classg2o_1_1SparseBlockMatrix.html#a19b0010ec521b275bc88fda5c66b1b48">symmPermutation</a> (<a class="el" href="classg2o_1_1SparseBlockMatrix.html">SparseBlockMatrix</a>&lt; MatrixType &gt; *&amp;dest, const int *pinv, bool onlyUpper=false) const </td></tr>
+<tr class="separator:a19b0010ec521b275bc88fda5c66b1b48"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a71b97c895688e06ab48eaf53c93c39ed"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classg2o_1_1SparseBlockMatrix.html#a71b97c895688e06ab48eaf53c93c39ed">fillCCS</a> (int *Cp, int *Ci, double *Cx, bool upperTriangle=false) const </td></tr>
+<tr class="separator:a71b97c895688e06ab48eaf53c93c39ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a77bf1e20da0968a5ad55d590406700a7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classg2o_1_1SparseBlockMatrix.html#a77bf1e20da0968a5ad55d590406700a7">fillCCS</a> (double *Cx, bool upperTriangle=false) const </td></tr>
+<tr class="separator:a77bf1e20da0968a5ad55d590406700a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7c9f06c801b5421752673b349477f617"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7c9f06c801b5421752673b349477f617"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classg2o_1_1SparseBlockMatrix.html#a7c9f06c801b5421752673b349477f617">fillBlockStructure</a> (<a class="el" href="classg2o_1_1MatrixStructure.html">MatrixStructure</a> &amp;ms) const </td></tr>
+<tr class="memdesc:a7c9f06c801b5421752673b349477f617"><td class="mdescLeft">&#160;</td><td class="mdescRight">exports the non zero blocks in the structure matrix ms <br/></td></tr>
+<tr class="separator:a7c9f06c801b5421752673b349477f617"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8e53797223fff106487d0b0080a3e36e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8e53797223fff106487d0b0080a3e36e"></a>
+const std::vector&lt; IntBlockMap &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classg2o_1_1SparseBlockMatrix.html#a8e53797223fff106487d0b0080a3e36e">blockCols</a> () const </td></tr>
+<tr class="memdesc:a8e53797223fff106487d0b0080a3e36e"><td class="mdescLeft">&#160;</td><td class="mdescRight">the block matrices per block-column <br/></td></tr>
+<tr class="separator:a8e53797223fff106487d0b0080a3e36e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a31236f3e11cb7af4979d68fdba3d5e33"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a31236f3e11cb7af4979d68fdba3d5e33"></a>
+std::vector&lt; IntBlockMap &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>blockCols</b> ()</td></tr>
+<tr class="separator:a31236f3e11cb7af4979d68fdba3d5e33"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab9f9e621c9bca7c660c61b3948b8ece3"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab9f9e621c9bca7c660c61b3948b8ece3"></a>
+const std::vector&lt; int &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classg2o_1_1SparseBlockMatrix.html#ab9f9e621c9bca7c660c61b3948b8ece3">rowBlockIndices</a> () const </td></tr>
+<tr class="memdesc:ab9f9e621c9bca7c660c61b3948b8ece3"><td class="mdescLeft">&#160;</td><td class="mdescRight">indices of the row blocks <br/></td></tr>
+<tr class="separator:ab9f9e621c9bca7c660c61b3948b8ece3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a03a2cfdb856c2dac4875889d55ecda84"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a03a2cfdb856c2dac4875889d55ecda84"></a>
+std::vector&lt; int &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>rowBlockIndices</b> ()</td></tr>
+<tr class="separator:a03a2cfdb856c2dac4875889d55ecda84"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adfaf13a5f3134205a58c8346a09a672a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="adfaf13a5f3134205a58c8346a09a672a"></a>
+const std::vector&lt; int &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classg2o_1_1SparseBlockMatrix.html#adfaf13a5f3134205a58c8346a09a672a">colBlockIndices</a> () const </td></tr>
+<tr class="memdesc:adfaf13a5f3134205a58c8346a09a672a"><td class="mdescLeft">&#160;</td><td class="mdescRight">indices of the column blocks <br/></td></tr>
+<tr class="separator:adfaf13a5f3134205a58c8346a09a672a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aba255bdbb8e0a0d2802ae27e6d4f7cc7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aba255bdbb8e0a0d2802ae27e6d4f7cc7"></a>
+std::vector&lt; int &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>colBlockIndices</b> ()</td></tr>
+<tr class="separator:aba255bdbb8e0a0d2802ae27e6d4f7cc7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a58a311fa5e66df880b29c8abb631474e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classg2o_1_1SparseBlockMatrix.html#a58a311fa5e66df880b29c8abb631474e">writeOctave</a> (const char *filename, bool upperTriangle=true) const </td></tr>
+<tr class="separator:a58a311fa5e66df880b29c8abb631474e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1f596d1bd27de9f62282eee7e65a9f27"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classg2o_1_1SparseBlockMatrix.html#a1f596d1bd27de9f62282eee7e65a9f27">fillSparseBlockMatrixCCS</a> (<a class="el" href="classg2o_1_1SparseBlockMatrixCCS.html">SparseBlockMatrixCCS</a>&lt; MatrixType &gt; &amp;blockCCS) const </td></tr>
+<tr class="separator:a1f596d1bd27de9f62282eee7e65a9f27"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0fbc51ac6aebfceed54a6eb75d2f3ab2"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classg2o_1_1SparseBlockMatrix.html#a0fbc51ac6aebfceed54a6eb75d2f3ab2">fillSparseBlockMatrixCCSTransposed</a> (<a class="el" href="classg2o_1_1SparseBlockMatrixCCS.html">SparseBlockMatrixCCS</a>&lt; MatrixType &gt; &amp;blockCCS) const </td></tr>
+<tr class="separator:a0fbc51ac6aebfceed54a6eb75d2f3ab2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0b1e9dc3a24b0ab41d7002396a61c833"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classg2o_1_1SparseBlockMatrix.html#a0b1e9dc3a24b0ab41d7002396a61c833">takePatternFromHash</a> (<a class="el" href="classg2o_1_1SparseBlockMatrixHashMap.html">SparseBlockMatrixHashMap</a>&lt; MatrixType &gt; &amp;hashMatrix)</td></tr>
+<tr class="separator:a0b1e9dc3a24b0ab41d7002396a61c833"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
+Protected 属性</h2></td></tr>
+<tr class="memitem:ab0bd9c6d5b7b8704af1bc679032382e3"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab0bd9c6d5b7b8704af1bc679032382e3"></a>
+std::vector&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classg2o_1_1SparseBlockMatrix.html#ab0bd9c6d5b7b8704af1bc679032382e3">_rowBlockIndices</a></td></tr>
+<tr class="memdesc:ab0bd9c6d5b7b8704af1bc679032382e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">vector of the indices of the blocks along the rows. <br/></td></tr>
+<tr class="separator:ab0bd9c6d5b7b8704af1bc679032382e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aca008740c37d2d00b90f696ab19abb59"><td class="memItemLeft" align="right" valign="top">std::vector&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classg2o_1_1SparseBlockMatrix.html#aca008740c37d2d00b90f696ab19abb59">_colBlockIndices</a></td></tr>
+<tr class="separator:aca008740c37d2d00b90f696ab19abb59"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae236d56a01ba4d292450a518621b41f8"><td class="memItemLeft" align="right" valign="top">std::vector&lt; IntBlockMap &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classg2o_1_1SparseBlockMatrix.html#ae236d56a01ba4d292450a518621b41f8">_blockCols</a></td></tr>
+<tr class="separator:ae236d56a01ba4d292450a518621b41f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae3f063a5efc2708b41806ac361fd3ca6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae3f063a5efc2708b41806ac361fd3ca6"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>_hasStorage</b></td></tr>
+<tr class="separator:ae3f063a5efc2708b41806ac361fd3ca6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><h3>template&lt;class MatrixType = MatrixXd&gt;<br/>
+class g2o::SparseBlockMatrix&lt; MatrixType &gt;</h3>
+
+<p>Sparse matrix which uses blocks. </p>
+<p>Template class that specifies a sparse block matrix. A block matrix is a sparse matrix made of dense blocks. These blocks cannot have a random pattern, but follow a (variable) grid structure. This structure is specified by a partition of the rows and the columns of the matrix. The blocks are represented by the Eigen::Matrix structure, thus they can be statically or dynamically allocated. For efficiency reasons it is convenient to allocate them statically, when possible. A static block matrix has all blocks of the same size, and the size of the block is specified by the template argument. If this is not the case, and you have different block sizes than you have to use a dynamic-block matrix (default template argument). </p>
+
+<p>在文件 <a class="el" href="sparse__block__matrix_8h_source.html">sparse_block_matrix.h</a> 第 <a class="el" href="sparse__block__matrix_8h_source.html#l00062">62</a> 行定义.</p>
+</div><h2 class="groupheader">构造及析构函数说明</h2>
+<a class="anchor" id="a0407f26837522322d7b7fd7a5259ee3c"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class MatrixType &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classg2o_1_1SparseBlockMatrix.html">g2o::SparseBlockMatrix</a>&lt; MatrixType &gt;::<a class="el" href="classg2o_1_1SparseBlockMatrix.html">SparseBlockMatrix</a> </td>
+          <td>(</td>
+          <td class="paramtype">const int *&#160;</td>
+          <td class="paramname"><em>rbi</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int *&#160;</td>
+          <td class="paramname"><em>cbi</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>rb</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>cb</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>hasStorage</em> = <code>true</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>constructs a sparse block matrix having a specific layout </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">rbi</td><td>array of int containing the row layout of the blocks. the component i of the array should contain the index of the first row of the block i+1. </td></tr>
+    <tr><td class="paramname">rbi</td><td>array of int containing the column layout of the blocks. the component i of the array should contain the index of the first col of the block i+1. </td></tr>
+    <tr><td class="paramname">rb</td><td>number of row blocks </td></tr>
+    <tr><td class="paramname">cb</td><td>number of col blocks </td></tr>
+    <tr><td class="paramname">hasStorage</td><td>set it to true if the matrix "owns" the blocks, thus it deletes it on destruction. if false the matrix is only a "view" over an existing structure. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>在文件 <a class="el" href="sparse__block__matrix_8hpp_source.html">sparse_block_matrix.hpp</a> 第 <a class="el" href="sparse__block__matrix_8hpp_source.html#l00054">54</a> 行定义.</p>
+
+</div>
+</div>
+<h2 class="groupheader">成员函数说明</h2>
+<a class="anchor" id="a71b97c895688e06ab48eaf53c93c39ed"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class MatrixType &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">int <a class="el" href="classg2o_1_1SparseBlockMatrix.html">g2o::SparseBlockMatrix</a>&lt; MatrixType &gt;::fillCCS </td>
+          <td>(</td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>Cp</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>Ci</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double *&#160;</td>
+          <td class="paramname"><em>Cx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>upperTriangle</em> = <code>false</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>fill the CCS arrays of a matrix, arrays have to be allocated beforehand </p>
+
+<p>在文件 <a class="el" href="sparse__block__matrix_8hpp_source.html">sparse_block_matrix.hpp</a> 第 <a class="el" href="sparse__block__matrix_8hpp_source.html#l00496">496</a> 行定义.</p>
+
+<p>参考 <a class="el" href="sparse__block__matrix_8h_source.html#l00071">g2o::SparseBlockMatrix&lt; MatrixType &gt;::rows()</a>.</p>
+
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classg2o_1_1SparseBlockMatrix_a71b97c895688e06ab48eaf53c93c39ed_cgraph.png" border="0" usemap="#classg2o_1_1SparseBlockMatrix_a71b97c895688e06ab48eaf53c93c39ed_cgraph" alt=""/></div>
+<map name="classg2o_1_1SparseBlockMatrix_a71b97c895688e06ab48eaf53c93c39ed_cgraph" id="classg2o_1_1SparseBlockMatrix_a71b97c895688e06ab48eaf53c93c39ed_cgraph">
+<area shape="rect" id="node2" href="classg2o_1_1SparseBlockMatrix.html#adf18fb267e545b9036314cf9f8f10473" title="rows of the matrix " alt="" coords="217,5,378,46"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a77bf1e20da0968a5ad55d590406700a7"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class MatrixType &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">int <a class="el" href="classg2o_1_1SparseBlockMatrix.html">g2o::SparseBlockMatrix</a>&lt; MatrixType &gt;::fillCCS </td>
+          <td>(</td>
+          <td class="paramtype">double *&#160;</td>
+          <td class="paramname"><em>Cx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>upperTriangle</em> = <code>false</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>fill the CCS arrays of a matrix, arrays have to be allocated beforehand. This function only writes the values and assumes that column and row structures have already been written. </p>
+
+<p>在文件 <a class="el" href="sparse__block__matrix_8hpp_source.html">sparse_block_matrix.hpp</a> 第 <a class="el" href="sparse__block__matrix_8hpp_source.html#l00471">471</a> 行定义.</p>
+
+<p>参考 <a class="el" href="sparse__block__matrix_8h_source.html#l00071">g2o::SparseBlockMatrix&lt; MatrixType &gt;::rows()</a>.</p>
+
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classg2o_1_1SparseBlockMatrix_a77bf1e20da0968a5ad55d590406700a7_cgraph.png" border="0" usemap="#classg2o_1_1SparseBlockMatrix_a77bf1e20da0968a5ad55d590406700a7_cgraph" alt=""/></div>
+<map name="classg2o_1_1SparseBlockMatrix_a77bf1e20da0968a5ad55d590406700a7_cgraph" id="classg2o_1_1SparseBlockMatrix_a77bf1e20da0968a5ad55d590406700a7_cgraph">
+<area shape="rect" id="node2" href="classg2o_1_1SparseBlockMatrix.html#adf18fb267e545b9036314cf9f8f10473" title="rows of the matrix " alt="" coords="217,5,378,46"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a1f596d1bd27de9f62282eee7e65a9f27"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class MatrixType&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">int <a class="el" href="classg2o_1_1SparseBlockMatrix.html">g2o::SparseBlockMatrix</a>&lt; MatrixType &gt;::fillSparseBlockMatrixCCS </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classg2o_1_1SparseBlockMatrixCCS.html">SparseBlockMatrixCCS</a>&lt; MatrixType &gt; &amp;&#160;</td>
+          <td class="paramname"><em>blockCCS</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>copy into CCS structure </p>
+<dl class="section return"><dt>返回</dt><dd>number of processed blocks, -1 on error </dd></dl>
+
+<p>在文件 <a class="el" href="sparse__block__matrix_8hpp_source.html">sparse_block_matrix.hpp</a> 第 <a class="el" href="sparse__block__matrix_8hpp_source.html#l00598">598</a> 行定义.</p>
+
+<p>参考 <a class="el" href="sparse__block__matrix__ccs_8h_source.html#l00096">g2o::SparseBlockMatrixCCS&lt; MatrixType &gt;::blockCols()</a>.</p>
+
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classg2o_1_1SparseBlockMatrix_a1f596d1bd27de9f62282eee7e65a9f27_cgraph.png" border="0" usemap="#classg2o_1_1SparseBlockMatrix_a1f596d1bd27de9f62282eee7e65a9f27_cgraph" alt=""/></div>
+<map name="classg2o_1_1SparseBlockMatrix_a1f596d1bd27de9f62282eee7e65a9f27_cgraph" id="classg2o_1_1SparseBlockMatrix_a1f596d1bd27de9f62282eee7e65a9f27_cgraph">
+<area shape="rect" id="node2" href="classg2o_1_1SparseBlockMatrixCCS.html#ae43c6599984015bdc3d481266e1555ea" title="the block matrices per block&#45;column " alt="" coords="238,5,429,46"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a0fbc51ac6aebfceed54a6eb75d2f3ab2"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class MatrixType&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">int <a class="el" href="classg2o_1_1SparseBlockMatrix.html">g2o::SparseBlockMatrix</a>&lt; MatrixType &gt;::fillSparseBlockMatrixCCSTransposed </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classg2o_1_1SparseBlockMatrixCCS.html">SparseBlockMatrixCCS</a>&lt; MatrixType &gt; &amp;&#160;</td>
+          <td class="paramname"><em>blockCCS</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>copy as transposed into a CCS structure </p>
+<dl class="section return"><dt>返回</dt><dd>number of processed blocks, -1 on error </dd></dl>
+
+<p>在文件 <a class="el" href="sparse__block__matrix_8hpp_source.html">sparse_block_matrix.hpp</a> 第 <a class="el" href="sparse__block__matrix_8hpp_source.html#l00616">616</a> 行定义.</p>
+
+<p>参考 <a class="el" href="sparse__block__matrix__ccs_8h_source.html#l00096">g2o::SparseBlockMatrixCCS&lt; MatrixType &gt;::blockCols()</a>.</p>
+
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classg2o_1_1SparseBlockMatrix_a0fbc51ac6aebfceed54a6eb75d2f3ab2_cgraph.png" border="0" usemap="#classg2o_1_1SparseBlockMatrix_a0fbc51ac6aebfceed54a6eb75d2f3ab2_cgraph" alt=""/></div>
+<map name="classg2o_1_1SparseBlockMatrix_a0fbc51ac6aebfceed54a6eb75d2f3ab2_cgraph" id="classg2o_1_1SparseBlockMatrix_a0fbc51ac6aebfceed54a6eb75d2f3ab2_cgraph">
+<area shape="rect" id="node2" href="classg2o_1_1SparseBlockMatrixCCS.html#ae43c6599984015bdc3d481266e1555ea" title="the block matrices per block&#45;column " alt="" coords="305,5,495,46"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="ab162724d457b342e675c535dd78165cd"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class MatrixType &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classg2o_1_1SparseBlockMatrix.html">g2o::SparseBlockMatrix</a>&lt; MatrixType &gt;::multiplySymmetricUpperTriangle </td>
+          <td>(</td>
+          <td class="paramtype">double *&amp;&#160;</td>
+          <td class="paramname"><em>dest</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const double *&#160;</td>
+          <td class="paramname"><em>src</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>compute dest = (*this) * src However, assuming that this is a symmetric matrix where only the upper triangle is stored </p>
+
+<p>在文件 <a class="el" href="sparse__block__matrix_8hpp_source.html">sparse_block_matrix.hpp</a> 第 <a class="el" href="sparse__block__matrix_8hpp_source.html#l00259">259</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="abc8836f73757f69b97965459944043a5"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class MatrixType &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classg2o_1_1SparseBlockMatrix.html">SparseBlockMatrix</a>&lt; MatrixType &gt; * <a class="el" href="classg2o_1_1SparseBlockMatrix.html">g2o::SparseBlockMatrix</a>&lt; MatrixType &gt;::slice </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>rmin</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>rmax</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>cmin</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>cmax</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>alloc</em> = <code>true</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>returns a view or a copy of the block matrix </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">rmin</td><td>starting block row </td></tr>
+    <tr><td class="paramname">rmax</td><td>ending block row </td></tr>
+    <tr><td class="paramname">cmin</td><td>starting block col </td></tr>
+    <tr><td class="paramname">cmax</td><td>ending block col </td></tr>
+    <tr><td class="paramname">alloc</td><td>if true it makes a deep copy, if false it creates a view. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>在文件 <a class="el" href="sparse__block__matrix_8hpp_source.html">sparse_block_matrix.hpp</a> 第 <a class="el" href="sparse__block__matrix_8hpp_source.html#l00331">331</a> 行定义.</p>
+
+<p>参考 <a class="el" href="sparse__block__matrix_8h_source.html#l00218">g2o::SparseBlockMatrix&lt; MatrixType &gt;::_blockCols</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a19b0010ec521b275bc88fda5c66b1b48"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class MatrixType&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="classg2o_1_1SparseBlockMatrix.html">g2o::SparseBlockMatrix</a>&lt; MatrixType &gt;::symmPermutation </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classg2o_1_1SparseBlockMatrix.html">SparseBlockMatrix</a>&lt; MatrixType &gt; *&amp;&#160;</td>
+          <td class="paramname"><em>dest</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int *&#160;</td>
+          <td class="paramname"><em>pinv</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>onlyUpper</em> = <code>false</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>writes in dest a block permutaton specified by pinv. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pinv</td><td>array such that new_block[i] = old_block[pinv[i]] </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>在文件 <a class="el" href="sparse__block__matrix_8hpp_source.html">sparse_block_matrix.hpp</a> 第 <a class="el" href="sparse__block__matrix_8hpp_source.html#l00406">406</a> 行定义.</p>
+
+<p>参考 <a class="el" href="sparse__block__matrix_8h_source.html#l00215">g2o::SparseBlockMatrix&lt; MatrixType &gt;::_colBlockIndices</a>, <a class="el" href="sparse__block__matrix_8h_source.html#l00214">g2o::SparseBlockMatrix&lt; MatrixType &gt;::_rowBlockIndices</a>, <a class="el" href="sparse__block__matrix_8hpp_source.html#l00092">g2o::SparseBlockMatrix&lt; MatrixType &gt;::block()</a>, <a class="el" href="sparse__block__matrix_8hpp_source.html#l00068">g2o::SparseBlockMatrix&lt; MatrixType &gt;::clear()</a>, <a class="el" href="sparse__block__matrix_8h_source.html#l00069">g2o::SparseBlockMatrix&lt; MatrixType &gt;::cols()</a>, <a class="el" href="sparse__block__matrix_8h_source.html#l00071">g2o::SparseBlockMatrix&lt; MatrixType &gt;::rows()</a> , 以及 <a class="el" href="sparse__block__matrix_8hpp_source.html#l00138">g2o::SparseBlockMatrix&lt; MatrixType &gt;::transpose()</a>.</p>
+
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classg2o_1_1SparseBlockMatrix_a19b0010ec521b275bc88fda5c66b1b48_cgraph.png" border="0" usemap="#classg2o_1_1SparseBlockMatrix_a19b0010ec521b275bc88fda5c66b1b48_cgraph" alt=""/></div>
+<map name="classg2o_1_1SparseBlockMatrix_a19b0010ec521b275bc88fda5c66b1b48_cgraph" id="classg2o_1_1SparseBlockMatrix_a19b0010ec521b275bc88fda5c66b1b48_cgraph">
+<area shape="rect" id="node2" href="classg2o_1_1SparseBlockMatrix.html#aaca7b38d2e9a18eebf9e6f5957af0cf7" title="returns the block at location r,c. if alloc=true he block is created if it does not exist ..." alt="" coords="427,130,589,172"/><area shape="rect" id="node3" href="classg2o_1_1SparseBlockMatrix.html#af14b7aaa588b339f2c06793fcc0d4e09" title="this zeroes all the blocks. If dealloc=true the blocks are removed from memory " alt="" coords="217,61,378,102"/><area shape="rect" id="node4" href="classg2o_1_1SparseBlockMatrix.html#ab854ca59f370d93229852e32a7b49d3e" title="columns of the matrix " alt="" coords="217,126,378,168"/><area shape="rect" id="node5" href="classg2o_1_1SparseBlockMatrix.html#adf18fb267e545b9036314cf9f8f10473" title="rows of the matrix " alt="" coords="217,192,378,233"/><area shape="rect" id="node6" href="classg2o_1_1SparseBlockMatrix.html#a85d0915bc613dac1a46d372fc1cacde7" title="transposes a block matrix, The transposed type should match the argument false on failure ..." alt="" coords="217,281,378,322"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a0b1e9dc3a24b0ab41d7002396a61c833"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class MatrixType&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classg2o_1_1SparseBlockMatrix.html">g2o::SparseBlockMatrix</a>&lt; MatrixType &gt;::takePatternFromHash </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classg2o_1_1SparseBlockMatrixHashMap.html">SparseBlockMatrixHashMap</a>&lt; MatrixType &gt; &amp;&#160;</td>
+          <td class="paramname"><em>hashMatrix</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>take over the memory and matrix pattern from a hash matrix. The structure of the hash matrix will be cleared. </p>
+
+<p>在文件 <a class="el" href="sparse__block__matrix_8hpp_source.html">sparse_block_matrix.hpp</a> 第 <a class="el" href="sparse__block__matrix_8hpp_source.html#l00633">633</a> 行定义.</p>
+
+<p>参考 <a class="el" href="sparse__block__matrix__ccs_8h_source.html#l00248">g2o::SparseBlockMatrixHashMap&lt; MatrixType &gt;::blockCols()</a>.</p>
+
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classg2o_1_1SparseBlockMatrix_a0b1e9dc3a24b0ab41d7002396a61c833_cgraph.png" border="0" usemap="#classg2o_1_1SparseBlockMatrix_a0b1e9dc3a24b0ab41d7002396a61c833_cgraph" alt=""/></div>
+<map name="classg2o_1_1SparseBlockMatrix_a0b1e9dc3a24b0ab41d7002396a61c833_cgraph" id="classg2o_1_1SparseBlockMatrix_a0b1e9dc3a24b0ab41d7002396a61c833_cgraph">
+<area shape="rect" id="node2" href="classg2o_1_1SparseBlockMatrixHashMap.html#a9d81b373b456ec74e214d1e378664933" title="the block matrices per block&#45;column " alt="" coords="216,5,408,46"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a58a311fa5e66df880b29c8abb631474e"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class MatrixType &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="classg2o_1_1SparseBlockMatrix.html">g2o::SparseBlockMatrix</a>&lt; MatrixType &gt;::writeOctave </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>filename</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>upperTriangle</em> = <code>true</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>write the content of this matrix to a stream loadable by Octave </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">upperTriangle</td><td>does this matrix store only the upper triangular blocks </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>在文件 <a class="el" href="sparse__block__matrix_8hpp_source.html">sparse_block_matrix.hpp</a> 第 <a class="el" href="sparse__block__matrix_8hpp_source.html#l00554">554</a> 行定义.</p>
+
+<p>参考自 <a class="el" href="linear__solver__eigen_8h_source.html#l00094">g2o::LinearSolverEigen&lt; MatrixType &gt;::solve()</a>.</p>
+
+<p><div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classg2o_1_1SparseBlockMatrix_a58a311fa5e66df880b29c8abb631474e_icgraph.png" border="0" usemap="#classg2o_1_1SparseBlockMatrix_a58a311fa5e66df880b29c8abb631474e_icgraph" alt=""/></div>
+<map name="classg2o_1_1SparseBlockMatrix_a58a311fa5e66df880b29c8abb631474e_icgraph" id="classg2o_1_1SparseBlockMatrix_a58a311fa5e66df880b29c8abb631474e_icgraph">
+<area shape="rect" id="node2" href="classg2o_1_1LinearSolverEigen.html#ae4ac566af324a238a31145c1e50b52e1" title="g2o::LinearSolverEigen\l::solve" alt="" coords="217,5,373,46"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<h2 class="groupheader">类成员变量说明</h2>
+<a class="anchor" id="ae236d56a01ba4d292450a518621b41f8"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class MatrixType = MatrixXd&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;IntBlockMap&gt; <a class="el" href="classg2o_1_1SparseBlockMatrix.html">g2o::SparseBlockMatrix</a>&lt; MatrixType &gt;::_blockCols</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>array of maps of blocks. The index of the array represent a block column of the matrix and the block column is stored as a map row_block -&gt; matrix_block_ptr. </p>
+
+<p>在文件 <a class="el" href="sparse__block__matrix_8h_source.html">sparse_block_matrix.h</a> 第 <a class="el" href="sparse__block__matrix_8h_source.html#l00218">218</a> 行定义.</p>
+
+<p>参考自 <a class="el" href="sparse__block__matrix_8hpp_source.html#l00123">g2o::SparseBlockMatrix&lt; MatrixType &gt;::clone()</a>, <a class="el" href="sparse__block__matrix_8hpp_source.html#l00200">g2o::SparseBlockMatrix&lt; MatrixType &gt;::multiply()</a> , 以及 <a class="el" href="sparse__block__matrix_8hpp_source.html#l00331">g2o::SparseBlockMatrix&lt; MatrixType &gt;::slice()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aca008740c37d2d00b90f696ab19abb59"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class MatrixType = MatrixXd&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;int&gt; <a class="el" href="classg2o_1_1SparseBlockMatrix.html">g2o::SparseBlockMatrix</a>&lt; MatrixType &gt;::_colBlockIndices</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>vector of the indices of the blocks along the cols </p>
+
+<p>在文件 <a class="el" href="sparse__block__matrix_8h_source.html">sparse_block_matrix.h</a> 第 <a class="el" href="sparse__block__matrix_8h_source.html#l00215">215</a> 行定义.</p>
+
+<p>参考自 <a class="el" href="sparse__block__matrix_8hpp_source.html#l00169">g2o::SparseBlockMatrix&lt; MatrixType &gt;::add()</a>, <a class="el" href="sparse__block__matrix_8hpp_source.html#l00200">g2o::SparseBlockMatrix&lt; MatrixType &gt;::multiply()</a>, <a class="el" href="sparse__block__matrix_8hpp_source.html#l00406">g2o::SparseBlockMatrix&lt; MatrixType &gt;::symmPermutation()</a> , 以及 <a class="el" href="sparse__block__matrix_8hpp_source.html#l00138">g2o::SparseBlockMatrix&lt; MatrixType &gt;::transpose()</a>.</p>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>Thirdparty/g2o/g2o/core/<a class="el" href="sparse__block__matrix_8h_source.html">sparse_block_matrix.h</a></li>
+<li>Thirdparty/g2o/g2o/core/<a class="el" href="sparse__block__matrix_8hpp_source.html">sparse_block_matrix.hpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><b>g2o</b></li><li class="navelem"><a class="el" href="classg2o_1_1SparseBlockMatrix.html">SparseBlockMatrix</a></li>
+    <li class="footer">生成于 2017年 七月 18日 星期二 17:13:39 , 为 My Project使用 
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
+  </ul>
+</div>
+</body>
+</html>

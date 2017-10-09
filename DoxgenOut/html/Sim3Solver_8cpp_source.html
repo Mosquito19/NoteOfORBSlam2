@@ -1,0 +1,552 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.6"/>
+<title>My Project: src/Sim3Solver.cpp 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">My Project
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.6 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="pages.html"><span>相关页面</span></a></li>
+      <li><a href="modules.html"><span>模块</span></a></li>
+      <li><a href="namespaces.html"><span>命名空间</span></a></li>
+      <li><a href="annotated.html"><span>类</span></a></li>
+      <li class="current"><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>文件列表</span></a></li>
+      <li><a href="globals.html"><span>文件成员</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('Sim3Solver_8cpp_source.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>命名空间</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>友元</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>组</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>页</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">Sim3Solver.cpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#include &quot;Sim3Solver.h&quot;</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#include &lt;cmath&gt;</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#include &lt;opencv2/core/core.hpp&gt;</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#include &quot;KeyFrame.h&quot;</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#include &quot;ORBmatcher.h&quot;</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#include &quot;Thirdparty/DBoW2/DUtils/Random.h&quot;</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="keyword">namespace </span>ORB_SLAM2</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;{</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;Sim3Solver::Sim3Solver(KeyFrame *pKF1, KeyFrame *pKF2, <span class="keyword">const</span> vector&lt;MapPoint *&gt; &amp;vpMatched12, <span class="keyword">const</span> <span class="keywordtype">bool</span> bFixScale):</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    mnIterations(0), mnBestInliers(0), mbFixScale(bFixScale)</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;{</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    mpKF1 = pKF1;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    mpKF2 = pKF2;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    vector&lt;MapPoint*&gt; vpKeyFrameMP1 = pKF1-&gt;GetMapPointMatches();</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    mN1 = vpMatched12.size();</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    mvpMapPoints1.reserve(mN1);</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    mvpMapPoints2.reserve(mN1);</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    mvpMatches12 = vpMatched12;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    mvnIndices1.reserve(mN1);</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    mvX3Dc1.reserve(mN1);</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    mvX3Dc2.reserve(mN1);</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    cv::Mat Rcw1 = pKF1-&gt;GetRotation();</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    cv::Mat tcw1 = pKF1-&gt;GetTranslation();</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    cv::Mat Rcw2 = pKF2-&gt;GetRotation();</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    cv::Mat tcw2 = pKF2-&gt;GetTranslation();</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    mvAllIndices.reserve(mN1);</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keywordtype">size_t</span> idx=0;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="comment">// mN1为pKF2特征点的个数</span></div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i1=0; i1&lt;mN1; i1++)</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    {</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        <span class="comment">// 如果该特征点在pKF1中有匹配</span></div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        <span class="keywordflow">if</span>(vpMatched12[i1])</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        {</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;            <span class="comment">// pMP1和pMP2是匹配的MapPoint</span></div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;            MapPoint* pMP1 = vpKeyFrameMP1[i1];</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;            MapPoint* pMP2 = vpMatched12[i1];</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;            <span class="keywordflow">if</span>(!pMP1)</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;                <span class="keywordflow">continue</span>;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;            <span class="keywordflow">if</span>(pMP1-&gt;isBad() || pMP2-&gt;isBad())</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;                <span class="keywordflow">continue</span>;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;            <span class="comment">// indexKF1和indexKF2是匹配特征点的索引</span></div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;            <span class="keywordtype">int</span> indexKF1 = pMP1-&gt;GetIndexInKeyFrame(pKF1);</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;            <span class="keywordtype">int</span> indexKF2 = pMP2-&gt;GetIndexInKeyFrame(pKF2);</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;            <span class="keywordflow">if</span>(indexKF1&lt;0 || indexKF2&lt;0)</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;                <span class="keywordflow">continue</span>;</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;            <span class="comment">// kp1和kp2是匹配特征点</span></div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;            <span class="keyword">const</span> cv::KeyPoint &amp;kp1 = pKF1-&gt;mvKeysUn[indexKF1];</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;            <span class="keyword">const</span> cv::KeyPoint &amp;kp2 = pKF2-&gt;mvKeysUn[indexKF2];</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;            <span class="keyword">const</span> <span class="keywordtype">float</span> sigmaSquare1 = pKF1-&gt;mvLevelSigma2[kp1.octave];</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;            <span class="keyword">const</span> <span class="keywordtype">float</span> sigmaSquare2 = pKF2-&gt;mvLevelSigma2[kp2.octave];</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;            mvnMaxError1.push_back(9.210*sigmaSquare1);</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;            mvnMaxError2.push_back(9.210*sigmaSquare2);</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;            <span class="comment">// mvpMapPoints1和mvpMapPoints2是匹配的MapPoints容器</span></div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;            mvpMapPoints1.push_back(pMP1);</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;            mvpMapPoints2.push_back(pMP2);</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;            mvnIndices1.push_back(i1);</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;            cv::Mat X3D1w = pMP1-&gt;GetWorldPos();</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;            mvX3Dc1.push_back(Rcw1*X3D1w+tcw1);</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;            cv::Mat X3D2w = pMP2-&gt;GetWorldPos();</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;            mvX3Dc2.push_back(Rcw2*X3D2w+tcw2);</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;            mvAllIndices.push_back(idx);</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;            idx++;</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;        }</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    }</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    mK1 = pKF1-&gt;mK;</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    mK2 = pKF2-&gt;mK;</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    FromCameraToImage(mvX3Dc1,mvP1im1,mK1);</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    FromCameraToImage(mvX3Dc2,mvP2im2,mK2);</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    SetRansacParameters();</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;}</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;<span class="keywordtype">void</span> Sim3Solver::SetRansacParameters(<span class="keywordtype">double</span> probability, <span class="keywordtype">int</span> minInliers, <span class="keywordtype">int</span> maxIterations)</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;{</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;    mRansacProb = probability;</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;    mRansacMinInliers = minInliers;</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;    mRansacMaxIts = maxIterations;    </div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;    N = mvpMapPoints1.size(); <span class="comment">// number of correspondences</span></div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;    mvbInliersi.resize(N);</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;    <span class="comment">// Adjust Parameters according to number of correspondences</span></div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;    <span class="keywordtype">float</span> epsilon = (float)mRansacMinInliers/N;</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;    <span class="comment">// Set RANSAC iterations according to probability, epsilon, and max iterations</span></div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;    <span class="keywordtype">int</span> nIterations;</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;    <span class="keywordflow">if</span>(mRansacMinInliers==N)</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;        nIterations=1;</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;    <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;        nIterations = ceil(log(1-mRansacProb)/log(1-pow(epsilon,3)));</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;</div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;    mRansacMaxIts = max(1,min(nIterations,mRansacMaxIts));</div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;</div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;    mnIterations = 0;</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;}</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;<span class="comment">// Ransac求解mvX3Dc1和mvX3Dc2之间Sim3，函数返回mvX3Dc2到mvX3Dc1的Sim3变换</span></div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;cv::Mat Sim3Solver::iterate(<span class="keywordtype">int</span> nIterations, <span class="keywordtype">bool</span> &amp;bNoMore, vector&lt;bool&gt; &amp;vbInliers, <span class="keywordtype">int</span> &amp;nInliers)</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;{</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;    bNoMore = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;    vbInliers = vector&lt;bool&gt;(mN1,<span class="keyword">false</span>);</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;    nInliers=0;</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;    <span class="keywordflow">if</span>(N&lt;mRansacMinInliers)</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;    {</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;        bNoMore = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;        <span class="keywordflow">return</span> cv::Mat();</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;    }</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;    vector&lt;size_t&gt; vAvailableIndices;</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;    cv::Mat P3Dc1i(3,3,CV_32F);</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;    cv::Mat P3Dc2i(3,3,CV_32F);</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;    <span class="keywordtype">int</span> nCurrentIterations = 0;</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;    <span class="keywordflow">while</span>(mnIterations&lt;mRansacMaxIts &amp;&amp; nCurrentIterations&lt;nIterations)</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;    {</div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;        nCurrentIterations++;<span class="comment">// 这个函数中迭代的次数</span></div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;        mnIterations++;<span class="comment">// 总的迭代次数，默认为最大为300</span></div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;        vAvailableIndices = mvAllIndices;</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;        <span class="comment">// Get min set of points</span></div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;        <span class="comment">// 步骤1：任意取三组点算Sim矩阵</span></div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;        <span class="keywordflow">for</span>(<span class="keywordtype">short</span> i = 0; i &lt; 3; ++i)</div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;        {</div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;            <span class="keywordtype">int</span> randi = <a class="code" href="classDUtils_1_1Random.html#aa25012101ecbca54025d5430bcf93d86">DUtils::Random::RandomInt</a>(0, vAvailableIndices.size()-1);</div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;</div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;            <span class="keywordtype">int</span> idx = vAvailableIndices[randi];</div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;</div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;            <span class="comment">// P3Dc1i和P3Dc2i中点的排列顺序：</span></div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;            <span class="comment">// x1 x2 x3 ...</span></div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;            <span class="comment">// y1 y2 y3 ...</span></div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;            <span class="comment">// z1 z2 z3 ...</span></div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;            mvX3Dc1[idx].copyTo(P3Dc1i.col(i));</div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;            mvX3Dc2[idx].copyTo(P3Dc2i.col(i));</div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;</div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;            vAvailableIndices[randi] = vAvailableIndices.back();</div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;            vAvailableIndices.pop_back();</div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;        }</div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;</div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;        <span class="comment">// 步骤2：根据两组匹配的3D点，计算之间的Sim3变换</span></div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;        ComputeSim3(P3Dc1i,P3Dc2i);</div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;</div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;        <span class="comment">// 步骤3：通过投影误差进行inlier检测</span></div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;        CheckInliers();</div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;</div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;        <span class="keywordflow">if</span>(mnInliersi&gt;=mnBestInliers)</div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;        {</div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;            mvbBestInliers = mvbInliersi;</div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;            mnBestInliers = mnInliersi;</div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;            mBestT12 = mT12i.clone();</div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;            mBestRotation = mR12i.clone();</div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;            mBestTranslation = mt12i.clone();</div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;            mBestScale = ms12i;</div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;</div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;            <span class="keywordflow">if</span>(mnInliersi&gt;mRansacMinInliers)<span class="comment">// 只要计算得到一次合格的Sim变换，就直接返回</span></div>
+<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;            {</div>
+<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;                nInliers = mnInliersi;</div>
+<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;                <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i=0; i&lt;N; i++)</div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;                    <span class="keywordflow">if</span>(mvbInliersi[i])</div>
+<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;                        vbInliers[mvnIndices1[i]] = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;                <span class="keywordflow">return</span> mBestT12;</div>
+<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;            }</div>
+<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;        }</div>
+<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;    }</div>
+<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;</div>
+<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;    <span class="keywordflow">if</span>(mnIterations&gt;=mRansacMaxIts)</div>
+<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;        bNoMore=<span class="keyword">true</span>;</div>
+<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;</div>
+<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;    <span class="keywordflow">return</span> cv::Mat();</div>
+<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;}</div>
+<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;</div>
+<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;cv::Mat Sim3Solver::find(vector&lt;bool&gt; &amp;vbInliers12, <span class="keywordtype">int</span> &amp;nInliers)</div>
+<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;{</div>
+<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;    <span class="keywordtype">bool</span> bFlag;</div>
+<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;    <span class="keywordflow">return</span> iterate(mRansacMaxIts,bFlag,vbInliers12,nInliers);</div>
+<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;}</div>
+<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;</div>
+<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;<span class="keywordtype">void</span> Sim3Solver::ComputeCentroid(cv::Mat &amp;P, cv::Mat &amp;Pr, cv::Mat &amp;C)</div>
+<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;{</div>
+<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;    <span class="comment">// 这两句可以使用CV_REDUCE_AVG选项来搞定</span></div>
+<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;    cv::reduce(P,C,1,CV_REDUCE_SUM);<span class="comment">// 矩阵P每一行求和</span></div>
+<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;    C = C/P.cols;<span class="comment">// 求平均</span></div>
+<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;</div>
+<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;    <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i=0; i&lt;P.cols; i++)</div>
+<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;    {</div>
+<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;        Pr.col(i)=P.col(i)-C;<span class="comment">//减去质心</span></div>
+<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;    }</div>
+<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;}</div>
+<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;</div>
+<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;</div>
+<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;<span class="keywordtype">void</span> Sim3Solver::ComputeSim3(cv::Mat &amp;P1, cv::Mat &amp;P2)</div>
+<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;{</div>
+<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;    <span class="comment">// ！！！！！！！这段代码一定要看这篇论文！！！！！！！！！！！</span></div>
+<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;    <span class="comment">// Custom implementation of:</span></div>
+<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;    <span class="comment">// Horn 1987, Closed-form solution of absolute orientataion using unit quaternions</span></div>
+<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;</div>
+<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;    <span class="comment">// Step 1: Centroid and relative coordinates</span></div>
+<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;</div>
+<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;    cv::Mat Pr1(P1.size(),P1.type()); <span class="comment">// Relative coordinates to centroid (set 1)</span></div>
+<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;    cv::Mat Pr2(P2.size(),P2.type()); <span class="comment">// Relative coordinates to centroid (set 2)</span></div>
+<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;    cv::Mat O1(3,1,Pr1.type()); <span class="comment">// Centroid of P1</span></div>
+<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;    cv::Mat O2(3,1,Pr2.type()); <span class="comment">// Centroid of P2</span></div>
+<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;</div>
+<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;    <span class="comment">// O1和O2分别为P1和P2矩阵中3D点的质心</span></div>
+<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;    <span class="comment">// Pr1和Pr2为减去质心后的3D点</span></div>
+<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;    ComputeCentroid(P1,Pr1,O1);</div>
+<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;    ComputeCentroid(P2,Pr2,O2);</div>
+<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;</div>
+<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;    <span class="comment">// Step 2: Compute M matrix</span></div>
+<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;</div>
+<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;    cv::Mat M = Pr2*Pr1.t();</div>
+<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;</div>
+<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;    <span class="comment">// Step 3: Compute N matrix</span></div>
+<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;</div>
+<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;    <span class="keywordtype">double</span> N11, N12, N13, N14, N22, N23, N24, N33, N34, N44;</div>
+<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;</div>
+<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;    cv::Mat N(4,4,P1.type());</div>
+<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;</div>
+<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;    N11 = M.at&lt;<span class="keywordtype">float</span>&gt;(0,0)+M.at&lt;<span class="keywordtype">float</span>&gt;(1,1)+M.at&lt;<span class="keywordtype">float</span>&gt;(2,2);</div>
+<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;    N12 = M.at&lt;<span class="keywordtype">float</span>&gt;(1,2)-M.at&lt;<span class="keywordtype">float</span>&gt;(2,1);</div>
+<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;    N13 = M.at&lt;<span class="keywordtype">float</span>&gt;(2,0)-M.at&lt;<span class="keywordtype">float</span>&gt;(0,2);</div>
+<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;    N14 = M.at&lt;<span class="keywordtype">float</span>&gt;(0,1)-M.at&lt;<span class="keywordtype">float</span>&gt;(1,0);</div>
+<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;    N22 = M.at&lt;<span class="keywordtype">float</span>&gt;(0,0)-M.at&lt;<span class="keywordtype">float</span>&gt;(1,1)-M.at&lt;<span class="keywordtype">float</span>&gt;(2,2);</div>
+<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;    N23 = M.at&lt;<span class="keywordtype">float</span>&gt;(0,1)+M.at&lt;<span class="keywordtype">float</span>&gt;(1,0);</div>
+<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;    N24 = M.at&lt;<span class="keywordtype">float</span>&gt;(2,0)+M.at&lt;<span class="keywordtype">float</span>&gt;(0,2);</div>
+<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;    N33 = -M.at&lt;<span class="keywordtype">float</span>&gt;(0,0)+M.at&lt;<span class="keywordtype">float</span>&gt;(1,1)-M.at&lt;<span class="keywordtype">float</span>&gt;(2,2);</div>
+<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;    N34 = M.at&lt;<span class="keywordtype">float</span>&gt;(1,2)+M.at&lt;<span class="keywordtype">float</span>&gt;(2,1);</div>
+<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;    N44 = -M.at&lt;<span class="keywordtype">float</span>&gt;(0,0)-M.at&lt;<span class="keywordtype">float</span>&gt;(1,1)+M.at&lt;<span class="keywordtype">float</span>&gt;(2,2);</div>
+<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;</div>
+<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;    N = (cv::Mat_&lt;float&gt;(4,4) &lt;&lt; N11, N12, N13, N14,</div>
+<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;                                 N12, N22, N23, N24,</div>
+<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;                                 N13, N23, N33, N34,</div>
+<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;                                 N14, N24, N34, N44);</div>
+<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;</div>
+<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;</div>
+<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;    <span class="comment">// Step 4: Eigenvector of the highest eigenvalue</span></div>
+<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;</div>
+<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;    cv::Mat eval, evec;</div>
+<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;</div>
+<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;    cv::eigen(N,eval,evec); <span class="comment">//evec[0] is the quaternion of the desired rotation</span></div>
+<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;</div>
+<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;    <span class="comment">// N矩阵最大特征值（第一个特征值）对应特征向量就是要求的四元数死（q0 q1 q2 q3）</span></div>
+<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;    <span class="comment">// 将(q1 q2 q3)放入vec行向量，vec就是四元数旋转轴乘以sin(ang/2)</span></div>
+<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;    cv::Mat vec(1,3,evec.type());</div>
+<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;    (evec.row(0).colRange(1,4)).copyTo(vec); <span class="comment">//extract imaginary part of the quaternion (sin*axis)</span></div>
+<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;</div>
+<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;    <span class="comment">// Rotation angle. sin is the norm of the imaginary part, cos is the real part</span></div>
+<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;    <span class="keywordtype">double</span> ang=atan2(norm(vec),evec.at&lt;<span class="keywordtype">float</span>&gt;(0,0));</div>
+<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;</div>
+<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;    vec = 2*ang*vec/norm(vec); <span class="comment">//Angle-axis representation. quaternion angle is the half</span></div>
+<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;</div>
+<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;    mR12i.create(3,3,P1.type());</div>
+<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;</div>
+<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;    cv::Rodrigues(vec,mR12i); <span class="comment">// computes the rotation matrix from angle-axis</span></div>
+<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;</div>
+<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;    <span class="comment">// Step 5: Rotate set 2</span></div>
+<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;</div>
+<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;    cv::Mat P3 = mR12i*Pr2;</div>
+<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;</div>
+<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;    <span class="comment">// Step 6: Scale</span></div>
+<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;</div>
+<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;    <span class="keywordflow">if</span>(!mbFixScale)</div>
+<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;    {</div>
+<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;        <span class="comment">// 论文中还有一个求尺度的公式，p632右中的位置，那个公式不用考虑旋转</span></div>
+<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;        <span class="keywordtype">double</span> nom = Pr1.dot(P3);</div>
+<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;        cv::Mat aux_P3(P3.size(),P3.type());</div>
+<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;        aux_P3=P3;</div>
+<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;        cv::pow(P3,2,aux_P3);</div>
+<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;        <span class="keywordtype">double</span> den = 0;</div>
+<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;</div>
+<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;        <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i=0; i&lt;aux_P3.rows; i++)</div>
+<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;        {</div>
+<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;            <span class="keywordflow">for</span>(<span class="keywordtype">int</span> j=0; j&lt;aux_P3.cols; j++)</div>
+<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;            {</div>
+<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;                den+=aux_P3.at&lt;<span class="keywordtype">float</span>&gt;(i,j);</div>
+<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;            }</div>
+<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;        }</div>
+<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;</div>
+<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;        ms12i = nom/den;</div>
+<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;    }</div>
+<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;    <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;        ms12i = 1.0f;</div>
+<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;</div>
+<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;    <span class="comment">// Step 7: Translation</span></div>
+<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;</div>
+<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;    mt12i.create(1,3,P1.type());</div>
+<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;    mt12i = O1 - ms12i*mR12i*O2;</div>
+<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;</div>
+<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;    <span class="comment">// Step 8: Transformation</span></div>
+<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;</div>
+<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;    <span class="comment">// Step 8.1 T12</span></div>
+<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;    mT12i = cv::Mat::eye(4,4,P1.type());</div>
+<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;</div>
+<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;    cv::Mat sR = ms12i*mR12i;</div>
+<div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;</div>
+<div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;    <span class="comment">//         |sR t|</span></div>
+<div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;    <span class="comment">// mT12i = | 0 1|</span></div>
+<div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;    sR.copyTo(mT12i.rowRange(0,3).colRange(0,3));</div>
+<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;    mt12i.copyTo(mT12i.rowRange(0,3).col(3));</div>
+<div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;</div>
+<div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;    <span class="comment">// Step 8.2 T21</span></div>
+<div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;</div>
+<div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;    mT21i = cv::Mat::eye(4,4,P1.type());</div>
+<div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;</div>
+<div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;    cv::Mat sRinv = (1.0/ms12i)*mR12i.t();</div>
+<div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;</div>
+<div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;    sRinv.copyTo(mT21i.rowRange(0,3).colRange(0,3));</div>
+<div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;    cv::Mat tinv = -sRinv*mt12i;</div>
+<div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;    tinv.copyTo(mT21i.rowRange(0,3).col(3));</div>
+<div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;}</div>
+<div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;</div>
+<div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;</div>
+<div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;<span class="keywordtype">void</span> Sim3Solver::CheckInliers()</div>
+<div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;{</div>
+<div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;    vector&lt;cv::Mat&gt; vP1im2, vP2im1;</div>
+<div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;    Project(mvX3Dc2,vP2im1,mT12i,mK1);<span class="comment">// 把2系中的3D经过Sim3变换(mT12i)到1系中计算重投影坐标</span></div>
+<div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;    Project(mvX3Dc1,vP1im2,mT21i,mK2);<span class="comment">// 把1系中的3D经过Sim3变换(mT21i)到2系中计算重投影坐标</span></div>
+<div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;</div>
+<div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;    mnInliersi=0;</div>
+<div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;</div>
+<div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;    <span class="keywordflow">for</span>(<span class="keywordtype">size_t</span> i=0; i&lt;mvP1im1.size(); i++)</div>
+<div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;    {</div>
+<div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;        cv::Mat dist1 = mvP1im1[i]-vP2im1[i];</div>
+<div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;        cv::Mat dist2 = vP1im2[i]-mvP2im2[i];</div>
+<div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160;</div>
+<div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">float</span> err1 = dist1.dot(dist1);</div>
+<div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">float</span> err2 = dist2.dot(dist2);</div>
+<div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;</div>
+<div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;        <span class="keywordflow">if</span>(err1&lt;mvnMaxError1[i] &amp;&amp; err2&lt;mvnMaxError2[i])</div>
+<div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;        {</div>
+<div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;            mvbInliersi[i]=<span class="keyword">true</span>;</div>
+<div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;            mnInliersi++;</div>
+<div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;        }</div>
+<div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;        <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160;            mvbInliersi[i]=<span class="keyword">false</span>;</div>
+<div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160;    }</div>
+<div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160;}</div>
+<div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160;</div>
+<div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160;</div>
+<div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160;cv::Mat Sim3Solver::GetEstimatedRotation()</div>
+<div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160;{</div>
+<div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160;    <span class="keywordflow">return</span> mBestRotation.clone();</div>
+<div class="line"><a name="l00394"></a><span class="lineno">  394</span>&#160;}</div>
+<div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160;</div>
+<div class="line"><a name="l00396"></a><span class="lineno">  396</span>&#160;cv::Mat Sim3Solver::GetEstimatedTranslation()</div>
+<div class="line"><a name="l00397"></a><span class="lineno">  397</span>&#160;{</div>
+<div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160;    <span class="keywordflow">return</span> mBestTranslation.clone();</div>
+<div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160;}</div>
+<div class="line"><a name="l00400"></a><span class="lineno">  400</span>&#160;</div>
+<div class="line"><a name="l00401"></a><span class="lineno">  401</span>&#160;<span class="keywordtype">float</span> Sim3Solver::GetEstimatedScale()</div>
+<div class="line"><a name="l00402"></a><span class="lineno">  402</span>&#160;{</div>
+<div class="line"><a name="l00403"></a><span class="lineno">  403</span>&#160;    <span class="keywordflow">return</span> mBestScale;</div>
+<div class="line"><a name="l00404"></a><span class="lineno">  404</span>&#160;}</div>
+<div class="line"><a name="l00405"></a><span class="lineno">  405</span>&#160;</div>
+<div class="line"><a name="l00406"></a><span class="lineno">  406</span>&#160;<span class="keywordtype">void</span> Sim3Solver::Project(<span class="keyword">const</span> vector&lt;cv::Mat&gt; &amp;vP3Dw, vector&lt;cv::Mat&gt; &amp;vP2D, cv::Mat Tcw, cv::Mat K)</div>
+<div class="line"><a name="l00407"></a><span class="lineno">  407</span>&#160;{</div>
+<div class="line"><a name="l00408"></a><span class="lineno">  408</span>&#160;    cv::Mat Rcw = Tcw.rowRange(0,3).colRange(0,3);</div>
+<div class="line"><a name="l00409"></a><span class="lineno">  409</span>&#160;    cv::Mat tcw = Tcw.rowRange(0,3).col(3);</div>
+<div class="line"><a name="l00410"></a><span class="lineno">  410</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">float</span> &amp;fx = K.at&lt;<span class="keywordtype">float</span>&gt;(0,0);</div>
+<div class="line"><a name="l00411"></a><span class="lineno">  411</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">float</span> &amp;fy = K.at&lt;<span class="keywordtype">float</span>&gt;(1,1);</div>
+<div class="line"><a name="l00412"></a><span class="lineno">  412</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">float</span> &amp;cx = K.at&lt;<span class="keywordtype">float</span>&gt;(0,2);</div>
+<div class="line"><a name="l00413"></a><span class="lineno">  413</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">float</span> &amp;cy = K.at&lt;<span class="keywordtype">float</span>&gt;(1,2);</div>
+<div class="line"><a name="l00414"></a><span class="lineno">  414</span>&#160;</div>
+<div class="line"><a name="l00415"></a><span class="lineno">  415</span>&#160;    vP2D.clear();</div>
+<div class="line"><a name="l00416"></a><span class="lineno">  416</span>&#160;    vP2D.reserve(vP3Dw.size());</div>
+<div class="line"><a name="l00417"></a><span class="lineno">  417</span>&#160;</div>
+<div class="line"><a name="l00418"></a><span class="lineno">  418</span>&#160;    <span class="keywordflow">for</span>(<span class="keywordtype">size_t</span> i=0, iend=vP3Dw.size(); i&lt;iend; i++)</div>
+<div class="line"><a name="l00419"></a><span class="lineno">  419</span>&#160;    {</div>
+<div class="line"><a name="l00420"></a><span class="lineno">  420</span>&#160;        cv::Mat P3Dc = Rcw*vP3Dw[i]+tcw;</div>
+<div class="line"><a name="l00421"></a><span class="lineno">  421</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">float</span> invz = 1/(P3Dc.at&lt;<span class="keywordtype">float</span>&gt;(2));</div>
+<div class="line"><a name="l00422"></a><span class="lineno">  422</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">float</span> x = P3Dc.at&lt;<span class="keywordtype">float</span>&gt;(0)*invz;</div>
+<div class="line"><a name="l00423"></a><span class="lineno">  423</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">float</span> y = P3Dc.at&lt;<span class="keywordtype">float</span>&gt;(1)*invz;</div>
+<div class="line"><a name="l00424"></a><span class="lineno">  424</span>&#160;</div>
+<div class="line"><a name="l00425"></a><span class="lineno">  425</span>&#160;        vP2D.push_back((cv::Mat_&lt;float&gt;(2,1) &lt;&lt; fx*x+cx, fy*y+cy));</div>
+<div class="line"><a name="l00426"></a><span class="lineno">  426</span>&#160;    }</div>
+<div class="line"><a name="l00427"></a><span class="lineno">  427</span>&#160;}</div>
+<div class="line"><a name="l00428"></a><span class="lineno">  428</span>&#160;</div>
+<div class="line"><a name="l00429"></a><span class="lineno">  429</span>&#160;<span class="keywordtype">void</span> Sim3Solver::FromCameraToImage(<span class="keyword">const</span> vector&lt;cv::Mat&gt; &amp;vP3Dc, vector&lt;cv::Mat&gt; &amp;vP2D, cv::Mat K)</div>
+<div class="line"><a name="l00430"></a><span class="lineno">  430</span>&#160;{</div>
+<div class="line"><a name="l00431"></a><span class="lineno">  431</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">float</span> &amp;fx = K.at&lt;<span class="keywordtype">float</span>&gt;(0,0);</div>
+<div class="line"><a name="l00432"></a><span class="lineno">  432</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">float</span> &amp;fy = K.at&lt;<span class="keywordtype">float</span>&gt;(1,1);</div>
+<div class="line"><a name="l00433"></a><span class="lineno">  433</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">float</span> &amp;cx = K.at&lt;<span class="keywordtype">float</span>&gt;(0,2);</div>
+<div class="line"><a name="l00434"></a><span class="lineno">  434</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">float</span> &amp;cy = K.at&lt;<span class="keywordtype">float</span>&gt;(1,2);</div>
+<div class="line"><a name="l00435"></a><span class="lineno">  435</span>&#160;</div>
+<div class="line"><a name="l00436"></a><span class="lineno">  436</span>&#160;    vP2D.clear();</div>
+<div class="line"><a name="l00437"></a><span class="lineno">  437</span>&#160;    vP2D.reserve(vP3Dc.size());</div>
+<div class="line"><a name="l00438"></a><span class="lineno">  438</span>&#160;</div>
+<div class="line"><a name="l00439"></a><span class="lineno">  439</span>&#160;    <span class="keywordflow">for</span>(<span class="keywordtype">size_t</span> i=0, iend=vP3Dc.size(); i&lt;iend; i++)</div>
+<div class="line"><a name="l00440"></a><span class="lineno">  440</span>&#160;    {</div>
+<div class="line"><a name="l00441"></a><span class="lineno">  441</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">float</span> invz = 1/(vP3Dc[i].at&lt;<span class="keywordtype">float</span>&gt;(2));</div>
+<div class="line"><a name="l00442"></a><span class="lineno">  442</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">float</span> x = vP3Dc[i].at&lt;<span class="keywordtype">float</span>&gt;(0)*invz;</div>
+<div class="line"><a name="l00443"></a><span class="lineno">  443</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">float</span> y = vP3Dc[i].at&lt;<span class="keywordtype">float</span>&gt;(1)*invz;</div>
+<div class="line"><a name="l00444"></a><span class="lineno">  444</span>&#160;</div>
+<div class="line"><a name="l00445"></a><span class="lineno">  445</span>&#160;        vP2D.push_back((cv::Mat_&lt;float&gt;(2,1) &lt;&lt; fx*x+cx, fy*y+cy));</div>
+<div class="line"><a name="l00446"></a><span class="lineno">  446</span>&#160;    }</div>
+<div class="line"><a name="l00447"></a><span class="lineno">  447</span>&#160;}</div>
+<div class="line"><a name="l00448"></a><span class="lineno">  448</span>&#160;</div>
+<div class="line"><a name="l00449"></a><span class="lineno">  449</span>&#160;} <span class="comment">//namespace ORB_SLAM</span></div>
+<div class="ttc" id="classDUtils_1_1Random_html_aa25012101ecbca54025d5430bcf93d86"><div class="ttname"><a href="classDUtils_1_1Random.html#aa25012101ecbca54025d5430bcf93d86">DUtils::Random::RandomInt</a></div><div class="ttdeci">static int RandomInt(int min, int max)</div><div class="ttdef"><b>Definition:</b> <a href="Random_8cpp_source.html#l00047">Random.cpp:47</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><b>Sim3Solver.cpp</b></li>
+    <li class="footer">生成于 2017年 七月 18日 星期二 17:13:36 , 为 My Project使用 
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
+  </ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,14 @@
+<map id="ORB_SLAM2::Frame::UpdatePoseMatrices" name="ORB_SLAM2::Frame::UpdatePoseMatrices">
+<area shape="rect" id="node2" href="$classORB__SLAM2_1_1Tracking.html#a8c7fb6c4b1f952524512023df690bf4d" title="创建新的关键帧 " alt="" coords="274,36,433,77"/>
+<area shape="rect" id="node4" href="$classORB__SLAM2_1_1Frame.html#a95cf2ea68735ef3e8c2d820eada11bf4" title="Set the camera pose. " alt="" coords="251,207,455,234"/>
+<area shape="rect" id="node3" href="$classORB__SLAM2_1_1Tracking.html#af1f2c9c533642d8c33854540e90d1918" title="Main tracking function. It is independent of the input sensor. " alt="" coords="977,216,1135,257"/>
+<area shape="rect" id="node5" href="$classORB__SLAM2_1_1Tracking.html#afeb077c81cd700d779348b80698086e8" title="CreateInitialMapMonocular. " alt="" coords="507,65,693,107"/>
+<area shape="rect" id="node6" href="$classORB__SLAM2_1_1Tracking.html#a7e81c68bb6ced27fcbfa2edec38ef6e0" title="单目的地图初始化 " alt="" coords="757,124,915,165"/>
+<area shape="rect" id="node7" href="$classORB__SLAM2_1_1Frame.html#ac7e6ed9973b81ec85e91228e3d4ecf22" title="Copy constructor. " alt="" coords="505,182,695,209"/>
+<area shape="rect" id="node8" href="$classORB__SLAM2_1_1Optimizer.html#a7415d78b8a2323b88e108fa1ea3bf2d3" title="Pose Only Optimization. " alt="" coords="517,284,683,325"/>
+<area shape="rect" id="node9" href="$classORB__SLAM2_1_1Tracking.html#a737c5409c93844353561a0fe724ed1c2" title="对参考关键帧的MapPoints进行跟踪 " alt="" coords="745,216,927,257"/>
+<area shape="rect" id="node10" href="$classORB__SLAM2_1_1Tracking.html#aca19f1d69b30a6c6e49281d422ac8298" title="根据匀速度模型对上一帧的MapPoints进行跟踪 " alt="" coords="754,347,918,388"/>
+<area shape="rect" id="node12" href="$classORB__SLAM2_1_1Tracking.html#ad3da849e4204d766e5db4ac47b52132c" title="双目和rgbd的地图初始化 " alt="" coords="757,435,915,476"/>
+<area shape="rect" id="node13" href="$classORB__SLAM2_1_1Tracking.html#aa84a20277d5bd022b527d79a58830bc5" title="双目或rgbd摄像头根据深度值为上一帧产生新的MapPoints " alt="" coords="521,401,679,443"/>
+<area shape="rect" id="node11" href="$classORB__SLAM2_1_1Tracking.html#af670c614f4e10d58c9f7aad9865b5c08" title="对Local Map的MapPoints进行跟踪 " alt="" coords="757,281,915,323"/>
+</map>

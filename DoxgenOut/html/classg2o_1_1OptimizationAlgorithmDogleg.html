@@ -1,0 +1,433 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.6"/>
+<title>My Project: g2o::OptimizationAlgorithmDogleg类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">My Project
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.6 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="pages.html"><span>相关页面</span></a></li>
+      <li><a href="modules.html"><span>模块</span></a></li>
+      <li><a href="namespaces.html"><span>命名空间</span></a></li>
+      <li class="current"><a href="annotated.html"><span>类</span></a></li>
+      <li><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>类列表</span></a></li>
+      <li><a href="classes.html"><span>类索引</span></a></li>
+      <li><a href="inherits.html"><span>类继承关系</span></a></li>
+      <li><a href="functions.html"><span>类成员</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('classg2o_1_1OptimizationAlgorithmDogleg.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>命名空间</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>友元</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>组</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>页</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-types">Public 类型</a> &#124;
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pub-static-methods">静态 Public 成员函数</a> &#124;
+<a href="#pro-attribs">Protected 属性</a> &#124;
+<a href="classg2o_1_1OptimizationAlgorithmDogleg-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">g2o::OptimizationAlgorithmDogleg类 参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Implementation of Powell's Dogleg Algorithm.  
+ <a href="classg2o_1_1OptimizationAlgorithmDogleg.html#details">更多...</a></p>
+
+<p><code>#include &lt;<a class="el" href="optimization__algorithm__dogleg_8h_source.html">optimization_algorithm_dogleg.h</a>&gt;</code></p>
+<div class="dynheader">
+类 g2o::OptimizationAlgorithmDogleg 继承关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classg2o_1_1OptimizationAlgorithmDogleg__inherit__graph.png" border="0" usemap="#g2o_1_1OptimizationAlgorithmDogleg_inherit__map" alt="Inheritance graph"/></div>
+<map name="g2o_1_1OptimizationAlgorithmDogleg_inherit__map" id="g2o_1_1OptimizationAlgorithmDogleg_inherit__map">
+<area shape="rect" id="node2" href="classg2o_1_1OptimizationAlgorithmWithHessian.html" title="Base for solvers operating on the approximated Hessian, e.g., Gauss&#45;Newton, Levenberg. " alt="" coords="5,81,184,122"/><area shape="rect" id="node3" href="classg2o_1_1OptimizationAlgorithm.html" title="Generic interface for a non&#45;linear solver operating on a graph. " alt="" coords="5,5,184,32"/></map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">图例</a>]</span></center></div>
+<div class="dynheader">
+g2o::OptimizationAlgorithmDogleg 的协作图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classg2o_1_1OptimizationAlgorithmDogleg__coll__graph.png" border="0" usemap="#g2o_1_1OptimizationAlgorithmDogleg_coll__map" alt="Collaboration graph"/></div>
+<map name="g2o_1_1OptimizationAlgorithmDogleg_coll__map" id="g2o_1_1OptimizationAlgorithmDogleg_coll__map">
+<area shape="rect" id="node2" href="classg2o_1_1OptimizationAlgorithmWithHessian.html" title="Base for solvers operating on the approximated Hessian, e.g., Gauss&#45;Newton, Levenberg. " alt="" coords="476,474,655,515"/><area shape="rect" id="node3" href="classg2o_1_1OptimizationAlgorithm.html" title="Generic interface for a non&#45;linear solver operating on a graph. " alt="" coords="424,189,603,216"/><area shape="rect" id="node6" href="classg2o_1_1SparseOptimizer.html" title="g2o::SparseOptimizer" alt="" coords="301,280,448,307"/><area shape="rect" id="node4" href="classg2o_1_1PropertyMap.html" title="a collection of properties mapping from name to the property itself " alt="" coords="540,99,665,125"/><area shape="rect" id="node12" href="classg2o_1_1Solver.html" title="Generic interface for a sparse solver operating on a graph which solves one iteration of the lineariz..." alt="" coords="373,371,461,397"/><area shape="rect" id="node7" href="structg2o_1_1OptimizableGraph.html" title="g2o::OptimizableGraph" alt="" coords="209,189,363,216"/><area shape="rect" id="node8" href="classg2o_1_1HyperGraph.html" title="g2o::HyperGraph" alt="" coords="5,99,125,125"/><area shape="rect" id="node9" href="classg2o_1_1JacobianWorkspace.html" title="provide memory workspace for computing the Jacobians " alt="" coords="150,99,319,125"/><area shape="rect" id="node10" href="classg2o_1_1ParameterContainer.html" title="map id to parameters " alt="" coords="343,99,509,125"/><area shape="rect" id="node13" href="classg2o_1_1Property.html" title="g2o::Property\&lt; bool \&gt;" alt="" coords="587,371,735,397"/><area shape="rect" id="node14" href="classg2o_1_1BaseProperty.html" title="g2o::BaseProperty" alt="" coords="708,280,837,307"/><area shape="rect" id="node15" href="classg2o_1_1Property.html" title="g2o::Property\&lt; int \&gt;" alt="" coords="677,421,816,448"/><area shape="rect" id="node16" href="classg2o_1_1Property.html" title="g2o::Property\&lt; double \&gt;" alt="" coords="823,421,985,448"/></map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">图例</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public 类型</h2></td></tr>
+<tr class="memitem:a431b0b88011685955381bdeb68bb5390"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <b>STEP_UNDEFINED</b>, 
+<b>STEP_SD</b>, 
+<b>STEP_GN</b>, 
+<b>STEP_DL</b>
+ }</td></tr>
+<tr class="memdesc:a431b0b88011685955381bdeb68bb5390"><td class="mdescLeft">&#160;</td><td class="mdescRight">type of the step to take <br/></td></tr>
+<tr class="separator:a431b0b88011685955381bdeb68bb5390"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:ab332f8fb049d1a1fecba18105083052a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classg2o_1_1OptimizationAlgorithmDogleg.html#ab332f8fb049d1a1fecba18105083052a">OptimizationAlgorithmDogleg</a> (<a class="el" href="classg2o_1_1BlockSolverBase.html">BlockSolverBase</a> *<a class="el" href="classg2o_1_1OptimizationAlgorithmWithHessian.html#a85473a4073c76b1a52cf9cf175e31c45">solver</a>)</td></tr>
+<tr class="separator:ab332f8fb049d1a1fecba18105083052a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ace62fd809c18655bd7ff104285748610"><td class="memItemLeft" align="right" valign="top">virtual SolverResult&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classg2o_1_1OptimizationAlgorithmDogleg.html#ace62fd809c18655bd7ff104285748610">solve</a> (int iteration, bool online=false)</td></tr>
+<tr class="separator:ace62fd809c18655bd7ff104285748610"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9bed238c5d36c094ca10103bb1c3979e"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classg2o_1_1OptimizationAlgorithmDogleg.html#a9bed238c5d36c094ca10103bb1c3979e">printVerbose</a> (std::ostream &amp;os) const </td></tr>
+<tr class="separator:a9bed238c5d36c094ca10103bb1c3979e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a53a17375bcc00da1e56ad6582dff5d7b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a53a17375bcc00da1e56ad6582dff5d7b"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classg2o_1_1OptimizationAlgorithmDogleg.html#a53a17375bcc00da1e56ad6582dff5d7b">lastStep</a> () const </td></tr>
+<tr class="memdesc:a53a17375bcc00da1e56ad6582dff5d7b"><td class="mdescLeft">&#160;</td><td class="mdescRight">return the type of the last step taken by the algorithm <br/></td></tr>
+<tr class="separator:a53a17375bcc00da1e56ad6582dff5d7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6cf67489a9b88d02ab74d6125df35f4b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6cf67489a9b88d02ab74d6125df35f4b"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classg2o_1_1OptimizationAlgorithmDogleg.html#a6cf67489a9b88d02ab74d6125df35f4b">trustRegion</a> () const </td></tr>
+<tr class="memdesc:a6cf67489a9b88d02ab74d6125df35f4b"><td class="mdescLeft">&#160;</td><td class="mdescRight">return the diameter of the trust region <br/></td></tr>
+<tr class="separator:a6cf67489a9b88d02ab74d6125df35f4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classg2o_1_1OptimizationAlgorithmWithHessian"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classg2o_1_1OptimizationAlgorithmWithHessian')"><img src="closed.png" alt="-"/>&#160;Public 成员函数 继承自 <a class="el" href="classg2o_1_1OptimizationAlgorithmWithHessian.html">g2o::OptimizationAlgorithmWithHessian</a></td></tr>
+<tr class="memitem:a1358f3500efe8b95a5af4a1b0edecdf0 inherit pub_methods_classg2o_1_1OptimizationAlgorithmWithHessian"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1358f3500efe8b95a5af4a1b0edecdf0"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>OptimizationAlgorithmWithHessian</b> (<a class="el" href="classg2o_1_1Solver.html">Solver</a> *<a class="el" href="classg2o_1_1OptimizationAlgorithmWithHessian.html#a85473a4073c76b1a52cf9cf175e31c45">solver</a>)</td></tr>
+<tr class="separator:a1358f3500efe8b95a5af4a1b0edecdf0 inherit pub_methods_classg2o_1_1OptimizationAlgorithmWithHessian"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae067a9c2961718dc8a37e3b8478b6d01 inherit pub_methods_classg2o_1_1OptimizationAlgorithmWithHessian"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classg2o_1_1OptimizationAlgorithmWithHessian.html#ae067a9c2961718dc8a37e3b8478b6d01">init</a> (bool online=false)</td></tr>
+<tr class="separator:ae067a9c2961718dc8a37e3b8478b6d01 inherit pub_methods_classg2o_1_1OptimizationAlgorithmWithHessian"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af1959727df2b7cf233a171cfed246e9a inherit pub_methods_classg2o_1_1OptimizationAlgorithmWithHessian"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classg2o_1_1OptimizationAlgorithmWithHessian.html#af1959727df2b7cf233a171cfed246e9a">computeMarginals</a> (<a class="el" href="classg2o_1_1SparseBlockMatrix.html">SparseBlockMatrix</a>&lt; MatrixXd &gt; &amp;spinv, const std::vector&lt; std::pair&lt; int, int &gt; &gt; &amp;blockIndices)</td></tr>
+<tr class="separator:af1959727df2b7cf233a171cfed246e9a inherit pub_methods_classg2o_1_1OptimizationAlgorithmWithHessian"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa84732c8554039ba0152693837bd1b4a inherit pub_methods_classg2o_1_1OptimizationAlgorithmWithHessian"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa84732c8554039ba0152693837bd1b4a"></a>
+virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>buildLinearStructure</b> ()</td></tr>
+<tr class="separator:aa84732c8554039ba0152693837bd1b4a inherit pub_methods_classg2o_1_1OptimizationAlgorithmWithHessian"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3ceacb3dddb14121b03e0afe7b7cfeaa inherit pub_methods_classg2o_1_1OptimizationAlgorithmWithHessian"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3ceacb3dddb14121b03e0afe7b7cfeaa"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>updateLinearSystem</b> ()</td></tr>
+<tr class="separator:a3ceacb3dddb14121b03e0afe7b7cfeaa inherit pub_methods_classg2o_1_1OptimizationAlgorithmWithHessian"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ffffb2bdb70db856bccdb6774776fa3 inherit pub_methods_classg2o_1_1OptimizationAlgorithmWithHessian"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classg2o_1_1OptimizationAlgorithmWithHessian.html#a9ffffb2bdb70db856bccdb6774776fa3">updateStructure</a> (const std::vector&lt; <a class="el" href="classg2o_1_1HyperGraph_1_1Vertex.html">HyperGraph::Vertex</a> * &gt; &amp;vset, const HyperGraph::EdgeSet &amp;edges)</td></tr>
+<tr class="separator:a9ffffb2bdb70db856bccdb6774776fa3 inherit pub_methods_classg2o_1_1OptimizationAlgorithmWithHessian"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a85473a4073c76b1a52cf9cf175e31c45 inherit pub_methods_classg2o_1_1OptimizationAlgorithmWithHessian"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a85473a4073c76b1a52cf9cf175e31c45"></a>
+<a class="el" href="classg2o_1_1Solver.html">Solver</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classg2o_1_1OptimizationAlgorithmWithHessian.html#a85473a4073c76b1a52cf9cf175e31c45">solver</a> ()</td></tr>
+<tr class="memdesc:a85473a4073c76b1a52cf9cf175e31c45 inherit pub_methods_classg2o_1_1OptimizationAlgorithmWithHessian"><td class="mdescLeft">&#160;</td><td class="mdescRight">return the underlying solver used to solve the linear system <br/></td></tr>
+<tr class="separator:a85473a4073c76b1a52cf9cf175e31c45 inherit pub_methods_classg2o_1_1OptimizationAlgorithmWithHessian"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a655aee24aae72b55f5edafb0a7a15137 inherit pub_methods_classg2o_1_1OptimizationAlgorithmWithHessian"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classg2o_1_1OptimizationAlgorithmWithHessian.html#a655aee24aae72b55f5edafb0a7a15137">setWriteDebug</a> (bool writeDebug)</td></tr>
+<tr class="separator:a655aee24aae72b55f5edafb0a7a15137 inherit pub_methods_classg2o_1_1OptimizationAlgorithmWithHessian"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac3f458237efd3b000de0032f97bca0b7 inherit pub_methods_classg2o_1_1OptimizationAlgorithmWithHessian"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac3f458237efd3b000de0032f97bca0b7"></a>
+virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>writeDebug</b> () const </td></tr>
+<tr class="separator:ac3f458237efd3b000de0032f97bca0b7 inherit pub_methods_classg2o_1_1OptimizationAlgorithmWithHessian"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classg2o_1_1OptimizationAlgorithm"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classg2o_1_1OptimizationAlgorithm')"><img src="closed.png" alt="-"/>&#160;Public 成员函数 继承自 <a class="el" href="classg2o_1_1OptimizationAlgorithm.html">g2o::OptimizationAlgorithm</a></td></tr>
+<tr class="memitem:ae1799d6aed633e94574072d26ed4cb4e inherit pub_methods_classg2o_1_1OptimizationAlgorithm"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae1799d6aed633e94574072d26ed4cb4e"></a>
+const <a class="el" href="classg2o_1_1SparseOptimizer.html">SparseOptimizer</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classg2o_1_1OptimizationAlgorithm.html#ae1799d6aed633e94574072d26ed4cb4e">optimizer</a> () const </td></tr>
+<tr class="memdesc:ae1799d6aed633e94574072d26ed4cb4e inherit pub_methods_classg2o_1_1OptimizationAlgorithm"><td class="mdescLeft">&#160;</td><td class="mdescRight">return the optimizer operating on <br/></td></tr>
+<tr class="separator:ae1799d6aed633e94574072d26ed4cb4e inherit pub_methods_classg2o_1_1OptimizationAlgorithm"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac6ca7a2adbd25615be78316bc811a315 inherit pub_methods_classg2o_1_1OptimizationAlgorithm"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac6ca7a2adbd25615be78316bc811a315"></a>
+<a class="el" href="classg2o_1_1SparseOptimizer.html">SparseOptimizer</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>optimizer</b> ()</td></tr>
+<tr class="separator:ac6ca7a2adbd25615be78316bc811a315 inherit pub_methods_classg2o_1_1OptimizationAlgorithm"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aff88a3dc8357c98712ff0047e601bd5e inherit pub_methods_classg2o_1_1OptimizationAlgorithm"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classg2o_1_1OptimizationAlgorithm.html#aff88a3dc8357c98712ff0047e601bd5e">setOptimizer</a> (<a class="el" href="classg2o_1_1SparseOptimizer.html">SparseOptimizer</a> *<a class="el" href="classg2o_1_1OptimizationAlgorithm.html#ae1799d6aed633e94574072d26ed4cb4e">optimizer</a>)</td></tr>
+<tr class="separator:aff88a3dc8357c98712ff0047e601bd5e inherit pub_methods_classg2o_1_1OptimizationAlgorithm"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1e03513e64271df6420ca71bc7524e67 inherit pub_methods_classg2o_1_1OptimizationAlgorithm"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1e03513e64271df6420ca71bc7524e67"></a>
+const <a class="el" href="classg2o_1_1PropertyMap.html">PropertyMap</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classg2o_1_1OptimizationAlgorithm.html#a1e03513e64271df6420ca71bc7524e67">properties</a> () const </td></tr>
+<tr class="memdesc:a1e03513e64271df6420ca71bc7524e67 inherit pub_methods_classg2o_1_1OptimizationAlgorithm"><td class="mdescLeft">&#160;</td><td class="mdescRight">return the properties of the solver <br/></td></tr>
+<tr class="separator:a1e03513e64271df6420ca71bc7524e67 inherit pub_methods_classg2o_1_1OptimizationAlgorithm"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa05a6380f936c728a574c7c272bcc524 inherit pub_methods_classg2o_1_1OptimizationAlgorithm"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classg2o_1_1OptimizationAlgorithm.html#aa05a6380f936c728a574c7c272bcc524">updatePropertiesFromString</a> (const std::string &amp;propString)</td></tr>
+<tr class="separator:aa05a6380f936c728a574c7c272bcc524 inherit pub_methods_classg2o_1_1OptimizationAlgorithm"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad07be53fd879acfb919ca7d3ef73e97b inherit pub_methods_classg2o_1_1OptimizationAlgorithm"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classg2o_1_1OptimizationAlgorithm.html#ad07be53fd879acfb919ca7d3ef73e97b">printProperties</a> (std::ostream &amp;os) const </td></tr>
+<tr class="separator:ad07be53fd879acfb919ca7d3ef73e97b inherit pub_methods_classg2o_1_1OptimizationAlgorithm"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+静态 Public 成员函数</h2></td></tr>
+<tr class="memitem:a65f193c6451ffcd2bd6fd8f8d19e2a12"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a65f193c6451ffcd2bd6fd8f8d19e2a12"></a>
+static const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classg2o_1_1OptimizationAlgorithmDogleg.html#a65f193c6451ffcd2bd6fd8f8d19e2a12">stepType2Str</a> (int stepType)</td></tr>
+<tr class="memdesc:a65f193c6451ffcd2bd6fd8f8d19e2a12"><td class="mdescLeft">&#160;</td><td class="mdescRight">convert the type into an integer <br/></td></tr>
+<tr class="separator:a65f193c6451ffcd2bd6fd8f8d19e2a12"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
+Protected 属性</h2></td></tr>
+<tr class="memitem:a5993c68e69cd037b1420b4addf9f7e50"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5993c68e69cd037b1420b4addf9f7e50"></a>
+<a class="el" href="classg2o_1_1Property.html">Property</a>&lt; int &gt; *&#160;</td><td class="memItemRight" valign="bottom"><b>_maxTrialsAfterFailure</b></td></tr>
+<tr class="separator:a5993c68e69cd037b1420b4addf9f7e50"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae77ffaea89872affeb61f122f20efeb9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae77ffaea89872affeb61f122f20efeb9"></a>
+<a class="el" href="classg2o_1_1Property.html">Property</a>&lt; double &gt; *&#160;</td><td class="memItemRight" valign="bottom"><b>_userDeltaInit</b></td></tr>
+<tr class="separator:ae77ffaea89872affeb61f122f20efeb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3a94c7696f07e3def38ec96a1979babd"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3a94c7696f07e3def38ec96a1979babd"></a>
+<a class="el" href="classg2o_1_1Property.html">Property</a>&lt; double &gt; *&#160;</td><td class="memItemRight" valign="bottom"><b>_initialLambda</b></td></tr>
+<tr class="separator:a3a94c7696f07e3def38ec96a1979babd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6855a511dc998efef7eaa0ef99e1b814"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6855a511dc998efef7eaa0ef99e1b814"></a>
+<a class="el" href="classg2o_1_1Property.html">Property</a>&lt; double &gt; *&#160;</td><td class="memItemRight" valign="bottom"><b>_lamdbaFactor</b></td></tr>
+<tr class="separator:a6855a511dc998efef7eaa0ef99e1b814"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8f4ee408fbf3999063d094cf61e852b7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8f4ee408fbf3999063d094cf61e852b7"></a>
+Eigen::VectorXd&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classg2o_1_1OptimizationAlgorithmDogleg.html#a8f4ee408fbf3999063d094cf61e852b7">_hsd</a></td></tr>
+<tr class="memdesc:a8f4ee408fbf3999063d094cf61e852b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">steepest decent step <br/></td></tr>
+<tr class="separator:a8f4ee408fbf3999063d094cf61e852b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaf433c824153a7bd76b27690eb53113b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aaf433c824153a7bd76b27690eb53113b"></a>
+Eigen::VectorXd&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classg2o_1_1OptimizationAlgorithmDogleg.html#aaf433c824153a7bd76b27690eb53113b">_hdl</a></td></tr>
+<tr class="memdesc:aaf433c824153a7bd76b27690eb53113b"><td class="mdescLeft">&#160;</td><td class="mdescRight">final dogleg step <br/></td></tr>
+<tr class="separator:aaf433c824153a7bd76b27690eb53113b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a225092fe67ce75eb64011c1f45d8d936"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a225092fe67ce75eb64011c1f45d8d936"></a>
+Eigen::VectorXd&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classg2o_1_1OptimizationAlgorithmDogleg.html#a225092fe67ce75eb64011c1f45d8d936">_auxVector</a></td></tr>
+<tr class="memdesc:a225092fe67ce75eb64011c1f45d8d936"><td class="mdescLeft">&#160;</td><td class="mdescRight">auxilary vector used to perform multiplications or other stuff <br/></td></tr>
+<tr class="separator:a225092fe67ce75eb64011c1f45d8d936"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aacc051a6740fc6017dac7c424dc7df3d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aacc051a6740fc6017dac7c424dc7df3d"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classg2o_1_1OptimizationAlgorithmDogleg.html#aacc051a6740fc6017dac7c424dc7df3d">_currentLambda</a></td></tr>
+<tr class="memdesc:aacc051a6740fc6017dac7c424dc7df3d"><td class="mdescLeft">&#160;</td><td class="mdescRight">the damping factor to force positive definite matrix <br/></td></tr>
+<tr class="separator:aacc051a6740fc6017dac7c424dc7df3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3484b12efddd9fc0051100634effecd6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3484b12efddd9fc0051100634effecd6"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classg2o_1_1OptimizationAlgorithmDogleg.html#a3484b12efddd9fc0051100634effecd6">_delta</a></td></tr>
+<tr class="memdesc:a3484b12efddd9fc0051100634effecd6"><td class="mdescLeft">&#160;</td><td class="mdescRight">trust region <br/></td></tr>
+<tr class="separator:a3484b12efddd9fc0051100634effecd6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3bf898af0087c0ed8287d0cd13e4c943"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3bf898af0087c0ed8287d0cd13e4c943"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classg2o_1_1OptimizationAlgorithmDogleg.html#a3bf898af0087c0ed8287d0cd13e4c943">_lastStep</a></td></tr>
+<tr class="memdesc:a3bf898af0087c0ed8287d0cd13e4c943"><td class="mdescLeft">&#160;</td><td class="mdescRight">type of the step taken by the algorithm <br/></td></tr>
+<tr class="separator:a3bf898af0087c0ed8287d0cd13e4c943"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af921ebbebaf059f73e410fc751616ec2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af921ebbebaf059f73e410fc751616ec2"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classg2o_1_1OptimizationAlgorithmDogleg.html#af921ebbebaf059f73e410fc751616ec2">_wasPDInAllIterations</a></td></tr>
+<tr class="memdesc:af921ebbebaf059f73e410fc751616ec2"><td class="mdescLeft">&#160;</td><td class="mdescRight">the matrix we solve was positive definite in all iterations -&gt; if not apply damping <br/></td></tr>
+<tr class="separator:af921ebbebaf059f73e410fc751616ec2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeab37f3f587dc8b37b5a42d36fd8217c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aeab37f3f587dc8b37b5a42d36fd8217c"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>_lastNumTries</b></td></tr>
+<tr class="separator:aeab37f3f587dc8b37b5a42d36fd8217c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_attribs_classg2o_1_1OptimizationAlgorithmWithHessian"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classg2o_1_1OptimizationAlgorithmWithHessian')"><img src="closed.png" alt="-"/>&#160;Protected 属性 继承自 <a class="el" href="classg2o_1_1OptimizationAlgorithmWithHessian.html">g2o::OptimizationAlgorithmWithHessian</a></td></tr>
+<tr class="memitem:a88a2d1dccee8f7481ece407f2681a151 inherit pro_attribs_classg2o_1_1OptimizationAlgorithmWithHessian"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a88a2d1dccee8f7481ece407f2681a151"></a>
+<a class="el" href="classg2o_1_1Solver.html">Solver</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>_solver</b></td></tr>
+<tr class="separator:a88a2d1dccee8f7481ece407f2681a151 inherit pro_attribs_classg2o_1_1OptimizationAlgorithmWithHessian"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6dd1e4e8dc2d09233c40de02b2c9fe8c inherit pro_attribs_classg2o_1_1OptimizationAlgorithmWithHessian"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6dd1e4e8dc2d09233c40de02b2c9fe8c"></a>
+<a class="el" href="classg2o_1_1Property.html">Property</a>&lt; bool &gt; *&#160;</td><td class="memItemRight" valign="bottom"><b>_writeDebug</b></td></tr>
+<tr class="separator:a6dd1e4e8dc2d09233c40de02b2c9fe8c inherit pro_attribs_classg2o_1_1OptimizationAlgorithmWithHessian"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_attribs_classg2o_1_1OptimizationAlgorithm"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classg2o_1_1OptimizationAlgorithm')"><img src="closed.png" alt="-"/>&#160;Protected 属性 继承自 <a class="el" href="classg2o_1_1OptimizationAlgorithm.html">g2o::OptimizationAlgorithm</a></td></tr>
+<tr class="memitem:a6017c344be0d9f09d6674849849c6b60 inherit pro_attribs_classg2o_1_1OptimizationAlgorithm"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6017c344be0d9f09d6674849849c6b60"></a>
+<a class="el" href="classg2o_1_1SparseOptimizer.html">SparseOptimizer</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classg2o_1_1OptimizationAlgorithm.html#a6017c344be0d9f09d6674849849c6b60">_optimizer</a></td></tr>
+<tr class="memdesc:a6017c344be0d9f09d6674849849c6b60 inherit pro_attribs_classg2o_1_1OptimizationAlgorithm"><td class="mdescLeft">&#160;</td><td class="mdescRight">the optimizer the solver is working on <br/></td></tr>
+<tr class="separator:a6017c344be0d9f09d6674849849c6b60 inherit pro_attribs_classg2o_1_1OptimizationAlgorithm"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae37b494f69b483a3fcafa944e987e325 inherit pro_attribs_classg2o_1_1OptimizationAlgorithm"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae37b494f69b483a3fcafa944e987e325"></a>
+<a class="el" href="classg2o_1_1PropertyMap.html">PropertyMap</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classg2o_1_1OptimizationAlgorithm.html#ae37b494f69b483a3fcafa944e987e325">_properties</a></td></tr>
+<tr class="memdesc:ae37b494f69b483a3fcafa944e987e325 inherit pro_attribs_classg2o_1_1OptimizationAlgorithm"><td class="mdescLeft">&#160;</td><td class="mdescRight">the properties of your solver, use this to store the parameters of your solver <br/></td></tr>
+<tr class="separator:ae37b494f69b483a3fcafa944e987e325 inherit pro_attribs_classg2o_1_1OptimizationAlgorithm"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>Implementation of Powell's Dogleg Algorithm. </p>
+
+<p>在文件 <a class="el" href="optimization__algorithm__dogleg_8h_source.html">optimization_algorithm_dogleg.h</a> 第 <a class="el" href="optimization__algorithm__dogleg_8h_source.html#l00039">39</a> 行定义.</p>
+</div><h2 class="groupheader">构造及析构函数说明</h2>
+<a class="anchor" id="ab332f8fb049d1a1fecba18105083052a"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">g2o::OptimizationAlgorithmDogleg::OptimizationAlgorithmDogleg </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classg2o_1_1BlockSolverBase.html">BlockSolverBase</a> *&#160;</td>
+          <td class="paramname"><em>solver</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>construct the Dogleg algorithm, which will use the given <a class="el" href="classg2o_1_1Solver.html" title="Generic interface for a sparse solver operating on a graph which solves one iteration of the lineariz...">Solver</a> for solving the linearized system. </p>
+
+<p>在文件 <a class="el" href="optimization__algorithm__dogleg_8cpp_source.html">optimization_algorithm_dogleg.cpp</a> 第 <a class="el" href="optimization__algorithm__dogleg_8cpp_source.html#l00041">41</a> 行定义.</p>
+
+<p>参考 <a class="el" href="optimization__algorithm__dogleg_8h_source.html#l00081">_delta</a>, <a class="el" href="optimization__algorithm__dogleg_8h_source.html#l00082">_lastStep</a>, <a class="el" href="optimization__algorithm_8h_source.html#l00108">g2o::OptimizationAlgorithm::_properties</a>, <a class="el" href="optimization__algorithm__dogleg_8h_source.html#l00083">_wasPDInAllIterations</a> , 以及 <a class="el" href="property_8h_source.html#l00119">g2o::PropertyMap::makeProperty()</a>.</p>
+
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classg2o_1_1OptimizationAlgorithmDogleg_ab332f8fb049d1a1fecba18105083052a_cgraph.png" border="0" usemap="#classg2o_1_1OptimizationAlgorithmDogleg_ab332f8fb049d1a1fecba18105083052a_cgraph" alt=""/></div>
+<map name="classg2o_1_1OptimizationAlgorithmDogleg_ab332f8fb049d1a1fecba18105083052a_cgraph" id="classg2o_1_1OptimizationAlgorithmDogleg_ab332f8fb049d1a1fecba18105083052a_cgraph">
+<area shape="rect" id="node2" href="classg2o_1_1PropertyMap.html#add6e602dcd651b8883c30c350d23692f" title="g2o::PropertyMap::makeProperty" alt="" coords="294,12,509,39"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<h2 class="groupheader">成员函数说明</h2>
+<a class="anchor" id="a9bed238c5d36c094ca10103bb1c3979e"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void g2o::OptimizationAlgorithmDogleg::printVerbose </td>
+          <td>(</td>
+          <td class="paramtype">std::ostream &amp;&#160;</td>
+          <td class="paramname"><em>os</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>called by the optimizer if verbose. re-implement, if you want to print something </p>
+
+<p>重载 <a class="el" href="classg2o_1_1OptimizationAlgorithm.html#a61fe205d498ed3b0ac1f812a78c4b0f0">g2o::OptimizationAlgorithm</a> .</p>
+
+<p>在文件 <a class="el" href="optimization__algorithm__dogleg_8cpp_source.html">optimization_algorithm_dogleg.cpp</a> 第 <a class="el" href="optimization__algorithm__dogleg_8cpp_source.html#l00209">209</a> 行定义.</p>
+
+<p>参考 <a class="el" href="optimization__algorithm__dogleg_8h_source.html#l00080">_currentLambda</a>, <a class="el" href="optimization__algorithm__dogleg_8h_source.html#l00081">_delta</a>, <a class="el" href="optimization__algorithm__dogleg_8h_source.html#l00082">_lastStep</a>, <a class="el" href="optimization__algorithm__dogleg_8h_source.html#l00083">_wasPDInAllIterations</a> , 以及 <a class="el" href="optimization__algorithm__dogleg_8cpp_source.html#l00219">stepType2Str()</a>.</p>
+
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classg2o_1_1OptimizationAlgorithmDogleg_a9bed238c5d36c094ca10103bb1c3979e_cgraph.png" border="0" usemap="#classg2o_1_1OptimizationAlgorithmDogleg_a9bed238c5d36c094ca10103bb1c3979e_cgraph" alt=""/></div>
+<map name="classg2o_1_1OptimizationAlgorithmDogleg_a9bed238c5d36c094ca10103bb1c3979e_cgraph" id="classg2o_1_1OptimizationAlgorithmDogleg_a9bed238c5d36c094ca10103bb1c3979e_cgraph">
+<area shape="rect" id="node2" href="classg2o_1_1OptimizationAlgorithmDogleg.html#a65f193c6451ffcd2bd6fd8f8d19e2a12" title="convert the type into an integer " alt="" coords="232,5,411,46"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="ace62fd809c18655bd7ff104285748610"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">OptimizationAlgorithm::SolverResult g2o::OptimizationAlgorithmDogleg::solve </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iteration</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>online</em> = <code>false</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Solve one iteration. The <a class="el" href="classg2o_1_1SparseOptimizer.html">SparseOptimizer</a> running on-top will call this for the given number of iterations. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">iteration</td><td>indicates the current iteration </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>实现了 <a class="el" href="classg2o_1_1OptimizationAlgorithm.html#ab174deeeb2551ceaf715ea09f0f9c077">g2o::OptimizationAlgorithm</a>.</p>
+
+<p>在文件 <a class="el" href="optimization__algorithm__dogleg_8cpp_source.html">optimization_algorithm_dogleg.cpp</a> 第 <a class="el" href="optimization__algorithm__dogleg_8cpp_source.html#l00057">57</a> 行定义.</p>
+
+<p>参考 <a class="el" href="optimization__algorithm__dogleg_8h_source.html#l00078">_auxVector</a>, <a class="el" href="optimization__algorithm__dogleg_8h_source.html#l00080">_currentLambda</a>, <a class="el" href="optimization__algorithm__dogleg_8h_source.html#l00081">_delta</a>, <a class="el" href="optimization__algorithm__dogleg_8h_source.html#l00077">_hdl</a>, <a class="el" href="optimization__algorithm__dogleg_8h_source.html#l00076">_hsd</a>, <a class="el" href="optimization__algorithm__dogleg_8h_source.html#l00082">_lastStep</a>, <a class="el" href="optimization__algorithm_8h_source.html#l00107">g2o::OptimizationAlgorithm::_optimizer</a>, <a class="el" href="optimization__algorithm__dogleg_8h_source.html#l00083">_wasPDInAllIterations</a>, <a class="el" href="sparse__optimizer_8cpp_source.html#l00100">g2o::SparseOptimizer::activeRobustChi2()</a>, <a class="el" href="solver_8h_source.html#l00099">g2o::Solver::b()</a>, <a class="el" href="classg2o_1_1Solver.html#a6c93ac0f528ffe05867d33150c54f46f">g2o::Solver::buildStructure()</a>, <a class="el" href="classg2o_1_1Solver.html#ac1565e85d5ca68a87ad7f06f8164a8c0">g2o::Solver::buildSystem()</a>, <a class="el" href="sparse__optimizer_8cpp_source.html#l00061">g2o::SparseOptimizer::computeActiveErrors()</a>, <a class="el" href="sparse__optimizer_8cpp_source.html#l00550">g2o::SparseOptimizer::discardTop()</a>, <a class="el" href="classg2o_1_1BlockSolverBase.html#a4ff7072751bfa1b7fcf91f8219e18e13">g2o::BlockSolverBase::multiplyHessian()</a>, <a class="el" href="solver_8h_source.html#l00106">g2o::Solver::optimizer()</a>, <a class="el" href="sparse__optimizer_8cpp_source.html#l00522">g2o::SparseOptimizer::pop()</a>, <a class="el" href="sparse__optimizer_8cpp_source.html#l00516">g2o::SparseOptimizer::push()</a>, <a class="el" href="classg2o_1_1Solver.html#a3c40dae9b999c4d18e57b02fd0e0ade2">g2o::Solver::restoreDiagonal()</a>, <a class="el" href="classg2o_1_1Solver.html#a94a0d5196c7859c6c37fc2368ac56be3">g2o::Solver::setLambda()</a>, <a class="el" href="classg2o_1_1Solver.html#a9c359a886db57f2f81e54a2113f3bd38">g2o::Solver::solve()</a>, <a class="el" href="batch__stats_8h_source.html#l00055">g2o::G2OBatchStatistics::timeQuadraticForm</a>, <a class="el" href="batch__stats_8h_source.html#l00053">g2o::G2OBatchStatistics::timeResiduals</a>, <a class="el" href="solver_8h_source.html#l00103">g2o::Solver::vectorSize()</a> , 以及 <a class="el" href="solver_8h_source.html#l00096">g2o::Solver::x()</a>.</p>
+
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classg2o_1_1OptimizationAlgorithmDogleg_ace62fd809c18655bd7ff104285748610_cgraph.png" border="0" usemap="#classg2o_1_1OptimizationAlgorithmDogleg_ace62fd809c18655bd7ff104285748610_cgraph" alt=""/></div>
+<map name="classg2o_1_1OptimizationAlgorithmDogleg_ace62fd809c18655bd7ff104285748610_cgraph" id="classg2o_1_1OptimizationAlgorithmDogleg_ace62fd809c18655bd7ff104285748610_cgraph">
+<area shape="rect" id="node2" href="classg2o_1_1SparseOptimizer.html#ae47c5023e53685523499fc00d6057d14" title="g2o::SparseOptimizer\l::activeRobustChi2" alt="" coords="251,70,399,111"/><area shape="rect" id="node6" href="classg2o_1_1Solver.html#a3212ad9d80f8f5ad15b72c2b55000095" title="return b, the right hand side of the system " alt="" coords="274,136,377,163"/><area shape="rect" id="node7" href="classg2o_1_1Solver.html#a6c93ac0f528ffe05867d33150c54f46f" title="g2o::Solver::buildStructure" alt="" coords="237,187,413,213"/><area shape="rect" id="node8" href="classg2o_1_1Solver.html#ac1565e85d5ca68a87ad7f06f8164a8c0" title="g2o::Solver::buildSystem" alt="" coords="241,237,409,264"/><area shape="rect" id="node9" href="classg2o_1_1SparseOptimizer.html#a09572668aa85b75a5bebf7b66401ce8f" title="g2o::SparseOptimizer\l::computeActiveErrors" alt="" coords="249,289,401,330"/><area shape="rect" id="node12" href="classg2o_1_1SparseOptimizer.html#ac6344493dc9f66d5443759ff9f2abf6c" title="ignore the latest stored element on the stack, remove it from the stack but do not restore the estima..." alt="" coords="251,354,399,395"/><area shape="rect" id="node13" href="classg2o_1_1BlockSolverBase.html#a4ff7072751bfa1b7fcf91f8219e18e13" title="g2o::BlockSolverBase\l::multiplyHessian" alt="" coords="250,419,401,461"/><area shape="rect" id="node14" href="classg2o_1_1Solver.html#a9ea585f131ab02ae1e0c0192126f0b5f" title="the optimizer (graph) on which the solver works " alt="" coords="251,485,400,512"/><area shape="rect" id="node15" href="classg2o_1_1SparseOptimizer.html#a57dbbb584122c6cfa292bb79d8fcd7ad" title="pop (restore) the estimate a subset of the variables from the stack " alt="" coords="237,536,414,563"/><area shape="rect" id="node16" href="classg2o_1_1SparseOptimizer.html#a08833d6f9ae487f5608f6113f3635b6b" title="push the estimate of a subset of the variables onto a stack " alt="" coords="251,587,399,629"/><area shape="rect" id="node17" href="classg2o_1_1Solver.html#a3c40dae9b999c4d18e57b02fd0e0ade2" title="g2o::Solver::restoreDiagonal" alt="" coords="232,653,419,680"/><area shape="rect" id="node18" href="classg2o_1_1Solver.html#a94a0d5196c7859c6c37fc2368ac56be3" title="g2o::Solver::setLambda" alt="" coords="245,704,405,731"/><area shape="rect" id="node19" href="classg2o_1_1Solver.html#a9c359a886db57f2f81e54a2113f3bd38" title="g2o::Solver::solve" alt="" coords="262,755,389,781"/><area shape="rect" id="node20" href="classg2o_1_1Solver.html#a739e1e7b0888d5f316f1d68cbd21bc2d" title="return the size of the solution vector (x) and b " alt="" coords="246,805,405,832"/><area shape="rect" id="node21" href="classg2o_1_1Solver.html#acb097d8568624a1f3af4dba808e5593b" title="return x, the solution vector " alt="" coords="274,856,377,883"/><area shape="rect" id="node3" href="classg2o_1_1OptimizableGraph_1_1Edge.html#aeb6ce9f3bf7b896f58272ea0d3feb8ff" title="if NOT NULL, error of this edge will be robustifed with the kernel " alt="" coords="467,5,621,46"/><area shape="rect" id="node4" href="classg2o_1_1RobustKernel.html#ab47b071a0cfe466be063f0104bc41d0f" title="g2o::RobustKernel::\lrobustify" alt="" coords="475,70,613,111"/><area shape="rect" id="node5" href="classg2o_1_1OptimizableGraph_1_1Edge.html#a182bd2c109d50283c638d9b295f2f3d7" title="computes the chi2 based on the cached error value, only valid after computeError has been called..." alt="" coords="467,135,621,177"/><area shape="rect" id="node10" href="classg2o_1_1OptimizableGraph_1_1Edge.html#a5f2a4b6efa2d0ae600f94a28a6ba58cf" title="returns the error vector cached after calling the computeError; " alt="" coords="467,257,621,298"/><area shape="rect" id="node11" href="classg2o_1_1OptimizableGraph_1_1Edge.html#a90a86891adc47a179a7cd7ef31549916" title="returns the dimensions of the error function " alt="" coords="467,322,621,363"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>Thirdparty/g2o/g2o/core/<a class="el" href="optimization__algorithm__dogleg_8h_source.html">optimization_algorithm_dogleg.h</a></li>
+<li>Thirdparty/g2o/g2o/core/<a class="el" href="optimization__algorithm__dogleg_8cpp_source.html">optimization_algorithm_dogleg.cpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><b>g2o</b></li><li class="navelem"><a class="el" href="classg2o_1_1OptimizationAlgorithmDogleg.html">OptimizationAlgorithmDogleg</a></li>
+    <li class="footer">生成于 2017年 七月 18日 星期二 17:13:38 , 为 My Project使用 
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
+  </ul>
+</div>
+</body>
+</html>

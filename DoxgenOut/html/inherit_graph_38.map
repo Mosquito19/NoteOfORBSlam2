@@ -1,0 +1,6 @@
+<map id="类继承关系图" name="类继承关系图">
+<area shape="rect" id="node1" href="$classg2o_1_1LinearSolver.html" title="basic solver for Ax = b " alt="" coords="5,70,136,111"/>
+<area shape="rect" id="node2" href="$classg2o_1_1LinearSolverCCS.html" title="Solver with faster iterating structure for the linear matrix. " alt="" coords="189,5,341,46"/>
+<area shape="rect" id="node3" href="$classg2o_1_1LinearSolverDense.html" title="linear solver using dense cholesky decomposition " alt="" coords="185,70,346,111"/>
+<area shape="rect" id="node4" href="$classg2o_1_1LinearSolverEigen.html" title="linear solver which uses the sparse Cholesky solver from Eigen " alt="" coords="187,135,343,177"/>
+</map>

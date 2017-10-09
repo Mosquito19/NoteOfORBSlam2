@@ -1,0 +1,6 @@
+<map id="g2o::OptimizationAlgorithm::updatePropertiesFromString" name="g2o::OptimizationAlgorithm::updatePropertiesFromString">
+<area shape="rect" id="node2" href="$classg2o_1_1PropertyMap.html#a0407e6a72afafd608f13cfdffc6ffc06" title="g2o::PropertyMap::update\lMapFromString" alt="" coords="246,49,418,90"/>
+<area shape="rect" id="node3" href="$group__utils.html#ga0a56de67e98afa3f8307e7b4ddb4cc83" title="g2o::strSplit" alt="" coords="507,5,599,32"/>
+<area shape="rect" id="node4" href="$group__utils.html#ga437d185a62afe16a99f27f3b12e108d7" title="g2o::trim" alt="" coords="517,56,590,83"/>
+<area shape="rect" id="node5" href="$classg2o_1_1PropertyMap.html#a43df66ba15f9425abbd0e888a7b67251" title="g2o::PropertyMap::update\lPropertyFromString" alt="" coords="467,107,639,149"/>
+</map>

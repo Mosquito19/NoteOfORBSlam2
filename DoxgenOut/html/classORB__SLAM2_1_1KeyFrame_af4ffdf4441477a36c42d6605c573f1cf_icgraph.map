@@ -1,0 +1,5 @@
+<map id="ORB_SLAM2::KeyFrame::GetConnectedKeyFrames" name="ORB_SLAM2::KeyFrame::GetConnectedKeyFrames">
+<area shape="rect" id="node2" href="$classORB__SLAM2_1_1LoopClosing.html#aa007e0678582ec0de5d71280d23af540" title="闭环 " alt="" coords="257,5,439,46"/>
+<area shape="rect" id="node3" href="$classORB__SLAM2_1_1LoopClosing.html#aa8110ca79cebaf509e378d30e55f1381" title="ORB_SLAM2::LoopClosing\l::DetectLoop" alt="" coords="509,93,691,134"/>
+<area shape="rect" id="node4" href="$classORB__SLAM2_1_1KeyFrameDatabase.html#a2d396aae02c4318ea8c7e7eff8059c69" title="在闭环检测中找到与该关键帧可能闭环的关键帧 " alt="" coords="235,122,461,163"/>
+</map>

@@ -1,0 +1,6 @@
+<map id="g2o::OptimizationAlgorithmWithHessian" name="g2o::OptimizationAlgorithmWithHessian">
+<area shape="rect" id="node3" href="$classg2o_1_1OptimizationAlgorithmDogleg.html" title="Implementation of Powell&#39;s Dogleg Algorithm. " alt="" coords="459,5,637,46"/>
+<area shape="rect" id="node4" href="$classg2o_1_1OptimizationAlgorithmGaussNewton.html" title="Implementation of the Gauss Newton Algorithm. " alt="" coords="459,70,637,111"/>
+<area shape="rect" id="node5" href="$classg2o_1_1OptimizationAlgorithmLevenberg.html" title="Implementation of the Levenberg Algorithm. " alt="" coords="459,135,637,177"/>
+<area shape="rect" id="node2" href="$classg2o_1_1OptimizationAlgorithm.html" title="Generic interface for a non&#45;linear solver operating on a graph. " alt="" coords="5,77,184,104"/>
+</map>

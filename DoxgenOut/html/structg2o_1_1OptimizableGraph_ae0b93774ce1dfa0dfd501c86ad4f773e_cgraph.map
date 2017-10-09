@@ -1,0 +1,6 @@
+<map id="g2o::OptimizableGraph::addVertex" name="g2o::OptimizableGraph::addVertex">
+<area shape="rect" id="node2" href="$classg2o_1_1HyperGraph.html#a7ef87ba3479827b24c6fc29c5fc3aa21" title="g2o::HyperGraph::addVertex" alt="" coords="209,31,397,57"/>
+<area shape="rect" id="node3" href="$classg2o_1_1HyperGraph_1_1Vertex.html#ad76b71c368b71971ac5affb5d57183d3" title="returns the id " alt="" coords="446,5,631,32"/>
+<area shape="rect" id="node5" href="$structg2o_1_1OptimizableGraph.html#a19e014e8ec2e9a6e894da8c3a8f8e50d" title="returns the vertex number id appropriately casted " alt="" coords="225,82,380,123"/>
+<area shape="rect" id="node4" href="$classg2o_1_1HyperGraph.html#ab07fe8bd9982a66ba34e83dff8317ea2" title="returns a vertex id in the hyper&#45;graph, or 0 if the vertex id is not present " alt="" coords="456,60,621,87"/>
+</map>

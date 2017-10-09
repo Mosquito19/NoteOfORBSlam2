@@ -1,0 +1,4 @@
+<map id="g2o::Solver::restoreDiagonal" name="g2o::Solver::restoreDiagonal">
+<area shape="rect" id="node2" href="$classg2o_1_1OptimizationAlgorithmLevenberg.html#a7140fa989b54eac4e09ba17829dcada0" title="g2o::OptimizationAlgorithm\lLevenberg::solve" alt="" coords="240,5,419,46"/>
+<area shape="rect" id="node3" href="$classg2o_1_1OptimizationAlgorithmDogleg.html#ace62fd809c18655bd7ff104285748610" title="g2o::OptimizationAlgorithm\lDogleg::solve" alt="" coords="240,70,419,111"/>
+</map>

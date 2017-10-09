@@ -1,0 +1,10 @@
+<map id="类继承关系图" name="类继承关系图">
+<area shape="rect" id="node2" href="$classDBoW2_1_1BowVector.html" title="DBoW2::BowVector" alt="" coords="135,5,275,32"/>
+<area shape="rect" id="node3" href="$classDBoW2_1_1FeatureVector.html" title="Vector of nodes with indexes of local features。正索引，node，对应的特征的标号 " alt="" coords="126,56,285,83"/>
+<area shape="rect" id="node4" href="$classg2o_1_1CacheContainer.html" title="g2o::CacheContainer" alt="" coords="133,107,278,133"/>
+<area shape="rect" id="node5" href="$classg2o_1_1ParameterContainer.html" title="map id to parameters " alt="" coords="122,157,289,184"/>
+<area shape="rect" id="node6" href="$classg2o_1_1PropertyMap.html" title="a collection of properties mapping from name to the property itself " alt="" coords="143,208,268,235"/>
+<area shape="rect" id="node7" href="$classg2o_1_1DrawAction_1_1Parameters.html" title="g2o::DrawAction::Parameters" alt="" coords="357,208,552,235"/>
+<area shape="rect" id="node8" href="$structg2o_1_1HyperGraphElementAction_1_1Parameters.html" title="g2o::HyperGraphElementAction\l::Parameters" alt="" coords="102,259,309,301"/>
+<area shape="rect" id="node9" href="$structg2o_1_1WriteGnuplotAction_1_1Parameters.html" title="g2o::WriteGnuplotAction\l::Parameters" alt="" coords="373,259,537,301"/>
+</map>

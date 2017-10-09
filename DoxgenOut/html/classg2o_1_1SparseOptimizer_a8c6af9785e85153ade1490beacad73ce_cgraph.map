@@ -1,0 +1,5 @@
+<map id="g2o::SparseOptimizer::buildIndexMapping" name="g2o::SparseOptimizer::buildIndexMapping">
+<area shape="rect" id="node2" href="$classg2o_1_1OptimizableGraph_1_1Vertex.html#ac83c34e6176f0cc5315ad7401a49efb3" title="true =&gt; this node is fixed during the optimization " alt="" coords="213,5,368,46"/>
+<area shape="rect" id="node3" href="$classg2o_1_1OptimizableGraph_1_1Vertex.html#a214c01f0b3cab575f3496be729f6ccb1" title="true =&gt; this node is marginalized out during the optimization " alt="" coords="213,70,368,111"/>
+<area shape="rect" id="node4" href="$classg2o_1_1OptimizableGraph_1_1Vertex.html#a440f24c0108be5247f3529369aa1e53c" title="set the temporary index of the vertex in the parameter blocks " alt="" coords="203,135,378,177"/>
+</map>

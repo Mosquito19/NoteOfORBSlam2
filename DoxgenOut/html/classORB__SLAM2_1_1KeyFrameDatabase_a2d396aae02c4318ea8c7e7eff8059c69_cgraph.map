@@ -1,0 +1,5 @@
+<map id="ORB_SLAM2::KeyFrameDatabase::DetectLoopCandidates" name="ORB_SLAM2::KeyFrameDatabase::DetectLoopCandidates">
+<area shape="rect" id="node2" href="$classORB__SLAM2_1_1KeyFrame.html#a2ecb2df01af804fb727c93948a28475f" title="得到与该关键帧连接的前N个关键帧(已按权值排序) " alt="" coords="281,5,490,46"/>
+<area shape="rect" id="node3" href="$classORB__SLAM2_1_1KeyFrame.html#af4ffdf4441477a36c42d6605c573f1cf" title="得到与该关键帧连接的关键帧 " alt="" coords="295,70,476,111"/>
+<area shape="rect" id="node4" href="$classDBoW2_1_1TemplatedVocabulary.html#a4988c1ab067de25259115bf9963b02d9" title="DBoW2::TemplatedVocabulary\l::score" alt="" coords="284,135,487,177"/>
+</map>

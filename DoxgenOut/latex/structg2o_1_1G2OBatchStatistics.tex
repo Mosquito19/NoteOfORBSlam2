@@ -1,0 +1,135 @@
+\hypertarget{structg2o_1_1G2OBatchStatistics}{\section{g2o\-:\-:G2\-O\-Batch\-Statistics结构体 参考}
+\label{structg2o_1_1G2OBatchStatistics}\index{g2o\-::\-G2\-O\-Batch\-Statistics@{g2o\-::\-G2\-O\-Batch\-Statistics}}
+}
+
+
+statistics about the optimization  
+
+
+
+
+{\ttfamily \#include $<$batch\-\_\-stats.\-h$>$}
+
+
+
+g2o\-:\-:G2\-O\-Batch\-Statistics 的协作图\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=280pt]{structg2o_1_1G2OBatchStatistics__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{静态 Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{structg2o_1_1G2OBatchStatistics_a85d57b829bde666635a26d52e17f20b5}{static G2\-O\-\_\-\-C\-O\-R\-E\-\_\-\-A\-P\-I \\*
+\hyperlink{structg2o_1_1G2OBatchStatistics}{G2\-O\-Batch\-Statistics} $\ast$ {\bfseries global\-Stats} ()}\label{structg2o_1_1G2OBatchStatistics_a85d57b829bde666635a26d52e17f20b5}
+
+\item 
+\hypertarget{structg2o_1_1G2OBatchStatistics_a8c56e85d25e346ba87718621407247fc}{static G2\-O\-\_\-\-C\-O\-R\-E\-\_\-\-A\-P\-I void {\bfseries set\-Global\-Stats} (\hyperlink{structg2o_1_1G2OBatchStatistics}{G2\-O\-Batch\-Statistics} $\ast$b)}\label{structg2o_1_1G2OBatchStatistics_a8c56e85d25e346ba87718621407247fc}
+
+\end{DoxyCompactItemize}
+\subsection*{Public 属性}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{structg2o_1_1G2OBatchStatistics_a63e30077b9dad65c321b322a2a6f0aea}{int \hyperlink{structg2o_1_1G2OBatchStatistics_a63e30077b9dad65c321b322a2a6f0aea}{iteration}}\label{structg2o_1_1G2OBatchStatistics_a63e30077b9dad65c321b322a2a6f0aea}
+
+\begin{DoxyCompactList}\small\item\em which iteration \end{DoxyCompactList}\item 
+\hypertarget{structg2o_1_1G2OBatchStatistics_a2a3ecd684cb9e60c34afeee0d8f35d23}{int \hyperlink{structg2o_1_1G2OBatchStatistics_a2a3ecd684cb9e60c34afeee0d8f35d23}{num\-Vertices}}\label{structg2o_1_1G2OBatchStatistics_a2a3ecd684cb9e60c34afeee0d8f35d23}
+
+\begin{DoxyCompactList}\small\item\em how many vertices are involved \end{DoxyCompactList}\item 
+\hypertarget{structg2o_1_1G2OBatchStatistics_ae8924cd0e0e7fee183cba73b706eb5a5}{int \hyperlink{structg2o_1_1G2OBatchStatistics_ae8924cd0e0e7fee183cba73b706eb5a5}{num\-Edges}}\label{structg2o_1_1G2OBatchStatistics_ae8924cd0e0e7fee183cba73b706eb5a5}
+
+\begin{DoxyCompactList}\small\item\em how many edges \end{DoxyCompactList}\item 
+\hypertarget{structg2o_1_1G2OBatchStatistics_a719152d550dd4fe3300d06558fe0a6d5}{double \hyperlink{structg2o_1_1G2OBatchStatistics_a719152d550dd4fe3300d06558fe0a6d5}{chi2}}\label{structg2o_1_1G2OBatchStatistics_a719152d550dd4fe3300d06558fe0a6d5}
+
+\begin{DoxyCompactList}\small\item\em total chi2 \end{DoxyCompactList}\item 
+double \hyperlink{structg2o_1_1G2OBatchStatistics_a1815f0fb0a84cd1977d72c83cefdb76b}{time\-Residuals}
+\begin{DoxyCompactList}\small\item\em residuals \end{DoxyCompactList}\item 
+\hypertarget{structg2o_1_1G2OBatchStatistics_ac288190f875b8777b3c24c860a3741d7}{double \hyperlink{structg2o_1_1G2OBatchStatistics_ac288190f875b8777b3c24c860a3741d7}{time\-Linearize}}\label{structg2o_1_1G2OBatchStatistics_ac288190f875b8777b3c24c860a3741d7}
+
+\begin{DoxyCompactList}\small\item\em jacobians \end{DoxyCompactList}\item 
+\hypertarget{structg2o_1_1G2OBatchStatistics_af949afd7e25ceef08379220ed242aa36}{double \hyperlink{structg2o_1_1G2OBatchStatistics_af949afd7e25ceef08379220ed242aa36}{time\-Quadratic\-Form}}\label{structg2o_1_1G2OBatchStatistics_af949afd7e25ceef08379220ed242aa36}
+
+\begin{DoxyCompactList}\small\item\em construct the quadratic form in the graph \end{DoxyCompactList}\item 
+\hypertarget{structg2o_1_1G2OBatchStatistics_acd6b82e7401ec8c04e00b14bf76892a9}{int \hyperlink{structg2o_1_1G2OBatchStatistics_acd6b82e7401ec8c04e00b14bf76892a9}{levenberg\-Iterations}}\label{structg2o_1_1G2OBatchStatistics_acd6b82e7401ec8c04e00b14bf76892a9}
+
+\begin{DoxyCompactList}\small\item\em number of iterations performed by L\-M \end{DoxyCompactList}\item 
+\hypertarget{structg2o_1_1G2OBatchStatistics_a79d8935c9af46d716ef2b85b777fabe1}{double \hyperlink{structg2o_1_1G2OBatchStatistics_a79d8935c9af46d716ef2b85b777fabe1}{time\-Schur\-Complement}}\label{structg2o_1_1G2OBatchStatistics_a79d8935c9af46d716ef2b85b777fabe1}
+
+\begin{DoxyCompactList}\small\item\em compute schur complement (0 if not done) \end{DoxyCompactList}\item 
+\hypertarget{structg2o_1_1G2OBatchStatistics_a456a521ccb1e4c69940475a92a1f5d29}{double \hyperlink{structg2o_1_1G2OBatchStatistics_a456a521ccb1e4c69940475a92a1f5d29}{time\-Symbolic\-Decomposition}}\label{structg2o_1_1G2OBatchStatistics_a456a521ccb1e4c69940475a92a1f5d29}
+
+\begin{DoxyCompactList}\small\item\em symbolic decomposition (0 if not done) \end{DoxyCompactList}\item 
+\hypertarget{structg2o_1_1G2OBatchStatistics_a31f4a361dba1f3eb8dba2ca2aa326905}{double \hyperlink{structg2o_1_1G2OBatchStatistics_a31f4a361dba1f3eb8dba2ca2aa326905}{time\-Numeric\-Decomposition}}\label{structg2o_1_1G2OBatchStatistics_a31f4a361dba1f3eb8dba2ca2aa326905}
+
+\begin{DoxyCompactList}\small\item\em numeric decomposition (0 if not done) \end{DoxyCompactList}\item 
+\hypertarget{structg2o_1_1G2OBatchStatistics_a01fea9876aab94b1e69a6a03c20fd98f}{double \hyperlink{structg2o_1_1G2OBatchStatistics_a01fea9876aab94b1e69a6a03c20fd98f}{time\-Linear\-Solution}}\label{structg2o_1_1G2OBatchStatistics_a01fea9876aab94b1e69a6a03c20fd98f}
+
+\begin{DoxyCompactList}\small\item\em total time for solving Ax=b (including detup for schur) \end{DoxyCompactList}\item 
+\hypertarget{structg2o_1_1G2OBatchStatistics_adb423c3dac9262b7f4a315bbb108464a}{double \hyperlink{structg2o_1_1G2OBatchStatistics_adb423c3dac9262b7f4a315bbb108464a}{time\-Linear\-Solver}}\label{structg2o_1_1G2OBatchStatistics_adb423c3dac9262b7f4a315bbb108464a}
+
+\begin{DoxyCompactList}\small\item\em time for solving, excluding Schur setup \end{DoxyCompactList}\item 
+\hypertarget{structg2o_1_1G2OBatchStatistics_a0ef94423b56f6d842e33a7c277c930a0}{int \hyperlink{structg2o_1_1G2OBatchStatistics_a0ef94423b56f6d842e33a7c277c930a0}{iterations\-Linear\-Solver}}\label{structg2o_1_1G2OBatchStatistics_a0ef94423b56f6d842e33a7c277c930a0}
+
+\begin{DoxyCompactList}\small\item\em iterations of P\-C\-G, (0 if not used, i.\-e., Cholesky) \end{DoxyCompactList}\item 
+\hypertarget{structg2o_1_1G2OBatchStatistics_a510e287e5a3e1f608219147b53e6dc69}{double \hyperlink{structg2o_1_1G2OBatchStatistics_a510e287e5a3e1f608219147b53e6dc69}{time\-Update}}\label{structg2o_1_1G2OBatchStatistics_a510e287e5a3e1f608219147b53e6dc69}
+
+\begin{DoxyCompactList}\small\item\em time to apply the update \end{DoxyCompactList}\item 
+\hypertarget{structg2o_1_1G2OBatchStatistics_a60fbec94ce0b7f26ed99d3f6d2080e47}{double \hyperlink{structg2o_1_1G2OBatchStatistics_a60fbec94ce0b7f26ed99d3f6d2080e47}{time\-Iteration}}\label{structg2o_1_1G2OBatchStatistics_a60fbec94ce0b7f26ed99d3f6d2080e47}
+
+\begin{DoxyCompactList}\small\item\em total time; \end{DoxyCompactList}\item 
+\hypertarget{structg2o_1_1G2OBatchStatistics_a58e5d0960dc35e682424dce2b50e4fa9}{double \hyperlink{structg2o_1_1G2OBatchStatistics_a58e5d0960dc35e682424dce2b50e4fa9}{time\-Marginals}}\label{structg2o_1_1G2OBatchStatistics_a58e5d0960dc35e682424dce2b50e4fa9}
+
+\begin{DoxyCompactList}\small\item\em computing the inverse elements (solve blocks) and thus the marginal covariances \end{DoxyCompactList}\item 
+\hypertarget{structg2o_1_1G2OBatchStatistics_a618a15ba153da1a99b19a2d779cf3764}{size\-\_\-t \hyperlink{structg2o_1_1G2OBatchStatistics_a618a15ba153da1a99b19a2d779cf3764}{hessian\-Dimension}}\label{structg2o_1_1G2OBatchStatistics_a618a15ba153da1a99b19a2d779cf3764}
+
+\begin{DoxyCompactList}\small\item\em rows / cols of the Hessian \end{DoxyCompactList}\item 
+\hypertarget{structg2o_1_1G2OBatchStatistics_ae2af64720e3f99557924b9cf92ab6f20}{size\-\_\-t \hyperlink{structg2o_1_1G2OBatchStatistics_ae2af64720e3f99557924b9cf92ab6f20}{hessian\-Pose\-Dimension}}\label{structg2o_1_1G2OBatchStatistics_ae2af64720e3f99557924b9cf92ab6f20}
+
+\begin{DoxyCompactList}\small\item\em dimension of the pose matrix in Schur \end{DoxyCompactList}\item 
+\hypertarget{structg2o_1_1G2OBatchStatistics_a0cfa7018402074f47defb9cd5d9d4b64}{size\-\_\-t \hyperlink{structg2o_1_1G2OBatchStatistics_a0cfa7018402074f47defb9cd5d9d4b64}{hessian\-Landmark\-Dimension}}\label{structg2o_1_1G2OBatchStatistics_a0cfa7018402074f47defb9cd5d9d4b64}
+
+\begin{DoxyCompactList}\small\item\em dimension of the landmark matrix in Schur \end{DoxyCompactList}\item 
+\hypertarget{structg2o_1_1G2OBatchStatistics_a5996c5ba000bdfcbcf5c0375a3c62643}{size\-\_\-t \hyperlink{structg2o_1_1G2OBatchStatistics_a5996c5ba000bdfcbcf5c0375a3c62643}{cholesky\-N\-N\-Z}}\label{structg2o_1_1G2OBatchStatistics_a5996c5ba000bdfcbcf5c0375a3c62643}
+
+\begin{DoxyCompactList}\small\item\em number of non-\/zeros in the cholesky factor \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{静态 Protected 属性}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{structg2o_1_1G2OBatchStatistics_ab2afc355eadf0e686507ff621f60d3eb}{static G2\-O\-\_\-\-C\-O\-R\-E\-\_\-\-A\-P\-I \\*
+\hyperlink{structg2o_1_1G2OBatchStatistics}{G2\-O\-Batch\-Statistics} $\ast$ {\bfseries \-\_\-global\-Stats} =0}\label{structg2o_1_1G2OBatchStatistics_ab2afc355eadf0e686507ff621f60d3eb}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{详细描述}
+statistics about the optimization 
+
+在文件 batch\-\_\-stats.\-h 第 44 行定义.
+
+
+
+\subsection{类成员变量说明}
+\hypertarget{structg2o_1_1G2OBatchStatistics_a1815f0fb0a84cd1977d72c83cefdb76b}{\index{g2o\-::\-G2\-O\-Batch\-Statistics@{g2o\-::\-G2\-O\-Batch\-Statistics}!time\-Residuals@{time\-Residuals}}
+\index{time\-Residuals@{time\-Residuals}!g2o::G2OBatchStatistics@{g2o\-::\-G2\-O\-Batch\-Statistics}}
+\subsubsection[{time\-Residuals}]{\setlength{\rightskip}{0pt plus 5cm}double g2o\-::\-G2\-O\-Batch\-Statistics\-::time\-Residuals}}\label{structg2o_1_1G2OBatchStatistics_a1815f0fb0a84cd1977d72c83cefdb76b}
+
+
+residuals 
+
+timings 
+
+在文件 batch\-\_\-stats.\-h 第 53 行定义.
+
+
+
+参考自 g2o\-::\-Optimization\-Algorithm\-Gauss\-Newton\-::solve(), g2o\-::\-Optimization\-Algorithm\-Levenberg\-::solve() , 以及 g2o\-::\-Optimization\-Algorithm\-Dogleg\-::solve().
+
+
+
+该结构体的文档由以下文件生成\-:\begin{DoxyCompactItemize}
+\item 
+Thirdparty/g2o/g2o/core/batch\-\_\-stats.\-h\item 
+Thirdparty/g2o/g2o/core/batch\-\_\-stats.\-cpp\end{DoxyCompactItemize}

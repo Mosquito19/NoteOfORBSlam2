@@ -1,0 +1,119 @@
+\hypertarget{classg2o_1_1RobustKernelFactory}{\section{g2o\-:\-:Robust\-Kernel\-Factory类 参考}
+\label{classg2o_1_1RobustKernelFactory}\index{g2o\-::\-Robust\-Kernel\-Factory@{g2o\-::\-Robust\-Kernel\-Factory}}
+}
+
+
+create robust kernels based on their human readable name  
+
+
+
+
+{\ttfamily \#include $<$robust\-\_\-kernel\-\_\-factory.\-h$>$}
+
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classg2o_1_1RobustKernelFactory_a71de3f228b58ae4a2dd965cc2cd8ff95}{register\-Robust\-Kernel} (const std\-::string \&tag, \hyperlink{classg2o_1_1AbstractRobustKernelCreator}{Abstract\-Robust\-Kernel\-Creator} $\ast$c)
+\item 
+void \hyperlink{classg2o_1_1RobustKernelFactory_af3b0dac653627b5f87c68d4180b87475}{unregister\-Type} (const std\-::string \&tag)
+\item 
+\hyperlink{classg2o_1_1RobustKernel}{Robust\-Kernel} $\ast$ \hyperlink{classg2o_1_1RobustKernelFactory_a59a1221d3b434f116291ee3b2f810ccf}{construct} (const std\-::string \&tag) const 
+\item 
+\hyperlink{classg2o_1_1AbstractRobustKernelCreator}{Abstract\-Robust\-Kernel\-Creator} $\ast$ \hyperlink{classg2o_1_1RobustKernelFactory_ad98d044ff87a05c7ab2a62bb18af0417}{creator} (const std\-::string \&tag) const 
+\item 
+void \hyperlink{classg2o_1_1RobustKernelFactory_a31dd636c46847a9099a2c55f77f1b4bc}{fill\-Known\-Kernels} (std\-::vector$<$ std\-::string $>$ \&types) const 
+\end{DoxyCompactItemize}
+\subsection*{静态 Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classg2o_1_1RobustKernelFactory_a9cc4361620f8d7269ad9774d3aba2fc0}{static \hyperlink{classg2o_1_1RobustKernelFactory}{Robust\-Kernel\-Factory} $\ast$ \hyperlink{classg2o_1_1RobustKernelFactory_a9cc4361620f8d7269ad9774d3aba2fc0}{instance} ()}\label{classg2o_1_1RobustKernelFactory_a9cc4361620f8d7269ad9774d3aba2fc0}
+
+\begin{DoxyCompactList}\small\item\em return the instance \end{DoxyCompactList}\item 
+\hypertarget{classg2o_1_1RobustKernelFactory_a6c96f77eb4a14e5e8f5b46eb734c0393}{static void \hyperlink{classg2o_1_1RobustKernelFactory_a6c96f77eb4a14e5e8f5b46eb734c0393}{destroy} ()}\label{classg2o_1_1RobustKernelFactory_a6c96f77eb4a14e5e8f5b46eb734c0393}
+
+\begin{DoxyCompactList}\small\item\em free the instance \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected 类型}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classg2o_1_1RobustKernelFactory_aa143765542cbf4738e2137d61517b218}{typedef std\-::map$<$ std\-::string, \\*
+\hyperlink{classg2o_1_1AbstractRobustKernelCreator}{Abstract\-Robust\-Kernel\-Creator} $\ast$ $>$ {\bfseries Creator\-Map}}\label{classg2o_1_1RobustKernelFactory_aa143765542cbf4738e2137d61517b218}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected 属性}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classg2o_1_1RobustKernelFactory_af5f3cea409d3f18baa40da898d21424b}{Creator\-Map \hyperlink{classg2o_1_1RobustKernelFactory_af5f3cea409d3f18baa40da898d21424b}{\-\_\-creator}}\label{classg2o_1_1RobustKernelFactory_af5f3cea409d3f18baa40da898d21424b}
+
+\begin{DoxyCompactList}\small\item\em look-\/up map for the existing creators \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{详细描述}
+create robust kernels based on their human readable name 
+
+在文件 robust\-\_\-kernel\-\_\-factory.\-h 第 68 行定义.
+
+
+
+\subsection{成员函数说明}
+\hypertarget{classg2o_1_1RobustKernelFactory_a59a1221d3b434f116291ee3b2f810ccf}{\index{g2o\-::\-Robust\-Kernel\-Factory@{g2o\-::\-Robust\-Kernel\-Factory}!construct@{construct}}
+\index{construct@{construct}!g2o::RobustKernelFactory@{g2o\-::\-Robust\-Kernel\-Factory}}
+\subsubsection[{construct}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Robust\-Kernel} $\ast$ g2o\-::\-Robust\-Kernel\-Factory\-::construct (
+\begin{DoxyParamCaption}
+\item[{const std\-::string \&}]{tag}
+\end{DoxyParamCaption}
+) const}}\label{classg2o_1_1RobustKernelFactory_a59a1221d3b434f116291ee3b2f810ccf}
+construct a robust kernel based on its tag 
+
+在文件 robust\-\_\-kernel\-\_\-factory.\-cpp 第 80 行定义.
+
+\hypertarget{classg2o_1_1RobustKernelFactory_ad98d044ff87a05c7ab2a62bb18af0417}{\index{g2o\-::\-Robust\-Kernel\-Factory@{g2o\-::\-Robust\-Kernel\-Factory}!creator@{creator}}
+\index{creator@{creator}!g2o::RobustKernelFactory@{g2o\-::\-Robust\-Kernel\-Factory}}
+\subsubsection[{creator}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Abstract\-Robust\-Kernel\-Creator} $\ast$ g2o\-::\-Robust\-Kernel\-Factory\-::creator (
+\begin{DoxyParamCaption}
+\item[{const std\-::string \&}]{tag}
+\end{DoxyParamCaption}
+) const}}\label{classg2o_1_1RobustKernelFactory_ad98d044ff87a05c7ab2a62bb18af0417}
+return the creator for a specific tag 
+
+在文件 robust\-\_\-kernel\-\_\-factory.\-cpp 第 89 行定义.
+
+\hypertarget{classg2o_1_1RobustKernelFactory_a31dd636c46847a9099a2c55f77f1b4bc}{\index{g2o\-::\-Robust\-Kernel\-Factory@{g2o\-::\-Robust\-Kernel\-Factory}!fill\-Known\-Kernels@{fill\-Known\-Kernels}}
+\index{fill\-Known\-Kernels@{fill\-Known\-Kernels}!g2o::RobustKernelFactory@{g2o\-::\-Robust\-Kernel\-Factory}}
+\subsubsection[{fill\-Known\-Kernels}]{\setlength{\rightskip}{0pt plus 5cm}void g2o\-::\-Robust\-Kernel\-Factory\-::fill\-Known\-Kernels (
+\begin{DoxyParamCaption}
+\item[{std\-::vector$<$ std\-::string $>$ \&}]{types}
+\end{DoxyParamCaption}
+) const}}\label{classg2o_1_1RobustKernelFactory_a31dd636c46847a9099a2c55f77f1b4bc}
+get a list of all known robust kernels 
+
+在文件 robust\-\_\-kernel\-\_\-factory.\-cpp 第 98 行定义.
+
+\hypertarget{classg2o_1_1RobustKernelFactory_a71de3f228b58ae4a2dd965cc2cd8ff95}{\index{g2o\-::\-Robust\-Kernel\-Factory@{g2o\-::\-Robust\-Kernel\-Factory}!register\-Robust\-Kernel@{register\-Robust\-Kernel}}
+\index{register\-Robust\-Kernel@{register\-Robust\-Kernel}!g2o::RobustKernelFactory@{g2o\-::\-Robust\-Kernel\-Factory}}
+\subsubsection[{register\-Robust\-Kernel}]{\setlength{\rightskip}{0pt plus 5cm}void g2o\-::\-Robust\-Kernel\-Factory\-::register\-Robust\-Kernel (
+\begin{DoxyParamCaption}
+\item[{const std\-::string \&}]{tag, }
+\item[{{\bf Abstract\-Robust\-Kernel\-Creator} $\ast$}]{c}
+\end{DoxyParamCaption}
+)}}\label{classg2o_1_1RobustKernelFactory_a71de3f228b58ae4a2dd965cc2cd8ff95}
+register a tag for a specific creator 
+
+在文件 robust\-\_\-kernel\-\_\-factory.\-cpp 第 59 行定义.
+
+\hypertarget{classg2o_1_1RobustKernelFactory_af3b0dac653627b5f87c68d4180b87475}{\index{g2o\-::\-Robust\-Kernel\-Factory@{g2o\-::\-Robust\-Kernel\-Factory}!unregister\-Type@{unregister\-Type}}
+\index{unregister\-Type@{unregister\-Type}!g2o::RobustKernelFactory@{g2o\-::\-Robust\-Kernel\-Factory}}
+\subsubsection[{unregister\-Type}]{\setlength{\rightskip}{0pt plus 5cm}void g2o\-::\-Robust\-Kernel\-Factory\-::unregister\-Type (
+\begin{DoxyParamCaption}
+\item[{const std\-::string \&}]{tag}
+\end{DoxyParamCaption}
+)}}\label{classg2o_1_1RobustKernelFactory_af3b0dac653627b5f87c68d4180b87475}
+unregister a tag for a specific creator 
+
+在文件 robust\-\_\-kernel\-\_\-factory.\-cpp 第 70 行定义.
+
+
+
+该类的文档由以下文件生成\-:\begin{DoxyCompactItemize}
+\item 
+Thirdparty/g2o/g2o/core/robust\-\_\-kernel\-\_\-factory.\-h\item 
+Thirdparty/g2o/g2o/core/robust\-\_\-kernel\-\_\-factory.\-cpp\end{DoxyCompactItemize}

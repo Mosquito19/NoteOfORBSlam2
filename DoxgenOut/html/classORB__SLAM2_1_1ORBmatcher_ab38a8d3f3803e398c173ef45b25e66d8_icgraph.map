@@ -1,0 +1,5 @@
+<map id="ORB_SLAM2::ORBmatcher::SearchByBoW" name="ORB_SLAM2::ORBmatcher::SearchByBoW">
+<area shape="rect" id="node2" href="$classORB__SLAM2_1_1LoopClosing.html#ab4fcf814eed5b5dd2aec96454561b078" title="计算当前帧与闭环帧的Sim3变换等 " alt="" coords="241,5,423,46"/>
+<area shape="rect" id="node3" href="$classORB__SLAM2_1_1Tracking.html#a737c5409c93844353561a0fe724ed1c2" title="对参考关键帧的MapPoints进行跟踪 " alt="" coords="241,70,423,111"/>
+<area shape="rect" id="node4" href="$classORB__SLAM2_1_1Tracking.html#af1f2c9c533642d8c33854540e90d1918" title="Main tracking function. It is independent of the input sensor. " alt="" coords="473,70,631,111"/>
+</map>

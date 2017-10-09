@@ -1,0 +1,551 @@
+\hypertarget{structg2o_1_1OptimizableGraph}{\section{g2o\-:\-:Optimizable\-Graph结构体 参考}
+\label{structg2o_1_1OptimizableGraph}\index{g2o\-::\-Optimizable\-Graph@{g2o\-::\-Optimizable\-Graph}}
+}
+
+
+{\ttfamily \#include $<$optimizable\-\_\-graph.\-h$>$}
+
+
+
+类 g2o\-:\-:Optimizable\-Graph 继承关系图\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=194pt]{structg2o_1_1OptimizableGraph__inherit__graph}
+\end{center}
+\end{figure}
+
+
+g2o\-:\-:Optimizable\-Graph 的协作图\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structg2o_1_1OptimizableGraph__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{类}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classg2o_1_1OptimizableGraph_1_1Data}{Data}
+\begin{DoxyCompactList}\small\item\em data packet for a vertex. Extend this class to store in the vertices the potential additional information you need (e.\-g. images, laser scans, ...). \end{DoxyCompactList}\item 
+class \hyperlink{classg2o_1_1OptimizableGraph_1_1Edge}{Edge}
+\item 
+struct \hyperlink{structg2o_1_1OptimizableGraph_1_1EdgeIDCompare}{Edge\-I\-D\-Compare}
+\begin{DoxyCompactList}\small\item\em order edges based on the internal I\-D, which is assigned to the edge in \hyperlink{structg2o_1_1OptimizableGraph_a6831ed69fce3dba691f53302a2813070}{add\-Edge()} \end{DoxyCompactList}\item 
+class \hyperlink{classg2o_1_1OptimizableGraph_1_1Vertex}{Vertex}
+\begin{DoxyCompactList}\small\item\em A general case \hyperlink{classg2o_1_1OptimizableGraph_1_1Vertex}{Vertex} for optimization. \end{DoxyCompactList}\item 
+struct \hyperlink{structg2o_1_1OptimizableGraph_1_1VertexIDCompare}{Vertex\-I\-D\-Compare}
+\begin{DoxyCompactList}\small\item\em order vertices based on their I\-D \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public 类型}
+\begin{DoxyCompactItemize}
+\item 
+enum {\bfseries Action\-Type} \{ {\bfseries A\-T\-\_\-\-P\-R\-E\-I\-T\-E\-R\-A\-T\-I\-O\-N}, 
+{\bfseries A\-T\-\_\-\-P\-O\-S\-T\-I\-T\-E\-R\-A\-T\-I\-O\-N}, 
+{\bfseries A\-T\-\_\-\-N\-U\-M\-\_\-\-E\-L\-E\-M\-E\-N\-T\-S}
+ \}
+\item 
+\hypertarget{structg2o_1_1OptimizableGraph_aa3562ad6794c36ea832095131cfffaac}{typedef std\-::set\\*
+$<$ \hyperlink{classg2o_1_1HyperGraphAction}{Hyper\-Graph\-Action} $\ast$ $>$ {\bfseries Hyper\-Graph\-Action\-Set}}\label{structg2o_1_1OptimizableGraph_aa3562ad6794c36ea832095131cfffaac}
+
+\item 
+\hypertarget{structg2o_1_1OptimizableGraph_a54f01b9b6071e65e6abeebe4afb29dec}{typedef std\-::vector\\*
+$<$ \hyperlink{classg2o_1_1OptimizableGraph_1_1Vertex}{Optimizable\-Graph\-::\-Vertex} $\ast$ $>$ \hyperlink{structg2o_1_1OptimizableGraph_a54f01b9b6071e65e6abeebe4afb29dec}{Vertex\-Container}}\label{structg2o_1_1OptimizableGraph_a54f01b9b6071e65e6abeebe4afb29dec}
+
+\begin{DoxyCompactList}\small\item\em vector container for vertices \end{DoxyCompactList}\item 
+\hypertarget{structg2o_1_1OptimizableGraph_a2b43e807ae6d61ef8749ca1ef7c25f62}{typedef std\-::vector\\*
+$<$ \hyperlink{classg2o_1_1OptimizableGraph_1_1Edge}{Optimizable\-Graph\-::\-Edge} $\ast$ $>$ \hyperlink{structg2o_1_1OptimizableGraph_a2b43e807ae6d61ef8749ca1ef7c25f62}{Edge\-Container}}\label{structg2o_1_1OptimizableGraph_a2b43e807ae6d61ef8749ca1ef7c25f62}
+
+\begin{DoxyCompactList}\small\item\em vector container for edges \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{structg2o_1_1OptimizableGraph_a19e014e8ec2e9a6e894da8c3a8f8e50d}{\hyperlink{classg2o_1_1OptimizableGraph_1_1Vertex}{Vertex} $\ast$ \hyperlink{structg2o_1_1OptimizableGraph_a19e014e8ec2e9a6e894da8c3a8f8e50d}{vertex} (int id)}\label{structg2o_1_1OptimizableGraph_a19e014e8ec2e9a6e894da8c3a8f8e50d}
+
+\begin{DoxyCompactList}\small\item\em returns the vertex number {\itshape id} appropriately casted \end{DoxyCompactList}\item 
+\hypertarget{structg2o_1_1OptimizableGraph_a50323fa9906f5018a2be3affc61fc0d7}{const \hyperlink{classg2o_1_1OptimizableGraph_1_1Vertex}{Vertex} $\ast$ \hyperlink{structg2o_1_1OptimizableGraph_a50323fa9906f5018a2be3affc61fc0d7}{vertex} (int id) const }\label{structg2o_1_1OptimizableGraph_a50323fa9906f5018a2be3affc61fc0d7}
+
+\begin{DoxyCompactList}\small\item\em returns the vertex number {\itshape id} appropriately casted \end{DoxyCompactList}\item 
+\hypertarget{structg2o_1_1OptimizableGraph_acc459c08fd5e743cf2072e740ffc5025}{\hyperlink{structg2o_1_1OptimizableGraph_acc459c08fd5e743cf2072e740ffc5025}{Optimizable\-Graph} ()}\label{structg2o_1_1OptimizableGraph_acc459c08fd5e743cf2072e740ffc5025}
+
+\begin{DoxyCompactList}\small\item\em empty constructor \end{DoxyCompactList}\item 
+\hypertarget{structg2o_1_1OptimizableGraph_acea1342d9ab0bf717710c8f78b74ff25}{void \hyperlink{structg2o_1_1OptimizableGraph_acea1342d9ab0bf717710c8f78b74ff25}{add\-Graph} (\hyperlink{structg2o_1_1OptimizableGraph}{Optimizable\-Graph} $\ast$g)}\label{structg2o_1_1OptimizableGraph_acea1342d9ab0bf717710c8f78b74ff25}
+
+\begin{DoxyCompactList}\small\item\em adds all edges and vertices of the graph {\itshape g} to this graph. \end{DoxyCompactList}\item 
+virtual bool \hyperlink{structg2o_1_1OptimizableGraph_ae0b93774ce1dfa0dfd501c86ad4f773e}{add\-Vertex} (\hyperlink{classg2o_1_1HyperGraph_1_1Vertex}{Hyper\-Graph\-::\-Vertex} $\ast$v, \hyperlink{classg2o_1_1OptimizableGraph_1_1Data}{Data} $\ast$user\-Data)
+\item 
+virtual bool \hyperlink{structg2o_1_1OptimizableGraph_ac6f41f49fe6148fbe17133d10bf29b4c}{add\-Vertex} (\hyperlink{classg2o_1_1HyperGraph_1_1Vertex}{Hyper\-Graph\-::\-Vertex} $\ast$v)
+\item 
+virtual bool \hyperlink{structg2o_1_1OptimizableGraph_a6831ed69fce3dba691f53302a2813070}{add\-Edge} (\hyperlink{classg2o_1_1HyperGraph_1_1Edge}{Hyper\-Graph\-::\-Edge} $\ast$e)
+\item 
+\hypertarget{structg2o_1_1OptimizableGraph_afa9378225b271351f4425bd266f76d3a}{double \hyperlink{structg2o_1_1OptimizableGraph_afa9378225b271351f4425bd266f76d3a}{chi2} () const }\label{structg2o_1_1OptimizableGraph_afa9378225b271351f4425bd266f76d3a}
+
+\begin{DoxyCompactList}\small\item\em returns the chi2 of the current configuration \end{DoxyCompactList}\item 
+\hypertarget{structg2o_1_1OptimizableGraph_abb25500d3f73dae8f2325ae11991c46f}{int \hyperlink{structg2o_1_1OptimizableGraph_abb25500d3f73dae8f2325ae11991c46f}{max\-Dimension} () const }\label{structg2o_1_1OptimizableGraph_abb25500d3f73dae8f2325ae11991c46f}
+
+\begin{DoxyCompactList}\small\item\em return the maximum dimension of all vertices in the graph \end{DoxyCompactList}\item 
+std\-::set$<$ int $>$ \hyperlink{structg2o_1_1OptimizableGraph_a186d6d06a59395488cd15d25bf112ad9}{dimensions} () const 
+\item 
+virtual int \hyperlink{structg2o_1_1OptimizableGraph_ac1b2e36c05680dd3e60ed6f90dddf5d8}{optimize} (int iterations, bool online=false)
+\item 
+\hypertarget{structg2o_1_1OptimizableGraph_ad295e7f06651db627b8ebde3d8898bab}{virtual void \hyperlink{structg2o_1_1OptimizableGraph_ad295e7f06651db627b8ebde3d8898bab}{pre\-Iteration} (int)}\label{structg2o_1_1OptimizableGraph_ad295e7f06651db627b8ebde3d8898bab}
+
+\begin{DoxyCompactList}\small\item\em called at the beginning of an iteration (argument is the number of the iteration) \end{DoxyCompactList}\item 
+\hypertarget{structg2o_1_1OptimizableGraph_ac8d41dc0830f1ae07e9cb4a8341d3ffb}{virtual void \hyperlink{structg2o_1_1OptimizableGraph_ac8d41dc0830f1ae07e9cb4a8341d3ffb}{post\-Iteration} (int)}\label{structg2o_1_1OptimizableGraph_ac8d41dc0830f1ae07e9cb4a8341d3ffb}
+
+\begin{DoxyCompactList}\small\item\em called at the end of an iteration (argument is the number of the iteration) \end{DoxyCompactList}\item 
+\hypertarget{structg2o_1_1OptimizableGraph_a2ab7899a0ff7bc29177e9447a10d508c}{bool \hyperlink{structg2o_1_1OptimizableGraph_a2ab7899a0ff7bc29177e9447a10d508c}{add\-Pre\-Iteration\-Action} (\hyperlink{classg2o_1_1HyperGraphAction}{Hyper\-Graph\-Action} $\ast$action)}\label{structg2o_1_1OptimizableGraph_a2ab7899a0ff7bc29177e9447a10d508c}
+
+\begin{DoxyCompactList}\small\item\em add an action to be executed before each iteration \end{DoxyCompactList}\item 
+\hypertarget{structg2o_1_1OptimizableGraph_a6db1ecbc582a7b79e1633eefc2109b26}{bool \hyperlink{structg2o_1_1OptimizableGraph_a6db1ecbc582a7b79e1633eefc2109b26}{add\-Post\-Iteration\-Action} (\hyperlink{classg2o_1_1HyperGraphAction}{Hyper\-Graph\-Action} $\ast$action)}\label{structg2o_1_1OptimizableGraph_a6db1ecbc582a7b79e1633eefc2109b26}
+
+\begin{DoxyCompactList}\small\item\em add an action to be executed after each iteration \end{DoxyCompactList}\item 
+\hypertarget{structg2o_1_1OptimizableGraph_a27f5ee7016b20bc6def24a2726fc824b}{bool \hyperlink{structg2o_1_1OptimizableGraph_a27f5ee7016b20bc6def24a2726fc824b}{remove\-Pre\-Iteration\-Action} (\hyperlink{classg2o_1_1HyperGraphAction}{Hyper\-Graph\-Action} $\ast$action)}\label{structg2o_1_1OptimizableGraph_a27f5ee7016b20bc6def24a2726fc824b}
+
+\begin{DoxyCompactList}\small\item\em remove an action that should no longer be execured before each iteration \end{DoxyCompactList}\item 
+\hypertarget{structg2o_1_1OptimizableGraph_a172f2f5c8ec5872d5bc34077c6391839}{bool \hyperlink{structg2o_1_1OptimizableGraph_a172f2f5c8ec5872d5bc34077c6391839}{remove\-Post\-Iteration\-Action} (\hyperlink{classg2o_1_1HyperGraphAction}{Hyper\-Graph\-Action} $\ast$action)}\label{structg2o_1_1OptimizableGraph_a172f2f5c8ec5872d5bc34077c6391839}
+
+\begin{DoxyCompactList}\small\item\em remove an action that should no longer be execured after each iteration \end{DoxyCompactList}\item 
+\hypertarget{structg2o_1_1OptimizableGraph_a3db385b25818a5659d1fa8407cb0db45}{virtual void \hyperlink{structg2o_1_1OptimizableGraph_a3db385b25818a5659d1fa8407cb0db45}{push} ()}\label{structg2o_1_1OptimizableGraph_a3db385b25818a5659d1fa8407cb0db45}
+
+\begin{DoxyCompactList}\small\item\em push the estimate of all variables onto a stack \end{DoxyCompactList}\item 
+\hypertarget{structg2o_1_1OptimizableGraph_a8487f537b16ac7a2ee416ea294a1e22e}{virtual void \hyperlink{structg2o_1_1OptimizableGraph_a8487f537b16ac7a2ee416ea294a1e22e}{pop} ()}\label{structg2o_1_1OptimizableGraph_a8487f537b16ac7a2ee416ea294a1e22e}
+
+\begin{DoxyCompactList}\small\item\em pop (restore) the estimate of all variables from the stack \end{DoxyCompactList}\item 
+\hypertarget{structg2o_1_1OptimizableGraph_a368b5f22dbc57abd2f651a20d039f61c}{virtual void \hyperlink{structg2o_1_1OptimizableGraph_a368b5f22dbc57abd2f651a20d039f61c}{discard\-Top} ()}\label{structg2o_1_1OptimizableGraph_a368b5f22dbc57abd2f651a20d039f61c}
+
+\begin{DoxyCompactList}\small\item\em discard the last backup of the estimate for all variables by removing it from the stack \end{DoxyCompactList}\item 
+\hypertarget{structg2o_1_1OptimizableGraph_a34f4a170d58551ee9efac7a7a78fa833}{virtual bool \hyperlink{structg2o_1_1OptimizableGraph_a34f4a170d58551ee9efac7a7a78fa833}{load} (std\-::istream \&is, bool create\-Edges=true)}\label{structg2o_1_1OptimizableGraph_a34f4a170d58551ee9efac7a7a78fa833}
+
+\begin{DoxyCompactList}\small\item\em load the graph from a stream. Uses the \hyperlink{classg2o_1_1Factory}{Factory} singleton for creating the vertices and edges. \end{DoxyCompactList}\item 
+\hypertarget{structg2o_1_1OptimizableGraph_a305fe91c405fc960df051d9581e524bc}{bool {\bfseries load} (const char $\ast$filename, bool create\-Edges=true)}\label{structg2o_1_1OptimizableGraph_a305fe91c405fc960df051d9581e524bc}
+
+\item 
+\hypertarget{structg2o_1_1OptimizableGraph_ac38749c4a2416dcbaf37a111996f7483}{virtual bool \hyperlink{structg2o_1_1OptimizableGraph_ac38749c4a2416dcbaf37a111996f7483}{save} (std\-::ostream \&os, int level=0) const }\label{structg2o_1_1OptimizableGraph_ac38749c4a2416dcbaf37a111996f7483}
+
+\begin{DoxyCompactList}\small\item\em save the graph to a stream. Again uses the \hyperlink{classg2o_1_1Factory}{Factory} system. \end{DoxyCompactList}\item 
+\hypertarget{structg2o_1_1OptimizableGraph_a35d607b133c3cb3a04fb82a3376bbcfc}{bool \hyperlink{structg2o_1_1OptimizableGraph_a35d607b133c3cb3a04fb82a3376bbcfc}{save} (const char $\ast$filename, int level=0) const }\label{structg2o_1_1OptimizableGraph_a35d607b133c3cb3a04fb82a3376bbcfc}
+
+\begin{DoxyCompactList}\small\item\em function provided for convenience, see \hyperlink{structg2o_1_1OptimizableGraph_ac38749c4a2416dcbaf37a111996f7483}{save()} above \end{DoxyCompactList}\item 
+\hypertarget{structg2o_1_1OptimizableGraph_adcf211f9c7bf3ee9dab65b130807402c}{bool \hyperlink{structg2o_1_1OptimizableGraph_adcf211f9c7bf3ee9dab65b130807402c}{save\-Subset} (std\-::ostream \&os, Hyper\-Graph\-::\-Vertex\-Set \&vset, int level=0)}\label{structg2o_1_1OptimizableGraph_adcf211f9c7bf3ee9dab65b130807402c}
+
+\begin{DoxyCompactList}\small\item\em save a subgraph to a stream. Again uses the \hyperlink{classg2o_1_1Factory}{Factory} system. \end{DoxyCompactList}\item 
+\hypertarget{structg2o_1_1OptimizableGraph_a2a08383ab953d435eaaca6231b64c3b6}{bool \hyperlink{structg2o_1_1OptimizableGraph_a2a08383ab953d435eaaca6231b64c3b6}{save\-Subset} (std\-::ostream \&os, Hyper\-Graph\-::\-Edge\-Set \&eset)}\label{structg2o_1_1OptimizableGraph_a2a08383ab953d435eaaca6231b64c3b6}
+
+\begin{DoxyCompactList}\small\item\em save a subgraph to a stream. Again uses the \hyperlink{classg2o_1_1Factory}{Factory} system. \end{DoxyCompactList}\item 
+\hypertarget{structg2o_1_1OptimizableGraph_a1d65a6854936147a92f7ba664302993e}{virtual void \hyperlink{structg2o_1_1OptimizableGraph_a1d65a6854936147a92f7ba664302993e}{push} (Hyper\-Graph\-::\-Vertex\-Set \&vset)}\label{structg2o_1_1OptimizableGraph_a1d65a6854936147a92f7ba664302993e}
+
+\begin{DoxyCompactList}\small\item\em push the estimate of a subset of the variables onto a stack \end{DoxyCompactList}\item 
+\hypertarget{structg2o_1_1OptimizableGraph_a83425dbe755d22877ba692e93e04a6af}{virtual void \hyperlink{structg2o_1_1OptimizableGraph_a83425dbe755d22877ba692e93e04a6af}{pop} (Hyper\-Graph\-::\-Vertex\-Set \&vset)}\label{structg2o_1_1OptimizableGraph_a83425dbe755d22877ba692e93e04a6af}
+
+\begin{DoxyCompactList}\small\item\em pop (restore) the estimate a subset of the variables from the stack \end{DoxyCompactList}\item 
+\hypertarget{structg2o_1_1OptimizableGraph_a74cbd91a3e05c1f497b4675b0e70113a}{virtual void \hyperlink{structg2o_1_1OptimizableGraph_a74cbd91a3e05c1f497b4675b0e70113a}{discard\-Top} (Hyper\-Graph\-::\-Vertex\-Set \&vset)}\label{structg2o_1_1OptimizableGraph_a74cbd91a3e05c1f497b4675b0e70113a}
+
+\begin{DoxyCompactList}\small\item\em ignore the latest stored element on the stack, remove it from the stack but do not restore the estimate \end{DoxyCompactList}\item 
+\hypertarget{structg2o_1_1OptimizableGraph_a07514f6186d19b6d893a771c0bb6abf9}{virtual void \hyperlink{structg2o_1_1OptimizableGraph_a07514f6186d19b6d893a771c0bb6abf9}{set\-Fixed} (Hyper\-Graph\-::\-Vertex\-Set \&vset, bool fixed)}\label{structg2o_1_1OptimizableGraph_a07514f6186d19b6d893a771c0bb6abf9}
+
+\begin{DoxyCompactList}\small\item\em fixes/releases a set of vertices \end{DoxyCompactList}\item 
+void \hyperlink{structg2o_1_1OptimizableGraph_afaa77a4624619237563fe94cfd7b76fd}{set\-Renamed\-Types\-From\-String} (const std\-::string \&types)
+\item 
+bool \hyperlink{structg2o_1_1OptimizableGraph_a4a3a8c7ffa964d2ab27ccdfdaca6a0cc}{is\-Solver\-Suitable} (const \hyperlink{structg2o_1_1OptimizationAlgorithmProperty}{Optimization\-Algorithm\-Property} \&solver\-Property, const std\-::set$<$ int $>$ \&vert\-Dims=std\-::set$<$ int $>$()) const 
+\item 
+virtual void \hyperlink{structg2o_1_1OptimizableGraph_a15171b6d335115858e2e86dcf576ba78}{clear\-Parameters} ()
+\item 
+\hypertarget{structg2o_1_1OptimizableGraph_ad4a7c038288097b0b1619c609cf40e90}{bool {\bfseries add\-Parameter} (\hyperlink{classg2o_1_1Parameter}{Parameter} $\ast$p)}\label{structg2o_1_1OptimizableGraph_ad4a7c038288097b0b1619c609cf40e90}
+
+\item 
+\hypertarget{structg2o_1_1OptimizableGraph_ad9506880a9289353ddd2277fafb76ffd}{\hyperlink{classg2o_1_1Parameter}{Parameter} $\ast$ {\bfseries parameter} (int id)}\label{structg2o_1_1OptimizableGraph_ad9506880a9289353ddd2277fafb76ffd}
+
+\item 
+bool \hyperlink{structg2o_1_1OptimizableGraph_aae5f20da3c13042a9bc1f491f2150d59}{verify\-Information\-Matrices} (bool verbose=false) const 
+\item 
+\hypertarget{structg2o_1_1OptimizableGraph_a3f254b419e9cc883094d31fdeab76bf7}{bool {\bfseries save\-Vertex} (std\-::ostream \&os, \hyperlink{classg2o_1_1OptimizableGraph_1_1Vertex}{Vertex} $\ast$v) const }\label{structg2o_1_1OptimizableGraph_a3f254b419e9cc883094d31fdeab76bf7}
+
+\item 
+\hypertarget{structg2o_1_1OptimizableGraph_ad40a71ebbf3d84a327c47b211e8f0911}{bool {\bfseries save\-Edge} (std\-::ostream \&os, \hyperlink{classg2o_1_1OptimizableGraph_1_1Edge}{Edge} $\ast$e) const }\label{structg2o_1_1OptimizableGraph_ad40a71ebbf3d84a327c47b211e8f0911}
+
+\item 
+\hypertarget{structg2o_1_1OptimizableGraph_aa669dbd1d6e34e49fecda711ff1b78c6}{\hyperlink{classg2o_1_1JacobianWorkspace}{Jacobian\-Workspace} \& \hyperlink{structg2o_1_1OptimizableGraph_aa669dbd1d6e34e49fecda711ff1b78c6}{jacobian\-Workspace} ()}\label{structg2o_1_1OptimizableGraph_aa669dbd1d6e34e49fecda711ff1b78c6}
+
+\begin{DoxyCompactList}\small\item\em the workspace for storing the Jacobians of the graph \end{DoxyCompactList}\item 
+\hypertarget{structg2o_1_1OptimizableGraph_a2a8f800437cd846bad1df57b0b8c273e}{const \hyperlink{classg2o_1_1JacobianWorkspace}{Jacobian\-Workspace} \& {\bfseries jacobian\-Workspace} () const }\label{structg2o_1_1OptimizableGraph_a2a8f800437cd846bad1df57b0b8c273e}
+
+\end{DoxyCompactItemize}
+\subsection*{静态 Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+static bool \hyperlink{structg2o_1_1OptimizableGraph_ab4ee0fc3ecd31852276ded40b62e9c76}{init\-Multi\-Threading} ()
+\end{DoxyCompactItemize}
+\subsection*{Public 属性}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{structg2o_1_1OptimizableGraph_ae1bdcfc2f7a1b8977ba04a16b16f1eba}{class G2\-O\-\_\-\-C\-O\-R\-E\-\_\-\-A\-P\-I {\bfseries Vertex}}\label{structg2o_1_1OptimizableGraph_ae1bdcfc2f7a1b8977ba04a16b16f1eba}
+
+\item 
+\hypertarget{structg2o_1_1OptimizableGraph_a59cf44f3f3182a367ee4525412c7940a}{class G2\-O\-\_\-\-C\-O\-R\-E\-\_\-\-A\-P\-I {\bfseries Edge}}\label{structg2o_1_1OptimizableGraph_a59cf44f3f3182a367ee4525412c7940a}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected 属性}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{structg2o_1_1OptimizableGraph_a726ab6d0b04b12f835b690d54e061731}{std\-::map$<$ std\-::string, \\*
+std\-::string $>$ {\bfseries \-\_\-renamed\-Types\-Lookup}}\label{structg2o_1_1OptimizableGraph_a726ab6d0b04b12f835b690d54e061731}
+
+\item 
+\hypertarget{structg2o_1_1OptimizableGraph_a93a7f05b31bca9ccaa214499f042739a}{long long {\bfseries \-\_\-next\-Edge\-Id}}\label{structg2o_1_1OptimizableGraph_a93a7f05b31bca9ccaa214499f042739a}
+
+\item 
+\hypertarget{structg2o_1_1OptimizableGraph_a5e6a371ad7709692e52886ecf3e7250c}{std\-::vector$<$ Hyper\-Graph\-Action\-Set $>$ {\bfseries \-\_\-graph\-Actions}}\label{structg2o_1_1OptimizableGraph_a5e6a371ad7709692e52886ecf3e7250c}
+
+\item 
+\hypertarget{structg2o_1_1OptimizableGraph_a260451b25094e5e929cc2841e31242f4}{bool {\bfseries \-\_\-edge\-\_\-has\-\_\-id}}\label{structg2o_1_1OptimizableGraph_a260451b25094e5e929cc2841e31242f4}
+
+\item 
+\hypertarget{structg2o_1_1OptimizableGraph_a3a7974befcd934f28a36de3999423d21}{\hyperlink{classg2o_1_1ParameterContainer}{Parameter\-Container} {\bfseries \-\_\-parameters}}\label{structg2o_1_1OptimizableGraph_a3a7974befcd934f28a36de3999423d21}
+
+\item 
+\hypertarget{structg2o_1_1OptimizableGraph_a161c01a29d09cca22e223ab2048eaba8}{\hyperlink{classg2o_1_1JacobianWorkspace}{Jacobian\-Workspace} {\bfseries \-\_\-jacobian\-Workspace}}\label{structg2o_1_1OptimizableGraph_a161c01a29d09cca22e223ab2048eaba8}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{详细描述}
+This is an abstract class that represents one optimization problem. It specializes the general graph to contain special vertices and edges. The vertices represent parameters that can be optimized, while the edges represent constraints. This class also provides basic functionalities to handle the backup/restore of portions of the vertices. 
+
+在文件 optimizable\-\_\-graph.\-h 第 65 行定义.
+
+
+
+\subsection{成员函数说明}
+\hypertarget{structg2o_1_1OptimizableGraph_a6831ed69fce3dba691f53302a2813070}{\index{g2o\-::\-Optimizable\-Graph@{g2o\-::\-Optimizable\-Graph}!add\-Edge@{add\-Edge}}
+\index{add\-Edge@{add\-Edge}!g2o::OptimizableGraph@{g2o\-::\-Optimizable\-Graph}}
+\subsubsection[{add\-Edge}]{\setlength{\rightskip}{0pt plus 5cm}bool g2o\-::\-Optimizable\-Graph\-::add\-Edge (
+\begin{DoxyParamCaption}
+\item[{{\bf Hyper\-Graph\-::\-Edge} $\ast$}]{e}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{structg2o_1_1OptimizableGraph_a6831ed69fce3dba691f53302a2813070}
+adds a new edge. The edge should point to the vertices that it is connecting (set\-From/set\-To). \begin{DoxyReturn}{返回}
+false if the insertion does not work (incompatible types of the vertices/missing vertex). true otherwise. 
+\end{DoxyReturn}
+
+
+重载 \hyperlink{classg2o_1_1HyperGraph_a0f1d35009a2879b238c8148c33485c89}{g2o\-::\-Hyper\-Graph} .
+
+
+
+在文件 optimizable\-\_\-graph.\-cpp 第 264 行定义.
+
+
+
+参考 g2o\-::\-Hyper\-Graph\-::add\-Edge() , 以及 g2o\-::\-Jacobian\-Workspace\-::update\-Size().
+
+
+
+参考自 add\-Graph(), O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Optimizer\-::\-Bundle\-Adjustment(), O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Optimizer\-::\-Local\-Bundle\-Adjustment(), O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Optimizer\-::\-Optimize\-Essential\-Graph(), O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Optimizer\-::\-Optimize\-Sim3() , 以及 O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Optimizer\-::\-Pose\-Optimization().
+
+
+
+函数调用图\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structg2o_1_1OptimizableGraph_a6831ed69fce3dba691f53302a2813070_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+这是这个函数的调用关系图\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structg2o_1_1OptimizableGraph_a6831ed69fce3dba691f53302a2813070_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{structg2o_1_1OptimizableGraph_ae0b93774ce1dfa0dfd501c86ad4f773e}{\index{g2o\-::\-Optimizable\-Graph@{g2o\-::\-Optimizable\-Graph}!add\-Vertex@{add\-Vertex}}
+\index{add\-Vertex@{add\-Vertex}!g2o::OptimizableGraph@{g2o\-::\-Optimizable\-Graph}}
+\subsubsection[{add\-Vertex}]{\setlength{\rightskip}{0pt plus 5cm}bool g2o\-::\-Optimizable\-Graph\-::add\-Vertex (
+\begin{DoxyParamCaption}
+\item[{{\bf Hyper\-Graph\-::\-Vertex} $\ast$}]{v, }
+\item[{{\bf Data} $\ast$}]{user\-Data}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{structg2o_1_1OptimizableGraph_ae0b93774ce1dfa0dfd501c86ad4f773e}
+adds a new vertex. The new vertex is then \char`\"{}taken\char`\"{}. \begin{DoxyReturn}{返回}
+false if a vertex with the same id as v is already in the graph, true otherwise. 
+\end{DoxyReturn}
+
+
+在文件 optimizable\-\_\-graph.\-cpp 第 243 行定义.
+
+
+
+参考 g2o\-::\-Hyper\-Graph\-::add\-Vertex(), g2o\-::\-Hyper\-Graph\-::\-Vertex\-::id() , 以及 vertex().
+
+
+
+参考自 add\-Graph(), O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Optimizer\-::\-Bundle\-Adjustment(), O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Optimizer\-::\-Local\-Bundle\-Adjustment(), O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Optimizer\-::\-Optimize\-Essential\-Graph(), O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Optimizer\-::\-Optimize\-Sim3() , 以及 O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Optimizer\-::\-Pose\-Optimization().
+
+
+
+函数调用图\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structg2o_1_1OptimizableGraph_ae0b93774ce1dfa0dfd501c86ad4f773e_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+这是这个函数的调用关系图\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structg2o_1_1OptimizableGraph_ae0b93774ce1dfa0dfd501c86ad4f773e_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{structg2o_1_1OptimizableGraph_ac6f41f49fe6148fbe17133d10bf29b4c}{\index{g2o\-::\-Optimizable\-Graph@{g2o\-::\-Optimizable\-Graph}!add\-Vertex@{add\-Vertex}}
+\index{add\-Vertex@{add\-Vertex}!g2o::OptimizableGraph@{g2o\-::\-Optimizable\-Graph}}
+\subsubsection[{add\-Vertex}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool g2o\-::\-Optimizable\-Graph\-::add\-Vertex (
+\begin{DoxyParamCaption}
+\item[{{\bf Hyper\-Graph\-::\-Vertex} $\ast$}]{v}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{structg2o_1_1OptimizableGraph_ac6f41f49fe6148fbe17133d10bf29b4c}
+adds a vertex to the graph. The id of the vertex should be set before invoking this function. the function fails if another vertex with the same id is already in the graph. returns true, on success, or false on failure. 
+
+重载 \hyperlink{classg2o_1_1HyperGraph_a7ef87ba3479827b24c6fc29c5fc3aa21}{g2o\-::\-Hyper\-Graph} .
+
+
+
+在文件 optimizable\-\_\-graph.\-h 第 546 行定义.
+
+
+
+参考 add\-Vertex().
+
+
+
+参考自 add\-Vertex().
+
+
+
+函数调用图\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=196pt]{structg2o_1_1OptimizableGraph_ac6f41f49fe6148fbe17133d10bf29b4c_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+这是这个函数的调用关系图\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=196pt]{structg2o_1_1OptimizableGraph_ac6f41f49fe6148fbe17133d10bf29b4c_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{structg2o_1_1OptimizableGraph_a15171b6d335115858e2e86dcf576ba78}{\index{g2o\-::\-Optimizable\-Graph@{g2o\-::\-Optimizable\-Graph}!clear\-Parameters@{clear\-Parameters}}
+\index{clear\-Parameters@{clear\-Parameters}!g2o::OptimizableGraph@{g2o\-::\-Optimizable\-Graph}}
+\subsubsection[{clear\-Parameters}]{\setlength{\rightskip}{0pt plus 5cm}void g2o\-::\-Optimizable\-Graph\-::clear\-Parameters (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{structg2o_1_1OptimizableGraph_a15171b6d335115858e2e86dcf576ba78}
+remove the parameters of the graph 
+
+在文件 optimizable\-\_\-graph.\-cpp 第 862 行定义.
+
+\hypertarget{structg2o_1_1OptimizableGraph_a186d6d06a59395488cd15d25bf112ad9}{\index{g2o\-::\-Optimizable\-Graph@{g2o\-::\-Optimizable\-Graph}!dimensions@{dimensions}}
+\index{dimensions@{dimensions}!g2o::OptimizableGraph@{g2o\-::\-Optimizable\-Graph}}
+\subsubsection[{dimensions}]{\setlength{\rightskip}{0pt plus 5cm}std\-::set$<$ int $>$ g2o\-::\-Optimizable\-Graph\-::dimensions (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{structg2o_1_1OptimizableGraph_a186d6d06a59395488cd15d25bf112ad9}
+iterates over all vertices and returns a set of all the vertex dimensions in the graph 
+
+在文件 optimizable\-\_\-graph.\-cpp 第 763 行定义.
+
+
+
+参考 g2o\-::\-Optimizable\-Graph\-::\-Vertex\-::dimension() , 以及 g2o\-::\-Hyper\-Graph\-::vertices().
+
+
+
+参考自 is\-Solver\-Suitable().
+
+
+
+函数调用图\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structg2o_1_1OptimizableGraph_a186d6d06a59395488cd15d25bf112ad9_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+这是这个函数的调用关系图\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=348pt]{structg2o_1_1OptimizableGraph_a186d6d06a59395488cd15d25bf112ad9_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{structg2o_1_1OptimizableGraph_ab4ee0fc3ecd31852276ded40b62e9c76}{\index{g2o\-::\-Optimizable\-Graph@{g2o\-::\-Optimizable\-Graph}!init\-Multi\-Threading@{init\-Multi\-Threading}}
+\index{init\-Multi\-Threading@{init\-Multi\-Threading}!g2o::OptimizableGraph@{g2o\-::\-Optimizable\-Graph}}
+\subsubsection[{init\-Multi\-Threading}]{\setlength{\rightskip}{0pt plus 5cm}bool g2o\-::\-Optimizable\-Graph\-::init\-Multi\-Threading (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{structg2o_1_1OptimizableGraph_ab4ee0fc3ecd31852276ded40b62e9c76}
+Eigen starting from version 3.\-1 requires that we call an initialize function, if we perform calls to Eigen from several threads. Currently, this function calls Eigen\-::init\-Parallel if g2o is compiled with Open\-M\-P support and Eigen's version is at least 3.\-1 
+
+在文件 optimizable\-\_\-graph.\-cpp 第 901 行定义.
+
+\hypertarget{structg2o_1_1OptimizableGraph_a4a3a8c7ffa964d2ab27ccdfdaca6a0cc}{\index{g2o\-::\-Optimizable\-Graph@{g2o\-::\-Optimizable\-Graph}!is\-Solver\-Suitable@{is\-Solver\-Suitable}}
+\index{is\-Solver\-Suitable@{is\-Solver\-Suitable}!g2o::OptimizableGraph@{g2o\-::\-Optimizable\-Graph}}
+\subsubsection[{is\-Solver\-Suitable}]{\setlength{\rightskip}{0pt plus 5cm}bool g2o\-::\-Optimizable\-Graph\-::is\-Solver\-Suitable (
+\begin{DoxyParamCaption}
+\item[{const {\bf Optimization\-Algorithm\-Property} \&}]{solver\-Property, }
+\item[{const std\-::set$<$ int $>$ \&}]{vert\-Dims = {\ttfamily std\-:\-:set$<$int$>$()}}
+\end{DoxyParamCaption}
+) const}}\label{structg2o_1_1OptimizableGraph_a4a3a8c7ffa964d2ab27ccdfdaca6a0cc}
+test whether a solver is suitable for optimizing this graph. 
+\begin{DoxyParams}{参数}
+{\em solver\-Property} & the solver property to evaluate. \\
+\hline
+{\em vert\-Dims} & should equal to the set returned by \hyperlink{structg2o_1_1OptimizableGraph_a186d6d06a59395488cd15d25bf112ad9}{dimensions()} to avoid re-\/evaluating. \\
+\hline
+\end{DoxyParams}
+
+
+在文件 optimizable\-\_\-graph.\-cpp 第 740 行定义.
+
+
+
+参考 dimensions(), g2o\-::\-Optimization\-Algorithm\-Property\-::landmark\-Dim, g2o\-::\-Optimization\-Algorithm\-Property\-::pose\-Dim , 以及 g2o\-::\-Optimization\-Algorithm\-Property\-::requires\-Marginalize.
+
+
+
+函数调用图\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structg2o_1_1OptimizableGraph_a4a3a8c7ffa964d2ab27ccdfdaca6a0cc_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{structg2o_1_1OptimizableGraph_ac1b2e36c05680dd3e60ed6f90dddf5d8}{\index{g2o\-::\-Optimizable\-Graph@{g2o\-::\-Optimizable\-Graph}!optimize@{optimize}}
+\index{optimize@{optimize}!g2o::OptimizableGraph@{g2o\-::\-Optimizable\-Graph}}
+\subsubsection[{optimize}]{\setlength{\rightskip}{0pt plus 5cm}int g2o\-::\-Optimizable\-Graph\-::optimize (
+\begin{DoxyParamCaption}
+\item[{int}]{iterations, }
+\item[{bool}]{online = {\ttfamily false}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{structg2o_1_1OptimizableGraph_ac1b2e36c05680dd3e60ed6f90dddf5d8}
+carry out n iterations \begin{DoxyReturn}{返回}
+the number of performed iterations 
+\end{DoxyReturn}
+
+
+被 \hyperlink{classg2o_1_1SparseOptimizer_a098257ee6f13dbb79be07075244d9930}{g2o\-::\-Sparse\-Optimizer} 重载.
+
+
+
+在文件 optimizable\-\_\-graph.\-cpp 第 287 行定义.
+
+\hypertarget{structg2o_1_1OptimizableGraph_afaa77a4624619237563fe94cfd7b76fd}{\index{g2o\-::\-Optimizable\-Graph@{g2o\-::\-Optimizable\-Graph}!set\-Renamed\-Types\-From\-String@{set\-Renamed\-Types\-From\-String}}
+\index{set\-Renamed\-Types\-From\-String@{set\-Renamed\-Types\-From\-String}!g2o::OptimizableGraph@{g2o\-::\-Optimizable\-Graph}}
+\subsubsection[{set\-Renamed\-Types\-From\-String}]{\setlength{\rightskip}{0pt plus 5cm}void g2o\-::\-Optimizable\-Graph\-::set\-Renamed\-Types\-From\-String (
+\begin{DoxyParamCaption}
+\item[{const std\-::string \&}]{types}
+\end{DoxyParamCaption}
+)}}\label{structg2o_1_1OptimizableGraph_afaa77a4624619237563fe94cfd7b76fd}
+set the renamed types lookup from a string, format is for example\-: V\-E\-R\-T\-E\-X\-\_\-\-C\-A\-M=V\-E\-R\-T\-E\-X\-\_\-\-S\-E3\-:E\-X\-P\-M\-A\-P,E\-D\-G\-E\-\_\-\-P\-R\-O\-J\-E\-C\-T\-\_\-\-P2\-M\-C=E\-D\-G\-E\-\_\-\-P\-R\-O\-J\-E\-C\-T\-\_\-\-X\-Y\-Z\-:E\-X\-P\-M\-A\-P This will change the occurance of V\-E\-R\-T\-E\-X\-\_\-\-C\-A\-M in the file to V\-E\-R\-T\-E\-X\-\_\-\-S\-E3\-:E\-X\-P\-M\-A\-P 
+
+在文件 optimizable\-\_\-graph.\-cpp 第 714 行定义.
+
+
+
+参考 g2o\-::\-Factory\-::instance(), g2o\-::\-Factory\-::knows\-Tag(), g2o\-::str\-Split() , 以及 g2o\-::trim().
+
+
+
+函数调用图\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structg2o_1_1OptimizableGraph_afaa77a4624619237563fe94cfd7b76fd_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{structg2o_1_1OptimizableGraph_aae5f20da3c13042a9bc1f491f2150d59}{\index{g2o\-::\-Optimizable\-Graph@{g2o\-::\-Optimizable\-Graph}!verify\-Information\-Matrices@{verify\-Information\-Matrices}}
+\index{verify\-Information\-Matrices@{verify\-Information\-Matrices}!g2o::OptimizableGraph@{g2o\-::\-Optimizable\-Graph}}
+\subsubsection[{verify\-Information\-Matrices}]{\setlength{\rightskip}{0pt plus 5cm}bool g2o\-::\-Optimizable\-Graph\-::verify\-Information\-Matrices (
+\begin{DoxyParamCaption}
+\item[{bool}]{verbose = {\ttfamily false}}
+\end{DoxyParamCaption}
+) const}}\label{structg2o_1_1OptimizableGraph_aae5f20da3c13042a9bc1f491f2150d59}
+verify that all the information of the edges are semi positive definite, i.\-e., all Eigenvalues are $>$= 0. 
+\begin{DoxyParams}{参数}
+{\em verbose} & output edges with not P\-S\-D information matrix on cerr \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+true if all edges have P\-S\-D information matrix 
+\end{DoxyReturn}
+
+
+在文件 optimizable\-\_\-graph.\-cpp 第 867 行定义.
+
+
+
+参考 g2o\-::\-Optimizable\-Graph\-::\-Edge\-::dimension(), g2o\-::\-Hyper\-Graph\-::edges(), g2o\-::\-Hyper\-Graph\-::\-Vertex\-::id(), g2o\-::\-Optimizable\-Graph\-::\-Edge\-::information\-Data(), g2o\-::\-Hyper\-Graph\-::\-Edge\-::vertex() , 以及 g2o\-::\-Hyper\-Graph\-::\-Edge\-::vertices().
+
+
+
+函数调用图\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structg2o_1_1OptimizableGraph_aae5f20da3c13042a9bc1f491f2150d59_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+该结构体的文档由以下文件生成\-:\begin{DoxyCompactItemize}
+\item 
+Thirdparty/g2o/g2o/core/optimizable\-\_\-graph.\-h\item 
+Thirdparty/g2o/g2o/core/optimizable\-\_\-graph.\-cpp\end{DoxyCompactItemize}

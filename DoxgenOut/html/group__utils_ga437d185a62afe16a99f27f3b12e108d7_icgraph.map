@@ -1,0 +1,5 @@
+<map id="g2o::trim" name="g2o::trim">
+<area shape="rect" id="node2" href="$structg2o_1_1OptimizableGraph.html#afaa77a4624619237563fe94cfd7b76fd" title="g2o::OptimizableGraph\l::setRenamedTypesFromString" alt="" coords="129,5,333,46"/>
+<area shape="rect" id="node3" href="$classg2o_1_1PropertyMap.html#a0407e6a72afafd608f13cfdffc6ffc06" title="g2o::PropertyMap::update\lMapFromString" alt="" coords="145,70,317,111"/>
+<area shape="rect" id="node4" href="$classg2o_1_1OptimizationAlgorithm.html#aa05a6380f936c728a574c7c272bcc524" title="g2o::OptimizationAlgorithm\l::updatePropertiesFromString" alt="" coords="381,70,573,111"/>
+</map>

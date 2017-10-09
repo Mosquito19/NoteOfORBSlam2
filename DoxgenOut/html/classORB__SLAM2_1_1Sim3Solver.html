@@ -1,0 +1,306 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.6"/>
+<title>My Project: ORB_SLAM2::Sim3Solver类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">My Project
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.6 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="pages.html"><span>相关页面</span></a></li>
+      <li><a href="modules.html"><span>模块</span></a></li>
+      <li><a href="namespaces.html"><span>命名空间</span></a></li>
+      <li class="current"><a href="annotated.html"><span>类</span></a></li>
+      <li><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>类列表</span></a></li>
+      <li><a href="classes.html"><span>类索引</span></a></li>
+      <li><a href="inherits.html"><span>类继承关系</span></a></li>
+      <li><a href="functions.html"><span>类成员</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('classORB__SLAM2_1_1Sim3Solver.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>命名空间</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>友元</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>组</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>页</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pro-methods">Protected 成员函数</a> &#124;
+<a href="#pro-attribs">Protected 属性</a> &#124;
+<a href="classORB__SLAM2_1_1Sim3Solver-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">ORB_SLAM2::Sim3Solver类 参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="dynheader">
+ORB_SLAM2::Sim3Solver 的协作图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classORB__SLAM2_1_1Sim3Solver__coll__graph.png" border="0" usemap="#ORB__SLAM2_1_1Sim3Solver_coll__map" alt="Collaboration graph"/></div>
+<map name="ORB__SLAM2_1_1Sim3Solver_coll__map" id="ORB__SLAM2_1_1Sim3Solver_coll__map">
+<area shape="rect" id="node2" href="classORB__SLAM2_1_1KeyFrame.html" title="ORB_SLAM2::KeyFrame" alt="" coords="1006,103,1175,129"/><area shape="rect" id="node3" href="classORB__SLAM2_1_1KeyFrameDatabase.html" title="ORB_SLAM2::KeyFrameDatabase" alt="" coords="630,52,855,79"/><area shape="rect" id="node4" href="classDBoW2_1_1TemplatedVocabulary.html" title="Generic Vocabulary. " alt="" coords="329,14,532,55"/><area shape="rect" id="node5" href="classDBoW2_1_1GeneralScoring.html" title="Base class of scoring functions. " alt="" coords="5,21,171,48"/><area shape="rect" id="node6" href="classORB__SLAM2_1_1Map.html" title="ORB_SLAM2::Map" alt="" coords="675,103,810,129"/><area shape="rect" id="node7" href="classDBoW2_1_1FeatureVector.html" title="Vector of nodes with indexes of local features。正索引，node，对应的特征的标号 " alt="" coords="663,153,822,180"/><area shape="rect" id="node9" href="classDBoW2_1_1BowVector.html" title="DBoW2::BowVector" alt="" coords="673,205,813,232"/></map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">图例</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:ade0519fb4d34edfdb18fc103a03e99e1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ade0519fb4d34edfdb18fc103a03e99e1"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>Sim3Solver</b> (<a class="el" href="classORB__SLAM2_1_1KeyFrame.html">KeyFrame</a> *pKF1, <a class="el" href="classORB__SLAM2_1_1KeyFrame.html">KeyFrame</a> *pKF2, const std::vector&lt; <a class="el" href="classORB__SLAM2_1_1MapPoint.html">MapPoint</a> * &gt; &amp;vpMatched12, const bool bFixScale=true)</td></tr>
+<tr class="separator:ade0519fb4d34edfdb18fc103a03e99e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab90d591f1b9eac3d846efd35c2c04920"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab90d591f1b9eac3d846efd35c2c04920"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetRansacParameters</b> (double probability=0.99, int minInliers=6, int maxIterations=300)</td></tr>
+<tr class="separator:ab90d591f1b9eac3d846efd35c2c04920"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a34ba62d5d8033ab12a811c241f30544b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a34ba62d5d8033ab12a811c241f30544b"></a>
+cv::Mat&#160;</td><td class="memItemRight" valign="bottom"><b>find</b> (std::vector&lt; bool &gt; &amp;vbInliers12, int &amp;nInliers)</td></tr>
+<tr class="separator:a34ba62d5d8033ab12a811c241f30544b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae07cddad85e41611bd454f8026de31a6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae07cddad85e41611bd454f8026de31a6"></a>
+cv::Mat&#160;</td><td class="memItemRight" valign="bottom"><b>iterate</b> (int nIterations, bool &amp;bNoMore, std::vector&lt; bool &gt; &amp;vbInliers, int &amp;nInliers)</td></tr>
+<tr class="separator:ae07cddad85e41611bd454f8026de31a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9cf5646f2530a074e30320ae5cf1cb4b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9cf5646f2530a074e30320ae5cf1cb4b"></a>
+cv::Mat&#160;</td><td class="memItemRight" valign="bottom"><b>GetEstimatedRotation</b> ()</td></tr>
+<tr class="separator:a9cf5646f2530a074e30320ae5cf1cb4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a27f28d7708a7215279751e592a17d0d5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a27f28d7708a7215279751e592a17d0d5"></a>
+cv::Mat&#160;</td><td class="memItemRight" valign="bottom"><b>GetEstimatedTranslation</b> ()</td></tr>
+<tr class="separator:a27f28d7708a7215279751e592a17d0d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3942b204d02957269bad6a00c03a1e4b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3942b204d02957269bad6a00c03a1e4b"></a>
+float&#160;</td><td class="memItemRight" valign="bottom"><b>GetEstimatedScale</b> ()</td></tr>
+<tr class="separator:a3942b204d02957269bad6a00c03a1e4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected 成员函数</h2></td></tr>
+<tr class="memitem:aad8da5d1d78fcd8d6511ad29d9cb6db5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aad8da5d1d78fcd8d6511ad29d9cb6db5"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>ComputeCentroid</b> (cv::Mat &amp;P, cv::Mat &amp;Pr, cv::Mat &amp;C)</td></tr>
+<tr class="separator:aad8da5d1d78fcd8d6511ad29d9cb6db5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a87ee2729feee5729397c650b26927a8f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a87ee2729feee5729397c650b26927a8f"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>ComputeSim3</b> (cv::Mat &amp;P1, cv::Mat &amp;P2)</td></tr>
+<tr class="separator:a87ee2729feee5729397c650b26927a8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7abb9ede799e916a5c5954c2c8da09c7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7abb9ede799e916a5c5954c2c8da09c7"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>CheckInliers</b> ()</td></tr>
+<tr class="separator:a7abb9ede799e916a5c5954c2c8da09c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af44c59a21d53b04ec7f867b8291dcf25"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af44c59a21d53b04ec7f867b8291dcf25"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>Project</b> (const std::vector&lt; cv::Mat &gt; &amp;vP3Dw, std::vector&lt; cv::Mat &gt; &amp;vP2D, cv::Mat Tcw, cv::Mat K)</td></tr>
+<tr class="separator:af44c59a21d53b04ec7f867b8291dcf25"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afbe734fae65ebb9b1c9a38ebd3bacbc3"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afbe734fae65ebb9b1c9a38ebd3bacbc3"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>FromCameraToImage</b> (const std::vector&lt; cv::Mat &gt; &amp;vP3Dc, std::vector&lt; cv::Mat &gt; &amp;vP2D, cv::Mat K)</td></tr>
+<tr class="separator:afbe734fae65ebb9b1c9a38ebd3bacbc3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
+Protected 属性</h2></td></tr>
+<tr class="memitem:a719501a8d39a83a81a67d7334704f42c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a719501a8d39a83a81a67d7334704f42c"></a>
+<a class="el" href="classORB__SLAM2_1_1KeyFrame.html">KeyFrame</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>mpKF1</b></td></tr>
+<tr class="separator:a719501a8d39a83a81a67d7334704f42c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abc8fbea249fc4397c901694b7ecbe2bf"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abc8fbea249fc4397c901694b7ecbe2bf"></a>
+<a class="el" href="classORB__SLAM2_1_1KeyFrame.html">KeyFrame</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>mpKF2</b></td></tr>
+<tr class="separator:abc8fbea249fc4397c901694b7ecbe2bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9674b6ca24874c387ebd38b9f1a4560a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9674b6ca24874c387ebd38b9f1a4560a"></a>
+std::vector&lt; cv::Mat &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>mvX3Dc1</b></td></tr>
+<tr class="separator:a9674b6ca24874c387ebd38b9f1a4560a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa91dd6da039c45e15d7713eae0c60b7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afa91dd6da039c45e15d7713eae0c60b7"></a>
+std::vector&lt; cv::Mat &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>mvX3Dc2</b></td></tr>
+<tr class="separator:afa91dd6da039c45e15d7713eae0c60b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af4ea0c3fb99c1db31b40d4f0f0bcc749"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af4ea0c3fb99c1db31b40d4f0f0bcc749"></a>
+std::vector&lt; <a class="el" href="classORB__SLAM2_1_1MapPoint.html">MapPoint</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>mvpMapPoints1</b></td></tr>
+<tr class="separator:af4ea0c3fb99c1db31b40d4f0f0bcc749"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a752181b1c6efe5cc79b0204af7edf44b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a752181b1c6efe5cc79b0204af7edf44b"></a>
+std::vector&lt; <a class="el" href="classORB__SLAM2_1_1MapPoint.html">MapPoint</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>mvpMapPoints2</b></td></tr>
+<tr class="separator:a752181b1c6efe5cc79b0204af7edf44b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa86f37922ef6499404aadc3b0a2526c7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa86f37922ef6499404aadc3b0a2526c7"></a>
+std::vector&lt; <a class="el" href="classORB__SLAM2_1_1MapPoint.html">MapPoint</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>mvpMatches12</b></td></tr>
+<tr class="separator:aa86f37922ef6499404aadc3b0a2526c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a81ad716802ccd2a3761882a796a0205d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a81ad716802ccd2a3761882a796a0205d"></a>
+std::vector&lt; size_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>mvnIndices1</b></td></tr>
+<tr class="separator:a81ad716802ccd2a3761882a796a0205d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af44092ee71f95ec084db6b0144bbfc40"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af44092ee71f95ec084db6b0144bbfc40"></a>
+std::vector&lt; size_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>mvSigmaSquare1</b></td></tr>
+<tr class="separator:af44092ee71f95ec084db6b0144bbfc40"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd96d2f2d32f1cda0e709c5b704f1f7b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afd96d2f2d32f1cda0e709c5b704f1f7b"></a>
+std::vector&lt; size_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>mvSigmaSquare2</b></td></tr>
+<tr class="separator:afd96d2f2d32f1cda0e709c5b704f1f7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5f739ba98d0da8c39c04e9396a697443"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5f739ba98d0da8c39c04e9396a697443"></a>
+std::vector&lt; size_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>mvnMaxError1</b></td></tr>
+<tr class="separator:a5f739ba98d0da8c39c04e9396a697443"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a26ca815b24366cf32e9ce065be4ab8a7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a26ca815b24366cf32e9ce065be4ab8a7"></a>
+std::vector&lt; size_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>mvnMaxError2</b></td></tr>
+<tr class="separator:a26ca815b24366cf32e9ce065be4ab8a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8081f9438c71d5cdf9fc2aacf985136c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8081f9438c71d5cdf9fc2aacf985136c"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>N</b></td></tr>
+<tr class="separator:a8081f9438c71d5cdf9fc2aacf985136c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a366db3149066adadf76fa4f4ecb39d50"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a366db3149066adadf76fa4f4ecb39d50"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>mN1</b></td></tr>
+<tr class="separator:a366db3149066adadf76fa4f4ecb39d50"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afc5eba1e475226a4ab7f0d0de8fc6e48"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afc5eba1e475226a4ab7f0d0de8fc6e48"></a>
+cv::Mat&#160;</td><td class="memItemRight" valign="bottom"><b>mR12i</b></td></tr>
+<tr class="separator:afc5eba1e475226a4ab7f0d0de8fc6e48"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7747196dceb3ef3d2dc341e7aff798aa"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7747196dceb3ef3d2dc341e7aff798aa"></a>
+cv::Mat&#160;</td><td class="memItemRight" valign="bottom"><b>mt12i</b></td></tr>
+<tr class="separator:a7747196dceb3ef3d2dc341e7aff798aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6ba87aac963290a1b18172573890a50a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6ba87aac963290a1b18172573890a50a"></a>
+float&#160;</td><td class="memItemRight" valign="bottom"><b>ms12i</b></td></tr>
+<tr class="separator:a6ba87aac963290a1b18172573890a50a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a299a04a059df22bd4b7938a4ade791c3"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a299a04a059df22bd4b7938a4ade791c3"></a>
+cv::Mat&#160;</td><td class="memItemRight" valign="bottom"><b>mT12i</b></td></tr>
+<tr class="separator:a299a04a059df22bd4b7938a4ade791c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add3bff26c47ec9d454ea3efe92630e77"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="add3bff26c47ec9d454ea3efe92630e77"></a>
+cv::Mat&#160;</td><td class="memItemRight" valign="bottom"><b>mT21i</b></td></tr>
+<tr class="separator:add3bff26c47ec9d454ea3efe92630e77"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0c909819990b1b62edc9aba6c7e7d94f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0c909819990b1b62edc9aba6c7e7d94f"></a>
+std::vector&lt; bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>mvbInliersi</b></td></tr>
+<tr class="separator:a0c909819990b1b62edc9aba6c7e7d94f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abc2d59150f4f6f446032cdb6bb77ee43"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abc2d59150f4f6f446032cdb6bb77ee43"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>mnInliersi</b></td></tr>
+<tr class="separator:abc2d59150f4f6f446032cdb6bb77ee43"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2fc877cd37c96ad164bbf36f2a6cd5e9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2fc877cd37c96ad164bbf36f2a6cd5e9"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>mnIterations</b></td></tr>
+<tr class="separator:a2fc877cd37c96ad164bbf36f2a6cd5e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac2f1c6a9abd3fef76f18ab0e9665e2ea"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac2f1c6a9abd3fef76f18ab0e9665e2ea"></a>
+std::vector&lt; bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>mvbBestInliers</b></td></tr>
+<tr class="separator:ac2f1c6a9abd3fef76f18ab0e9665e2ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af19a65050bd50bcf65f7cf48683c8045"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af19a65050bd50bcf65f7cf48683c8045"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>mnBestInliers</b></td></tr>
+<tr class="separator:af19a65050bd50bcf65f7cf48683c8045"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb1eeb9e1774d656c4e8c77f5fc57539"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="adb1eeb9e1774d656c4e8c77f5fc57539"></a>
+cv::Mat&#160;</td><td class="memItemRight" valign="bottom"><b>mBestT12</b></td></tr>
+<tr class="separator:adb1eeb9e1774d656c4e8c77f5fc57539"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a69cf052880d6e926e11b74e1b59a05e0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a69cf052880d6e926e11b74e1b59a05e0"></a>
+cv::Mat&#160;</td><td class="memItemRight" valign="bottom"><b>mBestRotation</b></td></tr>
+<tr class="separator:a69cf052880d6e926e11b74e1b59a05e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9aca06ce2678d686a318266fe3262a0b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9aca06ce2678d686a318266fe3262a0b"></a>
+cv::Mat&#160;</td><td class="memItemRight" valign="bottom"><b>mBestTranslation</b></td></tr>
+<tr class="separator:a9aca06ce2678d686a318266fe3262a0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab10aee88f18c5a5b80aabb5c21a6489c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab10aee88f18c5a5b80aabb5c21a6489c"></a>
+float&#160;</td><td class="memItemRight" valign="bottom"><b>mBestScale</b></td></tr>
+<tr class="separator:ab10aee88f18c5a5b80aabb5c21a6489c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a39aa9674bb73b257e0d834cbec52acce"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a39aa9674bb73b257e0d834cbec52acce"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>mbFixScale</b></td></tr>
+<tr class="separator:a39aa9674bb73b257e0d834cbec52acce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abcc39b417f6d09e436d39712fb2a2b11"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abcc39b417f6d09e436d39712fb2a2b11"></a>
+std::vector&lt; size_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>mvAllIndices</b></td></tr>
+<tr class="separator:abcc39b417f6d09e436d39712fb2a2b11"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af39b00b7b87b0d240503884a927e5f5b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af39b00b7b87b0d240503884a927e5f5b"></a>
+std::vector&lt; cv::Mat &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>mvP1im1</b></td></tr>
+<tr class="separator:af39b00b7b87b0d240503884a927e5f5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8e6a6be273522fdeeecd9fd7d3c07b9c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8e6a6be273522fdeeecd9fd7d3c07b9c"></a>
+std::vector&lt; cv::Mat &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>mvP2im2</b></td></tr>
+<tr class="separator:a8e6a6be273522fdeeecd9fd7d3c07b9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aba7cc52c8995b747eda6fbdb02e719b9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aba7cc52c8995b747eda6fbdb02e719b9"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><b>mRansacProb</b></td></tr>
+<tr class="separator:aba7cc52c8995b747eda6fbdb02e719b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a67cd1b0b3d88691f85776f85aed0c496"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a67cd1b0b3d88691f85776f85aed0c496"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>mRansacMinInliers</b></td></tr>
+<tr class="separator:a67cd1b0b3d88691f85776f85aed0c496"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a98e30ee1a61e81e3f864b41e56eed0f6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a98e30ee1a61e81e3f864b41e56eed0f6"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>mRansacMaxIts</b></td></tr>
+<tr class="separator:a98e30ee1a61e81e3f864b41e56eed0f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad3d4d9b7d09902e156178987d5898625"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad3d4d9b7d09902e156178987d5898625"></a>
+float&#160;</td><td class="memItemRight" valign="bottom"><b>mTh</b></td></tr>
+<tr class="separator:ad3d4d9b7d09902e156178987d5898625"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ea7da2fe7cb33526dc3fd60b556cde8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9ea7da2fe7cb33526dc3fd60b556cde8"></a>
+float&#160;</td><td class="memItemRight" valign="bottom"><b>mSigma2</b></td></tr>
+<tr class="separator:a9ea7da2fe7cb33526dc3fd60b556cde8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af802b30069d1bf8d7c6236a695525a10"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af802b30069d1bf8d7c6236a695525a10"></a>
+cv::Mat&#160;</td><td class="memItemRight" valign="bottom"><b>mK1</b></td></tr>
+<tr class="separator:af802b30069d1bf8d7c6236a695525a10"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae647640668c16a2716db73a43c812e7a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae647640668c16a2716db73a43c812e7a"></a>
+cv::Mat&#160;</td><td class="memItemRight" valign="bottom"><b>mK2</b></td></tr>
+<tr class="separator:ae647640668c16a2716db73a43c812e7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock">
+<p>在文件 <a class="el" href="Sim3Solver_8h_source.html">Sim3Solver.h</a> 第 <a class="el" href="Sim3Solver_8h_source.html#l00035">35</a> 行定义.</p>
+</div><hr/>该类的文档由以下文件生成:<ul>
+<li>include/<a class="el" href="Sim3Solver_8h_source.html">Sim3Solver.h</a></li>
+<li>src/<a class="el" href="Sim3Solver_8cpp_source.html">Sim3Solver.cpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespaceORB__SLAM2.html">ORB_SLAM2</a></li><li class="navelem"><a class="el" href="classORB__SLAM2_1_1Sim3Solver.html">Sim3Solver</a></li>
+    <li class="footer">生成于 2017年 七月 18日 星期二 17:13:40 , 为 My Project使用 
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
+  </ul>
+</div>
+</body>
+</html>

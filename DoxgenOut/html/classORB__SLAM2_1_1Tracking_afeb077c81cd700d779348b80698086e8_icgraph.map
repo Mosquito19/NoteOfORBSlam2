@@ -1,0 +1,4 @@
+<map id="ORB_SLAM2::Tracking::CreateInitialMapMonocular" name="ORB_SLAM2::Tracking::CreateInitialMapMonocular">
+<area shape="rect" id="node2" href="$classORB__SLAM2_1_1Tracking.html#a7e81c68bb6ced27fcbfa2edec38ef6e0" title="单目的地图初始化 " alt="" coords="241,5,399,46"/>
+<area shape="rect" id="node3" href="$classORB__SLAM2_1_1Tracking.html#af1f2c9c533642d8c33854540e90d1918" title="Main tracking function. It is independent of the input sensor. " alt="" coords="449,5,607,46"/>
+</map>

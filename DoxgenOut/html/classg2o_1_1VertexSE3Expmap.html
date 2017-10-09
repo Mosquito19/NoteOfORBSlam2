@@ -1,0 +1,485 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.6"/>
+<title>My Project: g2o::VertexSE3Expmap类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">My Project
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.6 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="pages.html"><span>相关页面</span></a></li>
+      <li><a href="modules.html"><span>模块</span></a></li>
+      <li><a href="namespaces.html"><span>命名空间</span></a></li>
+      <li class="current"><a href="annotated.html"><span>类</span></a></li>
+      <li><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>类列表</span></a></li>
+      <li><a href="classes.html"><span>类索引</span></a></li>
+      <li><a href="inherits.html"><span>类继承关系</span></a></li>
+      <li><a href="functions.html"><span>类成员</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('classg2o_1_1VertexSE3Expmap.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>命名空间</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>友元</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>组</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>页</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="classg2o_1_1VertexSE3Expmap-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">g2o::VertexSE3Expmap类 参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>SE3 Vertex parameterized internally with a transformation matrix and externally with its exponential map.  
+ <a href="classg2o_1_1VertexSE3Expmap.html#details">更多...</a></p>
+
+<p><code>#include &lt;<a class="el" href="types__six__dof__expmap_8h_source.html">types_six_dof_expmap.h</a>&gt;</code></p>
+<div class="dynheader">
+类 g2o::VertexSE3Expmap 继承关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classg2o_1_1VertexSE3Expmap__inherit__graph.png" border="0" usemap="#g2o_1_1VertexSE3Expmap_inherit__map" alt="Inheritance graph"/></div>
+<map name="g2o_1_1VertexSE3Expmap_inherit__map" id="g2o_1_1VertexSE3Expmap_inherit__map">
+<area shape="rect" id="node2" href="classg2o_1_1BaseVertex.html" title="g2o::BaseVertex\&lt; 6,\l SE3Quat \&gt;" alt="" coords="33,262,175,303"/><area shape="rect" id="node3" href="classg2o_1_1OptimizableGraph_1_1Vertex.html" title="A general case Vertex for optimization. " alt="" coords="27,171,180,213"/><area shape="rect" id="node4" href="classg2o_1_1HyperGraph_1_1Vertex.html" title="abstract Vertex, your types must derive from that one " alt="" coords="21,96,187,123"/><area shape="rect" id="node5" href="structg2o_1_1HyperGraph_1_1HyperGraphElement.html" title="g2o::HyperGraph::HyperGraph\lElement" alt="" coords="5,6,203,47"/></map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">图例</a>]</span></center></div>
+<div class="dynheader">
+g2o::VertexSE3Expmap 的协作图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classg2o_1_1VertexSE3Expmap__coll__graph.png" border="0" usemap="#g2o_1_1VertexSE3Expmap_coll__map" alt="Collaboration graph"/></div>
+<map name="g2o_1_1VertexSE3Expmap_coll__map" id="g2o_1_1VertexSE3Expmap_coll__map">
+<area shape="rect" id="node2" href="classg2o_1_1BaseVertex.html" title="g2o::BaseVertex\&lt; 6,\l SE3Quat \&gt;" alt="" coords="1317,190,1459,231"/><area shape="rect" id="node3" href="classg2o_1_1OptimizableGraph_1_1Vertex.html" title="A general case Vertex for optimization. " alt="" coords="987,129,1141,170"/><area shape="rect" id="node6" href="classg2o_1_1CacheContainer.html" title="g2o::CacheContainer" alt="" coords="1315,91,1461,117"/><area shape="rect" id="node4" href="classg2o_1_1HyperGraph_1_1Vertex.html" title="abstract Vertex, your types must derive from that one " alt="" coords="619,5,786,32"/><area shape="rect" id="node5" href="structg2o_1_1HyperGraph_1_1HyperGraphElement.html" title="g2o::HyperGraph::HyperGraph\lElement" alt="" coords="246,29,445,70"/><area shape="rect" id="node14" href="classg2o_1_1OptimizableGraph_1_1Data.html" title="data packet for a vertex. Extend this class to store in the vertices the potential additional informa..." alt="" coords="625,95,780,137"/><area shape="rect" id="node8" href="structg2o_1_1OptimizableGraph.html" title="g2o::OptimizableGraph" alt="" coords="625,161,780,188"/><area shape="rect" id="node9" href="classg2o_1_1HyperGraph.html" title="g2o::HyperGraph" alt="" coords="285,111,406,137"/><area shape="rect" id="node10" href="classg2o_1_1JacobianWorkspace.html" title="provide memory workspace for computing the Jacobians " alt="" coords="261,161,430,188"/><area shape="rect" id="node11" href="classg2o_1_1ParameterContainer.html" title="map id to parameters " alt="" coords="262,212,429,239"/><area shape="rect" id="node13" href="classg2o_1_1OpenMPMutex.html" title="g2o::OpenMPMutex" alt="" coords="633,212,772,239"/><area shape="rect" id="node15" href="classg2o_1_1SE3Quat.html" title="g2o::SE3Quat" alt="" coords="1012,215,1116,241"/></map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">图例</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:a4f5913373d24ea5963fffc6830406a52"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4f5913373d24ea5963fffc6830406a52"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classg2o_1_1VertexSE3Expmap.html#a4f5913373d24ea5963fffc6830406a52">read</a> (std::istream &amp;is)</td></tr>
+<tr class="memdesc:a4f5913373d24ea5963fffc6830406a52"><td class="mdescLeft">&#160;</td><td class="mdescRight">read the vertex from a stream, i.e., the internal state of the vertex <br/></td></tr>
+<tr class="separator:a4f5913373d24ea5963fffc6830406a52"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0a4a06afd69669c50cf5f66c5a013e83"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0a4a06afd69669c50cf5f66c5a013e83"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classg2o_1_1VertexSE3Expmap.html#a0a4a06afd69669c50cf5f66c5a013e83">write</a> (std::ostream &amp;os) const </td></tr>
+<tr class="memdesc:a0a4a06afd69669c50cf5f66c5a013e83"><td class="mdescLeft">&#160;</td><td class="mdescRight">write the vertex to a stream <br/></td></tr>
+<tr class="separator:a0a4a06afd69669c50cf5f66c5a013e83"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0d12948c1fb058698bc58177db3806b1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0d12948c1fb058698bc58177db3806b1"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classg2o_1_1VertexSE3Expmap.html#a0d12948c1fb058698bc58177db3806b1">setToOriginImpl</a> ()</td></tr>
+<tr class="memdesc:a0d12948c1fb058698bc58177db3806b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">sets the node to the origin (used in the multilevel stuff) <br/></td></tr>
+<tr class="separator:a0d12948c1fb058698bc58177db3806b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a52592993e7ab5de6fe4bb0f9e00c4d39"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classg2o_1_1VertexSE3Expmap.html#a52592993e7ab5de6fe4bb0f9e00c4d39">oplusImpl</a> (const double *update_)</td></tr>
+<tr class="separator:a52592993e7ab5de6fe4bb0f9e00c4d39"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classg2o_1_1BaseVertex"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classg2o_1_1BaseVertex')"><img src="closed.png" alt="-"/>&#160;Public 成员函数 继承自 <a class="el" href="classg2o_1_1BaseVertex.html">g2o::BaseVertex&lt; 6, SE3Quat &gt;</a></td></tr>
+<tr class="memitem:ac591409722e675a3b69b9157fb5c7933 inherit pub_methods_classg2o_1_1BaseVertex"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac591409722e675a3b69b9157fb5c7933"></a>
+virtual const double &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>hessian</b> (int i, int j) const</td></tr>
+<tr class="memdesc:ac591409722e675a3b69b9157fb5c7933 inherit pub_methods_classg2o_1_1BaseVertex"><td class="mdescLeft">&#160;</td><td class="mdescRight">get the element from the hessian matrix <br/></td></tr>
+<tr class="separator:ac591409722e675a3b69b9157fb5c7933 inherit pub_methods_classg2o_1_1BaseVertex"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6ab2212fdb00dec460299fdbabe09cb9 inherit pub_methods_classg2o_1_1BaseVertex"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6ab2212fdb00dec460299fdbabe09cb9"></a>
+virtual double &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>hessian</b> (int i, int j)</td></tr>
+<tr class="separator:a6ab2212fdb00dec460299fdbabe09cb9 inherit pub_methods_classg2o_1_1BaseVertex"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4f302a5d56f733a93fe5e98b49a20a07 inherit pub_methods_classg2o_1_1BaseVertex"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4f302a5d56f733a93fe5e98b49a20a07"></a>
+virtual double&#160;</td><td class="memItemRight" valign="bottom"><b>hessianDeterminant</b> () const</td></tr>
+<tr class="separator:a4f302a5d56f733a93fe5e98b49a20a07 inherit pub_methods_classg2o_1_1BaseVertex"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aedf92fbb5c2c86185422a955be02a3a6 inherit pub_methods_classg2o_1_1BaseVertex"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aedf92fbb5c2c86185422a955be02a3a6"></a>
+virtual double *&#160;</td><td class="memItemRight" valign="bottom"><b>hessianData</b> ()</td></tr>
+<tr class="separator:aedf92fbb5c2c86185422a955be02a3a6 inherit pub_methods_classg2o_1_1BaseVertex"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a54227ac315e6bc75c63ed117a2c75668 inherit pub_methods_classg2o_1_1BaseVertex"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>mapHessianMemory</b> (double *d)</td></tr>
+<tr class="separator:a54227ac315e6bc75c63ed117a2c75668 inherit pub_methods_classg2o_1_1BaseVertex"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae9d3f6d4ac4effb78df958df30204c5b inherit pub_methods_classg2o_1_1BaseVertex"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><b>copyB</b> (double *b_) const</td></tr>
+<tr class="separator:ae9d3f6d4ac4effb78df958df30204c5b inherit pub_methods_classg2o_1_1BaseVertex"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae50dec87bfcb6a874ba87512c61bada7 inherit pub_methods_classg2o_1_1BaseVertex"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae50dec87bfcb6a874ba87512c61bada7"></a>
+virtual const double &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>b</b> (int i) const</td></tr>
+<tr class="memdesc:ae50dec87bfcb6a874ba87512c61bada7 inherit pub_methods_classg2o_1_1BaseVertex"><td class="mdescLeft">&#160;</td><td class="mdescRight">get the b vector element <br/></td></tr>
+<tr class="separator:ae50dec87bfcb6a874ba87512c61bada7 inherit pub_methods_classg2o_1_1BaseVertex"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5c235369ef3fb58de65b90c8cc37d611 inherit pub_methods_classg2o_1_1BaseVertex"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5c235369ef3fb58de65b90c8cc37d611"></a>
+virtual double &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>b</b> (int i)</td></tr>
+<tr class="separator:a5c235369ef3fb58de65b90c8cc37d611 inherit pub_methods_classg2o_1_1BaseVertex"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af7a70ede844ad023ba32edde16c8c745 inherit pub_methods_classg2o_1_1BaseVertex"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af7a70ede844ad023ba32edde16c8c745"></a>
+Matrix&lt; double, D, 1 &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classg2o_1_1BaseVertex.html#af7a70ede844ad023ba32edde16c8c745">b</a> ()</td></tr>
+<tr class="memdesc:af7a70ede844ad023ba32edde16c8c745 inherit pub_methods_classg2o_1_1BaseVertex"><td class="mdescLeft">&#160;</td><td class="mdescRight">return right hand side b of the constructed linear system <br/></td></tr>
+<tr class="separator:af7a70ede844ad023ba32edde16c8c745 inherit pub_methods_classg2o_1_1BaseVertex"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a209c260b9a2730a832270cf3cf7ab605 inherit pub_methods_classg2o_1_1BaseVertex"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a209c260b9a2730a832270cf3cf7ab605"></a>
+const Matrix&lt; double, D, 1 &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>b</b> () const</td></tr>
+<tr class="separator:a209c260b9a2730a832270cf3cf7ab605 inherit pub_methods_classg2o_1_1BaseVertex"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac8edea7073e5850c90b0ba37092b8f84 inherit pub_methods_classg2o_1_1BaseVertex"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac8edea7073e5850c90b0ba37092b8f84"></a>
+virtual double *&#160;</td><td class="memItemRight" valign="bottom"><b>bData</b> ()</td></tr>
+<tr class="memdesc:ac8edea7073e5850c90b0ba37092b8f84 inherit pub_methods_classg2o_1_1BaseVertex"><td class="mdescLeft">&#160;</td><td class="mdescRight">return a pointer to the b vector associated with this vertex <br/></td></tr>
+<tr class="separator:ac8edea7073e5850c90b0ba37092b8f84 inherit pub_methods_classg2o_1_1BaseVertex"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a144f99c7aa36a100dea65b30793e6d76 inherit pub_methods_classg2o_1_1BaseVertex"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>clearQuadraticForm</b> ()</td></tr>
+<tr class="separator:a144f99c7aa36a100dea65b30793e6d76 inherit pub_methods_classg2o_1_1BaseVertex"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0bbd9551b7e03f7e422169e396e8ec9b inherit pub_methods_classg2o_1_1BaseVertex"><td class="memItemLeft" align="right" valign="top">virtual double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classg2o_1_1BaseVertex.html#a0bbd9551b7e03f7e422169e396e8ec9b">solveDirect</a> (double lambda=0)</td></tr>
+<tr class="separator:a0bbd9551b7e03f7e422169e396e8ec9b inherit pub_methods_classg2o_1_1BaseVertex"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a43bcf2bb3420a0b2cb80bfd297b464a6 inherit pub_methods_classg2o_1_1BaseVertex"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a43bcf2bb3420a0b2cb80bfd297b464a6"></a>
+HessianBlockType &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classg2o_1_1BaseVertex.html#a43bcf2bb3420a0b2cb80bfd297b464a6">A</a> ()</td></tr>
+<tr class="memdesc:a43bcf2bb3420a0b2cb80bfd297b464a6 inherit pub_methods_classg2o_1_1BaseVertex"><td class="mdescLeft">&#160;</td><td class="mdescRight">return the hessian block associated with the vertex <br/></td></tr>
+<tr class="separator:a43bcf2bb3420a0b2cb80bfd297b464a6 inherit pub_methods_classg2o_1_1BaseVertex"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f5a9a5bdf0faa43b6082dc3e5a05d45 inherit pub_methods_classg2o_1_1BaseVertex"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2f5a9a5bdf0faa43b6082dc3e5a05d45"></a>
+const HessianBlockType &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>A</b> () const</td></tr>
+<tr class="separator:a2f5a9a5bdf0faa43b6082dc3e5a05d45 inherit pub_methods_classg2o_1_1BaseVertex"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae6edf93fe07aa27579a9352faa83098c inherit pub_methods_classg2o_1_1BaseVertex"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae6edf93fe07aa27579a9352faa83098c"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>push</b> ()</td></tr>
+<tr class="memdesc:ae6edf93fe07aa27579a9352faa83098c inherit pub_methods_classg2o_1_1BaseVertex"><td class="mdescLeft">&#160;</td><td class="mdescRight">backup the position of the vertex to a stack <br/></td></tr>
+<tr class="separator:ae6edf93fe07aa27579a9352faa83098c inherit pub_methods_classg2o_1_1BaseVertex"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a502bf3db2ee32061a2c8257ef81a1552 inherit pub_methods_classg2o_1_1BaseVertex"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a502bf3db2ee32061a2c8257ef81a1552"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>pop</b> ()</td></tr>
+<tr class="memdesc:a502bf3db2ee32061a2c8257ef81a1552 inherit pub_methods_classg2o_1_1BaseVertex"><td class="mdescLeft">&#160;</td><td class="mdescRight">restore the position of the vertex by retrieving the position from the stack <br/></td></tr>
+<tr class="separator:a502bf3db2ee32061a2c8257ef81a1552 inherit pub_methods_classg2o_1_1BaseVertex"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a71729c4d91044bde9bfea4c859b0c02d inherit pub_methods_classg2o_1_1BaseVertex"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a71729c4d91044bde9bfea4c859b0c02d"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>discardTop</b> ()</td></tr>
+<tr class="memdesc:a71729c4d91044bde9bfea4c859b0c02d inherit pub_methods_classg2o_1_1BaseVertex"><td class="mdescLeft">&#160;</td><td class="mdescRight">pop the last element from the stack, without restoring the current estimate <br/></td></tr>
+<tr class="separator:a71729c4d91044bde9bfea4c859b0c02d inherit pub_methods_classg2o_1_1BaseVertex"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad40208e3c8e3c221560c69af176b2eb6 inherit pub_methods_classg2o_1_1BaseVertex"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad40208e3c8e3c221560c69af176b2eb6"></a>
+virtual int&#160;</td><td class="memItemRight" valign="bottom"><b>stackSize</b> () const</td></tr>
+<tr class="memdesc:ad40208e3c8e3c221560c69af176b2eb6 inherit pub_methods_classg2o_1_1BaseVertex"><td class="mdescLeft">&#160;</td><td class="mdescRight">return the stack size <br/></td></tr>
+<tr class="separator:ad40208e3c8e3c221560c69af176b2eb6 inherit pub_methods_classg2o_1_1BaseVertex"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abb9caa0d2d00af70e95963a11ee9660a inherit pub_methods_classg2o_1_1BaseVertex"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abb9caa0d2d00af70e95963a11ee9660a"></a>
+const <a class="el" href="classg2o_1_1SE3Quat.html">EstimateType</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classg2o_1_1BaseVertex.html#abb9caa0d2d00af70e95963a11ee9660a">estimate</a> () const</td></tr>
+<tr class="memdesc:abb9caa0d2d00af70e95963a11ee9660a inherit pub_methods_classg2o_1_1BaseVertex"><td class="mdescLeft">&#160;</td><td class="mdescRight">return the current estimate of the vertex <br/></td></tr>
+<tr class="separator:abb9caa0d2d00af70e95963a11ee9660a inherit pub_methods_classg2o_1_1BaseVertex"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acb6e8e8f39caa04f62dd93a3dd400e06 inherit pub_methods_classg2o_1_1BaseVertex"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="acb6e8e8f39caa04f62dd93a3dd400e06"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classg2o_1_1BaseVertex.html#acb6e8e8f39caa04f62dd93a3dd400e06">setEstimate</a> (const <a class="el" href="classg2o_1_1SE3Quat.html">EstimateType</a> &amp;et)</td></tr>
+<tr class="memdesc:acb6e8e8f39caa04f62dd93a3dd400e06 inherit pub_methods_classg2o_1_1BaseVertex"><td class="mdescLeft">&#160;</td><td class="mdescRight">set the estimate for the vertex also calls updateCache() <br/></td></tr>
+<tr class="separator:acb6e8e8f39caa04f62dd93a3dd400e06 inherit pub_methods_classg2o_1_1BaseVertex"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classg2o_1_1OptimizableGraph_1_1Vertex"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classg2o_1_1OptimizableGraph_1_1Vertex')"><img src="closed.png" alt="-"/>&#160;Public 成员函数 继承自 <a class="el" href="classg2o_1_1OptimizableGraph_1_1Vertex.html">g2o::OptimizableGraph::Vertex</a></td></tr>
+<tr class="memitem:a39fcfce620de93375a33e7947a21770c inherit pub_methods_classg2o_1_1OptimizableGraph_1_1Vertex"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a39fcfce620de93375a33e7947a21770c"></a>
+virtual <a class="el" href="classg2o_1_1OptimizableGraph_1_1Vertex.html">Vertex</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classg2o_1_1OptimizableGraph_1_1Vertex.html#a39fcfce620de93375a33e7947a21770c">clone</a> () const </td></tr>
+<tr class="memdesc:a39fcfce620de93375a33e7947a21770c inherit pub_methods_classg2o_1_1OptimizableGraph_1_1Vertex"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns a deep copy of the current vertex <br/></td></tr>
+<tr class="separator:a39fcfce620de93375a33e7947a21770c inherit pub_methods_classg2o_1_1OptimizableGraph_1_1Vertex"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af01649f3b760b00c375bc87d8d129806 inherit pub_methods_classg2o_1_1OptimizableGraph_1_1Vertex"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af01649f3b760b00c375bc87d8d129806"></a>
+const <a class="el" href="classg2o_1_1OptimizableGraph_1_1Data.html">Data</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classg2o_1_1OptimizableGraph_1_1Vertex.html#af01649f3b760b00c375bc87d8d129806">userData</a> () const </td></tr>
+<tr class="memdesc:af01649f3b760b00c375bc87d8d129806 inherit pub_methods_classg2o_1_1OptimizableGraph_1_1Vertex"><td class="mdescLeft">&#160;</td><td class="mdescRight">the user data associated with this vertex <br/></td></tr>
+<tr class="separator:af01649f3b760b00c375bc87d8d129806 inherit pub_methods_classg2o_1_1OptimizableGraph_1_1Vertex"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a768057be134ffe93bc88b020d031eee5 inherit pub_methods_classg2o_1_1OptimizableGraph_1_1Vertex"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a768057be134ffe93bc88b020d031eee5"></a>
+<a class="el" href="classg2o_1_1OptimizableGraph_1_1Data.html">Data</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>userData</b> ()</td></tr>
+<tr class="separator:a768057be134ffe93bc88b020d031eee5 inherit pub_methods_classg2o_1_1OptimizableGraph_1_1Vertex"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a858d15a4fadebfc8bce0162ac675f608 inherit pub_methods_classg2o_1_1OptimizableGraph_1_1Vertex"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a858d15a4fadebfc8bce0162ac675f608"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setUserData</b> (<a class="el" href="classg2o_1_1OptimizableGraph_1_1Data.html">Data</a> *obs)</td></tr>
+<tr class="separator:a858d15a4fadebfc8bce0162ac675f608 inherit pub_methods_classg2o_1_1OptimizableGraph_1_1Vertex"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8f7ac810cad82a004365c1221fd16234 inherit pub_methods_classg2o_1_1OptimizableGraph_1_1Vertex"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8f7ac810cad82a004365c1221fd16234"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>addUserData</b> (<a class="el" href="classg2o_1_1OptimizableGraph_1_1Data.html">Data</a> *obs)</td></tr>
+<tr class="separator:a8f7ac810cad82a004365c1221fd16234 inherit pub_methods_classg2o_1_1OptimizableGraph_1_1Vertex"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab10678592b5e707bf4abdc0ff6b8e4bf inherit pub_methods_classg2o_1_1OptimizableGraph_1_1Vertex"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab10678592b5e707bf4abdc0ff6b8e4bf"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classg2o_1_1OptimizableGraph_1_1Vertex.html#ab10678592b5e707bf4abdc0ff6b8e4bf">setToOrigin</a> ()</td></tr>
+<tr class="memdesc:ab10678592b5e707bf4abdc0ff6b8e4bf inherit pub_methods_classg2o_1_1OptimizableGraph_1_1Vertex"><td class="mdescLeft">&#160;</td><td class="mdescRight">sets the node to the origin (used in the multilevel stuff) <br/></td></tr>
+<tr class="separator:ab10678592b5e707bf4abdc0ff6b8e4bf inherit pub_methods_classg2o_1_1OptimizableGraph_1_1Vertex"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acebbe12160c0df7c859a349781badc30 inherit pub_methods_classg2o_1_1OptimizableGraph_1_1Vertex"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classg2o_1_1OptimizableGraph_1_1Vertex.html#acebbe12160c0df7c859a349781badc30">setEstimateData</a> (const double *estimate)</td></tr>
+<tr class="separator:acebbe12160c0df7c859a349781badc30 inherit pub_methods_classg2o_1_1OptimizableGraph_1_1Vertex"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1cf16cd3b2e99169cdd6dfc139f926bc inherit pub_methods_classg2o_1_1OptimizableGraph_1_1Vertex"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classg2o_1_1OptimizableGraph_1_1Vertex.html#a1cf16cd3b2e99169cdd6dfc139f926bc">setEstimateData</a> (const std::vector&lt; double &gt; &amp;estimate)</td></tr>
+<tr class="separator:a1cf16cd3b2e99169cdd6dfc139f926bc inherit pub_methods_classg2o_1_1OptimizableGraph_1_1Vertex"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af26618ca44b64685e2ea10f263b93182 inherit pub_methods_classg2o_1_1OptimizableGraph_1_1Vertex"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classg2o_1_1OptimizableGraph_1_1Vertex.html#af26618ca44b64685e2ea10f263b93182">getEstimateData</a> (double *estimate) const </td></tr>
+<tr class="separator:af26618ca44b64685e2ea10f263b93182 inherit pub_methods_classg2o_1_1OptimizableGraph_1_1Vertex"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5664e886d4acaa3873ef9cf6ae18942d inherit pub_methods_classg2o_1_1OptimizableGraph_1_1Vertex"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classg2o_1_1OptimizableGraph_1_1Vertex.html#a5664e886d4acaa3873ef9cf6ae18942d">getEstimateData</a> (std::vector&lt; double &gt; &amp;estimate) const </td></tr>
+<tr class="separator:a5664e886d4acaa3873ef9cf6ae18942d inherit pub_methods_classg2o_1_1OptimizableGraph_1_1Vertex"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac8a19594a8356e9f104d8b383a10577e inherit pub_methods_classg2o_1_1OptimizableGraph_1_1Vertex"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classg2o_1_1OptimizableGraph_1_1Vertex.html#ac8a19594a8356e9f104d8b383a10577e">estimateDimension</a> () const </td></tr>
+<tr class="separator:ac8a19594a8356e9f104d8b383a10577e inherit pub_methods_classg2o_1_1OptimizableGraph_1_1Vertex"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a57d42a1288d7377c593c91a8cf8a754c inherit pub_methods_classg2o_1_1OptimizableGraph_1_1Vertex"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classg2o_1_1OptimizableGraph_1_1Vertex.html#a57d42a1288d7377c593c91a8cf8a754c">setMinimalEstimateData</a> (const double *estimate)</td></tr>
+<tr class="separator:a57d42a1288d7377c593c91a8cf8a754c inherit pub_methods_classg2o_1_1OptimizableGraph_1_1Vertex"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac41fda9360e81bf704681831b1df11f8 inherit pub_methods_classg2o_1_1OptimizableGraph_1_1Vertex"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classg2o_1_1OptimizableGraph_1_1Vertex.html#ac41fda9360e81bf704681831b1df11f8">setMinimalEstimateData</a> (const std::vector&lt; double &gt; &amp;estimate)</td></tr>
+<tr class="separator:ac41fda9360e81bf704681831b1df11f8 inherit pub_methods_classg2o_1_1OptimizableGraph_1_1Vertex"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aff1e498690025bb1785c6313711adc99 inherit pub_methods_classg2o_1_1OptimizableGraph_1_1Vertex"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classg2o_1_1OptimizableGraph_1_1Vertex.html#aff1e498690025bb1785c6313711adc99">getMinimalEstimateData</a> (double *estimate) const </td></tr>
+<tr class="separator:aff1e498690025bb1785c6313711adc99 inherit pub_methods_classg2o_1_1OptimizableGraph_1_1Vertex"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acd8b1349bd9149b10e58797ccdabf6c7 inherit pub_methods_classg2o_1_1OptimizableGraph_1_1Vertex"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classg2o_1_1OptimizableGraph_1_1Vertex.html#acd8b1349bd9149b10e58797ccdabf6c7">getMinimalEstimateData</a> (std::vector&lt; double &gt; &amp;estimate) const </td></tr>
+<tr class="separator:acd8b1349bd9149b10e58797ccdabf6c7 inherit pub_methods_classg2o_1_1OptimizableGraph_1_1Vertex"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7dd3638e707eaf4f7e45b9f5ba77986d inherit pub_methods_classg2o_1_1OptimizableGraph_1_1Vertex"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classg2o_1_1OptimizableGraph_1_1Vertex.html#a7dd3638e707eaf4f7e45b9f5ba77986d">minimalEstimateDimension</a> () const </td></tr>
+<tr class="separator:a7dd3638e707eaf4f7e45b9f5ba77986d inherit pub_methods_classg2o_1_1OptimizableGraph_1_1Vertex"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af4357b634cfd884cd2fa1abb05832ec8 inherit pub_methods_classg2o_1_1OptimizableGraph_1_1Vertex"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classg2o_1_1OptimizableGraph_1_1Vertex.html#af4357b634cfd884cd2fa1abb05832ec8">oplus</a> (const double *v)</td></tr>
+<tr class="separator:af4357b634cfd884cd2fa1abb05832ec8 inherit pub_methods_classg2o_1_1OptimizableGraph_1_1Vertex"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a33009d06f2d3682a3c774182c807c48a inherit pub_methods_classg2o_1_1OptimizableGraph_1_1Vertex"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a33009d06f2d3682a3c774182c807c48a"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classg2o_1_1OptimizableGraph_1_1Vertex.html#a33009d06f2d3682a3c774182c807c48a">hessianIndex</a> () const </td></tr>
+<tr class="memdesc:a33009d06f2d3682a3c774182c807c48a inherit pub_methods_classg2o_1_1OptimizableGraph_1_1Vertex"><td class="mdescLeft">&#160;</td><td class="mdescRight">temporary index of this node in the parameter vector obtained from linearization <br/></td></tr>
+<tr class="separator:a33009d06f2d3682a3c774182c807c48a inherit pub_methods_classg2o_1_1OptimizableGraph_1_1Vertex"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8f22181a161d724e95631d5da742b66a inherit pub_methods_classg2o_1_1OptimizableGraph_1_1Vertex"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8f22181a161d724e95631d5da742b66a"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>G2O_ATTRIBUTE_DEPRECATED</b> (tempIndex() const)</td></tr>
+<tr class="separator:a8f22181a161d724e95631d5da742b66a inherit pub_methods_classg2o_1_1OptimizableGraph_1_1Vertex"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a440f24c0108be5247f3529369aa1e53c inherit pub_methods_classg2o_1_1OptimizableGraph_1_1Vertex"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a440f24c0108be5247f3529369aa1e53c"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classg2o_1_1OptimizableGraph_1_1Vertex.html#a440f24c0108be5247f3529369aa1e53c">setHessianIndex</a> (int ti)</td></tr>
+<tr class="memdesc:a440f24c0108be5247f3529369aa1e53c inherit pub_methods_classg2o_1_1OptimizableGraph_1_1Vertex"><td class="mdescLeft">&#160;</td><td class="mdescRight">set the temporary index of the vertex in the parameter blocks <br/></td></tr>
+<tr class="separator:a440f24c0108be5247f3529369aa1e53c inherit pub_methods_classg2o_1_1OptimizableGraph_1_1Vertex"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abdcd545b6870b37135b055d18dae7a36 inherit pub_methods_classg2o_1_1OptimizableGraph_1_1Vertex"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abdcd545b6870b37135b055d18dae7a36"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>G2O_ATTRIBUTE_DEPRECATED</b> (setTempIndex(int ti))</td></tr>
+<tr class="separator:abdcd545b6870b37135b055d18dae7a36 inherit pub_methods_classg2o_1_1OptimizableGraph_1_1Vertex"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac83c34e6176f0cc5315ad7401a49efb3 inherit pub_methods_classg2o_1_1OptimizableGraph_1_1Vertex"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac83c34e6176f0cc5315ad7401a49efb3"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classg2o_1_1OptimizableGraph_1_1Vertex.html#ac83c34e6176f0cc5315ad7401a49efb3">fixed</a> () const </td></tr>
+<tr class="memdesc:ac83c34e6176f0cc5315ad7401a49efb3 inherit pub_methods_classg2o_1_1OptimizableGraph_1_1Vertex"><td class="mdescLeft">&#160;</td><td class="mdescRight">true =&gt; this node is fixed during the optimization <br/></td></tr>
+<tr class="separator:ac83c34e6176f0cc5315ad7401a49efb3 inherit pub_methods_classg2o_1_1OptimizableGraph_1_1Vertex"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af92ef49e1bcd6a8166afa151d367b905 inherit pub_methods_classg2o_1_1OptimizableGraph_1_1Vertex"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af92ef49e1bcd6a8166afa151d367b905"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classg2o_1_1OptimizableGraph_1_1Vertex.html#af92ef49e1bcd6a8166afa151d367b905">setFixed</a> (bool <a class="el" href="classg2o_1_1OptimizableGraph_1_1Vertex.html#ac83c34e6176f0cc5315ad7401a49efb3">fixed</a>)</td></tr>
+<tr class="memdesc:af92ef49e1bcd6a8166afa151d367b905 inherit pub_methods_classg2o_1_1OptimizableGraph_1_1Vertex"><td class="mdescLeft">&#160;</td><td class="mdescRight">true =&gt; this node should be considered fixed during the optimization <br/></td></tr>
+<tr class="separator:af92ef49e1bcd6a8166afa151d367b905 inherit pub_methods_classg2o_1_1OptimizableGraph_1_1Vertex"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a214c01f0b3cab575f3496be729f6ccb1 inherit pub_methods_classg2o_1_1OptimizableGraph_1_1Vertex"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a214c01f0b3cab575f3496be729f6ccb1"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classg2o_1_1OptimizableGraph_1_1Vertex.html#a214c01f0b3cab575f3496be729f6ccb1">marginalized</a> () const </td></tr>
+<tr class="memdesc:a214c01f0b3cab575f3496be729f6ccb1 inherit pub_methods_classg2o_1_1OptimizableGraph_1_1Vertex"><td class="mdescLeft">&#160;</td><td class="mdescRight">true =&gt; this node is marginalized out during the optimization <br/></td></tr>
+<tr class="separator:a214c01f0b3cab575f3496be729f6ccb1 inherit pub_methods_classg2o_1_1OptimizableGraph_1_1Vertex"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afabf1782886c78bf7b312bb1f2c90524 inherit pub_methods_classg2o_1_1OptimizableGraph_1_1Vertex"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afabf1782886c78bf7b312bb1f2c90524"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classg2o_1_1OptimizableGraph_1_1Vertex.html#afabf1782886c78bf7b312bb1f2c90524">setMarginalized</a> (bool <a class="el" href="classg2o_1_1OptimizableGraph_1_1Vertex.html#a214c01f0b3cab575f3496be729f6ccb1">marginalized</a>)</td></tr>
+<tr class="memdesc:afabf1782886c78bf7b312bb1f2c90524 inherit pub_methods_classg2o_1_1OptimizableGraph_1_1Vertex"><td class="mdescLeft">&#160;</td><td class="mdescRight">true =&gt; this node should be marginalized out during the optimization <br/></td></tr>
+<tr class="separator:afabf1782886c78bf7b312bb1f2c90524 inherit pub_methods_classg2o_1_1OptimizableGraph_1_1Vertex"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1037b978fec531eaf860d0037b992079 inherit pub_methods_classg2o_1_1OptimizableGraph_1_1Vertex"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1037b978fec531eaf860d0037b992079"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classg2o_1_1OptimizableGraph_1_1Vertex.html#a1037b978fec531eaf860d0037b992079">dimension</a> () const </td></tr>
+<tr class="memdesc:a1037b978fec531eaf860d0037b992079 inherit pub_methods_classg2o_1_1OptimizableGraph_1_1Vertex"><td class="mdescLeft">&#160;</td><td class="mdescRight">dimension of the estimated state belonging to this node <br/></td></tr>
+<tr class="separator:a1037b978fec531eaf860d0037b992079 inherit pub_methods_classg2o_1_1OptimizableGraph_1_1Vertex"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac57651173d6ce4bb4eebf8cb1d917551 inherit pub_methods_classg2o_1_1OptimizableGraph_1_1Vertex"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac57651173d6ce4bb4eebf8cb1d917551"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classg2o_1_1OptimizableGraph_1_1Vertex.html#ac57651173d6ce4bb4eebf8cb1d917551">setId</a> (int <a class="el" href="classg2o_1_1HyperGraph_1_1Vertex.html#ad76b71c368b71971ac5affb5d57183d3">id</a>)</td></tr>
+<tr class="memdesc:ac57651173d6ce4bb4eebf8cb1d917551 inherit pub_methods_classg2o_1_1OptimizableGraph_1_1Vertex"><td class="mdescLeft">&#160;</td><td class="mdescRight">sets the id of the node in the graph be sure that the graph keeps consistent after changing the id <br/></td></tr>
+<tr class="separator:ac57651173d6ce4bb4eebf8cb1d917551 inherit pub_methods_classg2o_1_1OptimizableGraph_1_1Vertex"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa605891d46b99ed97accf659f10bc8d5 inherit pub_methods_classg2o_1_1OptimizableGraph_1_1Vertex"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa605891d46b99ed97accf659f10bc8d5"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classg2o_1_1OptimizableGraph_1_1Vertex.html#aa605891d46b99ed97accf659f10bc8d5">setColInHessian</a> (int c)</td></tr>
+<tr class="memdesc:aa605891d46b99ed97accf659f10bc8d5 inherit pub_methods_classg2o_1_1OptimizableGraph_1_1Vertex"><td class="mdescLeft">&#160;</td><td class="mdescRight">set the row of this vertex in the Hessian <br/></td></tr>
+<tr class="separator:aa605891d46b99ed97accf659f10bc8d5 inherit pub_methods_classg2o_1_1OptimizableGraph_1_1Vertex"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9559c391b2962de131045a90815a9b5a inherit pub_methods_classg2o_1_1OptimizableGraph_1_1Vertex"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9559c391b2962de131045a90815a9b5a"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classg2o_1_1OptimizableGraph_1_1Vertex.html#a9559c391b2962de131045a90815a9b5a">colInHessian</a> () const </td></tr>
+<tr class="memdesc:a9559c391b2962de131045a90815a9b5a inherit pub_methods_classg2o_1_1OptimizableGraph_1_1Vertex"><td class="mdescLeft">&#160;</td><td class="mdescRight">get the row of this vertex in the Hessian <br/></td></tr>
+<tr class="separator:a9559c391b2962de131045a90815a9b5a inherit pub_methods_classg2o_1_1OptimizableGraph_1_1Vertex"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6dd9a3f7fd07016cdbe791e21c6d87df inherit pub_methods_classg2o_1_1OptimizableGraph_1_1Vertex"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6dd9a3f7fd07016cdbe791e21c6d87df"></a>
+const <a class="el" href="structg2o_1_1OptimizableGraph.html">OptimizableGraph</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>graph</b> () const </td></tr>
+<tr class="separator:a6dd9a3f7fd07016cdbe791e21c6d87df inherit pub_methods_classg2o_1_1OptimizableGraph_1_1Vertex"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3f845c6f0ba9a87ab15caaddba5a4037 inherit pub_methods_classg2o_1_1OptimizableGraph_1_1Vertex"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3f845c6f0ba9a87ab15caaddba5a4037"></a>
+<a class="el" href="structg2o_1_1OptimizableGraph.html">OptimizableGraph</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>graph</b> ()</td></tr>
+<tr class="separator:a3f845c6f0ba9a87ab15caaddba5a4037 inherit pub_methods_classg2o_1_1OptimizableGraph_1_1Vertex"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2eb3dbe08fd20ca8feeeaecc63ce240c inherit pub_methods_classg2o_1_1OptimizableGraph_1_1Vertex"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classg2o_1_1OptimizableGraph_1_1Vertex.html#a2eb3dbe08fd20ca8feeeaecc63ce240c">lockQuadraticForm</a> ()</td></tr>
+<tr class="separator:a2eb3dbe08fd20ca8feeeaecc63ce240c inherit pub_methods_classg2o_1_1OptimizableGraph_1_1Vertex"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5badd602625433ee1ce8e2aa7bb3b2ac inherit pub_methods_classg2o_1_1OptimizableGraph_1_1Vertex"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classg2o_1_1OptimizableGraph_1_1Vertex.html#a5badd602625433ee1ce8e2aa7bb3b2ac">unlockQuadraticForm</a> ()</td></tr>
+<tr class="separator:a5badd602625433ee1ce8e2aa7bb3b2ac inherit pub_methods_classg2o_1_1OptimizableGraph_1_1Vertex"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab5972c8ba6834c4dcb8a2319e9bf3070 inherit pub_methods_classg2o_1_1OptimizableGraph_1_1Vertex"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab5972c8ba6834c4dcb8a2319e9bf3070"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>updateCache</b> ()</td></tr>
+<tr class="separator:ab5972c8ba6834c4dcb8a2319e9bf3070 inherit pub_methods_classg2o_1_1OptimizableGraph_1_1Vertex"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab381120a2c00fc8ae90e5c298dfbb967 inherit pub_methods_classg2o_1_1OptimizableGraph_1_1Vertex"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab381120a2c00fc8ae90e5c298dfbb967"></a>
+<a class="el" href="classg2o_1_1CacheContainer.html">CacheContainer</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>cacheContainer</b> ()</td></tr>
+<tr class="separator:ab381120a2c00fc8ae90e5c298dfbb967 inherit pub_methods_classg2o_1_1OptimizableGraph_1_1Vertex"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classg2o_1_1HyperGraph_1_1Vertex"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classg2o_1_1HyperGraph_1_1Vertex')"><img src="closed.png" alt="-"/>&#160;Public 成员函数 继承自 <a class="el" href="classg2o_1_1HyperGraph_1_1Vertex.html">g2o::HyperGraph::Vertex</a></td></tr>
+<tr class="memitem:a7f2e986815608e5ac4a44671ed9794ae inherit pub_methods_classg2o_1_1HyperGraph_1_1Vertex"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7f2e986815608e5ac4a44671ed9794ae"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classg2o_1_1HyperGraph_1_1Vertex.html#a7f2e986815608e5ac4a44671ed9794ae">Vertex</a> (int <a class="el" href="classg2o_1_1HyperGraph_1_1Vertex.html#ad76b71c368b71971ac5affb5d57183d3">id</a>=-1)</td></tr>
+<tr class="memdesc:a7f2e986815608e5ac4a44671ed9794ae inherit pub_methods_classg2o_1_1HyperGraph_1_1Vertex"><td class="mdescLeft">&#160;</td><td class="mdescRight">creates a vertex having an ID specified by the argument <br/></td></tr>
+<tr class="separator:a7f2e986815608e5ac4a44671ed9794ae inherit pub_methods_classg2o_1_1HyperGraph_1_1Vertex"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad76b71c368b71971ac5affb5d57183d3 inherit pub_methods_classg2o_1_1HyperGraph_1_1Vertex"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad76b71c368b71971ac5affb5d57183d3"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classg2o_1_1HyperGraph_1_1Vertex.html#ad76b71c368b71971ac5affb5d57183d3">id</a> () const </td></tr>
+<tr class="memdesc:ad76b71c368b71971ac5affb5d57183d3 inherit pub_methods_classg2o_1_1HyperGraph_1_1Vertex"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns the id <br/></td></tr>
+<tr class="separator:ad76b71c368b71971ac5affb5d57183d3 inherit pub_methods_classg2o_1_1HyperGraph_1_1Vertex"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0805a5575511327262c89585f1953b8e inherit pub_methods_classg2o_1_1HyperGraph_1_1Vertex"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0805a5575511327262c89585f1953b8e"></a>
+const EdgeSet &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classg2o_1_1HyperGraph_1_1Vertex.html#a0805a5575511327262c89585f1953b8e">edges</a> () const </td></tr>
+<tr class="memdesc:a0805a5575511327262c89585f1953b8e inherit pub_methods_classg2o_1_1HyperGraph_1_1Vertex"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns the set of hyper-edges that are leaving/entering in this vertex <br/></td></tr>
+<tr class="separator:a0805a5575511327262c89585f1953b8e inherit pub_methods_classg2o_1_1HyperGraph_1_1Vertex"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a35cbf4ea796797bb5d9c35a41454e8fb inherit pub_methods_classg2o_1_1HyperGraph_1_1Vertex"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a35cbf4ea796797bb5d9c35a41454e8fb"></a>
+EdgeSet &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classg2o_1_1HyperGraph_1_1Vertex.html#a35cbf4ea796797bb5d9c35a41454e8fb">edges</a> ()</td></tr>
+<tr class="memdesc:a35cbf4ea796797bb5d9c35a41454e8fb inherit pub_methods_classg2o_1_1HyperGraph_1_1Vertex"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns the set of hyper-edges that are leaving/entering in this vertex <br/></td></tr>
+<tr class="separator:a35cbf4ea796797bb5d9c35a41454e8fb inherit pub_methods_classg2o_1_1HyperGraph_1_1Vertex"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0f7f29e5924b61b68b8e19ed142b68d0 inherit pub_methods_classg2o_1_1HyperGraph_1_1Vertex"><td class="memItemLeft" align="right" valign="top">virtual HyperGraphElementType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classg2o_1_1HyperGraph_1_1Vertex.html#a0f7f29e5924b61b68b8e19ed142b68d0">elementType</a> () const </td></tr>
+<tr class="separator:a0f7f29e5924b61b68b8e19ed142b68d0 inherit pub_methods_classg2o_1_1HyperGraph_1_1Vertex"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
+额外继承的成员函数</h2></td></tr>
+<tr class="inherit_header pub_types_classg2o_1_1BaseVertex"><td colspan="2" onclick="javascript:toggleInherit('pub_types_classg2o_1_1BaseVertex')"><img src="closed.png" alt="-"/>&#160;Public 类型 继承自 <a class="el" href="classg2o_1_1BaseVertex.html">g2o::BaseVertex&lt; 6, SE3Quat &gt;</a></td></tr>
+<tr class="memitem:aaffb179a0d591da4769ec7c3fc7f7daa inherit pub_types_classg2o_1_1BaseVertex"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aaffb179a0d591da4769ec7c3fc7f7daa"></a>
+typedef <a class="el" href="classg2o_1_1SE3Quat.html">SE3Quat</a>&#160;</td><td class="memItemRight" valign="bottom"><b>EstimateType</b></td></tr>
+<tr class="separator:aaffb179a0d591da4769ec7c3fc7f7daa inherit pub_types_classg2o_1_1BaseVertex"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae6632291d46b458196bdb021a6c8cba1 inherit pub_types_classg2o_1_1BaseVertex"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae6632291d46b458196bdb021a6c8cba1"></a>
+typedef std::stack<br class="typebreak"/>
+&lt; <a class="el" href="classg2o_1_1SE3Quat.html">EstimateType</a>, std::vector<br class="typebreak"/>
+&lt; <a class="el" href="classg2o_1_1SE3Quat.html">EstimateType</a>, <br class="typebreak"/>
+Eigen::aligned_allocator<br class="typebreak"/>
+&lt; <a class="el" href="classg2o_1_1SE3Quat.html">EstimateType</a> &gt; &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>BackupStackType</b></td></tr>
+<tr class="separator:ae6632291d46b458196bdb021a6c8cba1 inherit pub_types_classg2o_1_1BaseVertex"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a887928bc60710e0ec9acb269ee7411db inherit pub_types_classg2o_1_1BaseVertex"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a887928bc60710e0ec9acb269ee7411db"></a>
+typedef Eigen::Map&lt; Matrix<br class="typebreak"/>
+&lt; double, D, D &gt;, Matrix<br class="typebreak"/>
+&lt; double, D, D &gt;::Flags <br class="typebreak"/>
+&amp;AlignedBit?Aligned:Unaligned &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>HessianBlockType</b></td></tr>
+<tr class="separator:a887928bc60710e0ec9acb269ee7411db inherit pub_types_classg2o_1_1BaseVertex"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_static_attribs_classg2o_1_1BaseVertex"><td colspan="2" onclick="javascript:toggleInherit('pub_static_attribs_classg2o_1_1BaseVertex')"><img src="closed.png" alt="-"/>&#160;静态 Public 属性 继承自 <a class="el" href="classg2o_1_1BaseVertex.html">g2o::BaseVertex&lt; 6, SE3Quat &gt;</a></td></tr>
+<tr class="memitem:a9a831bfdf84cfe625d8f942bc4f1c2d1 inherit pub_static_attribs_classg2o_1_1BaseVertex"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9a831bfdf84cfe625d8f942bc4f1c2d1"></a>
+static const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classg2o_1_1BaseVertex.html#a9a831bfdf84cfe625d8f942bc4f1c2d1">Dimension</a></td></tr>
+<tr class="memdesc:a9a831bfdf84cfe625d8f942bc4f1c2d1 inherit pub_static_attribs_classg2o_1_1BaseVertex"><td class="mdescLeft">&#160;</td><td class="mdescRight">dimension of the estimate (minimal) in the manifold space <br/></td></tr>
+<tr class="separator:a9a831bfdf84cfe625d8f942bc4f1c2d1 inherit pub_static_attribs_classg2o_1_1BaseVertex"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_methods_classg2o_1_1OptimizableGraph_1_1Vertex"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classg2o_1_1OptimizableGraph_1_1Vertex')"><img src="closed.png" alt="-"/>&#160;Protected 成员函数 继承自 <a class="el" href="classg2o_1_1OptimizableGraph_1_1Vertex.html">g2o::OptimizableGraph::Vertex</a></td></tr>
+<tr class="memitem:a35ab439967fd3a3d3e5608e3883d8487 inherit pro_methods_classg2o_1_1OptimizableGraph_1_1Vertex"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classg2o_1_1OptimizableGraph_1_1Vertex.html#a35ab439967fd3a3d3e5608e3883d8487">setEstimateDataImpl</a> (const double *)</td></tr>
+<tr class="separator:a35ab439967fd3a3d3e5608e3883d8487 inherit pro_methods_classg2o_1_1OptimizableGraph_1_1Vertex"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a088ecbdde86968f3896b2320f80ee396 inherit pro_methods_classg2o_1_1OptimizableGraph_1_1Vertex"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classg2o_1_1OptimizableGraph_1_1Vertex.html#a088ecbdde86968f3896b2320f80ee396">setMinimalEstimateDataImpl</a> (const double *)</td></tr>
+<tr class="separator:a088ecbdde86968f3896b2320f80ee396 inherit pro_methods_classg2o_1_1OptimizableGraph_1_1Vertex"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_attribs_classg2o_1_1BaseVertex"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classg2o_1_1BaseVertex')"><img src="closed.png" alt="-"/>&#160;Protected 属性 继承自 <a class="el" href="classg2o_1_1BaseVertex.html">g2o::BaseVertex&lt; 6, SE3Quat &gt;</a></td></tr>
+<tr class="memitem:afaf73b0e874db76655d90bdb2f156c00 inherit pro_attribs_classg2o_1_1BaseVertex"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afaf73b0e874db76655d90bdb2f156c00"></a>
+HessianBlockType&#160;</td><td class="memItemRight" valign="bottom"><b>_hessian</b></td></tr>
+<tr class="separator:afaf73b0e874db76655d90bdb2f156c00 inherit pro_attribs_classg2o_1_1BaseVertex"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a70c672f2997275927efa49c1f5b18ac3 inherit pro_attribs_classg2o_1_1BaseVertex"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a70c672f2997275927efa49c1f5b18ac3"></a>
+Matrix&lt; double, D, 1 &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>_b</b></td></tr>
+<tr class="separator:a70c672f2997275927efa49c1f5b18ac3 inherit pro_attribs_classg2o_1_1BaseVertex"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab188c92c3e906c6e06507ae624c0e7ac inherit pro_attribs_classg2o_1_1BaseVertex"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab188c92c3e906c6e06507ae624c0e7ac"></a>
+<a class="el" href="classg2o_1_1SE3Quat.html">EstimateType</a>&#160;</td><td class="memItemRight" valign="bottom"><b>_estimate</b></td></tr>
+<tr class="separator:ab188c92c3e906c6e06507ae624c0e7ac inherit pro_attribs_classg2o_1_1BaseVertex"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a936082916993857a77c8318bc3e59d23 inherit pro_attribs_classg2o_1_1BaseVertex"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a936082916993857a77c8318bc3e59d23"></a>
+BackupStackType&#160;</td><td class="memItemRight" valign="bottom"><b>_backup</b></td></tr>
+<tr class="separator:a936082916993857a77c8318bc3e59d23 inherit pro_attribs_classg2o_1_1BaseVertex"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_attribs_classg2o_1_1OptimizableGraph_1_1Vertex"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classg2o_1_1OptimizableGraph_1_1Vertex')"><img src="closed.png" alt="-"/>&#160;Protected 属性 继承自 <a class="el" href="classg2o_1_1OptimizableGraph_1_1Vertex.html">g2o::OptimizableGraph::Vertex</a></td></tr>
+<tr class="memitem:a6e14fd3ad8e531ead03b4d83cc7362ad inherit pro_attribs_classg2o_1_1OptimizableGraph_1_1Vertex"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6e14fd3ad8e531ead03b4d83cc7362ad"></a>
+<a class="el" href="structg2o_1_1OptimizableGraph.html">OptimizableGraph</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>_graph</b></td></tr>
+<tr class="separator:a6e14fd3ad8e531ead03b4d83cc7362ad inherit pro_attribs_classg2o_1_1OptimizableGraph_1_1Vertex"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a71eb5fdfaf5c9a442135502e23504500 inherit pro_attribs_classg2o_1_1OptimizableGraph_1_1Vertex"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a71eb5fdfaf5c9a442135502e23504500"></a>
+<a class="el" href="classg2o_1_1OptimizableGraph_1_1Data.html">Data</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>_userData</b></td></tr>
+<tr class="separator:a71eb5fdfaf5c9a442135502e23504500 inherit pro_attribs_classg2o_1_1OptimizableGraph_1_1Vertex"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aebf035f2c8177b5dac1bc650e0f0cf62 inherit pro_attribs_classg2o_1_1OptimizableGraph_1_1Vertex"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aebf035f2c8177b5dac1bc650e0f0cf62"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>_hessianIndex</b></td></tr>
+<tr class="separator:aebf035f2c8177b5dac1bc650e0f0cf62 inherit pro_attribs_classg2o_1_1OptimizableGraph_1_1Vertex"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af98461471e6b58664a9fc4bba9340501 inherit pro_attribs_classg2o_1_1OptimizableGraph_1_1Vertex"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af98461471e6b58664a9fc4bba9340501"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>_fixed</b></td></tr>
+<tr class="separator:af98461471e6b58664a9fc4bba9340501 inherit pro_attribs_classg2o_1_1OptimizableGraph_1_1Vertex"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5e9b3906c8ff800b9a0b16b10ed9fff0 inherit pro_attribs_classg2o_1_1OptimizableGraph_1_1Vertex"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5e9b3906c8ff800b9a0b16b10ed9fff0"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>_marginalized</b></td></tr>
+<tr class="separator:a5e9b3906c8ff800b9a0b16b10ed9fff0 inherit pro_attribs_classg2o_1_1OptimizableGraph_1_1Vertex"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab053ffd8851cd3b0f61576ffd349d68e inherit pro_attribs_classg2o_1_1OptimizableGraph_1_1Vertex"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab053ffd8851cd3b0f61576ffd349d68e"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>_dimension</b></td></tr>
+<tr class="separator:ab053ffd8851cd3b0f61576ffd349d68e inherit pro_attribs_classg2o_1_1OptimizableGraph_1_1Vertex"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add1f5a0236a175784a824524244f7085 inherit pro_attribs_classg2o_1_1OptimizableGraph_1_1Vertex"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="add1f5a0236a175784a824524244f7085"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>_colInHessian</b></td></tr>
+<tr class="separator:add1f5a0236a175784a824524244f7085 inherit pro_attribs_classg2o_1_1OptimizableGraph_1_1Vertex"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab9b85ddb487ad4818bc53e0c00ff7bcc inherit pro_attribs_classg2o_1_1OptimizableGraph_1_1Vertex"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab9b85ddb487ad4818bc53e0c00ff7bcc"></a>
+<a class="el" href="classg2o_1_1OpenMPMutex.html">OpenMPMutex</a>&#160;</td><td class="memItemRight" valign="bottom"><b>_quadraticFormMutex</b></td></tr>
+<tr class="separator:ab9b85ddb487ad4818bc53e0c00ff7bcc inherit pro_attribs_classg2o_1_1OptimizableGraph_1_1Vertex"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6eed5b850221cd76f0af46b97860f2e8 inherit pro_attribs_classg2o_1_1OptimizableGraph_1_1Vertex"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6eed5b850221cd76f0af46b97860f2e8"></a>
+<a class="el" href="classg2o_1_1CacheContainer.html">CacheContainer</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>_cacheContainer</b></td></tr>
+<tr class="separator:a6eed5b850221cd76f0af46b97860f2e8 inherit pro_attribs_classg2o_1_1OptimizableGraph_1_1Vertex"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_attribs_classg2o_1_1HyperGraph_1_1Vertex"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classg2o_1_1HyperGraph_1_1Vertex')"><img src="closed.png" alt="-"/>&#160;Protected 属性 继承自 <a class="el" href="classg2o_1_1HyperGraph_1_1Vertex.html">g2o::HyperGraph::Vertex</a></td></tr>
+<tr class="memitem:ac643fa36a6d666d64925281b11de9b92 inherit pro_attribs_classg2o_1_1HyperGraph_1_1Vertex"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac643fa36a6d666d64925281b11de9b92"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>_id</b></td></tr>
+<tr class="separator:ac643fa36a6d666d64925281b11de9b92 inherit pro_attribs_classg2o_1_1HyperGraph_1_1Vertex"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8d732ebb72a545332a5bdc478b558430 inherit pro_attribs_classg2o_1_1HyperGraph_1_1Vertex"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8d732ebb72a545332a5bdc478b558430"></a>
+EdgeSet&#160;</td><td class="memItemRight" valign="bottom"><b>_edges</b></td></tr>
+<tr class="separator:a8d732ebb72a545332a5bdc478b558430 inherit pro_attribs_classg2o_1_1HyperGraph_1_1Vertex"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>SE3 Vertex parameterized internally with a transformation matrix and externally with its exponential map. </p>
+
+<p>在文件 <a class="el" href="types__six__dof__expmap_8h_source.html">types_six_dof_expmap.h</a> 第 <a class="el" href="types__six__dof__expmap_8h_source.html#l00061">61</a> 行定义.</p>
+</div><h2 class="groupheader">成员函数说明</h2>
+<a class="anchor" id="a52592993e7ab5de6fe4bb0f9e00c4d39"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void g2o::VertexSE3Expmap::oplusImpl </td>
+          <td>(</td>
+          <td class="paramtype">const double *&#160;</td>
+          <td class="paramname"><em>update_</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p><img class="formulaInl" alt="$ T \leftarrow exp(\hat{\xi})T $" src="form_1.png"/> </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">update_</td><td><img class="formulaInl" alt="$ \xi $" src="form_2.png"/> = [w1 w2 w3 v1 v2 v3] </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>注解</dt><dd>这里增量乘在左边 </dd></dl>
+<dl class="section see"><dt>参见</dt><dd>jlblanco2010geometry3d_techrep.pdf 10.2 <br/>
+ 左乘右乘只是每次更新得到的增量的符号是不一样的,最终结果相同 </dd></dl>
+
+<p>实现了 <a class="el" href="classg2o_1_1OptimizableGraph_1_1Vertex.html#a4537a46afb8d12c3f18c88ba9601c625">g2o::OptimizableGraph::Vertex</a>.</p>
+
+<p>在文件 <a class="el" href="types__six__dof__expmap_8h_source.html">types_six_dof_expmap.h</a> 第 <a class="el" href="types__six__dof__expmap_8h_source.html#l00082">82</a> 行定义.</p>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>Thirdparty/g2o/g2o/types/<a class="el" href="types__six__dof__expmap_8h_source.html">types_six_dof_expmap.h</a></li>
+<li>Thirdparty/g2o/g2o/types/<a class="el" href="types__six__dof__expmap_8cpp_source.html">types_six_dof_expmap.cpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><b>g2o</b></li><li class="navelem"><a class="el" href="classg2o_1_1VertexSE3Expmap.html">VertexSE3Expmap</a></li>
+    <li class="footer">生成于 2017年 七月 18日 星期二 17:13:39 , 为 My Project使用 
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
+  </ul>
+</div>
+</body>
+</html>

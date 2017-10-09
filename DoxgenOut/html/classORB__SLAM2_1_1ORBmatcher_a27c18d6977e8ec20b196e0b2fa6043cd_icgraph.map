@@ -1,0 +1,7 @@
+<map id="ORB_SLAM2::ORBmatcher::SearchByProjection" name="ORB_SLAM2::ORBmatcher::SearchByProjection">
+<area shape="rect" id="node2" href="$classORB__SLAM2_1_1LoopClosing.html#ab4fcf814eed5b5dd2aec96454561b078" title="计算当前帧与闭环帧的Sim3变换等 " alt="" coords="240,5,421,46"/>
+<area shape="rect" id="node3" href="$classORB__SLAM2_1_1Tracking.html#a451c0e5372c24645c7634fcebc8fa847" title="对Local MapPoints进行跟踪 " alt="" coords="251,70,410,111"/>
+<area shape="rect" id="node6" href="$classORB__SLAM2_1_1Tracking.html#aca19f1d69b30a6c6e49281d422ac8298" title="根据匀速度模型对上一帧的MapPoints进行跟踪 " alt="" coords="470,133,634,174"/>
+<area shape="rect" id="node4" href="$classORB__SLAM2_1_1Tracking.html#af670c614f4e10d58c9f7aad9865b5c08" title="对Local Map的MapPoints进行跟踪 " alt="" coords="473,67,631,109"/>
+<area shape="rect" id="node5" href="$classORB__SLAM2_1_1Tracking.html#af1f2c9c533642d8c33854540e90d1918" title="Main tracking function. It is independent of the input sensor. " alt="" coords="683,101,842,142"/>
+</map>

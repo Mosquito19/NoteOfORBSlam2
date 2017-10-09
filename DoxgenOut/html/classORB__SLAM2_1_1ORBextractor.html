@@ -1,0 +1,501 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.6"/>
+<title>My Project: ORB_SLAM2::ORBextractor类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">My Project
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.6 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="pages.html"><span>相关页面</span></a></li>
+      <li><a href="modules.html"><span>模块</span></a></li>
+      <li><a href="namespaces.html"><span>命名空间</span></a></li>
+      <li class="current"><a href="annotated.html"><span>类</span></a></li>
+      <li><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>类列表</span></a></li>
+      <li><a href="classes.html"><span>类索引</span></a></li>
+      <li><a href="inherits.html"><span>类继承关系</span></a></li>
+      <li><a href="functions.html"><span>类成员</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('classORB__SLAM2_1_1ORBextractor.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>命名空间</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>友元</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>组</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>页</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-types">Public 类型</a> &#124;
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pub-attribs">Public 属性</a> &#124;
+<a href="#pro-methods">Protected 成员函数</a> &#124;
+<a href="#pro-attribs">Protected 属性</a> &#124;
+<a href="classORB__SLAM2_1_1ORBextractor-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">ORB_SLAM2::ORBextractor类 参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public 类型</h2></td></tr>
+<tr class="memitem:a5f326a8b3ba190c121dcdeea1d287f69"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <b>HARRIS_SCORE</b> =0, 
+<b>FAST_SCORE</b> =1
+ }</td></tr>
+<tr class="separator:a5f326a8b3ba190c121dcdeea1d287f69"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:aaa8e010415e516246e171b9bbb9f84af"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classORB__SLAM2_1_1ORBextractor.html#aaa8e010415e516246e171b9bbb9f84af">ORBextractor</a> (int nfeatures, float scaleFactor, int nlevels, int iniThFAST, int minThFAST)</td></tr>
+<tr class="separator:aaa8e010415e516246e171b9bbb9f84af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a05117a839e4261638b0413fff2dc9e1b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classORB__SLAM2_1_1ORBextractor.html#a05117a839e4261638b0413fff2dc9e1b">operator()</a> (cv::InputArray image, cv::InputArray mask, std::vector&lt; cv::KeyPoint &gt; &amp;keypoints, cv::OutputArray descriptors)</td></tr>
+<tr class="separator:a05117a839e4261638b0413fff2dc9e1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abaad86a9c65eed8a2f8af9604b1a53ee"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abaad86a9c65eed8a2f8af9604b1a53ee"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>GetLevels</b> ()</td></tr>
+<tr class="separator:abaad86a9c65eed8a2f8af9604b1a53ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3352294ae4ae250a406140d2ae6f7286"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3352294ae4ae250a406140d2ae6f7286"></a>
+float&#160;</td><td class="memItemRight" valign="bottom"><b>GetScaleFactor</b> ()</td></tr>
+<tr class="separator:a3352294ae4ae250a406140d2ae6f7286"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a977d96ed602e3a6ff036afc2f2f213fd"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a977d96ed602e3a6ff036afc2f2f213fd"></a>
+std::vector&lt; float &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>GetScaleFactors</b> ()</td></tr>
+<tr class="separator:a977d96ed602e3a6ff036afc2f2f213fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa56b36e338372ec7cba3945c9194da4a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa56b36e338372ec7cba3945c9194da4a"></a>
+std::vector&lt; float &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>GetInverseScaleFactors</b> ()</td></tr>
+<tr class="separator:aa56b36e338372ec7cba3945c9194da4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8f574b3b1314c5aa645135cb2f3dca3c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8f574b3b1314c5aa645135cb2f3dca3c"></a>
+std::vector&lt; float &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>GetScaleSigmaSquares</b> ()</td></tr>
+<tr class="separator:a8f574b3b1314c5aa645135cb2f3dca3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1ddabdd67709d7df17000cc2966c47c7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1ddabdd67709d7df17000cc2966c47c7"></a>
+std::vector&lt; float &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>GetInverseScaleSigmaSquares</b> ()</td></tr>
+<tr class="separator:a1ddabdd67709d7df17000cc2966c47c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Public 属性</h2></td></tr>
+<tr class="memitem:a57f88e0959582dde9ae5bdee1fe3de65"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a57f88e0959582dde9ae5bdee1fe3de65"></a>
+std::vector&lt; cv::Mat &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>mvImagePyramid</b></td></tr>
+<tr class="separator:a57f88e0959582dde9ae5bdee1fe3de65"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected 成员函数</h2></td></tr>
+<tr class="memitem:a058f24d80bb0b2c7d6fc0bdd3d9144d1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classORB__SLAM2_1_1ORBextractor.html#a058f24d80bb0b2c7d6fc0bdd3d9144d1">ComputePyramid</a> (cv::Mat image)</td></tr>
+<tr class="separator:a058f24d80bb0b2c7d6fc0bdd3d9144d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a543d9b2aec1e521058ee9522937adc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classORB__SLAM2_1_1ORBextractor.html#a9a543d9b2aec1e521058ee9522937adc">ComputeKeyPointsOctTree</a> (std::vector&lt; std::vector&lt; cv::KeyPoint &gt; &gt; &amp;allKeypoints)</td></tr>
+<tr class="separator:a9a543d9b2aec1e521058ee9522937adc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac6b7b27447324af33fa60d6dc0c8ffa0"><td class="memItemLeft" align="right" valign="top">std::vector&lt; cv::KeyPoint &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classORB__SLAM2_1_1ORBextractor.html#ac6b7b27447324af33fa60d6dc0c8ffa0">DistributeOctTree</a> (const std::vector&lt; cv::KeyPoint &gt; &amp;vToDistributeKeys, const int &amp;minX, const int &amp;maxX, const int &amp;minY, const int &amp;maxY, const int &amp;nFeatures, const int &amp;level)</td></tr>
+<tr class="separator:ac6b7b27447324af33fa60d6dc0c8ffa0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a56890a2032077fbfdf48687786985548"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a56890a2032077fbfdf48687786985548"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>ComputeKeyPointsOld</b> (std::vector&lt; std::vector&lt; cv::KeyPoint &gt; &gt; &amp;allKeypoints)</td></tr>
+<tr class="separator:a56890a2032077fbfdf48687786985548"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
+Protected 属性</h2></td></tr>
+<tr class="memitem:a3a2e4f9495adf52773613987f09ae9d9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3a2e4f9495adf52773613987f09ae9d9"></a>
+std::vector&lt; cv::Point &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>pattern</b></td></tr>
+<tr class="separator:a3a2e4f9495adf52773613987f09ae9d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab74b569810b3d3288c642cc48fd65c4c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab74b569810b3d3288c642cc48fd65c4c"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>nfeatures</b></td></tr>
+<tr class="separator:ab74b569810b3d3288c642cc48fd65c4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a13b9c3883b3fb19cb756f841cb948908"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a13b9c3883b3fb19cb756f841cb948908"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><b>scaleFactor</b></td></tr>
+<tr class="separator:a13b9c3883b3fb19cb756f841cb948908"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaf5c435dfb3fb2220c3847cd5f536e2f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aaf5c435dfb3fb2220c3847cd5f536e2f"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>nlevels</b></td></tr>
+<tr class="separator:aaf5c435dfb3fb2220c3847cd5f536e2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8997b404b50b563ffd2aea6b8130dd2a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8997b404b50b563ffd2aea6b8130dd2a"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>iniThFAST</b></td></tr>
+<tr class="separator:a8997b404b50b563ffd2aea6b8130dd2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a72fcac0df56c0bfe430475082df56823"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a72fcac0df56c0bfe430475082df56823"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>minThFAST</b></td></tr>
+<tr class="separator:a72fcac0df56c0bfe430475082df56823"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2eef0343b411bff8681782115a279e2a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2eef0343b411bff8681782115a279e2a"></a>
+std::vector&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>mnFeaturesPerLevel</b></td></tr>
+<tr class="separator:a2eef0343b411bff8681782115a279e2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c75fd715b20fbaf61fce11e03729901"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8c75fd715b20fbaf61fce11e03729901"></a>
+std::vector&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>umax</b></td></tr>
+<tr class="separator:a8c75fd715b20fbaf61fce11e03729901"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9432037b97eccc06715383d8c34965e9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9432037b97eccc06715383d8c34965e9"></a>
+std::vector&lt; float &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>mvScaleFactor</b></td></tr>
+<tr class="separator:a9432037b97eccc06715383d8c34965e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7eeb10aded635b28fc49422348dc72d0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7eeb10aded635b28fc49422348dc72d0"></a>
+std::vector&lt; float &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>mvInvScaleFactor</b></td></tr>
+<tr class="separator:a7eeb10aded635b28fc49422348dc72d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f9c99c509a4d1408013e91f452ef953"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2f9c99c509a4d1408013e91f452ef953"></a>
+std::vector&lt; float &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>mvLevelSigma2</b></td></tr>
+<tr class="separator:a2f9c99c509a4d1408013e91f452ef953"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af99de18a5fa2679ff1199f42b9090bf2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af99de18a5fa2679ff1199f42b9090bf2"></a>
+std::vector&lt; float &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>mvInvLevelSigma2</b></td></tr>
+<tr class="separator:af99de18a5fa2679ff1199f42b9090bf2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock">
+<p>在文件 <a class="el" href="ORBextractor_8h_source.html">ORBextractor.h</a> 第 <a class="el" href="ORBextractor_8h_source.html#l00045">45</a> 行定义.</p>
+</div><h2 class="groupheader">构造及析构函数说明</h2>
+<a class="anchor" id="aaa8e010415e516246e171b9bbb9f84af"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ORB_SLAM2::ORBextractor::ORBextractor </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>nfeatures</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>scaleFactor</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>nlevels</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iniThFAST</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>minThFAST</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>期望的特征点数。2000*（1-1/1.2)/（1-pow(0.833,8);//60..</p>
+<p>为了计算方向。。。 </p>
+
+<p>在文件 <a class="el" href="ORBextractor_8cpp_source.html">ORBextractor.cpp</a> 第 <a class="el" href="ORBextractor_8cpp_source.html#l00435">435</a> 行定义.</p>
+
+</div>
+</div>
+<h2 class="groupheader">成员函数说明</h2>
+<a class="anchor" id="a9a543d9b2aec1e521058ee9522937adc"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ORB_SLAM2::ORBextractor::ComputeKeyPointsOctTree </td>
+          <td>(</td>
+          <td class="paramtype">std::vector&lt; std::vector&lt; cv::KeyPoint &gt; &gt; &amp;&#160;</td>
+          <td class="paramname"><em>allKeypoints</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>8层的keypoint </p>
+
+<p>在文件 <a class="el" href="ORBextractor_8cpp_source.html">ORBextractor.cpp</a> 第 <a class="el" href="ORBextractor_8cpp_source.html#l00798">798</a> 行定义.</p>
+
+<p>参考 <a class="el" href="ORBextractor_8cpp_source.html#l00565">DistributeOctTree()</a>.</p>
+
+<p>参考自 <a class="el" href="ORBextractor_8cpp_source.html#l01079">operator()()</a>.</p>
+
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classORB__SLAM2_1_1ORBextractor_a9a543d9b2aec1e521058ee9522937adc_cgraph.png" border="0" usemap="#classORB__SLAM2_1_1ORBextractor_a9a543d9b2aec1e521058ee9522937adc_cgraph" alt=""/></div>
+<map name="classORB__SLAM2_1_1ORBextractor_a9a543d9b2aec1e521058ee9522937adc_cgraph" id="classORB__SLAM2_1_1ORBextractor_a9a543d9b2aec1e521058ee9522937adc_cgraph">
+<area shape="rect" id="node2" href="classORB__SLAM2_1_1ORBextractor.html#ac6b7b27447324af33fa60d6dc0c8ffa0" title="ORB_SLAM2::ORBextractor\l::DistributeOctTree" alt="" coords="245,5,435,46"/></map>
+</div>
+</p>
+
+<p><div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classORB__SLAM2_1_1ORBextractor_a9a543d9b2aec1e521058ee9522937adc_icgraph.png" border="0" usemap="#classORB__SLAM2_1_1ORBextractor_a9a543d9b2aec1e521058ee9522937adc_icgraph" alt=""/></div>
+<map name="classORB__SLAM2_1_1ORBextractor_a9a543d9b2aec1e521058ee9522937adc_icgraph" id="classORB__SLAM2_1_1ORBextractor_a9a543d9b2aec1e521058ee9522937adc_icgraph">
+<area shape="rect" id="node2" href="classORB__SLAM2_1_1ORBextractor.html#a05117a839e4261638b0413fff2dc9e1b" title="ORB_SLAM2::ORBextractor\l::operator()" alt="" coords="245,5,435,46"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a058f24d80bb0b2c7d6fc0bdd3d9144d1"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ORB_SLAM2::ORBextractor::ComputePyramid </td>
+          <td>(</td>
+          <td class="paramtype">cv::Mat&#160;</td>
+          <td class="paramname"><em>image</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>构建图像金字塔 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">image</td><td>输入图像 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>在文件 <a class="el" href="ORBextractor_8cpp_source.html">ORBextractor.cpp</a> 第 <a class="el" href="ORBextractor_8cpp_source.html#l01149">1149</a> 行定义.</p>
+
+<p>参考自 <a class="el" href="ORBextractor_8cpp_source.html#l01079">operator()()</a>.</p>
+
+<p><div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classORB__SLAM2_1_1ORBextractor_a058f24d80bb0b2c7d6fc0bdd3d9144d1_icgraph.png" border="0" usemap="#classORB__SLAM2_1_1ORBextractor_a058f24d80bb0b2c7d6fc0bdd3d9144d1_icgraph" alt=""/></div>
+<map name="classORB__SLAM2_1_1ORBextractor_a058f24d80bb0b2c7d6fc0bdd3d9144d1_icgraph" id="classORB__SLAM2_1_1ORBextractor_a058f24d80bb0b2c7d6fc0bdd3d9144d1_icgraph">
+<area shape="rect" id="node2" href="classORB__SLAM2_1_1ORBextractor.html#a05117a839e4261638b0413fff2dc9e1b" title="ORB_SLAM2::ORBextractor\l::operator()" alt="" coords="243,5,432,46"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="ac6b7b27447324af33fa60d6dc0c8ffa0"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">vector&lt; cv::KeyPoint &gt; ORB_SLAM2::ORBextractor::DistributeOctTree </td>
+          <td>(</td>
+          <td class="paramtype">const std::vector&lt; cv::KeyPoint &gt; &amp;&#160;</td>
+          <td class="paramname"><em>vToDistributeKeys</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int &amp;&#160;</td>
+          <td class="paramname"><em>minX</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int &amp;&#160;</td>
+          <td class="paramname"><em>maxX</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int &amp;&#160;</td>
+          <td class="paramname"><em>minY</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int &amp;&#160;</td>
+          <td class="paramname"><em>maxY</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int &amp;&#160;</td>
+          <td class="paramname"><em>nFeatures</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int &amp;&#160;</td>
+          <td class="paramname"><em>level</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>x/y约等于1 </p>
+
+<p>在文件 <a class="el" href="ORBextractor_8cpp_source.html">ORBextractor.cpp</a> 第 <a class="el" href="ORBextractor_8cpp_source.html#l00565">565</a> 行定义.</p>
+
+<p>参考自 <a class="el" href="ORBextractor_8cpp_source.html#l00798">ComputeKeyPointsOctTree()</a>.</p>
+
+<p><div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classORB__SLAM2_1_1ORBextractor_ac6b7b27447324af33fa60d6dc0c8ffa0_icgraph.png" border="0" usemap="#classORB__SLAM2_1_1ORBextractor_ac6b7b27447324af33fa60d6dc0c8ffa0_icgraph" alt=""/></div>
+<map name="classORB__SLAM2_1_1ORBextractor_ac6b7b27447324af33fa60d6dc0c8ffa0_icgraph" id="classORB__SLAM2_1_1ORBextractor_ac6b7b27447324af33fa60d6dc0c8ffa0_icgraph">
+<area shape="rect" id="node2" href="classORB__SLAM2_1_1ORBextractor.html#a9a543d9b2aec1e521058ee9522937adc" title="ORB_SLAM2::ORBextractor\l::ComputeKeyPointsOctTree" alt="" coords="243,5,434,46"/><area shape="rect" id="node3" href="classORB__SLAM2_1_1ORBextractor.html#a05117a839e4261638b0413fff2dc9e1b" title="ORB_SLAM2::ORBextractor\l::operator()" alt="" coords="483,5,672,46"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a05117a839e4261638b0413fff2dc9e1b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ORB_SLAM2::ORBextractor::operator() </td>
+          <td>(</td>
+          <td class="paramtype">cv::InputArray&#160;</td>
+          <td class="paramname"><em>image</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">cv::InputArray&#160;</td>
+          <td class="paramname"><em>mask</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::vector&lt; cv::KeyPoint &gt; &amp;&#160;</td>
+          <td class="paramname"><em>keypoints</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">cv::OutputArray&#160;</td>
+          <td class="paramname"><em>descriptors</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>尺度，比如 *2,这层的所有坐标就放大两倍。。。 </p>
+
+<p>在文件 <a class="el" href="ORBextractor_8cpp_source.html">ORBextractor.cpp</a> 第 <a class="el" href="ORBextractor_8cpp_source.html#l01079">1079</a> 行定义.</p>
+
+<p>参考 <a class="el" href="ORBextractor_8cpp_source.html#l00798">ComputeKeyPointsOctTree()</a> , 以及 <a class="el" href="ORBextractor_8cpp_source.html#l01149">ComputePyramid()</a>.</p>
+
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classORB__SLAM2_1_1ORBextractor_a05117a839e4261638b0413fff2dc9e1b_cgraph.png" border="0" usemap="#classORB__SLAM2_1_1ORBextractor_a05117a839e4261638b0413fff2dc9e1b_cgraph" alt=""/></div>
+<map name="classORB__SLAM2_1_1ORBextractor_a05117a839e4261638b0413fff2dc9e1b_cgraph" id="classORB__SLAM2_1_1ORBextractor_a05117a839e4261638b0413fff2dc9e1b_cgraph">
+<area shape="rect" id="node2" href="classORB__SLAM2_1_1ORBextractor.html#a9a543d9b2aec1e521058ee9522937adc" title="ORB_SLAM2::ORBextractor\l::ComputeKeyPointsOctTree" alt="" coords="243,5,434,46"/><area shape="rect" id="node4" href="classORB__SLAM2_1_1ORBextractor.html#a058f24d80bb0b2c7d6fc0bdd3d9144d1" title="ORB_SLAM2::ORBextractor\l::ComputePyramid" alt="" coords="244,70,433,111"/><area shape="rect" id="node3" href="classORB__SLAM2_1_1ORBextractor.html#ac6b7b27447324af33fa60d6dc0c8ffa0" title="ORB_SLAM2::ORBextractor\l::DistributeOctTree" alt="" coords="483,5,672,46"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>include/<a class="el" href="ORBextractor_8h_source.html">ORBextractor.h</a></li>
+<li>src/<a class="el" href="ORBextractor_8cpp_source.html">ORBextractor.cpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespaceORB__SLAM2.html">ORB_SLAM2</a></li><li class="navelem"><a class="el" href="classORB__SLAM2_1_1ORBextractor.html">ORBextractor</a></li>
+    <li class="footer">生成于 2017年 七月 18日 星期二 17:13:40 , 为 My Project使用 
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
+  </ul>
+</div>
+</body>
+</html>

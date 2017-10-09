@@ -1,0 +1,18 @@
+<map id="Thirdparty/g2o/g2o/stuff/misc.h" name="Thirdparty/g2o/g2o/stuff/misc.h">
+<area shape="rect" id="node2" href="$block__solver_8hpp_source.html" title="Thirdparty/g2o/g2o\l/core/block_solver.hpp" alt="" coords="81,103,233,145"/>
+<area shape="rect" id="node6" href="$factory_8h_source.html" title="Thirdparty/g2o/g2o\l/core/factory.h" alt="" coords="691,103,820,145"/>
+<area shape="rect" id="node9" href="$optimizable__graph_8cpp_source.html" title="Thirdparty/g2o/g2o\l/core/optimizable_graph.cpp" alt="" coords="949,207,1133,249"/>
+<area shape="rect" id="node12" href="$optimization__algorithm__factory_8h_source.html" title="Thirdparty/g2o/g2o\l/core/optimization_algorithm\l_factory.h" alt="" coords="1109,96,1293,152"/>
+<area shape="rect" id="node14" href="$robust__kernel__factory_8h_source.html" title="Thirdparty/g2o/g2o\l/core/robust_kernel\l_factory.h" alt="" coords="1357,96,1491,152"/>
+<area shape="rect" id="node17" href="$sparse__optimizer_8cpp_source.html" title="Thirdparty/g2o/g2o\l/core/sparse_optimizer.cpp" alt="" coords="1515,103,1693,145"/>
+<area shape="rect" id="node3" href="$block__solver_8h_source.html" title="Thirdparty/g2o/g2o\l/core/block_solver.h" alt="" coords="88,207,227,249"/>
+<area shape="rect" id="node4" href="$Optimizer_8cpp_source.html" title="src/Optimizer.cpp" alt="" coords="5,319,131,345"/>
+<area shape="rect" id="node5" href="$optimization__algorithm__dogleg_8cpp_source.html" title="Thirdparty/g2o/g2o\l/core/optimization_algorithm\l_dogleg.cpp" alt="" coords="155,304,340,360"/>
+<area shape="rect" id="node7" href="$cache_8cpp_source.html" title="Thirdparty/g2o/g2o\l/core/cache.cpp" alt="" coords="251,207,380,249"/>
+<area shape="rect" id="node8" href="$factory_8cpp_source.html" title="Thirdparty/g2o/g2o\l/core/factory.cpp" alt="" coords="405,207,535,249"/>
+<area shape="rect" id="node10" href="$parameter__container_8cpp_source.html" title="Thirdparty/g2o/g2o\l/core/parameter_container.cpp" alt="" coords="559,207,757,249"/>
+<area shape="rect" id="node11" href="$types__six__dof__expmap_8cpp_source.html" title="Thirdparty/g2o/g2o\l/types/types_six_dof\l_expmap.cpp" alt="" coords="782,200,924,256"/>
+<area shape="rect" id="node13" href="$optimization__algorithm__factory_8cpp_source.html" title="Thirdparty/g2o/g2o\l/core/optimization_algorithm\l_factory.cpp" alt="" coords="1158,200,1343,256"/>
+<area shape="rect" id="node15" href="$robust__kernel__factory_8cpp_source.html" title="Thirdparty/g2o/g2o\l/core/robust_kernel\l_factory.cpp" alt="" coords="1368,200,1501,256"/>
+<area shape="rect" id="node16" href="$robust__kernel__impl_8cpp_source.html" title="Thirdparty/g2o/g2o\l/core/robust_kernel\l_impl.cpp" alt="" coords="1525,200,1659,256"/>
+</map>

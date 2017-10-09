@@ -1,0 +1,11 @@
+<map id="g2o::RobustKernelHuber::setDelta" name="g2o::RobustKernelHuber::setDelta">
+<area shape="rect" id="node2" href="$classORB__SLAM2_1_1Optimizer.html#a5e855fe6b54082739b7e7013048e6340" title="bundle adjustment Optimization " alt="" coords="220,5,385,46"/>
+<area shape="rect" id="node3" href="$classORB__SLAM2_1_1Optimizer.html#ab70e0b4f366b65a0c1ae8b2def19d339" title="Local Bundle Adjustment. " alt="" coords="219,70,386,111"/>
+<area shape="rect" id="node4" href="$classORB__SLAM2_1_1Optimizer.html#ad8fe00ad3e6564b859b07ff9e7b2224e" title="形成闭环时进行Sim3优化 " alt="" coords="220,135,385,177"/>
+<area shape="rect" id="node6" href="$classORB__SLAM2_1_1Optimizer.html#a7415d78b8a2323b88e108fa1ea3bf2d3" title="Pose Only Optimization. " alt="" coords="220,233,385,274"/>
+<area shape="rect" id="node5" href="$classORB__SLAM2_1_1LoopClosing.html#ab4fcf814eed5b5dd2aec96454561b078" title="计算当前帧与闭环帧的Sim3变换等 " alt="" coords="436,118,617,159"/>
+<area shape="rect" id="node7" href="$classORB__SLAM2_1_1Tracking.html#a737c5409c93844353561a0fe724ed1c2" title="对参考关键帧的MapPoints进行跟踪 " alt="" coords="435,183,618,225"/>
+<area shape="rect" id="node9" href="$classORB__SLAM2_1_1Tracking.html#aca19f1d69b30a6c6e49281d422ac8298" title="根据匀速度模型对上一帧的MapPoints进行跟踪 " alt="" coords="445,249,609,290"/>
+<area shape="rect" id="node10" href="$classORB__SLAM2_1_1Tracking.html#af670c614f4e10d58c9f7aad9865b5c08" title="对Local Map的MapPoints进行跟踪 " alt="" coords="447,314,606,355"/>
+<area shape="rect" id="node8" href="$classORB__SLAM2_1_1Tracking.html#af1f2c9c533642d8c33854540e90d1918" title="Main tracking function. It is independent of the input sensor. " alt="" coords="667,249,826,290"/>
+</map>

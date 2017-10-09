@@ -1,0 +1,40 @@
+<map id="ORB_SLAM2::Tracking::TrackReferenceKeyFrame" name="ORB_SLAM2::Tracking::TrackReferenceKeyFrame">
+<area shape="rect" id="node2" href="$classORB__SLAM2_1_1Frame.html#ac748d2318f9a409406dba4910ff5ef8e" title="Bag of Words Representation. " alt="" coords="238,136,474,163"/>
+<area shape="rect" id="node8" href="$classORB__SLAM2_1_1Optimizer.html#a7415d78b8a2323b88e108fa1ea3bf2d3" title="Pose Only Optimization. " alt="" coords="273,762,439,803"/>
+<area shape="rect" id="node34" href="$classORB__SLAM2_1_1Frame.html#a95cf2ea68735ef3e8c2d820eada11bf4" title="Set the camera pose. " alt="" coords="523,1287,727,1313"/>
+<area shape="rect" id="node39" href="$classORB__SLAM2_1_1ORBmatcher.html#ab38a8d3f3803e398c173ef45b25e66d8" title="通过词包，对关键帧的特征点进行跟踪 " alt="" coords="263,879,449,921"/>
+<area shape="rect" id="node3" href="$classORB__SLAM2_1_1Converter.html#abef47701eefdbc74c2c1625c140963fd" title="一个描述子矩阵到一串单行的描述子向量 " alt="" coords="542,129,709,170"/>
+<area shape="rect" id="node4" href="$classDBoW2_1_1TemplatedVocabulary.html#af9fc1935403dcaf1fd8c44d96ae3328d" title="DBoW2::TemplatedVocabulary\l::transform" alt="" coords="524,63,727,105"/>
+<area shape="rect" id="node5" href="$classDBoW2_1_1BowVector.html#a5ddf10e444d10425e5bd3568dc7ffe5e" title="DBoW2::BowVector::addIfNot\lExist" alt="" coords="782,5,981,46"/>
+<area shape="rect" id="node6" href="$classDBoW2_1_1BowVector.html#a3ac92a805b252c93dc6535240d02df47" title="DBoW2::BowVector::addWeight" alt="" coords="776,71,987,97"/>
+<area shape="rect" id="node7" href="$classDBoW2_1_1BowVector.html#acd2dd34023e3053a4cc75d70c8b6ac13" title="DBoW2::BowVector::normalize" alt="" coords="779,121,983,148"/>
+<area shape="rect" id="node9" href="$structg2o_1_1OptimizableGraph.html#a6831ed69fce3dba691f53302a2813070" title="g2o::OptimizableGraph\l::addEdge" alt="" coords="548,821,703,862"/>
+<area shape="rect" id="node17" href="$structg2o_1_1OptimizableGraph.html#ae0b93774ce1dfa0dfd501c86ad4f773e" title="g2o::OptimizableGraph\l::addVertex" alt="" coords="548,886,703,927"/>
+<area shape="rect" id="node21" href="$structg2o_1_1OptimizableGraph.html#a19e014e8ec2e9a6e894da8c3a8f8e50d" title="returns the vertex number id appropriately casted " alt="" coords="804,981,959,1022"/>
+<area shape="rect" id="node22" href="$classg2o_1_1BaseEdge.html#a7ea9406b8cc06b44433569bbd4fcefac" title="computes the chi2 based on the cached error value, only valid after computeError has been called..." alt="" coords="554,1003,697,1029"/>
+<area shape="rect" id="node23" href="$classg2o_1_1EdgeSE3ProjectXYZOnlyPose.html#a6752098d3322d30e43a6a3a668a3b009" title="g2o::EdgeSE3ProjectXYZOnly\lPose::computeError" alt="" coords="525,1105,725,1146"/>
+<area shape="rect" id="node24" href="$classg2o_1_1BaseVertex.html#abb9caa0d2d00af70e95963a11ee9660a" title="return the current estimate of the vertex " alt="" coords="793,1112,970,1139"/>
+<area shape="rect" id="node25" href="$classg2o_1_1EdgeStereoSE3ProjectXYZOnlyPose.html#af6fd2fdbdc9b4a6bcf21303ff3b8ea83" title="g2o::EdgeStereoSE3Project\lXYZOnlyPose::computeError" alt="" coords="530,1170,721,1211"/>
+<area shape="rect" id="node26" href="$classg2o_1_1HyperGraph.html#acb3391945ed7c3f09243101d9ef0aaf0" title="g2o::HyperGraph::edges" alt="" coords="543,1236,707,1263"/>
+<area shape="rect" id="node27" href="$classg2o_1_1SparseOptimizer.html#a56c0c13954ac7204cfb031c141ece9ae" title="g2o::SparseOptimizer\l::initializeOptimization" alt="" coords="806,762,957,803"/>
+<area shape="rect" id="node28" href="$classg2o_1_1SparseOptimizer.html#a098257ee6f13dbb79be07075244d9930" title="g2o::SparseOptimizer\l::optimize" alt="" coords="551,194,699,235"/>
+<area shape="rect" id="node29" href="$classg2o_1_1RobustKernelHuber.html#a7e9ee4bbc9483dcd3d10a4c1f506a4d2" title="g2o::RobustKernelHuber\l::setDelta" alt="" coords="543,259,708,301"/>
+<area shape="rect" id="node30" href="$classg2o_1_1BaseVertex.html#acb6e8e8f39caa04f62dd93a3dd400e06" title="set the estimate for the vertex also calls updateCache() " alt="" coords="527,325,724,352"/>
+<area shape="rect" id="node31" href="$classg2o_1_1OptimizableGraph_1_1Vertex.html#af92ef49e1bcd6a8166afa151d367b905" title="true =&gt; this node should be considered fixed during the optimization " alt="" coords="548,377,703,418"/>
+<area shape="rect" id="node32" href="$classg2o_1_1OptimizableGraph_1_1Vertex.html#ac57651173d6ce4bb4eebf8cb1d917551" title="sets the id of the node in the graph be sure that the graph keeps consistent after changing the id ..." alt="" coords="548,442,703,483"/>
+<area shape="rect" id="node33" href="$classg2o_1_1OptimizableGraph_1_1Edge.html#ab3e4290bc51d03ba294f36254048b15a" title="sets the level of the edge " alt="" coords="548,507,703,549"/>
+<area shape="rect" id="node36" href="$classg2o_1_1OptimizableGraph_1_1Edge.html#a42955172c19f16e2cfbb30d611d1bd87" title="g2o::OptimizableGraph\l::Edge::setRobustKernel" alt="" coords="543,573,708,614"/>
+<area shape="rect" id="node37" href="$classg2o_1_1HyperGraph_1_1Edge.html#a5e957658d6e65c49b81197d052a7f16f" title="g2o::HyperGraph::Edge\l::setVertex" alt="" coords="546,638,705,679"/>
+<area shape="rect" id="node38" href="$classORB__SLAM2_1_1Converter.html#a0b73791a3e2d90b4de41aed0ece2d0a2" title="ORB_SLAM2::Converter\l::toSE3Quat" alt="" coords="542,703,709,745"/>
+<area shape="rect" id="node10" href="$classg2o_1_1HyperGraph.html#a0f1d35009a2879b238c8148c33485c89" title="g2o::HyperGraph::addEdge" alt="" coords="791,828,971,855"/>
+<area shape="rect" id="node13" href="$classg2o_1_1JacobianWorkspace.html#a2d16ad6db1a51aa93c806cc9c06e223f" title="g2o::JacobianWorkspace\l::updateSize" alt="" coords="797,697,966,738"/>
+<area shape="rect" id="node11" href="$classg2o_1_1HyperGraph_1_1Vertex.html#a0805a5575511327262c89585f1953b8e" title="returns the set of hyper&#45;edges that are leaving/entering in this vertex " alt="" coords="1045,827,1211,869"/>
+<area shape="rect" id="node12" href="$classg2o_1_1HyperGraph_1_1Edge.html#a6410bb70a917b5407770ef1f1090b5f5" title="g2o::HyperGraph::Edge\l::vertices" alt="" coords="1049,762,1207,803"/>
+<area shape="rect" id="node14" href="$classg2o_1_1OptimizableGraph_1_1Vertex.html#a1037b978fec531eaf860d0037b992079" title="dimension of the estimated state belonging to this node " alt="" coords="1051,697,1205,738"/>
+<area shape="rect" id="node15" href="$classg2o_1_1OptimizableGraph_1_1Edge.html#a90a86891adc47a179a7cd7ef31549916" title="returns the dimensions of the error function " alt="" coords="1051,566,1205,607"/>
+<area shape="rect" id="node16" href="$classg2o_1_1HyperGraph_1_1Edge.html#aaec0b2c92c5496d0f0fea8f1abdc4311" title="g2o::HyperGraph::Edge\l::vertex" alt="" coords="1049,631,1207,673"/>
+<area shape="rect" id="node18" href="$classg2o_1_1HyperGraph.html#a7ef87ba3479827b24c6fc29c5fc3aa21" title="g2o::HyperGraph::addVertex" alt="" coords="787,929,975,956"/>
+<area shape="rect" id="node19" href="$classg2o_1_1HyperGraph_1_1Vertex.html#ad76b71c368b71971ac5affb5d57183d3" title="returns the id " alt="" coords="1035,912,1221,939"/>
+<area shape="rect" id="node20" href="$classg2o_1_1HyperGraph.html#ab07fe8bd9982a66ba34e83dff8317ea2" title="returns a vertex id in the hyper&#45;graph, or 0 if the vertex id is not present " alt="" coords="1045,967,1211,993"/>
+<area shape="rect" id="node35" href="$classORB__SLAM2_1_1Frame.html#a0a18d3024a23f6fa2cab9c7d987598c2" title="Computes rotation, translation and camera center matrices from the camera pose. " alt="" coords="783,1279,979,1321"/>
+</map>

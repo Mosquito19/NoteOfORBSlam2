@@ -1,0 +1,221 @@
+\hypertarget{classg2o_1_1OptimizationAlgorithm}{\section{g2o\-:\-:Optimization\-Algorithm类 参考}
+\label{classg2o_1_1OptimizationAlgorithm}\index{g2o\-::\-Optimization\-Algorithm@{g2o\-::\-Optimization\-Algorithm}}
+}
+
+
+Generic interface for a non-\/linear solver operating on a graph.  
+
+
+
+
+{\ttfamily \#include $<$optimization\-\_\-algorithm.\-h$>$}
+
+
+
+类 g2o\-:\-:Optimization\-Algorithm 继承关系图\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classg2o_1_1OptimizationAlgorithm__inherit__graph}
+\end{center}
+\end{figure}
+
+
+g2o\-:\-:Optimization\-Algorithm 的协作图\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classg2o_1_1OptimizationAlgorithm__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+virtual bool \hyperlink{classg2o_1_1OptimizationAlgorithm_af5b54ea6d40a8ab4c16d448ba02a0c80}{init} (bool online=false)=0
+\item 
+virtual Solver\-Result \hyperlink{classg2o_1_1OptimizationAlgorithm_ab174deeeb2551ceaf715ea09f0f9c077}{solve} (int iteration, bool online=false)=0
+\item 
+virtual bool \hyperlink{classg2o_1_1OptimizationAlgorithm_a67b159f3a83471ba9ebcc0a9162a0e23}{compute\-Marginals} (\hyperlink{classg2o_1_1SparseBlockMatrix}{Sparse\-Block\-Matrix}$<$ Matrix\-Xd $>$ \&spinv, const std\-::vector$<$ std\-::pair$<$ int, int $>$ $>$ \&block\-Indices)=0
+\item 
+virtual bool \hyperlink{classg2o_1_1OptimizationAlgorithm_a6b86c5d3c56a41c18f2aee611b62d71b}{update\-Structure} (const std\-::vector$<$ \hyperlink{classg2o_1_1HyperGraph_1_1Vertex}{Hyper\-Graph\-::\-Vertex} $\ast$ $>$ \&vset, const Hyper\-Graph\-::\-Edge\-Set \&edges)=0
+\item 
+virtual void \hyperlink{classg2o_1_1OptimizationAlgorithm_a61fe205d498ed3b0ac1f812a78c4b0f0}{print\-Verbose} (std\-::ostream \&os) const 
+\item 
+\hypertarget{classg2o_1_1OptimizationAlgorithm_ae1799d6aed633e94574072d26ed4cb4e}{const \hyperlink{classg2o_1_1SparseOptimizer}{Sparse\-Optimizer} $\ast$ \hyperlink{classg2o_1_1OptimizationAlgorithm_ae1799d6aed633e94574072d26ed4cb4e}{optimizer} () const }\label{classg2o_1_1OptimizationAlgorithm_ae1799d6aed633e94574072d26ed4cb4e}
+
+\begin{DoxyCompactList}\small\item\em return the optimizer operating on \end{DoxyCompactList}\item 
+\hypertarget{classg2o_1_1OptimizationAlgorithm_ac6ca7a2adbd25615be78316bc811a315}{\hyperlink{classg2o_1_1SparseOptimizer}{Sparse\-Optimizer} $\ast$ {\bfseries optimizer} ()}\label{classg2o_1_1OptimizationAlgorithm_ac6ca7a2adbd25615be78316bc811a315}
+
+\item 
+void \hyperlink{classg2o_1_1OptimizationAlgorithm_aff88a3dc8357c98712ff0047e601bd5e}{set\-Optimizer} (\hyperlink{classg2o_1_1SparseOptimizer}{Sparse\-Optimizer} $\ast$\hyperlink{classg2o_1_1OptimizationAlgorithm_ae1799d6aed633e94574072d26ed4cb4e}{optimizer})
+\item 
+\hypertarget{classg2o_1_1OptimizationAlgorithm_a1e03513e64271df6420ca71bc7524e67}{const \hyperlink{classg2o_1_1PropertyMap}{Property\-Map} \& \hyperlink{classg2o_1_1OptimizationAlgorithm_a1e03513e64271df6420ca71bc7524e67}{properties} () const }\label{classg2o_1_1OptimizationAlgorithm_a1e03513e64271df6420ca71bc7524e67}
+
+\begin{DoxyCompactList}\small\item\em return the properties of the solver \end{DoxyCompactList}\item 
+bool \hyperlink{classg2o_1_1OptimizationAlgorithm_aa05a6380f936c728a574c7c272bcc524}{update\-Properties\-From\-String} (const std\-::string \&prop\-String)
+\item 
+void \hyperlink{classg2o_1_1OptimizationAlgorithm_ad07be53fd879acfb919ca7d3ef73e97b}{print\-Properties} (std\-::ostream \&os) const 
+\end{DoxyCompactItemize}
+\subsection*{Protected 属性}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classg2o_1_1OptimizationAlgorithm_a6017c344be0d9f09d6674849849c6b60}{\hyperlink{classg2o_1_1SparseOptimizer}{Sparse\-Optimizer} $\ast$ \hyperlink{classg2o_1_1OptimizationAlgorithm_a6017c344be0d9f09d6674849849c6b60}{\-\_\-optimizer}}\label{classg2o_1_1OptimizationAlgorithm_a6017c344be0d9f09d6674849849c6b60}
+
+\begin{DoxyCompactList}\small\item\em the optimizer the solver is working on \end{DoxyCompactList}\item 
+\hypertarget{classg2o_1_1OptimizationAlgorithm_ae37b494f69b483a3fcafa944e987e325}{\hyperlink{classg2o_1_1PropertyMap}{Property\-Map} \hyperlink{classg2o_1_1OptimizationAlgorithm_ae37b494f69b483a3fcafa944e987e325}{\-\_\-properties}}\label{classg2o_1_1OptimizationAlgorithm_ae37b494f69b483a3fcafa944e987e325}
+
+\begin{DoxyCompactList}\small\item\em the properties of your solver, use this to store the parameters of your solver \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{详细描述}
+Generic interface for a non-\/linear solver operating on a graph. 
+
+在文件 optimization\-\_\-algorithm.\-h 第 47 行定义.
+
+
+
+\subsection{成员函数说明}
+\hypertarget{classg2o_1_1OptimizationAlgorithm_a67b159f3a83471ba9ebcc0a9162a0e23}{\index{g2o\-::\-Optimization\-Algorithm@{g2o\-::\-Optimization\-Algorithm}!compute\-Marginals@{compute\-Marginals}}
+\index{compute\-Marginals@{compute\-Marginals}!g2o::OptimizationAlgorithm@{g2o\-::\-Optimization\-Algorithm}}
+\subsubsection[{compute\-Marginals}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool g2o\-::\-Optimization\-Algorithm\-::compute\-Marginals (
+\begin{DoxyParamCaption}
+\item[{{\bf Sparse\-Block\-Matrix}$<$ Matrix\-Xd $>$ \&}]{spinv, }
+\item[{const std\-::vector$<$ std\-::pair$<$ int, int $>$ $>$ \&}]{block\-Indices}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classg2o_1_1OptimizationAlgorithm_a67b159f3a83471ba9ebcc0a9162a0e23}
+computes the block diagonal elements of the pattern specified in the input and stores them in given \hyperlink{classg2o_1_1SparseBlockMatrix}{Sparse\-Block\-Matrix}. If your solver does not support computing the marginals, return false. 
+
+在 \hyperlink{classg2o_1_1OptimizationAlgorithmWithHessian_af1959727df2b7cf233a171cfed246e9a}{g2o\-::\-Optimization\-Algorithm\-With\-Hessian} 内被实现.
+
+\hypertarget{classg2o_1_1OptimizationAlgorithm_af5b54ea6d40a8ab4c16d448ba02a0c80}{\index{g2o\-::\-Optimization\-Algorithm@{g2o\-::\-Optimization\-Algorithm}!init@{init}}
+\index{init@{init}!g2o::OptimizationAlgorithm@{g2o\-::\-Optimization\-Algorithm}}
+\subsubsection[{init}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool g2o\-::\-Optimization\-Algorithm\-::init (
+\begin{DoxyParamCaption}
+\item[{bool}]{online = {\ttfamily false}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classg2o_1_1OptimizationAlgorithm_af5b54ea6d40a8ab4c16d448ba02a0c80}
+initialize the solver, called once before the first call to \hyperlink{classg2o_1_1OptimizationAlgorithm_ab174deeeb2551ceaf715ea09f0f9c077}{solve()} 
+
+在 \hyperlink{classg2o_1_1OptimizationAlgorithmWithHessian_ae067a9c2961718dc8a37e3b8478b6d01}{g2o\-::\-Optimization\-Algorithm\-With\-Hessian} 内被实现.
+
+\hypertarget{classg2o_1_1OptimizationAlgorithm_ad07be53fd879acfb919ca7d3ef73e97b}{\index{g2o\-::\-Optimization\-Algorithm@{g2o\-::\-Optimization\-Algorithm}!print\-Properties@{print\-Properties}}
+\index{print\-Properties@{print\-Properties}!g2o::OptimizationAlgorithm@{g2o\-::\-Optimization\-Algorithm}}
+\subsubsection[{print\-Properties}]{\setlength{\rightskip}{0pt plus 5cm}void g2o\-::\-Optimization\-Algorithm\-::print\-Properties (
+\begin{DoxyParamCaption}
+\item[{std\-::ostream \&}]{os}
+\end{DoxyParamCaption}
+) const}}\label{classg2o_1_1OptimizationAlgorithm_ad07be53fd879acfb919ca7d3ef73e97b}
+print the properties to a stream in a human readable fashion 
+
+在文件 optimization\-\_\-algorithm.\-cpp 第 42 行定义.
+
+
+
+参考 \-\_\-properties.
+
+\hypertarget{classg2o_1_1OptimizationAlgorithm_a61fe205d498ed3b0ac1f812a78c4b0f0}{\index{g2o\-::\-Optimization\-Algorithm@{g2o\-::\-Optimization\-Algorithm}!print\-Verbose@{print\-Verbose}}
+\index{print\-Verbose@{print\-Verbose}!g2o::OptimizationAlgorithm@{g2o\-::\-Optimization\-Algorithm}}
+\subsubsection[{print\-Verbose}]{\setlength{\rightskip}{0pt plus 5cm}virtual void g2o\-::\-Optimization\-Algorithm\-::print\-Verbose (
+\begin{DoxyParamCaption}
+\item[{std\-::ostream \&}]{os}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classg2o_1_1OptimizationAlgorithm_a61fe205d498ed3b0ac1f812a78c4b0f0}
+called by the optimizer if verbose. re-\/implement, if you want to print something 
+
+被 \hyperlink{classg2o_1_1OptimizationAlgorithmDogleg_a9bed238c5d36c094ca10103bb1c3979e}{g2o\-::\-Optimization\-Algorithm\-Dogleg}, \hyperlink{classg2o_1_1OptimizationAlgorithmLevenberg_aed32286a2e441240f34dd5d1dbcd6d56}{g2o\-::\-Optimization\-Algorithm\-Levenberg} , 以及 \hyperlink{classg2o_1_1OptimizationAlgorithmGaussNewton_a23d9d274c44841e034a9b4c93530ee18}{g2o\-::\-Optimization\-Algorithm\-Gauss\-Newton} 重载.
+
+
+
+在文件 optimization\-\_\-algorithm.\-h 第 81 行定义.
+
+\hypertarget{classg2o_1_1OptimizationAlgorithm_aff88a3dc8357c98712ff0047e601bd5e}{\index{g2o\-::\-Optimization\-Algorithm@{g2o\-::\-Optimization\-Algorithm}!set\-Optimizer@{set\-Optimizer}}
+\index{set\-Optimizer@{set\-Optimizer}!g2o::OptimizationAlgorithm@{g2o\-::\-Optimization\-Algorithm}}
+\subsubsection[{set\-Optimizer}]{\setlength{\rightskip}{0pt plus 5cm}void g2o\-::\-Optimization\-Algorithm\-::set\-Optimizer (
+\begin{DoxyParamCaption}
+\item[{{\bf Sparse\-Optimizer} $\ast$}]{optimizer}
+\end{DoxyParamCaption}
+)}}\label{classg2o_1_1OptimizationAlgorithm_aff88a3dc8357c98712ff0047e601bd5e}
+specify on which optimizer the solver should work on 
+
+在文件 optimization\-\_\-algorithm.\-cpp 第 57 行定义.
+
+
+
+参考 \-\_\-optimizer , 以及 optimizer().
+
+
+
+函数调用图\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classg2o_1_1OptimizationAlgorithm_aff88a3dc8357c98712ff0047e601bd5e_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classg2o_1_1OptimizationAlgorithm_ab174deeeb2551ceaf715ea09f0f9c077}{\index{g2o\-::\-Optimization\-Algorithm@{g2o\-::\-Optimization\-Algorithm}!solve@{solve}}
+\index{solve@{solve}!g2o::OptimizationAlgorithm@{g2o\-::\-Optimization\-Algorithm}}
+\subsubsection[{solve}]{\setlength{\rightskip}{0pt plus 5cm}virtual Solver\-Result g2o\-::\-Optimization\-Algorithm\-::solve (
+\begin{DoxyParamCaption}
+\item[{int}]{iteration, }
+\item[{bool}]{online = {\ttfamily false}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classg2o_1_1OptimizationAlgorithm_ab174deeeb2551ceaf715ea09f0f9c077}
+Solve one iteration. The \hyperlink{classg2o_1_1SparseOptimizer}{Sparse\-Optimizer} running on-\/top will call this for the given number of iterations. 
+\begin{DoxyParams}{参数}
+{\em iteration} & indicates the current iteration \\
+\hline
+\end{DoxyParams}
+
+
+在 \hyperlink{classg2o_1_1OptimizationAlgorithmDogleg_ace62fd809c18655bd7ff104285748610}{g2o\-::\-Optimization\-Algorithm\-Dogleg}, \hyperlink{classg2o_1_1OptimizationAlgorithmLevenberg_a7140fa989b54eac4e09ba17829dcada0}{g2o\-::\-Optimization\-Algorithm\-Levenberg} , 以及 \hyperlink{classg2o_1_1OptimizationAlgorithmGaussNewton_aba0b67eecaca01c576de7e605e5af5f1}{g2o\-::\-Optimization\-Algorithm\-Gauss\-Newton} 内被实现.
+
+\hypertarget{classg2o_1_1OptimizationAlgorithm_aa05a6380f936c728a574c7c272bcc524}{\index{g2o\-::\-Optimization\-Algorithm@{g2o\-::\-Optimization\-Algorithm}!update\-Properties\-From\-String@{update\-Properties\-From\-String}}
+\index{update\-Properties\-From\-String@{update\-Properties\-From\-String}!g2o::OptimizationAlgorithm@{g2o\-::\-Optimization\-Algorithm}}
+\subsubsection[{update\-Properties\-From\-String}]{\setlength{\rightskip}{0pt plus 5cm}bool g2o\-::\-Optimization\-Algorithm\-::update\-Properties\-From\-String (
+\begin{DoxyParamCaption}
+\item[{const std\-::string \&}]{prop\-String}
+\end{DoxyParamCaption}
+)}}\label{classg2o_1_1OptimizationAlgorithm_aa05a6380f936c728a574c7c272bcc524}
+update the properties from a string, see \hyperlink{classg2o_1_1PropertyMap_a0407e6a72afafd608f13cfdffc6ffc06}{Property\-Map\-::update\-Map\-From\-String()} 
+
+在文件 optimization\-\_\-algorithm.\-cpp 第 52 行定义.
+
+
+
+参考 \-\_\-properties , 以及 g2o\-::\-Property\-Map\-::update\-Map\-From\-String().
+
+
+
+函数调用图\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classg2o_1_1OptimizationAlgorithm_aa05a6380f936c728a574c7c272bcc524_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classg2o_1_1OptimizationAlgorithm_a6b86c5d3c56a41c18f2aee611b62d71b}{\index{g2o\-::\-Optimization\-Algorithm@{g2o\-::\-Optimization\-Algorithm}!update\-Structure@{update\-Structure}}
+\index{update\-Structure@{update\-Structure}!g2o::OptimizationAlgorithm@{g2o\-::\-Optimization\-Algorithm}}
+\subsubsection[{update\-Structure}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool g2o\-::\-Optimization\-Algorithm\-::update\-Structure (
+\begin{DoxyParamCaption}
+\item[{const std\-::vector$<$ {\bf Hyper\-Graph\-::\-Vertex} $\ast$ $>$ \&}]{vset, }
+\item[{const Hyper\-Graph\-::\-Edge\-Set \&}]{edges}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classg2o_1_1OptimizationAlgorithm_a6b86c5d3c56a41c18f2aee611b62d71b}
+update the structures for online processing 
+
+在 \hyperlink{classg2o_1_1OptimizationAlgorithmWithHessian_a9ffffb2bdb70db856bccdb6774776fa3}{g2o\-::\-Optimization\-Algorithm\-With\-Hessian} 内被实现.
+
+
+
+该类的文档由以下文件生成\-:\begin{DoxyCompactItemize}
+\item 
+Thirdparty/g2o/g2o/core/optimization\-\_\-algorithm.\-h\item 
+Thirdparty/g2o/g2o/core/optimization\-\_\-algorithm.\-cpp\end{DoxyCompactItemize}

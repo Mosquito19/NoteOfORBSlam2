@@ -1,0 +1,984 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.6"/>
+<title>My Project: g2o::OptimizableGraph::Vertex类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">My Project
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.6 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="pages.html"><span>相关页面</span></a></li>
+      <li><a href="modules.html"><span>模块</span></a></li>
+      <li><a href="namespaces.html"><span>命名空间</span></a></li>
+      <li class="current"><a href="annotated.html"><span>类</span></a></li>
+      <li><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>类列表</span></a></li>
+      <li><a href="classes.html"><span>类索引</span></a></li>
+      <li><a href="inherits.html"><span>类继承关系</span></a></li>
+      <li><a href="functions.html"><span>类成员</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('classg2o_1_1OptimizableGraph_1_1Vertex.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>命名空间</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>友元</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>组</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>页</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pro-methods">Protected 成员函数</a> &#124;
+<a href="#pro-attribs">Protected 属性</a> &#124;
+<a href="#friends">友元</a> &#124;
+<a href="classg2o_1_1OptimizableGraph_1_1Vertex-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">g2o::OptimizableGraph::Vertex类 参考<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>A general case <a class="el" href="classg2o_1_1OptimizableGraph_1_1Vertex.html" title="A general case Vertex for optimization. ">Vertex</a> for optimization.  
+ <a href="classg2o_1_1OptimizableGraph_1_1Vertex.html#details">更多...</a></p>
+
+<p><code>#include &lt;<a class="el" href="optimizable__graph_8h_source.html">optimizable_graph.h</a>&gt;</code></p>
+<div class="dynheader">
+类 g2o::OptimizableGraph::Vertex 继承关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classg2o_1_1OptimizableGraph_1_1Vertex__inherit__graph.png" border="0" usemap="#g2o_1_1OptimizableGraph_1_1Vertex_inherit__map" alt="Inheritance graph"/></div>
+<map name="g2o_1_1OptimizableGraph_1_1Vertex_inherit__map" id="g2o_1_1OptimizableGraph_1_1Vertex_inherit__map">
+<area shape="rect" id="node4" href="classg2o_1_1BaseVertex.html" title="g2o::BaseVertex\&lt; 3,\l Vector3d \&gt;" alt="" coords="686,6,829,47"/><area shape="rect" id="node6" href="classg2o_1_1BaseVertex.html" title="g2o::BaseVertex\&lt; 6,\l SE3Quat \&gt;" alt="" coords="686,71,829,113"/><area shape="rect" id="node8" href="classg2o_1_1BaseVertex.html" title="g2o::BaseVertex\&lt; 7,\l Sim3 \&gt;" alt="" coords="686,137,829,178"/><area shape="rect" id="node10" href="classg2o_1_1BaseVertex.html" title="Templatized BaseVertex. " alt="" coords="673,203,842,229"/><area shape="rect" id="node2" href="classg2o_1_1HyperGraph_1_1Vertex.html" title="abstract Vertex, your types must derive from that one " alt="" coords="254,112,421,139"/><area shape="rect" id="node3" href="structg2o_1_1HyperGraph_1_1HyperGraphElement.html" title="g2o::HyperGraph::HyperGraph\lElement" alt="" coords="6,105,205,146"/><area shape="rect" id="node5" href="classg2o_1_1VertexSBAPointXYZ.html" title="Point vertex, XYZ. " alt="" coords="891,13,1063,40"/><area shape="rect" id="node7" href="classg2o_1_1VertexSE3Expmap.html" title="SE3 Vertex parameterized internally with a transformation matrix and externally with its exponential ..." alt="" coords="896,79,1059,105"/><area shape="rect" id="node9" href="classg2o_1_1VertexSim3Expmap.html" title="Sim3 Vertex, (x,y,z,qw,qx,qy,qz) the parameterization for the increments constructed is a 7d vector (..." alt="" coords="894,144,1061,171"/></map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">图例</a>]</span></center></div>
+<div class="dynheader">
+g2o::OptimizableGraph::Vertex 的协作图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classg2o_1_1OptimizableGraph_1_1Vertex__coll__graph.png" border="0" usemap="#g2o_1_1OptimizableGraph_1_1Vertex_coll__map" alt="Collaboration graph"/></div>
+<map name="g2o_1_1OptimizableGraph_1_1Vertex_coll__map" id="g2o_1_1OptimizableGraph_1_1Vertex_coll__map">
+<area shape="rect" id="node4" href="classg2o_1_1CacheContainer.html" title="g2o::CacheContainer" alt="" coords="1315,95,1461,121"/><area shape="rect" id="node2" href="classg2o_1_1HyperGraph_1_1Vertex.html" title="abstract Vertex, your types must derive from that one " alt="" coords="619,5,786,32"/><area shape="rect" id="node3" href="structg2o_1_1HyperGraph_1_1HyperGraphElement.html" title="g2o::HyperGraph::HyperGraph\lElement" alt="" coords="246,29,445,70"/><area shape="rect" id="node12" href="classg2o_1_1OptimizableGraph_1_1Data.html" title="data packet for a vertex. Extend this class to store in the vertices the potential additional informa..." alt="" coords="625,95,780,137"/><area shape="rect" id="node6" href="structg2o_1_1OptimizableGraph.html" title="g2o::OptimizableGraph" alt="" coords="625,161,780,188"/><area shape="rect" id="node7" href="classg2o_1_1HyperGraph.html" title="g2o::HyperGraph" alt="" coords="285,111,406,137"/><area shape="rect" id="node8" href="classg2o_1_1JacobianWorkspace.html" title="provide memory workspace for computing the Jacobians " alt="" coords="261,161,430,188"/><area shape="rect" id="node9" href="classg2o_1_1ParameterContainer.html" title="map id to parameters " alt="" coords="262,212,429,239"/><area shape="rect" id="node11" href="classg2o_1_1OpenMPMutex.html" title="g2o::OpenMPMutex" alt="" coords="633,212,772,239"/></map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">图例</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:a39fcfce620de93375a33e7947a21770c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a39fcfce620de93375a33e7947a21770c"></a>
+virtual <a class="el" href="classg2o_1_1OptimizableGraph_1_1Vertex.html">Vertex</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classg2o_1_1OptimizableGraph_1_1Vertex.html#a39fcfce620de93375a33e7947a21770c">clone</a> () const </td></tr>
+<tr class="memdesc:a39fcfce620de93375a33e7947a21770c"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns a deep copy of the current vertex <br/></td></tr>
+<tr class="separator:a39fcfce620de93375a33e7947a21770c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af01649f3b760b00c375bc87d8d129806"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af01649f3b760b00c375bc87d8d129806"></a>
+const <a class="el" href="classg2o_1_1OptimizableGraph_1_1Data.html">Data</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classg2o_1_1OptimizableGraph_1_1Vertex.html#af01649f3b760b00c375bc87d8d129806">userData</a> () const </td></tr>
+<tr class="memdesc:af01649f3b760b00c375bc87d8d129806"><td class="mdescLeft">&#160;</td><td class="mdescRight">the user data associated with this vertex <br/></td></tr>
+<tr class="separator:af01649f3b760b00c375bc87d8d129806"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a768057be134ffe93bc88b020d031eee5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a768057be134ffe93bc88b020d031eee5"></a>
+<a class="el" href="classg2o_1_1OptimizableGraph_1_1Data.html">Data</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>userData</b> ()</td></tr>
+<tr class="separator:a768057be134ffe93bc88b020d031eee5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a858d15a4fadebfc8bce0162ac675f608"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a858d15a4fadebfc8bce0162ac675f608"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setUserData</b> (<a class="el" href="classg2o_1_1OptimizableGraph_1_1Data.html">Data</a> *obs)</td></tr>
+<tr class="separator:a858d15a4fadebfc8bce0162ac675f608"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8f7ac810cad82a004365c1221fd16234"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8f7ac810cad82a004365c1221fd16234"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>addUserData</b> (<a class="el" href="classg2o_1_1OptimizableGraph_1_1Data.html">Data</a> *obs)</td></tr>
+<tr class="separator:a8f7ac810cad82a004365c1221fd16234"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab10678592b5e707bf4abdc0ff6b8e4bf"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab10678592b5e707bf4abdc0ff6b8e4bf"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classg2o_1_1OptimizableGraph_1_1Vertex.html#ab10678592b5e707bf4abdc0ff6b8e4bf">setToOrigin</a> ()</td></tr>
+<tr class="memdesc:ab10678592b5e707bf4abdc0ff6b8e4bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">sets the node to the origin (used in the multilevel stuff) <br/></td></tr>
+<tr class="separator:ab10678592b5e707bf4abdc0ff6b8e4bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af46fa4f0baa4c87e29b137f24e713acb"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af46fa4f0baa4c87e29b137f24e713acb"></a>
+virtual const double &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classg2o_1_1OptimizableGraph_1_1Vertex.html#af46fa4f0baa4c87e29b137f24e713acb">hessian</a> (int i, int j) const =0</td></tr>
+<tr class="memdesc:af46fa4f0baa4c87e29b137f24e713acb"><td class="mdescLeft">&#160;</td><td class="mdescRight">get the element from the hessian matrix <br/></td></tr>
+<tr class="separator:af46fa4f0baa4c87e29b137f24e713acb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ade95d46370bb9a86f64c4e591726ad62"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ade95d46370bb9a86f64c4e591726ad62"></a>
+virtual double &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>hessian</b> (int i, int j)=0</td></tr>
+<tr class="separator:ade95d46370bb9a86f64c4e591726ad62"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adaed502500d9ddc9f1721aba635da4d6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="adaed502500d9ddc9f1721aba635da4d6"></a>
+virtual double&#160;</td><td class="memItemRight" valign="bottom"><b>hessianDeterminant</b> () const =0</td></tr>
+<tr class="separator:adaed502500d9ddc9f1721aba635da4d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ec536d8c82d839e507d89c7a7e368ae"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4ec536d8c82d839e507d89c7a7e368ae"></a>
+virtual double *&#160;</td><td class="memItemRight" valign="bottom"><b>hessianData</b> ()=0</td></tr>
+<tr class="separator:a4ec536d8c82d839e507d89c7a7e368ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1008c0f7981a9fb11be3e3df5c4a9758"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classg2o_1_1OptimizableGraph_1_1Vertex.html#a1008c0f7981a9fb11be3e3df5c4a9758">mapHessianMemory</a> (double *d)=0</td></tr>
+<tr class="separator:a1008c0f7981a9fb11be3e3df5c4a9758"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af544f0050ea6e05950fd6e53931bdf61"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classg2o_1_1OptimizableGraph_1_1Vertex.html#af544f0050ea6e05950fd6e53931bdf61">copyB</a> (double *b_) const =0</td></tr>
+<tr class="separator:af544f0050ea6e05950fd6e53931bdf61"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a79afa60eb11928eeeb1b97f2d2a30732"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a79afa60eb11928eeeb1b97f2d2a30732"></a>
+virtual const double &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classg2o_1_1OptimizableGraph_1_1Vertex.html#a79afa60eb11928eeeb1b97f2d2a30732">b</a> (int i) const =0</td></tr>
+<tr class="memdesc:a79afa60eb11928eeeb1b97f2d2a30732"><td class="mdescLeft">&#160;</td><td class="mdescRight">get the b vector element <br/></td></tr>
+<tr class="separator:a79afa60eb11928eeeb1b97f2d2a30732"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af2d92761ad2732b6e9b19bd52fa2a19b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af2d92761ad2732b6e9b19bd52fa2a19b"></a>
+virtual double &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>b</b> (int i)=0</td></tr>
+<tr class="separator:af2d92761ad2732b6e9b19bd52fa2a19b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a84465a61c6d322f7d64833129cc7d55a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a84465a61c6d322f7d64833129cc7d55a"></a>
+virtual double *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classg2o_1_1OptimizableGraph_1_1Vertex.html#a84465a61c6d322f7d64833129cc7d55a">bData</a> ()=0</td></tr>
+<tr class="memdesc:a84465a61c6d322f7d64833129cc7d55a"><td class="mdescLeft">&#160;</td><td class="mdescRight">return a pointer to the b vector associated with this vertex <br/></td></tr>
+<tr class="separator:a84465a61c6d322f7d64833129cc7d55a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a803897f6bae25dece4d7e23330f0f9da"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classg2o_1_1OptimizableGraph_1_1Vertex.html#a803897f6bae25dece4d7e23330f0f9da">clearQuadraticForm</a> ()=0</td></tr>
+<tr class="separator:a803897f6bae25dece4d7e23330f0f9da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a61c4e7b7a7a61e1f287069a8cb01004f"><td class="memItemLeft" align="right" valign="top">virtual double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classg2o_1_1OptimizableGraph_1_1Vertex.html#a61c4e7b7a7a61e1f287069a8cb01004f">solveDirect</a> (double lambda=0)=0</td></tr>
+<tr class="separator:a61c4e7b7a7a61e1f287069a8cb01004f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acebbe12160c0df7c859a349781badc30"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classg2o_1_1OptimizableGraph_1_1Vertex.html#acebbe12160c0df7c859a349781badc30">setEstimateData</a> (const double *estimate)</td></tr>
+<tr class="separator:acebbe12160c0df7c859a349781badc30"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1cf16cd3b2e99169cdd6dfc139f926bc"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classg2o_1_1OptimizableGraph_1_1Vertex.html#a1cf16cd3b2e99169cdd6dfc139f926bc">setEstimateData</a> (const std::vector&lt; double &gt; &amp;estimate)</td></tr>
+<tr class="separator:a1cf16cd3b2e99169cdd6dfc139f926bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af26618ca44b64685e2ea10f263b93182"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classg2o_1_1OptimizableGraph_1_1Vertex.html#af26618ca44b64685e2ea10f263b93182">getEstimateData</a> (double *estimate) const </td></tr>
+<tr class="separator:af26618ca44b64685e2ea10f263b93182"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5664e886d4acaa3873ef9cf6ae18942d"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classg2o_1_1OptimizableGraph_1_1Vertex.html#a5664e886d4acaa3873ef9cf6ae18942d">getEstimateData</a> (std::vector&lt; double &gt; &amp;estimate) const </td></tr>
+<tr class="separator:a5664e886d4acaa3873ef9cf6ae18942d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac8a19594a8356e9f104d8b383a10577e"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classg2o_1_1OptimizableGraph_1_1Vertex.html#ac8a19594a8356e9f104d8b383a10577e">estimateDimension</a> () const </td></tr>
+<tr class="separator:ac8a19594a8356e9f104d8b383a10577e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a57d42a1288d7377c593c91a8cf8a754c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classg2o_1_1OptimizableGraph_1_1Vertex.html#a57d42a1288d7377c593c91a8cf8a754c">setMinimalEstimateData</a> (const double *estimate)</td></tr>
+<tr class="separator:a57d42a1288d7377c593c91a8cf8a754c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac41fda9360e81bf704681831b1df11f8"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classg2o_1_1OptimizableGraph_1_1Vertex.html#ac41fda9360e81bf704681831b1df11f8">setMinimalEstimateData</a> (const std::vector&lt; double &gt; &amp;estimate)</td></tr>
+<tr class="separator:ac41fda9360e81bf704681831b1df11f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aff1e498690025bb1785c6313711adc99"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classg2o_1_1OptimizableGraph_1_1Vertex.html#aff1e498690025bb1785c6313711adc99">getMinimalEstimateData</a> (double *estimate) const </td></tr>
+<tr class="separator:aff1e498690025bb1785c6313711adc99"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acd8b1349bd9149b10e58797ccdabf6c7"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classg2o_1_1OptimizableGraph_1_1Vertex.html#acd8b1349bd9149b10e58797ccdabf6c7">getMinimalEstimateData</a> (std::vector&lt; double &gt; &amp;estimate) const </td></tr>
+<tr class="separator:acd8b1349bd9149b10e58797ccdabf6c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7dd3638e707eaf4f7e45b9f5ba77986d"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classg2o_1_1OptimizableGraph_1_1Vertex.html#a7dd3638e707eaf4f7e45b9f5ba77986d">minimalEstimateDimension</a> () const </td></tr>
+<tr class="separator:a7dd3638e707eaf4f7e45b9f5ba77986d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa477ed33d30a01ed468f33bb2a2f2d9d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa477ed33d30a01ed468f33bb2a2f2d9d"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classg2o_1_1OptimizableGraph_1_1Vertex.html#aa477ed33d30a01ed468f33bb2a2f2d9d">push</a> ()=0</td></tr>
+<tr class="memdesc:aa477ed33d30a01ed468f33bb2a2f2d9d"><td class="mdescLeft">&#160;</td><td class="mdescRight">backup the position of the vertex to a stack <br/></td></tr>
+<tr class="separator:aa477ed33d30a01ed468f33bb2a2f2d9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3e36d925dbda1c574a285826ade5909a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3e36d925dbda1c574a285826ade5909a"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classg2o_1_1OptimizableGraph_1_1Vertex.html#a3e36d925dbda1c574a285826ade5909a">pop</a> ()=0</td></tr>
+<tr class="memdesc:a3e36d925dbda1c574a285826ade5909a"><td class="mdescLeft">&#160;</td><td class="mdescRight">restore the position of the vertex by retrieving the position from the stack <br/></td></tr>
+<tr class="separator:a3e36d925dbda1c574a285826ade5909a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9509fb5c333988911312fc3d9187a9c3"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9509fb5c333988911312fc3d9187a9c3"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classg2o_1_1OptimizableGraph_1_1Vertex.html#a9509fb5c333988911312fc3d9187a9c3">discardTop</a> ()=0</td></tr>
+<tr class="memdesc:a9509fb5c333988911312fc3d9187a9c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">pop the last element from the stack, without restoring the current estimate <br/></td></tr>
+<tr class="separator:a9509fb5c333988911312fc3d9187a9c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0a4ecc894d008d9c3806a3660e7dfe6f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0a4ecc894d008d9c3806a3660e7dfe6f"></a>
+virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classg2o_1_1OptimizableGraph_1_1Vertex.html#a0a4ecc894d008d9c3806a3660e7dfe6f">stackSize</a> () const =0</td></tr>
+<tr class="memdesc:a0a4ecc894d008d9c3806a3660e7dfe6f"><td class="mdescLeft">&#160;</td><td class="mdescRight">return the stack size <br/></td></tr>
+<tr class="separator:a0a4ecc894d008d9c3806a3660e7dfe6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af4357b634cfd884cd2fa1abb05832ec8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classg2o_1_1OptimizableGraph_1_1Vertex.html#af4357b634cfd884cd2fa1abb05832ec8">oplus</a> (const double *v)</td></tr>
+<tr class="separator:af4357b634cfd884cd2fa1abb05832ec8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a33009d06f2d3682a3c774182c807c48a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a33009d06f2d3682a3c774182c807c48a"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classg2o_1_1OptimizableGraph_1_1Vertex.html#a33009d06f2d3682a3c774182c807c48a">hessianIndex</a> () const </td></tr>
+<tr class="memdesc:a33009d06f2d3682a3c774182c807c48a"><td class="mdescLeft">&#160;</td><td class="mdescRight">temporary index of this node in the parameter vector obtained from linearization <br/></td></tr>
+<tr class="separator:a33009d06f2d3682a3c774182c807c48a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8f22181a161d724e95631d5da742b66a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8f22181a161d724e95631d5da742b66a"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>G2O_ATTRIBUTE_DEPRECATED</b> (tempIndex() const)</td></tr>
+<tr class="separator:a8f22181a161d724e95631d5da742b66a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a440f24c0108be5247f3529369aa1e53c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a440f24c0108be5247f3529369aa1e53c"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classg2o_1_1OptimizableGraph_1_1Vertex.html#a440f24c0108be5247f3529369aa1e53c">setHessianIndex</a> (int ti)</td></tr>
+<tr class="memdesc:a440f24c0108be5247f3529369aa1e53c"><td class="mdescLeft">&#160;</td><td class="mdescRight">set the temporary index of the vertex in the parameter blocks <br/></td></tr>
+<tr class="separator:a440f24c0108be5247f3529369aa1e53c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abdcd545b6870b37135b055d18dae7a36"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abdcd545b6870b37135b055d18dae7a36"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>G2O_ATTRIBUTE_DEPRECATED</b> (setTempIndex(int ti))</td></tr>
+<tr class="separator:abdcd545b6870b37135b055d18dae7a36"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac83c34e6176f0cc5315ad7401a49efb3"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac83c34e6176f0cc5315ad7401a49efb3"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classg2o_1_1OptimizableGraph_1_1Vertex.html#ac83c34e6176f0cc5315ad7401a49efb3">fixed</a> () const </td></tr>
+<tr class="memdesc:ac83c34e6176f0cc5315ad7401a49efb3"><td class="mdescLeft">&#160;</td><td class="mdescRight">true =&gt; this node is fixed during the optimization <br/></td></tr>
+<tr class="separator:ac83c34e6176f0cc5315ad7401a49efb3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af92ef49e1bcd6a8166afa151d367b905"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af92ef49e1bcd6a8166afa151d367b905"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classg2o_1_1OptimizableGraph_1_1Vertex.html#af92ef49e1bcd6a8166afa151d367b905">setFixed</a> (bool <a class="el" href="classg2o_1_1OptimizableGraph_1_1Vertex.html#ac83c34e6176f0cc5315ad7401a49efb3">fixed</a>)</td></tr>
+<tr class="memdesc:af92ef49e1bcd6a8166afa151d367b905"><td class="mdescLeft">&#160;</td><td class="mdescRight">true =&gt; this node should be considered fixed during the optimization <br/></td></tr>
+<tr class="separator:af92ef49e1bcd6a8166afa151d367b905"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a214c01f0b3cab575f3496be729f6ccb1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a214c01f0b3cab575f3496be729f6ccb1"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classg2o_1_1OptimizableGraph_1_1Vertex.html#a214c01f0b3cab575f3496be729f6ccb1">marginalized</a> () const </td></tr>
+<tr class="memdesc:a214c01f0b3cab575f3496be729f6ccb1"><td class="mdescLeft">&#160;</td><td class="mdescRight">true =&gt; this node is marginalized out during the optimization <br/></td></tr>
+<tr class="separator:a214c01f0b3cab575f3496be729f6ccb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afabf1782886c78bf7b312bb1f2c90524"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afabf1782886c78bf7b312bb1f2c90524"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classg2o_1_1OptimizableGraph_1_1Vertex.html#afabf1782886c78bf7b312bb1f2c90524">setMarginalized</a> (bool <a class="el" href="classg2o_1_1OptimizableGraph_1_1Vertex.html#a214c01f0b3cab575f3496be729f6ccb1">marginalized</a>)</td></tr>
+<tr class="memdesc:afabf1782886c78bf7b312bb1f2c90524"><td class="mdescLeft">&#160;</td><td class="mdescRight">true =&gt; this node should be marginalized out during the optimization <br/></td></tr>
+<tr class="separator:afabf1782886c78bf7b312bb1f2c90524"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1037b978fec531eaf860d0037b992079"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1037b978fec531eaf860d0037b992079"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classg2o_1_1OptimizableGraph_1_1Vertex.html#a1037b978fec531eaf860d0037b992079">dimension</a> () const </td></tr>
+<tr class="memdesc:a1037b978fec531eaf860d0037b992079"><td class="mdescLeft">&#160;</td><td class="mdescRight">dimension of the estimated state belonging to this node <br/></td></tr>
+<tr class="separator:a1037b978fec531eaf860d0037b992079"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac57651173d6ce4bb4eebf8cb1d917551"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac57651173d6ce4bb4eebf8cb1d917551"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classg2o_1_1OptimizableGraph_1_1Vertex.html#ac57651173d6ce4bb4eebf8cb1d917551">setId</a> (int <a class="el" href="classg2o_1_1HyperGraph_1_1Vertex.html#ad76b71c368b71971ac5affb5d57183d3">id</a>)</td></tr>
+<tr class="memdesc:ac57651173d6ce4bb4eebf8cb1d917551"><td class="mdescLeft">&#160;</td><td class="mdescRight">sets the id of the node in the graph be sure that the graph keeps consistent after changing the id <br/></td></tr>
+<tr class="separator:ac57651173d6ce4bb4eebf8cb1d917551"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa605891d46b99ed97accf659f10bc8d5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa605891d46b99ed97accf659f10bc8d5"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classg2o_1_1OptimizableGraph_1_1Vertex.html#aa605891d46b99ed97accf659f10bc8d5">setColInHessian</a> (int c)</td></tr>
+<tr class="memdesc:aa605891d46b99ed97accf659f10bc8d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">set the row of this vertex in the Hessian <br/></td></tr>
+<tr class="separator:aa605891d46b99ed97accf659f10bc8d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9559c391b2962de131045a90815a9b5a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9559c391b2962de131045a90815a9b5a"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classg2o_1_1OptimizableGraph_1_1Vertex.html#a9559c391b2962de131045a90815a9b5a">colInHessian</a> () const </td></tr>
+<tr class="memdesc:a9559c391b2962de131045a90815a9b5a"><td class="mdescLeft">&#160;</td><td class="mdescRight">get the row of this vertex in the Hessian <br/></td></tr>
+<tr class="separator:a9559c391b2962de131045a90815a9b5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6dd9a3f7fd07016cdbe791e21c6d87df"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6dd9a3f7fd07016cdbe791e21c6d87df"></a>
+const <a class="el" href="structg2o_1_1OptimizableGraph.html">OptimizableGraph</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>graph</b> () const </td></tr>
+<tr class="separator:a6dd9a3f7fd07016cdbe791e21c6d87df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3f845c6f0ba9a87ab15caaddba5a4037"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3f845c6f0ba9a87ab15caaddba5a4037"></a>
+<a class="el" href="structg2o_1_1OptimizableGraph.html">OptimizableGraph</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>graph</b> ()</td></tr>
+<tr class="separator:a3f845c6f0ba9a87ab15caaddba5a4037"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2eb3dbe08fd20ca8feeeaecc63ce240c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classg2o_1_1OptimizableGraph_1_1Vertex.html#a2eb3dbe08fd20ca8feeeaecc63ce240c">lockQuadraticForm</a> ()</td></tr>
+<tr class="separator:a2eb3dbe08fd20ca8feeeaecc63ce240c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5badd602625433ee1ce8e2aa7bb3b2ac"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classg2o_1_1OptimizableGraph_1_1Vertex.html#a5badd602625433ee1ce8e2aa7bb3b2ac">unlockQuadraticForm</a> ()</td></tr>
+<tr class="separator:a5badd602625433ee1ce8e2aa7bb3b2ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a356c40d33c3f1e07afa938dfb4870230"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a356c40d33c3f1e07afa938dfb4870230"></a>
+virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classg2o_1_1OptimizableGraph_1_1Vertex.html#a356c40d33c3f1e07afa938dfb4870230">read</a> (std::istream &amp;is)=0</td></tr>
+<tr class="memdesc:a356c40d33c3f1e07afa938dfb4870230"><td class="mdescLeft">&#160;</td><td class="mdescRight">read the vertex from a stream, i.e., the internal state of the vertex <br/></td></tr>
+<tr class="separator:a356c40d33c3f1e07afa938dfb4870230"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4cac277db656fddb5f844d9009d601eb"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4cac277db656fddb5f844d9009d601eb"></a>
+virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classg2o_1_1OptimizableGraph_1_1Vertex.html#a4cac277db656fddb5f844d9009d601eb">write</a> (std::ostream &amp;os) const =0</td></tr>
+<tr class="memdesc:a4cac277db656fddb5f844d9009d601eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">write the vertex to a stream <br/></td></tr>
+<tr class="separator:a4cac277db656fddb5f844d9009d601eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab5972c8ba6834c4dcb8a2319e9bf3070"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab5972c8ba6834c4dcb8a2319e9bf3070"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>updateCache</b> ()</td></tr>
+<tr class="separator:ab5972c8ba6834c4dcb8a2319e9bf3070"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab381120a2c00fc8ae90e5c298dfbb967"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab381120a2c00fc8ae90e5c298dfbb967"></a>
+<a class="el" href="classg2o_1_1CacheContainer.html">CacheContainer</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>cacheContainer</b> ()</td></tr>
+<tr class="separator:ab381120a2c00fc8ae90e5c298dfbb967"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classg2o_1_1HyperGraph_1_1Vertex"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classg2o_1_1HyperGraph_1_1Vertex')"><img src="closed.png" alt="-"/>&#160;Public 成员函数 继承自 <a class="el" href="classg2o_1_1HyperGraph_1_1Vertex.html">g2o::HyperGraph::Vertex</a></td></tr>
+<tr class="memitem:a7f2e986815608e5ac4a44671ed9794ae inherit pub_methods_classg2o_1_1HyperGraph_1_1Vertex"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7f2e986815608e5ac4a44671ed9794ae"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classg2o_1_1HyperGraph_1_1Vertex.html#a7f2e986815608e5ac4a44671ed9794ae">Vertex</a> (int <a class="el" href="classg2o_1_1HyperGraph_1_1Vertex.html#ad76b71c368b71971ac5affb5d57183d3">id</a>=-1)</td></tr>
+<tr class="memdesc:a7f2e986815608e5ac4a44671ed9794ae inherit pub_methods_classg2o_1_1HyperGraph_1_1Vertex"><td class="mdescLeft">&#160;</td><td class="mdescRight">creates a vertex having an ID specified by the argument <br/></td></tr>
+<tr class="separator:a7f2e986815608e5ac4a44671ed9794ae inherit pub_methods_classg2o_1_1HyperGraph_1_1Vertex"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad76b71c368b71971ac5affb5d57183d3 inherit pub_methods_classg2o_1_1HyperGraph_1_1Vertex"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad76b71c368b71971ac5affb5d57183d3"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classg2o_1_1HyperGraph_1_1Vertex.html#ad76b71c368b71971ac5affb5d57183d3">id</a> () const </td></tr>
+<tr class="memdesc:ad76b71c368b71971ac5affb5d57183d3 inherit pub_methods_classg2o_1_1HyperGraph_1_1Vertex"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns the id <br/></td></tr>
+<tr class="separator:ad76b71c368b71971ac5affb5d57183d3 inherit pub_methods_classg2o_1_1HyperGraph_1_1Vertex"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0805a5575511327262c89585f1953b8e inherit pub_methods_classg2o_1_1HyperGraph_1_1Vertex"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0805a5575511327262c89585f1953b8e"></a>
+const EdgeSet &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classg2o_1_1HyperGraph_1_1Vertex.html#a0805a5575511327262c89585f1953b8e">edges</a> () const </td></tr>
+<tr class="memdesc:a0805a5575511327262c89585f1953b8e inherit pub_methods_classg2o_1_1HyperGraph_1_1Vertex"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns the set of hyper-edges that are leaving/entering in this vertex <br/></td></tr>
+<tr class="separator:a0805a5575511327262c89585f1953b8e inherit pub_methods_classg2o_1_1HyperGraph_1_1Vertex"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a35cbf4ea796797bb5d9c35a41454e8fb inherit pub_methods_classg2o_1_1HyperGraph_1_1Vertex"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a35cbf4ea796797bb5d9c35a41454e8fb"></a>
+EdgeSet &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classg2o_1_1HyperGraph_1_1Vertex.html#a35cbf4ea796797bb5d9c35a41454e8fb">edges</a> ()</td></tr>
+<tr class="memdesc:a35cbf4ea796797bb5d9c35a41454e8fb inherit pub_methods_classg2o_1_1HyperGraph_1_1Vertex"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns the set of hyper-edges that are leaving/entering in this vertex <br/></td></tr>
+<tr class="separator:a35cbf4ea796797bb5d9c35a41454e8fb inherit pub_methods_classg2o_1_1HyperGraph_1_1Vertex"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0f7f29e5924b61b68b8e19ed142b68d0 inherit pub_methods_classg2o_1_1HyperGraph_1_1Vertex"><td class="memItemLeft" align="right" valign="top">virtual HyperGraphElementType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classg2o_1_1HyperGraph_1_1Vertex.html#a0f7f29e5924b61b68b8e19ed142b68d0">elementType</a> () const </td></tr>
+<tr class="separator:a0f7f29e5924b61b68b8e19ed142b68d0 inherit pub_methods_classg2o_1_1HyperGraph_1_1Vertex"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected 成员函数</h2></td></tr>
+<tr class="memitem:a4537a46afb8d12c3f18c88ba9601c625"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classg2o_1_1OptimizableGraph_1_1Vertex.html#a4537a46afb8d12c3f18c88ba9601c625">oplusImpl</a> (const double *v)=0</td></tr>
+<tr class="separator:a4537a46afb8d12c3f18c88ba9601c625"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd5fe36815f27a9c174ad41c2070c247"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abd5fe36815f27a9c174ad41c2070c247"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classg2o_1_1OptimizableGraph_1_1Vertex.html#abd5fe36815f27a9c174ad41c2070c247">setToOriginImpl</a> ()=0</td></tr>
+<tr class="memdesc:abd5fe36815f27a9c174ad41c2070c247"><td class="mdescLeft">&#160;</td><td class="mdescRight">sets the node to the origin (used in the multilevel stuff) <br/></td></tr>
+<tr class="separator:abd5fe36815f27a9c174ad41c2070c247"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a35ab439967fd3a3d3e5608e3883d8487"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classg2o_1_1OptimizableGraph_1_1Vertex.html#a35ab439967fd3a3d3e5608e3883d8487">setEstimateDataImpl</a> (const double *)</td></tr>
+<tr class="separator:a35ab439967fd3a3d3e5608e3883d8487"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a088ecbdde86968f3896b2320f80ee396"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classg2o_1_1OptimizableGraph_1_1Vertex.html#a088ecbdde86968f3896b2320f80ee396">setMinimalEstimateDataImpl</a> (const double *)</td></tr>
+<tr class="separator:a088ecbdde86968f3896b2320f80ee396"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
+Protected 属性</h2></td></tr>
+<tr class="memitem:a6e14fd3ad8e531ead03b4d83cc7362ad"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6e14fd3ad8e531ead03b4d83cc7362ad"></a>
+<a class="el" href="structg2o_1_1OptimizableGraph.html">OptimizableGraph</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>_graph</b></td></tr>
+<tr class="separator:a6e14fd3ad8e531ead03b4d83cc7362ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a71eb5fdfaf5c9a442135502e23504500"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a71eb5fdfaf5c9a442135502e23504500"></a>
+<a class="el" href="classg2o_1_1OptimizableGraph_1_1Data.html">Data</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>_userData</b></td></tr>
+<tr class="separator:a71eb5fdfaf5c9a442135502e23504500"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aebf035f2c8177b5dac1bc650e0f0cf62"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aebf035f2c8177b5dac1bc650e0f0cf62"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>_hessianIndex</b></td></tr>
+<tr class="separator:aebf035f2c8177b5dac1bc650e0f0cf62"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af98461471e6b58664a9fc4bba9340501"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af98461471e6b58664a9fc4bba9340501"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>_fixed</b></td></tr>
+<tr class="separator:af98461471e6b58664a9fc4bba9340501"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5e9b3906c8ff800b9a0b16b10ed9fff0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5e9b3906c8ff800b9a0b16b10ed9fff0"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>_marginalized</b></td></tr>
+<tr class="separator:a5e9b3906c8ff800b9a0b16b10ed9fff0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab053ffd8851cd3b0f61576ffd349d68e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab053ffd8851cd3b0f61576ffd349d68e"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>_dimension</b></td></tr>
+<tr class="separator:ab053ffd8851cd3b0f61576ffd349d68e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add1f5a0236a175784a824524244f7085"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="add1f5a0236a175784a824524244f7085"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>_colInHessian</b></td></tr>
+<tr class="separator:add1f5a0236a175784a824524244f7085"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab9b85ddb487ad4818bc53e0c00ff7bcc"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab9b85ddb487ad4818bc53e0c00ff7bcc"></a>
+<a class="el" href="classg2o_1_1OpenMPMutex.html">OpenMPMutex</a>&#160;</td><td class="memItemRight" valign="bottom"><b>_quadraticFormMutex</b></td></tr>
+<tr class="separator:ab9b85ddb487ad4818bc53e0c00ff7bcc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6eed5b850221cd76f0af46b97860f2e8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6eed5b850221cd76f0af46b97860f2e8"></a>
+<a class="el" href="classg2o_1_1CacheContainer.html">CacheContainer</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>_cacheContainer</b></td></tr>
+<tr class="separator:a6eed5b850221cd76f0af46b97860f2e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_attribs_classg2o_1_1HyperGraph_1_1Vertex"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classg2o_1_1HyperGraph_1_1Vertex')"><img src="closed.png" alt="-"/>&#160;Protected 属性 继承自 <a class="el" href="classg2o_1_1HyperGraph_1_1Vertex.html">g2o::HyperGraph::Vertex</a></td></tr>
+<tr class="memitem:ac643fa36a6d666d64925281b11de9b92 inherit pro_attribs_classg2o_1_1HyperGraph_1_1Vertex"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac643fa36a6d666d64925281b11de9b92"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>_id</b></td></tr>
+<tr class="separator:ac643fa36a6d666d64925281b11de9b92 inherit pro_attribs_classg2o_1_1HyperGraph_1_1Vertex"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8d732ebb72a545332a5bdc478b558430 inherit pro_attribs_classg2o_1_1HyperGraph_1_1Vertex"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8d732ebb72a545332a5bdc478b558430"></a>
+EdgeSet&#160;</td><td class="memItemRight" valign="bottom"><b>_edges</b></td></tr>
+<tr class="separator:a8d732ebb72a545332a5bdc478b558430 inherit pro_attribs_classg2o_1_1HyperGraph_1_1Vertex"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
+友元</h2></td></tr>
+<tr class="memitem:a45d35331ee3deca38c26d1efb6b961ae"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a45d35331ee3deca38c26d1efb6b961ae"></a>
+struct&#160;</td><td class="memItemRight" valign="bottom"><b>OptimizableGraph</b></td></tr>
+<tr class="separator:a45d35331ee3deca38c26d1efb6b961ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>A general case <a class="el" href="classg2o_1_1OptimizableGraph_1_1Vertex.html" title="A general case Vertex for optimization. ">Vertex</a> for optimization. </p>
+
+<p>在文件 <a class="el" href="optimizable__graph_8h_source.html">optimizable_graph.h</a> 第 <a class="el" href="optimizable__graph_8h_source.html#l00128">128</a> 行定义.</p>
+</div><h2 class="groupheader">成员函数说明</h2>
+<a class="anchor" id="a803897f6bae25dece4d7e23330f0f9da"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void g2o::OptimizableGraph::Vertex::clearQuadraticForm </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>set the b vector part of this vertex to zero </p>
+
+<p>在 <a class="el" href="classg2o_1_1BaseVertex.html#a144f99c7aa36a100dea65b30793e6d76">g2o::BaseVertex&lt; D, T &gt;</a>, <a class="el" href="classg2o_1_1BaseVertex.html#a144f99c7aa36a100dea65b30793e6d76">g2o::BaseVertex&lt; 7, Sim3 &gt;</a>, <a class="el" href="classg2o_1_1BaseVertex.html#a144f99c7aa36a100dea65b30793e6d76">g2o::BaseVertex&lt; 3, Vector3d &gt;</a> , 以及 <a class="el" href="classg2o_1_1BaseVertex.html#a144f99c7aa36a100dea65b30793e6d76">g2o::BaseVertex&lt; 6, SE3Quat &gt;</a> 内被实现.</p>
+
+<p>参考自 <a class="el" href="block__solver_8hpp_source.html#l00503">g2o::BlockSolver&lt; Traits &gt;::buildSystem()</a>.</p>
+
+<p><div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classg2o_1_1OptimizableGraph_1_1Vertex_a803897f6bae25dece4d7e23330f0f9da_icgraph.png" border="0" usemap="#classg2o_1_1OptimizableGraph_1_1Vertex_a803897f6bae25dece4d7e23330f0f9da_icgraph" alt=""/></div>
+<map name="classg2o_1_1OptimizableGraph_1_1Vertex_a803897f6bae25dece4d7e23330f0f9da_icgraph" id="classg2o_1_1OptimizableGraph_1_1Vertex_a803897f6bae25dece4d7e23330f0f9da_icgraph">
+<area shape="rect" id="node2" href="classg2o_1_1BlockSolver.html#a2654a8d52f38e5ce23720a8de302e2e7" title="g2o::BlockSolver::buildSystem" alt="" coords="246,12,447,39"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="af544f0050ea6e05950fd6e53931bdf61"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual int g2o::OptimizableGraph::Vertex::copyB </td>
+          <td>(</td>
+          <td class="paramtype">double *&#160;</td>
+          <td class="paramname"><em>b_</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>copies the b vector in the array b_ </p>
+<dl class="section return"><dt>返回</dt><dd>the number of elements copied </dd></dl>
+
+<p>在 <a class="el" href="classg2o_1_1BaseVertex.html#ae9d3f6d4ac4effb78df958df30204c5b">g2o::BaseVertex&lt; D, T &gt;</a>, <a class="el" href="classg2o_1_1BaseVertex.html#ae9d3f6d4ac4effb78df958df30204c5b">g2o::BaseVertex&lt; 7, Sim3 &gt;</a>, <a class="el" href="classg2o_1_1BaseVertex.html#ae9d3f6d4ac4effb78df958df30204c5b">g2o::BaseVertex&lt; 3, Vector3d &gt;</a> , 以及 <a class="el" href="classg2o_1_1BaseVertex.html#ae9d3f6d4ac4effb78df958df30204c5b">g2o::BaseVertex&lt; 6, SE3Quat &gt;</a> 内被实现.</p>
+
+<p>参考自 <a class="el" href="block__solver_8hpp_source.html#l00503">g2o::BlockSolver&lt; Traits &gt;::buildSystem()</a>.</p>
+
+<p><div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classg2o_1_1OptimizableGraph_1_1Vertex_af544f0050ea6e05950fd6e53931bdf61_icgraph.png" border="0" usemap="#classg2o_1_1OptimizableGraph_1_1Vertex_af544f0050ea6e05950fd6e53931bdf61_icgraph" alt=""/></div>
+<map name="classg2o_1_1OptimizableGraph_1_1Vertex_af544f0050ea6e05950fd6e53931bdf61_icgraph" id="classg2o_1_1OptimizableGraph_1_1Vertex_af544f0050ea6e05950fd6e53931bdf61_icgraph">
+<area shape="rect" id="node2" href="classg2o_1_1BlockSolver.html#a2654a8d52f38e5ce23720a8de302e2e7" title="g2o::BlockSolver::buildSystem" alt="" coords="209,12,410,39"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="ac8a19594a8356e9f104d8b383a10577e"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int g2o::OptimizableGraph::Vertex::estimateDimension </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>returns the dimension of the extended representation used by get/setEstimate(double*) -1 if it is not supported </p>
+
+<p>在文件 <a class="el" href="optimizable__graph_8cpp_source.html">optimizable_graph.cpp</a> 第 <a class="el" href="optimizable__graph_8cpp_source.html#l00109">109</a> 行定义.</p>
+
+<p>参考自 <a class="el" href="sparse__optimizer_8cpp_source.html#l00206">g2o::SparseOptimizer::initializeOptimization()</a>.</p>
+
+<p><div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classg2o_1_1OptimizableGraph_1_1Vertex_ac8a19594a8356e9f104d8b383a10577e_icgraph.png" border="0" usemap="#classg2o_1_1OptimizableGraph_1_1Vertex_ac8a19594a8356e9f104d8b383a10577e_icgraph" alt=""/></div>
+<map name="classg2o_1_1OptimizableGraph_1_1Vertex_ac8a19594a8356e9f104d8b383a10577e_icgraph" id="classg2o_1_1OptimizableGraph_1_1Vertex_ac8a19594a8356e9f104d8b383a10577e_icgraph">
+<area shape="rect" id="node2" href="classg2o_1_1SparseOptimizer.html#ab16dd36e32577ba5856239ce721ec70b" title="g2o::SparseOptimizer\l::initializeOptimization" alt="" coords="243,5,394,46"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="af26618ca44b64685e2ea10f263b93182"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool g2o::OptimizableGraph::Vertex::getEstimateData </td>
+          <td>(</td>
+          <td class="paramtype">double *&#160;</td>
+          <td class="paramname"><em>estimate</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>writes the estimater to an array of double </p>
+<dl class="section return"><dt>返回</dt><dd>true on success </dd></dl>
+
+<p>在文件 <a class="el" href="optimizable__graph_8cpp_source.html">optimizable_graph.cpp</a> 第 <a class="el" href="optimizable__graph_8cpp_source.html#l00104">104</a> 行定义.</p>
+
+<p>参考自 <a class="el" href="sparse__optimizer_8cpp_source.html#l00206">g2o::SparseOptimizer::initializeOptimization()</a>.</p>
+
+<p><div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classg2o_1_1OptimizableGraph_1_1Vertex_af26618ca44b64685e2ea10f263b93182_icgraph.png" border="0" usemap="#classg2o_1_1OptimizableGraph_1_1Vertex_af26618ca44b64685e2ea10f263b93182_icgraph" alt=""/></div>
+<map name="classg2o_1_1OptimizableGraph_1_1Vertex_af26618ca44b64685e2ea10f263b93182_icgraph" id="classg2o_1_1OptimizableGraph_1_1Vertex_af26618ca44b64685e2ea10f263b93182_icgraph">
+<area shape="rect" id="node2" href="classg2o_1_1SparseOptimizer.html#ab16dd36e32577ba5856239ce721ec70b" title="g2o::SparseOptimizer\l::initializeOptimization" alt="" coords="230,5,381,46"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a5664e886d4acaa3873ef9cf6ae18942d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool g2o::OptimizableGraph::Vertex::getEstimateData </td>
+          <td>(</td>
+          <td class="paramtype">std::vector&lt; double &gt; &amp;&#160;</td>
+          <td class="paramname"><em>estimate</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>writes the estimater to an array of double </p>
+<dl class="section return"><dt>返回</dt><dd>true on success </dd></dl>
+
+<p>在文件 <a class="el" href="optimizable__graph_8h_source.html">optimizable_graph.h</a> 第 <a class="el" href="optimizable__graph_8h_source.html#l00216">216</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="aff1e498690025bb1785c6313711adc99"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool g2o::OptimizableGraph::Vertex::getMinimalEstimateData </td>
+          <td>(</td>
+          <td class="paramtype">double *&#160;</td>
+          <td class="paramname"><em>estimate</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>writes the estimate to an array of double </p>
+<dl class="section return"><dt>返回</dt><dd>true on success </dd></dl>
+
+<p>在文件 <a class="el" href="optimizable__graph_8cpp_source.html">optimizable_graph.cpp</a> 第 <a class="el" href="optimizable__graph_8cpp_source.html#l00121">121</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="acd8b1349bd9149b10e58797ccdabf6c7"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool g2o::OptimizableGraph::Vertex::getMinimalEstimateData </td>
+          <td>(</td>
+          <td class="paramtype">std::vector&lt; double &gt; &amp;&#160;</td>
+          <td class="paramname"><em>estimate</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>writes the estimate to an array of double </p>
+<dl class="section return"><dt>返回</dt><dd>true on success </dd></dl>
+
+<p>在文件 <a class="el" href="optimizable__graph_8h_source.html">optimizable_graph.h</a> 第 <a class="el" href="optimizable__graph_8h_source.html#l00260">260</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a2eb3dbe08fd20ca8feeeaecc63ce240c"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void g2o::OptimizableGraph::Vertex::lockQuadraticForm </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>lock for the block of the hessian and the b vector associated with this vertex, to avoid race-conditions if multi-threaded. </p>
+
+<p>在文件 <a class="el" href="optimizable__graph_8h_source.html">optimizable_graph.h</a> 第 <a class="el" href="optimizable__graph_8h_source.html#l00334">334</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a1008c0f7981a9fb11be3e3df5c4a9758"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void g2o::OptimizableGraph::Vertex::mapHessianMemory </td>
+          <td>(</td>
+          <td class="paramtype">double *&#160;</td>
+          <td class="paramname"><em>d</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>maps the internal matrix to some external memory location </p>
+
+<p>在 <a class="el" href="classg2o_1_1BaseVertex.html#a54227ac315e6bc75c63ed117a2c75668">g2o::BaseVertex&lt; D, T &gt;</a>, <a class="el" href="classg2o_1_1BaseVertex.html#a54227ac315e6bc75c63ed117a2c75668">g2o::BaseVertex&lt; 7, Sim3 &gt;</a>, <a class="el" href="classg2o_1_1BaseVertex.html#a54227ac315e6bc75c63ed117a2c75668">g2o::BaseVertex&lt; 3, Vector3d &gt;</a> , 以及 <a class="el" href="classg2o_1_1BaseVertex.html#a54227ac315e6bc75c63ed117a2c75668">g2o::BaseVertex&lt; 6, SE3Quat &gt;</a> 内被实现.</p>
+
+<p>参考自 <a class="el" href="block__solver_8hpp_source.html#l00144">g2o::BlockSolver&lt; Traits &gt;::buildStructure()</a> , 以及 <a class="el" href="block__solver_8hpp_source.html#l00299">g2o::BlockSolver&lt; Traits &gt;::updateStructure()</a>.</p>
+
+<p><div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classg2o_1_1OptimizableGraph_1_1Vertex_a1008c0f7981a9fb11be3e3df5c4a9758_icgraph.png" border="0" usemap="#classg2o_1_1OptimizableGraph_1_1Vertex_a1008c0f7981a9fb11be3e3df5c4a9758_icgraph" alt=""/></div>
+<map name="classg2o_1_1OptimizableGraph_1_1Vertex_a1008c0f7981a9fb11be3e3df5c4a9758_icgraph" id="classg2o_1_1OptimizableGraph_1_1Vertex_a1008c0f7981a9fb11be3e3df5c4a9758_icgraph">
+<area shape="rect" id="node2" href="classg2o_1_1BlockSolver.html#a17e4392d3cca9a9d7cf38bb46d073b86" title="g2o::BlockSolver::buildStructure" alt="" coords="251,5,461,32"/><area shape="rect" id="node3" href="classg2o_1_1BlockSolver.html#acc497239c5e681ddec2140e34dfc5938" title="g2o::BlockSolver::update\lStructure" alt="" coords="272,57,440,98"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a7dd3638e707eaf4f7e45b9f5ba77986d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int g2o::OptimizableGraph::Vertex::minimalEstimateDimension </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>returns the dimension of the extended representation used by get/setEstimate(double*) -1 if it is not supported </p>
+
+<p>在文件 <a class="el" href="optimizable__graph_8cpp_source.html">optimizable_graph.cpp</a> 第 <a class="el" href="optimizable__graph_8cpp_source.html#l00126">126</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="af4357b634cfd884cd2fa1abb05832ec8"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void g2o::OptimizableGraph::Vertex::oplus </td>
+          <td>(</td>
+          <td class="paramtype">const double *&#160;</td>
+          <td class="paramname"><em>v</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Update the position of the node from the parameters in v. Depends on the implementation of oplusImpl in derived classes to actually carry out the update. Will also call updateCache() to update the caches of depending on the vertex. </p>
+
+<p>在文件 <a class="el" href="optimizable__graph_8h_source.html">optimizable_graph.h</a> 第 <a class="el" href="optimizable__graph_8h_source.html#l00292">292</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a4537a46afb8d12c3f18c88ba9601c625"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void g2o::OptimizableGraph::Vertex::oplusImpl </td>
+          <td>(</td>
+          <td class="paramtype">const double *&#160;</td>
+          <td class="paramname"><em>v</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>update the position of the node from the parameters in v. Implement in your class! </p>
+
+<p>在 <a class="el" href="classg2o_1_1VertexSE3Expmap.html#a52592993e7ab5de6fe4bb0f9e00c4d39">g2o::VertexSE3Expmap</a>, <a class="el" href="classg2o_1_1VertexSim3Expmap.html#abef7e4d10825caa129984f69251508c2">g2o::VertexSim3Expmap</a> , 以及 <a class="el" href="classg2o_1_1VertexSBAPointXYZ.html#aa2a13838edc46ed5395fee5c07c4c8ea">g2o::VertexSBAPointXYZ</a> 内被实现.</p>
+
+</div>
+</div>
+<a class="anchor" id="acebbe12160c0df7c859a349781badc30"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool g2o::OptimizableGraph::Vertex::setEstimateData </td>
+          <td>(</td>
+          <td class="paramtype">const double *&#160;</td>
+          <td class="paramname"><em>estimate</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>sets the initial estimate from an array of double Implement <a class="el" href="classg2o_1_1OptimizableGraph_1_1Vertex.html#a35ab439967fd3a3d3e5608e3883d8487">setEstimateDataImpl()</a> </p>
+<dl class="section return"><dt>返回</dt><dd>true on success </dd></dl>
+
+<p>在文件 <a class="el" href="optimizable__graph_8cpp_source.html">optimizable_graph.cpp</a> 第 <a class="el" href="optimizable__graph_8cpp_source.html#l00097">97</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a1cf16cd3b2e99169cdd6dfc139f926bc"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool g2o::OptimizableGraph::Vertex::setEstimateData </td>
+          <td>(</td>
+          <td class="paramtype">const std::vector&lt; double &gt; &amp;&#160;</td>
+          <td class="paramname"><em>estimate</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>sets the initial estimate from an array of double Implement <a class="el" href="classg2o_1_1OptimizableGraph_1_1Vertex.html#a35ab439967fd3a3d3e5608e3883d8487">setEstimateDataImpl()</a> </p>
+<dl class="section return"><dt>返回</dt><dd>true on success </dd></dl>
+
+<p>在文件 <a class="el" href="optimizable__graph_8h_source.html">optimizable_graph.h</a> 第 <a class="el" href="optimizable__graph_8h_source.html#l00198">198</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a35ab439967fd3a3d3e5608e3883d8487"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool g2o::OptimizableGraph::Vertex::setEstimateDataImpl </td>
+          <td>(</td>
+          <td class="paramtype">const double *&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>writes the estimater to an array of double </p>
+<dl class="section return"><dt>返回</dt><dd>true on success </dd></dl>
+
+<p>在文件 <a class="el" href="optimizable__graph_8h_source.html">optimizable_graph.h</a> 第 <a class="el" href="optimizable__graph_8h_source.html#l00373">373</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a57d42a1288d7377c593c91a8cf8a754c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool g2o::OptimizableGraph::Vertex::setMinimalEstimateData </td>
+          <td>(</td>
+          <td class="paramtype">const double *&#160;</td>
+          <td class="paramname"><em>estimate</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>sets the initial estimate from an array of double. Implement <a class="el" href="classg2o_1_1OptimizableGraph_1_1Vertex.html#a088ecbdde86968f3896b2320f80ee396">setMinimalEstimateDataImpl()</a> </p>
+<dl class="section return"><dt>返回</dt><dd>true on success </dd></dl>
+
+<p>在文件 <a class="el" href="optimizable__graph_8cpp_source.html">optimizable_graph.cpp</a> 第 <a class="el" href="optimizable__graph_8cpp_source.html#l00114">114</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="ac41fda9360e81bf704681831b1df11f8"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool g2o::OptimizableGraph::Vertex::setMinimalEstimateData </td>
+          <td>(</td>
+          <td class="paramtype">const std::vector&lt; double &gt; &amp;&#160;</td>
+          <td class="paramname"><em>estimate</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>sets the initial estimate from an array of double. Implement <a class="el" href="classg2o_1_1OptimizableGraph_1_1Vertex.html#a088ecbdde86968f3896b2320f80ee396">setMinimalEstimateDataImpl()</a> </p>
+<dl class="section return"><dt>返回</dt><dd>true on success </dd></dl>
+
+<p>在文件 <a class="el" href="optimizable__graph_8h_source.html">optimizable_graph.h</a> 第 <a class="el" href="optimizable__graph_8h_source.html#l00242">242</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a088ecbdde86968f3896b2320f80ee396"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool g2o::OptimizableGraph::Vertex::setMinimalEstimateDataImpl </td>
+          <td>(</td>
+          <td class="paramtype">const double *&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>sets the initial estimate from an array of double </p>
+<dl class="section return"><dt>返回</dt><dd>true on success </dd></dl>
+
+<p>在文件 <a class="el" href="optimizable__graph_8h_source.html">optimizable_graph.h</a> 第 <a class="el" href="optimizable__graph_8h_source.html#l00379">379</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a61c4e7b7a7a61e1f287069a8cb01004f"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual double g2o::OptimizableGraph::Vertex::solveDirect </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>lambda</em> = <code>0</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>updates the current vertex with the direct solution x += H_ii </p>
+<dl class="section return"><dt>返回</dt><dd>the determinant of the inverted hessian </dd></dl>
+
+<p>在 <a class="el" href="classg2o_1_1BaseVertex.html#a0bbd9551b7e03f7e422169e396e8ec9b">g2o::BaseVertex&lt; D, T &gt;</a>, <a class="el" href="classg2o_1_1BaseVertex.html#a0bbd9551b7e03f7e422169e396e8ec9b">g2o::BaseVertex&lt; 7, Sim3 &gt;</a>, <a class="el" href="classg2o_1_1BaseVertex.html#a0bbd9551b7e03f7e422169e396e8ec9b">g2o::BaseVertex&lt; 3, Vector3d &gt;</a> , 以及 <a class="el" href="classg2o_1_1BaseVertex.html#a0bbd9551b7e03f7e422169e396e8ec9b">g2o::BaseVertex&lt; 6, SE3Quat &gt;</a> 内被实现.</p>
+
+</div>
+</div>
+<a class="anchor" id="a5badd602625433ee1ce8e2aa7bb3b2ac"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void g2o::OptimizableGraph::Vertex::unlockQuadraticForm </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>unlock the block of the hessian and the b vector associated with this vertex </p>
+
+<p>在文件 <a class="el" href="optimizable__graph_8h_source.html">optimizable_graph.h</a> 第 <a class="el" href="optimizable__graph_8h_source.html#l00338">338</a> 行定义.</p>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>Thirdparty/g2o/g2o/core/<a class="el" href="optimizable__graph_8h_source.html">optimizable_graph.h</a></li>
+<li>Thirdparty/g2o/g2o/core/<a class="el" href="optimizable__graph_8cpp_source.html">optimizable_graph.cpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><b>g2o</b></li><li class="navelem"><a class="el" href="structg2o_1_1OptimizableGraph.html">OptimizableGraph</a></li><li class="navelem"><a class="el" href="classg2o_1_1OptimizableGraph_1_1Vertex.html">Vertex</a></li>
+    <li class="footer">生成于 2017年 七月 18日 星期二 17:13:38 , 为 My Project使用 
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
+  </ul>
+</div>
+</body>
+</html>

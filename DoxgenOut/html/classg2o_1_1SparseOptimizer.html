@@ -1,0 +1,1411 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.6"/>
+<title>My Project: g2o::SparseOptimizer类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">My Project
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.6 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="pages.html"><span>相关页面</span></a></li>
+      <li><a href="modules.html"><span>模块</span></a></li>
+      <li><a href="namespaces.html"><span>命名空间</span></a></li>
+      <li class="current"><a href="annotated.html"><span>类</span></a></li>
+      <li><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>类列表</span></a></li>
+      <li><a href="classes.html"><span>类索引</span></a></li>
+      <li><a href="inherits.html"><span>类继承关系</span></a></li>
+      <li><a href="functions.html"><span>类成员</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('classg2o_1_1SparseOptimizer.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>命名空间</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>友元</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>组</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>页</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-types">Public 类型</a> &#124;
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pro-methods">Protected 成员函数</a> &#124;
+<a href="#pro-attribs">Protected 属性</a> &#124;
+<a href="#friends">友元</a> &#124;
+<a href="classg2o_1_1SparseOptimizer-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">g2o::SparseOptimizer类 参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="dynheader">
+类 g2o::SparseOptimizer 继承关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classg2o_1_1SparseOptimizer__inherit__graph.png" border="0" usemap="#g2o_1_1SparseOptimizer_inherit__map" alt="Inheritance graph"/></div>
+<map name="g2o_1_1SparseOptimizer_inherit__map" id="g2o_1_1SparseOptimizer_inherit__map">
+<area shape="rect" id="node2" href="structg2o_1_1OptimizableGraph.html" title="g2o::OptimizableGraph" alt="" coords="4,80,157,107"/><area shape="rect" id="node3" href="classg2o_1_1HyperGraph.html" title="g2o::HyperGraph" alt="" coords="21,5,141,32"/></map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">图例</a>]</span></center></div>
+<div class="dynheader">
+g2o::SparseOptimizer 的协作图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classg2o_1_1SparseOptimizer__coll__graph.png" border="0" usemap="#g2o_1_1SparseOptimizer_coll__map" alt="Collaboration graph"/></div>
+<map name="g2o_1_1SparseOptimizer_coll__map" id="g2o_1_1SparseOptimizer_coll__map">
+<area shape="rect" id="node7" href="classg2o_1_1OptimizationAlgorithm.html" title="Generic interface for a non&#45;linear solver operating on a graph. " alt="" coords="89,357,268,384"/><area shape="rect" id="node2" href="structg2o_1_1OptimizableGraph.html" title="g2o::OptimizableGraph" alt="" coords="187,181,340,208"/><area shape="rect" id="node3" href="classg2o_1_1HyperGraph.html" title="g2o::HyperGraph" alt="" coords="34,83,155,109"/><area shape="rect" id="node4" href="classg2o_1_1JacobianWorkspace.html" title="provide memory workspace for computing the Jacobians " alt="" coords="179,83,348,109"/><area shape="rect" id="node5" href="classg2o_1_1ParameterContainer.html" title="map id to parameters " alt="" coords="373,83,539,109"/><area shape="rect" id="node8" href="classg2o_1_1PropertyMap.html" title="a collection of properties mapping from name to the property itself " alt="" coords="16,267,141,293"/></map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">图例</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public 类型</h2></td></tr>
+<tr class="memitem:a085529b092eb7fe4970e0cd6c3bd18bf"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <b>AT_COMPUTEACTIVERROR</b> = OptimizableGraph::AT_NUM_ELEMENTS, 
+<b>AT_NUM_ELEMENTS</b>
+ }</td></tr>
+<tr class="separator:a085529b092eb7fe4970e0cd6c3bd18bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_types_structg2o_1_1OptimizableGraph"><td colspan="2" onclick="javascript:toggleInherit('pub_types_structg2o_1_1OptimizableGraph')"><img src="closed.png" alt="-"/>&#160;Public 类型 继承自 <a class="el" href="structg2o_1_1OptimizableGraph.html">g2o::OptimizableGraph</a></td></tr>
+<tr class="memitem:a16d90305c171fe0582c6a8aef40ba89d inherit pub_types_structg2o_1_1OptimizableGraph"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><b>ActionType</b> { <b>AT_PREITERATION</b>, 
+<b>AT_POSTITERATION</b>, 
+<b>AT_NUM_ELEMENTS</b>
+ }</td></tr>
+<tr class="separator:a16d90305c171fe0582c6a8aef40ba89d inherit pub_types_structg2o_1_1OptimizableGraph"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa3562ad6794c36ea832095131cfffaac inherit pub_types_structg2o_1_1OptimizableGraph"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa3562ad6794c36ea832095131cfffaac"></a>
+typedef std::set<br class="typebreak"/>
+&lt; <a class="el" href="classg2o_1_1HyperGraphAction.html">HyperGraphAction</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>HyperGraphActionSet</b></td></tr>
+<tr class="separator:aa3562ad6794c36ea832095131cfffaac inherit pub_types_structg2o_1_1OptimizableGraph"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a54f01b9b6071e65e6abeebe4afb29dec inherit pub_types_structg2o_1_1OptimizableGraph"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a54f01b9b6071e65e6abeebe4afb29dec"></a>
+typedef std::vector<br class="typebreak"/>
+&lt; <a class="el" href="classg2o_1_1OptimizableGraph_1_1Vertex.html">OptimizableGraph::Vertex</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structg2o_1_1OptimizableGraph.html#a54f01b9b6071e65e6abeebe4afb29dec">VertexContainer</a></td></tr>
+<tr class="memdesc:a54f01b9b6071e65e6abeebe4afb29dec inherit pub_types_structg2o_1_1OptimizableGraph"><td class="mdescLeft">&#160;</td><td class="mdescRight">vector container for vertices <br/></td></tr>
+<tr class="separator:a54f01b9b6071e65e6abeebe4afb29dec inherit pub_types_structg2o_1_1OptimizableGraph"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2b43e807ae6d61ef8749ca1ef7c25f62 inherit pub_types_structg2o_1_1OptimizableGraph"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2b43e807ae6d61ef8749ca1ef7c25f62"></a>
+typedef std::vector<br class="typebreak"/>
+&lt; <a class="el" href="classg2o_1_1OptimizableGraph_1_1Edge.html">OptimizableGraph::Edge</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structg2o_1_1OptimizableGraph.html#a2b43e807ae6d61ef8749ca1ef7c25f62">EdgeContainer</a></td></tr>
+<tr class="memdesc:a2b43e807ae6d61ef8749ca1ef7c25f62 inherit pub_types_structg2o_1_1OptimizableGraph"><td class="mdescLeft">&#160;</td><td class="mdescRight">vector container for edges <br/></td></tr>
+<tr class="separator:a2b43e807ae6d61ef8749ca1ef7c25f62 inherit pub_types_structg2o_1_1OptimizableGraph"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_types_classg2o_1_1HyperGraph"><td colspan="2" onclick="javascript:toggleInherit('pub_types_classg2o_1_1HyperGraph')"><img src="closed.png" alt="-"/>&#160;Public 类型 继承自 <a class="el" href="classg2o_1_1HyperGraph.html">g2o::HyperGraph</a></td></tr>
+<tr class="memitem:a7b8fda20e1b03e92aeceeac6e8218b73 inherit pub_types_classg2o_1_1HyperGraph"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7b8fda20e1b03e92aeceeac6e8218b73"></a>
+typedef std::bitset<br class="typebreak"/>
+&lt; HyperGraph::HGET_NUM_ELEMS &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>GraphElemBitset</b></td></tr>
+<tr class="separator:a7b8fda20e1b03e92aeceeac6e8218b73 inherit pub_types_classg2o_1_1HyperGraph"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5e2970e236c0dcb4eff7c205d7b6b4ae inherit pub_types_classg2o_1_1HyperGraph"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5e2970e236c0dcb4eff7c205d7b6b4ae"></a>
+typedef std::set&lt; <a class="el" href="classg2o_1_1HyperGraph_1_1Edge.html">Edge</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>EdgeSet</b></td></tr>
+<tr class="separator:a5e2970e236c0dcb4eff7c205d7b6b4ae inherit pub_types_classg2o_1_1HyperGraph"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a703938cdb4bb636860eed55a2489d70c inherit pub_types_classg2o_1_1HyperGraph"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a703938cdb4bb636860eed55a2489d70c"></a>
+typedef std::set&lt; <a class="el" href="classg2o_1_1HyperGraph_1_1Vertex.html">Vertex</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>VertexSet</b></td></tr>
+<tr class="separator:a703938cdb4bb636860eed55a2489d70c inherit pub_types_classg2o_1_1HyperGraph"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a97307eac064ebf4b3e2cfbf0718035b5 inherit pub_types_classg2o_1_1HyperGraph"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a97307eac064ebf4b3e2cfbf0718035b5"></a>
+typedef <br class="typebreak"/>
+std::tr1::unordered_map&lt; int, <br class="typebreak"/>
+<a class="el" href="classg2o_1_1HyperGraph_1_1Vertex.html">Vertex</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>VertexIDMap</b></td></tr>
+<tr class="separator:a97307eac064ebf4b3e2cfbf0718035b5 inherit pub_types_classg2o_1_1HyperGraph"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9339534c99300a0ddac87ba976ef188c inherit pub_types_classg2o_1_1HyperGraph"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9339534c99300a0ddac87ba976ef188c"></a>
+typedef std::vector&lt; <a class="el" href="classg2o_1_1HyperGraph_1_1Vertex.html">Vertex</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>VertexContainer</b></td></tr>
+<tr class="separator:a9339534c99300a0ddac87ba976ef188c inherit pub_types_classg2o_1_1HyperGraph"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:a56c0c13954ac7204cfb031c141ece9ae"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classg2o_1_1SparseOptimizer.html#a56c0c13954ac7204cfb031c141ece9ae">initializeOptimization</a> (HyperGraph::EdgeSet &amp;eset)</td></tr>
+<tr class="separator:a56c0c13954ac7204cfb031c141ece9ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab16dd36e32577ba5856239ce721ec70b"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classg2o_1_1SparseOptimizer.html#ab16dd36e32577ba5856239ce721ec70b">initializeOptimization</a> (HyperGraph::VertexSet &amp;vset, int level=0)</td></tr>
+<tr class="separator:ab16dd36e32577ba5856239ce721ec70b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ace3994bf5f403c7fa0305635aa598473"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classg2o_1_1SparseOptimizer.html#ace3994bf5f403c7fa0305635aa598473">initializeOptimization</a> (int level=0)</td></tr>
+<tr class="separator:ace3994bf5f403c7fa0305635aa598473"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae971d068585055973798f93ac2363d94"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classg2o_1_1SparseOptimizer.html#ae971d068585055973798f93ac2363d94">updateInitialization</a> (HyperGraph::VertexSet &amp;vset, HyperGraph::EdgeSet &amp;eset)</td></tr>
+<tr class="separator:ae971d068585055973798f93ac2363d94"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a59db9f16934d3b9f7a52511f0be1bb07"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classg2o_1_1SparseOptimizer.html#a59db9f16934d3b9f7a52511f0be1bb07">computeInitialGuess</a> ()</td></tr>
+<tr class="separator:a59db9f16934d3b9f7a52511f0be1bb07"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2fba11c8572fce4a8c1bcca4fa3e43fb"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classg2o_1_1SparseOptimizer.html#a2fba11c8572fce4a8c1bcca4fa3e43fb">computeInitialGuess</a> (<a class="el" href="classg2o_1_1EstimatePropagatorCost.html">EstimatePropagatorCost</a> &amp;propagator)</td></tr>
+<tr class="separator:a2fba11c8572fce4a8c1bcca4fa3e43fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab8af902464774ec3d3910a3674791714"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classg2o_1_1SparseOptimizer.html#ab8af902464774ec3d3910a3674791714">setToOrigin</a> ()</td></tr>
+<tr class="separator:ab8af902464774ec3d3910a3674791714"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a098257ee6f13dbb79be07075244d9930"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classg2o_1_1SparseOptimizer.html#a098257ee6f13dbb79be07075244d9930">optimize</a> (int iterations, bool online=false)</td></tr>
+<tr class="separator:a098257ee6f13dbb79be07075244d9930"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a656be8b8244a48dc1207f29eec77af5a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classg2o_1_1SparseOptimizer.html#a656be8b8244a48dc1207f29eec77af5a">computeMarginals</a> (<a class="el" href="classg2o_1_1SparseBlockMatrix.html">SparseBlockMatrix</a>&lt; MatrixXd &gt; &amp;spinv, const std::vector&lt; std::pair&lt; int, int &gt; &gt; &amp;blockIndices)</td></tr>
+<tr class="separator:a656be8b8244a48dc1207f29eec77af5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad9f7ba03f7f37114f757f34f67dd48e5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classg2o_1_1SparseOptimizer.html#ad9f7ba03f7f37114f757f34f67dd48e5">computeMarginals</a> (<a class="el" href="classg2o_1_1SparseBlockMatrix.html">SparseBlockMatrix</a>&lt; MatrixXd &gt; &amp;spinv, const <a class="el" href="classg2o_1_1HyperGraph_1_1Vertex.html">Vertex</a> *<a class="el" href="structg2o_1_1OptimizableGraph.html#a19e014e8ec2e9a6e894da8c3a8f8e50d">vertex</a>)</td></tr>
+<tr class="separator:ad9f7ba03f7f37114f757f34f67dd48e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a06bd3e9f1576dafeae317d2697c6f532"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classg2o_1_1SparseOptimizer.html#a06bd3e9f1576dafeae317d2697c6f532">computeMarginals</a> (<a class="el" href="classg2o_1_1SparseBlockMatrix.html">SparseBlockMatrix</a>&lt; MatrixXd &gt; &amp;spinv, const <a class="el" href="structg2o_1_1OptimizableGraph.html#a54f01b9b6071e65e6abeebe4afb29dec">VertexContainer</a> &amp;<a class="el" href="classg2o_1_1HyperGraph.html#a3e713e7ee84eecad3876651737af6cfc">vertices</a>)</td></tr>
+<tr class="separator:a06bd3e9f1576dafeae317d2697c6f532"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aad77b73bf7d192fcebf1daf9ae103036"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aad77b73bf7d192fcebf1daf9ae103036"></a>
+virtual <a class="el" href="classg2o_1_1HyperGraph_1_1Vertex.html">Vertex</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classg2o_1_1SparseOptimizer.html#aad77b73bf7d192fcebf1daf9ae103036">findGauge</a> ()</td></tr>
+<tr class="memdesc:aad77b73bf7d192fcebf1daf9ae103036"><td class="mdescLeft">&#160;</td><td class="mdescRight">finds a gauge in the graph to remove the undefined dof. <br/></td></tr>
+<tr class="separator:aad77b73bf7d192fcebf1daf9ae103036"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac99e785f4822dd540b389ea179ce4f06"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac99e785f4822dd540b389ea179ce4f06"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>gaugeFreedom</b> ()</td></tr>
+<tr class="separator:ac99e785f4822dd540b389ea179ce4f06"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add4d83073e22dbb48b66b953d0185ffa"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classg2o_1_1SparseOptimizer.html#add4d83073e22dbb48b66b953d0185ffa">activeChi2</a> () const </td></tr>
+<tr class="separator:add4d83073e22dbb48b66b953d0185ffa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae47c5023e53685523499fc00d6057d14"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classg2o_1_1SparseOptimizer.html#ae47c5023e53685523499fc00d6057d14">activeRobustChi2</a> () const </td></tr>
+<tr class="separator:ae47c5023e53685523499fc00d6057d14"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a99851ba4f2a507e724de43d7fe92f903"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a99851ba4f2a507e724de43d7fe92f903"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classg2o_1_1SparseOptimizer.html#a99851ba4f2a507e724de43d7fe92f903">verbose</a> () const </td></tr>
+<tr class="memdesc:a99851ba4f2a507e724de43d7fe92f903"><td class="mdescLeft">&#160;</td><td class="mdescRight">verbose information during optimization <br/></td></tr>
+<tr class="separator:a99851ba4f2a507e724de43d7fe92f903"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a422f4c5c78a0c475f4998e24ee173cc7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a422f4c5c78a0c475f4998e24ee173cc7"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setVerbose</b> (bool <a class="el" href="classg2o_1_1SparseOptimizer.html#a99851ba4f2a507e724de43d7fe92f903">verbose</a>)</td></tr>
+<tr class="separator:a422f4c5c78a0c475f4998e24ee173cc7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a32afd0ab949f170297b4a59f0d9eab81"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classg2o_1_1SparseOptimizer.html#a32afd0ab949f170297b4a59f0d9eab81">setForceStopFlag</a> (bool *flag)</td></tr>
+<tr class="separator:a32afd0ab949f170297b4a59f0d9eab81"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a13b3b195dd3169303c2c8e0f6edb1bb7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a13b3b195dd3169303c2c8e0f6edb1bb7"></a>
+bool *&#160;</td><td class="memItemRight" valign="bottom"><b>forceStopFlag</b> () const </td></tr>
+<tr class="separator:a13b3b195dd3169303c2c8e0f6edb1bb7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae592f525151d0cfb5bde3e7213f7ab11"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae592f525151d0cfb5bde3e7213f7ab11"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classg2o_1_1SparseOptimizer.html#ae592f525151d0cfb5bde3e7213f7ab11">terminate</a> ()</td></tr>
+<tr class="memdesc:ae592f525151d0cfb5bde3e7213f7ab11"><td class="mdescLeft">&#160;</td><td class="mdescRight">if external stop flag is given, return its state. False otherwise <br/></td></tr>
+<tr class="separator:ae592f525151d0cfb5bde3e7213f7ab11"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5e98a5f879f04c013b20f9c39a9057da"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5e98a5f879f04c013b20f9c39a9057da"></a>
+const <a class="el" href="structg2o_1_1OptimizableGraph.html#a54f01b9b6071e65e6abeebe4afb29dec">VertexContainer</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classg2o_1_1SparseOptimizer.html#a5e98a5f879f04c013b20f9c39a9057da">indexMapping</a> () const </td></tr>
+<tr class="memdesc:a5e98a5f879f04c013b20f9c39a9057da"><td class="mdescLeft">&#160;</td><td class="mdescRight">the index mapping of the vertices <br/></td></tr>
+<tr class="separator:a5e98a5f879f04c013b20f9c39a9057da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5715f0bab2cb9c1e8a330b2c3c217859"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5715f0bab2cb9c1e8a330b2c3c217859"></a>
+const <a class="el" href="structg2o_1_1OptimizableGraph.html#a54f01b9b6071e65e6abeebe4afb29dec">VertexContainer</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classg2o_1_1SparseOptimizer.html#a5715f0bab2cb9c1e8a330b2c3c217859">activeVertices</a> () const </td></tr>
+<tr class="memdesc:a5715f0bab2cb9c1e8a330b2c3c217859"><td class="mdescLeft">&#160;</td><td class="mdescRight">the vertices active in the current optimization <br/></td></tr>
+<tr class="separator:a5715f0bab2cb9c1e8a330b2c3c217859"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aef20b7dd401862d572a851349d1bc124"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aef20b7dd401862d572a851349d1bc124"></a>
+const <a class="el" href="structg2o_1_1OptimizableGraph.html#a2b43e807ae6d61ef8749ca1ef7c25f62">EdgeContainer</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classg2o_1_1SparseOptimizer.html#aef20b7dd401862d572a851349d1bc124">activeEdges</a> () const </td></tr>
+<tr class="memdesc:aef20b7dd401862d572a851349d1bc124"><td class="mdescLeft">&#160;</td><td class="mdescRight">the edges active in the current optimization <br/></td></tr>
+<tr class="separator:aef20b7dd401862d572a851349d1bc124"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0fb2a5e2b250bf2530a600f6dcaad03f"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classg2o_1_1SparseOptimizer.html#a0fb2a5e2b250bf2530a600f6dcaad03f">removeVertex</a> (<a class="el" href="classg2o_1_1HyperGraph_1_1Vertex.html">HyperGraph::Vertex</a> *v)</td></tr>
+<tr class="separator:a0fb2a5e2b250bf2530a600f6dcaad03f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a89ae01e9d070110a775d8a266717d719"><td class="memItemLeft" align="right" valign="top">VertexContainer::const_iterator&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classg2o_1_1SparseOptimizer.html#a89ae01e9d070110a775d8a266717d719">findActiveVertex</a> (const <a class="el" href="classg2o_1_1OptimizableGraph_1_1Vertex.html">OptimizableGraph::Vertex</a> *v) const </td></tr>
+<tr class="separator:a89ae01e9d070110a775d8a266717d719"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a68b59bf6d56a390717b82b3ae009ccf0"><td class="memItemLeft" align="right" valign="top">EdgeContainer::const_iterator&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classg2o_1_1SparseOptimizer.html#a68b59bf6d56a390717b82b3ae009ccf0">findActiveEdge</a> (const <a class="el" href="classg2o_1_1OptimizableGraph_1_1Edge.html">OptimizableGraph::Edge</a> *e) const </td></tr>
+<tr class="separator:a68b59bf6d56a390717b82b3ae009ccf0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7dad5beea6a44d92b1cc47c0e526a676"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7dad5beea6a44d92b1cc47c0e526a676"></a>
+const <a class="el" href="classg2o_1_1OptimizationAlgorithm.html">OptimizationAlgorithm</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classg2o_1_1SparseOptimizer.html#a7dad5beea6a44d92b1cc47c0e526a676">algorithm</a> () const </td></tr>
+<tr class="memdesc:a7dad5beea6a44d92b1cc47c0e526a676"><td class="mdescLeft">&#160;</td><td class="mdescRight">the solver used by the optimizer <br/></td></tr>
+<tr class="separator:a7dad5beea6a44d92b1cc47c0e526a676"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaa505e19f70caa4f0a8fe8eccdbcd768"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aaa505e19f70caa4f0a8fe8eccdbcd768"></a>
+<a class="el" href="classg2o_1_1OptimizationAlgorithm.html">OptimizationAlgorithm</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>solver</b> ()</td></tr>
+<tr class="separator:aaa505e19f70caa4f0a8fe8eccdbcd768"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ed7404ef361b479c75a0baf34e0a2bd"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5ed7404ef361b479c75a0baf34e0a2bd"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setAlgorithm</b> (<a class="el" href="classg2o_1_1OptimizationAlgorithm.html">OptimizationAlgorithm</a> *<a class="el" href="classg2o_1_1SparseOptimizer.html#a7dad5beea6a44d92b1cc47c0e526a676">algorithm</a>)</td></tr>
+<tr class="separator:a5ed7404ef361b479c75a0baf34e0a2bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a08833d6f9ae487f5608f6113f3635b6b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a08833d6f9ae487f5608f6113f3635b6b"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classg2o_1_1SparseOptimizer.html#a08833d6f9ae487f5608f6113f3635b6b">push</a> (<a class="el" href="structg2o_1_1OptimizableGraph.html#a54f01b9b6071e65e6abeebe4afb29dec">SparseOptimizer::VertexContainer</a> &amp;vlist)</td></tr>
+<tr class="memdesc:a08833d6f9ae487f5608f6113f3635b6b"><td class="mdescLeft">&#160;</td><td class="mdescRight">push the estimate of a subset of the variables onto a stack <br/></td></tr>
+<tr class="separator:a08833d6f9ae487f5608f6113f3635b6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac9a5fd64764e61d99e8a90734118a8bf"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac9a5fd64764e61d99e8a90734118a8bf"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classg2o_1_1SparseOptimizer.html#ac9a5fd64764e61d99e8a90734118a8bf">push</a> (HyperGraph::VertexSet &amp;vlist)</td></tr>
+<tr class="memdesc:ac9a5fd64764e61d99e8a90734118a8bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">push the estimate of a subset of the variables onto a stack <br/></td></tr>
+<tr class="separator:ac9a5fd64764e61d99e8a90734118a8bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4c121d69052291775860d06507aba698"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4c121d69052291775860d06507aba698"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classg2o_1_1SparseOptimizer.html#a4c121d69052291775860d06507aba698">push</a> ()</td></tr>
+<tr class="memdesc:a4c121d69052291775860d06507aba698"><td class="mdescLeft">&#160;</td><td class="mdescRight">push all the active vertices onto a stack <br/></td></tr>
+<tr class="separator:a4c121d69052291775860d06507aba698"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a57dbbb584122c6cfa292bb79d8fcd7ad"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a57dbbb584122c6cfa292bb79d8fcd7ad"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classg2o_1_1SparseOptimizer.html#a57dbbb584122c6cfa292bb79d8fcd7ad">pop</a> (<a class="el" href="structg2o_1_1OptimizableGraph.html#a54f01b9b6071e65e6abeebe4afb29dec">SparseOptimizer::VertexContainer</a> &amp;vlist)</td></tr>
+<tr class="memdesc:a57dbbb584122c6cfa292bb79d8fcd7ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">pop (restore) the estimate a subset of the variables from the stack <br/></td></tr>
+<tr class="separator:a57dbbb584122c6cfa292bb79d8fcd7ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa6688f8636bf89ef919d72947692d59c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa6688f8636bf89ef919d72947692d59c"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classg2o_1_1SparseOptimizer.html#aa6688f8636bf89ef919d72947692d59c">pop</a> (HyperGraph::VertexSet &amp;vlist)</td></tr>
+<tr class="memdesc:aa6688f8636bf89ef919d72947692d59c"><td class="mdescLeft">&#160;</td><td class="mdescRight">pop (restore) the estimate a subset of the variables from the stack <br/></td></tr>
+<tr class="separator:aa6688f8636bf89ef919d72947692d59c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad2f7f62ebe17b40e050f0525db64355b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad2f7f62ebe17b40e050f0525db64355b"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classg2o_1_1SparseOptimizer.html#ad2f7f62ebe17b40e050f0525db64355b">pop</a> ()</td></tr>
+<tr class="memdesc:ad2f7f62ebe17b40e050f0525db64355b"><td class="mdescLeft">&#160;</td><td class="mdescRight">pop (restore) the estimate of the active vertices from the stack <br/></td></tr>
+<tr class="separator:ad2f7f62ebe17b40e050f0525db64355b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac6344493dc9f66d5443759ff9f2abf6c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac6344493dc9f66d5443759ff9f2abf6c"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classg2o_1_1SparseOptimizer.html#ac6344493dc9f66d5443759ff9f2abf6c">discardTop</a> (<a class="el" href="structg2o_1_1OptimizableGraph.html#a54f01b9b6071e65e6abeebe4afb29dec">SparseOptimizer::VertexContainer</a> &amp;vlist)</td></tr>
+<tr class="memdesc:ac6344493dc9f66d5443759ff9f2abf6c"><td class="mdescLeft">&#160;</td><td class="mdescRight">ignore the latest stored element on the stack, remove it from the stack but do not restore the estimate <br/></td></tr>
+<tr class="separator:ac6344493dc9f66d5443759ff9f2abf6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a20ed9e9f1201bfb874456a8d30f169fb"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a20ed9e9f1201bfb874456a8d30f169fb"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classg2o_1_1SparseOptimizer.html#a20ed9e9f1201bfb874456a8d30f169fb">discardTop</a> ()</td></tr>
+<tr class="memdesc:a20ed9e9f1201bfb874456a8d30f169fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">same as above, but for the active vertices <br/></td></tr>
+<tr class="separator:a20ed9e9f1201bfb874456a8d30f169fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4881e4ac9ba9a58d4e249dc03ef9683d"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classg2o_1_1SparseOptimizer.html#a4881e4ac9ba9a58d4e249dc03ef9683d">clear</a> ()</td></tr>
+<tr class="separator:a4881e4ac9ba9a58d4e249dc03ef9683d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a09572668aa85b75a5bebf7b66401ce8f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classg2o_1_1SparseOptimizer.html#a09572668aa85b75a5bebf7b66401ce8f">computeActiveErrors</a> ()</td></tr>
+<tr class="separator:a09572668aa85b75a5bebf7b66401ce8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac0b9e0f3c9d05f600882b9c9b8a5c7c1"><td class="memItemLeft" align="right" valign="top">const BatchStatisticsContainer &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classg2o_1_1SparseOptimizer.html#ac0b9e0f3c9d05f600882b9c9b8a5c7c1">batchStatistics</a> () const </td></tr>
+<tr class="separator:ac0b9e0f3c9d05f600882b9c9b8a5c7c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa93ecf8d3b99e2eef3709a5c70cc8632"><td class="memItemLeft" align="right" valign="top">BatchStatisticsContainer &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classg2o_1_1SparseOptimizer.html#aa93ecf8d3b99e2eef3709a5c70cc8632">batchStatistics</a> ()</td></tr>
+<tr class="separator:aa93ecf8d3b99e2eef3709a5c70cc8632"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a775fe12d7df941acbbd86bcf838f0f3c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a775fe12d7df941acbbd86bcf838f0f3c"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setComputeBatchStatistics</b> (bool computeBatchStatistics)</td></tr>
+<tr class="separator:a775fe12d7df941acbbd86bcf838f0f3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4a4261f1008f1b0f660381b9c46b78f7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4a4261f1008f1b0f660381b9c46b78f7"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>computeBatchStatistics</b> () const </td></tr>
+<tr class="separator:a4a4261f1008f1b0f660381b9c46b78f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a43517d9f9f23ba6041061c57dddd916d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a43517d9f9f23ba6041061c57dddd916d"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classg2o_1_1SparseOptimizer.html#a43517d9f9f23ba6041061c57dddd916d">addComputeErrorAction</a> (<a class="el" href="classg2o_1_1HyperGraphAction.html">HyperGraphAction</a> *action)</td></tr>
+<tr class="memdesc:a43517d9f9f23ba6041061c57dddd916d"><td class="mdescLeft">&#160;</td><td class="mdescRight">add an action to be executed before the error vectors are computed <br/></td></tr>
+<tr class="separator:a43517d9f9f23ba6041061c57dddd916d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaeb1bffea0c80d98b6650cbf51be2b80"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aaeb1bffea0c80d98b6650cbf51be2b80"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classg2o_1_1SparseOptimizer.html#aaeb1bffea0c80d98b6650cbf51be2b80">removeComputeErrorAction</a> (<a class="el" href="classg2o_1_1HyperGraphAction.html">HyperGraphAction</a> *action)</td></tr>
+<tr class="memdesc:aaeb1bffea0c80d98b6650cbf51be2b80"><td class="mdescLeft">&#160;</td><td class="mdescRight">remove an action that should no longer be execured before computing the error vectors <br/></td></tr>
+<tr class="separator:aaeb1bffea0c80d98b6650cbf51be2b80"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_structg2o_1_1OptimizableGraph"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_structg2o_1_1OptimizableGraph')"><img src="closed.png" alt="-"/>&#160;Public 成员函数 继承自 <a class="el" href="structg2o_1_1OptimizableGraph.html">g2o::OptimizableGraph</a></td></tr>
+<tr class="memitem:a19e014e8ec2e9a6e894da8c3a8f8e50d inherit pub_methods_structg2o_1_1OptimizableGraph"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a19e014e8ec2e9a6e894da8c3a8f8e50d"></a>
+<a class="el" href="classg2o_1_1OptimizableGraph_1_1Vertex.html">Vertex</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structg2o_1_1OptimizableGraph.html#a19e014e8ec2e9a6e894da8c3a8f8e50d">vertex</a> (int id)</td></tr>
+<tr class="memdesc:a19e014e8ec2e9a6e894da8c3a8f8e50d inherit pub_methods_structg2o_1_1OptimizableGraph"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns the vertex number <em>id</em> appropriately casted <br/></td></tr>
+<tr class="separator:a19e014e8ec2e9a6e894da8c3a8f8e50d inherit pub_methods_structg2o_1_1OptimizableGraph"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a50323fa9906f5018a2be3affc61fc0d7 inherit pub_methods_structg2o_1_1OptimizableGraph"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a50323fa9906f5018a2be3affc61fc0d7"></a>
+const <a class="el" href="classg2o_1_1OptimizableGraph_1_1Vertex.html">Vertex</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structg2o_1_1OptimizableGraph.html#a50323fa9906f5018a2be3affc61fc0d7">vertex</a> (int id) const </td></tr>
+<tr class="memdesc:a50323fa9906f5018a2be3affc61fc0d7 inherit pub_methods_structg2o_1_1OptimizableGraph"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns the vertex number <em>id</em> appropriately casted <br/></td></tr>
+<tr class="separator:a50323fa9906f5018a2be3affc61fc0d7 inherit pub_methods_structg2o_1_1OptimizableGraph"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc459c08fd5e743cf2072e740ffc5025 inherit pub_methods_structg2o_1_1OptimizableGraph"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="acc459c08fd5e743cf2072e740ffc5025"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structg2o_1_1OptimizableGraph.html#acc459c08fd5e743cf2072e740ffc5025">OptimizableGraph</a> ()</td></tr>
+<tr class="memdesc:acc459c08fd5e743cf2072e740ffc5025 inherit pub_methods_structg2o_1_1OptimizableGraph"><td class="mdescLeft">&#160;</td><td class="mdescRight">empty constructor <br/></td></tr>
+<tr class="separator:acc459c08fd5e743cf2072e740ffc5025 inherit pub_methods_structg2o_1_1OptimizableGraph"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acea1342d9ab0bf717710c8f78b74ff25 inherit pub_methods_structg2o_1_1OptimizableGraph"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="acea1342d9ab0bf717710c8f78b74ff25"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structg2o_1_1OptimizableGraph.html#acea1342d9ab0bf717710c8f78b74ff25">addGraph</a> (<a class="el" href="structg2o_1_1OptimizableGraph.html">OptimizableGraph</a> *g)</td></tr>
+<tr class="memdesc:acea1342d9ab0bf717710c8f78b74ff25 inherit pub_methods_structg2o_1_1OptimizableGraph"><td class="mdescLeft">&#160;</td><td class="mdescRight">adds all edges and vertices of the graph <em>g</em> to this graph. <br/></td></tr>
+<tr class="separator:acea1342d9ab0bf717710c8f78b74ff25 inherit pub_methods_structg2o_1_1OptimizableGraph"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae0b93774ce1dfa0dfd501c86ad4f773e inherit pub_methods_structg2o_1_1OptimizableGraph"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structg2o_1_1OptimizableGraph.html#ae0b93774ce1dfa0dfd501c86ad4f773e">addVertex</a> (<a class="el" href="classg2o_1_1HyperGraph_1_1Vertex.html">HyperGraph::Vertex</a> *v, <a class="el" href="classg2o_1_1OptimizableGraph_1_1Data.html">Data</a> *userData)</td></tr>
+<tr class="separator:ae0b93774ce1dfa0dfd501c86ad4f773e inherit pub_methods_structg2o_1_1OptimizableGraph"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac6f41f49fe6148fbe17133d10bf29b4c inherit pub_methods_structg2o_1_1OptimizableGraph"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structg2o_1_1OptimizableGraph.html#ac6f41f49fe6148fbe17133d10bf29b4c">addVertex</a> (<a class="el" href="classg2o_1_1HyperGraph_1_1Vertex.html">HyperGraph::Vertex</a> *v)</td></tr>
+<tr class="separator:ac6f41f49fe6148fbe17133d10bf29b4c inherit pub_methods_structg2o_1_1OptimizableGraph"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6831ed69fce3dba691f53302a2813070 inherit pub_methods_structg2o_1_1OptimizableGraph"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structg2o_1_1OptimizableGraph.html#a6831ed69fce3dba691f53302a2813070">addEdge</a> (<a class="el" href="classg2o_1_1HyperGraph_1_1Edge.html">HyperGraph::Edge</a> *e)</td></tr>
+<tr class="separator:a6831ed69fce3dba691f53302a2813070 inherit pub_methods_structg2o_1_1OptimizableGraph"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa9378225b271351f4425bd266f76d3a inherit pub_methods_structg2o_1_1OptimizableGraph"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afa9378225b271351f4425bd266f76d3a"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structg2o_1_1OptimizableGraph.html#afa9378225b271351f4425bd266f76d3a">chi2</a> () const </td></tr>
+<tr class="memdesc:afa9378225b271351f4425bd266f76d3a inherit pub_methods_structg2o_1_1OptimizableGraph"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns the chi2 of the current configuration <br/></td></tr>
+<tr class="separator:afa9378225b271351f4425bd266f76d3a inherit pub_methods_structg2o_1_1OptimizableGraph"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abb25500d3f73dae8f2325ae11991c46f inherit pub_methods_structg2o_1_1OptimizableGraph"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abb25500d3f73dae8f2325ae11991c46f"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structg2o_1_1OptimizableGraph.html#abb25500d3f73dae8f2325ae11991c46f">maxDimension</a> () const </td></tr>
+<tr class="memdesc:abb25500d3f73dae8f2325ae11991c46f inherit pub_methods_structg2o_1_1OptimizableGraph"><td class="mdescLeft">&#160;</td><td class="mdescRight">return the maximum dimension of all vertices in the graph <br/></td></tr>
+<tr class="separator:abb25500d3f73dae8f2325ae11991c46f inherit pub_methods_structg2o_1_1OptimizableGraph"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a186d6d06a59395488cd15d25bf112ad9 inherit pub_methods_structg2o_1_1OptimizableGraph"><td class="memItemLeft" align="right" valign="top">std::set&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structg2o_1_1OptimizableGraph.html#a186d6d06a59395488cd15d25bf112ad9">dimensions</a> () const </td></tr>
+<tr class="separator:a186d6d06a59395488cd15d25bf112ad9 inherit pub_methods_structg2o_1_1OptimizableGraph"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad295e7f06651db627b8ebde3d8898bab inherit pub_methods_structg2o_1_1OptimizableGraph"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad295e7f06651db627b8ebde3d8898bab"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structg2o_1_1OptimizableGraph.html#ad295e7f06651db627b8ebde3d8898bab">preIteration</a> (int)</td></tr>
+<tr class="memdesc:ad295e7f06651db627b8ebde3d8898bab inherit pub_methods_structg2o_1_1OptimizableGraph"><td class="mdescLeft">&#160;</td><td class="mdescRight">called at the beginning of an iteration (argument is the number of the iteration) <br/></td></tr>
+<tr class="separator:ad295e7f06651db627b8ebde3d8898bab inherit pub_methods_structg2o_1_1OptimizableGraph"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac8d41dc0830f1ae07e9cb4a8341d3ffb inherit pub_methods_structg2o_1_1OptimizableGraph"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac8d41dc0830f1ae07e9cb4a8341d3ffb"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structg2o_1_1OptimizableGraph.html#ac8d41dc0830f1ae07e9cb4a8341d3ffb">postIteration</a> (int)</td></tr>
+<tr class="memdesc:ac8d41dc0830f1ae07e9cb4a8341d3ffb inherit pub_methods_structg2o_1_1OptimizableGraph"><td class="mdescLeft">&#160;</td><td class="mdescRight">called at the end of an iteration (argument is the number of the iteration) <br/></td></tr>
+<tr class="separator:ac8d41dc0830f1ae07e9cb4a8341d3ffb inherit pub_methods_structg2o_1_1OptimizableGraph"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ab7899a0ff7bc29177e9447a10d508c inherit pub_methods_structg2o_1_1OptimizableGraph"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2ab7899a0ff7bc29177e9447a10d508c"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structg2o_1_1OptimizableGraph.html#a2ab7899a0ff7bc29177e9447a10d508c">addPreIterationAction</a> (<a class="el" href="classg2o_1_1HyperGraphAction.html">HyperGraphAction</a> *action)</td></tr>
+<tr class="memdesc:a2ab7899a0ff7bc29177e9447a10d508c inherit pub_methods_structg2o_1_1OptimizableGraph"><td class="mdescLeft">&#160;</td><td class="mdescRight">add an action to be executed before each iteration <br/></td></tr>
+<tr class="separator:a2ab7899a0ff7bc29177e9447a10d508c inherit pub_methods_structg2o_1_1OptimizableGraph"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6db1ecbc582a7b79e1633eefc2109b26 inherit pub_methods_structg2o_1_1OptimizableGraph"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6db1ecbc582a7b79e1633eefc2109b26"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structg2o_1_1OptimizableGraph.html#a6db1ecbc582a7b79e1633eefc2109b26">addPostIterationAction</a> (<a class="el" href="classg2o_1_1HyperGraphAction.html">HyperGraphAction</a> *action)</td></tr>
+<tr class="memdesc:a6db1ecbc582a7b79e1633eefc2109b26 inherit pub_methods_structg2o_1_1OptimizableGraph"><td class="mdescLeft">&#160;</td><td class="mdescRight">add an action to be executed after each iteration <br/></td></tr>
+<tr class="separator:a6db1ecbc582a7b79e1633eefc2109b26 inherit pub_methods_structg2o_1_1OptimizableGraph"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a27f5ee7016b20bc6def24a2726fc824b inherit pub_methods_structg2o_1_1OptimizableGraph"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a27f5ee7016b20bc6def24a2726fc824b"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structg2o_1_1OptimizableGraph.html#a27f5ee7016b20bc6def24a2726fc824b">removePreIterationAction</a> (<a class="el" href="classg2o_1_1HyperGraphAction.html">HyperGraphAction</a> *action)</td></tr>
+<tr class="memdesc:a27f5ee7016b20bc6def24a2726fc824b inherit pub_methods_structg2o_1_1OptimizableGraph"><td class="mdescLeft">&#160;</td><td class="mdescRight">remove an action that should no longer be execured before each iteration <br/></td></tr>
+<tr class="separator:a27f5ee7016b20bc6def24a2726fc824b inherit pub_methods_structg2o_1_1OptimizableGraph"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a172f2f5c8ec5872d5bc34077c6391839 inherit pub_methods_structg2o_1_1OptimizableGraph"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a172f2f5c8ec5872d5bc34077c6391839"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structg2o_1_1OptimizableGraph.html#a172f2f5c8ec5872d5bc34077c6391839">removePostIterationAction</a> (<a class="el" href="classg2o_1_1HyperGraphAction.html">HyperGraphAction</a> *action)</td></tr>
+<tr class="memdesc:a172f2f5c8ec5872d5bc34077c6391839 inherit pub_methods_structg2o_1_1OptimizableGraph"><td class="mdescLeft">&#160;</td><td class="mdescRight">remove an action that should no longer be execured after each iteration <br/></td></tr>
+<tr class="separator:a172f2f5c8ec5872d5bc34077c6391839 inherit pub_methods_structg2o_1_1OptimizableGraph"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a34f4a170d58551ee9efac7a7a78fa833 inherit pub_methods_structg2o_1_1OptimizableGraph"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a34f4a170d58551ee9efac7a7a78fa833"></a>
+virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structg2o_1_1OptimizableGraph.html#a34f4a170d58551ee9efac7a7a78fa833">load</a> (std::istream &amp;is, bool createEdges=true)</td></tr>
+<tr class="memdesc:a34f4a170d58551ee9efac7a7a78fa833 inherit pub_methods_structg2o_1_1OptimizableGraph"><td class="mdescLeft">&#160;</td><td class="mdescRight">load the graph from a stream. Uses the <a class="el" href="classg2o_1_1Factory.html" title="create vertices and edges based on TAGs in, for example, a file ">Factory</a> singleton for creating the vertices and edges. <br/></td></tr>
+<tr class="separator:a34f4a170d58551ee9efac7a7a78fa833 inherit pub_methods_structg2o_1_1OptimizableGraph"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a305fe91c405fc960df051d9581e524bc inherit pub_methods_structg2o_1_1OptimizableGraph"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a305fe91c405fc960df051d9581e524bc"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>load</b> (const char *filename, bool createEdges=true)</td></tr>
+<tr class="separator:a305fe91c405fc960df051d9581e524bc inherit pub_methods_structg2o_1_1OptimizableGraph"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac38749c4a2416dcbaf37a111996f7483 inherit pub_methods_structg2o_1_1OptimizableGraph"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac38749c4a2416dcbaf37a111996f7483"></a>
+virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structg2o_1_1OptimizableGraph.html#ac38749c4a2416dcbaf37a111996f7483">save</a> (std::ostream &amp;os, int level=0) const </td></tr>
+<tr class="memdesc:ac38749c4a2416dcbaf37a111996f7483 inherit pub_methods_structg2o_1_1OptimizableGraph"><td class="mdescLeft">&#160;</td><td class="mdescRight">save the graph to a stream. Again uses the <a class="el" href="classg2o_1_1Factory.html" title="create vertices and edges based on TAGs in, for example, a file ">Factory</a> system. <br/></td></tr>
+<tr class="separator:ac38749c4a2416dcbaf37a111996f7483 inherit pub_methods_structg2o_1_1OptimizableGraph"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a35d607b133c3cb3a04fb82a3376bbcfc inherit pub_methods_structg2o_1_1OptimizableGraph"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a35d607b133c3cb3a04fb82a3376bbcfc"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structg2o_1_1OptimizableGraph.html#a35d607b133c3cb3a04fb82a3376bbcfc">save</a> (const char *filename, int level=0) const </td></tr>
+<tr class="memdesc:a35d607b133c3cb3a04fb82a3376bbcfc inherit pub_methods_structg2o_1_1OptimizableGraph"><td class="mdescLeft">&#160;</td><td class="mdescRight">function provided for convenience, see <a class="el" href="structg2o_1_1OptimizableGraph.html#ac38749c4a2416dcbaf37a111996f7483" title="save the graph to a stream. Again uses the Factory system. ">save()</a> above <br/></td></tr>
+<tr class="separator:a35d607b133c3cb3a04fb82a3376bbcfc inherit pub_methods_structg2o_1_1OptimizableGraph"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adcf211f9c7bf3ee9dab65b130807402c inherit pub_methods_structg2o_1_1OptimizableGraph"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="adcf211f9c7bf3ee9dab65b130807402c"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structg2o_1_1OptimizableGraph.html#adcf211f9c7bf3ee9dab65b130807402c">saveSubset</a> (std::ostream &amp;os, HyperGraph::VertexSet &amp;vset, int level=0)</td></tr>
+<tr class="memdesc:adcf211f9c7bf3ee9dab65b130807402c inherit pub_methods_structg2o_1_1OptimizableGraph"><td class="mdescLeft">&#160;</td><td class="mdescRight">save a subgraph to a stream. Again uses the <a class="el" href="classg2o_1_1Factory.html" title="create vertices and edges based on TAGs in, for example, a file ">Factory</a> system. <br/></td></tr>
+<tr class="separator:adcf211f9c7bf3ee9dab65b130807402c inherit pub_methods_structg2o_1_1OptimizableGraph"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2a08383ab953d435eaaca6231b64c3b6 inherit pub_methods_structg2o_1_1OptimizableGraph"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2a08383ab953d435eaaca6231b64c3b6"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structg2o_1_1OptimizableGraph.html#a2a08383ab953d435eaaca6231b64c3b6">saveSubset</a> (std::ostream &amp;os, HyperGraph::EdgeSet &amp;eset)</td></tr>
+<tr class="memdesc:a2a08383ab953d435eaaca6231b64c3b6 inherit pub_methods_structg2o_1_1OptimizableGraph"><td class="mdescLeft">&#160;</td><td class="mdescRight">save a subgraph to a stream. Again uses the <a class="el" href="classg2o_1_1Factory.html" title="create vertices and edges based on TAGs in, for example, a file ">Factory</a> system. <br/></td></tr>
+<tr class="separator:a2a08383ab953d435eaaca6231b64c3b6 inherit pub_methods_structg2o_1_1OptimizableGraph"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a74cbd91a3e05c1f497b4675b0e70113a inherit pub_methods_structg2o_1_1OptimizableGraph"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a74cbd91a3e05c1f497b4675b0e70113a"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structg2o_1_1OptimizableGraph.html#a74cbd91a3e05c1f497b4675b0e70113a">discardTop</a> (HyperGraph::VertexSet &amp;vset)</td></tr>
+<tr class="memdesc:a74cbd91a3e05c1f497b4675b0e70113a inherit pub_methods_structg2o_1_1OptimizableGraph"><td class="mdescLeft">&#160;</td><td class="mdescRight">ignore the latest stored element on the stack, remove it from the stack but do not restore the estimate <br/></td></tr>
+<tr class="separator:a74cbd91a3e05c1f497b4675b0e70113a inherit pub_methods_structg2o_1_1OptimizableGraph"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a07514f6186d19b6d893a771c0bb6abf9 inherit pub_methods_structg2o_1_1OptimizableGraph"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a07514f6186d19b6d893a771c0bb6abf9"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structg2o_1_1OptimizableGraph.html#a07514f6186d19b6d893a771c0bb6abf9">setFixed</a> (HyperGraph::VertexSet &amp;vset, bool fixed)</td></tr>
+<tr class="memdesc:a07514f6186d19b6d893a771c0bb6abf9 inherit pub_methods_structg2o_1_1OptimizableGraph"><td class="mdescLeft">&#160;</td><td class="mdescRight">fixes/releases a set of vertices <br/></td></tr>
+<tr class="separator:a07514f6186d19b6d893a771c0bb6abf9 inherit pub_methods_structg2o_1_1OptimizableGraph"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afaa77a4624619237563fe94cfd7b76fd inherit pub_methods_structg2o_1_1OptimizableGraph"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structg2o_1_1OptimizableGraph.html#afaa77a4624619237563fe94cfd7b76fd">setRenamedTypesFromString</a> (const std::string &amp;types)</td></tr>
+<tr class="separator:afaa77a4624619237563fe94cfd7b76fd inherit pub_methods_structg2o_1_1OptimizableGraph"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4a3a8c7ffa964d2ab27ccdfdaca6a0cc inherit pub_methods_structg2o_1_1OptimizableGraph"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structg2o_1_1OptimizableGraph.html#a4a3a8c7ffa964d2ab27ccdfdaca6a0cc">isSolverSuitable</a> (const <a class="el" href="structg2o_1_1OptimizationAlgorithmProperty.html">OptimizationAlgorithmProperty</a> &amp;solverProperty, const std::set&lt; int &gt; &amp;vertDims=std::set&lt; int &gt;()) const </td></tr>
+<tr class="separator:a4a3a8c7ffa964d2ab27ccdfdaca6a0cc inherit pub_methods_structg2o_1_1OptimizableGraph"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a15171b6d335115858e2e86dcf576ba78 inherit pub_methods_structg2o_1_1OptimizableGraph"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structg2o_1_1OptimizableGraph.html#a15171b6d335115858e2e86dcf576ba78">clearParameters</a> ()</td></tr>
+<tr class="separator:a15171b6d335115858e2e86dcf576ba78 inherit pub_methods_structg2o_1_1OptimizableGraph"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad4a7c038288097b0b1619c609cf40e90 inherit pub_methods_structg2o_1_1OptimizableGraph"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad4a7c038288097b0b1619c609cf40e90"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>addParameter</b> (<a class="el" href="classg2o_1_1Parameter.html">Parameter</a> *p)</td></tr>
+<tr class="separator:ad4a7c038288097b0b1619c609cf40e90 inherit pub_methods_structg2o_1_1OptimizableGraph"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad9506880a9289353ddd2277fafb76ffd inherit pub_methods_structg2o_1_1OptimizableGraph"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad9506880a9289353ddd2277fafb76ffd"></a>
+<a class="el" href="classg2o_1_1Parameter.html">Parameter</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>parameter</b> (int id)</td></tr>
+<tr class="separator:ad9506880a9289353ddd2277fafb76ffd inherit pub_methods_structg2o_1_1OptimizableGraph"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aae5f20da3c13042a9bc1f491f2150d59 inherit pub_methods_structg2o_1_1OptimizableGraph"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structg2o_1_1OptimizableGraph.html#aae5f20da3c13042a9bc1f491f2150d59">verifyInformationMatrices</a> (bool verbose=false) const </td></tr>
+<tr class="separator:aae5f20da3c13042a9bc1f491f2150d59 inherit pub_methods_structg2o_1_1OptimizableGraph"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3f254b419e9cc883094d31fdeab76bf7 inherit pub_methods_structg2o_1_1OptimizableGraph"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3f254b419e9cc883094d31fdeab76bf7"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>saveVertex</b> (std::ostream &amp;os, <a class="el" href="classg2o_1_1OptimizableGraph_1_1Vertex.html">Vertex</a> *v) const </td></tr>
+<tr class="separator:a3f254b419e9cc883094d31fdeab76bf7 inherit pub_methods_structg2o_1_1OptimizableGraph"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad40a71ebbf3d84a327c47b211e8f0911 inherit pub_methods_structg2o_1_1OptimizableGraph"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad40a71ebbf3d84a327c47b211e8f0911"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>saveEdge</b> (std::ostream &amp;os, <a class="el" href="classg2o_1_1OptimizableGraph_1_1Edge.html">Edge</a> *e) const </td></tr>
+<tr class="separator:ad40a71ebbf3d84a327c47b211e8f0911 inherit pub_methods_structg2o_1_1OptimizableGraph"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa669dbd1d6e34e49fecda711ff1b78c6 inherit pub_methods_structg2o_1_1OptimizableGraph"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa669dbd1d6e34e49fecda711ff1b78c6"></a>
+<a class="el" href="classg2o_1_1JacobianWorkspace.html">JacobianWorkspace</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structg2o_1_1OptimizableGraph.html#aa669dbd1d6e34e49fecda711ff1b78c6">jacobianWorkspace</a> ()</td></tr>
+<tr class="memdesc:aa669dbd1d6e34e49fecda711ff1b78c6 inherit pub_methods_structg2o_1_1OptimizableGraph"><td class="mdescLeft">&#160;</td><td class="mdescRight">the workspace for storing the Jacobians of the graph <br/></td></tr>
+<tr class="separator:aa669dbd1d6e34e49fecda711ff1b78c6 inherit pub_methods_structg2o_1_1OptimizableGraph"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2a8f800437cd846bad1df57b0b8c273e inherit pub_methods_structg2o_1_1OptimizableGraph"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2a8f800437cd846bad1df57b0b8c273e"></a>
+const <a class="el" href="classg2o_1_1JacobianWorkspace.html">JacobianWorkspace</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>jacobianWorkspace</b> () const </td></tr>
+<tr class="separator:a2a8f800437cd846bad1df57b0b8c273e inherit pub_methods_structg2o_1_1OptimizableGraph"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classg2o_1_1HyperGraph"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classg2o_1_1HyperGraph')"><img src="closed.png" alt="-"/>&#160;Public 成员函数 继承自 <a class="el" href="classg2o_1_1HyperGraph.html">g2o::HyperGraph</a></td></tr>
+<tr class="memitem:a833632b111cfc7cf08b842ae3cb43d41 inherit pub_methods_classg2o_1_1HyperGraph"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a833632b111cfc7cf08b842ae3cb43d41"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classg2o_1_1HyperGraph.html#a833632b111cfc7cf08b842ae3cb43d41">HyperGraph</a> ()</td></tr>
+<tr class="memdesc:a833632b111cfc7cf08b842ae3cb43d41 inherit pub_methods_classg2o_1_1HyperGraph"><td class="mdescLeft">&#160;</td><td class="mdescRight">constructs an empty hyper graph <br/></td></tr>
+<tr class="separator:a833632b111cfc7cf08b842ae3cb43d41 inherit pub_methods_classg2o_1_1HyperGraph"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0ef6e1d65e0f9171a518bce3fc559693 inherit pub_methods_classg2o_1_1HyperGraph"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0ef6e1d65e0f9171a518bce3fc559693"></a>
+virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classg2o_1_1HyperGraph.html#a0ef6e1d65e0f9171a518bce3fc559693">~HyperGraph</a> ()</td></tr>
+<tr class="memdesc:a0ef6e1d65e0f9171a518bce3fc559693 inherit pub_methods_classg2o_1_1HyperGraph"><td class="mdescLeft">&#160;</td><td class="mdescRight">destroys the hyper-graph and all the vertices of the graph <br/></td></tr>
+<tr class="separator:a0ef6e1d65e0f9171a518bce3fc559693 inherit pub_methods_classg2o_1_1HyperGraph"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab07fe8bd9982a66ba34e83dff8317ea2 inherit pub_methods_classg2o_1_1HyperGraph"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab07fe8bd9982a66ba34e83dff8317ea2"></a>
+<a class="el" href="classg2o_1_1HyperGraph_1_1Vertex.html">Vertex</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classg2o_1_1HyperGraph.html#ab07fe8bd9982a66ba34e83dff8317ea2">vertex</a> (int id)</td></tr>
+<tr class="memdesc:ab07fe8bd9982a66ba34e83dff8317ea2 inherit pub_methods_classg2o_1_1HyperGraph"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns a vertex <em>id</em> in the hyper-graph, or 0 if the vertex id is not present <br/></td></tr>
+<tr class="separator:ab07fe8bd9982a66ba34e83dff8317ea2 inherit pub_methods_classg2o_1_1HyperGraph"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a685a30debc0c540cc10c1bfc669ad2f1 inherit pub_methods_classg2o_1_1HyperGraph"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a685a30debc0c540cc10c1bfc669ad2f1"></a>
+const <a class="el" href="classg2o_1_1HyperGraph_1_1Vertex.html">Vertex</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classg2o_1_1HyperGraph.html#a685a30debc0c540cc10c1bfc669ad2f1">vertex</a> (int id) const </td></tr>
+<tr class="memdesc:a685a30debc0c540cc10c1bfc669ad2f1 inherit pub_methods_classg2o_1_1HyperGraph"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns a vertex <em>id</em> in the hyper-graph, or 0 if the vertex id is not present <br/></td></tr>
+<tr class="separator:a685a30debc0c540cc10c1bfc669ad2f1 inherit pub_methods_classg2o_1_1HyperGraph"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a33e5a60705ce673d647aa1613da9d99b inherit pub_methods_classg2o_1_1HyperGraph"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a33e5a60705ce673d647aa1613da9d99b"></a>
+virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classg2o_1_1HyperGraph.html#a33e5a60705ce673d647aa1613da9d99b">removeEdge</a> (<a class="el" href="classg2o_1_1HyperGraph_1_1Edge.html">Edge</a> *e)</td></tr>
+<tr class="memdesc:a33e5a60705ce673d647aa1613da9d99b inherit pub_methods_classg2o_1_1HyperGraph"><td class="mdescLeft">&#160;</td><td class="mdescRight">removes a vertex from the graph. Returns true on success (edge was present) <br/></td></tr>
+<tr class="separator:a33e5a60705ce673d647aa1613da9d99b inherit pub_methods_classg2o_1_1HyperGraph"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3e713e7ee84eecad3876651737af6cfc inherit pub_methods_classg2o_1_1HyperGraph"><td class="memItemLeft" align="right" valign="top">const VertexIDMap &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classg2o_1_1HyperGraph.html#a3e713e7ee84eecad3876651737af6cfc">vertices</a> () const </td></tr>
+<tr class="separator:a3e713e7ee84eecad3876651737af6cfc inherit pub_methods_classg2o_1_1HyperGraph"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a650107c875ef6f43d438d7d3e2ddf797 inherit pub_methods_classg2o_1_1HyperGraph"><td class="memItemLeft" align="right" valign="top">VertexIDMap &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classg2o_1_1HyperGraph.html#a650107c875ef6f43d438d7d3e2ddf797">vertices</a> ()</td></tr>
+<tr class="separator:a650107c875ef6f43d438d7d3e2ddf797 inherit pub_methods_classg2o_1_1HyperGraph"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acb3391945ed7c3f09243101d9ef0aaf0 inherit pub_methods_classg2o_1_1HyperGraph"><td class="memItemLeft" align="right" valign="top">const EdgeSet &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classg2o_1_1HyperGraph.html#acb3391945ed7c3f09243101d9ef0aaf0">edges</a> () const </td></tr>
+<tr class="separator:acb3391945ed7c3f09243101d9ef0aaf0 inherit pub_methods_classg2o_1_1HyperGraph"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f9f023fe2fb491ef9af873b9e683006 inherit pub_methods_classg2o_1_1HyperGraph"><td class="memItemLeft" align="right" valign="top">EdgeSet &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classg2o_1_1HyperGraph.html#a2f9f023fe2fb491ef9af873b9e683006">edges</a> ()</td></tr>
+<tr class="separator:a2f9f023fe2fb491ef9af873b9e683006 inherit pub_methods_classg2o_1_1HyperGraph"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a74f0d7392e67762a85799db72a58a94c inherit pub_methods_classg2o_1_1HyperGraph"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classg2o_1_1HyperGraph.html#a74f0d7392e67762a85799db72a58a94c">changeId</a> (<a class="el" href="classg2o_1_1HyperGraph_1_1Vertex.html">Vertex</a> *v, int newId)</td></tr>
+<tr class="separator:a74f0d7392e67762a85799db72a58a94c inherit pub_methods_classg2o_1_1HyperGraph"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected 成员函数</h2></td></tr>
+<tr class="memitem:a8a8c6f08bc9b8a4e520aa73198268991"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8a8c6f08bc9b8a4e520aa73198268991"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>sortVectorContainers</b> ()</td></tr>
+<tr class="separator:a8a8c6f08bc9b8a4e520aa73198268991"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c6af9785e85153ade1490beacad73ce"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classg2o_1_1SparseOptimizer.html#a8c6af9785e85153ade1490beacad73ce">buildIndexMapping</a> (<a class="el" href="structg2o_1_1OptimizableGraph.html#a54f01b9b6071e65e6abeebe4afb29dec">SparseOptimizer::VertexContainer</a> &amp;vlist)</td></tr>
+<tr class="separator:a8c6af9785e85153ade1490beacad73ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab6f1f4ad2b1fd50b8019c6abb89ac6a8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab6f1f4ad2b1fd50b8019c6abb89ac6a8"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>clearIndexMapping</b> ()</td></tr>
+<tr class="separator:ab6f1f4ad2b1fd50b8019c6abb89ac6a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
+Protected 属性</h2></td></tr>
+<tr class="memitem:aac4a9f9b7d875ee40cae55f98d3437ab"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aac4a9f9b7d875ee40cae55f98d3437ab"></a>
+bool *&#160;</td><td class="memItemRight" valign="bottom"><b>_forceStopFlag</b></td></tr>
+<tr class="separator:aac4a9f9b7d875ee40cae55f98d3437ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a41b3803182a4db6c0ff8c8d4352dd149"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a41b3803182a4db6c0ff8c8d4352dd149"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>_verbose</b></td></tr>
+<tr class="separator:a41b3803182a4db6c0ff8c8d4352dd149"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a488b95a90a61454c787e9c13458e510b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a488b95a90a61454c787e9c13458e510b"></a>
+<a class="el" href="structg2o_1_1OptimizableGraph.html#a54f01b9b6071e65e6abeebe4afb29dec">VertexContainer</a>&#160;</td><td class="memItemRight" valign="bottom"><b>_ivMap</b></td></tr>
+<tr class="separator:a488b95a90a61454c787e9c13458e510b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a805e1db97802980fa4dfef95cfa5e63e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a805e1db97802980fa4dfef95cfa5e63e"></a>
+<a class="el" href="structg2o_1_1OptimizableGraph.html#a54f01b9b6071e65e6abeebe4afb29dec">VertexContainer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classg2o_1_1SparseOptimizer.html#a805e1db97802980fa4dfef95cfa5e63e">_activeVertices</a></td></tr>
+<tr class="memdesc:a805e1db97802980fa4dfef95cfa5e63e"><td class="mdescLeft">&#160;</td><td class="mdescRight">sorted according to VertexIDCompare <br/></td></tr>
+<tr class="separator:a805e1db97802980fa4dfef95cfa5e63e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3207df163943bc1672fc7872964a6d6c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3207df163943bc1672fc7872964a6d6c"></a>
+<a class="el" href="structg2o_1_1OptimizableGraph.html#a2b43e807ae6d61ef8749ca1ef7c25f62">EdgeContainer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classg2o_1_1SparseOptimizer.html#a3207df163943bc1672fc7872964a6d6c">_activeEdges</a></td></tr>
+<tr class="memdesc:a3207df163943bc1672fc7872964a6d6c"><td class="mdescLeft">&#160;</td><td class="mdescRight">sorted according to EdgeIDCompare <br/></td></tr>
+<tr class="separator:a3207df163943bc1672fc7872964a6d6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a665d4ba54db76a1174bfc85a6dbc5127"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a665d4ba54db76a1174bfc85a6dbc5127"></a>
+<a class="el" href="classg2o_1_1OptimizationAlgorithm.html">OptimizationAlgorithm</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>_algorithm</b></td></tr>
+<tr class="separator:a665d4ba54db76a1174bfc85a6dbc5127"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a21215378d9e8de28aee8d55b4d25ff89"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a21215378d9e8de28aee8d55b4d25ff89"></a>
+BatchStatisticsContainer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classg2o_1_1SparseOptimizer.html#a21215378d9e8de28aee8d55b4d25ff89">_batchStatistics</a></td></tr>
+<tr class="memdesc:a21215378d9e8de28aee8d55b4d25ff89"><td class="mdescLeft">&#160;</td><td class="mdescRight">global statistics of the optimizer, e.g., timing, num-non-zeros <br/></td></tr>
+<tr class="separator:a21215378d9e8de28aee8d55b4d25ff89"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3bd44c498c4d983c092f23673de14d5d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3bd44c498c4d983c092f23673de14d5d"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>_computeBatchStatistics</b></td></tr>
+<tr class="separator:a3bd44c498c4d983c092f23673de14d5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_attribs_structg2o_1_1OptimizableGraph"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_structg2o_1_1OptimizableGraph')"><img src="closed.png" alt="-"/>&#160;Protected 属性 继承自 <a class="el" href="structg2o_1_1OptimizableGraph.html">g2o::OptimizableGraph</a></td></tr>
+<tr class="memitem:a726ab6d0b04b12f835b690d54e061731 inherit pro_attribs_structg2o_1_1OptimizableGraph"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a726ab6d0b04b12f835b690d54e061731"></a>
+std::map&lt; std::string, <br class="typebreak"/>
+std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>_renamedTypesLookup</b></td></tr>
+<tr class="separator:a726ab6d0b04b12f835b690d54e061731 inherit pro_attribs_structg2o_1_1OptimizableGraph"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a93a7f05b31bca9ccaa214499f042739a inherit pro_attribs_structg2o_1_1OptimizableGraph"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a93a7f05b31bca9ccaa214499f042739a"></a>
+long long&#160;</td><td class="memItemRight" valign="bottom"><b>_nextEdgeId</b></td></tr>
+<tr class="separator:a93a7f05b31bca9ccaa214499f042739a inherit pro_attribs_structg2o_1_1OptimizableGraph"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5e6a371ad7709692e52886ecf3e7250c inherit pro_attribs_structg2o_1_1OptimizableGraph"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5e6a371ad7709692e52886ecf3e7250c"></a>
+std::vector&lt; HyperGraphActionSet &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>_graphActions</b></td></tr>
+<tr class="separator:a5e6a371ad7709692e52886ecf3e7250c inherit pro_attribs_structg2o_1_1OptimizableGraph"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a260451b25094e5e929cc2841e31242f4 inherit pro_attribs_structg2o_1_1OptimizableGraph"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a260451b25094e5e929cc2841e31242f4"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>_edge_has_id</b></td></tr>
+<tr class="separator:a260451b25094e5e929cc2841e31242f4 inherit pro_attribs_structg2o_1_1OptimizableGraph"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3a7974befcd934f28a36de3999423d21 inherit pro_attribs_structg2o_1_1OptimizableGraph"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3a7974befcd934f28a36de3999423d21"></a>
+<a class="el" href="classg2o_1_1ParameterContainer.html">ParameterContainer</a>&#160;</td><td class="memItemRight" valign="bottom"><b>_parameters</b></td></tr>
+<tr class="separator:a3a7974befcd934f28a36de3999423d21 inherit pro_attribs_structg2o_1_1OptimizableGraph"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a161c01a29d09cca22e223ab2048eaba8 inherit pro_attribs_structg2o_1_1OptimizableGraph"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a161c01a29d09cca22e223ab2048eaba8"></a>
+<a class="el" href="classg2o_1_1JacobianWorkspace.html">JacobianWorkspace</a>&#160;</td><td class="memItemRight" valign="bottom"><b>_jacobianWorkspace</b></td></tr>
+<tr class="separator:a161c01a29d09cca22e223ab2048eaba8 inherit pro_attribs_structg2o_1_1OptimizableGraph"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_attribs_classg2o_1_1HyperGraph"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classg2o_1_1HyperGraph')"><img src="closed.png" alt="-"/>&#160;Protected 属性 继承自 <a class="el" href="classg2o_1_1HyperGraph.html">g2o::HyperGraph</a></td></tr>
+<tr class="memitem:a83132c77c8d0896581d168cbc72f673a inherit pro_attribs_classg2o_1_1HyperGraph"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a83132c77c8d0896581d168cbc72f673a"></a>
+VertexIDMap&#160;</td><td class="memItemRight" valign="bottom"><b>_vertices</b></td></tr>
+<tr class="separator:a83132c77c8d0896581d168cbc72f673a inherit pro_attribs_classg2o_1_1HyperGraph"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afe4ae6e9ef05c8bded2b1b30e1886b36 inherit pro_attribs_classg2o_1_1HyperGraph"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afe4ae6e9ef05c8bded2b1b30e1886b36"></a>
+EdgeSet&#160;</td><td class="memItemRight" valign="bottom"><b>_edges</b></td></tr>
+<tr class="separator:afe4ae6e9ef05c8bded2b1b30e1886b36 inherit pro_attribs_classg2o_1_1HyperGraph"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
+友元</h2></td></tr>
+<tr class="memitem:af974cb94744550cc732d61f7fd7d63ed"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af974cb94744550cc732d61f7fd7d63ed"></a>
+class&#160;</td><td class="memItemRight" valign="bottom"><b>ActivePathCostFunction</b></td></tr>
+<tr class="separator:af974cb94744550cc732d61f7fd7d63ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
+额外继承的成员函数</h2></td></tr>
+<tr class="inherit_header pub_static_methods_structg2o_1_1OptimizableGraph"><td colspan="2" onclick="javascript:toggleInherit('pub_static_methods_structg2o_1_1OptimizableGraph')"><img src="closed.png" alt="-"/>&#160;静态 Public 成员函数 继承自 <a class="el" href="structg2o_1_1OptimizableGraph.html">g2o::OptimizableGraph</a></td></tr>
+<tr class="memitem:ab4ee0fc3ecd31852276ded40b62e9c76 inherit pub_static_methods_structg2o_1_1OptimizableGraph"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structg2o_1_1OptimizableGraph.html#ab4ee0fc3ecd31852276ded40b62e9c76">initMultiThreading</a> ()</td></tr>
+<tr class="separator:ab4ee0fc3ecd31852276ded40b62e9c76 inherit pub_static_methods_structg2o_1_1OptimizableGraph"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_attribs_structg2o_1_1OptimizableGraph"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_structg2o_1_1OptimizableGraph')"><img src="closed.png" alt="-"/>&#160;Public 属性 继承自 <a class="el" href="structg2o_1_1OptimizableGraph.html">g2o::OptimizableGraph</a></td></tr>
+<tr class="memitem:ae1bdcfc2f7a1b8977ba04a16b16f1eba inherit pub_attribs_structg2o_1_1OptimizableGraph"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae1bdcfc2f7a1b8977ba04a16b16f1eba"></a>
+class G2O_CORE_API&#160;</td><td class="memItemRight" valign="bottom"><b>Vertex</b></td></tr>
+<tr class="separator:ae1bdcfc2f7a1b8977ba04a16b16f1eba inherit pub_attribs_structg2o_1_1OptimizableGraph"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a59cf44f3f3182a367ee4525412c7940a inherit pub_attribs_structg2o_1_1OptimizableGraph"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a59cf44f3f3182a367ee4525412c7940a"></a>
+class G2O_CORE_API&#160;</td><td class="memItemRight" valign="bottom"><b>Edge</b></td></tr>
+<tr class="separator:a59cf44f3f3182a367ee4525412c7940a inherit pub_attribs_structg2o_1_1OptimizableGraph"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_attribs_classg2o_1_1HyperGraph"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_classg2o_1_1HyperGraph')"><img src="closed.png" alt="-"/>&#160;Public 属性 继承自 <a class="el" href="classg2o_1_1HyperGraph.html">g2o::HyperGraph</a></td></tr>
+<tr class="memitem:a2aca385a3acb87b4f4365765afd10093 inherit pub_attribs_classg2o_1_1HyperGraph"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2aca385a3acb87b4f4365765afd10093"></a>
+class G2O_CORE_API&#160;</td><td class="memItemRight" valign="bottom"><b>Vertex</b></td></tr>
+<tr class="separator:a2aca385a3acb87b4f4365765afd10093 inherit pub_attribs_classg2o_1_1HyperGraph"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a59ab1fe84b0728a65a0ba15fce9b9cf7 inherit pub_attribs_classg2o_1_1HyperGraph"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a59ab1fe84b0728a65a0ba15fce9b9cf7"></a>
+class G2O_CORE_API&#160;</td><td class="memItemRight" valign="bottom"><b>Edge</b></td></tr>
+<tr class="separator:a59ab1fe84b0728a65a0ba15fce9b9cf7 inherit pub_attribs_classg2o_1_1HyperGraph"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock">
+<p>在文件 <a class="el" href="sparse__optimizer_8h_source.html">sparse_optimizer.h</a> 第 <a class="el" href="sparse__optimizer_8h_source.html#l00046">46</a> 行定义.</p>
+</div><h2 class="groupheader">成员函数说明</h2>
+<a class="anchor" id="add4d83073e22dbb48b66b953d0185ffa"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double g2o::SparseOptimizer::activeChi2 </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>returns the cached chi2 of the active portion of the graph </p>
+
+<p>在文件 <a class="el" href="sparse__optimizer_8cpp_source.html">sparse_optimizer.cpp</a> 第 <a class="el" href="sparse__optimizer_8cpp_source.html#l00090">90</a> 行定义.</p>
+
+<p>参考 <a class="el" href="classg2o_1_1OptimizableGraph_1_1Edge.html#a182bd2c109d50283c638d9b295f2f3d7">g2o::OptimizableGraph::Edge::chi2()</a>.</p>
+
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classg2o_1_1SparseOptimizer_add4d83073e22dbb48b66b953d0185ffa_cgraph.png" border="0" usemap="#classg2o_1_1SparseOptimizer_add4d83073e22dbb48b66b953d0185ffa_cgraph" alt=""/></div>
+<map name="classg2o_1_1SparseOptimizer_add4d83073e22dbb48b66b953d0185ffa_cgraph" id="classg2o_1_1SparseOptimizer_add4d83073e22dbb48b66b953d0185ffa_cgraph">
+<area shape="rect" id="node2" href="classg2o_1_1OptimizableGraph_1_1Edge.html#a182bd2c109d50283c638d9b295f2f3d7" title="computes the chi2 based on the cached error value, only valid after computeError has been called..." alt="" coords="203,5,357,46"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="ae47c5023e53685523499fc00d6057d14"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double g2o::SparseOptimizer::activeRobustChi2 </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>returns the cached chi2 of the active portion of the graph. In contrast to <a class="el" href="classg2o_1_1SparseOptimizer.html#add4d83073e22dbb48b66b953d0185ffa">activeChi2()</a> this functions considers the weighting of the error according to the robustification of the error functions. </p>
+
+<p>在文件 <a class="el" href="sparse__optimizer_8cpp_source.html">sparse_optimizer.cpp</a> 第 <a class="el" href="sparse__optimizer_8cpp_source.html#l00100">100</a> 行定义.</p>
+
+<p>参考 <a class="el" href="classg2o_1_1OptimizableGraph_1_1Edge.html#a182bd2c109d50283c638d9b295f2f3d7">g2o::OptimizableGraph::Edge::chi2()</a>, <a class="el" href="classg2o_1_1RobustKernel.html#ab47b071a0cfe466be063f0104bc41d0f">g2o::RobustKernel::robustify()</a> , 以及 <a class="el" href="optimizable__graph_8h_source.html#l00416">g2o::OptimizableGraph::Edge::robustKernel()</a>.</p>
+
+<p>参考自 <a class="el" href="optimization__algorithm__levenberg_8cpp_source.html#l00061">g2o::OptimizationAlgorithmLevenberg::solve()</a> , 以及 <a class="el" href="optimization__algorithm__dogleg_8cpp_source.html#l00057">g2o::OptimizationAlgorithmDogleg::solve()</a>.</p>
+
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classg2o_1_1SparseOptimizer_ae47c5023e53685523499fc00d6057d14_cgraph.png" border="0" usemap="#classg2o_1_1SparseOptimizer_ae47c5023e53685523499fc00d6057d14_cgraph" alt=""/></div>
+<map name="classg2o_1_1SparseOptimizer_ae47c5023e53685523499fc00d6057d14_cgraph" id="classg2o_1_1SparseOptimizer_ae47c5023e53685523499fc00d6057d14_cgraph">
+<area shape="rect" id="node2" href="classg2o_1_1OptimizableGraph_1_1Edge.html#a182bd2c109d50283c638d9b295f2f3d7" title="computes the chi2 based on the cached error value, only valid after computeError has been called..." alt="" coords="203,5,357,46"/><area shape="rect" id="node3" href="classg2o_1_1RobustKernel.html#ab47b071a0cfe466be063f0104bc41d0f" title="g2o::RobustKernel::\lrobustify" alt="" coords="211,70,349,111"/><area shape="rect" id="node4" href="classg2o_1_1OptimizableGraph_1_1Edge.html#aeb6ce9f3bf7b896f58272ea0d3feb8ff" title="if NOT NULL, error of this edge will be robustifed with the kernel " alt="" coords="203,135,357,177"/></map>
+</div>
+</p>
+
+<p><div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classg2o_1_1SparseOptimizer_ae47c5023e53685523499fc00d6057d14_icgraph.png" border="0" usemap="#classg2o_1_1SparseOptimizer_ae47c5023e53685523499fc00d6057d14_icgraph" alt=""/></div>
+<map name="classg2o_1_1SparseOptimizer_ae47c5023e53685523499fc00d6057d14_icgraph" id="classg2o_1_1SparseOptimizer_ae47c5023e53685523499fc00d6057d14_icgraph">
+<area shape="rect" id="node2" href="classg2o_1_1OptimizationAlgorithmLevenberg.html#a7140fa989b54eac4e09ba17829dcada0" title="g2o::OptimizationAlgorithm\lLevenberg::solve" alt="" coords="203,5,381,46"/><area shape="rect" id="node3" href="classg2o_1_1OptimizationAlgorithmDogleg.html#ace62fd809c18655bd7ff104285748610" title="g2o::OptimizationAlgorithm\lDogleg::solve" alt="" coords="203,70,381,111"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="ac0b9e0f3c9d05f600882b9c9b8a5c7c1"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const BatchStatisticsContainer&amp; g2o::SparseOptimizer::batchStatistics </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Linearizes the system by computing the Jacobians for the nodes and edges in the graph returns the set of batch statistics about the optimisation </p>
+
+<p>在文件 <a class="el" href="sparse__optimizer_8h_source.html">sparse_optimizer.h</a> 第 <a class="el" href="sparse__optimizer_8h_source.html#l00272">272</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="aa93ecf8d3b99e2eef3709a5c70cc8632"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">BatchStatisticsContainer&amp; g2o::SparseOptimizer::batchStatistics </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>returns the set of batch statistics about the optimisation </p>
+
+<p>在文件 <a class="el" href="sparse__optimizer_8h_source.html">sparse_optimizer.h</a> 第 <a class="el" href="sparse__optimizer_8h_source.html#l00276">276</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a8c6af9785e85153ade1490beacad73ce"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool g2o::SparseOptimizer::buildIndexMapping </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structg2o_1_1OptimizableGraph.html#a54f01b9b6071e65e6abeebe4afb29dec">SparseOptimizer::VertexContainer</a> &amp;&#160;</td>
+          <td class="paramname"><em>vlist</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>builds the mapping of the active vertices to the (block) row / column in the Hessian </p>
+
+<p>在文件 <a class="el" href="sparse__optimizer_8cpp_source.html">sparse_optimizer.cpp</a> 第 <a class="el" href="sparse__optimizer_8cpp_source.html#l00166">166</a> 行定义.</p>
+
+<p>参考 <a class="el" href="optimizable__graph_8h_source.html#l00306">g2o::OptimizableGraph::Vertex::fixed()</a>, <a class="el" href="optimizable__graph_8h_source.html#l00311">g2o::OptimizableGraph::Vertex::marginalized()</a> , 以及 <a class="el" href="optimizable__graph_8h_source.html#l00302">g2o::OptimizableGraph::Vertex::setHessianIndex()</a>.</p>
+
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classg2o_1_1SparseOptimizer_a8c6af9785e85153ade1490beacad73ce_cgraph.png" border="0" usemap="#classg2o_1_1SparseOptimizer_a8c6af9785e85153ade1490beacad73ce_cgraph" alt=""/></div>
+<map name="classg2o_1_1SparseOptimizer_a8c6af9785e85153ade1490beacad73ce_cgraph" id="classg2o_1_1SparseOptimizer_a8c6af9785e85153ade1490beacad73ce_cgraph">
+<area shape="rect" id="node2" href="classg2o_1_1OptimizableGraph_1_1Vertex.html#ac83c34e6176f0cc5315ad7401a49efb3" title="true =&gt; this node is fixed during the optimization " alt="" coords="213,5,368,46"/><area shape="rect" id="node3" href="classg2o_1_1OptimizableGraph_1_1Vertex.html#a214c01f0b3cab575f3496be729f6ccb1" title="true =&gt; this node is marginalized out during the optimization " alt="" coords="213,70,368,111"/><area shape="rect" id="node4" href="classg2o_1_1OptimizableGraph_1_1Vertex.html#a440f24c0108be5247f3529369aa1e53c" title="set the temporary index of the vertex in the parameter blocks " alt="" coords="203,135,378,177"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a4881e4ac9ba9a58d4e249dc03ef9683d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void g2o::SparseOptimizer::clear </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>clears the graph, and polishes some intermediate structures Note that this only removes nodes / edges. Parameters can be removed with <a class="el" href="structg2o_1_1OptimizableGraph.html#a15171b6d335115858e2e86dcf576ba78">clearParameters()</a>. </p>
+
+<p>重载 <a class="el" href="classg2o_1_1HyperGraph.html#a6b629dff2928dbd704ca81f24858e72f">g2o::HyperGraph</a> .</p>
+
+<p>在文件 <a class="el" href="sparse__optimizer_8cpp_source.html">sparse_optimizer.cpp</a> 第 <a class="el" href="sparse__optimizer_8cpp_source.html#l00489">489</a> 行定义.</p>
+
+<p>参考自 <a class="el" href="block__solver_8hpp_source.html#l00608">g2o::BlockSolver&lt; Traits &gt;::init()</a>.</p>
+
+<p><div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classg2o_1_1SparseOptimizer_a4881e4ac9ba9a58d4e249dc03ef9683d_icgraph.png" border="0" usemap="#classg2o_1_1SparseOptimizer_a4881e4ac9ba9a58d4e249dc03ef9683d_icgraph" alt=""/></div>
+<map name="classg2o_1_1SparseOptimizer_a4881e4ac9ba9a58d4e249dc03ef9683d_icgraph" id="classg2o_1_1SparseOptimizer_a4881e4ac9ba9a58d4e249dc03ef9683d_icgraph">
+<area shape="rect" id="node2" href="classg2o_1_1BlockSolver.html#a8bf01018abc3bfddfa3b29a380a1d6cb" title="g2o::BlockSolver::init" alt="" coords="203,12,349,39"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a09572668aa85b75a5bebf7b66401ce8f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void g2o::SparseOptimizer::computeActiveErrors </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>computes the error vectors of all edges in the activeSet, and caches them </p>
+
+<p>在文件 <a class="el" href="sparse__optimizer_8cpp_source.html">sparse_optimizer.cpp</a> 第 <a class="el" href="sparse__optimizer_8cpp_source.html#l00061">61</a> 行定义.</p>
+
+<p>参考 <a class="el" href="optimizable__graph_8h_source.html#l00473">g2o::OptimizableGraph::Edge::dimension()</a> , 以及 <a class="el" href="classg2o_1_1OptimizableGraph_1_1Edge.html#a5f2a4b6efa2d0ae600f94a28a6ba58cf">g2o::OptimizableGraph::Edge::errorData()</a>.</p>
+
+<p>参考自 <a class="el" href="optimization__algorithm__gauss__newton_8cpp_source.html#l00050">g2o::OptimizationAlgorithmGaussNewton::solve()</a>, <a class="el" href="optimization__algorithm__levenberg_8cpp_source.html#l00061">g2o::OptimizationAlgorithmLevenberg::solve()</a> , 以及 <a class="el" href="optimization__algorithm__dogleg_8cpp_source.html#l00057">g2o::OptimizationAlgorithmDogleg::solve()</a>.</p>
+
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classg2o_1_1SparseOptimizer_a09572668aa85b75a5bebf7b66401ce8f_cgraph.png" border="0" usemap="#classg2o_1_1SparseOptimizer_a09572668aa85b75a5bebf7b66401ce8f_cgraph" alt=""/></div>
+<map name="classg2o_1_1SparseOptimizer_a09572668aa85b75a5bebf7b66401ce8f_cgraph" id="classg2o_1_1SparseOptimizer_a09572668aa85b75a5bebf7b66401ce8f_cgraph">
+<area shape="rect" id="node2" href="classg2o_1_1OptimizableGraph_1_1Edge.html#a90a86891adc47a179a7cd7ef31549916" title="returns the dimensions of the error function " alt="" coords="205,5,360,46"/><area shape="rect" id="node3" href="classg2o_1_1OptimizableGraph_1_1Edge.html#a5f2a4b6efa2d0ae600f94a28a6ba58cf" title="returns the error vector cached after calling the computeError; " alt="" coords="205,70,360,111"/></map>
+</div>
+</p>
+
+<p><div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classg2o_1_1SparseOptimizer_a09572668aa85b75a5bebf7b66401ce8f_icgraph.png" border="0" usemap="#classg2o_1_1SparseOptimizer_a09572668aa85b75a5bebf7b66401ce8f_icgraph" alt=""/></div>
+<map name="classg2o_1_1SparseOptimizer_a09572668aa85b75a5bebf7b66401ce8f_icgraph" id="classg2o_1_1SparseOptimizer_a09572668aa85b75a5bebf7b66401ce8f_icgraph">
+<area shape="rect" id="node2" href="classg2o_1_1OptimizationAlgorithmGaussNewton.html#aba0b67eecaca01c576de7e605e5af5f1" title="g2o::OptimizationAlgorithm\lGaussNewton::solve" alt="" coords="205,5,384,46"/><area shape="rect" id="node3" href="classg2o_1_1OptimizationAlgorithmLevenberg.html#a7140fa989b54eac4e09ba17829dcada0" title="g2o::OptimizationAlgorithm\lLevenberg::solve" alt="" coords="205,70,384,111"/><area shape="rect" id="node4" href="classg2o_1_1OptimizationAlgorithmDogleg.html#ace62fd809c18655bd7ff104285748610" title="g2o::OptimizationAlgorithm\lDogleg::solve" alt="" coords="205,135,384,177"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a59db9f16934d3b9f7a52511f0be1bb07"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void g2o::SparseOptimizer::computeInitialGuess </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Propagates an initial guess from the vertex specified as origin. It should be called after initializeOptimization(...), as it relies on the _activeVertices/_edges structures. It constructs a set of trees starting from the nodes in the graph which are fixed and eligible for preforming optimization. The trees are constructed by utlizing a cost-function specified. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">costFunction</td><td>the cost function used  maxDistance: the distance where to stop the search </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>在文件 <a class="el" href="sparse__optimizer_8cpp_source.html">sparse_optimizer.cpp</a> 第 <a class="el" href="sparse__optimizer_8cpp_source.html#l00300">300</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a2fba11c8572fce4a8c1bcca4fa3e43fb"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void g2o::SparseOptimizer::computeInitialGuess </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classg2o_1_1EstimatePropagatorCost.html">EstimatePropagatorCost</a> &amp;&#160;</td>
+          <td class="paramname"><em>propagator</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Same as above but using a specific propagator </p>
+
+<p>在文件 <a class="el" href="sparse__optimizer_8cpp_source.html">sparse_optimizer.cpp</a> 第 <a class="el" href="sparse__optimizer_8cpp_source.html#l00306">306</a> 行定义.</p>
+
+<p>参考 <a class="el" href="hyper__graph_8h_source.html#l00111">g2o::HyperGraph::Vertex::edges()</a>, <a class="el" href="optimizable__graph_8h_source.html#l00306">g2o::OptimizableGraph::Vertex::fixed()</a>, <a class="el" href="optimizable__graph_8h_source.html#l00299">g2o::OptimizableGraph::Vertex::hessianIndex()</a>, <a class="el" href="classg2o_1_1OptimizableGraph_1_1Edge.html#a9519f8892e97f03daacb44ea50ac7f4e">g2o::OptimizableGraph::Edge::initialEstimate()</a>, <a class="el" href="optimizable__graph_8h_source.html#l00465">g2o::OptimizableGraph::Edge::initialEstimatePossible()</a>, <a class="el" href="estimate__propagator_8cpp_source.html#l00086">g2o::EstimatePropagator::propagate()</a>, <a class="el" href="classg2o_1_1OptimizableGraph_1_1Vertex.html#aa477ed33d30a01ed468f33bb2a2f2d9d">g2o::OptimizableGraph::Vertex::push()</a>, <a class="el" href="hyper__graph_8h_source.html#l00145">g2o::HyperGraph::Edge::vertex()</a> , 以及 <a class="el" href="hyper__graph_8h_source.html#l00137">g2o::HyperGraph::Edge::vertices()</a>.</p>
+
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classg2o_1_1SparseOptimizer_a2fba11c8572fce4a8c1bcca4fa3e43fb_cgraph.png" border="0" usemap="#classg2o_1_1SparseOptimizer_a2fba11c8572fce4a8c1bcca4fa3e43fb_cgraph" alt=""/></div>
+<map name="classg2o_1_1SparseOptimizer_a2fba11c8572fce4a8c1bcca4fa3e43fb_cgraph" id="classg2o_1_1SparseOptimizer_a2fba11c8572fce4a8c1bcca4fa3e43fb_cgraph">
+<area shape="rect" id="node2" href="classg2o_1_1HyperGraph_1_1Vertex.html#a0805a5575511327262c89585f1953b8e" title="returns the set of hyper&#45;edges that are leaving/entering in this vertex " alt="" coords="219,5,386,46"/><area shape="rect" id="node3" href="classg2o_1_1OptimizableGraph_1_1Vertex.html#ac83c34e6176f0cc5315ad7401a49efb3" title="true =&gt; this node is fixed during the optimization " alt="" coords="225,70,380,111"/><area shape="rect" id="node4" href="classg2o_1_1OptimizableGraph_1_1Vertex.html#a33009d06f2d3682a3c774182c807c48a" title="temporary index of this node in the parameter vector obtained from linearization " alt="" coords="225,135,380,177"/><area shape="rect" id="node5" href="classg2o_1_1OptimizableGraph_1_1Edge.html#a9519f8892e97f03daacb44ea50ac7f4e" title="g2o::OptimizableGraph\l::Edge::initialEstimate" alt="" coords="225,201,380,242"/><area shape="rect" id="node6" href="classg2o_1_1OptimizableGraph_1_1Edge.html#a1cef6ffa0f82f1ad3dd3d7a9f04425ee" title="g2o::OptimizableGraph\l::Edge::initialEstimatePossible" alt="" coords="203,266,403,307"/><area shape="rect" id="node7" href="classg2o_1_1EstimatePropagator.html#a3b1df65f9b89d81dff33cb140d4f75d4" title="g2o::EstimatePropagator\l::propagate" alt="" coords="219,331,386,373"/><area shape="rect" id="node8" href="classg2o_1_1OptimizableGraph_1_1Vertex.html#aa477ed33d30a01ed468f33bb2a2f2d9d" title="backup the position of the vertex to a stack " alt="" coords="225,397,380,438"/><area shape="rect" id="node9" href="classg2o_1_1HyperGraph_1_1Edge.html#aaec0b2c92c5496d0f0fea8f1abdc4311" title="g2o::HyperGraph::Edge\l::vertex" alt="" coords="223,462,382,503"/><area shape="rect" id="node10" href="classg2o_1_1HyperGraph_1_1Edge.html#a6410bb70a917b5407770ef1f1090b5f5" title="g2o::HyperGraph::Edge\l::vertices" alt="" coords="223,527,382,569"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a656be8b8244a48dc1207f29eec77af5a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool g2o::SparseOptimizer::computeMarginals </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classg2o_1_1SparseBlockMatrix.html">SparseBlockMatrix</a>&lt; MatrixXd &gt; &amp;&#160;</td>
+          <td class="paramname"><em>spinv</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; std::pair&lt; int, int &gt; &gt; &amp;&#160;</td>
+          <td class="paramname"><em>blockIndices</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>computes the blocks of the inverse of the specified pattern. the pattern is given via pairs &lt;row, col&gt; of the blocks in the hessian </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">blockIndices</td><td>the pattern </td></tr>
+    <tr><td class="paramname">spinv</td><td>the sparse block matrix with the result </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>false if the operation is not supported by the solver </dd></dl>
+
+<p>在文件 <a class="el" href="sparse__optimizer_8cpp_source.html">sparse_optimizer.cpp</a> 第 <a class="el" href="sparse__optimizer_8cpp_source.html#l00570">570</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="ad9f7ba03f7f37114f757f34f67dd48e5"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool g2o::SparseOptimizer::computeMarginals </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classg2o_1_1SparseBlockMatrix.html">SparseBlockMatrix</a>&lt; MatrixXd &gt; &amp;&#160;</td>
+          <td class="paramname"><em>spinv</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classg2o_1_1HyperGraph_1_1Vertex.html">Vertex</a> *&#160;</td>
+          <td class="paramname"><em>vertex</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>computes the inverse of the specified vertex. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">vertex</td><td>the vertex whose state is to be marginalised </td></tr>
+    <tr><td class="paramname">spinv</td><td>the sparse block matrix with the result </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>false if the operation is not supported by the solver </dd></dl>
+
+<p>在文件 <a class="el" href="sparse__optimizer_8h_source.html">sparse_optimizer.h</a> 第 <a class="el" href="sparse__optimizer_8h_source.html#l00139">139</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a06bd3e9f1576dafeae317d2697c6f532"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool g2o::SparseOptimizer::computeMarginals </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classg2o_1_1SparseBlockMatrix.html">SparseBlockMatrix</a>&lt; MatrixXd &gt; &amp;&#160;</td>
+          <td class="paramname"><em>spinv</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structg2o_1_1OptimizableGraph.html#a54f01b9b6071e65e6abeebe4afb29dec">VertexContainer</a> &amp;&#160;</td>
+          <td class="paramname"><em>vertices</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>computes the inverse of the set specified vertices, assembled into a single covariance matrix. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">vertex</td><td>the pattern </td></tr>
+    <tr><td class="paramname">spinv</td><td>the sparse block matrix with the result </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>false if the operation is not supported by the solver </dd></dl>
+
+<p>在文件 <a class="el" href="sparse__optimizer_8h_source.html">sparse_optimizer.h</a> 第 <a class="el" href="sparse__optimizer_8h_source.html#l00154">154</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a68b59bf6d56a390717b82b3ae009ccf0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">SparseOptimizer::EdgeContainer::const_iterator g2o::SparseOptimizer::findActiveEdge </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classg2o_1_1OptimizableGraph_1_1Edge.html">OptimizableGraph::Edge</a> *&#160;</td>
+          <td class="paramname"><em>e</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>search for an edge in _activeEdges and return the iterator pointing to it getActiveEdges().end() if not found </p>
+
+<p>在文件 <a class="el" href="sparse__optimizer_8cpp_source.html">sparse_optimizer.cpp</a> 第 <a class="el" href="sparse__optimizer_8cpp_source.html#l00506">506</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a89ae01e9d070110a775d8a266717d719"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">SparseOptimizer::VertexContainer::const_iterator g2o::SparseOptimizer::findActiveVertex </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classg2o_1_1OptimizableGraph_1_1Vertex.html">OptimizableGraph::Vertex</a> *&#160;</td>
+          <td class="paramname"><em>v</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>search for an edge in _activeVertices and return the iterator pointing to it getActiveVertices().end() if not found </p>
+
+<p>在文件 <a class="el" href="sparse__optimizer_8cpp_source.html">sparse_optimizer.cpp</a> 第 <a class="el" href="sparse__optimizer_8cpp_source.html#l00496">496</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a56c0c13954ac7204cfb031c141ece9ae"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool g2o::SparseOptimizer::initializeOptimization </td>
+          <td>(</td>
+          <td class="paramtype">HyperGraph::EdgeSet &amp;&#160;</td>
+          <td class="paramname"><em>eset</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Initializes the structures for optimizing a portion of the graph specified by a subset of edges. Before calling it be sure to invoke marginalized() and fixed() to the vertices you want to include in the schur complement or to set as fixed during the optimization. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">eset</td><td>the subgraph to be optimized. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>false if somethings goes wrong </dd></dl>
+
+<p>在文件 <a class="el" href="sparse__optimizer_8cpp_source.html">sparse_optimizer.cpp</a> 第 <a class="el" href="sparse__optimizer_8cpp_source.html#l00269">269</a> 行定义.</p>
+
+<p>参考 <a class="el" href="hyper__graph_8h_source.html#l00137">g2o::HyperGraph::Edge::vertices()</a>.</p>
+
+<p>参考自 <a class="el" href="Optimizer_8cpp_source.html#l00072">ORB_SLAM2::Optimizer::BundleAdjustment()</a>, <a class="el" href="Optimizer_8cpp_source.html#l00536">ORB_SLAM2::Optimizer::LocalBundleAdjustment()</a>, <a class="el" href="Optimizer_8cpp_source.html#l00905">ORB_SLAM2::Optimizer::OptimizeEssentialGraph()</a>, <a class="el" href="Optimizer_8cpp_source.html#l01225">ORB_SLAM2::Optimizer::OptimizeSim3()</a> , 以及 <a class="el" href="Optimizer_8cpp_source.html#l00291">ORB_SLAM2::Optimizer::PoseOptimization()</a>.</p>
+
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classg2o_1_1SparseOptimizer_a56c0c13954ac7204cfb031c141ece9ae_cgraph.png" border="0" usemap="#classg2o_1_1SparseOptimizer_a56c0c13954ac7204cfb031c141ece9ae_cgraph" alt=""/></div>
+<map name="classg2o_1_1SparseOptimizer_a56c0c13954ac7204cfb031c141ece9ae_cgraph" id="classg2o_1_1SparseOptimizer_a56c0c13954ac7204cfb031c141ece9ae_cgraph">
+<area shape="rect" id="node2" href="classg2o_1_1HyperGraph_1_1Edge.html#a6410bb70a917b5407770ef1f1090b5f5" title="g2o::HyperGraph::Edge\l::vertices" alt="" coords="206,5,365,46"/></map>
+</div>
+</p>
+
+<p><div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classg2o_1_1SparseOptimizer_a56c0c13954ac7204cfb031c141ece9ae_icgraph.png" border="0" usemap="#classg2o_1_1SparseOptimizer_a56c0c13954ac7204cfb031c141ece9ae_icgraph" alt=""/></div>
+<map name="classg2o_1_1SparseOptimizer_a56c0c13954ac7204cfb031c141ece9ae_icgraph" id="classg2o_1_1SparseOptimizer_a56c0c13954ac7204cfb031c141ece9ae_icgraph">
+<area shape="rect" id="node2" href="classORB__SLAM2_1_1Optimizer.html#a5e855fe6b54082739b7e7013048e6340" title="bundle adjustment Optimization " alt="" coords="208,5,373,46"/><area shape="rect" id="node3" href="classORB__SLAM2_1_1Optimizer.html#ab70e0b4f366b65a0c1ae8b2def19d339" title="Local Bundle Adjustment. " alt="" coords="207,70,374,111"/><area shape="rect" id="node4" href="classORB__SLAM2_1_1Optimizer.html#ad36bb1a7167c84f385c3f299bc96f20e" title="闭环检测后，EssentialGraph优化 " alt="" coords="205,135,376,177"/><area shape="rect" id="node6" href="classORB__SLAM2_1_1Optimizer.html#ad8fe00ad3e6564b859b07ff9e7b2224e" title="形成闭环时进行Sim3优化 " alt="" coords="208,201,373,242"/><area shape="rect" id="node8" href="classORB__SLAM2_1_1Optimizer.html#a7415d78b8a2323b88e108fa1ea3bf2d3" title="Pose Only Optimization. " alt="" coords="208,299,373,341"/><area shape="rect" id="node5" href="classORB__SLAM2_1_1LoopClosing.html#aa007e0678582ec0de5d71280d23af540" title="闭环 " alt="" coords="425,135,607,177"/><area shape="rect" id="node7" href="classORB__SLAM2_1_1LoopClosing.html#ab4fcf814eed5b5dd2aec96454561b078" title="计算当前帧与闭环帧的Sim3变换等 " alt="" coords="425,201,607,242"/><area shape="rect" id="node9" href="classORB__SLAM2_1_1Tracking.html#a737c5409c93844353561a0fe724ed1c2" title="对参考关键帧的MapPoints进行跟踪 " alt="" coords="425,266,607,307"/><area shape="rect" id="node11" href="classORB__SLAM2_1_1Tracking.html#aca19f1d69b30a6c6e49281d422ac8298" title="根据匀速度模型对上一帧的MapPoints进行跟踪 " alt="" coords="434,331,598,373"/><area shape="rect" id="node12" href="classORB__SLAM2_1_1Tracking.html#af670c614f4e10d58c9f7aad9865b5c08" title="对Local Map的MapPoints进行跟踪 " alt="" coords="437,397,595,438"/><area shape="rect" id="node10" href="classORB__SLAM2_1_1Tracking.html#af1f2c9c533642d8c33854540e90d1918" title="Main tracking function. It is independent of the input sensor. " alt="" coords="657,331,815,373"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="ab16dd36e32577ba5856239ce721ec70b"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool g2o::SparseOptimizer::initializeOptimization </td>
+          <td>(</td>
+          <td class="paramtype">HyperGraph::VertexSet &amp;&#160;</td>
+          <td class="paramname"><em>vset</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>level</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Initializes the structures for optimizing a portion of the graph specified by a subset of vertices. Before calling it be sure to invoke marginalized() and fixed() to the vertices you want to include in the schur complement or to set as fixed during the optimization. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">vset</td><td>the subgraph to be optimized. </td></tr>
+    <tr><td class="paramname">level</td><td>is the level (in multilevel optimization) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>false if somethings goes wrong </dd></dl>
+
+<p>在文件 <a class="el" href="sparse__optimizer_8cpp_source.html">sparse_optimizer.cpp</a> 第 <a class="el" href="sparse__optimizer_8cpp_source.html#l00206">206</a> 行定义.</p>
+
+<p>参考 <a class="el" href="hyper__graph_8h_source.html#l00111">g2o::HyperGraph::Vertex::edges()</a>, <a class="el" href="optimizable__graph_8cpp_source.html#l00109">g2o::OptimizableGraph::Vertex::estimateDimension()</a>, <a class="el" href="optimizable__graph_8cpp_source.html#l00104">g2o::OptimizableGraph::Vertex::getEstimateData()</a>, <a class="el" href="hyper__graph_8h_source.html#l00108">g2o::HyperGraph::Vertex::id()</a> , 以及 <a class="el" href="hyper__graph_8h_source.html#l00137">g2o::HyperGraph::Edge::vertices()</a>.</p>
+
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classg2o_1_1SparseOptimizer_ab16dd36e32577ba5856239ce721ec70b_cgraph.png" border="0" usemap="#classg2o_1_1SparseOptimizer_ab16dd36e32577ba5856239ce721ec70b_cgraph" alt=""/></div>
+<map name="classg2o_1_1SparseOptimizer_ab16dd36e32577ba5856239ce721ec70b_cgraph" id="classg2o_1_1SparseOptimizer_ab16dd36e32577ba5856239ce721ec70b_cgraph">
+<area shape="rect" id="node2" href="classg2o_1_1HyperGraph_1_1Vertex.html#a0805a5575511327262c89585f1953b8e" title="returns the set of hyper&#45;edges that are leaving/entering in this vertex " alt="" coords="217,5,383,46"/><area shape="rect" id="node3" href="classg2o_1_1OptimizableGraph_1_1Vertex.html#ac8a19594a8356e9f104d8b383a10577e" title="g2o::OptimizableGraph\l::Vertex::estimateDimension" alt="" coords="206,70,394,111"/><area shape="rect" id="node4" href="classg2o_1_1OptimizableGraph_1_1Vertex.html#af26618ca44b64685e2ea10f263b93182" title="g2o::OptimizableGraph\l::Vertex::getEstimateData" alt="" coords="213,135,387,177"/><area shape="rect" id="node5" href="classg2o_1_1HyperGraph_1_1Vertex.html#ad76b71c368b71971ac5affb5d57183d3" title="returns the id " alt="" coords="207,201,393,228"/><area shape="rect" id="node6" href="classg2o_1_1HyperGraph_1_1Edge.html#a6410bb70a917b5407770ef1f1090b5f5" title="g2o::HyperGraph::Edge\l::vertices" alt="" coords="221,253,379,294"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="ace3994bf5f403c7fa0305635aa598473"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool g2o::SparseOptimizer::initializeOptimization </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>level</em> = <code>0</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Initializes the structures for optimizing the whole graph. Before calling it be sure to invoke marginalized() and fixed() to the vertices you want to include in the schur complement or to set as fixed during the optimization. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">level</td><td>is the level (in multilevel optimization) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>false if somethings goes wrong </dd></dl>
+
+<p>在文件 <a class="el" href="sparse__optimizer_8cpp_source.html">sparse_optimizer.cpp</a> 第 <a class="el" href="sparse__optimizer_8cpp_source.html#l00199">199</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a098257ee6f13dbb79be07075244d9930"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int g2o::SparseOptimizer::optimize </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iterations</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>online</em> = <code>false</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>starts one optimization run given the current configuration of the graph, and the current settings stored in the class instance. It can be called only after initializeOptimization </p>
+
+<p>重载 <a class="el" href="structg2o_1_1OptimizableGraph.html#ac1b2e36c05680dd3e60ed6f90dddf5d8">g2o::OptimizableGraph</a> .</p>
+
+<p>在文件 <a class="el" href="sparse__optimizer_8cpp_source.html">sparse_optimizer.cpp</a> 第 <a class="el" href="sparse__optimizer_8cpp_source.html#l00354">354</a> 行定义.</p>
+
+<p>参考 <a class="el" href="batch__stats_8h_source.html#l00046">g2o::G2OBatchStatistics::iteration</a>, <a class="el" href="batch__stats_8h_source.html#l00048">g2o::G2OBatchStatistics::numEdges</a> , 以及 <a class="el" href="batch__stats_8h_source.html#l00047">g2o::G2OBatchStatistics::numVertices</a>.</p>
+
+<p>参考自 <a class="el" href="Optimizer_8cpp_source.html#l00072">ORB_SLAM2::Optimizer::BundleAdjustment()</a>, <a class="el" href="Optimizer_8cpp_source.html#l00536">ORB_SLAM2::Optimizer::LocalBundleAdjustment()</a>, <a class="el" href="Optimizer_8cpp_source.html#l00905">ORB_SLAM2::Optimizer::OptimizeEssentialGraph()</a>, <a class="el" href="Optimizer_8cpp_source.html#l01225">ORB_SLAM2::Optimizer::OptimizeSim3()</a> , 以及 <a class="el" href="Optimizer_8cpp_source.html#l00291">ORB_SLAM2::Optimizer::PoseOptimization()</a>.</p>
+
+<p><div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classg2o_1_1SparseOptimizer_a098257ee6f13dbb79be07075244d9930_icgraph.png" border="0" usemap="#classg2o_1_1SparseOptimizer_a098257ee6f13dbb79be07075244d9930_icgraph" alt=""/></div>
+<map name="classg2o_1_1SparseOptimizer_a098257ee6f13dbb79be07075244d9930_icgraph" id="classg2o_1_1SparseOptimizer_a098257ee6f13dbb79be07075244d9930_icgraph">
+<area shape="rect" id="node2" href="classORB__SLAM2_1_1Optimizer.html#a5e855fe6b54082739b7e7013048e6340" title="bundle adjustment Optimization " alt="" coords="205,5,371,46"/><area shape="rect" id="node3" href="classORB__SLAM2_1_1Optimizer.html#ab70e0b4f366b65a0c1ae8b2def19d339" title="Local Bundle Adjustment. " alt="" coords="205,70,371,111"/><area shape="rect" id="node4" href="classORB__SLAM2_1_1Optimizer.html#ad36bb1a7167c84f385c3f299bc96f20e" title="闭环检测后，EssentialGraph优化 " alt="" coords="203,135,373,177"/><area shape="rect" id="node6" href="classORB__SLAM2_1_1Optimizer.html#ad8fe00ad3e6564b859b07ff9e7b2224e" title="形成闭环时进行Sim3优化 " alt="" coords="205,201,371,242"/><area shape="rect" id="node8" href="classORB__SLAM2_1_1Optimizer.html#a7415d78b8a2323b88e108fa1ea3bf2d3" title="Pose Only Optimization. " alt="" coords="205,299,371,341"/><area shape="rect" id="node5" href="classORB__SLAM2_1_1LoopClosing.html#aa007e0678582ec0de5d71280d23af540" title="闭环 " alt="" coords="423,135,604,177"/><area shape="rect" id="node7" href="classORB__SLAM2_1_1LoopClosing.html#ab4fcf814eed5b5dd2aec96454561b078" title="计算当前帧与闭环帧的Sim3变换等 " alt="" coords="423,201,604,242"/><area shape="rect" id="node9" href="classORB__SLAM2_1_1Tracking.html#a737c5409c93844353561a0fe724ed1c2" title="对参考关键帧的MapPoints进行跟踪 " alt="" coords="422,266,605,307"/><area shape="rect" id="node11" href="classORB__SLAM2_1_1Tracking.html#aca19f1d69b30a6c6e49281d422ac8298" title="根据匀速度模型对上一帧的MapPoints进行跟踪 " alt="" coords="431,331,595,373"/><area shape="rect" id="node12" href="classORB__SLAM2_1_1Tracking.html#af670c614f4e10d58c9f7aad9865b5c08" title="对Local Map的MapPoints进行跟踪 " alt="" coords="434,397,593,438"/><area shape="rect" id="node10" href="classORB__SLAM2_1_1Tracking.html#af1f2c9c533642d8c33854540e90d1918" title="Main tracking function. It is independent of the input sensor. " alt="" coords="654,331,813,373"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a0fb2a5e2b250bf2530a600f6dcaad03f"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool g2o::SparseOptimizer::removeVertex </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classg2o_1_1HyperGraph_1_1Vertex.html">HyperGraph::Vertex</a> *&#160;</td>
+          <td class="paramname"><em>v</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Remove a vertex. If the vertex is contained in the currently active set of vertices, then the internal temporary structures are cleaned, e.g., the index mapping is erased. In case you need the index mapping for manipulating the graph, you have to store it in your own copy. </p>
+
+<p>重载 <a class="el" href="classg2o_1_1HyperGraph.html#a97ab8302aa027d513253387bba9e0dd5">g2o::HyperGraph</a> .</p>
+
+<p>在文件 <a class="el" href="sparse__optimizer_8cpp_source.html">sparse_optimizer.cpp</a> 第 <a class="el" href="sparse__optimizer_8cpp_source.html#l00579">579</a> 行定义.</p>
+
+<p>参考 <a class="el" href="optimizable__graph_8h_source.html#l00299">g2o::OptimizableGraph::Vertex::hessianIndex()</a>.</p>
+
+<p>参考自 <a class="el" href="Optimizer_8cpp_source.html#l00072">ORB_SLAM2::Optimizer::BundleAdjustment()</a>.</p>
+
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classg2o_1_1SparseOptimizer_a0fb2a5e2b250bf2530a600f6dcaad03f_cgraph.png" border="0" usemap="#classg2o_1_1SparseOptimizer_a0fb2a5e2b250bf2530a600f6dcaad03f_cgraph" alt=""/></div>
+<map name="classg2o_1_1SparseOptimizer_a0fb2a5e2b250bf2530a600f6dcaad03f_cgraph" id="classg2o_1_1SparseOptimizer_a0fb2a5e2b250bf2530a600f6dcaad03f_cgraph">
+<area shape="rect" id="node2" href="classg2o_1_1OptimizableGraph_1_1Vertex.html#a33009d06f2d3682a3c774182c807c48a" title="temporary index of this node in the parameter vector obtained from linearization " alt="" coords="203,5,357,46"/></map>
+</div>
+</p>
+
+<p><div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classg2o_1_1SparseOptimizer_a0fb2a5e2b250bf2530a600f6dcaad03f_icgraph.png" border="0" usemap="#classg2o_1_1SparseOptimizer_a0fb2a5e2b250bf2530a600f6dcaad03f_icgraph" alt=""/></div>
+<map name="classg2o_1_1SparseOptimizer_a0fb2a5e2b250bf2530a600f6dcaad03f_icgraph" id="classg2o_1_1SparseOptimizer_a0fb2a5e2b250bf2530a600f6dcaad03f_icgraph">
+<area shape="rect" id="node2" href="classORB__SLAM2_1_1Optimizer.html#a5e855fe6b54082739b7e7013048e6340" title="bundle adjustment Optimization " alt="" coords="203,5,368,46"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a32afd0ab949f170297b4a59f0d9eab81"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void g2o::SparseOptimizer::setForceStopFlag </td>
+          <td>(</td>
+          <td class="paramtype">bool *&#160;</td>
+          <td class="paramname"><em>flag</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>sets a variable checked at every iteration to force a user stop. The iteration exits when the variable is true; </p>
+
+<p>在文件 <a class="el" href="sparse__optimizer_8cpp_source.html">sparse_optimizer.cpp</a> 第 <a class="el" href="sparse__optimizer_8cpp_source.html#l00574">574</a> 行定义.</p>
+
+<p>参考自 <a class="el" href="Optimizer_8cpp_source.html#l00072">ORB_SLAM2::Optimizer::BundleAdjustment()</a> , 以及 <a class="el" href="Optimizer_8cpp_source.html#l00536">ORB_SLAM2::Optimizer::LocalBundleAdjustment()</a>.</p>
+
+<p><div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classg2o_1_1SparseOptimizer_a32afd0ab949f170297b4a59f0d9eab81_icgraph.png" border="0" usemap="#classg2o_1_1SparseOptimizer_a32afd0ab949f170297b4a59f0d9eab81_icgraph" alt=""/></div>
+<map name="classg2o_1_1SparseOptimizer_a32afd0ab949f170297b4a59f0d9eab81_icgraph" id="classg2o_1_1SparseOptimizer_a32afd0ab949f170297b4a59f0d9eab81_icgraph">
+<area shape="rect" id="node2" href="classORB__SLAM2_1_1Optimizer.html#a5e855fe6b54082739b7e7013048e6340" title="bundle adjustment Optimization " alt="" coords="204,5,369,46"/><area shape="rect" id="node3" href="classORB__SLAM2_1_1Optimizer.html#ab70e0b4f366b65a0c1ae8b2def19d339" title="Local Bundle Adjustment. " alt="" coords="203,70,370,111"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="ab8af902464774ec3d3910a3674791714"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void g2o::SparseOptimizer::setToOrigin </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>sets all vertices to their origin. </p>
+
+<p>在文件 <a class="el" href="sparse__optimizer_8cpp_source.html">sparse_optimizer.cpp</a> 第 <a class="el" href="sparse__optimizer_8cpp_source.html#l00293">293</a> 行定义.</p>
+
+<p>参考 <a class="el" href="optimizable__graph_8h_source.html#l00152">g2o::OptimizableGraph::Vertex::setToOrigin()</a>.</p>
+
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classg2o_1_1SparseOptimizer_ab8af902464774ec3d3910a3674791714_cgraph.png" border="0" usemap="#classg2o_1_1SparseOptimizer_ab8af902464774ec3d3910a3674791714_cgraph" alt=""/></div>
+<map name="classg2o_1_1SparseOptimizer_ab8af902464774ec3d3910a3674791714_cgraph" id="classg2o_1_1SparseOptimizer_ab8af902464774ec3d3910a3674791714_cgraph">
+<area shape="rect" id="node2" href="classg2o_1_1OptimizableGraph_1_1Vertex.html#ab10678592b5e707bf4abdc0ff6b8e4bf" title="sets the node to the origin (used in the multilevel stuff) " alt="" coords="203,5,357,46"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="ae971d068585055973798f93ac2363d94"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool g2o::SparseOptimizer::updateInitialization </td>
+          <td>(</td>
+          <td class="paramtype">HyperGraph::VertexSet &amp;&#160;</td>
+          <td class="paramname"><em>vset</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">HyperGraph::EdgeSet &amp;&#160;</td>
+          <td class="paramname"><em>eset</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>HACK updating the internal structures for online processing </p>
+
+<p>在文件 <a class="el" href="sparse__optimizer_8cpp_source.html">sparse_optimizer.cpp</a> 第 <a class="el" href="sparse__optimizer_8cpp_source.html#l00446">446</a> 行定义.</p>
+
+<p>参考 <a class="el" href="optimizable__graph_8h_source.html#l00306">g2o::OptimizableGraph::Vertex::fixed()</a>, <a class="el" href="optimizable__graph_8h_source.html#l00311">g2o::OptimizableGraph::Vertex::marginalized()</a> , 以及 <a class="el" href="optimizable__graph_8h_source.html#l00302">g2o::OptimizableGraph::Vertex::setHessianIndex()</a>.</p>
+
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classg2o_1_1SparseOptimizer_ae971d068585055973798f93ac2363d94_cgraph.png" border="0" usemap="#classg2o_1_1SparseOptimizer_ae971d068585055973798f93ac2363d94_cgraph" alt=""/></div>
+<map name="classg2o_1_1SparseOptimizer_ae971d068585055973798f93ac2363d94_cgraph" id="classg2o_1_1SparseOptimizer_ae971d068585055973798f93ac2363d94_cgraph">
+<area shape="rect" id="node2" href="classg2o_1_1OptimizableGraph_1_1Vertex.html#ac83c34e6176f0cc5315ad7401a49efb3" title="true =&gt; this node is fixed during the optimization " alt="" coords="213,5,368,46"/><area shape="rect" id="node3" href="classg2o_1_1OptimizableGraph_1_1Vertex.html#a214c01f0b3cab575f3496be729f6ccb1" title="true =&gt; this node is marginalized out during the optimization " alt="" coords="213,70,368,111"/><area shape="rect" id="node4" href="classg2o_1_1OptimizableGraph_1_1Vertex.html#a440f24c0108be5247f3529369aa1e53c" title="set the temporary index of the vertex in the parameter blocks " alt="" coords="203,135,378,177"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>Thirdparty/g2o/g2o/core/<a class="el" href="sparse__optimizer_8h_source.html">sparse_optimizer.h</a></li>
+<li>Thirdparty/g2o/g2o/core/<a class="el" href="sparse__optimizer_8cpp_source.html">sparse_optimizer.cpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><b>g2o</b></li><li class="navelem"><a class="el" href="classg2o_1_1SparseOptimizer.html">SparseOptimizer</a></li>
+    <li class="footer">生成于 2017年 七月 18日 星期二 17:13:39 , 为 My Project使用 
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
+  </ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,9 @@
+<map id="ORB_SLAM2::KeyFrame::AddConnection" name="ORB_SLAM2::KeyFrame::AddConnection">
+<area shape="rect" id="node2" href="$classORB__SLAM2_1_1KeyFrame.html#afe7026956c91d4e0a01812be9dc7e8d5" title="更新图的连接 " alt="" coords="225,103,394,145"/>
+<area shape="rect" id="node3" href="$classORB__SLAM2_1_1LocalMapping.html#a84eea8f268cce9d919a4906ae634dd22" title="处理列表中的关键帧 " alt="" coords="443,5,632,46"/>
+<area shape="rect" id="node4" href="$classORB__SLAM2_1_1LocalMapping.html#a5d5e0bc6fd15d9a6bf1ca8a258f104f1" title="ORB_SLAM2::LocalMapping\l::SearchInNeighbors" alt="" coords="443,70,632,111"/>
+<area shape="rect" id="node5" href="$classORB__SLAM2_1_1LoopClosing.html#aa007e0678582ec0de5d71280d23af540" title="闭环 " alt="" coords="447,135,628,177"/>
+<area shape="rect" id="node6" href="$classORB__SLAM2_1_1Tracking.html#afeb077c81cd700d779348b80698086e8" title="CreateInitialMapMonocular. " alt="" coords="445,201,630,242"/>
+<area shape="rect" id="node7" href="$classORB__SLAM2_1_1Tracking.html#a7e81c68bb6ced27fcbfa2edec38ef6e0" title="单目的地图初始化 " alt="" coords="681,201,839,242"/>
+<area shape="rect" id="node8" href="$classORB__SLAM2_1_1Tracking.html#af1f2c9c533642d8c33854540e90d1918" title="Main tracking function. It is independent of the input sensor. " alt="" coords="889,201,1047,242"/>
+</map>

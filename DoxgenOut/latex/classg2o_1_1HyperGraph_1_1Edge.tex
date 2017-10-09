@@ -1,0 +1,228 @@
+\hypertarget{classg2o_1_1HyperGraph_1_1Edge}{\section{g2o\-:\-:Hyper\-Graph\-:\-:Edge类 参考}
+\label{classg2o_1_1HyperGraph_1_1Edge}\index{g2o\-::\-Hyper\-Graph\-::\-Edge@{g2o\-::\-Hyper\-Graph\-::\-Edge}}
+}
+
+
+{\ttfamily \#include $<$hyper\-\_\-graph.\-h$>$}
+
+
+
+类 g2o\-:\-:Hyper\-Graph\-:\-:Edge 继承关系图\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classg2o_1_1HyperGraph_1_1Edge__inherit__graph}
+\end{center}
+\end{figure}
+
+
+g2o\-:\-:Hyper\-Graph\-:\-:Edge 的协作图\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=228pt]{classg2o_1_1HyperGraph_1_1Edge__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classg2o_1_1HyperGraph_1_1Edge_a891618b34652837ef0bee7084db81f2e}{\hyperlink{classg2o_1_1HyperGraph_1_1Edge_a891618b34652837ef0bee7084db81f2e}{Edge} (int id=-\/1)}\label{classg2o_1_1HyperGraph_1_1Edge_a891618b34652837ef0bee7084db81f2e}
+
+\begin{DoxyCompactList}\small\item\em creates and empty edge with no vertices \end{DoxyCompactList}\item 
+virtual void \hyperlink{classg2o_1_1HyperGraph_1_1Edge_ad8913f1149a0fd5bb628f0f1c8a91a55}{resize} (size\-\_\-t size)
+\item 
+const Vertex\-Container \& \hyperlink{classg2o_1_1HyperGraph_1_1Edge_a6410bb70a917b5407770ef1f1090b5f5}{vertices} () const 
+\item 
+Vertex\-Container \& \hyperlink{classg2o_1_1HyperGraph_1_1Edge_a67d1c5cb557deab9e9e361c63359fe60}{vertices} ()
+\item 
+const \hyperlink{classg2o_1_1HyperGraph_1_1Vertex}{Vertex} $\ast$ \hyperlink{classg2o_1_1HyperGraph_1_1Edge_aaec0b2c92c5496d0f0fea8f1abdc4311}{vertex} (size\-\_\-t i) const 
+\item 
+\hyperlink{classg2o_1_1HyperGraph_1_1Vertex}{Vertex} $\ast$ \hyperlink{classg2o_1_1HyperGraph_1_1Edge_af544d5d17d900c5aa2b5c9219d8e716f}{vertex} (size\-\_\-t i)
+\item 
+void \hyperlink{classg2o_1_1HyperGraph_1_1Edge_a5e957658d6e65c49b81197d052a7f16f}{set\-Vertex} (size\-\_\-t i, \hyperlink{classg2o_1_1HyperGraph_1_1Vertex}{Vertex} $\ast$v)
+\item 
+\hypertarget{classg2o_1_1HyperGraph_1_1Edge_a397a7fb12379b2c48b5e6bc4c6c71fc0}{int {\bfseries id} () const }\label{classg2o_1_1HyperGraph_1_1Edge_a397a7fb12379b2c48b5e6bc4c6c71fc0}
+
+\item 
+\hypertarget{classg2o_1_1HyperGraph_1_1Edge_a1270ed91efa5f7a0fc42229356cc23e1}{void {\bfseries set\-Id} (int id)}\label{classg2o_1_1HyperGraph_1_1Edge_a1270ed91efa5f7a0fc42229356cc23e1}
+
+\item 
+virtual Hyper\-Graph\-Element\-Type \hyperlink{classg2o_1_1HyperGraph_1_1Edge_a73df6169b3669d48f86eef90de0fcc26}{element\-Type} () const 
+\end{DoxyCompactItemize}
+\subsection*{Protected 属性}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classg2o_1_1HyperGraph_1_1Edge_aabb036d331fc7f2524ec8611b638de92}{Vertex\-Container {\bfseries \-\_\-vertices}}\label{classg2o_1_1HyperGraph_1_1Edge_aabb036d331fc7f2524ec8611b638de92}
+
+\item 
+\hypertarget{classg2o_1_1HyperGraph_1_1Edge_aa1b6978624f7c165a4e0461cb5ff18fa}{int \hyperlink{classg2o_1_1HyperGraph_1_1Edge_aa1b6978624f7c165a4e0461cb5ff18fa}{\-\_\-id}}\label{classg2o_1_1HyperGraph_1_1Edge_aa1b6978624f7c165a4e0461cb5ff18fa}
+
+\begin{DoxyCompactList}\small\item\em unique id \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{详细描述}
+Abstract \hyperlink{classg2o_1_1HyperGraph_1_1Edge}{Edge} class. Your nice edge classes should inherit from that one. An hyper-\/edge has pointers to the vertices it connects and stores them in a vector. 
+
+在文件 hyper\-\_\-graph.\-h 第 124 行定义.
+
+
+
+\subsection{成员函数说明}
+\hypertarget{classg2o_1_1HyperGraph_1_1Edge_a73df6169b3669d48f86eef90de0fcc26}{\index{g2o\-::\-Hyper\-Graph\-::\-Edge@{g2o\-::\-Hyper\-Graph\-::\-Edge}!element\-Type@{element\-Type}}
+\index{element\-Type@{element\-Type}!g2o::HyperGraph::Edge@{g2o\-::\-Hyper\-Graph\-::\-Edge}}
+\subsubsection[{element\-Type}]{\setlength{\rightskip}{0pt plus 5cm}virtual Hyper\-Graph\-Element\-Type g2o\-::\-Hyper\-Graph\-::\-Edge\-::element\-Type (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classg2o_1_1HyperGraph_1_1Edge_a73df6169b3669d48f86eef90de0fcc26}
+returns the type of the graph element, see Hyper\-Graph\-Element\-Type 
+
+实现了 \hyperlink{structg2o_1_1HyperGraph_1_1HyperGraphElement_a1a9d7b748698c09d202373e06e413ef2}{g2o\-::\-Hyper\-Graph\-::\-Hyper\-Graph\-Element}.
+
+
+
+在文件 hyper\-\_\-graph.\-h 第 157 行定义.
+
+\hypertarget{classg2o_1_1HyperGraph_1_1Edge_ad8913f1149a0fd5bb628f0f1c8a91a55}{\index{g2o\-::\-Hyper\-Graph\-::\-Edge@{g2o\-::\-Hyper\-Graph\-::\-Edge}!resize@{resize}}
+\index{resize@{resize}!g2o::HyperGraph::Edge@{g2o\-::\-Hyper\-Graph\-::\-Edge}}
+\subsubsection[{resize}]{\setlength{\rightskip}{0pt plus 5cm}void g2o\-::\-Hyper\-Graph\-::\-Edge\-::resize (
+\begin{DoxyParamCaption}
+\item[{size\-\_\-t}]{size}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classg2o_1_1HyperGraph_1_1Edge_ad8913f1149a0fd5bb628f0f1c8a91a55}
+resizes the number of vertices connected by this edge 
+
+被 \hyperlink{classg2o_1_1BaseMultiEdge_ae07ec9359cd515d0abc2100ee8aae93f}{g2o\-::\-Base\-Multi\-Edge$<$ D, E $>$}, \hyperlink{classg2o_1_1BaseBinaryEdge_a06e64067fa5fff4a5e2d058249b55478}{g2o\-::\-Base\-Binary\-Edge$<$ D, E, Vertex\-Xi, Vertex\-Xj $>$}, \hyperlink{classg2o_1_1BaseBinaryEdge_a06e64067fa5fff4a5e2d058249b55478}{g2o\-::\-Base\-Binary\-Edge$<$ 2, Vector2d, Vertex\-S\-B\-A\-Point\-X\-Y\-Z, Vertex\-Sim3\-Expmap $>$}, \hyperlink{classg2o_1_1BaseBinaryEdge_a06e64067fa5fff4a5e2d058249b55478}{g2o\-::\-Base\-Binary\-Edge$<$ 7, Sim3, Vertex\-Sim3\-Expmap, Vertex\-Sim3\-Expmap $>$}, \hyperlink{classg2o_1_1BaseBinaryEdge_a06e64067fa5fff4a5e2d058249b55478}{g2o\-::\-Base\-Binary\-Edge$<$ 2, Vector2d, Vertex\-S\-B\-A\-Point\-X\-Y\-Z, Vertex\-S\-E3\-Expmap $>$}, \hyperlink{classg2o_1_1BaseBinaryEdge_a06e64067fa5fff4a5e2d058249b55478}{g2o\-::\-Base\-Binary\-Edge$<$ 3, Vector3d, Vertex\-S\-B\-A\-Point\-X\-Y\-Z, Vertex\-S\-E3\-Expmap $>$}, \hyperlink{classg2o_1_1BaseUnaryEdge_a01fcdfd2d3ed0325655bb99db95c0b10}{g2o\-::\-Base\-Unary\-Edge$<$ D, E, Vertex\-Xi $>$}, \hyperlink{classg2o_1_1BaseUnaryEdge_a01fcdfd2d3ed0325655bb99db95c0b10}{g2o\-::\-Base\-Unary\-Edge$<$ 2, Vector2d, Vertex\-S\-E3\-Expmap $>$} , 以及 \hyperlink{classg2o_1_1BaseUnaryEdge_a01fcdfd2d3ed0325655bb99db95c0b10}{g2o\-::\-Base\-Unary\-Edge$<$ 3, Vector3d, Vertex\-S\-E3\-Expmap $>$} 重载.
+
+
+
+在文件 hyper\-\_\-graph.\-cpp 第 50 行定义.
+
+
+
+参考自 g2o\-::\-Optimizable\-Graph\-::add\-Graph(), g2o\-::\-Base\-Unary\-Edge$<$ D, E, Vertex\-Xi $>$\-::construct\-Quadratic\-Form() , 以及 g2o\-::\-Base\-Binary\-Edge$<$ D, E, Vertex\-Xi, Vertex\-Xj $>$\-::construct\-Quadratic\-Form().
+
+
+
+这是这个函数的调用关系图\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classg2o_1_1HyperGraph_1_1Edge_ad8913f1149a0fd5bb628f0f1c8a91a55_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classg2o_1_1HyperGraph_1_1Edge_a5e957658d6e65c49b81197d052a7f16f}{\index{g2o\-::\-Hyper\-Graph\-::\-Edge@{g2o\-::\-Hyper\-Graph\-::\-Edge}!set\-Vertex@{set\-Vertex}}
+\index{set\-Vertex@{set\-Vertex}!g2o::HyperGraph::Edge@{g2o\-::\-Hyper\-Graph\-::\-Edge}}
+\subsubsection[{set\-Vertex}]{\setlength{\rightskip}{0pt plus 5cm}void g2o\-::\-Hyper\-Graph\-::\-Edge\-::set\-Vertex (
+\begin{DoxyParamCaption}
+\item[{size\-\_\-t}]{i, }
+\item[{{\bf Vertex} $\ast$}]{v}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classg2o_1_1HyperGraph_1_1Edge_a5e957658d6e65c49b81197d052a7f16f}
+set the ith vertex on the hyper-\/edge to the pointer supplied 
+
+在文件 hyper\-\_\-graph.\-h 第 153 行定义.
+
+
+
+参考自 g2o\-::\-Optimizable\-Graph\-::add\-Graph(), O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Optimizer\-::\-Bundle\-Adjustment(), O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Optimizer\-::\-Local\-Bundle\-Adjustment(), O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Optimizer\-::\-Optimize\-Essential\-Graph(), O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Optimizer\-::\-Optimize\-Sim3() , 以及 O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-Optimizer\-::\-Pose\-Optimization().
+
+
+
+这是这个函数的调用关系图\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classg2o_1_1HyperGraph_1_1Edge_a5e957658d6e65c49b81197d052a7f16f_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classg2o_1_1HyperGraph_1_1Edge_aaec0b2c92c5496d0f0fea8f1abdc4311}{\index{g2o\-::\-Hyper\-Graph\-::\-Edge@{g2o\-::\-Hyper\-Graph\-::\-Edge}!vertex@{vertex}}
+\index{vertex@{vertex}!g2o::HyperGraph::Edge@{g2o\-::\-Hyper\-Graph\-::\-Edge}}
+\subsubsection[{vertex}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Vertex}$\ast$ g2o\-::\-Hyper\-Graph\-::\-Edge\-::vertex (
+\begin{DoxyParamCaption}
+\item[{size\-\_\-t}]{i}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classg2o_1_1HyperGraph_1_1Edge_aaec0b2c92c5496d0f0fea8f1abdc4311}
+returns the pointer to the ith vertex connected to the hyper-\/edge. 
+
+在文件 hyper\-\_\-graph.\-h 第 145 行定义.
+
+
+
+参考自 g2o\-::\-Block\-Solver$<$ Traits $>$\-::build\-Structure(), g2o\-::\-Block\-Solver$<$ Traits $>$\-::build\-System(), g2o\-::\-Sparse\-Optimizer\-::compute\-Initial\-Guess(), g2o\-::\-Estimate\-Propagator\-::propagate(), g2o\-::\-Jacobian\-Workspace\-::update\-Size(), g2o\-::\-Block\-Solver$<$ Traits $>$\-::update\-Structure() , 以及 g2o\-::\-Optimizable\-Graph\-::verify\-Information\-Matrices().
+
+
+
+这是这个函数的调用关系图\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classg2o_1_1HyperGraph_1_1Edge_aaec0b2c92c5496d0f0fea8f1abdc4311_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classg2o_1_1HyperGraph_1_1Edge_af544d5d17d900c5aa2b5c9219d8e716f}{\index{g2o\-::\-Hyper\-Graph\-::\-Edge@{g2o\-::\-Hyper\-Graph\-::\-Edge}!vertex@{vertex}}
+\index{vertex@{vertex}!g2o::HyperGraph::Edge@{g2o\-::\-Hyper\-Graph\-::\-Edge}}
+\subsubsection[{vertex}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vertex}$\ast$ g2o\-::\-Hyper\-Graph\-::\-Edge\-::vertex (
+\begin{DoxyParamCaption}
+\item[{size\-\_\-t}]{i}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classg2o_1_1HyperGraph_1_1Edge_af544d5d17d900c5aa2b5c9219d8e716f}
+returns the pointer to the ith vertex connected to the hyper-\/edge. 
+
+在文件 hyper\-\_\-graph.\-h 第 149 行定义.
+
+\hypertarget{classg2o_1_1HyperGraph_1_1Edge_a6410bb70a917b5407770ef1f1090b5f5}{\index{g2o\-::\-Hyper\-Graph\-::\-Edge@{g2o\-::\-Hyper\-Graph\-::\-Edge}!vertices@{vertices}}
+\index{vertices@{vertices}!g2o::HyperGraph::Edge@{g2o\-::\-Hyper\-Graph\-::\-Edge}}
+\subsubsection[{vertices}]{\setlength{\rightskip}{0pt plus 5cm}const Vertex\-Container\& g2o\-::\-Hyper\-Graph\-::\-Edge\-::vertices (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classg2o_1_1HyperGraph_1_1Edge_a6410bb70a917b5407770ef1f1090b5f5}
+returns the vector of pointers to the vertices connected by the hyper-\/edge. 
+
+在文件 hyper\-\_\-graph.\-h 第 137 行定义.
+
+
+
+参考自 g2o\-::\-Hyper\-Graph\-::add\-Edge(), g2o\-::\-Optimizable\-Graph\-::add\-Graph(), g2o\-::\-Block\-Solver$<$ Traits $>$\-::build\-Structure(), g2o\-::\-Block\-Solver$<$ Traits $>$\-::build\-System(), g2o\-::\-Sparse\-Optimizer\-::compute\-Initial\-Guess(), g2o\-::\-Sparse\-Optimizer\-::initialize\-Optimization(), g2o\-::\-Estimate\-Propagator\-::propagate(), g2o\-::\-Hyper\-Graph\-::remove\-Edge(), g2o\-::\-Jacobian\-Workspace\-::update\-Size(), g2o\-::\-Block\-Solver$<$ Traits $>$\-::update\-Structure() , 以及 g2o\-::\-Optimizable\-Graph\-::verify\-Information\-Matrices().
+
+
+
+这是这个函数的调用关系图\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classg2o_1_1HyperGraph_1_1Edge_a6410bb70a917b5407770ef1f1090b5f5_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classg2o_1_1HyperGraph_1_1Edge_a67d1c5cb557deab9e9e361c63359fe60}{\index{g2o\-::\-Hyper\-Graph\-::\-Edge@{g2o\-::\-Hyper\-Graph\-::\-Edge}!vertices@{vertices}}
+\index{vertices@{vertices}!g2o::HyperGraph::Edge@{g2o\-::\-Hyper\-Graph\-::\-Edge}}
+\subsubsection[{vertices}]{\setlength{\rightskip}{0pt plus 5cm}Vertex\-Container\& g2o\-::\-Hyper\-Graph\-::\-Edge\-::vertices (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classg2o_1_1HyperGraph_1_1Edge_a67d1c5cb557deab9e9e361c63359fe60}
+returns the vector of pointers to the vertices connected by the hyper-\/edge. 
+
+在文件 hyper\-\_\-graph.\-h 第 141 行定义.
+
+
+
+该类的文档由以下文件生成\-:\begin{DoxyCompactItemize}
+\item 
+Thirdparty/g2o/g2o/core/hyper\-\_\-graph.\-h\item 
+Thirdparty/g2o/g2o/core/hyper\-\_\-graph.\-cpp\end{DoxyCompactItemize}

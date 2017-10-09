@@ -1,0 +1,94 @@
+\hypertarget{classORB__SLAM2_1_1System}{\section{O\-R\-B\-\_\-\-S\-L\-A\-M2\-:\-:System类 参考}
+\label{classORB__SLAM2_1_1System}\index{O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-System@{O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-System}}
+}
+\subsection*{Public 类型}
+\begin{DoxyCompactItemize}
+\item 
+enum {\bfseries e\-Sensor} \{ {\bfseries M\-O\-N\-O\-C\-U\-L\-A\-R} =0, 
+{\bfseries S\-T\-E\-R\-E\-O} =1, 
+{\bfseries R\-G\-B\-D} =2
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classORB__SLAM2_1_1System_a687bbabebe054f6d40b44b1ba64bc57a}{System} (const string \&str\-Voc\-File, const string \&str\-Settings\-File, const e\-Sensor sensor, const bool b\-Use\-Viewer=true)
+\item 
+\hypertarget{classORB__SLAM2_1_1System_a61226615f8d33afee19bb4ca188cc021}{cv\-::\-Mat {\bfseries Track\-Stereo} (const cv\-::\-Mat \&im\-Left, const cv\-::\-Mat \&im\-Right, const double \&timestamp)}\label{classORB__SLAM2_1_1System_a61226615f8d33afee19bb4ca188cc021}
+
+\item 
+\hypertarget{classORB__SLAM2_1_1System_a3b5be10e71c3484c11171bca16cdcd8e}{cv\-::\-Mat {\bfseries Track\-R\-G\-B\-D} (const cv\-::\-Mat \&im, const cv\-::\-Mat \&depthmap, const double \&timestamp)}\label{classORB__SLAM2_1_1System_a3b5be10e71c3484c11171bca16cdcd8e}
+
+\item 
+\hypertarget{classORB__SLAM2_1_1System_a0408659bafa31c4d0722ccd032fb9430}{cv\-::\-Mat {\bfseries Track\-Monocular} (const cv\-::\-Mat \&im, const double \&timestamp)}\label{classORB__SLAM2_1_1System_a0408659bafa31c4d0722ccd032fb9430}
+
+\item 
+\hypertarget{classORB__SLAM2_1_1System_a6cd39ec31a23d7ba5ebe1a6e4f4a0f89}{void {\bfseries Activate\-Localization\-Mode} ()}\label{classORB__SLAM2_1_1System_a6cd39ec31a23d7ba5ebe1a6e4f4a0f89}
+
+\item 
+\hypertarget{classORB__SLAM2_1_1System_a3bb91bfb9547b01596dac3e9fdd4adfd}{void {\bfseries Deactivate\-Localization\-Mode} ()}\label{classORB__SLAM2_1_1System_a3bb91bfb9547b01596dac3e9fdd4adfd}
+
+\item 
+\hypertarget{classORB__SLAM2_1_1System_a33f5eb6f33d14cdda2a889fe06d6619e}{void {\bfseries Reset} ()}\label{classORB__SLAM2_1_1System_a33f5eb6f33d14cdda2a889fe06d6619e}
+
+\item 
+\hypertarget{classORB__SLAM2_1_1System_aa934876a230dfa99e123f62b4b54d0cb}{void {\bfseries Shutdown} ()}\label{classORB__SLAM2_1_1System_aa934876a230dfa99e123f62b4b54d0cb}
+
+\item 
+\hypertarget{classORB__SLAM2_1_1System_a118df14a34bac039f9880c886ee3678f}{void {\bfseries Save\-Trajectory\-T\-U\-M} (const string \&filename)}\label{classORB__SLAM2_1_1System_a118df14a34bac039f9880c886ee3678f}
+
+\item 
+\hypertarget{classORB__SLAM2_1_1System_a6435a029f66a34103c434aa16e80eae3}{void {\bfseries Save\-Key\-Frame\-Trajectory\-T\-U\-M} (const string \&filename)}\label{classORB__SLAM2_1_1System_a6435a029f66a34103c434aa16e80eae3}
+
+\item 
+\hypertarget{classORB__SLAM2_1_1System_a3a28b57ac7267d5c51d3b8492d2f5d5c}{void {\bfseries Save\-Trajectory\-K\-I\-T\-T\-I} (const string \&filename)}\label{classORB__SLAM2_1_1System_a3a28b57ac7267d5c51d3b8492d2f5d5c}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{详细描述}
+
+
+在文件 System.\-h 第 49 行定义.
+
+
+
+\subsection{构造及析构函数说明}
+\hypertarget{classORB__SLAM2_1_1System_a687bbabebe054f6d40b44b1ba64bc57a}{\index{O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-System@{O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-System}!System@{System}}
+\index{System@{System}!ORB_SLAM2::System@{O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-System}}
+\subsubsection[{System}]{\setlength{\rightskip}{0pt plus 5cm}O\-R\-B\-\_\-\-S\-L\-A\-M2\-::\-System\-::\-System (
+\begin{DoxyParamCaption}
+\item[{const string \&}]{str\-Voc\-File, }
+\item[{const string \&}]{str\-Settings\-File, }
+\item[{const e\-Sensor}]{sensor, }
+\item[{const bool}]{b\-Use\-Viewer = {\ttfamily true}}
+\end{DoxyParamCaption}
+)}}\label{classORB__SLAM2_1_1System_a687bbabebe054f6d40b44b1ba64bc57a}
+mv\-Inverted\-File.\-resize(voc.\-size()); // number of words
+
+如果程序退出而没有执行delete则会造成内存泄漏。//额，也不一定。。。。 
+
+在文件 System.\-cpp 第 37 行定义.
+
+
+
+参考 D\-Bo\-W2\-::\-Templated\-Vocabulary$<$ T\-Descriptor, F $>$\-::load\-From\-Binary\-File() , 以及 D\-Bo\-W2\-::\-Templated\-Vocabulary$<$ T\-Descriptor, F $>$\-::load\-From\-Text\-File().
+
+
+
+函数调用图\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classORB__SLAM2_1_1System_a687bbabebe054f6d40b44b1ba64bc57a_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+该类的文档由以下文件生成\-:\begin{DoxyCompactItemize}
+\item 
+include/System.\-h\item 
+src/System.\-cpp\end{DoxyCompactItemize}

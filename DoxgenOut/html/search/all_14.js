@@ -1,0 +1,28 @@
+var searchData=
+[
+  ['uniformcostfunction',['UniformCostFunction',['../structg2o_1_1UniformCostFunction.html',1,'g2o']]],
+  ['unlockquadraticform',['unlockQuadraticForm',['../classg2o_1_1OptimizableGraph_1_1Vertex.html#a5badd602625433ee1ce8e2aa7bb3b2ac',1,'g2o::OptimizableGraph::Vertex']]],
+  ['unprojectstereo',['UnprojectStereo',['../classORB__SLAM2_1_1Frame.html#a46084d187e1fc60181e1c72f77c733ca',1,'ORB_SLAM2::Frame::UnprojectStereo()'],['../classORB__SLAM2_1_1KeyFrame.html#a0d2dc03ca0d62fc5585773e43d503e79',1,'ORB_SLAM2::KeyFrame::UnprojectStereo()']]],
+  ['unregistersolver',['unregisterSolver',['../classg2o_1_1OptimizationAlgorithmFactory.html#adf79430f6176c9e9309a703ba2dbd14b',1,'g2o::OptimizationAlgorithmFactory']]],
+  ['unregistertype',['unregisterType',['../classg2o_1_1Factory.html#a01b16c7d5a49ddab5ccd5980f76900b7',1,'g2o::Factory::unregisterType()'],['../classg2o_1_1RobustKernelFactory.html#af3b0dac653627b5f87c68d4180b87475',1,'g2o::RobustKernelFactory::unregisterType()']]],
+  ['unrepeatedrandomizer',['UnrepeatedRandomizer',['../classDUtils_1_1Random_1_1UnrepeatedRandomizer.html',1,'DUtils::Random']]],
+  ['unrepeatedrandomizer',['UnrepeatedRandomizer',['../classDUtils_1_1Random_1_1UnrepeatedRandomizer.html#ae073cba77da776dae607f22fd289b220',1,'DUtils::Random::UnrepeatedRandomizer::UnrepeatedRandomizer(int min, int max)'],['../classDUtils_1_1Random_1_1UnrepeatedRandomizer.html#af4d4b9621cb9a55ec59fb311798a3a5b',1,'DUtils::Random::UnrepeatedRandomizer::UnrepeatedRandomizer(const UnrepeatedRandomizer &amp;rnd)']]],
+  ['updatebestcovisibles',['UpdateBestCovisibles',['../classORB__SLAM2_1_1KeyFrame.html#a09cb8502509c136536bf8d45793f8872',1,'ORB_SLAM2::KeyFrame']]],
+  ['updateconnections',['UpdateConnections',['../classORB__SLAM2_1_1KeyFrame.html#afe7026956c91d4e0a01812be9dc7e8d5',1,'ORB_SLAM2::KeyFrame']]],
+  ['updateimpl',['updateImpl',['../classg2o_1_1Cache.html#ae46e4a4e37c034925edd6bbfdfaa1cb2',1,'g2o::Cache']]],
+  ['updateinitialization',['updateInitialization',['../classg2o_1_1SparseOptimizer.html#ae971d068585055973798f93ac2363d94',1,'g2o::SparseOptimizer']]],
+  ['updatelastframe',['UpdateLastFrame',['../classORB__SLAM2_1_1Tracking.html#aa84a20277d5bd022b527d79a58830bc5',1,'ORB_SLAM2::Tracking']]],
+  ['updatelocalkeyframes',['UpdateLocalKeyFrames',['../classORB__SLAM2_1_1Tracking.html#a42bed56bbbe8282eb77733e7168d8599',1,'ORB_SLAM2::Tracking']]],
+  ['updatelocalmap',['UpdateLocalMap',['../classORB__SLAM2_1_1Tracking.html#a22723e9972c18a888dd51a82eec27b0a',1,'ORB_SLAM2::Tracking']]],
+  ['updatelocalpoints',['UpdateLocalPoints',['../classORB__SLAM2_1_1Tracking.html#a25843575116bf18c065d6cc7645f5b26',1,'ORB_SLAM2::Tracking']]],
+  ['updatemapfromstring',['updateMapFromString',['../classg2o_1_1PropertyMap.html#a0407e6a72afafd608f13cfdffc6ffc06',1,'g2o::PropertyMap']]],
+  ['updatenormalanddepth',['UpdateNormalAndDepth',['../classORB__SLAM2_1_1MapPoint.html#ac5b8e4ec6a7737860af57058bdd16124',1,'ORB_SLAM2::MapPoint']]],
+  ['updateposematrices',['UpdatePoseMatrices',['../classORB__SLAM2_1_1Frame.html#a0a18d3024a23f6fa2cab9c7d987598c2',1,'ORB_SLAM2::Frame']]],
+  ['updatepropertiesfromstring',['updatePropertiesFromString',['../classg2o_1_1OptimizationAlgorithm.html#aa05a6380f936c728a574c7c272bcc524',1,'g2o::OptimizationAlgorithm']]],
+  ['updatepropertyfromstring',['updatePropertyFromString',['../classg2o_1_1PropertyMap.html#a43df66ba15f9425abbd0e888a7b67251',1,'g2o::PropertyMap']]],
+  ['updatesize',['updateSize',['../classg2o_1_1JacobianWorkspace.html#a2d16ad6db1a51aa93c806cc9c06e223f',1,'g2o::JacobianWorkspace::updateSize(const HyperGraph::Edge *e)'],['../classg2o_1_1JacobianWorkspace.html#ae3d715bd25e196d8db81661ef0fbd09b',1,'g2o::JacobianWorkspace::updateSize(const OptimizableGraph &amp;graph)'],['../classg2o_1_1JacobianWorkspace.html#aa15a007fee3037116ea0e857855080d2',1,'g2o::JacobianWorkspace::updateSize(int numVertices, int dimension)']]],
+  ['updatestructure',['updateStructure',['../classg2o_1_1BlockSolver.html#acc497239c5e681ddec2140e34dfc5938',1,'g2o::BlockSolver::updateStructure()'],['../classg2o_1_1OptimizationAlgorithm.html#a6b86c5d3c56a41c18f2aee611b62d71b',1,'g2o::OptimizationAlgorithm::updateStructure()'],['../classg2o_1_1OptimizationAlgorithmWithHessian.html#a9ffffb2bdb70db856bccdb6774776fa3',1,'g2o::OptimizationAlgorithmWithHessian::updateStructure()'],['../classg2o_1_1Solver.html#a035b8effea7178eabfb35e1c78b25987',1,'g2o::Solver::updateStructure()']]],
+  ['userdata',['userData',['../classg2o_1_1OptimizableGraph_1_1Vertex.html#af01649f3b760b00c375bc87d8d129806',1,'g2o::OptimizableGraph::Vertex']]],
+  ['userlambdainit',['userLambdaInit',['../classg2o_1_1OptimizationAlgorithmLevenberg.html#a4a4d18c98361a1288db724136d353596',1,'g2o::OptimizationAlgorithmLevenberg']]],
+  ['utils',['Utils',['../group__utils.html',1,'']]]
+];

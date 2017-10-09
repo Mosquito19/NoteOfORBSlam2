@@ -1,0 +1,96 @@
+\hypertarget{classg2o_1_1OptimizableGraph_1_1Data}{\section{g2o\-:\-:Optimizable\-Graph\-:\-:Data类 参考}
+\label{classg2o_1_1OptimizableGraph_1_1Data}\index{g2o\-::\-Optimizable\-Graph\-::\-Data@{g2o\-::\-Optimizable\-Graph\-::\-Data}}
+}
+
+
+data packet for a vertex. Extend this class to store in the vertices the potential additional information you need (e.\-g. images, laser scans, ...).  
+
+
+
+
+{\ttfamily \#include $<$optimizable\-\_\-graph.\-h$>$}
+
+
+
+类 g2o\-:\-:Optimizable\-Graph\-:\-:Data 继承关系图\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=228pt]{classg2o_1_1OptimizableGraph_1_1Data__inherit__graph}
+\end{center}
+\end{figure}
+
+
+g2o\-:\-:Optimizable\-Graph\-:\-:Data 的协作图\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=258pt]{classg2o_1_1OptimizableGraph_1_1Data__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classg2o_1_1OptimizableGraph_1_1Data_a4a206c86daba1b47425199befd2e1ed4}{virtual bool \hyperlink{classg2o_1_1OptimizableGraph_1_1Data_a4a206c86daba1b47425199befd2e1ed4}{read} (std\-::istream \&is)=0}\label{classg2o_1_1OptimizableGraph_1_1Data_a4a206c86daba1b47425199befd2e1ed4}
+
+\begin{DoxyCompactList}\small\item\em read the data from a stream \end{DoxyCompactList}\item 
+\hypertarget{classg2o_1_1OptimizableGraph_1_1Data_ad80cd8ea8013c54c766684ec0ef3daa3}{virtual bool \hyperlink{classg2o_1_1OptimizableGraph_1_1Data_ad80cd8ea8013c54c766684ec0ef3daa3}{write} (std\-::ostream \&os) const =0}\label{classg2o_1_1OptimizableGraph_1_1Data_ad80cd8ea8013c54c766684ec0ef3daa3}
+
+\begin{DoxyCompactList}\small\item\em write the data to a stream \end{DoxyCompactList}\item 
+virtual \\*
+Hyper\-Graph\-::\-Hyper\-Graph\-Element\-Type \hyperlink{classg2o_1_1OptimizableGraph_1_1Data_aa549949b0bf442face4e3b06d1934706}{element\-Type} () const 
+\item 
+\hypertarget{classg2o_1_1OptimizableGraph_1_1Data_a7438fd566ec8b29680f13cffd2cf85f3}{const \hyperlink{classg2o_1_1OptimizableGraph_1_1Data}{Data} $\ast$ {\bfseries next} () const }\label{classg2o_1_1OptimizableGraph_1_1Data_a7438fd566ec8b29680f13cffd2cf85f3}
+
+\item 
+\hypertarget{classg2o_1_1OptimizableGraph_1_1Data_af9c0427357f1e81f9008c3173fddf34c}{\hyperlink{classg2o_1_1OptimizableGraph_1_1Data}{Data} $\ast$ {\bfseries next} ()}\label{classg2o_1_1OptimizableGraph_1_1Data_af9c0427357f1e81f9008c3173fddf34c}
+
+\item 
+\hypertarget{classg2o_1_1OptimizableGraph_1_1Data_a5811aac3f8eab3c19207663e946b343b}{void {\bfseries set\-Next} (\hyperlink{classg2o_1_1OptimizableGraph_1_1Data}{Data} $\ast$next\-\_\-)}\label{classg2o_1_1OptimizableGraph_1_1Data_a5811aac3f8eab3c19207663e946b343b}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected 属性}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classg2o_1_1OptimizableGraph_1_1Data_a8e0569f2b8cb8400d3eada1bd13c0ccb}{\hyperlink{classg2o_1_1OptimizableGraph_1_1Data}{Data} $\ast$ {\bfseries \-\_\-next}}\label{classg2o_1_1OptimizableGraph_1_1Data_a8e0569f2b8cb8400d3eada1bd13c0ccb}
+
+\end{DoxyCompactItemize}
+\subsection*{友元}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classg2o_1_1OptimizableGraph_1_1Data_a45d35331ee3deca38c26d1efb6b961ae}{struct {\bfseries Optimizable\-Graph}}\label{classg2o_1_1OptimizableGraph_1_1Data_a45d35331ee3deca38c26d1efb6b961ae}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{详细描述}
+data packet for a vertex. Extend this class to store in the vertices the potential additional information you need (e.\-g. images, laser scans, ...). 
+
+在文件 optimizable\-\_\-graph.\-h 第 82 行定义.
+
+
+
+\subsection{成员函数说明}
+\hypertarget{classg2o_1_1OptimizableGraph_1_1Data_aa549949b0bf442face4e3b06d1934706}{\index{g2o\-::\-Optimizable\-Graph\-::\-Data@{g2o\-::\-Optimizable\-Graph\-::\-Data}!element\-Type@{element\-Type}}
+\index{element\-Type@{element\-Type}!g2o::OptimizableGraph::Data@{g2o\-::\-Optimizable\-Graph\-::\-Data}}
+\subsubsection[{element\-Type}]{\setlength{\rightskip}{0pt plus 5cm}virtual Hyper\-Graph\-::\-Hyper\-Graph\-Element\-Type g2o\-::\-Optimizable\-Graph\-::\-Data\-::element\-Type (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classg2o_1_1OptimizableGraph_1_1Data_aa549949b0bf442face4e3b06d1934706}
+returns the type of the graph element, see Hyper\-Graph\-Element\-Type 
+
+实现了 \hyperlink{structg2o_1_1HyperGraph_1_1HyperGraphElement_a1a9d7b748698c09d202373e06e413ef2}{g2o\-::\-Hyper\-Graph\-::\-Hyper\-Graph\-Element}.
+
+
+
+在文件 optimizable\-\_\-graph.\-h 第 92 行定义.
+
+
+
+该类的文档由以下文件生成\-:\begin{DoxyCompactItemize}
+\item 
+Thirdparty/g2o/g2o/core/optimizable\-\_\-graph.\-h\item 
+Thirdparty/g2o/g2o/core/optimizable\-\_\-graph.\-cpp\end{DoxyCompactItemize}

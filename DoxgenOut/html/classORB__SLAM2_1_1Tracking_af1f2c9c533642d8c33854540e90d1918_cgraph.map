@@ -1,0 +1,51 @@
+<map id="ORB_SLAM2::Tracking::Track" name="ORB_SLAM2::Tracking::Track">
+<area shape="rect" id="node2" href="$classORB__SLAM2_1_1Tracking.html#a2ca003d3234b2e8444f70dcd2132126f" title="检查上一帧中的MapPoints是否被替换 " alt="" coords="214,621,410,663"/>
+<area shape="rect" id="node3" href="$classORB__SLAM2_1_1Tracking.html#a8c7fb6c4b1f952524512023df690bf4d" title="创建新的关键帧 " alt="" coords="498,252,657,293"/>
+<area shape="rect" id="node12" href="$classORB__SLAM2_1_1Tracking.html#a7e81c68bb6ced27fcbfa2edec38ef6e0" title="单目的地图初始化 " alt="" coords="233,840,391,881"/>
+<area shape="rect" id="node18" href="$classORB__SLAM2_1_1Frame.html#a95cf2ea68735ef3e8c2d820eada11bf4" title="Set the camera pose. " alt="" coords="755,865,959,891"/>
+<area shape="rect" id="node26" href="$classORB__SLAM2_1_1Tracking.html#afc013c5a20bc6beb772b96a875b19216" title="断当前帧是否为关键帧 " alt="" coords="233,1545,391,1587"/>
+<area shape="rect" id="node28" href="$classORB__SLAM2_1_1Tracking.html#ad3da849e4204d766e5db4ac47b52132c" title="双目和rgbd的地图初始化 " alt="" coords="498,369,657,411"/>
+<area shape="rect" id="node29" href="$classORB__SLAM2_1_1Tracking.html#af670c614f4e10d58c9f7aad9865b5c08" title="对Local Map的MapPoints进行跟踪 " alt="" coords="233,1265,391,1307"/>
+<area shape="rect" id="node46" href="$classORB__SLAM2_1_1Tracking.html#a737c5409c93844353561a0fe724ed1c2" title="对参考关键帧的MapPoints进行跟踪 " alt="" coords="221,1200,403,1241"/>
+<area shape="rect" id="node49" href="$classORB__SLAM2_1_1Tracking.html#aca19f1d69b30a6c6e49281d422ac8298" title="根据匀速度模型对上一帧的MapPoints进行跟踪 " alt="" coords="230,905,394,947"/>
+<area shape="rect" id="node4" href="$classORB__SLAM2_1_1Map.html#a2d8e1b4376778dfe32df90ec00b599e3" title="Insert MapPoint in the map. " alt="" coords="747,318,967,345"/>
+<area shape="rect" id="node5" href="$classORB__SLAM2_1_1KeyFrame.html#a16ea4f0cfa1ca411bb3382107fe69d2d" title="Add MapPoint to KeyFrame. " alt="" coords="773,369,942,411"/>
+<area shape="rect" id="node6" href="$classORB__SLAM2_1_1MapPoint.html#a37277ee3c7d8657976e749ab920bb13f" title="添加观测 " alt="" coords="775,56,939,97"/>
+<area shape="rect" id="node7" href="$classORB__SLAM2_1_1MapPoint.html#ab4c3dfd8f5f05a4b1888021f1fac3d84" title="计算具有代表的描述子 " alt="" coords="751,121,963,163"/>
+<area shape="rect" id="node8" href="$classORB__SLAM2_1_1LocalMapping.html#af2d70466a1a217fb7e55d874931ce688" title="插入关键帧 " alt="" coords="763,187,952,228"/>
+<area shape="rect" id="node9" href="$classORB__SLAM2_1_1Frame.html#a46084d187e1fc60181e1c72f77c733ca" title="Backprojects a keypoint (if stereo/depth info available) into 3D world coordinates. " alt="" coords="752,435,963,476"/>
+<area shape="rect" id="node10" href="$classORB__SLAM2_1_1MapPoint.html#ac5b8e4ec6a7737860af57058bdd16124" title="更新平均观测方向以及观测距离范围 " alt="" coords="771,252,943,293"/>
+<area shape="rect" id="node11" href="$classORB__SLAM2_1_1Frame.html#a0a18d3024a23f6fa2cab9c7d987598c2" title="Computes rotation, translation and camera center matrices from the camera pose. " alt="" coords="1019,428,1215,469"/>
+<area shape="rect" id="node13" href="$classORB__SLAM2_1_1Tracking.html#afeb077c81cd700d779348b80698086e8" title="CreateInitialMapMonocular. " alt="" coords="485,523,670,564"/>
+<area shape="rect" id="node21" href="$classORB__SLAM2_1_1Initializer.html#a40d41840e2bdb7199ab024871d028c2c" title="并行地计算基础矩阵和单应性矩阵，选取其中一个模型，恢复出最开始两帧之间的相对姿态以及点云 " alt="" coords="497,992,658,1033"/>
+<area shape="rect" id="node24" href="$classORB__SLAM2_1_1ORBmatcher.html#aff9b6dde7878d59e334ed5ad2ddd04eb" title="ORB_SLAM2::ORBmatcher\l::SearchForInitialization" alt="" coords="485,1057,670,1099"/>
+<area shape="rect" id="node14" href="$classORB__SLAM2_1_1Map.html#a688de3b072e0176bb288bb70d36cd0e9" title="Insert KeyFrame in the map. " alt="" coords="745,501,970,527"/>
+<area shape="rect" id="node15" href="$classORB__SLAM2_1_1KeyFrame.html#ac376017c23823c05a6bb851ffb2fdd8f" title="Bag of Words Representation. " alt="" coords="773,683,942,724"/>
+<area shape="rect" id="node16" href="$classORB__SLAM2_1_1KeyFrame.html#aa4c5f9ea38d377cfa70d441e184803ae" title="评估当前关键帧场景深度，q=2表示中值 " alt="" coords="759,552,956,593"/>
+<area shape="rect" id="node17" href="$classORB__SLAM2_1_1KeyFrame.html#aabc5f6491c32999d9f546669737547bf" title="Get MapPoint Matches. " alt="" coords="1033,945,1202,987"/>
+<area shape="rect" id="node19" href="$classORB__SLAM2_1_1Map.html#a90aeb2ade0c536688bd42728457e9483" title="设置参考MapPoints，将用于DrawMapPoints函数画图 " alt="" coords="746,748,969,789"/>
+<area shape="rect" id="node20" href="$classORB__SLAM2_1_1KeyFrame.html#afe7026956c91d4e0a01812be9dc7e8d5" title="更新图的连接 " alt="" coords="773,617,942,659"/>
+<area shape="rect" id="node22" href="$classDUtils_1_1Random.html#aa25012101ecbca54025d5430bcf93d86" title="DUtils::Random::RandomInt" alt="" coords="763,915,951,942"/>
+<area shape="rect" id="node23" href="$classDUtils_1_1Random.html#a168e77d82ce1e66c6759e97ef27adbbc" title="DUtils::Random::SeedRandOnce" alt="" coords="749,966,965,993"/>
+<area shape="rect" id="node25" href="$classORB__SLAM2_1_1Frame.html#ab92eb055abb54bf7f73db7612673dbca" title="找到在 以x,y为中心,边长为2r的方形内且在[minLevel, maxLevel]的特征点—指定层了 " alt="" coords="744,1017,971,1059"/>
+<area shape="rect" id="node27" href="$classORB__SLAM2_1_1KeyFrame.html#a729cbf2c84db5cbfdda98a9612f8cd0b" title="关键帧中，大于等于minObs的MapPoints的数量 minObs就是一个阈值，大于minObs就表示该MapPoint是一个高质量的MapPoint 一个高质量的MapPoint会被多个KeyFr..." alt="" coords="493,1760,662,1801"/>
+<area shape="rect" id="node30" href="$classORB__SLAM2_1_1Tracking.html#a22723e9972c18a888dd51a82eec27b0a" title="更新LocalMap " alt="" coords="498,1136,657,1177"/>
+<area shape="rect" id="node33" href="$classORB__SLAM2_1_1Tracking.html#a451c0e5372c24645c7634fcebc8fa847" title="对Local MapPoints进行跟踪 " alt="" coords="498,1695,657,1736"/>
+<area shape="rect" id="node37" href="$classORB__SLAM2_1_1Optimizer.html#a7415d78b8a2323b88e108fa1ea3bf2d3" title="Pose Only Optimization. " alt="" coords="495,1265,660,1307"/>
+<area shape="rect" id="node31" href="$classORB__SLAM2_1_1Tracking.html#a42bed56bbbe8282eb77733e7168d8599" title="更新局部关键帧，called by UpdateLocalMap() " alt="" coords="772,1148,943,1189"/>
+<area shape="rect" id="node32" href="$classORB__SLAM2_1_1Tracking.html#a25843575116bf18c065d6cc7645f5b26" title="更新局部关键点，called by UpdateLocalMap() " alt="" coords="778,1083,937,1124"/>
+<area shape="rect" id="node34" href="$classORB__SLAM2_1_1MapPoint.html#a0a234f5bd6bc19a9ea55fad0c9e6db5f" title="Increase Visible. " alt="" coords="775,1760,939,1801"/>
+<area shape="rect" id="node35" href="$classORB__SLAM2_1_1Frame.html#a0929e100e3380dba1baba12dfa8904c4" title="判断一个点是否在视野内 " alt="" coords="746,1826,969,1853"/>
+<area shape="rect" id="node36" href="$classORB__SLAM2_1_1ORBmatcher.html#a27c18d6977e8ec20b196e0b2fa6043cd" title="通过投影，对Local MapPoint进行跟踪 " alt="" coords="765,1695,950,1736"/>
+<area shape="rect" id="node38" href="$structg2o_1_1OptimizableGraph.html#a6831ed69fce3dba691f53302a2813070" title="g2o::OptimizableGraph\l::addEdge" alt="" coords="780,1331,935,1372"/>
+<area shape="rect" id="node39" href="$structg2o_1_1OptimizableGraph.html#ae0b93774ce1dfa0dfd501c86ad4f773e" title="g2o::OptimizableGraph\l::addVertex" alt="" coords="780,1461,935,1503"/>
+<area shape="rect" id="node40" href="$classg2o_1_1BaseEdge.html#a7ea9406b8cc06b44433569bbd4fcefac" title="computes the chi2 based on the cached error value, only valid after computeError has been called..." alt="" coords="786,1527,929,1554"/>
+<area shape="rect" id="node41" href="$classg2o_1_1EdgeSE3ProjectXYZOnlyPose.html#a6752098d3322d30e43a6a3a668a3b009" title="g2o::EdgeSE3ProjectXYZOnly\lPose::computeError" alt="" coords="757,1629,957,1671"/>
+<area shape="rect" id="node42" href="$classg2o_1_1BaseVertex.html#abb9caa0d2d00af70e95963a11ee9660a" title="return the current estimate of the vertex " alt="" coords="1029,1578,1206,1605"/>
+<area shape="rect" id="node43" href="$classg2o_1_1EdgeStereoSE3ProjectXYZOnlyPose.html#af6fd2fdbdc9b4a6bcf21303ff3b8ea83" title="g2o::EdgeStereoSE3Project\lXYZOnlyPose::computeError" alt="" coords="762,1396,953,1437"/>
+<area shape="rect" id="node44" href="$classg2o_1_1HyperGraph.html#acb3391945ed7c3f09243101d9ef0aaf0" title="g2o::HyperGraph::edges" alt="" coords="775,1214,939,1241"/>
+<area shape="rect" id="node45" href="$classg2o_1_1SparseOptimizer.html#a56c0c13954ac7204cfb031c141ece9ae" title="g2o::SparseOptimizer\l::initializeOptimization" alt="" coords="782,1265,933,1307"/>
+<area shape="rect" id="node47" href="$classORB__SLAM2_1_1Frame.html#ac748d2318f9a409406dba4910ff5ef8e" title="Bag of Words Representation. " alt="" coords="459,1449,695,1475"/>
+<area shape="rect" id="node48" href="$classORB__SLAM2_1_1ORBmatcher.html#ab38a8d3f3803e398c173ef45b25e66d8" title="通过词包，对关键帧的特征点进行跟踪 " alt="" coords="485,1383,670,1424"/>
+<area shape="rect" id="node50" href="$classORB__SLAM2_1_1Tracking.html#aa84a20277d5bd022b527d79a58830bc5" title="双目或rgbd摄像头根据深度值为上一帧产生新的MapPoints " alt="" coords="498,723,657,764"/>
+</map>

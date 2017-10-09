@@ -1,0 +1,15 @@
+<map id="ORB_SLAM2::KeyFrame::GetMapPointMatches" name="ORB_SLAM2::KeyFrame::GetMapPointMatches">
+<area shape="rect" id="node2" href="$classORB__SLAM2_1_1LoopClosing.html#ab4fcf814eed5b5dd2aec96454561b078" title="计算当前帧与闭环帧的Sim3变换等 " alt="" coords="461,266,643,307"/>
+<area shape="rect" id="node3" href="$classORB__SLAM2_1_1LoopClosing.html#aa007e0678582ec0de5d71280d23af540" title="闭环 " alt="" coords="228,70,409,111"/>
+<area shape="rect" id="node4" href="$classORB__SLAM2_1_1Tracking.html#afeb077c81cd700d779348b80698086e8" title="CreateInitialMapMonocular. " alt="" coords="226,5,411,46"/>
+<area shape="rect" id="node7" href="$classORB__SLAM2_1_1LocalMapping.html#aca73e5b4bace436b235dfa9c9a522b19" title="关键帧剔除 " alt="" coords="224,201,413,242"/>
+<area shape="rect" id="node8" href="$classORB__SLAM2_1_1Optimizer.html#ad8fe00ad3e6564b859b07ff9e7b2224e" title="形成闭环时进行Sim3优化 " alt="" coords="236,266,401,307"/>
+<area shape="rect" id="node9" href="$classORB__SLAM2_1_1LocalMapping.html#a84eea8f268cce9d919a4906ae634dd22" title="处理列表中的关键帧 " alt="" coords="224,331,413,373"/>
+<area shape="rect" id="node10" href="$classORB__SLAM2_1_1ORBmatcher.html#aa8ab1e3785aad3fa26855a4efccfa565" title="ORB_SLAM2::ORBmatcher\l::SearchBySim3" alt="" coords="226,135,411,177"/>
+<area shape="rect" id="node11" href="$classORB__SLAM2_1_1LocalMapping.html#a5d5e0bc6fd15d9a6bf1ca8a258f104f1" title="ORB_SLAM2::LocalMapping\l::SearchInNeighbors" alt="" coords="224,449,413,490"/>
+<area shape="rect" id="node12" href="$classORB__SLAM2_1_1Tracking.html#a25843575116bf18c065d6cc7645f5b26" title="更新局部关键点，called by UpdateLocalMap() " alt="" coords="239,514,398,555"/>
+<area shape="rect" id="node5" href="$classORB__SLAM2_1_1Tracking.html#a7e81c68bb6ced27fcbfa2edec38ef6e0" title="单目的地图初始化 " alt="" coords="691,169,850,210"/>
+<area shape="rect" id="node6" href="$classORB__SLAM2_1_1Tracking.html#af1f2c9c533642d8c33854540e90d1918" title="Main tracking function. It is independent of the input sensor. " alt="" coords="899,233,1058,274"/>
+<area shape="rect" id="node13" href="$classORB__SLAM2_1_1Tracking.html#a22723e9972c18a888dd51a82eec27b0a" title="更新LocalMap " alt="" coords="473,422,631,463"/>
+<area shape="rect" id="node14" href="$classORB__SLAM2_1_1Tracking.html#af670c614f4e10d58c9f7aad9865b5c08" title="对Local Map的MapPoints进行跟踪 " alt="" coords="691,297,850,338"/>
+</map>

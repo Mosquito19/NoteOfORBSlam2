@@ -1,0 +1,11 @@
+<map id="ORB_SLAM2::KeyFrame::GetBestCovisibilityKeyFrames" name="ORB_SLAM2::KeyFrame::GetBestCovisibilityKeyFrames">
+<area shape="rect" id="node2" href="$classORB__SLAM2_1_1LocalMapping.html#ac06b513357429d9eff89e29d2ae58d6c" title="ORB_SLAM2::LocalMapping\l::CreateNewMapPoints" alt="" coords="283,5,472,46"/>
+<area shape="rect" id="node3" href="$classORB__SLAM2_1_1KeyFrameDatabase.html#a2d396aae02c4318ea8c7e7eff8059c69" title="在闭环检测中找到与该关键帧可能闭环的关键帧 " alt="" coords="265,70,490,111"/>
+<area shape="rect" id="node5" href="$classORB__SLAM2_1_1KeyFrameDatabase.html#a008586e4d07ece0d948d0f1633447a2b" title="在重定位中找到与该帧相似的关键帧 " alt="" coords="265,135,490,177"/>
+<area shape="rect" id="node6" href="$classORB__SLAM2_1_1LocalMapping.html#a5d5e0bc6fd15d9a6bf1ca8a258f104f1" title="ORB_SLAM2::LocalMapping\l::SearchInNeighbors" alt="" coords="283,201,472,242"/>
+<area shape="rect" id="node7" href="$classORB__SLAM2_1_1Tracking.html#a42bed56bbbe8282eb77733e7168d8599" title="更新局部关键帧，called by UpdateLocalMap() " alt="" coords="292,266,463,307"/>
+<area shape="rect" id="node4" href="$classORB__SLAM2_1_1LoopClosing.html#aa8110ca79cebaf509e378d30e55f1381" title="ORB_SLAM2::LoopClosing\l::DetectLoop" alt="" coords="539,70,720,111"/>
+<area shape="rect" id="node8" href="$classORB__SLAM2_1_1Tracking.html#a22723e9972c18a888dd51a82eec27b0a" title="更新LocalMap " alt="" coords="550,266,709,307"/>
+<area shape="rect" id="node9" href="$classORB__SLAM2_1_1Tracking.html#af670c614f4e10d58c9f7aad9865b5c08" title="对Local Map的MapPoints进行跟踪 " alt="" coords="769,266,927,307"/>
+<area shape="rect" id="node10" href="$classORB__SLAM2_1_1Tracking.html#af1f2c9c533642d8c33854540e90d1918" title="Main tracking function. It is independent of the input sensor. " alt="" coords="977,266,1135,307"/>
+</map>

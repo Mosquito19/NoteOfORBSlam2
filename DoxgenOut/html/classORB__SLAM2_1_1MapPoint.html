@@ -1,0 +1,707 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.6"/>
+<title>My Project: ORB_SLAM2::MapPoint类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">My Project
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.6 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="pages.html"><span>相关页面</span></a></li>
+      <li><a href="modules.html"><span>模块</span></a></li>
+      <li><a href="namespaces.html"><span>命名空间</span></a></li>
+      <li class="current"><a href="annotated.html"><span>类</span></a></li>
+      <li><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>类列表</span></a></li>
+      <li><a href="classes.html"><span>类索引</span></a></li>
+      <li><a href="inherits.html"><span>类继承关系</span></a></li>
+      <li><a href="functions.html"><span>类成员</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('classORB__SLAM2_1_1MapPoint.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>命名空间</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>友元</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>组</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>页</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pub-attribs">Public 属性</a> &#124;
+<a href="#pub-static-attribs">静态 Public 属性</a> &#124;
+<a href="#pro-attribs">Protected 属性</a> &#124;
+<a href="classORB__SLAM2_1_1MapPoint-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">ORB_SLAM2::MapPoint类 参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>MapPoint是一个地图点  
+ <a href="classORB__SLAM2_1_1MapPoint.html#details">更多...</a></p>
+
+<p><code>#include &lt;<a class="el" href="MapPoint_8h_source.html">MapPoint.h</a>&gt;</code></p>
+<div class="dynheader">
+ORB_SLAM2::MapPoint 的协作图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classORB__SLAM2_1_1MapPoint__coll__graph.png" border="0" usemap="#ORB__SLAM2_1_1MapPoint_coll__map" alt="Collaboration graph"/></div>
+<map name="ORB__SLAM2_1_1MapPoint_coll__map" id="ORB__SLAM2_1_1MapPoint_coll__map">
+<area shape="rect" id="node2" href="classORB__SLAM2_1_1KeyFrame.html" title="ORB_SLAM2::KeyFrame" alt="" coords="1006,128,1175,155"/><area shape="rect" id="node3" href="classORB__SLAM2_1_1KeyFrameDatabase.html" title="ORB_SLAM2::KeyFrameDatabase" alt="" coords="630,119,855,145"/><area shape="rect" id="node4" href="classDBoW2_1_1TemplatedVocabulary.html" title="Generic Vocabulary. " alt="" coords="329,77,532,118"/><area shape="rect" id="node5" href="classDBoW2_1_1GeneralScoring.html" title="Base class of scoring functions. " alt="" coords="5,84,171,111"/><area shape="rect" id="node6" href="classORB__SLAM2_1_1Map.html" title="ORB_SLAM2::Map" alt="" coords="675,237,810,264"/><area shape="rect" id="node7" href="classDBoW2_1_1FeatureVector.html" title="Vector of nodes with indexes of local features。正索引，node，对应的特征的标号 " alt="" coords="663,169,822,196"/><area shape="rect" id="node9" href="classDBoW2_1_1BowVector.html" title="DBoW2::BowVector" alt="" coords="673,5,813,32"/></map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">图例</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:ae8b6d24a7f79cfd260502859cb5b6901"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classORB__SLAM2_1_1MapPoint.html#ae8b6d24a7f79cfd260502859cb5b6901">MapPoint</a> (const cv::Mat &amp;Pos, <a class="el" href="classORB__SLAM2_1_1KeyFrame.html">KeyFrame</a> *pRefKF, <a class="el" href="classORB__SLAM2_1_1Map.html">Map</a> *pMap)</td></tr>
+<tr class="memdesc:ae8b6d24a7f79cfd260502859cb5b6901"><td class="mdescLeft">&#160;</td><td class="mdescRight">给定坐标与keyframe构造MapPoint  <a href="#ae8b6d24a7f79cfd260502859cb5b6901">更多...</a><br/></td></tr>
+<tr class="separator:ae8b6d24a7f79cfd260502859cb5b6901"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abbb2b679ea956845f315a69773618fa7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classORB__SLAM2_1_1MapPoint.html#abbb2b679ea956845f315a69773618fa7">MapPoint</a> (const cv::Mat &amp;Pos, <a class="el" href="classORB__SLAM2_1_1Map.html">Map</a> *pMap, <a class="el" href="classORB__SLAM2_1_1Frame.html">Frame</a> *pFrame, const int &amp;idxF)</td></tr>
+<tr class="memdesc:abbb2b679ea956845f315a69773618fa7"><td class="mdescLeft">&#160;</td><td class="mdescRight">给定坐标与frame构造MapPoint  <a href="#abbb2b679ea956845f315a69773618fa7">更多...</a><br/></td></tr>
+<tr class="separator:abbb2b679ea956845f315a69773618fa7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad65e6322e9d06314db235ff4d072509f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad65e6322e9d06314db235ff4d072509f"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetWorldPos</b> (const cv::Mat &amp;Pos)</td></tr>
+<tr class="separator:ad65e6322e9d06314db235ff4d072509f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e59b21447d5d889b39ad2fcc1b1db49"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0e59b21447d5d889b39ad2fcc1b1db49"></a>
+cv::Mat&#160;</td><td class="memItemRight" valign="bottom"><b>GetWorldPos</b> ()</td></tr>
+<tr class="separator:a0e59b21447d5d889b39ad2fcc1b1db49"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af0198d242a96476faa52da0ede3c8f10"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af0198d242a96476faa52da0ede3c8f10"></a>
+cv::Mat&#160;</td><td class="memItemRight" valign="bottom"><b>GetNormal</b> ()</td></tr>
+<tr class="separator:af0198d242a96476faa52da0ede3c8f10"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a98f595f0421fd95e406d1de6f48e05f3"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a98f595f0421fd95e406d1de6f48e05f3"></a>
+<a class="el" href="classORB__SLAM2_1_1KeyFrame.html">KeyFrame</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>GetReferenceKeyFrame</b> ()</td></tr>
+<tr class="separator:a98f595f0421fd95e406d1de6f48e05f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae91e056d3b79e08a3fadd976888f6b09"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae91e056d3b79e08a3fadd976888f6b09"></a>
+std::map&lt; <a class="el" href="classORB__SLAM2_1_1KeyFrame.html">KeyFrame</a> *, size_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>GetObservations</b> ()</td></tr>
+<tr class="separator:ae91e056d3b79e08a3fadd976888f6b09"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7fbc2a95f49eb6facdc5d5fa35de3287"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7fbc2a95f49eb6facdc5d5fa35de3287"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>Observations</b> ()</td></tr>
+<tr class="separator:a7fbc2a95f49eb6facdc5d5fa35de3287"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a37277ee3c7d8657976e749ab920bb13f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classORB__SLAM2_1_1MapPoint.html#a37277ee3c7d8657976e749ab920bb13f">AddObservation</a> (<a class="el" href="classORB__SLAM2_1_1KeyFrame.html">KeyFrame</a> *pKF, size_t idx)</td></tr>
+<tr class="memdesc:a37277ee3c7d8657976e749ab920bb13f"><td class="mdescLeft">&#160;</td><td class="mdescRight">添加观测  <a href="#a37277ee3c7d8657976e749ab920bb13f">更多...</a><br/></td></tr>
+<tr class="separator:a37277ee3c7d8657976e749ab920bb13f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a79e6a93ea0c39329a082f4f69560f1be"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a79e6a93ea0c39329a082f4f69560f1be"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>EraseObservation</b> (<a class="el" href="classORB__SLAM2_1_1KeyFrame.html">KeyFrame</a> *pKF)</td></tr>
+<tr class="separator:a79e6a93ea0c39329a082f4f69560f1be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afbe3f2cf7f4d5e4596fa9f7ff0d44470"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afbe3f2cf7f4d5e4596fa9f7ff0d44470"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>GetIndexInKeyFrame</b> (<a class="el" href="classORB__SLAM2_1_1KeyFrame.html">KeyFrame</a> *pKF)</td></tr>
+<tr class="separator:afbe3f2cf7f4d5e4596fa9f7ff0d44470"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7a8c48a885598ba4da3b188791dfd009"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classORB__SLAM2_1_1MapPoint.html#a7a8c48a885598ba4da3b188791dfd009">IsInKeyFrame</a> (<a class="el" href="classORB__SLAM2_1_1KeyFrame.html">KeyFrame</a> *pKF)</td></tr>
+<tr class="memdesc:a7a8c48a885598ba4da3b188791dfd009"><td class="mdescLeft">&#160;</td><td class="mdescRight">check <a class="el" href="classORB__SLAM2_1_1MapPoint.html" title="MapPoint是一个地图点 ">MapPoint</a> is in keyframe  <a href="#a7a8c48a885598ba4da3b188791dfd009">更多...</a><br/></td></tr>
+<tr class="separator:a7a8c48a885598ba4da3b188791dfd009"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7ed2a66b528165d6c39cb6f84f684308"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7ed2a66b528165d6c39cb6f84f684308"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetBadFlag</b> ()</td></tr>
+<tr class="separator:a7ed2a66b528165d6c39cb6f84f684308"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a46bb6b57cd914c9ebad30007f3af469a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a46bb6b57cd914c9ebad30007f3af469a"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>isBad</b> ()</td></tr>
+<tr class="separator:a46bb6b57cd914c9ebad30007f3af469a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8f2e205afcfae3dc70196bcd29194440"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8f2e205afcfae3dc70196bcd29194440"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>Replace</b> (<a class="el" href="classORB__SLAM2_1_1MapPoint.html">MapPoint</a> *pMP)</td></tr>
+<tr class="separator:a8f2e205afcfae3dc70196bcd29194440"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad8814ed8121bd730c640c620ed623baf"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad8814ed8121bd730c640c620ed623baf"></a>
+<a class="el" href="classORB__SLAM2_1_1MapPoint.html">MapPoint</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>GetReplaced</b> ()</td></tr>
+<tr class="separator:ad8814ed8121bd730c640c620ed623baf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0a234f5bd6bc19a9ea55fad0c9e6db5f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classORB__SLAM2_1_1MapPoint.html#a0a234f5bd6bc19a9ea55fad0c9e6db5f">IncreaseVisible</a> (int n=1)</td></tr>
+<tr class="memdesc:a0a234f5bd6bc19a9ea55fad0c9e6db5f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Increase Visible.  <a href="#a0a234f5bd6bc19a9ea55fad0c9e6db5f">更多...</a><br/></td></tr>
+<tr class="separator:a0a234f5bd6bc19a9ea55fad0c9e6db5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa097cd8cf993a54e999f297e05729392"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classORB__SLAM2_1_1MapPoint.html#aa097cd8cf993a54e999f297e05729392">IncreaseFound</a> (int n=1)</td></tr>
+<tr class="memdesc:aa097cd8cf993a54e999f297e05729392"><td class="mdescLeft">&#160;</td><td class="mdescRight">Increase Found.  <a href="#aa097cd8cf993a54e999f297e05729392">更多...</a><br/></td></tr>
+<tr class="separator:aa097cd8cf993a54e999f297e05729392"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac1b7c69a2d9f6bd785d465380844ce10"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac1b7c69a2d9f6bd785d465380844ce10"></a>
+float&#160;</td><td class="memItemRight" valign="bottom"><b>GetFoundRatio</b> ()</td></tr>
+<tr class="separator:ac1b7c69a2d9f6bd785d465380844ce10"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0d081d56b0f398c52581b3e0eaa1cb15"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0d081d56b0f398c52581b3e0eaa1cb15"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>GetFound</b> ()</td></tr>
+<tr class="separator:a0d081d56b0f398c52581b3e0eaa1cb15"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab4c3dfd8f5f05a4b1888021f1fac3d84"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classORB__SLAM2_1_1MapPoint.html#ab4c3dfd8f5f05a4b1888021f1fac3d84">ComputeDistinctiveDescriptors</a> ()</td></tr>
+<tr class="memdesc:ab4c3dfd8f5f05a4b1888021f1fac3d84"><td class="mdescLeft">&#160;</td><td class="mdescRight">计算具有代表的描述子  <a href="#ab4c3dfd8f5f05a4b1888021f1fac3d84">更多...</a><br/></td></tr>
+<tr class="separator:ab4c3dfd8f5f05a4b1888021f1fac3d84"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8f9faa5b4cc513795485dcfb460ea3d0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8f9faa5b4cc513795485dcfb460ea3d0"></a>
+cv::Mat&#160;</td><td class="memItemRight" valign="bottom"><b>GetDescriptor</b> ()</td></tr>
+<tr class="separator:a8f9faa5b4cc513795485dcfb460ea3d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac5b8e4ec6a7737860af57058bdd16124"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classORB__SLAM2_1_1MapPoint.html#ac5b8e4ec6a7737860af57058bdd16124">UpdateNormalAndDepth</a> ()</td></tr>
+<tr class="memdesc:ac5b8e4ec6a7737860af57058bdd16124"><td class="mdescLeft">&#160;</td><td class="mdescRight">更新平均观测方向以及观测距离范围  <a href="#ac5b8e4ec6a7737860af57058bdd16124">更多...</a><br/></td></tr>
+<tr class="separator:ac5b8e4ec6a7737860af57058bdd16124"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aac7224845c1d39016c50dcaacc0ebe40"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aac7224845c1d39016c50dcaacc0ebe40"></a>
+float&#160;</td><td class="memItemRight" valign="bottom"><b>GetMinDistanceInvariance</b> ()</td></tr>
+<tr class="separator:aac7224845c1d39016c50dcaacc0ebe40"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf921da31ee4d522181bb6b8d9149fff"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abf921da31ee4d522181bb6b8d9149fff"></a>
+float&#160;</td><td class="memItemRight" valign="bottom"><b>GetMaxDistanceInvariance</b> ()</td></tr>
+<tr class="separator:abf921da31ee4d522181bb6b8d9149fff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa0e884ba7dc5b85ddb5ccb64113a8594"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa0e884ba7dc5b85ddb5ccb64113a8594"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>PredictScale</b> (const float &amp;currentDist, <a class="el" href="classORB__SLAM2_1_1KeyFrame.html">KeyFrame</a> *pKF)</td></tr>
+<tr class="separator:aa0e884ba7dc5b85ddb5ccb64113a8594"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af083bd50463ee191a1abb540bb40ea3d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af083bd50463ee191a1abb540bb40ea3d"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>PredictScale</b> (const float &amp;currentDist, <a class="el" href="classORB__SLAM2_1_1Frame.html">Frame</a> *pF)</td></tr>
+<tr class="separator:af083bd50463ee191a1abb540bb40ea3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Public 属性</h2></td></tr>
+<tr class="memitem:afba2eb4d8400a0c822ee991ba445d9be"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afba2eb4d8400a0c822ee991ba445d9be"></a>
+long unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classORB__SLAM2_1_1MapPoint.html#afba2eb4d8400a0c822ee991ba445d9be">mnId</a></td></tr>
+<tr class="memdesc:afba2eb4d8400a0c822ee991ba445d9be"><td class="mdescLeft">&#160;</td><td class="mdescRight">Global ID for <a class="el" href="classORB__SLAM2_1_1MapPoint.html" title="MapPoint是一个地图点 ">MapPoint</a>. <br/></td></tr>
+<tr class="separator:afba2eb4d8400a0c822ee991ba445d9be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad3f9757b633aac7c026a0e5330e4b10c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad3f9757b633aac7c026a0e5330e4b10c"></a>
+const long int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classORB__SLAM2_1_1MapPoint.html#ad3f9757b633aac7c026a0e5330e4b10c">mnFirstKFid</a></td></tr>
+<tr class="memdesc:ad3f9757b633aac7c026a0e5330e4b10c"><td class="mdescLeft">&#160;</td><td class="mdescRight">创建该MapPoint的关键帧ID <br/></td></tr>
+<tr class="separator:ad3f9757b633aac7c026a0e5330e4b10c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a68929d6ead18e19745ec358f2ef8776d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a68929d6ead18e19745ec358f2ef8776d"></a>
+const long int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classORB__SLAM2_1_1MapPoint.html#a68929d6ead18e19745ec358f2ef8776d">mnFirstFrame</a></td></tr>
+<tr class="memdesc:a68929d6ead18e19745ec358f2ef8776d"><td class="mdescLeft">&#160;</td><td class="mdescRight">创建该MapPoint的帧ID（即每一关键帧有一个帧ID） <br/></td></tr>
+<tr class="separator:a68929d6ead18e19745ec358f2ef8776d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2653a4c69121627fcc5ae812b1809a28"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2653a4c69121627fcc5ae812b1809a28"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>nObs</b></td></tr>
+<tr class="separator:a2653a4c69121627fcc5ae812b1809a28"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7d735552c42630c00bca4c2094fbbbf3"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7d735552c42630c00bca4c2094fbbbf3"></a>
+float&#160;</td><td class="memItemRight" valign="bottom"><b>mTrackProjX</b></td></tr>
+<tr class="separator:a7d735552c42630c00bca4c2094fbbbf3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ab59610931a5c2e14f502e8233571e4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5ab59610931a5c2e14f502e8233571e4"></a>
+float&#160;</td><td class="memItemRight" valign="bottom"><b>mTrackProjY</b></td></tr>
+<tr class="separator:a5ab59610931a5c2e14f502e8233571e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4f0a0671a3587e2aac0708eed07c5170"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4f0a0671a3587e2aac0708eed07c5170"></a>
+float&#160;</td><td class="memItemRight" valign="bottom"><b>mTrackProjXR</b></td></tr>
+<tr class="separator:a4f0a0671a3587e2aac0708eed07c5170"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aac515bf003cea5f99737d13475c46816"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aac515bf003cea5f99737d13475c46816"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>mnTrackScaleLevel</b></td></tr>
+<tr class="separator:aac515bf003cea5f99737d13475c46816"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a728107bc670ba47d79bad5ba288256d6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a728107bc670ba47d79bad5ba288256d6"></a>
+float&#160;</td><td class="memItemRight" valign="bottom"><b>mTrackViewCos</b></td></tr>
+<tr class="separator:a728107bc670ba47d79bad5ba288256d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0187350fa3fddd0bf89ccf354acb4766"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0187350fa3fddd0bf89ccf354acb4766"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>mbTrackInView</b></td></tr>
+<tr class="separator:a0187350fa3fddd0bf89ccf354acb4766"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a19152183cfddc71b63650175def6aec7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a19152183cfddc71b63650175def6aec7"></a>
+long unsigned int&#160;</td><td class="memItemRight" valign="bottom"><b>mnTrackReferenceForFrame</b></td></tr>
+<tr class="separator:a19152183cfddc71b63650175def6aec7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aea3a63ce27fc39e536a6ceef7c1f3473"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aea3a63ce27fc39e536a6ceef7c1f3473"></a>
+long unsigned int&#160;</td><td class="memItemRight" valign="bottom"><b>mnLastFrameSeen</b></td></tr>
+<tr class="separator:aea3a63ce27fc39e536a6ceef7c1f3473"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad4da26d02aa54a3e0be6a09e90fa39ec"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad4da26d02aa54a3e0be6a09e90fa39ec"></a>
+long unsigned int&#160;</td><td class="memItemRight" valign="bottom"><b>mnBALocalForKF</b></td></tr>
+<tr class="separator:ad4da26d02aa54a3e0be6a09e90fa39ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aedba463c6440c2b448e9ec21acd58b9a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aedba463c6440c2b448e9ec21acd58b9a"></a>
+long unsigned int&#160;</td><td class="memItemRight" valign="bottom"><b>mnFuseCandidateForKF</b></td></tr>
+<tr class="separator:aedba463c6440c2b448e9ec21acd58b9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a44172716cac5a56004a60d165de8cfa2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a44172716cac5a56004a60d165de8cfa2"></a>
+long unsigned int&#160;</td><td class="memItemRight" valign="bottom"><b>mnLoopPointForKF</b></td></tr>
+<tr class="separator:a44172716cac5a56004a60d165de8cfa2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a86626462be01ad9a133dca0f5b49e688"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a86626462be01ad9a133dca0f5b49e688"></a>
+long unsigned int&#160;</td><td class="memItemRight" valign="bottom"><b>mnCorrectedByKF</b></td></tr>
+<tr class="separator:a86626462be01ad9a133dca0f5b49e688"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ade5858af14ed7924d48dbf191ea5448c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ade5858af14ed7924d48dbf191ea5448c"></a>
+long unsigned int&#160;</td><td class="memItemRight" valign="bottom"><b>mnCorrectedReference</b></td></tr>
+<tr class="separator:ade5858af14ed7924d48dbf191ea5448c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2669d92452bb1347a6a09700e369f049"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2669d92452bb1347a6a09700e369f049"></a>
+cv::Mat&#160;</td><td class="memItemRight" valign="bottom"><b>mPosGBA</b></td></tr>
+<tr class="separator:a2669d92452bb1347a6a09700e369f049"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abcef580d7b3562ea9025ea1dc2141b92"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abcef580d7b3562ea9025ea1dc2141b92"></a>
+long unsigned int&#160;</td><td class="memItemRight" valign="bottom"><b>mnBAGlobalForKF</b></td></tr>
+<tr class="separator:abcef580d7b3562ea9025ea1dc2141b92"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
+静态 Public 属性</h2></td></tr>
+<tr class="memitem:aa79702928d566db4fcd7716249bd96a2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa79702928d566db4fcd7716249bd96a2"></a>
+static long unsigned int&#160;</td><td class="memItemRight" valign="bottom"><b>nNextId</b> =0</td></tr>
+<tr class="separator:aa79702928d566db4fcd7716249bd96a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a58d0ed9067593833efa652ea671ebf62"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a58d0ed9067593833efa652ea671ebf62"></a>
+static std::mutex&#160;</td><td class="memItemRight" valign="bottom"><b>mGlobalMutex</b></td></tr>
+<tr class="separator:a58d0ed9067593833efa652ea671ebf62"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
+Protected 属性</h2></td></tr>
+<tr class="memitem:a39741adada8dcd302afbf45ec2e72af0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a39741adada8dcd302afbf45ec2e72af0"></a>
+cv::Mat&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classORB__SLAM2_1_1MapPoint.html#a39741adada8dcd302afbf45ec2e72af0">mWorldPos</a></td></tr>
+<tr class="memdesc:a39741adada8dcd302afbf45ec2e72af0"><td class="mdescLeft">&#160;</td><td class="mdescRight">MapPoint在世界坐标系下的坐标 <br/></td></tr>
+<tr class="separator:a39741adada8dcd302afbf45ec2e72af0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a189bea541f860af75ceb60300b59d8e3"><td class="memItemLeft" align="right" valign="top">std::map&lt; <a class="el" href="classORB__SLAM2_1_1KeyFrame.html">KeyFrame</a> *, size_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classORB__SLAM2_1_1MapPoint.html#a189bea541f860af75ceb60300b59d8e3">mObservations</a></td></tr>
+<tr class="separator:a189bea541f860af75ceb60300b59d8e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aba0cff72e2182ff72d32edd77dc7832d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aba0cff72e2182ff72d32edd77dc7832d"></a>
+cv::Mat&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classORB__SLAM2_1_1MapPoint.html#aba0cff72e2182ff72d32edd77dc7832d">mNormalVector</a></td></tr>
+<tr class="memdesc:aba0cff72e2182ff72d32edd77dc7832d"><td class="mdescLeft">&#160;</td><td class="mdescRight">也是该特征在kF中的索引，第多少个特征 <br/></td></tr>
+<tr class="separator:aba0cff72e2182ff72d32edd77dc7832d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac2a05b8ddc806ecc6939f42d13828876"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac2a05b8ddc806ecc6939f42d13828876"></a>
+cv::Mat&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classORB__SLAM2_1_1MapPoint.html#ac2a05b8ddc806ecc6939f42d13828876">mDescriptor</a></td></tr>
+<tr class="memdesc:ac2a05b8ddc806ecc6939f42d13828876"><td class="mdescLeft">&#160;</td><td class="mdescRight">通过 <a class="el" href="classORB__SLAM2_1_1MapPoint.html#ab4c3dfd8f5f05a4b1888021f1fac3d84" title="计算具有代表的描述子 ">ComputeDistinctiveDescriptors()</a> 得到的最优描述子 <br/></td></tr>
+<tr class="separator:ac2a05b8ddc806ecc6939f42d13828876"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a27cc4fee44b1ae77b24a8c766c617058"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a27cc4fee44b1ae77b24a8c766c617058"></a>
+<a class="el" href="classORB__SLAM2_1_1KeyFrame.html">KeyFrame</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>mpRefKF</b></td></tr>
+<tr class="separator:a27cc4fee44b1ae77b24a8c766c617058"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aadb2c83e36dc01e47983f57e831bac7b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aadb2c83e36dc01e47983f57e831bac7b"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>mnVisible</b></td></tr>
+<tr class="separator:aadb2c83e36dc01e47983f57e831bac7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1defea85441b8063ef9ebb47c9959289"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1defea85441b8063ef9ebb47c9959289"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classORB__SLAM2_1_1MapPoint.html#a1defea85441b8063ef9ebb47c9959289">mnFound</a></td></tr>
+<tr class="memdesc:a1defea85441b8063ef9ebb47c9959289"><td class="mdescLeft">&#160;</td><td class="mdescRight">// 跟踪到该MapPoint的Frame数相比预计可观测到该MapPoint的Frame数的比例需大于25% <br/></td></tr>
+<tr class="separator:a1defea85441b8063ef9ebb47c9959289"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa8f2fc3c4b67c04e97162a5084e1dada"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa8f2fc3c4b67c04e97162a5084e1dada"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>mbBad</b></td></tr>
+<tr class="separator:aa8f2fc3c4b67c04e97162a5084e1dada"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf1fe1c8a41919e1890b70baa18bd2fb"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abf1fe1c8a41919e1890b70baa18bd2fb"></a>
+<a class="el" href="classORB__SLAM2_1_1MapPoint.html">MapPoint</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>mpReplaced</b></td></tr>
+<tr class="separator:abf1fe1c8a41919e1890b70baa18bd2fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac179383327d65067da6febe55cbfc32a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac179383327d65067da6febe55cbfc32a"></a>
+float&#160;</td><td class="memItemRight" valign="bottom"><b>mfMinDistance</b></td></tr>
+<tr class="separator:ac179383327d65067da6febe55cbfc32a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afc04bae1b7819dd158a572de56074f63"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afc04bae1b7819dd158a572de56074f63"></a>
+float&#160;</td><td class="memItemRight" valign="bottom"><b>mfMaxDistance</b></td></tr>
+<tr class="separator:afc04bae1b7819dd158a572de56074f63"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aad9ad02a540966d12b75460238290d90"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aad9ad02a540966d12b75460238290d90"></a>
+<a class="el" href="classORB__SLAM2_1_1Map.html">Map</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>mpMap</b></td></tr>
+<tr class="separator:aad9ad02a540966d12b75460238290d90"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a592b97bed3453c0a599336fa848a8cef"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a592b97bed3453c0a599336fa848a8cef"></a>
+std::mutex&#160;</td><td class="memItemRight" valign="bottom"><b>mMutexPos</b></td></tr>
+<tr class="separator:a592b97bed3453c0a599336fa848a8cef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3ab20d400977581ac45a109f5544ffda"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3ab20d400977581ac45a109f5544ffda"></a>
+std::mutex&#160;</td><td class="memItemRight" valign="bottom"><b>mMutexFeatures</b></td></tr>
+<tr class="separator:a3ab20d400977581ac45a109f5544ffda"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>MapPoint是一个地图点 </p>
+
+<p>在文件 <a class="el" href="MapPoint_8h_source.html">MapPoint.h</a> 第 <a class="el" href="MapPoint_8h_source.html#l00041">41</a> 行定义.</p>
+</div><h2 class="groupheader">构造及析构函数说明</h2>
+<a class="anchor" id="ae8b6d24a7f79cfd260502859cb5b6901"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ORB_SLAM2::MapPoint::MapPoint </td>
+          <td>(</td>
+          <td class="paramtype">const cv::Mat &amp;&#160;</td>
+          <td class="paramname"><em>Pos</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classORB__SLAM2_1_1KeyFrame.html">KeyFrame</a> *&#160;</td>
+          <td class="paramname"><em>pRefKF</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classORB__SLAM2_1_1Map.html">Map</a> *&#160;</td>
+          <td class="paramname"><em>pMap</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>给定坐标与keyframe构造MapPoint </p>
+<p>双目：StereoInitialization()，CreateNewKeyFrame()，LocalMapping::CreateNewMapPoints() 单目：CreateInitialMapMonocular()，LocalMapping::CreateNewMapPoints() </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">Pos</td><td>MapPoint的坐标（wrt世界坐标系） </td></tr>
+    <tr><td class="paramname">pRefKF</td><td><a class="el" href="classORB__SLAM2_1_1KeyFrame.html">KeyFrame</a> </td></tr>
+    <tr><td class="paramname">pMap</td><td><a class="el" href="classORB__SLAM2_1_1Map.html">Map</a> </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>在文件 <a class="el" href="MapPoint_8cpp_source.html">MapPoint.cpp</a> 第 <a class="el" href="MapPoint_8cpp_source.html#l00041">41</a> 行定义.</p>
+
+<p>参考 <a class="el" href="MapPoint_8h_source.html#l00087">mnId</a>, <a class="el" href="MapPoint_8h_source.html#l00138">mNormalVector</a> , 以及 <a class="el" href="MapPoint_8h_source.html#l00130">mWorldPos</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="abbb2b679ea956845f315a69773618fa7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ORB_SLAM2::MapPoint::MapPoint </td>
+          <td>(</td>
+          <td class="paramtype">const cv::Mat &amp;&#160;</td>
+          <td class="paramname"><em>Pos</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classORB__SLAM2_1_1Map.html">Map</a> *&#160;</td>
+          <td class="paramname"><em>pMap</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classORB__SLAM2_1_1Frame.html">Frame</a> *&#160;</td>
+          <td class="paramname"><em>pFrame</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int &amp;&#160;</td>
+          <td class="paramname"><em>idxF</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>给定坐标与frame构造MapPoint </p>
+<p>双目：UpdateLastFrame() </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">Pos</td><td>MapPoint的坐标（wrt世界坐标系） </td></tr>
+    <tr><td class="paramname">pMap</td><td><a class="el" href="classORB__SLAM2_1_1Map.html">Map</a> </td></tr>
+    <tr><td class="paramname">pFrame</td><td><a class="el" href="classORB__SLAM2_1_1Frame.html">Frame</a> </td></tr>
+    <tr><td class="paramname">idxF</td><td>MapPoint在Frame中的索引，即对应的特征点的编号 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>在文件 <a class="el" href="MapPoint_8cpp_source.html">MapPoint.cpp</a> 第 <a class="el" href="MapPoint_8cpp_source.html#l00064">64</a> 行定义.</p>
+
+<p>参考 <a class="el" href="MapPoint_8h_source.html#l00144">mDescriptor</a>, <a class="el" href="MapPoint_8h_source.html#l00087">mnId</a>, <a class="el" href="MapPoint_8h_source.html#l00138">mNormalVector</a> , 以及 <a class="el" href="MapPoint_8h_source.html#l00130">mWorldPos</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">成员函数说明</h2>
+<a class="anchor" id="a37277ee3c7d8657976e749ab920bb13f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ORB_SLAM2::MapPoint::AddObservation </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classORB__SLAM2_1_1KeyFrame.html">KeyFrame</a> *&#160;</td>
+          <td class="paramname"><em>pKF</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>idx</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>添加观测 </p>
+<p>记录哪些KeyFrame的那个特征点能观测到该MapPoint <br/>
+并增加观测的相机数目nObs，单目+1，双目或者grbd+2 这个函数是建立关键帧共视关系的核心函数，能共同观测到某些MapPoints的关键帧是共视关键帧 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pKF</td><td><a class="el" href="classORB__SLAM2_1_1KeyFrame.html">KeyFrame</a> </td></tr>
+    <tr><td class="paramname">idx</td><td>MapPoint在KeyFrame中的索引 </td></tr>
+  </table>
+  </dd>
+</dl>
+<p>mObservations是一个map&lt; pkf* ,idx&gt; count 功能看声明 </p>
+
+<p>在文件 <a class="el" href="MapPoint_8cpp_source.html">MapPoint.cpp</a> 第 <a class="el" href="MapPoint_8cpp_source.html#l00127">127</a> 行定义.</p>
+
+<p>参考 <a class="el" href="MapPoint_8h_source.html#l00133">mObservations</a>.</p>
+
+<p>参考自 <a class="el" href="LoopClosing_8cpp_source.html#l00505">ORB_SLAM2::LoopClosing::CorrectLoop()</a>, <a class="el" href="Tracking_8cpp_source.html#l00825">ORB_SLAM2::Tracking::CreateInitialMapMonocular()</a>, <a class="el" href="Tracking_8cpp_source.html#l01402">ORB_SLAM2::Tracking::CreateNewKeyFrame()</a>, <a class="el" href="LocalMapping_8cpp_source.html#l00286">ORB_SLAM2::LocalMapping::CreateNewMapPoints()</a>, <a class="el" href="ORBmatcher_8cpp_source.html#l00968">ORB_SLAM2::ORBmatcher::Fuse()</a>, <a class="el" href="LocalMapping_8cpp_source.html#l00171">ORB_SLAM2::LocalMapping::ProcessNewKeyFrame()</a> , 以及 <a class="el" href="Tracking_8cpp_source.html#l00637">ORB_SLAM2::Tracking::StereoInitialization()</a>.</p>
+
+<p><div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classORB__SLAM2_1_1MapPoint_a37277ee3c7d8657976e749ab920bb13f_icgraph.png" border="0" usemap="#classORB__SLAM2_1_1MapPoint_a37277ee3c7d8657976e749ab920bb13f_icgraph" alt=""/></div>
+<map name="classORB__SLAM2_1_1MapPoint_a37277ee3c7d8657976e749ab920bb13f_icgraph" id="classORB__SLAM2_1_1MapPoint_a37277ee3c7d8657976e749ab920bb13f_icgraph">
+<area shape="rect" id="node2" href="classORB__SLAM2_1_1LoopClosing.html#aa007e0678582ec0de5d71280d23af540" title="闭环 " alt="" coords="223,5,404,46"/><area shape="rect" id="node3" href="classORB__SLAM2_1_1Tracking.html#afeb077c81cd700d779348b80698086e8" title="CreateInitialMapMonocular. " alt="" coords="221,70,406,111"/><area shape="rect" id="node6" href="classORB__SLAM2_1_1Tracking.html#a8c7fb6c4b1f952524512023df690bf4d" title="创建新的关键帧 " alt="" coords="471,135,630,177"/><area shape="rect" id="node7" href="classORB__SLAM2_1_1LocalMapping.html#ac06b513357429d9eff89e29d2ae58d6c" title="ORB_SLAM2::LocalMapping\l::CreateNewMapPoints" alt="" coords="219,187,408,229"/><area shape="rect" id="node8" href="classORB__SLAM2_1_1ORBmatcher.html#a0b63d334ccbb34fc7dda0eed2b96320e" title="将MapPoints投影到关键帧pKF中，并判断是否有重复的MapPoints 1.如果MapPoint能匹配关键帧的特征点，并且该点有对应的MapPoint，那么将两个MapPoint合并（选择观测数..." alt="" coords="221,253,406,294"/><area shape="rect" id="node10" href="classORB__SLAM2_1_1LocalMapping.html#a84eea8f268cce9d919a4906ae634dd22" title="处理列表中的关键帧 " alt="" coords="219,318,408,359"/><area shape="rect" id="node11" href="classORB__SLAM2_1_1Tracking.html#ad3da849e4204d766e5db4ac47b52132c" title="双目和rgbd的地图初始化 " alt="" coords="471,347,630,389"/><area shape="rect" id="node4" href="classORB__SLAM2_1_1Tracking.html#a7e81c68bb6ced27fcbfa2edec38ef6e0" title="单目的地图初始化 " alt="" coords="471,70,630,111"/><area shape="rect" id="node5" href="classORB__SLAM2_1_1Tracking.html#af1f2c9c533642d8c33854540e90d1918" title="Main tracking function. It is independent of the input sensor. " alt="" coords="694,135,853,177"/><area shape="rect" id="node9" href="classORB__SLAM2_1_1LocalMapping.html#a5d5e0bc6fd15d9a6bf1ca8a258f104f1" title="ORB_SLAM2::LocalMapping\l::SearchInNeighbors" alt="" coords="456,253,645,294"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="ab4c3dfd8f5f05a4b1888021f1fac3d84"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ORB_SLAM2::MapPoint::ComputeDistinctiveDescriptors </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>计算具有代表的描述子 </p>
+<p>由于一个MapPoint会被许多相机观测到，因此在插入关键帧后，需要判断是否更新当前点的最适合的描述子 <br/>
+先获得当前点的所有描述子，然后计算描述子之间的两两距离，最好的描述子与其他描述子应该具有最小的距离中值 </p>
+<dl class="section see"><dt>参见</dt><dd>III - C3.3 </dd></dl>
+
+<p>在文件 <a class="el" href="MapPoint_8cpp_source.html">MapPoint.cpp</a> 第 <a class="el" href="MapPoint_8cpp_source.html#l00302">302</a> 行定义.</p>
+
+<p>参考 <a class="el" href="MapPoint_8h_source.html#l00144">mDescriptor</a> , 以及 <a class="el" href="MapPoint_8h_source.html#l00133">mObservations</a>.</p>
+
+<p>参考自 <a class="el" href="LoopClosing_8cpp_source.html#l00505">ORB_SLAM2::LoopClosing::CorrectLoop()</a>, <a class="el" href="Tracking_8cpp_source.html#l00825">ORB_SLAM2::Tracking::CreateInitialMapMonocular()</a>, <a class="el" href="Tracking_8cpp_source.html#l01402">ORB_SLAM2::Tracking::CreateNewKeyFrame()</a>, <a class="el" href="LocalMapping_8cpp_source.html#l00286">ORB_SLAM2::LocalMapping::CreateNewMapPoints()</a>, <a class="el" href="LocalMapping_8cpp_source.html#l00171">ORB_SLAM2::LocalMapping::ProcessNewKeyFrame()</a>, <a class="el" href="LocalMapping_8cpp_source.html#l00588">ORB_SLAM2::LocalMapping::SearchInNeighbors()</a> , 以及 <a class="el" href="Tracking_8cpp_source.html#l00637">ORB_SLAM2::Tracking::StereoInitialization()</a>.</p>
+
+<p><div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classORB__SLAM2_1_1MapPoint_ab4c3dfd8f5f05a4b1888021f1fac3d84_icgraph.png" border="0" usemap="#classORB__SLAM2_1_1MapPoint_ab4c3dfd8f5f05a4b1888021f1fac3d84_icgraph" alt=""/></div>
+<map name="classORB__SLAM2_1_1MapPoint_ab4c3dfd8f5f05a4b1888021f1fac3d84_icgraph" id="classORB__SLAM2_1_1MapPoint_ab4c3dfd8f5f05a4b1888021f1fac3d84_icgraph">
+<area shape="rect" id="node2" href="classORB__SLAM2_1_1LoopClosing.html#aa007e0678582ec0de5d71280d23af540" title="闭环 " alt="" coords="271,5,452,46"/><area shape="rect" id="node3" href="classORB__SLAM2_1_1Tracking.html#afeb077c81cd700d779348b80698086e8" title="CreateInitialMapMonocular. " alt="" coords="269,70,454,111"/><area shape="rect" id="node6" href="classORB__SLAM2_1_1Tracking.html#a8c7fb6c4b1f952524512023df690bf4d" title="创建新的关键帧 " alt="" coords="505,135,663,177"/><area shape="rect" id="node7" href="classORB__SLAM2_1_1LocalMapping.html#ac06b513357429d9eff89e29d2ae58d6c" title="ORB_SLAM2::LocalMapping\l::CreateNewMapPoints" alt="" coords="267,187,456,229"/><area shape="rect" id="node8" href="classORB__SLAM2_1_1LocalMapping.html#a84eea8f268cce9d919a4906ae634dd22" title="处理列表中的关键帧 " alt="" coords="267,253,456,294"/><area shape="rect" id="node9" href="classORB__SLAM2_1_1LocalMapping.html#a5d5e0bc6fd15d9a6bf1ca8a258f104f1" title="ORB_SLAM2::LocalMapping\l::SearchInNeighbors" alt="" coords="267,318,456,359"/><area shape="rect" id="node10" href="classORB__SLAM2_1_1Tracking.html#ad3da849e4204d766e5db4ac47b52132c" title="双目和rgbd的地图初始化 " alt="" coords="505,289,663,330"/><area shape="rect" id="node4" href="classORB__SLAM2_1_1Tracking.html#a7e81c68bb6ced27fcbfa2edec38ef6e0" title="单目的地图初始化 " alt="" coords="505,70,663,111"/><area shape="rect" id="node5" href="classORB__SLAM2_1_1Tracking.html#af1f2c9c533642d8c33854540e90d1918" title="Main tracking function. It is independent of the input sensor. " alt="" coords="713,135,871,177"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="aa097cd8cf993a54e999f297e05729392"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ORB_SLAM2::MapPoint::IncreaseFound </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>n</em> = <code>1</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Increase Found. </p>
+<p>能找到该点的帧数+n，n默认为1 </p>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="classORB__SLAM2_1_1Tracking.html#af670c614f4e10d58c9f7aad9865b5c08" title="对Local Map的MapPoints进行跟踪 ">Tracking::TrackLocalMap()</a> </dd></dl>
+
+<p>在文件 <a class="el" href="MapPoint_8cpp_source.html">MapPoint.cpp</a> 第 <a class="el" href="MapPoint_8cpp_source.html#l00283">283</a> 行定义.</p>
+
+<p>参考 <a class="el" href="MapPoint_8h_source.html#l00151">mnFound</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a0a234f5bd6bc19a9ea55fad0c9e6db5f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ORB_SLAM2::MapPoint::IncreaseVisible </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>n</em> = <code>1</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Increase Visible. </p>
+<p>Visible表示：</p>
+<ol type="1">
+<li>该MapPoint在某些帧的视野范围内，通过Frame::isInFrustum()函数判断</li>
+<li>该MapPoint被这些帧观测到，但并不一定能和这些帧的特征点匹配上 例如：有一个MapPoint（记为M），在某一帧F的视野范围内， 但并不表明该点M可以和F这一帧的某个特征点能匹配上 </li>
+</ol>
+
+<p>在文件 <a class="el" href="MapPoint_8cpp_source.html">MapPoint.cpp</a> 第 <a class="el" href="MapPoint_8cpp_source.html#l00271">271</a> 行定义.</p>
+
+<p>参考自 <a class="el" href="Tracking_8cpp_source.html#l01502">ORB_SLAM2::Tracking::SearchLocalPoints()</a>.</p>
+
+<p><div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classORB__SLAM2_1_1MapPoint_a0a234f5bd6bc19a9ea55fad0c9e6db5f_icgraph.png" border="0" usemap="#classORB__SLAM2_1_1MapPoint_a0a234f5bd6bc19a9ea55fad0c9e6db5f_icgraph" alt=""/></div>
+<map name="classORB__SLAM2_1_1MapPoint_a0a234f5bd6bc19a9ea55fad0c9e6db5f_icgraph" id="classORB__SLAM2_1_1MapPoint_a0a234f5bd6bc19a9ea55fad0c9e6db5f_icgraph">
+<area shape="rect" id="node2" href="classORB__SLAM2_1_1Tracking.html#a451c0e5372c24645c7634fcebc8fa847" title="对Local MapPoints进行跟踪 " alt="" coords="219,5,378,46"/><area shape="rect" id="node3" href="classORB__SLAM2_1_1Tracking.html#af670c614f4e10d58c9f7aad9865b5c08" title="对Local Map的MapPoints进行跟踪 " alt="" coords="427,5,586,46"/><area shape="rect" id="node4" href="classORB__SLAM2_1_1Tracking.html#af1f2c9c533642d8c33854540e90d1918" title="Main tracking function. It is independent of the input sensor. " alt="" coords="635,5,794,46"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a7a8c48a885598ba4da3b188791dfd009"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ORB_SLAM2::MapPoint::IsInKeyFrame </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classORB__SLAM2_1_1KeyFrame.html">KeyFrame</a> *&#160;</td>
+          <td class="paramname"><em>pKF</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>check <a class="el" href="classORB__SLAM2_1_1MapPoint.html" title="MapPoint是一个地图点 ">MapPoint</a> is in keyframe </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pKF</td><td><a class="el" href="classORB__SLAM2_1_1KeyFrame.html">KeyFrame</a> </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>true if in pKF </dd></dl>
+
+<p>在文件 <a class="el" href="MapPoint_8cpp_source.html">MapPoint.cpp</a> 第 <a class="el" href="MapPoint_8cpp_source.html#l00402">402</a> 行定义.</p>
+
+<p>参考 <a class="el" href="MapPoint_8h_source.html#l00133">mObservations</a>.</p>
+
+<p>参考自 <a class="el" href="ORBmatcher_8cpp_source.html#l00968">ORB_SLAM2::ORBmatcher::Fuse()</a> , 以及 <a class="el" href="LocalMapping_8cpp_source.html#l00171">ORB_SLAM2::LocalMapping::ProcessNewKeyFrame()</a>.</p>
+
+<p><div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classORB__SLAM2_1_1MapPoint_a7a8c48a885598ba4da3b188791dfd009_icgraph.png" border="0" usemap="#classORB__SLAM2_1_1MapPoint_a7a8c48a885598ba4da3b188791dfd009_icgraph" alt=""/></div>
+<map name="classORB__SLAM2_1_1MapPoint_a7a8c48a885598ba4da3b188791dfd009_icgraph" id="classORB__SLAM2_1_1MapPoint_a7a8c48a885598ba4da3b188791dfd009_icgraph">
+<area shape="rect" id="node2" href="classORB__SLAM2_1_1ORBmatcher.html#a0b63d334ccbb34fc7dda0eed2b96320e" title="将MapPoints投影到关键帧pKF中，并判断是否有重复的MapPoints 1.如果MapPoint能匹配关键帧的特征点，并且该点有对应的MapPoint，那么将两个MapPoint合并（选择观测数..." alt="" coords="221,5,406,46"/><area shape="rect" id="node4" href="classORB__SLAM2_1_1LocalMapping.html#a84eea8f268cce9d919a4906ae634dd22" title="处理列表中的关键帧 " alt="" coords="219,70,408,111"/><area shape="rect" id="node3" href="classORB__SLAM2_1_1LocalMapping.html#a5d5e0bc6fd15d9a6bf1ca8a258f104f1" title="ORB_SLAM2::LocalMapping\l::SearchInNeighbors" alt="" coords="456,5,645,46"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="ac5b8e4ec6a7737860af57058bdd16124"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ORB_SLAM2::MapPoint::UpdateNormalAndDepth </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>更新平均观测方向以及观测距离范围 </p>
+<p>由于一个MapPoint会被许多相机观测到，因此在插入关键帧后，需要更新相应变量 </p>
+<dl class="section see"><dt>参见</dt><dd>III - C2.2 c2.4 </dd></dl>
+<p>norm 二范数！！！！！！！！！就是距离 </p>
+
+<p>在文件 <a class="el" href="MapPoint_8cpp_source.html">MapPoint.cpp</a> 第 <a class="el" href="MapPoint_8cpp_source.html#l00414">414</a> 行定义.</p>
+
+<p>参考 <a class="el" href="MapPoint_8h_source.html#l00138">mNormalVector</a>, <a class="el" href="MapPoint_8h_source.html#l00133">mObservations</a> , 以及 <a class="el" href="MapPoint_8h_source.html#l00130">mWorldPos</a>.</p>
+
+<p>参考自 <a class="el" href="Optimizer_8cpp_source.html#l00072">ORB_SLAM2::Optimizer::BundleAdjustment()</a>, <a class="el" href="LoopClosing_8cpp_source.html#l00505">ORB_SLAM2::LoopClosing::CorrectLoop()</a>, <a class="el" href="Tracking_8cpp_source.html#l00825">ORB_SLAM2::Tracking::CreateInitialMapMonocular()</a>, <a class="el" href="Tracking_8cpp_source.html#l01402">ORB_SLAM2::Tracking::CreateNewKeyFrame()</a>, <a class="el" href="LocalMapping_8cpp_source.html#l00286">ORB_SLAM2::LocalMapping::CreateNewMapPoints()</a>, <a class="el" href="Optimizer_8cpp_source.html#l00536">ORB_SLAM2::Optimizer::LocalBundleAdjustment()</a>, <a class="el" href="Optimizer_8cpp_source.html#l00905">ORB_SLAM2::Optimizer::OptimizeEssentialGraph()</a>, <a class="el" href="LocalMapping_8cpp_source.html#l00171">ORB_SLAM2::LocalMapping::ProcessNewKeyFrame()</a>, <a class="el" href="LocalMapping_8cpp_source.html#l00588">ORB_SLAM2::LocalMapping::SearchInNeighbors()</a> , 以及 <a class="el" href="Tracking_8cpp_source.html#l00637">ORB_SLAM2::Tracking::StereoInitialization()</a>.</p>
+
+<p><div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classORB__SLAM2_1_1MapPoint_ac5b8e4ec6a7737860af57058bdd16124_icgraph.png" border="0" usemap="#classORB__SLAM2_1_1MapPoint_ac5b8e4ec6a7737860af57058bdd16124_icgraph" alt=""/></div>
+<map name="classORB__SLAM2_1_1MapPoint_ac5b8e4ec6a7737860af57058bdd16124_icgraph" id="classORB__SLAM2_1_1MapPoint_ac5b8e4ec6a7737860af57058bdd16124_icgraph">
+<area shape="rect" id="node2" href="classORB__SLAM2_1_1Optimizer.html#a5e855fe6b54082739b7e7013048e6340" title="bundle adjustment Optimization " alt="" coords="239,5,404,46"/><area shape="rect" id="node3" href="classORB__SLAM2_1_1LoopClosing.html#aa007e0678582ec0de5d71280d23af540" title="闭环 " alt="" coords="464,274,645,315"/><area shape="rect" id="node4" href="classORB__SLAM2_1_1Tracking.html#afeb077c81cd700d779348b80698086e8" title="CreateInitialMapMonocular. " alt="" coords="229,70,414,111"/><area shape="rect" id="node7" href="classORB__SLAM2_1_1Tracking.html#a8c7fb6c4b1f952524512023df690bf4d" title="创建新的关键帧 " alt="" coords="475,135,634,177"/><area shape="rect" id="node8" href="classORB__SLAM2_1_1LocalMapping.html#ac06b513357429d9eff89e29d2ae58d6c" title="ORB_SLAM2::LocalMapping\l::CreateNewMapPoints" alt="" coords="227,238,416,279"/><area shape="rect" id="node9" href="classORB__SLAM2_1_1Optimizer.html#ab70e0b4f366b65a0c1ae8b2def19d339" title="Local Bundle Adjustment. " alt="" coords="238,303,405,345"/><area shape="rect" id="node10" href="classORB__SLAM2_1_1Optimizer.html#ad36bb1a7167c84f385c3f299bc96f20e" title="闭环检测后，EssentialGraph优化 " alt="" coords="236,369,407,410"/><area shape="rect" id="node11" href="classORB__SLAM2_1_1LocalMapping.html#a84eea8f268cce9d919a4906ae634dd22" title="处理列表中的关键帧 " alt="" coords="227,434,416,475"/><area shape="rect" id="node12" href="classORB__SLAM2_1_1LocalMapping.html#a5d5e0bc6fd15d9a6bf1ca8a258f104f1" title="ORB_SLAM2::LocalMapping\l::SearchInNeighbors" alt="" coords="227,499,416,541"/><area shape="rect" id="node13" href="classORB__SLAM2_1_1Tracking.html#ad3da849e4204d766e5db4ac47b52132c" title="双目和rgbd的地图初始化 " alt="" coords="475,485,634,526"/><area shape="rect" id="node5" href="classORB__SLAM2_1_1Tracking.html#a7e81c68bb6ced27fcbfa2edec38ef6e0" title="单目的地图初始化 " alt="" coords="475,70,634,111"/><area shape="rect" id="node6" href="classORB__SLAM2_1_1Tracking.html#af1f2c9c533642d8c33854540e90d1918" title="Main tracking function. It is independent of the input sensor. " alt="" coords="694,135,853,177"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<h2 class="groupheader">类成员变量说明</h2>
+<a class="anchor" id="a189bea541f860af75ceb60300b59d8e3"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::map&lt;<a class="el" href="classORB__SLAM2_1_1KeyFrame.html">KeyFrame</a>*,size_t&gt; ORB_SLAM2::MapPoint::mObservations</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>观测到该MapPoint的KF和该MapPoint在KF中的索引， </p>
+
+<p>在文件 <a class="el" href="MapPoint_8h_source.html">MapPoint.h</a> 第 <a class="el" href="MapPoint_8h_source.html#l00133">133</a> 行定义.</p>
+
+<p>参考自 <a class="el" href="MapPoint_8cpp_source.html#l00127">AddObservation()</a>, <a class="el" href="MapPoint_8cpp_source.html#l00302">ComputeDistinctiveDescriptors()</a>, <a class="el" href="MapPoint_8cpp_source.html#l00402">IsInKeyFrame()</a> , 以及 <a class="el" href="MapPoint_8cpp_source.html#l00414">UpdateNormalAndDepth()</a>.</p>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>include/<a class="el" href="MapPoint_8h_source.html">MapPoint.h</a></li>
+<li>src/<a class="el" href="MapPoint_8cpp_source.html">MapPoint.cpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespaceORB__SLAM2.html">ORB_SLAM2</a></li><li class="navelem"><a class="el" href="classORB__SLAM2_1_1MapPoint.html">MapPoint</a></li>
+    <li class="footer">生成于 2017年 七月 18日 星期二 17:13:40 , 为 My Project使用 
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
+  </ul>
+</div>
+</body>
+</html>

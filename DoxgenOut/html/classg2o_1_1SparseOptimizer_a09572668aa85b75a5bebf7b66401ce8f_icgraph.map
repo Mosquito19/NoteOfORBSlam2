@@ -1,0 +1,5 @@
+<map id="g2o::SparseOptimizer::computeActiveErrors" name="g2o::SparseOptimizer::computeActiveErrors">
+<area shape="rect" id="node2" href="$classg2o_1_1OptimizationAlgorithmGaussNewton.html#aba0b67eecaca01c576de7e605e5af5f1" title="g2o::OptimizationAlgorithm\lGaussNewton::solve" alt="" coords="205,5,384,46"/>
+<area shape="rect" id="node3" href="$classg2o_1_1OptimizationAlgorithmLevenberg.html#a7140fa989b54eac4e09ba17829dcada0" title="g2o::OptimizationAlgorithm\lLevenberg::solve" alt="" coords="205,70,384,111"/>
+<area shape="rect" id="node4" href="$classg2o_1_1OptimizationAlgorithmDogleg.html#ace62fd809c18655bd7ff104285748610" title="g2o::OptimizationAlgorithm\lDogleg::solve" alt="" coords="205,135,384,177"/>
+</map>

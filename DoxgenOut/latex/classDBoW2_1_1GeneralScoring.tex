@@ -1,0 +1,77 @@
+\hypertarget{classDBoW2_1_1GeneralScoring}{\section{D\-Bo\-W2\-:\-:General\-Scoring类 参考}
+\label{classDBoW2_1_1GeneralScoring}\index{D\-Bo\-W2\-::\-General\-Scoring@{D\-Bo\-W2\-::\-General\-Scoring}}
+}
+
+
+Base class of scoring functions.  
+
+
+
+
+{\ttfamily \#include $<$Scoring\-Object.\-h$>$}
+
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+virtual double \hyperlink{classDBoW2_1_1GeneralScoring_a43b3f5fedb19e6a19e17b9813efd17e8}{score} (const \hyperlink{classDBoW2_1_1BowVector}{Bow\-Vector} \&v, const \hyperlink{classDBoW2_1_1BowVector}{Bow\-Vector} \&w) const =0
+\item 
+virtual bool \hyperlink{classDBoW2_1_1GeneralScoring_ab0cadafd50b0f2f559f6325a6944f72f}{must\-Normalize} (\hyperlink{namespaceDBoW2_a53e9e0bcfc25c861815e413a7cf3fa51}{L\-Norm} \&norm) const =0
+\item 
+\hypertarget{classDBoW2_1_1GeneralScoring_a1796812280a5188e06d8137baa977776}{virtual \hyperlink{classDBoW2_1_1GeneralScoring_a1796812280a5188e06d8137baa977776}{$\sim$\-General\-Scoring} ()}\label{classDBoW2_1_1GeneralScoring_a1796812280a5188e06d8137baa977776}
+
+\begin{DoxyCompactList}\small\item\em Required for virtual base classes. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{静态 Public 属性}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classDBoW2_1_1GeneralScoring_af470bccf750689525622f216f07d6f3c}{static const double \hyperlink{classDBoW2_1_1GeneralScoring_af470bccf750689525622f216f07d6f3c}{L\-O\-G\-\_\-\-E\-P\-S} = log(D\-B\-L\-\_\-\-E\-P\-S\-I\-L\-O\-N)}\label{classDBoW2_1_1GeneralScoring_af470bccf750689525622f216f07d6f3c}
+
+\begin{DoxyCompactList}\small\item\em Log of epsilon. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{详细描述}
+Base class of scoring functions. 
+
+在文件 Scoring\-Object.\-h 第 20 行定义.
+
+
+
+\subsection{成员函数说明}
+\hypertarget{classDBoW2_1_1GeneralScoring_ab0cadafd50b0f2f559f6325a6944f72f}{\index{D\-Bo\-W2\-::\-General\-Scoring@{D\-Bo\-W2\-::\-General\-Scoring}!must\-Normalize@{must\-Normalize}}
+\index{must\-Normalize@{must\-Normalize}!DBoW2::GeneralScoring@{D\-Bo\-W2\-::\-General\-Scoring}}
+\subsubsection[{must\-Normalize}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool D\-Bo\-W2\-::\-General\-Scoring\-::must\-Normalize (
+\begin{DoxyParamCaption}
+\item[{{\bf L\-Norm} \&}]{norm}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classDBoW2_1_1GeneralScoring_ab0cadafd50b0f2f559f6325a6944f72f}
+Returns whether a vector must be normalized before scoring according to the scoring scheme 
+\begin{DoxyParams}{参数}
+{\em norm} & norm to use \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+true iff must normalize 
+\end{DoxyReturn}
+\hypertarget{classDBoW2_1_1GeneralScoring_a43b3f5fedb19e6a19e17b9813efd17e8}{\index{D\-Bo\-W2\-::\-General\-Scoring@{D\-Bo\-W2\-::\-General\-Scoring}!score@{score}}
+\index{score@{score}!DBoW2::GeneralScoring@{D\-Bo\-W2\-::\-General\-Scoring}}
+\subsubsection[{score}]{\setlength{\rightskip}{0pt plus 5cm}virtual double D\-Bo\-W2\-::\-General\-Scoring\-::score (
+\begin{DoxyParamCaption}
+\item[{const {\bf Bow\-Vector} \&}]{v, }
+\item[{const {\bf Bow\-Vector} \&}]{w}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classDBoW2_1_1GeneralScoring_a43b3f5fedb19e6a19e17b9813efd17e8}
+Computes the score between two vectors. Vectors must be sorted and normalized if necessary 
+\begin{DoxyParams}{参数}
+{\em v} & (in/out) \\
+\hline
+{\em w} & (in/out) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+score 
+\end{DoxyReturn}
+
+
+该类的文档由以下文件生成\-:\begin{DoxyCompactItemize}
+\item 
+Thirdparty/\-D\-Bo\-W2/\-D\-Bo\-W2/Scoring\-Object.\-h\item 
+Thirdparty/\-D\-Bo\-W2/\-D\-Bo\-W2/Scoring\-Object.\-cpp\end{DoxyCompactItemize}

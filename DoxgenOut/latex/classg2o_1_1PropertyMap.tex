@@ -1,0 +1,220 @@
+\hypertarget{classg2o_1_1PropertyMap}{\section{g2o\-:\-:Property\-Map类 参考}
+\label{classg2o_1_1PropertyMap}\index{g2o\-::\-Property\-Map@{g2o\-::\-Property\-Map}}
+}
+
+
+a collection of properties mapping from name to the property itself  
+
+
+
+
+{\ttfamily \#include $<$property.\-h$>$}
+
+
+
+类 g2o\-:\-:Property\-Map 继承关系图\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=226pt]{classg2o_1_1PropertyMap__inherit__graph}
+\end{center}
+\end{figure}
+
+
+g2o\-:\-:Property\-Map 的协作图\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=190pt]{classg2o_1_1PropertyMap__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public 类型}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classg2o_1_1PropertyMap_ac57ddbe51d16070e697fe314889fee03}{typedef std\-::map$<$ std\-::string, \\*
+\hyperlink{classg2o_1_1BaseProperty}{Base\-Property} $\ast$ $>$ {\bfseries Base\-Class}}\label{classg2o_1_1PropertyMap_ac57ddbe51d16070e697fe314889fee03}
+
+\item 
+\hypertarget{classg2o_1_1PropertyMap_af5dd0defe4a5096f0d5602b38e837a78}{typedef Base\-Class\-::iterator {\bfseries Property\-Map\-Iterator}}\label{classg2o_1_1PropertyMap_af5dd0defe4a5096f0d5602b38e837a78}
+
+\item 
+\hypertarget{classg2o_1_1PropertyMap_af09ea140ab099b1762e9634b7fdcaf52}{typedef Base\-Class\-::const\-\_\-iterator {\bfseries Property\-Map\-Const\-Iterator}}\label{classg2o_1_1PropertyMap_af09ea140ab099b1762e9634b7fdcaf52}
+
+\end{DoxyCompactItemize}
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{classg2o_1_1PropertyMap_a6b90b5cfd16125c174e140af6e40dad9}{add\-Property} (\hyperlink{classg2o_1_1BaseProperty}{Base\-Property} $\ast$p)
+\item 
+bool \hyperlink{classg2o_1_1PropertyMap_a8f96ea923fe711a0ffa6e4c6479945d9}{erase\-Property} (const std\-::string \&name\-\_\-)
+\item 
+{\footnotesize template$<$typename P $>$ }\\P $\ast$ \hyperlink{classg2o_1_1PropertyMap_ab3a37fb6f8358f3c63a13678349f1f82}{get\-Property} (const std\-::string \&name\-\_\-)
+\item 
+\hypertarget{classg2o_1_1PropertyMap_a4681e164dc742b78b74684bfad09d47c}{{\footnotesize template$<$typename P $>$ }\\const P $\ast$ {\bfseries get\-Property} (const std\-::string \&name\-\_\-) const }\label{classg2o_1_1PropertyMap_a4681e164dc742b78b74684bfad09d47c}
+
+\item 
+{\footnotesize template$<$typename P $>$ }\\P $\ast$ \hyperlink{classg2o_1_1PropertyMap_add6e602dcd651b8883c30c350d23692f}{make\-Property} (const std\-::string \&name\-\_\-, const typename P\-::\-Value\-Type \&v)
+\item 
+bool \hyperlink{classg2o_1_1PropertyMap_a43df66ba15f9425abbd0e888a7b67251}{update\-Property\-From\-String} (const std\-::string \&name, const std\-::string \&value)
+\item 
+bool \hyperlink{classg2o_1_1PropertyMap_a0407e6a72afafd608f13cfdffc6ffc06}{update\-Map\-From\-String} (const std\-::string \&values)
+\item 
+\hypertarget{classg2o_1_1PropertyMap_a02712d41356082bb724812927b1eef89}{void {\bfseries write\-To\-C\-S\-V} (std\-::ostream \&os) const }\label{classg2o_1_1PropertyMap_a02712d41356082bb724812927b1eef89}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{详细描述}
+a collection of properties mapping from name to the property itself 
+
+在文件 property.\-h 第 76 行定义.
+
+
+
+\subsection{成员函数说明}
+\hypertarget{classg2o_1_1PropertyMap_a6b90b5cfd16125c174e140af6e40dad9}{\index{g2o\-::\-Property\-Map@{g2o\-::\-Property\-Map}!add\-Property@{add\-Property}}
+\index{add\-Property@{add\-Property}!g2o::PropertyMap@{g2o\-::\-Property\-Map}}
+\subsubsection[{add\-Property}]{\setlength{\rightskip}{0pt plus 5cm}bool g2o\-::\-Property\-Map\-::add\-Property (
+\begin{DoxyParamCaption}
+\item[{{\bf Base\-Property} $\ast$}]{p}
+\end{DoxyParamCaption}
+)}}\label{classg2o_1_1PropertyMap_a6b90b5cfd16125c174e140af6e40dad9}
+add a property to the map 
+
+在文件 property.\-cpp 第 44 行定义.
+
+\hypertarget{classg2o_1_1PropertyMap_a8f96ea923fe711a0ffa6e4c6479945d9}{\index{g2o\-::\-Property\-Map@{g2o\-::\-Property\-Map}!erase\-Property@{erase\-Property}}
+\index{erase\-Property@{erase\-Property}!g2o::PropertyMap@{g2o\-::\-Property\-Map}}
+\subsubsection[{erase\-Property}]{\setlength{\rightskip}{0pt plus 5cm}bool g2o\-::\-Property\-Map\-::erase\-Property (
+\begin{DoxyParamCaption}
+\item[{const std\-::string \&}]{name\-\_\-}
+\end{DoxyParamCaption}
+)}}\label{classg2o_1_1PropertyMap_a8f96ea923fe711a0ffa6e4c6479945d9}
+remove a property from the map 
+
+在文件 property.\-cpp 第 49 行定义.
+
+\hypertarget{classg2o_1_1PropertyMap_ab3a37fb6f8358f3c63a13678349f1f82}{\index{g2o\-::\-Property\-Map@{g2o\-::\-Property\-Map}!get\-Property@{get\-Property}}
+\index{get\-Property@{get\-Property}!g2o::PropertyMap@{g2o\-::\-Property\-Map}}
+\subsubsection[{get\-Property}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename P $>$ P$\ast$ g2o\-::\-Property\-Map\-::get\-Property (
+\begin{DoxyParamCaption}
+\item[{const std\-::string \&}]{name\-\_\-}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classg2o_1_1PropertyMap_ab3a37fb6f8358f3c63a13678349f1f82}
+return a property by its name 
+
+在文件 property.\-h 第 99 行定义.
+
+\hypertarget{classg2o_1_1PropertyMap_add6e602dcd651b8883c30c350d23692f}{\index{g2o\-::\-Property\-Map@{g2o\-::\-Property\-Map}!make\-Property@{make\-Property}}
+\index{make\-Property@{make\-Property}!g2o::PropertyMap@{g2o\-::\-Property\-Map}}
+\subsubsection[{make\-Property}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename P $>$ P$\ast$ g2o\-::\-Property\-Map\-::make\-Property (
+\begin{DoxyParamCaption}
+\item[{const std\-::string \&}]{name\-\_\-, }
+\item[{const typename P\-::\-Value\-Type \&}]{v}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classg2o_1_1PropertyMap_add6e602dcd651b8883c30c350d23692f}
+create a property and insert it 
+
+在文件 property.\-h 第 119 行定义.
+
+
+
+参考自 g2o\-::\-Optimization\-Algorithm\-Dogleg\-::\-Optimization\-Algorithm\-Dogleg() , 以及 g2o\-::\-Optimization\-Algorithm\-Levenberg\-::\-Optimization\-Algorithm\-Levenberg().
+
+
+
+这是这个函数的调用关系图\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classg2o_1_1PropertyMap_add6e602dcd651b8883c30c350d23692f_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classg2o_1_1PropertyMap_a0407e6a72afafd608f13cfdffc6ffc06}{\index{g2o\-::\-Property\-Map@{g2o\-::\-Property\-Map}!update\-Map\-From\-String@{update\-Map\-From\-String}}
+\index{update\-Map\-From\-String@{update\-Map\-From\-String}!g2o::PropertyMap@{g2o\-::\-Property\-Map}}
+\subsubsection[{update\-Map\-From\-String}]{\setlength{\rightskip}{0pt plus 5cm}bool g2o\-::\-Property\-Map\-::update\-Map\-From\-String (
+\begin{DoxyParamCaption}
+\item[{const std\-::string \&}]{values}
+\end{DoxyParamCaption}
+)}}\label{classg2o_1_1PropertyMap_a0407e6a72afafd608f13cfdffc6ffc06}
+update the map based on a name=value string, e.\-g., name1=val1,name2=val2 \begin{DoxyReturn}{返回}
+true, if it was possible to update all parameters 
+\end{DoxyReturn}
+
+
+在文件 property.\-cpp 第 88 行定义.
+
+
+
+参考 g2o\-::str\-Split(), g2o\-::trim() , 以及 update\-Property\-From\-String().
+
+
+
+参考自 g2o\-::\-Optimization\-Algorithm\-::update\-Properties\-From\-String().
+
+
+
+函数调用图\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classg2o_1_1PropertyMap_a0407e6a72afafd608f13cfdffc6ffc06_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+这是这个函数的调用关系图\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classg2o_1_1PropertyMap_a0407e6a72afafd608f13cfdffc6ffc06_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classg2o_1_1PropertyMap_a43df66ba15f9425abbd0e888a7b67251}{\index{g2o\-::\-Property\-Map@{g2o\-::\-Property\-Map}!update\-Property\-From\-String@{update\-Property\-From\-String}}
+\index{update\-Property\-From\-String@{update\-Property\-From\-String}!g2o::PropertyMap@{g2o\-::\-Property\-Map}}
+\subsubsection[{update\-Property\-From\-String}]{\setlength{\rightskip}{0pt plus 5cm}bool g2o\-::\-Property\-Map\-::update\-Property\-From\-String (
+\begin{DoxyParamCaption}
+\item[{const std\-::string \&}]{name, }
+\item[{const std\-::string \&}]{value}
+\end{DoxyParamCaption}
+)}}\label{classg2o_1_1PropertyMap_a43df66ba15f9425abbd0e888a7b67251}
+update a specfic property with a new value \begin{DoxyReturn}{返回}
+true if the params is stored and update was carried out 
+\end{DoxyReturn}
+
+
+在文件 property.\-cpp 第 65 行定义.
+
+
+
+参考自 update\-Map\-From\-String().
+
+
+
+这是这个函数的调用关系图\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classg2o_1_1PropertyMap_a43df66ba15f9425abbd0e888a7b67251_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+该类的文档由以下文件生成\-:\begin{DoxyCompactItemize}
+\item 
+Thirdparty/g2o/g2o/stuff/property.\-h\item 
+Thirdparty/g2o/g2o/stuff/property.\-cpp\end{DoxyCompactItemize}

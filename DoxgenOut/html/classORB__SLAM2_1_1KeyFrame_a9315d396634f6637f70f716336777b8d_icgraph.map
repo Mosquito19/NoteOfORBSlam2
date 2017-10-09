@@ -1,0 +1,7 @@
+<map id="ORB_SLAM2::KeyFrame::GetVectorCovisibleKeyFrames" name="ORB_SLAM2::KeyFrame::GetVectorCovisibleKeyFrames">
+<area shape="rect" id="node2" href="$classORB__SLAM2_1_1LoopClosing.html#ab4fcf814eed5b5dd2aec96454561b078" title="计算当前帧与闭环帧的Sim3变换等 " alt="" coords="268,5,449,46"/>
+<area shape="rect" id="node3" href="$classORB__SLAM2_1_1LoopClosing.html#aa007e0678582ec0de5d71280d23af540" title="闭环 " alt="" coords="268,70,449,111"/>
+<area shape="rect" id="node4" href="$classORB__SLAM2_1_1LoopClosing.html#aa8110ca79cebaf509e378d30e55f1381" title="ORB_SLAM2::LoopClosing\l::DetectLoop" alt="" coords="268,135,449,177"/>
+<area shape="rect" id="node5" href="$classORB__SLAM2_1_1LocalMapping.html#aca73e5b4bace436b235dfa9c9a522b19" title="关键帧剔除 " alt="" coords="264,201,453,242"/>
+<area shape="rect" id="node6" href="$classORB__SLAM2_1_1Optimizer.html#ab70e0b4f366b65a0c1ae8b2def19d339" title="Local Bundle Adjustment. " alt="" coords="275,266,442,307"/>
+</map>

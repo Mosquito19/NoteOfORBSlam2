@@ -1,0 +1,192 @@
+\hypertarget{classg2o_1_1JacobianWorkspace}{\section{g2o\-:\-:Jacobian\-Workspace类 参考}
+\label{classg2o_1_1JacobianWorkspace}\index{g2o\-::\-Jacobian\-Workspace@{g2o\-::\-Jacobian\-Workspace}}
+}
+
+
+provide memory workspace for computing the Jacobians  
+
+
+
+
+{\ttfamily \#include $<$jacobian\-\_\-workspace.\-h$>$}
+
+\subsection*{Public 类型}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classg2o_1_1JacobianWorkspace_aee9d767fa1208772a3de83732646e182}{typedef std\-::vector\\*
+$<$ Eigen\-::\-Vector\-Xd, \\*
+Eigen\-::aligned\-\_\-allocator\\*
+$<$ Eigen\-::\-Vector\-Xd $>$ $>$ {\bfseries Workspace\-Vector}}\label{classg2o_1_1JacobianWorkspace_aee9d767fa1208772a3de83732646e182}
+
+\end{DoxyCompactItemize}
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{classg2o_1_1JacobianWorkspace_a8e1d23ced91b721fdb5bd68c8c4e9fc3}{allocate} ()
+\item 
+void \hyperlink{classg2o_1_1JacobianWorkspace_a2d16ad6db1a51aa93c806cc9c06e223f}{update\-Size} (const \hyperlink{classg2o_1_1HyperGraph_1_1Edge}{Hyper\-Graph\-::\-Edge} $\ast$e)
+\item 
+void \hyperlink{classg2o_1_1JacobianWorkspace_ae3d715bd25e196d8db81661ef0fbd09b}{update\-Size} (const \hyperlink{structg2o_1_1OptimizableGraph}{Optimizable\-Graph} \&graph)
+\item 
+void \hyperlink{classg2o_1_1JacobianWorkspace_aa15a007fee3037116ea0e857855080d2}{update\-Size} (int num\-Vertices, int dimension)
+\item 
+double $\ast$ \hyperlink{classg2o_1_1JacobianWorkspace_ad68c37d7779d3a034bc1b864cd98690b}{workspace\-For\-Vertex} (int vertex\-Index)
+\end{DoxyCompactItemize}
+\subsection*{Protected 属性}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classg2o_1_1JacobianWorkspace_af7dbaa3a651808e1bf3f876896bd1bfc}{Workspace\-Vector \hyperlink{classg2o_1_1JacobianWorkspace_af7dbaa3a651808e1bf3f876896bd1bfc}{\-\_\-workspace}}\label{classg2o_1_1JacobianWorkspace_af7dbaa3a651808e1bf3f876896bd1bfc}
+
+\begin{DoxyCompactList}\small\item\em the memory pre-\/allocated for computing the Jacobians \end{DoxyCompactList}\item 
+\hypertarget{classg2o_1_1JacobianWorkspace_a640c84c19a739ce3116fc02c3a66b096}{int \hyperlink{classg2o_1_1JacobianWorkspace_a640c84c19a739ce3116fc02c3a66b096}{\-\_\-max\-Num\-Vertices}}\label{classg2o_1_1JacobianWorkspace_a640c84c19a739ce3116fc02c3a66b096}
+
+\begin{DoxyCompactList}\small\item\em the maximum number of vertices connected by a hyper-\/edge \end{DoxyCompactList}\item 
+\hypertarget{classg2o_1_1JacobianWorkspace_aa6cd4fb8bc1bb4fe9ada55d9feefc817}{int \hyperlink{classg2o_1_1JacobianWorkspace_aa6cd4fb8bc1bb4fe9ada55d9feefc817}{\-\_\-max\-Dimension}}\label{classg2o_1_1JacobianWorkspace_aa6cd4fb8bc1bb4fe9ada55d9feefc817}
+
+\begin{DoxyCompactList}\small\item\em the maximum dimension (number of elements) for a Jacobian \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{详细描述}
+provide memory workspace for computing the Jacobians 
+
+The workspace is used by an \hyperlink{structg2o_1_1OptimizableGraph}{Optimizable\-Graph} to provide temporary memory for computing the Jacobian of the error functions. Before calling linearize\-Oplus on an edge, the workspace needs to be allocated by calling \hyperlink{classg2o_1_1JacobianWorkspace_a8e1d23ced91b721fdb5bd68c8c4e9fc3}{allocate()}. 
+
+在文件 jacobian\-\_\-workspace.\-h 第 51 行定义.
+
+
+
+\subsection{成员函数说明}
+\hypertarget{classg2o_1_1JacobianWorkspace_a8e1d23ced91b721fdb5bd68c8c4e9fc3}{\index{g2o\-::\-Jacobian\-Workspace@{g2o\-::\-Jacobian\-Workspace}!allocate@{allocate}}
+\index{allocate@{allocate}!g2o::JacobianWorkspace@{g2o\-::\-Jacobian\-Workspace}}
+\subsubsection[{allocate}]{\setlength{\rightskip}{0pt plus 5cm}bool g2o\-::\-Jacobian\-Workspace\-::allocate (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classg2o_1_1JacobianWorkspace_a8e1d23ced91b721fdb5bd68c8c4e9fc3}
+allocate the workspace 
+
+在文件 jacobian\-\_\-workspace.\-cpp 第 46 行定义.
+
+
+
+参考 \-\_\-max\-Dimension, \-\_\-max\-Num\-Vertices , 以及 \-\_\-workspace.
+
+\hypertarget{classg2o_1_1JacobianWorkspace_a2d16ad6db1a51aa93c806cc9c06e223f}{\index{g2o\-::\-Jacobian\-Workspace@{g2o\-::\-Jacobian\-Workspace}!update\-Size@{update\-Size}}
+\index{update\-Size@{update\-Size}!g2o::JacobianWorkspace@{g2o\-::\-Jacobian\-Workspace}}
+\subsubsection[{update\-Size}]{\setlength{\rightskip}{0pt plus 5cm}void g2o\-::\-Jacobian\-Workspace\-::update\-Size (
+\begin{DoxyParamCaption}
+\item[{const {\bf Hyper\-Graph\-::\-Edge} $\ast$}]{e}
+\end{DoxyParamCaption}
+)}}\label{classg2o_1_1JacobianWorkspace_a2d16ad6db1a51aa93c806cc9c06e223f}
+update the maximum required workspace needed by taking into account this edge 
+
+在文件 jacobian\-\_\-workspace.\-cpp 第 59 行定义.
+
+
+
+参考 \-\_\-max\-Dimension, \-\_\-max\-Num\-Vertices, g2o\-::\-Optimizable\-Graph\-::\-Vertex\-::dimension(), g2o\-::\-Optimizable\-Graph\-::\-Edge\-::dimension(), g2o\-::\-Hyper\-Graph\-::\-Edge\-::vertex() , 以及 g2o\-::\-Hyper\-Graph\-::\-Edge\-::vertices().
+
+
+
+参考自 g2o\-::\-Optimizable\-Graph\-::add\-Edge() , 以及 update\-Size().
+
+
+
+函数调用图\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classg2o_1_1JacobianWorkspace_a2d16ad6db1a51aa93c806cc9c06e223f_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+这是这个函数的调用关系图\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classg2o_1_1JacobianWorkspace_a2d16ad6db1a51aa93c806cc9c06e223f_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classg2o_1_1JacobianWorkspace_ae3d715bd25e196d8db81661ef0fbd09b}{\index{g2o\-::\-Jacobian\-Workspace@{g2o\-::\-Jacobian\-Workspace}!update\-Size@{update\-Size}}
+\index{update\-Size@{update\-Size}!g2o::JacobianWorkspace@{g2o\-::\-Jacobian\-Workspace}}
+\subsubsection[{update\-Size}]{\setlength{\rightskip}{0pt plus 5cm}void g2o\-::\-Jacobian\-Workspace\-::update\-Size (
+\begin{DoxyParamCaption}
+\item[{const {\bf Optimizable\-Graph} \&}]{graph}
+\end{DoxyParamCaption}
+)}}\label{classg2o_1_1JacobianWorkspace_ae3d715bd25e196d8db81661ef0fbd09b}
+update the required workspace by looking at a full graph 
+
+在文件 jacobian\-\_\-workspace.\-cpp 第 75 行定义.
+
+
+
+参考 g2o\-::\-Hyper\-Graph\-::edges() , 以及 update\-Size().
+
+
+
+函数调用图\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classg2o_1_1JacobianWorkspace_ae3d715bd25e196d8db81661ef0fbd09b_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classg2o_1_1JacobianWorkspace_aa15a007fee3037116ea0e857855080d2}{\index{g2o\-::\-Jacobian\-Workspace@{g2o\-::\-Jacobian\-Workspace}!update\-Size@{update\-Size}}
+\index{update\-Size@{update\-Size}!g2o::JacobianWorkspace@{g2o\-::\-Jacobian\-Workspace}}
+\subsubsection[{update\-Size}]{\setlength{\rightskip}{0pt plus 5cm}void g2o\-::\-Jacobian\-Workspace\-::update\-Size (
+\begin{DoxyParamCaption}
+\item[{int}]{num\-Vertices, }
+\item[{int}]{dimension}
+\end{DoxyParamCaption}
+)}}\label{classg2o_1_1JacobianWorkspace_aa15a007fee3037116ea0e857855080d2}
+manually update with the given parameters 
+
+在文件 jacobian\-\_\-workspace.\-cpp 第 83 行定义.
+
+
+
+参考 \-\_\-max\-Dimension , 以及 \-\_\-max\-Num\-Vertices.
+
+\hypertarget{classg2o_1_1JacobianWorkspace_ad68c37d7779d3a034bc1b864cd98690b}{\index{g2o\-::\-Jacobian\-Workspace@{g2o\-::\-Jacobian\-Workspace}!workspace\-For\-Vertex@{workspace\-For\-Vertex}}
+\index{workspace\-For\-Vertex@{workspace\-For\-Vertex}!g2o::JacobianWorkspace@{g2o\-::\-Jacobian\-Workspace}}
+\subsubsection[{workspace\-For\-Vertex}]{\setlength{\rightskip}{0pt plus 5cm}double$\ast$ g2o\-::\-Jacobian\-Workspace\-::workspace\-For\-Vertex (
+\begin{DoxyParamCaption}
+\item[{int}]{vertex\-Index}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classg2o_1_1JacobianWorkspace_ad68c37d7779d3a034bc1b864cd98690b}
+return the workspace for a vertex in an edge 
+
+在文件 jacobian\-\_\-workspace.\-h 第 83 行定义.
+
+
+
+参考自 g2o\-::\-Block\-Solver$<$ Traits $>$\-::build\-System().
+
+
+
+这是这个函数的调用关系图\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classg2o_1_1JacobianWorkspace_ad68c37d7779d3a034bc1b864cd98690b_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+该类的文档由以下文件生成\-:\begin{DoxyCompactItemize}
+\item 
+Thirdparty/g2o/g2o/core/jacobian\-\_\-workspace.\-h\item 
+Thirdparty/g2o/g2o/core/jacobian\-\_\-workspace.\-cpp\end{DoxyCompactItemize}
